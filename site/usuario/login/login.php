@@ -36,7 +36,7 @@
             echo "Preencha seus dados";
         }
        
-    }
+    
 
     else 
     {
@@ -60,10 +60,11 @@
                     session_start();
                 }
 
-                $_SESSION['id'] = $usuario['id_user'];
-                $_SESSION['nome'] = $usuario['nome'];
+                $_SESSION['id_user'] = $usuario['id_user'];
+                $_SESSION['usuario'] = $usuario['usuario'];
 
-                /*header("Location: ../index/index.php");*/
+
+                header("Location: ../../index/index.html");
 
             }
             else
@@ -73,7 +74,7 @@
                       Usuário ou senha incorretos </center>";
             }
     }
-
+}
     
 
 
