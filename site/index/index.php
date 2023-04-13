@@ -1,3 +1,7 @@
+<?php
+	include('protect.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +12,10 @@
 </head>
 <body>
     <H1>Testando conexão</H1>
+    <a href="../usuario/perfil/perfil.php">PERFIL </a>
+    <br> 
+    <a href="logout.php">SAIR</a>
+
+
 </body>
 </html>

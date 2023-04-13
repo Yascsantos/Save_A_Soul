@@ -64,7 +64,7 @@
                 $_SESSION['usuario'] = $usuario['usuario'];
 
 
-                header("Location: ../../index/index.html");
+                header("Location: ../../index/index.php");
 
             }
             else

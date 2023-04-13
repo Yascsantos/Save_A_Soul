@@ -13,12 +13,10 @@
         session_start();
     }
 
-    if(!isset($_SESSION['id']))
+    if(!isset($_SESSION['id_user']))
     {
         die
-        (" <header><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR></header>
-         <center><form>
-        <h2 ><b>Tá doido, é? Cê nem logou ainda.<br> /:</b></h2> <br>
+        (" <h1>Você não estã logado. Logue para acessar nosso site =) <h1> 
         <button type='button'><a href='../usuario/login/login.php'>CLIQUE AQUI PARA LOGAR </a></button></form></center>
         ");
     }
