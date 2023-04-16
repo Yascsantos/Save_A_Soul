@@ -1,12 +1,12 @@
 <?php
 	//parametros pra conexão 
 	$servidor = "localhost";
-	$bd = "amora"; //banco de dados
+	$banco = "amora"; //banco de dados
 	$usuario = "root";
 	$senha = ""; 
 	
 	//criando conexao
-	$conexao = mysqli_connect($servidor, $usuario, $senha, $bd); //conexão com o banco
+	$conexao = mysqli_connect($servidor, $usuario, $senha, $banco); //conexão com o banco
 	
 	//checando conexao
 	if (!$conexao){
