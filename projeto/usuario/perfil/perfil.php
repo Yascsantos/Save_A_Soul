@@ -129,6 +129,6 @@
 
     </table>
 	<br> <br> 					
-	<button type='button'><a href='./updates/teste.html'><b >EDITAR PERFIL </b></a></button></form>
+	<button type='button'><a href='./updates/edit.php'><b >EDITAR PERFIL </b></a></button></form>
 </body>
 </html>
