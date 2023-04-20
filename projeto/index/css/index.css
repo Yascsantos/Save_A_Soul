@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+
+*{
+   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none
+  }
+
+  #menu{
+    width:100%;
+    background-color:#362544;
+   align-items: center;
+   height:100px;
+   
+  }
+  .logo img{
+    width: 30vh;
+    height:30vh;
+   
+  }
+
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui,  Helvetica, Arial, sans-serif;
+    height: 12vh;
+
+  }
+  
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+ 
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  a{
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    text-decoration:none;
+    font-size: 0.9rem;
+    font-weight:600;
+    color:#bca5ec;
+  }
+ 
+  a:hover{
+    color:#957ec4;
+  }
+
+ .inicio{
+    background-image:  url(../imgs/dog.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+    color: #fff;
+    font-family: 'Poppins';
+
+ }
+
+  .texto{
+    font-size: 30px;
+    margin: 250px;
+    text-align: center;
+ }
+ 
+ .sobre{
+  text-align: center;
+  height: 30vh;
+  font-family: 'Poppins';
+  
+ }
+
+ .vitimas {
+    background-image:  url(../imgs/dog2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    color: #fff;
+    font-family: 'Poppins';
+    text-align: center;
+
+ }
+ .vitimas .text{
+  text-align: center;
+  height: 30vh;
+  margin: 55px;
+  font-size: 20px;
+
+ }
+.ajude{
+  width: 100px;
+  height: 100px;
+  display:flex;
+  margin: 10px;
+}
+.caixa{
+  width: 500px;
+  height: 100px;
+  margin: 8px;
+  text-align: center;
+}
+
+ .caixa img{
+  width: 40vh;
+  height: 40vh;
+
+}
+
+.caixa button {
+  border-radius: 9px;
+  background-color: #312646;
+  height: 5vh;
+  width: 150px;
+
+}
+.rodape{
+  height: 40vh;
+  background-color:#362544;
+}
+/*  sessão footer  */
+footer{
+  background-color:#362544;
+  padding: 100px 100px;
+  color: #fff;
+ 
+}
+footer span a{
+  color: #9683e9dc;
+  text-decoration: none;
+  text-align: center;
+ 
+}
+span{
+  font-family: 'Righteous', 'cursive';
+  font-size:40px;
+  font-weight:600;
+  color: #9683e9dc;
+  left: 50%;
+}
+footer span a:hover{
+  text-decoration: underline;
+}
+footer img{
+  width:200px;
+  height:250px;
+background-size:100%;
+}
+
+.lista_informacoes li{
+  font-family: 'Poppins', sans-serif;
+  font-size:16px;
+  font-weight:400;
+  color: #c1b6f1dc;
+  display: flex;
+list-style: none;
+letter-spacing: 3px;
+margin-left: 32px;
+
+}
+ 
+ 
+
+  .fa-pinterest {
+    border-top:1px solid hsl(0, 100%, 95%);
+    margin-top:75px;
+    width: 100%;
+    color: #9f8fe7dc;
+    left:0%;
+  }
+
