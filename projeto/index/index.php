@@ -22,13 +22,6 @@
       <nav >
         <div class="logo"><img src="./imgs/Amora.png"  ></div>
 
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-         
-        </div>
-       
      <ul class="nav-list">
           <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>
           <li> <a href="#">SOBRE</a></li>
