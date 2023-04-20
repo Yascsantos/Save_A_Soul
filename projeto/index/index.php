@@ -1,5 +1,5 @@
 <?php
-	include('protect.php');
+	/*include('protect.php');*/
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
     <H1>Testando conexão</H1>
     <a href="../usuario/perfil/perfil.php">PERFIL </a>
     <br> 
-    <a href="logout.php">SAIR</a>
+    <a href="../usuario/login/logout.php">SAIR</a>
 
 
 </body>

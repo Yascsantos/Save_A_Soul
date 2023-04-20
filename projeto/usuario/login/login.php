@@ -11,6 +11,7 @@
 </head>
 <body>
     <h2>Login</h2>
+    <h4>Não possui cadastro? <a href="../cadastro/cadastro.html">Cadastre-se já</a></h4>
     <form action="" method="post">
         <label>Usuário: </label>
         <input type="text" name="usuario" id="usuario" placeholder="Enter Your Name">

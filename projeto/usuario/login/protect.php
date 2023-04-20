@@ -16,8 +16,8 @@
     if(!isset($_SESSION['id_user']))
     {
         die
-        (" <h1>Você não estã logado. Logue para acessar nosso site =) <h1> 
-        <button type='button'><a href='../usuario/login/login.php'>CLIQUE AQUI PARA LOGAR </a></button></form></center>
+        ("
+        <button type='button'><a href='login.php'>CLIQUE AQUI PARA LOGAR </a></button></form></center>
         ");
     }
     
