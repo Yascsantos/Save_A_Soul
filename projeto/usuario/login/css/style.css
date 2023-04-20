@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background: #180f1f;
+}
+
+a{
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    text-decoration:none;
+    font-size: 0.9rem;
+    font-weight:600;
+    color:#1c044d;
+  }
+ 
+ 
+  a:hover{
+    color:#3f2b68;
+  }
+main.login {
+    background-color: rgba(255, 255, 255, 0.986);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 320px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg,  #1c0472,#2a2141);;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    position: relative;
+}
+
+form .input:first-child {
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+.input .linha::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #160c44,#9484b3);
+    transform: scaleX(0);
+    transition: all .3s ease-in-out;
+    transform-origin: left;
+}
+
+.input input:focus ~ .linha::after {
+    transform: scaleX(1);
+}
+
+.input input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    width: 100%;
+    background: linear-gradient(to left,#3a0db6,#52579b );
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, #1e1552,#292466 );
+}
+
+main.erro {
+    background-color: rgba(0, 0, 0, 0.986);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 320px;
+    min-height: 20vh;
+    padding: 2rem;
+    border-radius: 8px;
+    color:red;
+    text-align: center;
+}
+.erro img{
+    width: 100px;
+    height: 8vh;
+
+}

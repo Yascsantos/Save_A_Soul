@@ -21,7 +21,7 @@ CREATE table colaboradores (
     telefone VARCHAR(20),
     senha VARCHAR(20),
     foto VARCHAR(100),
-    cep INT,
+    cep INT (8),
     pais VARCHAR(20),
     estado VARCHAR(5),
     cidade VARCHAR(50),
@@ -90,5 +90,4 @@ CREATE TABLE vendas(
         	FOREIGN KEY (id_user)REFERENCES colaboradores (id_user)
 
 );
-
 

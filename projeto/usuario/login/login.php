@@ -7,22 +7,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+<link rel="stylesheet" href="css/style.css">
     <title>Login</title>
 </head>
 <body>
+  
+    <main  class="login">
     <h2>Login</h2>
-    <h4>Não possui cadastro? <a href="../cadastro/cadastro.html">Cadastre-se já</a></h4>
-    <form action="" method="post">
+    <div>
+    <label>
+                Ainda não possui cadastro?<br>
+                <a href='../cadastro/cadastro.html'>CADASTRE-SE</a>
+            </label>
+    </div>
+    <form action="" method="post" >
+        <div class="input">
         <label>Usuário: </label>
         <input type="text" name="usuario" id="usuario" placeholder="Enter Your Name">
+        <div class="linha"></div></div>
         <br>
-        
+        <div class="input">
         <label>Senha: </label>
         <input type="password" name="senha" id="senha" placeholder="Enter Your Password">
+        <div class="linha"></div></div>
         <br>          
 
         <input type="submit" name="Logar" value="Logar">
+   
+
     </form>
+
+</main>
    
 </body>
 
@@ -34,7 +49,8 @@
         // mensagem caso os campos sejam enviados vazios
         if(strlen($_POST['usuario']) == 0 && strlen($_POST['senha']) == 0  )
         {
-            echo "Preencha seus dados";
+            echo "<main class='erro'><h3>Preencha seus dados</h3>
+            <img src='./imgs/atenção.png'></main>";
         }
        
     
@@ -70,9 +86,11 @@
             }
             else
             {
-                echo "<center>Falha ao Logar!
+                echo "<main class='erro'><h3>Falha ao Logar!
                       <br> 
-                      Usuário ou senha incorretos </center>";
+                      Usuário ou senha incorretos</h3>
+                      <img src='./imgs/atenção.png'>
+                      </main>";
             }
     }
 }

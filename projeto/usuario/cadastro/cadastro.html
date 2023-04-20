@@ -5,79 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
 </head>
 <body>
-    <h1>Cadastre-se</h1>
-
-    <!--Formulário-->
-    <form action="cadastro.php" method="POST">
-        <fieldset>
-            <legend>Dados pessoais</legend>
+    <main>
+    <div class="caixa">
+        <div class="img-caixa">
+            <img src="imgs/dog.jpg">
+        </div>
+    
+          <!--Formulário-->
+          <div class="caixa-dados">
+            <form action="cadastro.php" method="POST">
+               
+    
+    
+            <h2>Dados pessoais</h2>
+            <div class="input-dados">
             <label for="nome"> Escolha um nome de usuário</label>
             <input type="text" name="usuario" placeholder="Digite o seu user name" required>
-            <br> <br>
+            </div>
 
+            <div class="input-dados">
             <label for="nome"> Nome Completo</label>
             <input type="text" name="nome" placeholder="Digite o seu nome " required>
-            <br> <br>
+            </div>
 
+            <div class="input-dados">
             <label for="email">E-mail</label>
             <input type="email" name="email" placeholder="Digite o seu email" required>
-            <br> <br>
+            <br> <br></div>
 
+            <div class="input-dados">
             <label for="telefone">Telefone</label>
             <input type="tel" name="telefone" placeholder="+55 (11) 96150-4684" required>
-            <br> <br>
 
+            <div class="input-senha">
             <label for="senha">Senha</label>
             <input type="password" name="senha" placeholder="Digite sua senha" required>
+            </div>
 
+            <div class="input-senha">
             <label for="confirma">Confirmar Senha</label>
             <input type="password" name="confirma" placeholder="Confirme a senha" required>
-            <br> <br>
+            <br> <br></div>
 
-        </fieldset>
-
-        <fieldset>
-            <legend><h2>Endereço</h2></legend>
+         </div>
+        
+         
+    
+            <h2>Endereço</h2>
+            <div class="input-dados">
                 <label for="cep"> CEP:</label>
                 <input type="text" name="cep" placeholder="Digite o seu CEP " required>
-                <br> <br>
-    
+                <br> <br></div>
+
+                <div class="input-dados">
                 <label for="pais">País:</label>
                 <input type="text" name="pais" placeholder="Digite o país que você mora" required>
-                <br> <br>
-    
+                <br> <br></div>
+
+                <div class="input-dados">
                 <label for="estado">Estado:</label>
                 <input type="text" name="estado" placeholder="Digite o seu estado" required>
-                <br> <br>
-    
+                <br> <br></div>
+
+                <div class="input-dados">
                 <label for="cidade">Cidade:</label>
                 <input type="text" name="cidade" placeholder="Digite sua cidade" required>
-                <br> <br>
+                <br> <br></div>
     
-    
+                <div class="input-dados">
                 <label for="bairro">Bairro</label>
                 <input type="text" name="bairro" placeholder="Digite seu bairro" required>
                 <br> <br>
     
+               
                 <label for="rua">Rua:</label>
                 <input type="text" name="rua" placeholder="Digite sua rua" required>
     
                 <label for="numero">Número:</label>
                 <input type="number" name="numero" placeholder="Digite o número da casa" required>
                 <br> <br>
-        </fieldset>
+      
 
-        <button input type="submit" name="cadastrar" value="Cadastrar"> Cadastrar</button>
-        <br> <br>
+        <button input type="submit" name="cadastrar" value="Cadastrar"> Cadastrar</button></div>
+    </div>
+        <br> <br> 
 
-        <!--
-        <h1>Testes</h1>
-        <img src="../img/padrao.png" alt="Erro na exibição da imagem padrão"><br>
+      
+</main>
 
-        <a href="../../index/index.php">Index</a> <br>
-        -->
 
     </form>
 </body>
