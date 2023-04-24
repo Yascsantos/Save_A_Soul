@@ -28,7 +28,7 @@
 
 	
 	//se o botão for pressionado
-		if (isset($_GET['alterar'])) 
+		if (isset($_POST['alterar'])) 
 		{
 			//dados vindos do formulário
 				$usuario = $_POST['usuario'];
@@ -65,7 +65,7 @@
 			if ($instrucao) 
 			{
 				mysqli_close($conexao);
-				header ('Location:../../login/login.php');
+				header ('Location:../perfil.php');
 				exit;
 		
 			} 
