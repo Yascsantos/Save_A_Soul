@@ -19,7 +19,7 @@
         <div class="logo"><img src="./imgs/Amora.png"  ></div>
 
      <ul class="nav-list">
-          <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>
+          <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>;
           <li> <a href="#">SOBRE</a></li>
           <li> <a href="#">BAZAR</a></li>
           <li> <a href="#">AJUDA</a></li>

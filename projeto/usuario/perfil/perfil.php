@@ -1,16 +1,26 @@
 
 <?php
+    //iniciação de sessão
 	if(!isset($_SESSION))
     {
         session_start();
     }
 
-	//Conectando ao banco
+    //verificação de usuário existente ou não 
+    if ($_SESSION['id_user'] == 0 or  $_SESSION['id_user'] == "")
+    {
+        header("Location: ../login/login.php");
+
+    }
+
+    //Conectando ao banco
 	include_once("../../conexaoBD.php");
+
 	//Tabela no BD
 	$tabela="colaboradores";
     $campo= "id_user";
 	$id= $_SESSION['id_user'];
+
 	//Script de uma busca em uma tabela no Banco de Dados
 	$sql = "select * from $tabela where $campo ='$id'";
 	
@@ -28,8 +38,19 @@
 </head>
 <body>
 	<h1> Perfil do usuário </h1> 
+    <form>
 	<!--Dados pessoais-->
-	<h2>Dados pessoais</h2>
+    <table> 
+        <tr>
+            <th>
+            <h2>Dados pessoais</h2>
+            </th>
+            <th> </th>
+            <th>
+            <button type='button'><a href="../../index/index.php"><b >VOLTAR AO INDEX </b></a></button>
+            </th>
+        </tr>   
+    </table>
 	<p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?></strong></p>
     <table>
         <tr>
