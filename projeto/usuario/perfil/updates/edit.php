@@ -28,13 +28,14 @@
 
 	
 	//se o botão for pressionado
-		if (isset($_GET['alterar'])) 
+		if (isset($_POST['alterar'])) 
 		{
 			//dados vindos do formulário
 				$usuario = $_POST['usuario'];
 				$nome = $_POST['nome'];
 				$email = $_POST['email'];
-				$tel = $_POST['telefone'];
+				$tel = $_POST['telefone']
+				;
 				$cep = $_POST['cep'];
 				$pais = $_POST['pais'];
 				$estado = $_POST['estado'];
@@ -65,7 +66,7 @@
 			if ($instrucao) 
 			{
 				mysqli_close($conexao);
-				header ('Location:../../login/login.php');
+				header ('Location:../perfil.php');
 				exit;
 		
 			} 
@@ -95,23 +96,23 @@
         <fieldset>
             <legend><h2>Dados pessoais</h2></legend>
             <label for="nome"> Escolha um nome de usuário</label>
-            <input type="text" name="usuario" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['usuario'];}?>" required>
+            <input type="text" name="usuario" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['usuario'];}?>" >
             <br> <br>
 
             <label for="nome"> Nome Completo</label>
-            <input type="text" name="nome" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['nome'];}?>" required>
+            <input type="text" name="nome" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['nome'];}?>" >
             <br> <br>
 
             <label for="email">E-mail</label>
-            <input type="email" name="email" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['email'];}?>" required>
+            <input type="email" name="email" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['email'];}?>" >
             <br> <br>
 
             <label for="telefone">Telefone</label>
-            <input type="tel" name="telefone" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['telefone'];}?>" required>
+            <input type="tel" name="telefone" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['telefone'];}?>" >
             <br> <br>
 
             <label for="senha">Senha</label>
-            <input type="password" name="senha" Disabled  placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['senha'];}?>" required>
+            <input type="password" name="senha" Disabled  placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['senha'];}?>" >
             <br> <br>
 
         </fieldset>
@@ -119,31 +120,31 @@
         <fieldset>
             <legend><h2>Endereço</h2></legend>
                 <label for="cep"> CEP:</label>
-                <input type="text" name="cep" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['cep'];}?>" required>
+                <input type="text" name="cep" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['cep'];}?>" >
                 <br> <br>
     
                 <label for="pais">País:</label>
-                <input type="text" name="pais" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['pais'];}?>" required>
+                <input type="text" name="pais" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['pais'];}?>" >
                 <br> <br>
     
                 <label for="estado">Estado:</label>
-                <input type="text" name="estado" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['estado'];}?>" required>
+                <input type="text" name="estado" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['estado'];}?>" >
                 <br> <br>
     
                 <label for="cidade">Cidade:</label>
-                <input type="text" name="cidade" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['cidade'];}?>" required>
+                <input type="text" name="cidade" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['cidade'];}?>" >
                 <br> <br>
     
     
                 <label for="bairro">Bairro</label>
-                <input type="text" name="bairro" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['bairro'];}?>" required>
+                <input type="text" name="bairro" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['bairro'];}?>" >
                 <br> <br>
     
                 <label for="rua">Rua:</label>
-                <input type="text" name="rua" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['rua'];}?>" required>
+                <input type="text" name="rua" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['rua'];}?>" >
     
                 <label for="numero">Número:</label>
-                <input type="number" name="numero" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['numero'];}?>" required>
+                <input type="number" name="numero" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['numero'];}?>" >
                 <br> <br>
         </fieldset>
 
