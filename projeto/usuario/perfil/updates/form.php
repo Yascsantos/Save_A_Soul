@@ -5,7 +5,7 @@
 			{
 				session_start();
 			}
-	
+
 	//Conectando ao banco		
 		include_once("../../../conexaoBD.php"); 
 	//Tabela no BD
@@ -15,10 +15,10 @@
 	//código e/ou id vindo do formulário anterior
 		$id_user = $_SESSION['id_user'];  
  	
+
 	//busca de valores para alterar 
 		$sqlPesq = "SELECT * FROM $tabela WHERE $id= $id_user";
 	
-	//executa, testa e encerra conexão
 		$pesquisa = mysqli_query($conexao,$sqlPesq);
 
 		if (!$pesquisa) 
@@ -26,55 +26,6 @@
 				die(' Query Inválida: ' . mysqli_error($conexao));
 			} 
 
-	
-	//se o botão for pressionado
-		if (isset($_POST['alterar'])) 
-		{
-			//dados vindos do formulário
-				$usuario = $_POST['usuario'];
-				$nome = $_POST['nome'];
-				$email = $_POST['email'];
-				$tel = $_POST['telefone']
-				;
-				$cep = $_POST['cep'];
-				$pais = $_POST['pais'];
-				$estado = $_POST['estado'];
-				$cidade = $_POST['cidade'];
-				$rua = $_POST['rua'];
-				$bairro = $_POST['bairro'];
-				$numero = $_POST['numero'];
-		
-
-			//Script para atualizar um registro na tabela no Banco de Dados
-			$sql = "UPDATE $tabela SET 
-				usuario = '$usuario', 
-				nome = '$nome',
-				email = '$email', 
-				telefone = '$tel', 
-				cep = '$cep', 
-				pais = '$pais', 
-				estado = '$estado', 
-				cidade = '$cidade', 
-				rua = '$rua', 
-				numero = '$numero' 
-				WHERE $id = '$id_user'";
-				
-		// executando instrução SQL
-			$instrucao = mysqli_query($conexao,$sql);
-		
-		//concluindo operação
-			if ($instrucao) 
-			{
-				mysqli_close($conexao);
-				header ('Location:../perfil.php');
-				exit;
-		
-			} 
-			else 
-			{
-				die(' Query Inválida: ' . mysqli_error($conexao));
-			}
-		}
 
 ?>
 
@@ -92,7 +43,7 @@
 	<p> Se não quiser alterar o dado, apenas reescreva o que já está escrito. </p>
 
     <!--Formulário-->
-    <form action="" method="POST">
+    <form action="alter.php" method="POST">
         <fieldset>
             <legend><h2>Dados pessoais</h2></legend>
             <label for="nome"> Escolha um nome de usuário</label>

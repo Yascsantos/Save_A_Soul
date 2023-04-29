@@ -40,19 +40,9 @@
 	<h1> Perfil do usuário </h1> 
     <form>
 	<!--Dados pessoais-->
-    <table> 
-        <tr>
-            <th>
-            <h2>Dados pessoais</h2>
-            </th>
-            <th> </th>
-            <th>
-            <button type='button'><a href="../../index/index.php"><b >VOLTAR AO INDEX </b></a></button>
-            </th>
-        </tr>   
-    </table>
-	<p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?></strong></p>
-    <table>
+        <h2>Dados pessoais</h2>
+        <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?></strong></p>
+        <table>
         <tr>
             <th>Nome de usuário: </th>
 			<th><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></th>
@@ -152,6 +142,10 @@
 
     </table>
 	<br> <br> 					
-	<button type='button'><a href='./updates/edit.php'><b >EDITAR PERFIL </b></a></button></form>
+	<button type='button'><a href='./updates/form.php'><b >EDITAR PERFIL </b></a></button>
+    <br> <br>
+    <button type='button'><a href="../../index/index.php"><b >VOLTAR AO INDEX </b></a></button>
+
+</form>
 </body>
 </html>
