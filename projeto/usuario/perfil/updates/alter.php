@@ -15,7 +15,12 @@
 //busca de valores do DB
 	$sqlPesq = "SELECT nome FROM $tabela WHERE $id= $id_user";
 
-	$pesquisa = mysqli_query($conexao,$sqlPesq);
+	$pesquisa = $conexao->query($sqlPesq) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+
+	$dados = $pesquisa->fetch_assoc($pesquisa);
+
+	//fetch_assoc($pesquisa);
+	extract($pesquisa);
 
 	//testando conexão
 	if (!$pesquisa) 
@@ -23,6 +28,7 @@
 			die(' Query Inválida: ' . mysqli_error($conexao));
 		} 
 
+	var_dump($dados);
 
 
 
