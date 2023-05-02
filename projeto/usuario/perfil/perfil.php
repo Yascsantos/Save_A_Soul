@@ -34,15 +34,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/perfil.css" type="text/css">
     <title>perfil</title>
 </head>
 <body>
-	<h1> Perfil do usuário </h1> 
-    <form>
+<header id="menu">
+ 
+</header>
+ <div class='contener'>
+     <div class='menu'>
+            <ul class='nav-list'>
+                <li> <a href='#'>SOBRE</a></li>
+                <br>
+                <li> <a href='#'>BAZAR</a></li>
+                <br>
+                <li> <a href='#'>AJUDA</a></li>
+                <br>
+                <li> <a href='#'>ADOTE</a></li>
+                <br>
+                <li> <a href='../logout.php>'>SAIR</a></li>
+            </ul>
+    </div>
+
+    
+    <form class='perfil'>
 	<!--Dados pessoais-->
         <h2>Dados pessoais</h2>
         <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?></strong></p>
         <table>
+        <tr>
+            <th>Imagem de perfil: </th>
+            <th>
+                <!--Colocando a imagem padrão do perfil -->
+                <?php
+                        $sql_query = "select * from $tabela where $campo ='$id'";
+                        // executando instrução SQL
+                        $requery = mysqli_query($conexao,$sql_query);
+                    
+                        foreach ($requery as $exibe)
+                        {
+                            echo "<img src='".$exibe['foto']."' width='100px' heigth='100px'>";
+                            echo "<th></th> <th></th>";
+                        }
+                    
+               ?>
+            </th> 
+        </tr>
         <tr>
             <th>Nome de usuário: </th>
 			<th><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></th>
@@ -73,28 +110,10 @@
 			<th></th> <th></th>
         </tr>
 
-        <tr>
-            <th>Imagem de perfil: </th>
-            <th>
-                <!--Colocando a imagem padrão do perfil -->
-                <?php
-                        $sql_query = "select * from $tabela where $campo ='$id'";
-                        // executando instrução SQL
-                        $requery = mysqli_query($conexao,$sql_query);
-                    
-                        foreach ($requery as $exibe)
-                        {
-                            echo "<img src='".$exibe['foto']."' width='100px' heigth='100px'>";
-                            echo "<th></th> <th></th>";
-                        }
-                    
-               ?>
-            </th> 
-        </tr>
+      
 	</table> 
 
 
-    </table>
 	<!--Endereço-->
     <h2>Endereço</h2>
     <table>
