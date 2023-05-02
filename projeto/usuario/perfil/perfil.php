@@ -54,9 +54,9 @@
                 <br>
                 <li> <a href='../logout.php>'>SAIR</a></li>
             </ul>
-    </div>
+      </div>
 
-    
+   
     <form class='perfil'>
 	<!--Dados pessoais-->
         <h2>Dados pessoais</h2>
@@ -165,6 +165,7 @@
     <br> <br>
     <button type='button'><a href="../../index/index.php"><b >VOLTAR AO INDEX </b></a></button>
 
-</form>
+       </form>
+    </div>
 </body>
 </html>

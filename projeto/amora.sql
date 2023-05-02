@@ -91,3 +91,4 @@ CREATE TABLE vendas(
 
 );
 
+amora
