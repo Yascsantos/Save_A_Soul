@@ -1,29 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
 
-*{
-   
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none
+   h2{
+    text-align: center;
   }
 
- #menu{
-  height: 12vh;
-  width: 100%;
-  background-color:#362544;
- }
-   .menu{
-    height: 100%;
-    display: flex;
-    background-color:#362544;
-    text-align: center;
-    width: 120px;
+  *{
+   
+    margin: 0;
+   
+    box-sizing: border-box;
+    text-decoration: none
+    }
+    a{
+      font-family: system-ui, Helvetica, Arial, sans-serif;
+      font-size: 0.9rem;
+      text-decoration:none;
+      font-size: 0.9rem;
+      font-weight:600;
+      color:#bca5ec;
+    }
+   
+    a:hover{
+      color:#957ec4;
+    }
  
-   }
+    table img {
+      border-radius: 50%;
+    }
+     button{
+      width: 25%;
+      height: 47px;
+      border-radius: 20px;
+      border-style:solid;
+      border-color: #251531;
+      border-width: 1px;
+      background-color:#362544;
+      color: white;
+      font-size: 16px;
+      margin-left: 55%;
+  }
   
 
-  .nav-list {
+   .menu{
+    height: 900px;
+    display: flex;
+    background-color:#362544;
+    text-align: justify;
+    width: 300px;
+    border-style: solid;
+    border-left: #bca5ec;
+    border-width: 1px;
+    border-color: #cbbfe6;
+    position: relative
+ 
+   }
+ 
+
+   .nav-list {
     list-style: none;
 
   }
@@ -38,33 +71,30 @@
     display: flex;
     height:900px;
     background-color: rgba(255, 255, 255, 0.4);
-    
 
   }
   
 
-  a{
-    font-family: system-ui, Helvetica, Arial, sans-serif;
-    font-size: 0.9rem;
-    text-decoration:none;
-    font-size: 0.9rem;
-    font-weight:600;
-    color:#bca5ec;
-  }
- 
-  a:hover{
-    color:#957ec4;
-  }
+  
 
  .perfil  {
-    height: 485px;
-    font-family: "Poppins", sans-serif;
-    backdrop-filter: blur(40px);
-    padding: 30px 40px;
+    margin-left: 15%;
     width: 50%;
-    text-align: center;
-  
+    height: 730px;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    padding: 30px 40px;
+    text-align: justify;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #251531;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative
+ 
   }
+
+ 
 
   .alterar {
     font-family: "Poppins", sans-serif;
@@ -78,9 +108,12 @@
     color:#816daa; 
   }
 
-  table img {
-    border-radius: 50%;
-  }
+ .dog img {
+  position:absolute;
+  height: 80px;
+  width: 80px;
+  align-items: center;
 
+ }
 
   

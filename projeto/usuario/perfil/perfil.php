@@ -34,36 +34,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/position.css">
     <link rel="stylesheet" href="css/perfil.css" type="text/css">
     <title>perfil</title>
 </head>
-<body>
-<header id="menu">
- 
-</header>
- <div class='contener'>
-     <div class='menu'>
-            <ul class='nav-list'>
-                <li> <a href='#'>SOBRE</a></li>
-                <br>
-                <li> <a href='#'>BAZAR</a></li>
-                <br>
-                <li> <a href='#'>AJUDA</a></li>
-                <br>
-                <li> <a href='#'>ADOTE</a></li>
-                <br>
-                <li> <a href='../logout.php>'>SAIR</a></li>
-            </ul>
-      </div>
 
-   
+
+<body>
+
+ <div class='contener'>
+
+<div class='menu'>
+
+<ul class='nav-list'>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<li> <a href="../../index/index.php">INDEX</a></li>
+<br>
+    <li> <a href='#'>SOBRE</a></li>
+    <br>
+    <li> <a href='#'>BAZAR</a></li>
+    <br>
+    <li> <a href='#'>AJUDA</a></li>
+    <br>
+    <li> <a href='#'>ADOTE</a></li>
+</ul>
+
+
+</div>
+     
+<div class="dog"><img scr="img/dog.jpg"></div>
     <form class='perfil'>
+    <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?></strong></p><br>
+    
 	<!--Dados pessoais-->
-        <h2>Dados pessoais</h2>
-        <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?></strong></p>
         <table>
         <tr>
-            <th>Imagem de perfil: </th>
+          
+            
             <th>
                 <!--Colocando a imagem padrão do perfil -->
                 <?php
@@ -80,10 +88,11 @@
                ?>
             </th> 
         </tr>
+
         <tr>
-            <th>Nome de usuário: </th>
+            <th>Nome : </th>
 			<th><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></th>
-			<th></th> <th></th>
+			<th></th> 
         </tr>
 
         <tr>
@@ -113,59 +122,77 @@
       
 	</table> 
 
-
+      <br><br>
 	<!--Endereço-->
+  
+
     <h2>Endereço</h2>
     <table>
         <tr>
+        <th></th>
             <th>CEP: </th>
+            <th></th>
 			<th><?php foreach ($instrucao as $exibe){ echo $exibe['cep'];}?></th>
-			<th></th> <th></th>
+			<th></th> 
         </tr>
 
         <tr>
+        <th></th>
             <th>País: </th>
+            <th></th>
 			<th><?php foreach ($instrucao as $exibe){ echo $exibe['pais'];}?></th>
-			<th></th> <th></th>
+			<th></th> 
         </tr>
 
         <tr>
+        <th></th>
             <th>Estado: </th>
-			<th><?php foreach ($instrucao as $exibe){ echo $exibe['estado'];}?></th>
-			<th></th> <th></th>
+			<th></th>
+            <th><?php foreach ($instrucao as $exibe){ echo $exibe['estado'];}?></th>
+			<th></th>
         </tr>
 
         <tr>
+        <th></th>
             <th>Cidade: </th>
-			<th><?php foreach ($instrucao as $exibe){ echo $exibe['cidade'];}?></th>
-			<th></th> <th></th>
+			 <th></th>
+             <th><?php foreach ($instrucao as $exibe){ echo $exibe['cidade'];}?></th>
+			<th></th> 
         </tr>
 
         <tr>
+        <th></th>
             <th>Bairro: </th>
+            <th></th>
 			<th><?php foreach ($instrucao as $exibe){ echo $exibe['bairro'];}?></th>
-			<th></th> <th></th>
+			<th></th> 
         </tr>
 
         <tr>
+        <th></th>
             <th>Rua: </th>
+            <th></th>
 			<th><?php foreach ($instrucao as $exibe){ echo $exibe['rua'];}?></th>
 			<th></th> <th></th>
         </tr>
 
         <tr>
+        <th></th>
             <th>Número: </th>
+            <th></th>
 			<th><?php foreach ($instrucao as $exibe){ echo $exibe['numero'];}?></th>
-			<th></th> <th></th>
+			
         </tr>
 
-    </table>
-	<br> <br> 					
-	<button type='button'><a href='./updates/form.php'><b >EDITAR PERFIL </b></a></button>
-    <br> <br>
-    <button type='button'><a href="../../index/index.php"><b >VOLTAR AO INDEX </b></a></button>
+    
+    </table> 
+	<br> 
+    <button type='button'><a href='./updates/form.php'>EDITAR PERFIL </a></button>
+
 
        </form>
+     
     </div>
+   
 </body>
 </html>
