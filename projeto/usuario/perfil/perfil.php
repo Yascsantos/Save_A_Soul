@@ -34,8 +34,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/position.css">
     <link rel="stylesheet" href="css/perfil.css" type="text/css">
     <title>perfil</title>
 </head>
@@ -54,6 +52,7 @@
     <li> <a href='#'>SOBRE</a></li>
     <br>
     <li> <a href='#'>BAZAR</a></li>
+    <img scr="img/dog.jpg" class="dog">
     <br>
     <li> <a href='#'>AJUDA</a></li>
     <br>
@@ -62,9 +61,9 @@
 
 
 </div>
-     
-<div class="dog"><img scr="img/dog.jpg"></div>
+
     <form class='perfil'>
+    
     <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?></strong></p><br>
     
 	<!--Dados pessoais-->
