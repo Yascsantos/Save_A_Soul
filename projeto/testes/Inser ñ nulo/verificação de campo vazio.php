@@ -1,3 +1,4 @@
+<?php
 /*
 	Verificação para ver se o campo do form está vazio. Não deu certo pq não tinha os valores para inserir no lugar do campo vazio 
 	(descrevi esse problema no notion (TCC, Problemas, Insern ñ nulo).
@@ -25,3 +26,4 @@
 			{
 				$sqlPesq['telefone'] = $tel;
 			}
+?>
