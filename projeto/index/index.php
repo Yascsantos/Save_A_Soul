@@ -21,9 +21,8 @@
      <ul class="nav-list">
           <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>;
           <li> <a href="#">SOBRE</a></li>
-          <li> <a href="#">BAZAR</a></li>
+          <li> <a href="#">LOJA</a></li>
           <li> <a href="#">AJUDA</a></li>
-          <li> <a href="logout.php">ADOTE</a></li>
           <li> <a href="logout.php">SAIR</a></li>
        </ul>
 
@@ -39,8 +38,8 @@
           <br>
             <h2>Como Ajudar</h2><br>
             
-            <p>Transformamos vidas por meio do nosso bazar, quando você compra alguma de nossas peças, o dinheiro da compra vai para os nossos resgatados, mas<br>
-              você também pode doar, apadrinhar ou adotar um dos nossos anjinhos.</p>
+            <p> Você pode nos ajudar tanto comprando produtos da nossa loja, onde o dinheiro da compra vai ser usado nos resgates,  <br>
+            quanto fazendo uma doação, apadrinhamento ou adotar um dos nossos anjinhos.</p>
 
         </div>
           
