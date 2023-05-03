@@ -1,7 +1,7 @@
 <?php
 	//parametros pra conexão 
 	$servidor = "localhost";
-	$banco = "amora"; //banco de dados
+	$banco = "save"; //banco de dados
 	$usuario = "root";
 	$senha = ""; 
 	
