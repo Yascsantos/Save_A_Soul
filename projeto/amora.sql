@@ -90,5 +90,3 @@ CREATE TABLE vendas(
         	FOREIGN KEY (id_user)REFERENCES colaboradores (id_user)
 
 );
-
-amora

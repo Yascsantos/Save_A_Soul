@@ -1,3 +1,4 @@
+<?php
 /*Código que pega as informações do form e insere no banco de dados*/
 
 /* --- MANIPULAÇÃO DOS DADOS DO FORM --- */
@@ -16,7 +17,7 @@
 				$rua = $_POST['rua'];
 				$bairro = $_POST['bairro'];
 				$numero = $_POST['numero'];
-			
+
 
 /* --- ATUALIZAÇÃO --- */
 		//Script para atualizar um registro na tabela no Banco de Dados
@@ -32,6 +33,7 @@
 				rua = '$rua', 
 				numero = '$numero' 
 				WHERE $id = '$id_user'";
+			var_dump($sql);
 				
 		// executando instrução SQL para anterar os dados 
 			$instrucao = mysqli_query($conexao,$sql);
@@ -51,3 +53,5 @@
 				die(' Query Inválida: ' . mysqli_error($conexao));
 			}
 		}
+
+?>

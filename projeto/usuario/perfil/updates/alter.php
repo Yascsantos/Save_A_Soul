@@ -17,10 +17,10 @@
 
 	$pesquisa = $conexao->query($sqlPesq) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
-	$dados = $pesquisa->fetch_assoc($pesquisa);
+	// $dados = $pesquisa->fetch_assoc($pesquisa);
 
 	//fetch_assoc($pesquisa);
-	extract($pesquisa);
+	// extract($pesquisa);
 
 	//testando conexão
 	if (!$pesquisa) 
@@ -28,7 +28,7 @@
 			die(' Query Inválida: ' . mysqli_error($conexao));
 		} 
 
-	var_dump($dados);
+	// var_dump($dados);
 
 
 
