@@ -7,9 +7,14 @@
   *{
    
     margin: 0;
-   
     box-sizing: border-box;
     text-decoration: none
+    }
+    .logo img{
+      width: 13vh;
+      height:12vh;
+     
+     
     }
     a{
       font-family: system-ui, Helvetica, Arial, sans-serif;
@@ -27,26 +32,26 @@
     table img {
       border-radius: 50%;
     }
-     button{
-      width: 25%;
-      height: 47px;
-      border-radius: 20px;
-      border-style:solid;
-      border-color: #251531;
-      border-width: 1px;
-      background-color:#362544;
-      color: white;
-      font-size: 16px;
-      margin-left: 55%;
-  }
-  
+    
+    button{
+    width: 50%;
+    height: 47px;
+    background:  hsl(240, 28%, 25%);
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+   margin-left: 20%;
+    font-size: 16px;
+}
 
    .menu{
     height: 900px;
     display: flex;
     background-color:#362544;
     text-align: justify;
-    width: 300px;
+    width: 250px;
     border-style: solid;
     border-left: #bca5ec;
     border-width: 1px;

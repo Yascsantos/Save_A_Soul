@@ -46,17 +46,18 @@
 <div class='menu'>
 
 <ul class='nav-list'>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<li> <a href="../../index/index.php">INDEX</a></li>
+    <br><br>
+    <div class="logo"><img src="../../index/imgs/logo.png"  ></div>
+    <br><br><br><br><br><br><br><br>
+<li> <a href="../../index/index.php">INICIO</a></li>
 <br>
     <li> <a href='#'>SOBRE</a></li>
     <br>
-    <li> <a href='#'>BAZAR</a></li>
+    <li> <a href='#'>LOJA</a></li>
     <img scr="img/dog.jpg" class="dog">
     <br>
     <li> <a href='#'>AJUDA</a></li>
     <br>
-    <li> <a href='#'>ADOTE</a></li>
 </ul>
 
 
@@ -186,7 +187,7 @@
     
     </table> 
 	<br> 
-    <button type='button'><a href='./updates/form.php'>EDITAR PERFIL </a></button>
+    <button type='button'><a href='./updates/form.php'>EDITAR </a></button>
 
 
        </form>

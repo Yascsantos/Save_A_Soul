@@ -186,3 +186,4 @@ CREATE TABLE vendas(
 
 
 
+amorasave

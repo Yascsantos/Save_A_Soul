@@ -39,7 +39,7 @@
             <h2>Como Ajudar</h2><br>
             
             <p> Você pode nos ajudar tanto comprando produtos da nossa loja, onde o dinheiro da compra vai ser usado nos resgates,  <br>
-            quanto fazendo uma doação, apadrinhamento ou adotar um dos nossos anjinhos.</p>
+            quanto fazendo uma doação, apadrinhamento ou adotando um dos nossos anjinhos.</p>
 
         </div>
           
@@ -84,7 +84,7 @@
                       <ul class="lista_informacoes">
                         <li> <span class="material-symbols-outlined">pin_drop </span>Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</li><br>
                         <li><span class="material-symbols-outlined">call</span>Telefone: (11) 96150-4684 </li><br>
-                        <li><span class="material-symbols-outlined">mail </span>Email: Join.in.the.spoon@gmail.com</li><br>
+                        <li><span class="material-symbols-outlined">mail </span>Email: saveasoul.com</li><br>
                         <li>Instagram: @</li>
                        
                         <a  href="https://br.pinterest.com/daianemagalhaesdecastro/fotos-do-site/"><i  class="fa fa-pinterest fa-stack-1x">Imagens tiradas do Pinterest</i></a>
