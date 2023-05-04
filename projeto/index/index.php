@@ -16,7 +16,7 @@
       
 
       <nav >
-        <div class="logo"><img src="./imgs/Amora.png"  ></div>
+        <div class="logo"><img src="./imgs/logo.png"  ></div>
 
      <ul class="nav-list">
           <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>;
