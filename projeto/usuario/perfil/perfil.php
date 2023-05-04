@@ -65,7 +65,7 @@
 
     <form class='perfil'>
     
-    <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?></strong></p><br>
+    <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></strong></p><br>
     
 	<!--Dados pessoais-->
         <table>
@@ -90,7 +90,7 @@
         </tr>
 
         <tr>
-            <th>Nome : </th>
+            <th>Usuário : </th>
 			<th><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></th>
 			<th></th> 
         </tr>
