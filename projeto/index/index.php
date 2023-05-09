@@ -84,8 +84,8 @@
                       <ul class="lista_informacoes">
                         <li> <span class="material-symbols-outlined">pin_drop </span>Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</li><br>
                         <li><span class="material-symbols-outlined">call</span>Telefone: (11) 96150-4684 </li><br>
-                        <li><span class="material-symbols-outlined">mail </span>Email: saveasoul.com</li><br>
-                        <li>Instagram: @</li>
+                        <li><span class="material-symbols-outlined">mail </span>Email: saveasoul2023@gmail.com</li><br>
+                     
                        
                         <a  href="https://br.pinterest.com/daianemagalhaesdecastro/fotos-do-site/"><i  class="fa fa-pinterest fa-stack-1x">Imagens tiradas do Pinterest</i></a>
                       </ul>
