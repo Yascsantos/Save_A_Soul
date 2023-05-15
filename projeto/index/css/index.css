@@ -17,8 +17,8 @@
    
   }
   .logo img{
-    width: 30vh;
-    height:30vh;
+    width: 14vh;
+    height:14vh;
    
   }
 
@@ -28,7 +28,7 @@
     justify-content: space-around;
     align-items: center;
     font-family: system-ui,  Helvetica, Arial, sans-serif;
-    height: 12vh;
+    height: 14vh;
 
   }
   

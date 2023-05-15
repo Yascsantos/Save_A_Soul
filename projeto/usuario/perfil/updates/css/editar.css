@@ -24,7 +24,6 @@ h2{
     font-family: "Poppins";
 }
 
-
 .input-senha{
     width: 50%;
     float: left;
@@ -105,6 +104,12 @@ form .input-dados input{
 form .input-dados input:focus{
     border-color: #2f00ff69;
 }
+ .submit {
+    width: 50%;
+    float: right;
+    padding-right: 15px;
+    
+}
 form .input-dados button{
     width: 50%;
     height: 47px;
@@ -114,7 +119,7 @@ form .input-dados button{
     border: none;
     margin-top: 15px;
     color: white;
-    margin-left: 20%;
+   margin-left: 20%;
     font-size: 16px;
 }
 
