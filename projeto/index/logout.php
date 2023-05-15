@@ -5,5 +5,5 @@
     }
 
     session_destroy();
-    header("Location:../usuario/login/login.php");
+    header("Location:../../index/index.php");
 ?>
