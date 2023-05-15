@@ -60,7 +60,50 @@
 		
 		else 
 		{
-			echo "Senhas diferentes, por favor digite a mesma senha em ambos os campos";
+			echo "<!DOCTYPE html>
+			<html lang='pt-br'>
+			<head>
+				<title>erro</title>
+			</head>
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+			*{
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				font-family: 'Poppins', sans-serif;
+			}
+			.caixa-dados p a{
+				color: hsl(258, 46%, 75%);
+				text-decoration: none;
+			}
+			
+			main.erro {
+				background-color: rgba(0, 0, 0, 0.986);
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				min-width: 320px;
+				min-height: 20vh;
+				padding: 2rem;
+				border-radius: 8px;
+				color:red;
+				text-align: center;
+			}
+			.erro img{
+				width: 100px;
+				height: 8vh;
+			
+			}
+			
+			</style>
+			<body>
+			<main class='erro'>";
+			echo "<h3>Senhas diferentes, por favor digite a mesma senha em ambos os campos<h3>";
+			echo "<img src='./imgs/atenção.png'>
+			<p><a href='../cadastro/cadastro.html'>VOLTAR</a></p>   </main>
+					</body>  </html>";
 		}
 
 
