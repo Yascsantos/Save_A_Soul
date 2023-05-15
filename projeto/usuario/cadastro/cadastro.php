@@ -13,13 +13,15 @@
 
 	
 	//se o botão for pressionado
-	if (isset($_POST['cadastrar'])) {
+	if (isset($_POST['cadastrar'])) 
+	{
 		//traz as variáveis do formulário
         $usuario = $_POST['usuario'];
 		$nome = $_POST['nome'];
 		$email = $_POST['email'];
         $tel = $_POST['telefone'];
         $senha = $_POST['senha'];
+		$confirma = $_POST['confirma'];
         $cep = $_POST['cep'];
         $pais = $_POST['pais'];
         $estado = $_POST['estado'];
@@ -31,24 +33,39 @@
 
 		$arquivo = $diretorio.$arq; //arquivo = pasta + nome do arquivo 		
 		
-		//Script para inserir um registro na tabela no Banco de Dados
-		$sql = "INSERT INTO $tabela ($campos) 
-			VALUES ('$usuario','$nome','$email','$tel','$senha','$arquivo', '$cep','$pais',
-            '$estado','$cidade','$rua','$bairro','$numero')";
-		
-		// executando instrução SQL
-		$instrucao = mysqli_query($conexao,$sql);
-		
-		//concluindo operação
-		if (!$instrucao) 
+		//verificação de senha
+		if ( $senha == $confirma)
 		{
-			die(' Query Inválida: ' . mysqli_error($conexao));
-	
-		} 
-		else {
-			mysqli_close($conexao);
-			header ('Location:../login/login.php');
-			exit;
+			//Script para inserir um registro na tabela no Banco de Dados
+			$sql = "INSERT INTO $tabela ($campos) 
+			VALUES ('$usuario','$nome','$email','$tel','$senha','$arquivo', '$cep','$pais',
+			'$estado','$cidade','$rua','$bairro','$numero')";
+		
+			// executando instrução SQL
+			$instrucao = mysqli_query($conexao,$sql);
+		
+			//concluindo operação
+			if (!$instrucao) 
+			{
+				die(' Query Inválida: ' . mysqli_error($conexao));
+
+			} 
+			else 
+			{
+				mysqli_close($conexao);
+				header ('Location:../login/login.php');
+				exit;
+			}
 		}
-	}	
+		
+		else 
+		{
+			echo "Senhas diferentes, por favor digite a mesma senha em ambos os campos";
+		}
+
+
+	}
+
+
+
 ?>
