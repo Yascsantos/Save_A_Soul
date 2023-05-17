@@ -96,6 +96,12 @@
   font-family: 'Poppins';
   
  }
+ .sobre img{
+align-items: center;
+  height: 30vh;
+  width: 100%;
+  
+ }
 
  .vitimas {
     background-image:  url(../imgs/dog2.jpg);
@@ -124,7 +130,7 @@
 .caixa{
   width: 40vh;
   height: 40vh;
-  margin: 5vh;
+  margin: 8vh;
   text-align: center;
 }
 
@@ -135,10 +141,10 @@
 }
 
 .caixa button {
-  border-radius: 9px;
+  border-radius: 6vh;
   background-color: #312646;
   height: 5vh;
-  width: 150px;
+  width: 25vh;
 
 }
 .rodape{
