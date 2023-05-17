@@ -23,9 +23,6 @@
           <li> <a href="#">SOBRE</a></li>
           <li> <a href="#">LOJA</a></li>
           <li> <a href="#">AJUDA</a></li>
-          <!--
-          <li> <a href="logout.php">SAIR</a></li>
-          -->
        </ul>
 
        </nav>
