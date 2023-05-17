@@ -44,18 +44,11 @@
 			// executando instrução SQL
 			$instrucao = mysqli_query($conexao,$sql);
 		
-			//concluindo operação
-			if (!$instrucao) 
-			{
-				die(' Query Inválida: ' . mysqli_error($conexao));
+				$sql = "select * from $tabela where $campo ='$id'";
+	
+	// executando instrução SQL
+	$instrucao = mysqli_query($conexao,$sql);
 
-			} 
-			else 
-			{
-				mysqli_close($conexao);
-				header ('Location:../login/login.php');
-				exit;
-			}
 		}
 		
 		else 
