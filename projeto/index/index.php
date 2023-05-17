@@ -20,7 +20,7 @@
 
      <ul class="nav-list">
           <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>;
-          <li> <a href="#">SOBRE</a></li>
+          <li> <a href="../sobre/sobre.html">SOBRE</a></li>
           <li> <a href="#">LOJA</a></li>
           <li> <a href="#">AJUDA</a></li>
        </ul>
@@ -34,17 +34,14 @@
         </div>
 
         <div class="sobre">
-          <br>
-            <h2>Como Ajudar</h2><br>
-            
-            <p> Você pode nos ajudar tanto comprando produtos da nossa loja, onde o dinheiro da compra vai ser usado nos resgates,  <br>
-            quanto fazendo uma doação, apadrinhamento ou adotando um dos nossos anjinhos.</p>
+          
+          <img scr="./imgs/linha.png">
 
         </div>
           
 
         <div class="vitimas">
-            <img scr="../imgs/dog2.jpg">
+            <img scr="./imgs/dog2.jpg">
             <h2>Vítimas que só aumentam</h2>
 
           <p class="text"><i>São Paulo contabiliza aumento de 15,6% nas denúncias de maus-tratosa em 2021.</i> </p>
