@@ -8,7 +8,7 @@
     estado, cidade, rua, bairro, numero";
 
 	//diretório da imagem de perfil
-	$diretorio = "../img/";
+	$diretorio = "../imag/";
 	$arq= "padrao.png"; 
 
 	

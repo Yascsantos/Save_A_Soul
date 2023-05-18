@@ -83,7 +83,7 @@
                     
                         foreach ($requery as $exibe)
                         {
-                            echo "<img src='".$exibe['foto']."' width='100px' heigth='100px'>";
+                            echo "<a href='img.html'><img src='".$exibe['foto']."' width='100px' heigth='100px'></a> ";
                             echo "<th></th> <th></th>";
                         }
                     
