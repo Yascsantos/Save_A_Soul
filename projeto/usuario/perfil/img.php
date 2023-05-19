@@ -6,7 +6,7 @@
     }
 
 	include_once('../../conexaoBD.php');
-	$tabela="colaboradores";
+	$tabela="user";
 	$campos = "foto";
 	$diretorio = "../img/"; 
 

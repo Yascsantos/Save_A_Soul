@@ -2,13 +2,13 @@
 	//Conectando ao banco
 	include_once("../../conexaoBD.php");
 	//Tabela no BD
-	$tabela="colaboradores";
+	$tabela="user";
 	//define campos do insert
 	$campos = "usuario, nome, email, telefone, senha, foto, cep, pais,
     estado, cidade, rua, bairro, numero";
 
 	//diretório da imagem de perfil
-	$diretorio = "../imag/";
+	$diretorio = "../img/";
 	$arq= "padrao.png"; 
 
 	
