@@ -118,6 +118,25 @@ form .input-dados button{
     font-size: 16px;
 }
 
+main.erro {
+    background-color: rgba(0, 0, 0, 0.986);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 320px;
+    min-height: 20vh;
+    padding: 2rem;
+    border-radius: 8px;
+    color:red;
+    text-align: center;
+}
+.erro img{
+    width: 100px;
+    height: 8vh;
+
+}
+
 @media (max-width:930px) {
     .img-caixa{
         display: none;
