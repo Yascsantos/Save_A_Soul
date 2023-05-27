@@ -17,7 +17,7 @@
     <div>
     <label>
                 Ainda não possui cadastro?<br>
-                <a href='../cadastro/cadastro.html'>CADASTRE-SE</a>
+                <a href='../cadastro/cadastro.php'>CADASTRE-SE</a>
             </label>
     </div>
     <form action="" method="post" >

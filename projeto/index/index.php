@@ -21,7 +21,6 @@
      <ul class="nav-list">
           <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>;
           <li> <a href="../sobre/sobre.html">SOBRE</a></li>
-          <li> <a href="#">LOJA</a></li>
           <li> <a href="#">AJUDA</a></li>
        </ul>
 
@@ -60,10 +59,6 @@
                             <button> <a href="#"> <p>Doe</p></a></button>
                             <img src="./imgs/dog3.jpg">
                               </div>
-                          <div class="caixa">
-                          <button><a href="#"><p>Apadrinhe</p></a></button>
-                              <img src="./imgs/dog6.jpg" alt="">
-                      </div>
                           <div class="caixa">
                           <button> <a href="#"><p>Seja voluntário</p></a></button>
                               <img src="./imgs/dog4.jpg" alt="">
