@@ -30,7 +30,7 @@ CREATE table user (
 );
 
 CREATE TABLE produto(
-    id_peca INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome VARCHAR(20),
     imagem VARCHAR(100),
     preco DECIMAL(10,2),
