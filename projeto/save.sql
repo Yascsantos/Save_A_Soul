@@ -6,10 +6,9 @@ USE save;
 CREATE table animais(
     id_animal INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome  VARCHAR(30),
-    historia VARCHAR(1000),
     idade DECIMAL(10,2),
-    tratamentos VARCHAR(80),
-    doencas VARCHAR(80)
+    raca VARCHAR(30),
+    historia VARCHAR(1000),
 
 );
 
@@ -31,7 +30,8 @@ CREATE table user (
 );
 
 CREATE TABLE produto(
-    id_peca INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(20),
     imagem VARCHAR(100),
     preco DECIMAL(10,2),
     descricao VARCHAR(100)
@@ -39,26 +39,17 @@ CREATE TABLE produto(
 
 
 CREATE TABLE adotante(
-    id_adotante INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id_ad INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
     id_animal INT,
-    data date,
+    data_adocao date,
 
         FOREIGN KEY (id_user)REFERENCES user (id_user),
         FOREIGN KEY (id_animal)REFERENCES animais (id_animal)
 
 );
 
-CREATE TABLE doacao(
-    id_doacao INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    valor DECIMAL(10,2),
-    data date,
-    forma VARCHAR(20), 
-
-    	FOREIGN KEY (id_user)REFERENCES user (id_user)
-);
-
+/*
 CREATE TABLE entrega(
     id_ent  INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
@@ -68,17 +59,6 @@ CREATE TABLE entrega(
 
 );
 
-CREATE TABLE padrinho(
-    id_padrinho INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    id_animal INT,
-    data date,
-
-        FOREIGN KEY (id_user)REFERENCES user (id_user),
-        FOREIGN KEY (id_animal)REFERENCES animais (id_animal)
-);
-
-
 
 CREATE TABLE vendas(
     id_vendas INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -87,9 +67,10 @@ CREATE TABLE vendas(
     preco_final DECIMAL(10,2),
     frete DECIMAL(10,2),
 
-        	FOREIGN KEY (id_user)REFERENCES user (id_user)
+        FOREIGN KEY (id_user)REFERENCES user (id_user)
 
 );
+*/
 
 
 
