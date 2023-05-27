@@ -3,7 +3,7 @@
 	//Conectando ao banco
 	include_once("../../conexaoBD.php");
 	//Tabela no BD
-	$tabela="user";
+	$tabela="colaboradores";
 	//define campos do insert
 	$campos = "usuario, nome, email, telefone, senha, foto, cep, pais,
     estado, cidade, rua, bairro, numero";
@@ -45,18 +45,25 @@
 			// executando instrução SQL
 			$instrucao = mysqli_query($conexao,$sql);
 		
-				$sql = "select * from $tabela where $campo ='$id'";
-	
-	// executando instrução SQL
-	$instrucao = mysqli_query($conexao,$sql);
+			//concluindo operação
+			if (!$instrucao) 
+			{
+				die(' Query Inválida: ' . mysqli_error($conexao));
 
+			} 
+			else 
+			{
+				mysqli_close($conexao);
+				header ('Location:../login/login.php');
+				exit;
+			}
 		}
 		
 		else 
 		{
 			echo "
 
-			<main style='min-width: 320px; min-height: 20vh; color:white;'>";
+			<main style='min-width: 320px; min-height: 20vh; color:white'>";
 			echo "<h3>Senhas diferentes, por favor digite a mesma senha em ambos os campos<h3>";
 			echo "<img src='./imgs/atenção.png' style='width: 100px;
 			height: 8vh;'>
@@ -94,7 +101,7 @@
           <!--Formulário-->
           
           <div class="caixa-dados">
-            <form action="cadastro.php" method="POST">
+            <form action="" method="POST">
                
     
     
