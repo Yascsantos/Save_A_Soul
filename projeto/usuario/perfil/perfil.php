@@ -17,7 +17,7 @@
 	include_once("../../conexaoBD.php");
 
 	//Tabela no BD
-	$tabela="colaboradores";
+	$tabela="user";
     $campo= "id_user";
 	$id= $_SESSION['id_user'];
 
@@ -83,7 +83,7 @@
                     
                         foreach ($requery as $exibe)
                         {
-                            echo "<img src='".$exibe['foto']."' width='100px' heigth='100px'>";
+                            echo "<a href='img.html'><img src='".$exibe['foto']."' width='100px' heigth='100px'></a> ";
                             echo "<th></th> <th></th>";
                         }
                     

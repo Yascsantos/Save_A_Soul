@@ -51,7 +51,7 @@
       </div>
 
     <div class="caixa-dados">
-    <form action="alter.php" method="POST">
+    <form action="update.php" method="POST">
                
     
     

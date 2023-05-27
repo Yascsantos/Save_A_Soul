@@ -3,7 +3,7 @@
 	//Conectando ao banco
 	include_once("../../conexaoBD.php");
 	//Tabela no BD
-	$tabela="colaboradores";
+	$tabela="user";
 	//define campos do insert
 	$campos = "usuario, nome, email, telefone, senha, foto, cep, pais,
     estado, cidade, rua, bairro, numero";
@@ -45,18 +45,11 @@
 			// executando instrução SQL
 			$instrucao = mysqli_query($conexao,$sql);
 		
-			//concluindo operação
-			if (!$instrucao) 
-			{
-				die(' Query Inválida: ' . mysqli_error($conexao));
+				$sql = "select * from $tabela where $campo ='$id'";
+	
+	// executando instrução SQL
+	$instrucao = mysqli_query($conexao,$sql);
 
-			} 
-			else 
-			{
-				mysqli_close($conexao);
-				header ('Location:../login/login.php');
-				exit;
-			}
 		}
 		
 		else 
