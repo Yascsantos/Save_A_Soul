@@ -9,7 +9,7 @@
 	//Conectando ao banco		
 		include_once("../../../conexaoBD.php"); 
 	//Tabela no BD
-		$tabela="colaboradores"; 
+		$tabela="user"; 
 	//chave primaria
 		$id = "id_user";  
 	//código e/ou id vindo do formulário anterior
