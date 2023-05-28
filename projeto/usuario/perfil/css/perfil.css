@@ -5,9 +5,8 @@
   }
 
   *{
-   
+   padding-left: 0%;
     margin: 0;
-    box-sizing: border-box;
     text-decoration: none
     }
     .logo img{
@@ -29,25 +28,38 @@
       color:#957ec4;
     }
  
-    table img {
+    div img {
       border-radius: 50%;
     }
     
     button{
-    width: 50%;
+    width: 20%;
     height: 47px;
-    background:  hsl(240, 28%, 25%);
+    background:  hsla(240, 26%, 18%, 0.829);
     border-radius: 20px;
     outline: none;
     border: none;
-    margin-top: 15px;
+    margin-top: 10px;
     color: white;
-   margin-left: 20%;
-    font-size: 16px;
+    margin-left: 10%;
+    font-size: 13px;
+    font-family: "Poppins";
 }
-
+button .submit{
+  width: 20%;
+  height: 47px;
+  background:  hsla(240, 26%, 18%, 0.829);
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  color: white;
+  margin-left: 10%;
+  font-size: 13px;
+  font-family: "Poppins";
+}
    .menu{
-    height: 900px;
+    height: 100%;
     display: flex;
     background-color:#362544;
     text-align: justify;
@@ -71,11 +83,11 @@
     margin-left: 32px;
   }
   
- .contener{
+  .contener{
     align-items: center;
     display: flex;
     height:900px;
-    background-color: rgba(255, 255, 255, 0.4);
+   
 
   }
   
@@ -85,7 +97,6 @@
  .perfil  {
     margin-left: 15%;
     width: 50%;
-    height: 730px;
     font-family: "Poppins", sans-serif;
     background-color: white;
     padding: 30px 40px;
@@ -99,7 +110,6 @@
  
   }
 
- 
 
   .alterar {
     font-family: "Poppins", sans-serif;
@@ -120,5 +130,3 @@
   align-items: center;
 
  }
-
-  

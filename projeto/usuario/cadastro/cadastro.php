@@ -101,7 +101,7 @@
           <!--Formulário-->
           
           <div class="caixa-dados">
-            <form action="" method="POST">
+            <form action="cadastro.php" method="POST">
                
     
     

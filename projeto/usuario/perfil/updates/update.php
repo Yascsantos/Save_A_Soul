@@ -8,7 +8,7 @@
     //Conectando ao banco
         include_once("../../../conexaoBD.php");
     //Tabela no BD
-        $tabela="user"; 
+        $tabela="colaboradores"; 
     //chave primaria
         $id = "id_user";  
 

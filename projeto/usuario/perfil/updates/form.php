@@ -9,7 +9,7 @@
 	//Conectando ao banco		
 		include_once("../../../conexaoBD.php"); 
 	//Tabela no BD
-		$tabela="user"; 
+		$tabela="colaboradores"; 
 	//chave primaria
 		$id = "id_user";  
 	//código e/ou id vindo do formulário anterior
@@ -38,6 +38,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/editar.css">
     <title>Editar perfil</title>
+  
 </head>
 <body>
 <main>

@@ -3,15 +3,50 @@
 	<head>
 		<title>Manipulando arquivos</title>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="css/perfil.css" type="text/css">
 	</head>
+	<style>
+		
+		.iframe-containerImg {
+		  display: none;
+		}
+	
+		.iframe-containerImg.showImg {
+		  display: block;
+		}
+		.input-img{
+		width: 50%;
+		height: 15px;
+		background-color: rgba(255, 255, 255, 0.32);
+		border-radius: 20px;
+		outline: none;
+		border: 2px solid transparent;
+		color: #616161;
+		transition: all 0.4s ease;
+		}
+	 input button{
+		width: 50%;
+		height: 47px;
+		background:  hsl(240, 28%, 25%);
+		border-radius: 20px;
+		outline: none;
+		border: none;
+		margin-top: 15px;
+		color: white;
+		margin-left: 20%;
+		font-size: 14px;
+	}
+	
+	  </style>
 	<body>
 		<form action="img.php" method="POST" enctype="multipart/form-data">
 			<label>Título: </label><br />
-			<input type="text" name="titulo" required /><br />
-			<label>Selecione o arquivo: <br />
-			<input type="file" name="arquivo" size="45" /></label> <br />
-			<input type="submit" value="Enviar" name="enviar">
-			<input type="reset" value="Apagar">
+			<input type="text" name="titulo" required class="input-img"/><br />
+			 <label>Selecione o arquivo:</label>
+			<input type="file" name="arquivo" size="45" class="submit"/></label> <br />
+			<button type="submit" value="Enviar" name="enviar">Enviar</button>
+			<button type="reset" value="Apagar">Apagar</button>
 		</form>
+		
 	</body>
 </html>
