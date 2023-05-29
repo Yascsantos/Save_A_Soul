@@ -34,7 +34,7 @@
     
     button{
     width: 20%;
-    height: 47px;
+    height: 25px;
     background:  hsla(240, 26%, 18%, 0.829);
     border-radius: 20px;
     outline: none;
@@ -98,7 +98,7 @@ button .submit{
     margin-left: 15%;
     width: 50%;
     font-family: "Poppins", sans-serif;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 30px 40px;
     text-align: justify;
     border-style: solid;
@@ -118,6 +118,7 @@ button .submit{
     font-size: 0.9rem;
     font-weight:600;
     color:#432d72;
+  
   }
   .alterar:hover{
     color:#816daa; 
@@ -130,3 +131,4 @@ button .submit{
   align-items: center;
 
  }
+
