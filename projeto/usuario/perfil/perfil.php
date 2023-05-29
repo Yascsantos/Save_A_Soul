@@ -44,12 +44,11 @@
     function exibirIframe() {
       var iframeContainer = document.getElementById("iframeContainer");
       iframeContainer.style.display = "block";
-      iframeContainer.innerHTML = '<iframe src="endereco.php"></iframe>';
     }
   </script>
-    <title>perfil</title>
+    <title>Perfil</title>
     <style>
-    <style>
+  
     #iframeContainer {
       display: none;
     }
@@ -121,7 +120,7 @@
   </div>
 </div>
 
-<div>
+<div class="dados">
           <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?><br>
 		
 
@@ -134,10 +133,10 @@
 
        Senha:  <?php foreach ($instrucao as $exibe){ echo $exibe['senha'];}?></p></b> 
        <br>
+      </div>
        <button onclick="exibirIframe()">Exibir endereco</button>
-  <div id="iframeContainer"></div>
- 
-       </div>
+  <div id="iframeContainer"><iframe src="endereco.php"></iframe></div>
+
     
 
 <a href='./updates/form.php' class="submit"><button type='button'>Editar</button></a>

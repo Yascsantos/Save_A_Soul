@@ -44,9 +44,6 @@
  </style>
 <body>
 <div id='endereco'>
- 
-
-
     
         <b><p>CEP: <?php foreach ($instrucao as $exibe){ echo $exibe['cep'];}?><br>
 
