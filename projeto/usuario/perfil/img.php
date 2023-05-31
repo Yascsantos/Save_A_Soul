@@ -36,8 +36,9 @@
 		else 
 		{
 			mysqli_close($conexao);
-			header("Location: img.php");
+			echo '<div class="msg"><p>Sucesso!</p></div>';
 			exit;
+
 		}	
 	}
 	
