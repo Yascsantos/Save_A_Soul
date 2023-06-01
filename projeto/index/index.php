@@ -19,7 +19,7 @@
         <div class="logo"><img src="./imgs/logo.png"  ></div>
 
      <ul class="nav-list">
-          <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>;
+          <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>
           <li> <a href="../sobre/sobre.html">SOBRE</a></li>
           <li> <a href="#">AJUDA</a></li>
        </ul>

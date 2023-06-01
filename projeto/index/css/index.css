@@ -27,7 +27,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui,  Helvetica, Arial, sans-serif;
+    font-family: 'Poppins';
     height: 14vh;
 
   }
@@ -61,7 +61,7 @@
   }
   
   a{
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-size: 0.9rem;
     text-decoration:none;
     font-size: 0.9rem;

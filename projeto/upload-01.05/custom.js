@@ -22,8 +22,12 @@ function ajax_file_upload(file_obj){
         xhttp.onload = function(event){
             oOutput = document.querySelector('img-content');
             if (xhttp.status== 200 && this.responseText != "error"){
-                oOutput.innerHTML = "<img scr='"+this.responseText +"' alt='Image'/>"
+                oOutput.innerHTML = "<img src='"+ this.responseText +"' alt='Image' />";
+            } else {
+                oOutput.innerHTML = "Ocorreu um erro ao tentar enviar seu arquivo.";
             }
         }
+    
+        xhttp.send(form_data);
     }
 }
