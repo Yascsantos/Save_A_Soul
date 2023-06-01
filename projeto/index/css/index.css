@@ -11,7 +11,7 @@
 
   #menu{
     width:100%;
-    background-color:#362544;
+    background-color:#efe6eb;
    align-items: center;
    height:100px;
    
@@ -149,11 +149,11 @@ align-items: center;
 }
 .rodape{
   height: 40vh;
-  background-color:#362544;
+  background-color:#efe6eb;
 }
 /*  sessão footer  */
 footer{
-  background-color:#362544;
+  background-color:#efe6eb;
   padding: 100px 100px;
   color: #fff;
  
