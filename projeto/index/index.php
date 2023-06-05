@@ -72,7 +72,9 @@
         <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
 
         <footer >
+        <div class="logo"><img src="./imgs/logo.png"  ></div>
                       <ul class="lista_informacoes">
+                     
                         <li> <span class="material-symbols-outlined">pin_drop </span>Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</li><br>
                         <li><span class="material-symbols-outlined">call</span>Telefone: (11) 96150-4684 </li><br>
                         <li><span class="material-symbols-outlined">mail </span>Email: saveasoul2023@gmail.com</li><br>
