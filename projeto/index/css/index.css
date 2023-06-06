@@ -11,14 +11,15 @@
 
   #menu{
     width:100%;
-    background-color:#362544;
+    background-color:#efe6eb;
    align-items: center;
    height:100px;
    
   }
-  .logo img{
-    width: 14vh;
-    height:14vh;
+  .logo img {
+    
+    width: 150px;
+    height:150px;
    
   }
 
@@ -27,7 +28,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: system-ui,  Helvetica, Arial, sans-serif;
+    font-family: 'Poppins';
     height: 14vh;
 
   }
@@ -61,12 +62,12 @@
   }
   
   a{
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-size: 0.9rem;
     text-decoration:none;
     font-size: 0.9rem;
     font-weight:600;
-    color:#bca5ec;
+    color:#826990;
   }
  
   a:hover{
@@ -74,8 +75,8 @@
   }
 
  .inicio{
-    background-image:  url(../imgs/dog.jpg);
-    background-size: cover;
+  background-image:  url(../imgs/dog.jpg);
+  background-size: cover;
     background-position: center;
     height: 80vh;
     width: 100%;
@@ -142,18 +143,19 @@ align-items: center;
 
 .caixa button {
   border-radius: 6vh;
-  background-color: #312646;
+  background-color: #efe6eb;
   height: 5vh;
   width: 25vh;
+  border-color:#efe6eb;
 
 }
 .rodape{
   height: 40vh;
-  background-color:#362544;
+  background-color:#efe6eb;
 }
 /*  sessão footer  */
 footer{
-  background-color:#362544;
+  background-color:#efe6eb;
   padding: 100px 100px;
   color: #fff;
  
@@ -168,7 +170,7 @@ span{
   font-family: 'Righteous', 'cursive';
   font-size:40px;
   font-weight:600;
-  color: #9683e9dc;
+  color: #826990;
   left: 50%;
 }
 footer span a:hover{
@@ -184,7 +186,7 @@ background-size:100%;
   font-family: 'Poppins', sans-serif;
   font-size:16px;
   font-weight:400;
-  color: #c1b6f1dc;
+  color: #826990;
   display: flex;
 list-style: none;
 letter-spacing: 3px;
