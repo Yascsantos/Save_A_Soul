@@ -72,7 +72,7 @@
         <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
 
         <footer >
-        <div class="logo"><img src="./imgs/logo.png"  ></div>
+        <div class="logo"><img src="./imgs/logo.png"  >
                       <ul class="lista_informacoes">
                      
                         <li> <span class="material-symbols-outlined">pin_drop </span>Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</li><br>
@@ -82,7 +82,7 @@
                        
                         <a  href="https://br.pinterest.com/daianemagalhaesdecastro/fotos-do-site/"><i  class="fa fa-pinterest fa-stack-1x">Imagens tiradas do Pinterest</i></a>
                       </ul>
-
+                      </div>
           
           
        
