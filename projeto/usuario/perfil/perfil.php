@@ -37,6 +37,9 @@
     <link rel="stylesheet" href="css/perfil.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     function recarregarParte() {
       location.reload();
@@ -126,9 +129,9 @@
 
        <p>Nome:  <?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?><br>
 
-		E-mail:  <?php foreach ($instrucao as $exibe){ echo $exibe['email'];}?><br>
+		      E-mail:  <?php foreach ($instrucao as $exibe){ echo $exibe['email'];}?><br>
 			
-           Telefone:  <?php foreach ($instrucao as $exibe){ echo $exibe['telefone'];}?>
+          Telefone:  <?php foreach ($instrucao as $exibe){ echo $exibe['telefone'];}?>
 		<br>
 
        Senha:  <?php foreach ($instrucao as $exibe){ echo $exibe['senha'];}?></p></b> 
