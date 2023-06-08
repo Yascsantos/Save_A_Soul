@@ -13,7 +13,7 @@ CREATE table animais(
 
 );
 
-CREATE table users (
+CREATE table user (
     id_user INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     usuario VARCHAR(50),
     nome VARCHAR(50),
