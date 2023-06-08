@@ -17,7 +17,7 @@
 	include_once("../../conexaoBD.php");
 
 	//Tabela no BD
-	$tabela="colaboradores";
+	$tabela="user";
     $campo= "id_user";
 	$id= $_SESSION['id_user'];
 
