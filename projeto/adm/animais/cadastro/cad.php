@@ -21,10 +21,9 @@
     else 
     {
         mysqli_close($conexao);
-        header ('Location:../login/login.php');
+        echo "Animal cadastrado com sucesso";
+        /*header ('Location:../login/login.php');*/
         exit;
     }
-    
-
 
 ?>

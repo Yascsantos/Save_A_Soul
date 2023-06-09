@@ -80,7 +80,7 @@
     <br>
     <li> <a href='#'>AJUDA</a></li>
     <br>
-    <li> <a href="msg.html">SAIR</a></li>
+    <li> <a href="logoff/msg.html">SAIR</a></li>
 
 </ul>
 
