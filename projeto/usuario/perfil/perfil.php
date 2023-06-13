@@ -1,31 +1,25 @@
 
 <?php
-    //iniciação de sessão
 	if(!isset($_SESSION))
     {
         session_start();
     }
 
-    //verificação de usuário existente ou não 
     if ($_SESSION['id_user'] == 0 or  $_SESSION['id_user'] == "")
     {
         header("Location: ../login/login.php");
 
     }
 
-    //Conectando ao banco
-	include_once("../../conexaoBD.php");
-
-	//Tabela no BD
-	$tabela="colaboradores";
+    
+    include_once("../../conexaoBD.php");
+    $tabela="user";
     $campo= "id_user";
-	$id= $_SESSION['id_user'];
+    $id= $_SESSION['id_user'];
 
-	//Script de uma busca em uma tabela no Banco de Dados
-	$sql = "select * from $tabela where $campo ='$id'";
-	
-	// executando instrução SQL
-	$instrucao = mysqli_query($conexao,$sql);
+    $sql = "select * from $tabela where $campo ='$id'";
+    
+    $instrucao = mysqli_query($conexao,$sql);
 ?>
 
 <!DOCTYPE html>
@@ -37,6 +31,9 @@
     <link rel="stylesheet" href="css/perfil.css" type="text/css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     function recarregarParte() {
       location.reload();
@@ -77,7 +74,7 @@
     <br>
     <li> <a href='#'>AJUDA</a></li>
     <br>
-    <li> <a href="msg.html">SAIR</a></li>
+    <li> <a href="logoff/msg.html">SAIR</a></li>
 
 </ul>
 
@@ -91,8 +88,7 @@
         <!--Colocando a imagem padrão do perfil -->
   <?php
   
-                        $sql_query = "select * from $tabela where $campo ='$id'";
-                        // executando instrução SQL
+                        $sql_query = "SELECT * FROM $tabela WHERE $campo ='$id'";
                         $requery = mysqli_query($conexao,$sql_query);
                     
                         foreach ($requery as $exibe)
@@ -126,9 +122,9 @@
 
        <p>Nome:  <?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?><br>
 
-		E-mail:  <?php foreach ($instrucao as $exibe){ echo $exibe['email'];}?><br>
+		      E-mail:  <?php foreach ($instrucao as $exibe){ echo $exibe['email'];}?><br>
 			
-           Telefone:  <?php foreach ($instrucao as $exibe){ echo $exibe['telefone'];}?>
+          Telefone:  <?php foreach ($instrucao as $exibe){ echo $exibe['telefone'];}?>
 		<br>
 
        Senha:  <?php foreach ($instrucao as $exibe){ echo $exibe['senha'];}?></p></b> 

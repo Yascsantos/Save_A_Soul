@@ -1,12 +1,11 @@
 <?php
-	//iniciação de sessão para trás o ID para a alteração
 	if(!isset($_SESSION))
     {
         session_start();
     }
 
 	include_once('../../conexaoBD.php');
-	$tabela="colaboradores";
+	$tabela="user";
 	$campos = "foto";
 	$diretorio = "../img"; 
 

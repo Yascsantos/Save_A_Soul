@@ -1,9 +1,7 @@
-<!--EXECUÇÃO DE PHP-->
 <?php
     include_once("../../conexaoBD.php");
 ?>
 
-<!--FORMULÁRIO DE LOGIN-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -41,12 +39,10 @@
    
 </body>
 
-<!--EXECUÇÃO DE PHP-->
 <?php
-
     if(isset($_POST['usuario']) || isset($_POST['senha']))
     {
-        // mensagem caso os campos sejam enviados vazios
+        
         if(strlen($_POST['usuario']) == 0 && strlen($_POST['senha']) == 0  )
         {
             echo "<main class='erro'><h3>Preencha seus dados</h3>
@@ -56,15 +52,12 @@
 
     else 
     {
-            //selecionando o usuário e a senha 
             $usuario= $conexao->real_escape_string($_POST['usuario']);
             $senha= $conexao->real_escape_string($_POST['senha']);
 
-            $sql_code= "SELECT * FROM colaboradores WHERE usuario= '$usuario' AND senha='$senha'";
+            $sql_code= "SELECT * FROM user WHERE usuario= '$usuario' AND senha='$senha'";
             $sql_query= $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
-            
-            //selecionando o usuário e a senha     
             $quantidade= $sql_query->num_rows;
 
             if($quantidade == 1)
@@ -77,7 +70,6 @@
                 }
 
                 $_SESSION['id_user'] = $usuario['id_user'];
-                $_SESSION['usuario'] = $usuario['usuario'];
 
 
                 header("Location: ../../index/index.php");
