@@ -66,23 +66,27 @@ img{
     border-radius: 10%;
     transform: translateX(-50%);
   }
-  .vitimas, .produto, footer{
+   .produto, footer{
     font-family: 'Roboto', sans-serif;
   }
-  .vitimas .vitimas-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
 
-
+.ajude button {
+  width: 50%;
+  height: 47px;
+  background:  #826993;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: "Poppins";
+}
  
   nav {
     display: flex;
@@ -166,45 +170,7 @@ img{
   
 
   /*  sessão sobre  */
-  .vitimas .vitimas-content .left{
-    width: 45%;
-}
-.vitimas .vitimas-content .right{
-    width: 55%;
-}
-.vitimas .vitimas-content .right .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.vitimas .vitimas-content .right p{
-  font-size: 20px;
-  font-family: 'Righteous';
-    text-align: justify;
-    color: rgba(136, 127, 127, 0.815);
-
-}
-.vitimas .vitimas-content .right i{
-    display: inline-block;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 50;
-    margin-top: 20px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-.vitimas .vitimas-content .v{
-    color:  rgb(36, 24, 24);
-    background: rgb(248, 228, 190);
-}
-.vitimas .vitimas-content .left img{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 6px;
-}
- 
+  
 .ajude .title::after{
    
   content: "a nós";

@@ -123,20 +123,7 @@
                       </div>
           </section>
 
-          <section class="vitimas" id="vitimas">
-        <div class="max-width">
-            <div class="vitimas-content">
-                <div class="column left">
-                  <img src="./imgs/dog2.jpg"  >
-                </div>
-                <div class="column right">
-                    <div class="text-3"><span class="typing-2"></span></div>
-                    <p> São Paulo contabiliza aumento de 15,6% nas denúncias de maus-tratos em 2021.</p>
-                        
-                </div>
-            </div>
-        </div>
-    </section>
+         
 
 
     <section class="ajude" id="ajude">
@@ -148,7 +135,7 @@
                     <div class="box">
                         <img src="./imgs/dog4.jpg" alt="">
                        
-                        <button> <a href="#"> <p>Doe</p></a></button>
+                        <button class='submit'> <a href="#"> <p>Doe</p></a></button>
                     </div>
                 </div>
                 <div class="card">
@@ -171,7 +158,6 @@
 
 
     
-        <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
 
         <footer >
                       <ul class="lista_informacoes">
