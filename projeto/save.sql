@@ -3,13 +3,6 @@ DROP DATABASE if EXISTS save;
 CREATE DATABASE save;
 USE save;
 
-CREATE table animais(
-    id_animal INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    nome  VARCHAR(30),
-    /*idade DECIMAL(10,2),*/
-    historia VARCHAR(1000)
-);
-
 CREATE table user (
     id_user INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     usuario VARCHAR(50),
@@ -27,23 +20,56 @@ CREATE table user (
     numero VARCHAR(10)
 );
 
+CREATE TABLE categoria (
+	id_cat INT  PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(50)
+);
+
+CREATE TABLE descricao (
+	id_desc INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	texto VARCHAR(2000)
+);
 CREATE TABLE produto(
     id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    img VARCHAR(100),
+    tipo VARCHAR(50),
     preco DECIMAL(10,2),
-    descricao VARCHAR(100)
+    id_cat INT, 
+    id_desc INT, 
+    	 
+    	FOREIGN KEY (id_desc)REFERENCES descricao (id_desc),
+		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)  	 
+);
+
+CREATE TABLE imgpro (
+	id_imgpro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	img VARCHAR(100),
+	id_pro INT,
+	
+	FOREIGN KEY (id_pro)REFERENCES produto (id_pro)
+);
+
+CREATE table animal (
+    id_ani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome  VARCHAR(30),
+    historia VARCHAR(1000)
+);
+
+CREATE TABLE imgani (
+	id_imgani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	img VARCHAR(100),
+	id_ani INT,
+	
+	FOREIGN KEY (id_ani)REFERENCES animal (id_ani)
 );
 
 
-/*
-CREATE TABLE adotante(
-    id_adotante INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+CREATE TABLE adocao(
+    id_ado INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
-    id_animal INT,
-    data date,
+    hora TIME,
+    data_ent DATE, /*data da entrevista*/
 
-        FOREIGN KEY (id_user)REFERENCES user (id_user),
-        FOREIGN KEY (id_animal)REFERENCES animais (id_animal)
+        FOREIGN KEY (id_user)REFERENCES user (id_user)
 
 );
-*/
+
