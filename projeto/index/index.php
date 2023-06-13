@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HI!</title>
+    <title>Início| Save a Soul</title>
     <link rel="icon" type="imagem/png" href="index/imgs/Amora.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css" type="text/css"></head>
 </head>
 <style>
@@ -94,12 +94,13 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+  
 </style>
 <body>
-<main>
 <header id="menu">
       <nav >
-        <div class="logo"><img src="./imgs/logo.png"  ></div>
+   <img src="./imgs/logo.png" >
         <div class="mobile-menu">
               <div class="line1"></div>
               <div class="line2"></div>
@@ -107,7 +108,8 @@
              
             </div>
      <ul class="nav-list">
-          <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>
+     <a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a>
+       
           <li> <a href="../sobre/sobre.html">SOBRE</a></li>
           <li> <a href="#">AJUDA</a></li>
        </ul>
@@ -117,28 +119,27 @@
            <section class="inicio" id="inicio">
                       <div class="max-width">
                       <div class="inicio-content">
-                      <div class="text-3">Nos ajude a dar uma vida <br>com mais <span class="typing"></span></div> 
                       </div>
                       </div>
           </section>
 
-          <section class="receitas" id="receitas">
+          <section class="vitimas" id="vitimas">
         <div class="max-width">
-            <div class="receitas-content">
+            <div class="vitimas-content">
                 <div class="column left">
                   <img src="./imgs/dog2.jpg"  >
                 </div>
                 <div class="column right">
                     <div class="text-3"><span class="typing-2"></span></div>
-                    <p> São Paulo contabiliza aumento de 15,6% nas denúncias de maus-tratosa em 2021.</p>
+                    <p> São Paulo contabiliza aumento de 15,6% nas denúncias de maus-tratos em 2021.</p>
                         
                 </div>
             </div>
         </div>
     </section>
 
-    
-    <section class="produto" id="produto">
+
+    <section class="ajude" id="ajude">
   
   <div class="max-width">
                 <h2 class="title">Junte-se</h2>
@@ -169,40 +170,15 @@
   </section>
 
 
-          <div class="sobre">
-          <br>
-            <h2>Junte-se a nós</h2><br>
-            
-            <p>Seja um doador, padrinho ou colaborador e transforme vidas todos os dias.</p>
-
-        </div>
-
-        <div class="ajude">
-                            <div class="caixa">
-                            <button> <a href="#"> <p>Doe</p></a></button>
-                            <img src="./imgs/dog3.jpg">
-                              </div>
-                          <div class="caixa">
-                          <button> <a href="#"><p>Seja voluntário</p></a></button>
-                              <img src="./imgs/dog4.jpg" alt="">
-                          </div>
-                            <div class="caixa">
-                            <button><a href="#"><p>Adote</p></a></button>
-                                <img src="./imgs/dog5.jpg" alt="">
-                            </div>
-                            
-        </div>
+    
         <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>  <br><br>
 
         <footer >
-        <div class="logo"><img src="./imgs/logo.png"  >
                       <ul class="lista_informacoes">
                      
                         <li> <span class="material-symbols-outlined">pin_drop </span>Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</li><br>
                         <li><span class="material-symbols-outlined">call</span>Telefone: (11) 96150-4684 </li><br>
                         <li><span class="material-symbols-outlined">mail </span>Email: saveasoul2023@gmail.com</li><br>
-                     
-                       
                         <a  href="https://br.pinterest.com/daianemagalhaesdecastro/fotos-do-site/"><i  class="fa fa-pinterest fa-stack-1x">Imagens tiradas do Pinterest</i></a>
                       </ul>
                       </div>
