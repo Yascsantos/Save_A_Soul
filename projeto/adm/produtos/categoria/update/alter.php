@@ -4,19 +4,20 @@
 	$id = "id_cat"; 
     $campo="nome";
 	$edit = $_GET['codigo'];
-    
+
 		
     $sqlPesq = "SELECT $campo FROM $tabela WHERE $id= $edit";
 	$pesquisa = mysqli_query($conexao,$sqlPesq);
 	
-	if (!$pesquisa)
+	if ($pesquisa)
 	{
-		die(' Query Inválida: ' . mysqli_error($conexao));
+        echo "Deu certo";
+		
 	} 
 
     else 
     {
-        echo "Deu certo";
+        die(' Query Inválida: ' . mysqli_error($conexao));
     }
 	
 	if (isset($_POST['alterar'])) {
