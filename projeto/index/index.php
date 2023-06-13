@@ -10,14 +10,102 @@
     
     <link rel="stylesheet" href="css/index.css" type="text/css"></head>
 </head>
+<style>
+      @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .mobile-menu.active .line1 {
+      transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobile-menu.active .line2 {
+      opacity: 0;
+    }
+    
+    .mobile-menu.active .line3 {
+      transform: rotate(45deg) translate(-5px, -7px);
+    }
+   
+    @media (max-width: 1300px){
+      .navbar .max-width{
+          margin-left: 0;
+      }
+  }
+  
+  
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background-color:#cbacaad3;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+</style>
 <body>
 <main>
 <header id="menu">
-      
-
       <nav >
         <div class="logo"><img src="./imgs/logo.png"  ></div>
-
+        <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+             
+            </div>
      <ul class="nav-list">
           <li ><a href="../usuario/perfil/perfil.php">PERFIL </a></li>
           <li> <a href="../sobre/sobre.html">SOBRE</a></li>
@@ -26,25 +114,60 @@
 
        </nav>
 </header>
-<section>
-        <div class="inicio">
-        <img scr="../imgs/dog.jpg">
-        <p class="texto"><b>Nos ajude a dar a vida que eles merecem!</b> </p>
+           <section class="inicio" id="inicio">
+                      <div class="max-width">
+                      <div class="inicio-content">
+                      <div class="text-3">Nos ajude a dar uma vida <br>com mais <span class="typing"></span></div> 
+                      </div>
+                      </div>
+          </section>
+
+          <section class="receitas" id="receitas">
+        <div class="max-width">
+            <div class="receitas-content">
+                <div class="column left">
+                  <img src="./imgs/dog2.jpg"  >
+                </div>
+                <div class="column right">
+                    <div class="text-3"><span class="typing-2"></span></div>
+                    <p> São Paulo contabiliza aumento de 15,6% nas denúncias de maus-tratosa em 2021.</p>
+                        
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="sobre">
-          
-          <img scr="./imgs/linha.png">
+    
+    <section class="produto" id="produto">
+  
+  <div class="max-width">
+                <h2 class="title">Junte-se</h2>
+              <div class="carousel owl-carousel ">
+                  <div class="card">
+                    <div class="box">
+                        <img src="./imgs/dog4.jpg" alt="">
+                       
+                        <button> <a href="#"> <p>Doe</p></a></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="./imgs/dog5.jpg" alt="">
+                        <button> <a href="#"><p>Seja voluntário</p></a></button>
+                    </div>
+                    </div>
+                    <div class="card">
+                      <div class="box">
+                          <img src="./imgs/dog3.jpg" alt="">
+                          <button><a href="#"><p>Adote</p></a></button>
+                      </div>
+                </div>
+             
+            
+    </div>
+  
+  </section>
 
-        </div>
-          
-
-        <div class="vitimas">
-            <img scr="./imgs/dog2.jpg">
-            <h2>Vítimas que só aumentam</h2>
-
-          <p class="text"><i>São Paulo contabiliza aumento de 15,6% nas denúncias de maus-tratosa em 2021.</i> </p>
-          </div>
 
           <div class="sobre">
           <br>
@@ -87,3 +210,12 @@
 </footer>
 </body>
 </html>
+<script src="js/mobile-navbar.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
