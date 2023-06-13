@@ -1,9 +1,7 @@
-<!--EXECUÇÃO DE PHP-->
 <?php
     include_once("../../conexaoBD.php");
 ?>
 
-<!--FORMULÁRIO DE LOGIN-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -42,7 +40,6 @@
 </body>
 
 <?php
-
     if(isset($_POST['usuario']) || isset($_POST['senha']))
     {
         

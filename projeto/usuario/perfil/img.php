@@ -1,5 +1,4 @@
 <?php
-	//iniciação de sessão para trás o ID para a alteração
 	if(!isset($_SESSION))
     {
         session_start();
