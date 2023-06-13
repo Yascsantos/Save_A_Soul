@@ -4,6 +4,7 @@
 	$id = "id_cat"; 
     $campo="nome";
 	$edit = $_GET['codigo'];
+    
 		
     $sqlPesq = "SELECT $campo FROM $tabela WHERE $id= $edit";
 	$pesquisa = mysqli_query($conexao,$sqlPesq);
@@ -52,6 +53,7 @@
     <h1>Cadastro de categorias</h1>
     <form action="" method="post">
         <input type="hidden" name="codigo" value="<?= $edit;?>" />
+
         <label>Categoria: </label> <br>
         <input type="text" placeholder="Mude a categoria" name="nome">
         <input type="submit" name="alterar" value="Alterar categoria">
