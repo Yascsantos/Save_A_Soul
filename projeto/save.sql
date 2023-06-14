@@ -3,17 +3,7 @@ DROP DATABASE if EXISTS save;
 CREATE DATABASE save;
 USE save;
 
-CREATE table animais(
-    id_animal INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    nome  VARCHAR(30),
-    historia VARCHAR(1000),
-    idade DECIMAL(10,2),
-    tratamentos VARCHAR(80),
-    doencas VARCHAR(80)
-
-);
-
-CREATE table colaboradores (
+CREATE table user (
     id_user INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     usuario VARCHAR(50),
     nome VARCHAR(50),
@@ -21,168 +11,65 @@ CREATE table colaboradores (
     telefone VARCHAR(20),
     senha VARCHAR(20),
     foto VARCHAR(100),
-    cep INT (8),
+    cep VARCHAR(8),
     pais VARCHAR(20),
     estado VARCHAR(5),
     cidade VARCHAR(50),
     bairro VARCHAR(20),
     rua VARCHAR(30),
-    numero INT
+    numero VARCHAR(10)
 );
 
-CREATE TABLE produto(
-    id_peca INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    imagem VARCHAR(100),
-    preco DECIMAL(10,2),
-    descricao VARCHAR(100)
+CREATE TABLE categoria (
+	id_cat INT  PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	nome VARCHAR(50)
 );
 
-
-CREATE TABLE adotante(
-    id_adotante INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    id_animal INT,
-    data date,
-
-        FOREIGN KEY (id_user)REFERENCES colaboradores (id_user),
-        FOREIGN KEY (id_animal)REFERENCES animais (id_animal)
-
+CREATE TABLE descricao (
+	id_desc INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	texto VARCHAR(2000)
 );
-
-CREATE TABLE doacao(
-    id_doacao INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    valor DECIMAL(10,2),
-    data date,
-    forma VARCHAR(20), 
-
-    	FOREIGN KEY (id_user)REFERENCES colaboradores (id_user)
-);
-
-CREATE TABLE entrega(
-    id_ent  INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    frete DECIMAL(10,2),
-
-        	FOREIGN KEY (id_user)REFERENCES colaboradores (id_user)
-
-);
-
-CREATE TABLE padrinho(
-    id_padrinho INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    id_animal INT,
-    data date,
-
-        FOREIGN KEY (id_user)REFERENCES colaboradores (id_user),
-        FOREIGN KEY (id_animal)REFERENCES animais (id_animal)
-);
-
-
-
-CREATE TABLE vendas(
-    id_vendas INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    quantidade INT,
-    preco_final DECIMAL(10,2),
-    frete DECIMAL(10,2),
-
-        	FOREIGN KEY (id_user)REFERENCES colaboradores (id_user)
-
-);
-
-DROP DATABASE if EXISTS save; 
-
-CREATE DATABASE save;
-USE save;
-
-CREATE table animais(
-    id_animal INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    nome  VARCHAR(30),
-    historia VARCHAR(1000),
-    idade DECIMAL(10,2)
-);
-
-CREATE table colaboradores (
-    id_user INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    usuario VARCHAR(50),
-    nome VARCHAR(50),
-    email VARCHAR(40),
-    telefone VARCHAR(20),
-    senha VARCHAR(20),
-    foto VARCHAR(100),
-    cep INT (8),
-    pais VARCHAR(20),
-    estado VARCHAR(5),
-    cidade VARCHAR(50),
-    bairro VARCHAR(20),
-    rua VARCHAR(30),
-    numero INT
-);
-
 CREATE TABLE produto(
     id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    imagem VARCHAR(100),
+    tipo VARCHAR(50),
     preco DECIMAL(10,2),
-    descricao VARCHAR(100)
+    id_cat INT, 
+    id_desc INT, 
+    	 
+    	FOREIGN KEY (id_desc)REFERENCES descricao (id_desc),
+		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)  	 
 );
 
-CREATE TABLE entrega(
-    id_ent  INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+CREATE TABLE imgpro (
+	id_imgpro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	img VARCHAR(100),
+	id_pro INT,
+	
+	FOREIGN KEY (id_pro)REFERENCES produto (id_pro)
+);
+
+CREATE table animal (
+    id_ani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome  VARCHAR(30),
+    historia VARCHAR(1000)
+);
+
+CREATE TABLE imgani (
+	id_imgani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	img VARCHAR(100),
+	id_ani INT,
+	
+	FOREIGN KEY (id_ani)REFERENCES animal (id_ani)
+);
+
+
+CREATE TABLE adocao(
+    id_ado INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
-    frete DECIMAL(10,2),
+    hora TIME,
+    data_ent DATE, /*data da entrevista*/
 
-        	FOREIGN KEY (id_user)REFERENCES colaboradores (id_user)
-
-);
-
-
-CREATE TABLE adotante(
-    id_adotante INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    id_animal INT,
-    data date,
-
-        FOREIGN KEY (id_user)REFERENCES colaboradores (id_user),
-        FOREIGN KEY (id_animal)REFERENCES animais (id_animal)
+        FOREIGN KEY (id_user)REFERENCES user (id_user)
 
 );
-
-CREATE TABLE doacao(
-    id_doacao INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    valor DECIMAL(10,2),
-    data date,
-    forma VARCHAR(20), 
-
-    	FOREIGN KEY (id_user)REFERENCES colaboradores (id_user)
-);
-
-
-
-CREATE TABLE padrinho(
-    id_padrinho INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    id_animal INT,
-    data date,
-
-        FOREIGN KEY (id_user)REFERENCES colaboradores (id_user),
-        FOREIGN KEY (id_animal)REFERENCES animais (id_animal)
-);
-
-
-/*
-CREATE TABLE vendas(
-    id_vendas INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    quantidade INT,
-    preco_final DECIMAL(10,2),
-    frete DECIMAL(10,2),
-
-        	FOREIGN KEY (id_user)REFERENCES colaboradores (id_user)
-        	
-);
-*/
-
-
 
