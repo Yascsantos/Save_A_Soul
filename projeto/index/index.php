@@ -109,9 +109,9 @@
             </div>
      <ul class="nav-list">
      <a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a>
-       
           <li> <a href="../sobre/sobre.html">SOBRE</a></li>
-          <li> <a href="#">AJUDA</a></li>
+          <li> <a href="#">DOE</a></li>
+          <li> <a href="#">ADOTE</a></li>
        </ul>
 
        </nav>
