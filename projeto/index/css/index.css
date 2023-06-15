@@ -20,14 +20,14 @@
 
 #menu{
   width:100%;
-background: #adb5a0;
- height:110px;
+  background: #adb5a0;
+  height:110px;
  
 }
 img{
   width:100px;
   height:100px;
- 
+margin-top:auto;
 }
 
 
@@ -100,11 +100,13 @@ img{
   .nav-list {
     list-style: none;
     display: flex;
+    margin-top: auto;
   }
   
   .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+   
   }
   
   .mobile-menu {
