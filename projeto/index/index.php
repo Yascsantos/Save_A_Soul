@@ -108,10 +108,12 @@
              
             </div>
      <ul class="nav-list">
-     <a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a>
           <li> <a href="../sobre/sobre.php">SOBRE</a></li>
           <li> <a href="#">DOE</a></li>
           <li> <a href="#">ADOTE</a></li>
+          <li> <a href="#">PETSHOP</a></li>
+          <a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a>
+        
        </ul>
 
        </nav>
