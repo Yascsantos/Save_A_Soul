@@ -180,7 +180,12 @@ font-weight: 500;
 
 */
 
-
+.ajude{
+  background-image:url(../imgs/fundo3.jpg);
+  background-position:top left ;
+  background-repeat: no-repeat;
+  background-size: 700px 100%;
+}
 
 .ajude .title::after{
    
