@@ -146,33 +146,42 @@ margin-top:auto;
     background-size: cover;
     background-position: center;
     background-image: url(../imgs/fundo2.jpg);
-    display: flex;
     height: 700px;
-    color: #fff;
     min-height: 500px;
-    font-family: 'Poppins';
+
 }
 .inicio .max-width{
-  left: 50%;
+    left: 50%;
     margin: 30px;
+
   
 }
 
-
-.inicio .inicio-content .text-3{
-    font-size: 40px;
-    margin: 15px 0;
-}
-.inicio .inicio-content .text-3 span{
-  color:#826990ab;
-  font-weight: 500;
-}
-
-
   
+/*.sobre{
+  height: 700px;
+  min-height: 500px;
+ background:  linear-gradient(to right, #d9a18a , #fff7f4, #ecded3);
+}
+.sobre .max-width{
+  left: 50%;
+  margin: 30px;
 
-  /*  sessão sobre  */
-  
+
+}
+.sobre .sobre-content .text-3{
+  font-size: 40px;
+  margin: 15px 0;
+}
+.sobre .sobre-content .text-3 span{
+color:#826990ab;
+font-weight: 500;
+}
+
+*/
+
+
+
 .ajude .title::after{
    
   content: "a nós";
@@ -221,7 +230,7 @@ margin-top: 20px;
 width: 14px;
 height: 14px;
 outline: none!important;
-border-radius: 50%;
+border-radius: 100%;
 border: 2px solid #adb5a0!important;
 transition: all 0.3s ease;
 }
