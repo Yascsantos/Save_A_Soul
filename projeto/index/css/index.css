@@ -148,7 +148,7 @@ margin-top:auto;
     background-image: url(../imgs/fundo2.jpg);
     height: 700px;
     min-height: 500px;
-
+  
 }
 .inicio .max-width{
     left: 50%;
@@ -182,9 +182,12 @@ font-weight: 500;
 
 .ajude{
   background-image:url(../imgs/fundo3.jpg);
-  background-position:top left ;
+  background-position:-28px -65px;
   background-repeat: no-repeat;
-  background-size: 700px 100%;
+  background-size:105% 110%;
+  height: 700px;
+    min-height: 500px;
+    
 }
 
 .ajude .title::after{
