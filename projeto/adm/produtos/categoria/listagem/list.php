@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de categorias</title>
+</head>
+<body>
+    <h1> Listagem das categorias dos produtos </h1>
+    <a href="../pg.html"> Voltar </a> <br>
+    <a href="../cadastro/form.html"> Cadastrar </a>
+    <br> <br>
+
 <?php
     include_once("../../../../conexaoBD.php");
     $sql= "SELECT * FROM categoria";
@@ -39,15 +52,6 @@
 
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de categorias</title>
-</head>
-<body>
 
 </body>
 </html>

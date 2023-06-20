@@ -2,42 +2,40 @@
 	include_once("../../../../conexaoBD.php");
 	$tabela="categoria";
 	$id = "id_cat"; 
-    $campo="nome";
+    $pesq="nome";
 	$edit = $_GET['codigo'];
 
 		
-    $sqlPesq = "SELECT $campo FROM $tabela WHERE $id= $edit";
+    $sqlPesq = "SELECT $pesq FROM $tabela WHERE $id= $edit";
 	$pesquisa = mysqli_query($conexao,$sqlPesq);
 	
-	if ($pesquisa)
+	if (!$pesquisa)
 	{
-        echo "Deu certo";
+        die(' Query Inválida: ' . mysqli_error($conexao));
 		
 	} 
-
-    else 
-    {
-        die(' Query Inválida: ' . mysqli_error($conexao));
-    }
 	
-	if (isset($_POST['alterar'])) {
+	if (isset($_POST['alterar'])) 
+    {
 		$codigo = $_POST['codigo'];
 		$nome = $_POST['nome'];
 		
 		$sql = "UPDATE $tabela SET 
-			nome = '$nome',
+			nome = '$nome' 
 			WHERE $id = $codigo";
 			
 		$instrucao = mysqli_query($conexao,$sql);
 		
-		if (!$instrucao) {
+		if (!$instrucao) 
+        {
 			die(' Query Inválida: ' . mysqli_error($conexao));
 	
 		} 
         else 
         {
 			mysqli_close($conexao);
-            echo "Mudança realidaza com sucesso";
+            header ('location: ../listagem/list.php');
+
 			exit;
 		}
 	}	

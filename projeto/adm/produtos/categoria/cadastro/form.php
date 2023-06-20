@@ -20,10 +20,7 @@
 	else 
 	{
 		mysqli_close($conexao);
-		echo "A categoria foi cadastrada com sucesso <br> <br>";
-		echo "<a href='../pg.html'>Voltar</a> <br>";
-		echo "<a href='../listagem/list.php'>Listagem</a>";
-
+		header ('location: ../listagem/list.php');
 		exit;
 	}
 ?>

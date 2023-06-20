@@ -31,7 +31,7 @@ CREATE TABLE descricao (
 );
 CREATE TABLE produto(
     id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    tipo VARCHAR(50),
+    nome VARCHAR(50),
     preco DECIMAL(10,2),
     id_cat INT, 
     id_desc INT, 
