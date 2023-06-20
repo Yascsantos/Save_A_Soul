@@ -1,47 +1,112 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+
 *{
    
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none
+
   }
 
-  #menu{
-    width:100%;
-    background-color:#efe6eb;
-   align-items: center;
-   height:100px;
-   
-  }
-  .logo img {
-    
-    width: 150px;
-    height:150px;
-   
-  }
+  html{
+    scroll-behavior: smooth;
+}
+
+#menu{
+  width:100%;
+  background: #adb5a0;
+  height:110px;
+ 
+}
+img{
+  width:100px;
+  height:100px;
+margin-top:auto;
+}
 
 
+
+  /*  todos os codigos similares  */
+  section{
+    padding: 100px 0;
+  }
+  section .title{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+  }
+  section .title::after{
+    position: absolute;
+    bottom:-12px;
+    left: 50%;
+    font-size: 20px;
+    background:  #b684b5c5;
+    color: #f1e8ec;
+    padding: 5px;
+    border-radius: 10%;
+    transform: translateX(-50%);
+  }
+   .produto, footer{
+    font-family: 'Roboto', sans-serif;
+  }
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.ajude button {
+  width: 50%;
+  height: 47px;
+  background:  #826993;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: "Poppins";
+}
+ 
   nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Poppins';
-    height: 14vh;
-
+    height: 12vh;
   }
   
 
   .nav-list {
     list-style: none;
     display: flex;
+    margin-top: auto;
   }
   
   .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+   
   }
   
   .mobile-menu {
@@ -61,146 +126,236 @@
     transform: translateX(0);
   }
   
+
+
   a{
-    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins';
     font-size: 0.9rem;
     text-decoration:none;
     font-size: 0.9rem;
     font-weight:600;
-    color:#826990;
+    color:#f2d4ec;
   }
  
   a:hover{
-    color:#957ec4;
+    color:#efe6eb;
   }
 
- .inicio{
-  background-image:  url(../imgs/dog.jpg);
-  background-size: cover;
-    background-position: center;
-    height: 80vh;
-    width: 100%;
-    color: #fff;
-    font-family: 'Poppins';
-
- }
-
-  .texto{
-    font-size: 30px;
-    margin: 250px;
-    text-align: center;
- }
  
- .sobre{
-  text-align: center;
-  height: 30vh;
-  font-family: 'Poppins';
-  
- }
- .sobre img{
-align-items: center;
-  height: 30vh;
-  width: 100%;
-  
- }
-
- .vitimas {
-    background-image:  url(../imgs/dog2.jpg);
+  .inicio{
     background-size: cover;
     background-position: center;
-    height: 40vh;
-    width: 100%;
-    color: #fff;
-    font-family: 'Poppins';
-    text-align: center;
+    background-image: url(../imgs/fundo2.jpg);
+    height: 700px;
+    min-height: 500px;
+  
+}
+.inicio .max-width{
+    left: 50%;
+    margin: 30px;
 
- }
- .vitimas .text{
-  text-align: center;
-  height: 30vh;
-  margin: 55px;
-  font-size: 20px;
+  
+}
 
- }
+  
+/*.sobre{
+  height: 700px;
+  min-height: 500px;
+ background:  linear-gradient(to right, #d9a18a , #fff7f4, #ecded3);
+}
+.sobre .max-width{
+  left: 50%;
+  margin: 30px;
+
+
+}
+.sobre .sobre-content .text-3{
+  font-size: 40px;
+  margin: 15px 0;
+}
+.sobre .sobre-content .text-3 span{
+color:#826990ab;
+font-weight: 500;
+}
+
+*/
+
 .ajude{
-  width: 100px;
-  height: 100px;
-  display:flex;
-  margin: 10px;
-}
-.caixa{
-  width: 40vh;
-  height: 40vh;
-  margin: 8vh;
-  text-align: center;
+  background-image:url(../imgs/fundo3.jpg);
+  background-position:-28px -65px;
+  background-repeat: no-repeat;
+  background-size:105% 110%;
+  height: 700px;
+    min-height: 500px;
+    
 }
 
- .caixa img{
-  width: 40vh;
-  height: 40vh;
-
+.ajude .title::after{
+   
+  content: "a nós";
+}
+.ajude .carousel .card{
+background: 826990;
+ border-radius: 6px;
+ padding: 25px 35px;
+ text-align: center;
+ transition: all 0.3s ease;
+}
+.ajude .carousel .card:hover{
+  background: #efe6eb;
+}
+.ajude .carousel .card img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #efe6eb;
+  transition: all 0.3s ease;
+}
+.ajude .carousel .card:hover img{
+  border-color: #fff;
+}
+.ajude .carousel .card .box{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+transition: all 0.3s ease;
+}
+.ajude .carousel .card:hover .box{
+transform: scale(1.05);
+}
+.ajude .carousel .card .text{
+font-size: 25px;
+font-weight: 500;
+margin: 10px 0 7px 0;
+}
+.owl-dots{
+text-align: center;
+margin-top: 20px;
+}
+.owl-dot{
+width: 14px;
+height: 14px;
+outline: none!important;
+border-radius: 100%;
+border: 2px solid #adb5a0!important;
+transition: all 0.3s ease;
+}
+.owl-dot.active{
+width: 35px;
+border-radius: 15px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+background:#adb5a0!important;
 }
 
-.caixa button {
-  border-radius: 6vh;
-  background-color: #efe6eb;
-  height: 5vh;
-  width: 25vh;
-  border-color:#efe6eb;
 
-}
-.rodape{
-  height: 40vh;
-  background-color:#efe6eb;
-}
+
+
+
 /*  sessão footer  */
 footer{
-  background-color:#efe6eb;
-  padding: 100px 100px;
-  color: #fff;
- 
+background: #adb5a0;
+padding: 100px 100px;
+color: #fff;
+
 }
 footer span a{
-  color: #9683e9dc;
-  text-decoration: none;
-  text-align: center;
- 
+color: #adb5a0;
+text-decoration: none;
+text-align: center;
+
 }
 span{
-  font-family: 'Righteous', 'cursive';
-  font-size:40px;
-  font-weight:600;
-  color: #826990;
-  left: 50%;
+font-family: 'Righteous', 'cursive';
+font-size:40px;
+font-weight:600;
+color:white;
+left: 50%;
 }
 footer span a:hover{
-  text-decoration: underline;
-}
-footer img{
-  width:200px;
-  height:250px;
-background-size:100%;
+text-decoration: underline;
 }
 
 .lista_informacoes li{
-  font-family: 'Poppins', sans-serif;
-  font-size:16px;
-  font-weight:400;
-  color: #826990;
-  display: flex;
+font-family: 'Poppins', sans-serif;
+font-size:16px;
+font-weight:400;
+color:white;
+display: flex;
 list-style: none;
 letter-spacing: 3px;
 margin-left: 32px;
 
 }
- 
- 
 
-  .fa-pinterest {
-    border-top:1px solid hsl(0, 100%, 95%);
-    margin-top:75px;
-    width: 100%;
-    color: #9f8fe7dc;
-    left:0%;
+
+
+.fa-pinterest {
+  border-top:1px solid hsl(0, 100%, 95%);
+  margin-top:75px;
+  width: 100%;
+  color:white;
+  left:0%;
+}
+/* Responsivo */
+@media (max-width: 947px){
+  
+  .inicio .inicio-content .text-2{
+      font-size: 70px;
+  }
+  .inicio .inicio-content .text-3{
+      font-size: 35px;
+  }
+  .inicio .inicio-content a{
+      font-size: 23px;
+      padding: 10px 30px;
+  }
+  .vitimas .vitimas-content .column{
+      width: 50%;
+  }
+  .vitimas .vitimas-content .left{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 60px;
+  }
+  .vitimas .vitimas-content .right{
+      flex: 100%;
   }
 
+  .funcao .funcao-content .column{
+      width: 100%;
+      margin-bottom: 35px;
+  }
+  footer{
+      margin-top: 15px;
+  }
+}
+@media (max-width: 690px){
+  .inicio .inicio-content .text-2{
+      font-size: 60px;
+  }
+  .inicio .inicio-content .text-3{
+      font-size: 32px;
+  }
+  .inicio .inicio-content a{
+      font-size: 20px;
+  }
+ 
+}
+@media (max-width: 500px){
+    .inicio .inicio-content .text-2{
+        font-size: 50px;
+    }
+    .inicio .inicio-content .text-3{
+        font-size: 27px;
+    }
+}
+@media (max-width: 1104px){
+  .vitimas .vitimas-content .left img{
+      width: 350px;
+      height: 350px;
+  }
+}
