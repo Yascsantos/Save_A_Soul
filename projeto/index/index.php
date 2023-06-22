@@ -113,7 +113,7 @@
           <li> <a href="#">ADOTE</a></li>
           <li> <a href="#">PETSHOP</a></li>
           <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
-        
+          <br>
        </ul>
 
        </nav>

@@ -21,11 +21,11 @@ $(document).ready(function(){
                 items:2,
                 nav:false
             },
+        
             1000:{
-                items:3,
+                items:4,
                 nav:false
             }
-           
         }
     });
    

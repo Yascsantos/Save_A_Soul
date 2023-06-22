@@ -62,6 +62,7 @@
   width:100%;
   background: #adb5a0;
   height:110px;
+
  
 }
 img{
@@ -94,12 +95,13 @@ margin-top:auto;
   .nav-list {
     list-style: none;
     display: flex;
-    margin-top: auto;
+  
   }
   
   .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+    margin-top: auto;
    
   }
   
@@ -137,11 +139,12 @@ margin-top:auto;
 
  
   .inicio{
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size:105% 110%;
     background-position: center;
     background-image: url(../imgs/fundo2.jpg);
-    height: 700px;
-    min-height: 500px;
+ 
+    min-height: 700px;
   
 }
 .inicio .max-width{
@@ -151,17 +154,14 @@ margin-top:auto;
   
 }
 
-  
-
-
 .ajude{
   background-image:url(../imgs/fundo3.jpg);
   background-position:-28px -65px;
   background-repeat: no-repeat;
   background-size:105% 110%;
   height: 700px;
-    min-height: 500px;
-    
+  min-height: 500px;
+ 
 }
 
 .ajude .title::after{
@@ -169,7 +169,7 @@ margin-top:auto;
   content: "a nós";
 }
 .ajude .carousel .card{
-background: 826990;
+
  border-radius: 6px;
  padding: 25px 35px;
  text-align: center;
@@ -205,24 +205,23 @@ font-weight: 500;
 margin: 10px 0 7px 0;
 }
 .owl-dots{
-text-align: center;
-margin-top: 20px;
+  align-items: center;
+  margin-top: 20px;
 }
 .owl-dot{
-  width: 13px;
-  height: 13px;
-outline: none!important;
-border-radius: 100%;
-border: 2px solid #adb5a0!important;
-transition: all 0.3s ease;
+  width: 14px;
+  height: 14px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid #adb5a0!important;
+  transition: all 0.3s ease;
 }
 .owl-dot.active{
-width: 35px;
-border-radius: 15px;
+  width: 35px;
+  border-radius: 15px;
 }
-.owl-dot.active,
-.owl-dot:hover{
-background:#adb5a0!important;
+.owl-dot.active, .owl-dot:hover{
+  background:#adb5a0!important;
 }
 
 
