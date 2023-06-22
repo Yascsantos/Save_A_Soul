@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
@@ -17,21 +16,6 @@
   html{
     scroll-behavior: smooth;
 }
-
-#menu{
-  width:100%;
-  background: #adb5a0;
-  height:110px;
- 
-}
-img{
-  width:100px;
-  height:100px;
-margin-top:auto;
-}
-
-
-
   /*  todos os codigos similares  */
   section{
     padding: 100px 0;
@@ -66,14 +50,24 @@ margin-top:auto;
     border-radius: 10%;
     transform: translateX(-50%);
   }
-   .produto, footer{
-    font-family: 'Roboto', sans-serif;
-  }
+
 
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+}
+
+#menu{
+  width:100%;
+  background: #adb5a0;
+  height:110px;
+ 
+}
+img{
+  width:100px;
+  height:100px;
+margin-top:auto;
 }
 
 .ajude button {
@@ -158,27 +152,7 @@ margin-top:auto;
 }
 
   
-/*.sobre{
-  height: 700px;
-  min-height: 500px;
- background:  linear-gradient(to right, #d9a18a , #fff7f4, #ecded3);
-}
-.sobre .max-width{
-  left: 50%;
-  margin: 30px;
 
-
-}
-.sobre .sobre-content .text-3{
-  font-size: 40px;
-  margin: 15px 0;
-}
-.sobre .sobre-content .text-3 span{
-color:#826990ab;
-font-weight: 500;
-}
-
-*/
 
 .ajude{
   background-image:url(../imgs/fundo3.jpg);
@@ -235,8 +209,8 @@ text-align: center;
 margin-top: 20px;
 }
 .owl-dot{
-width: 14px;
-height: 14px;
+  width: 13px;
+  height: 13px;
 outline: none!important;
 border-radius: 100%;
 border: 2px solid #adb5a0!important;
@@ -313,22 +287,19 @@ margin-left: 32px;
       font-size: 23px;
       padding: 10px 30px;
   }
-  .vitimas .vitimas-content .column{
+  .ajude .ajude-content .column{
       width: 50%;
   }
-  .vitimas .vitimas-content .left{
+  .ajude .ajude-content .left{
       display: flex;
       justify-content: center;
       margin: 0 auto 60px;
   }
-  .vitimas .vitimas-content .right{
+  .ajude .ajude-content .right{
       flex: 100%;
   }
 
-  .funcao .funcao-content .column{
-      width: 100%;
-      margin-bottom: 35px;
-  }
+
   footer{
       margin-top: 15px;
   }
@@ -354,7 +325,7 @@ margin-left: 32px;
     }
 }
 @media (max-width: 1104px){
-  .vitimas .vitimas-content .left img{
+  .ajude .ajude-content .left img{
       width: 350px;
       height: 350px;
   }

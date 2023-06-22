@@ -15,8 +15,8 @@ html{
     padding: 0 80px;
     margin: auto;
 }
-body{
-    background-image: url(../video/fundo.jpg) ;
+/*body{
+    background-image: url(../imgs/fundo2.jpg) ;
     background-size: cover;
     background-position: center;
    }
@@ -66,7 +66,7 @@ body{
     color: rgb(66, 64, 56);
 }
 .navbar.sticky .menu li a:hover{
-    font-family: system-ui,-apple-system, Helvetica, Arial, sans-serif;
+    font-family: 'Poppins';
     font-size: 0.9rem;
     text-decoration:none;
     font-size: 0.9rem;
@@ -75,21 +75,22 @@ body{
 
 }
 
-   
-/*  Home   inicio  */
+
 .inicio{
-    display: flex;
-    background: url(../video/logo.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    background-image: url(../imgs/fundo2.jpg);
+    height: 700px;
     min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
- 
+  
 }
 .inicio .max-width{
-    margin: auto 0 auto 40px;
+    left: 50%;
+    margin: 30px;
+
+  
 }
+
 .inicio .inicio-content .text-1{
     font-size: 27px;
     color: #fffefef5;
@@ -233,61 +234,7 @@ section .title::after{
     border-radius: 6px;
 }
 
-/*  sessão função  */
-.funcao .title::after{
-    content: "de apresentação";
-}
-.funcao .funcao-content .column{
-    width: calc(50% - 30px);
-}
-.funcao .funcao-content .left .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.funcao .funcao-content .left p{
-    text-align: justify;
-}
 
-.funcao .funcao-content .right .bars{
-    margin-bottom: 15px;
-}
-.funcao .funcao-content .right .info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.funcao .funcao-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.funcao .funcao-content .right .line{
-    width: 100%;
-    height: 5px;
-    background: #ccc;
-    position: relative;
-}
-.funcao .funcao-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #ad7d7ba2;
-}
-.funcao .funcao-content .right .html::before{
-    width: 100%;
-}
-.funcao .funcao-content .right .css::before{
-    width: 100%;
-}
-
-.funcao .funcao-content .right .php::before{
-    width: 100%;
-}
-.funcao .funcao-content .right .mysql::before{
-    width: 100%;
-}
 /*  sessão equipe  */
 .equipe .title::after{
     content: "Integrantes";

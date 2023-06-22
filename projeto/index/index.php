@@ -112,7 +112,7 @@
           <li> <a href="#">DOE</a></li>
           <li> <a href="#">ADOTE</a></li>
           <li> <a href="#">PETSHOP</a></li>
-          <a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a>
+          <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
         
        </ul>
 
@@ -149,6 +149,12 @@
                       <div class="box">
                           <img src="./imgs/dog3.jpg" alt="">
                           <button><a href="#"><p>Adote</p></a></button>
+                      </div>
+                </div>
+                <div class="card">
+                      <div class="box">
+                          <img src="./imgs/dog6.jpg" alt="">
+                          <button><a href="#"><p>Petshop</p></a></button>
                       </div>
                 </div>
              

@@ -81,73 +81,26 @@ background-color:#fff;
          <div class="carousel owl-carousel ">
                <div class="card">
                    <div class="box">
-                       <img src="video/img-1.jpg" alt="">
+                       <img src="imgs/img-1.jpg" alt="">
                        <div class="text">Yasmin</div>
                        <p>Responsavel pelo Backend (Parte de conexão e programação do site).</p>
                    </div>
                </div>
                 <div class="card">
                     <div class="box">
-                        <img src="video/img-2.jpg" alt="">
+                        <img src="imgs/img-2.jpg" alt="">
                         <div class="text">Winicius</div>
                         <p>Responsavel pelo Backend ( banco de dados do site).</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="video/img-3.jpeg" alt="">
+                        <img src="imgs/img-3.jpeg" alt="">
                         <div class="text">Daiane</div>
                         <p>Responsavel pelo Frontend (Estilização do site).</p>
                     </div>
                 </div>
         </div>
-    </section>
-     <!--sessão função-->
-     <section class="funcao" id="funcao">
-        <div class="max-width">
-            <h2 class="title">Podcast</h2>
-            <div class="funcao-content">
-                <div class="column left">
-                    <div class="text">Aperte o play para escutar nosso podcast de apresentação.</div>
-                    <p></p>
-                    <a href=""></a><audio controls>
-                        <source  src="video/audio_sobre.mp3" type="audio/mp3">
-                    </audio></a>
-                    
-                </div>
-                <div class="column right">
-                   <div class="bars">
-                       <div class="info">
-                           <span>Daiane-HTML</span>
-                           <span>100%</span>
-                       </div>
-                       <div class="line html"></div>
-                   </div>
-                   <div class="bars">
-                    <div class="info">
-                        <span>Daiane-CSS</span>
-                        <span>100%</span>
-                    </div>
-                    <div class="line css"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>Yasmin-PHP</span>
-                        <span>100%</span>
-                    </div>
-                    <div class="line php"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>Winicius-MySQL</span>
-                        <span>100%</span>
-                    </div>
-                    <div class="line mysql"></div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
