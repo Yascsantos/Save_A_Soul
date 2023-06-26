@@ -153,11 +153,21 @@ margin-top:auto;
 
   
 }
-
-.ajude{
+.sobre{
   background-image:url(../imgs/fundo3.jpg);
   background-position:-28px -65px;
   background-repeat: no-repeat;
+  background-size:105% 110%;
+  height: 500px;
+  min-height: 500px;
+  font-family:'Poppins' ;
+ text-align: center;
+
+}
+
+
+.ajude{
+  
   background-size:105% 110%;
   height: 700px;
   min-height: 500px;
