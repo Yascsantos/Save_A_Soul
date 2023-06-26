@@ -126,6 +126,21 @@
           </section>
 
       
+    <section class="sobre" id="sobre">
+  
+  <div class="max-width">
+                <h2 class="title">Sobre</h2>
+              <p>  A Save a Soul tem como objetivo principal o resgate e a reabilitação de animais que foram abandonados e/ou maltratados, <br>
+        com a finalidade de disponibilizá-los para adoção responsável. <br>
+        Para isso, todos os animais resgatados são submetidos a uma triagem rigorosa, <br>
+        que inclui exames médicos, consulta veterinária para vacinação e castração,  além de avaliação comportamental. <br>
+        Após esse processo, eles são encaminhados para lares temporários. <br>
+        Vale ressaltar que, para a Save a Soul, a saúde emocional dos animais é tão importante quanto a saúde física, e,
+        <br> por isso, a associação também se dedica a proporcionar um ambiente seguro e acolhedor para esses animais,
+        <br> visando a sua recuperação integral e bem-estar geral.</p>
+  
+  </section>
+
 
     <section class="ajude" id="ajude">
   
