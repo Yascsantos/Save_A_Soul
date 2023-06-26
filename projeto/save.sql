@@ -3,6 +3,7 @@ DROP DATABASE if EXISTS save;
 CREATE DATABASE save;
 USE save;
 
+/*USUÁRIO*/
 CREATE table user (
     id_user INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     usuario VARCHAR(50),
@@ -20,6 +21,9 @@ CREATE table user (
     numero VARCHAR(10)
 );
 
+
+
+/*PRODUTO*/
 CREATE TABLE categoria (
 	id_cat INT  PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	nome VARCHAR(50)
@@ -29,6 +33,7 @@ CREATE TABLE descricao (
 	id_desc INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	texto VARCHAR(2000)
 );
+
 CREATE TABLE produto(
     id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome VARCHAR(50),
@@ -48,6 +53,8 @@ CREATE TABLE imgpro (
 	FOREIGN KEY (id_pro)REFERENCES produto (id_pro)
 );
 
+
+/*ANIMAL*/
 CREATE table animal (
     id_ani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome  VARCHAR(30),
@@ -63,13 +70,37 @@ CREATE TABLE imgani (
 );
 
 
+/*FUNÇÕES*/
+/*adoção*/
 CREATE TABLE adocao(
     id_ado INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
     hora TIME,
-    data_ent DATE, /*data da entrevista*/
+    data_entr DATE, /*data da entrevista*/
 
         FOREIGN KEY (id_user)REFERENCES user (id_user)
 
+);
+
+CREATE TABLE descricao_ado (
+	id_descad INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	texto VARCHAR(2000)
+);
+
+
+/*lar voluntário*/
+CREATE TABLE voluntario(
+    id_vol INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id_user INT,
+    hora TIME,
+    data_entr DATE, /*data da entrevista*/
+
+        FOREIGN KEY (id_user)REFERENCES user (id_user)
+
+);
+
+CREATE TABLE descricao_vol (
+	id_descvol INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	texto VARCHAR(2000)
 );
 
