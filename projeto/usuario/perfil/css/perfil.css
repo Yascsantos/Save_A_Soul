@@ -28,10 +28,15 @@
       color:#957ec4;
     }
  
-    div img {
+    div .img {
       border-radius: 50%;
     }
-    
+    div .img {
+      border-radius: 50%;
+      width:100px ;
+      height:100px;
+      text-align: center;
+    }
     button{
     width: 20%;
     height: 25px;

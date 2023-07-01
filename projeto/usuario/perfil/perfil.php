@@ -22,6 +22,7 @@
     $instrucao = mysqli_query($conexao,$sql);
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,21 +30,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/perfil.css" type="text/css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Perfil</title>
   <script>
-    function recarregarParte() {
-      location.reload();
-    }
-    function exibirIframe() {
+  
+    function exibirEnd() {
       var iframeContainer = document.getElementById("iframeContainer");
       iframeContainer.style.display = "block";
     }
   </script>
-    <title>Perfil</title>
+   
     <style>
   
     #iframeContainer {
@@ -87,34 +82,129 @@
                   
         <!--Colocando a imagem padrão do perfil -->
   <?php
-  
-                        $sql_query = "SELECT * FROM $tabela WHERE $campo ='$id'";
+                $sql_query = "SELECT * FROM $tabela WHERE $campo ='$id'";
                         $requery = mysqli_query($conexao,$sql_query);
                     
                         foreach ($requery as $exibe)
                         {
-                            echo "<a href='img.html'><img src='".$exibe['foto']."' width='100px' heigth='100px'></a> ";
-                        
+                            echo "<div class='img' style='background-image: url(".$exibe['foto']."')><a onclick='openPopup()'>Editar</a></div> ";
+                           echo "
+                           <html>
+                           <style>
+                          
+                        .popup label {
+                            display: block;
+                            margin-bottom: 10px;
                         }
+                
                     
+                            .enviar{
+                              background:#180f1f;
+                              width: 20%;
+                              height: 25px;
+                              border-radius: 20px;
+                              outline: none;
+                              border: none;
+                              margin-top: 15px;
+                              color: white;
+                             margin-left: 20%;
+                              font-size: 14px;
+                            }
+                            .popup {
+                              width: 300px;
+                              padding: 20px;
+                              background-color: #fff;
+                              border: 1px solid #ccc;
+                              position: absolute;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                              text-align: center;
+                            }
+                        
+                            .popup h1 {
+                              color: #333;
+                            }
+                        
+                            .popup p {
+                              color: #777;
+                            }
+                        
+                          
+                            
+                        </style>
+                           <body>
+                           <button onclick='location.reload()'>Atualizar</button>
+                               <div id='popupContainer' style='display: none;''>
+                                   <div  class='popup' >
+                                   <form action='perfil.php' method='POST' >
+			                           <br>
+			                           <b><label>Título: </label></b>
+                                   <input type='text' name='titulo' required class='input-text'/>
+                                   <input type='file' name='arquivo' size='45' class='input-arq'>
+                                   
+                                   <button type='submit' value='Enviar' name='enviar' class='enviar'>Enviar</button
+                                       </form><button onclick='closePopup()'>Fechar</button>
+                                   </div>
+                               </div>
+                           
+                               <script>
+                                   function openPopup() {
+                                       document.getElementById('popupContainer').style.display = 'block';
+                                   }
+                           
+                                   function closePopup() {
+                                       document.getElementById('popupContainer').style.display = 'none';
+                                   }
+                               </script>
+                           </body>
+                           </html>";
+                        }
+   	if(!isset($_SESSION))
+    {
+        session_start();
+    }
+
+	include_once('../../conexaoBD.php');
+	$tabela="user";
+	$campos = "foto";
+	$diretorio = "../img"; 
+
+	$id = "id_user";  
+	$id_user = $_SESSION['id_user'];
+
+
+	if(isset($_POST['enviar'])){
+		$titulo = $_POST['titulo'];
+		
+		$extensao = strtolower(substr($_FILES['arquivo']["name"], -4));
+		
+		$novo_nome = $titulo .$extensao; 
+		$arquivo = $diretorio.$novo_nome;
+		
+		move_uploaded_file($_FILES['arquivo']["tmp_name"], $arquivo); 
+		
+		$sql= "UPDATE $tabela SET foto = '$arquivo' WHERE $id = '$id_user'";
+		
+		$instrucao = mysqli_query($conexao,$sql);
+		
+		if (!$instrucao) 
+		{
+			die(' Query Inválida: ' . mysqli_error($conexao));
+			echo 'Falha ao enviar arquivo!';
+		} 
+		else 
+		{
+			mysqli_close($conexao);
+			echo '<div class="msg"><p>Sucesso!</p></div>';
+			exit;
+
+		}	
+	}
+        
                ?>
 
-      <!-- Botão para abrir o popup -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Editar imagem</button>
 
-<!-- Popup -->
-<div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Conteúdo do popup -->
-      <div class="modal-body">
-        <iframe src="img.php" width="560" height="100px" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-        <button type="button"  onclick="recarregarParte()">Atualizar</button>
-    </div>
-  </div>
-</div>
 
 <div class="dados">
           <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?><br>
@@ -130,7 +220,7 @@
        Senha:  <?php foreach ($instrucao as $exibe){ echo $exibe['senha'];}?></p></b> 
        <br>
       </div>
-       <button onclick="exibirIframe()">Exibir endereco</button>
+       <a class='end' onclick="exibirEnd()">EXEBIR ENDEREÇO</a>
   <div id="iframeContainer"><iframe src="endereco.php"></iframe></div>
 
     
@@ -139,8 +229,32 @@
            
     
   
-
+<button onclick="showPopup()">Sair</button>
        </form>
    
+
+  
+
+  <div id="sairPopup" class="popup" style="display: none;">
+    <h1>Tem certeza que deseja fazer logoff?</h1>
+    <p>Todas as suas sessões ativas serão encerradas.</p>
+    <button onclick="performSair()">Sim</button>
+    <button onclick="hidePopup()">Não</button>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('sairPopup').style.display = 'block';
+    }
+
+    function hidePopup() {
+      document.getElementById('sairPopup').style.display = 'none';
+    }
+
+    function performSair() {
+    
+      window.location.href = '../../index/index.php';
+    }
+  </script>
 </body>
 </html>
