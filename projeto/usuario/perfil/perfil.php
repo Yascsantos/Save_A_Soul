@@ -1,4 +1,44 @@
-
+<?php if(!isset($_SESSION))
+                        {
+                            session_start();
+                        }
+                    
+                      include_once('../../conexaoBD.php');
+                      $tabela='user';
+                      $campos = 'foto';
+                      $diretorio = './img'; 
+                    
+                      $id = "id_user";  
+                      $id_user = $_SESSION['id_user'];
+                    
+                    
+                      if(isset($_POST['enviar'])){
+                        $titulo = $_POST['titulo'];
+                        
+                        $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
+                        
+                        $novo_nome = $titulo .$extensao; 
+                        $arquivo = $diretorio.$novo_nome;
+                        
+                        move_uploaded_file($_FILES['arquivo']['tmp_name'], $arquivo); 
+                        
+                        $sql= "UPDATE $tabela SET foto = '$arquivo' WHERE $id = '$id_user'";
+                        
+                        $instrucao = mysqli_query($conexao,$sql);
+                        
+                        if (!$instrucao) 
+                        {
+                          die(' Query Inválida: ' . mysqli_error($conexao));
+                          echo 'Falha ao enviar arquivo!';
+                        } 
+                        else 
+                        {
+                          mysqli_close($conexao);
+                          echo '<p>Sucesso!</p>';
+                          exit;
+                    
+                        }	
+                      } ?>
 <?php
 	if(!isset($_SESSION))
     {
@@ -69,7 +109,6 @@
     <br>
     <li> <a href='#'>AJUDA</a></li>
     <br>
-    <li> <a href="logoff/msg.html">SAIR</a></li>
 
 </ul>
 
@@ -87,7 +126,7 @@
                     
                         foreach ($requery as $exibe)
                         {
-                            echo "<div class='img' style='background-image: url(".$exibe['foto']."')><a onclick='openPopup()'>Editar</a></div> ";
+                            echo "<div class='img' style='background-image: url(".$exibe['foto']."')><b><a onclick='openPopup()'>Editar</a><b></div> ";
                            echo "
                            <html>
                            <style>
@@ -98,18 +137,6 @@
                         }
                 
                     
-                            .enviar{
-                              background:#180f1f;
-                              width: 20%;
-                              height: 25px;
-                              border-radius: 20px;
-                              outline: none;
-                              border: none;
-                              margin-top: 15px;
-                              color: white;
-                             margin-left: 20%;
-                              font-size: 14px;
-                            }
                             .popup {
                               width: 300px;
                               padding: 20px;
@@ -143,7 +170,7 @@
                                    <input type='text' name='titulo' required class='input-text'/>
                                    <input type='file' name='arquivo' size='45' class='input-arq'>
                                    
-                                   <button type='submit' value='Enviar' name='enviar' class='enviar'>Enviar</button
+                                   <button type='submit' value='Enviar' name='enviar' >Enviar</button
                                        </form><button onclick='closePopup()'>Fechar</button>
                                    </div>
                                </div>
@@ -160,49 +187,7 @@
                            </body>
                            </html>";
                         }
-   	if(!isset($_SESSION))
-    {
-        session_start();
-    }
-
-	include_once('../../conexaoBD.php');
-	$tabela="user";
-	$campos = "foto";
-	$diretorio = "../img"; 
-
-	$id = "id_user";  
-	$id_user = $_SESSION['id_user'];
-
-
-	if(isset($_POST['enviar'])){
-		$titulo = $_POST['titulo'];
-		
-		$extensao = strtolower(substr($_FILES['arquivo']["name"], -4));
-		
-		$novo_nome = $titulo .$extensao; 
-		$arquivo = $diretorio.$novo_nome;
-		
-		move_uploaded_file($_FILES['arquivo']["tmp_name"], $arquivo); 
-		
-		$sql= "UPDATE $tabela SET foto = '$arquivo' WHERE $id = '$id_user'";
-		
-		$instrucao = mysqli_query($conexao,$sql);
-		
-		if (!$instrucao) 
-		{
-			die(' Query Inválida: ' . mysqli_error($conexao));
-			echo 'Falha ao enviar arquivo!';
-		} 
-		else 
-		{
-			mysqli_close($conexao);
-			echo '<div class="msg"><p>Sucesso!</p></div>';
-			exit;
-
-		}	
-	}
-        
-               ?>
+                      ?>
 
 
 
@@ -236,7 +221,7 @@
   
 
   <div id="sairPopup" class="popup" style="display: none;">
-    <h1>Tem certeza que deseja fazer logoff?</h1>
+    <h3>Tem certeza que deseja fazer Sair?</h3>
     <p>Todas as suas sessões ativas serão encerradas.</p>
     <button onclick="performSair()">Sim</button>
     <button onclick="hidePopup()">Não</button>
