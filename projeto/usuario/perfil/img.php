@@ -7,7 +7,6 @@
 	include_once('../../conexaoBD.php');
 	$tabela="user";
 	$campos = "foto";
-
 	$id = "id_user";  
 	$id_user = $_SESSION['id_user'];
 

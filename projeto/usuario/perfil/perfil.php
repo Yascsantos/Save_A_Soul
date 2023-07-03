@@ -1,44 +1,4 @@
-<?php if(!isset($_SESSION))
-                        {
-                            session_start();
-                        }
-                    
-                      include_once('../../conexaoBD.php');
-                      $tabela='user';
-                      $campos = 'foto';
-                      $diretorio = './img'; 
-                    
-                      $id = "id_user";  
-                      $id_user = $_SESSION['id_user'];
-                    
-                    
-                      if(isset($_POST['enviar'])){
-                        $titulo = $_POST['titulo'];
-                        
-                        $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
-                        
-                        $novo_nome = $titulo .$extensao; 
-                        $arquivo = $diretorio.$novo_nome;
-                        
-                        move_uploaded_file($_FILES['arquivo']['tmp_name'], $arquivo); 
-                        
-                        $sql= "UPDATE $tabela SET foto = '$arquivo' WHERE $id = '$id_user'";
-                        
-                        $instrucao = mysqli_query($conexao,$sql);
-                        
-                        if (!$instrucao) 
-                        {
-                          die(' Query Inválida: ' . mysqli_error($conexao));
-                          echo 'Falha ao enviar arquivo!';
-                        } 
-                        else 
-                        {
-                          mysqli_close($conexao);
-                          echo '<p>Sucesso!</p>';
-                          exit;
-                    
-                        }	
-                      } ?>
+
 <?php
 	if(!isset($_SESSION))
     {
@@ -164,14 +124,8 @@
                            <button onclick='location.reload()'>Atualizar</button>
                                <div id='popupContainer' style='display: none;''>
                                    <div  class='popup' >
-                                <form action='img.php' method='POST' >
-                                  <br>
-                                  <b><label>Título: </label></b>
-                                    <input type='text' name='titulo' required class='input-text'/>
-                                    <input type='file' name='arquivo' size='45' class='input-arq'>
-                                    
-                                    <button type='submit' value='enviar' name='Enviar' >Enviar</button>
-                                </form><button onclick='closePopup()'>Fechar</button>
+                                 <iframe src='img.php'></iframe>
+                                   <button onclick='closePopup()'>Fechar</button>
                                    </div>
                                </div>
                            
