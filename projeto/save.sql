@@ -32,7 +32,7 @@ CREATE TABLE categoria (
 CREATE TABLE produto(
     id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_cat INT, 
-    nome VARCHAR(50),
+    prod VARCHAR(50),
     preco DECIMAL(10,2),
     qtd int,
     tamanho DECIMAL(10,2),
