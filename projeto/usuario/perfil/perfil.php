@@ -221,7 +221,7 @@
   
 
   <div id="sairPopup" class="popup" style="display: none;">
-    <h3>Tem certeza que deseja fazer Sair?</h3>
+    <h3>Tem certeza que deseja Sair?</h3>
     <p>Todas as suas sessões ativas serão encerradas.</p>
     <button onclick="performSair()">Sim</button>
     <button onclick="hidePopup()">Não</button>
