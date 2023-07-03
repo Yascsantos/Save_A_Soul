@@ -15,27 +15,42 @@
      
      
     }
-    a{
-      font-family: system-ui, Helvetica, Arial, sans-serif;
+    .menu a {
+      font-family: 'Poppins';
       font-size: 0.9rem;
       text-decoration:none;
       font-size: 0.9rem;
       font-weight:600;
-      color:#bca5ec;
+      color:#fcfcfc;
     }
    
     a:hover{
-      color:#957ec4;
+      color:#eae0ff;
     }
- 
-    div img {
+     a {
+      font-family: 'Ubuntu', sans-serif;;
+      font-size: 0.9rem;
+      text-decoration:none;
+      font-size: 0.9rem;
+      font-weight:600;
+      color:#555454;
+    }
+   
+    a:hover{
+      color:#3a3a3b;
+    }
+  
+    div .img {
       border-radius: 50%;
+      width:100px ;
+      height:100px;
+      background-position: center;
+      text-align: center;
     }
-    
     button{
     width: 20%;
     height: 25px;
-    background:  hsla(240, 26%, 18%, 0.829);
+    background:   #adb5a0;
     border-radius: 20px;
     outline: none;
     border: none;
@@ -47,8 +62,8 @@
 }
 button .submit{
   width: 20%;
-  height: 47px;
-  background:  hsla(240, 26%, 18%, 0.829);
+  height: 50px;
+  background:  #adb5a0;
   border-radius: 20px;
   outline: none;
   border: none;
@@ -117,7 +132,7 @@ button .submit{
     text-decoration:none;
     font-size: 0.9rem;
     font-weight:600;
-    color:#432d72;
+    color: #adb5a0;
   
   }
   .alterar:hover{

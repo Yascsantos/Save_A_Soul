@@ -1,79 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-html{
+   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none
+
+  }
+
+  html{
     scroll-behavior: smooth;
 }
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-/*body{
-    background-image: url(../imgs/fundo2.jpg) ;
-    background-size: cover;
-    background-position: center;
-   }
-/*  navbar   inicio*/
-.navbar{
-    position: fixed;
-    width: 100%;
-    padding: 20px 0;
-    font-family: 'Ubuntu';
-    z-index: 999;
 
-    transition: all 0.3s ease;
+#menu{
+  width:100%;
+
+  height:110px;
+
+ 
 }
-.navbar.sticky{
-    background: #cbacaacb;
-    padding: 15px 0;
+img{
+  width:100px;
+  height:100px;
+margin-top:auto;
 }
-.navbar .max-width{
+
+
+ 
+  nav {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo a{
-    color: #fff;
-    font-size: 35px;
-    font-weight: 500;
-}
-.navbar .logo a span{
-    color: #e09a98;
-    transition: all 0.3s ease;
-}
-.navbar.sticky .logo a span{
-    color: #e09a98;
-}
-.navbar .menu li{
+    font-family: 'Poppins';
+    height: 12vh;
+  }
+  
+
+  .nav-list {
     list-style: none;
-    display: inline-block;
-}
-.navbar .menu li a{
-    color: rgb(66, 64, 56);
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-}
-.navbar .menu li a:hover{
-    color: rgb(66, 64, 56);
-}
-.navbar.sticky .menu li a:hover{
+    display: flex;
+  
+  }
+  
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    margin-top: auto;
+   
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+ 
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+
+
+  a{
     font-family: 'Poppins';
     font-size: 0.9rem;
     text-decoration:none;
     font-size: 0.9rem;
     font-weight:600;
-    color: #fff;
-
-}
+    color:#f2d4ec;
+  }
+ 
+  a:hover{
+    color:#efe6eb;
+  }
 
 
 .inicio{

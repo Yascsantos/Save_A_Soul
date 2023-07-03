@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início| Save a Soul</title>
+    <title>Inicio| Save a Soul</title>
     <link rel="icon" type="imagem/png" href="index/imgs/Amora.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -95,7 +95,9 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-  
+  body {
+background-color:#adb5a0;
+}
 </style>
 <body>
 <header id="menu">
@@ -126,6 +128,21 @@
           </section>
 
       
+    <section class="sobre" id="sobre">
+  
+  <div class="max-width">
+                <h2 class="title">Sobre</h2>
+              <p>  A Save a Soul tem como objetivo principal o resgate e a reabilitação de animais que foram abandonados e/ou maltratados, <br>
+        com a finalidade de disponibilizá-los para adoção responsável. <br>
+        Para isso, todos os animais resgatados são submetidos a uma triagem rigorosa, <br>
+        que inclui exames médicos, consulta veterinária para vacinação e castração,  além de avaliação comportamental. <br>
+        Após esse processo, eles são encaminhados para lares temporários. <br>
+        Vale ressaltar que, para a Save a Soul, a saúde emocional dos animais é tão importante quanto a saúde física, e,
+        <br> por isso, a associação também se dedica a proporcionar um ambiente seguro e acolhedor para esses animais,
+        <br> visando a sua recuperação integral e bem-estar geral.</p>
+  
+  </section>
+
 
     <section class="ajude" id="ajude">
   
