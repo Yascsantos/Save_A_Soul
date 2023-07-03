@@ -121,7 +121,6 @@
                             
                         </style>
                            <body>
-                           <button onclick='location.reload()'>Atualizar</button>
                                <div id='popupContainer' style='display: none;''>
                                    <div  class='popup' >
                                  <iframe src='img.php'></iframe>
