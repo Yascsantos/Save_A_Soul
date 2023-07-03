@@ -126,8 +126,8 @@
                     
                         foreach ($requery as $exibe)
                         {
-                            echo "<div class='img' style='background-image: url(".$exibe['foto']."')><b><a onclick='openPopup()'>Editar</a><b></div> ";
-                           echo "
+                          echo "<div class='img' style='background-image: url(".$exibe['foto']."')><b><a onclick='openPopup()'>Editar</a><b></div>";
+                          echo "
                            <html>
                            <style>
                           
@@ -164,14 +164,14 @@
                            <button onclick='location.reload()'>Atualizar</button>
                                <div id='popupContainer' style='display: none;''>
                                    <div  class='popup' >
-                                   <form action='perfil.php' method='POST' >
-			                           <br>
-			                           <b><label>Título: </label></b>
-                                   <input type='text' name='titulo' required class='input-text'/>
-                                   <input type='file' name='arquivo' size='45' class='input-arq'>
-                                   
-                                   <button type='submit' value='Enviar' name='enviar' >Enviar</button
-                                       </form><button onclick='closePopup()'>Fechar</button>
+                                <form action='img.php' method='POST' >
+                                  <br>
+                                  <b><label>Título: </label></b>
+                                    <input type='text' name='titulo' required class='input-text'/>
+                                    <input type='file' name='arquivo' size='45' class='input-arq'>
+                                    
+                                    <button type='submit' value='enviar' name='Enviar' >Enviar</button>
+                                </form><button onclick='closePopup()'>Fechar</button>
                                    </div>
                                </div>
                            

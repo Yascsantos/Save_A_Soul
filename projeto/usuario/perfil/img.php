@@ -7,38 +7,71 @@
 	include_once('../../conexaoBD.php');
 	$tabela="user";
 	$campos = "foto";
-	$diretorio = "../img"; 
 
 	$id = "id_user";  
 	$id_user = $_SESSION['id_user'];
 
 
-	if(isset($_POST['enviar'])){
-		$titulo = $_POST['titulo'];
-		
-		$extensao = strtolower(substr($_FILES['arquivo']["name"], -4));
-		
-		$novo_nome = $titulo .$extensao; 
-		$arquivo = $diretorio.$novo_nome;
-		
-		move_uploaded_file($_FILES['arquivo']["tmp_name"], $arquivo); 
-		
-		$sql= "UPDATE $tabela SET foto = '$arquivo' WHERE $id = '$id_user'";
-		
-		$instrucao = mysqli_query($conexao,$sql);
-		
-		if (!$instrucao) 
+	/*
+		$ext = strtolower(substr($_FILES['pic']['name'],-4)); //Pegando extensão do arquivo
+		$new_name = date("Y.m.d-H.i.s") . $ext; //Definindo um novo nome para o arquivo
+		$dir = './imagens/'; //Diretório para uploads 
+		move_uploaded_file($_FILES['pic']['tmp_name'], $dir.$new_name); //Fazer upload do arquivo
+		echo("Imagen enviada com sucesso!");
+	*/
+	if(isset($_POST['Enviar']))
+	{
+		if(isset($_FILES['pic']))
 		{
-			die(' Query Inválida: ' . mysqli_error($conexao));
-			echo 'Falha ao enviar arquivo!';
-		} 
+			$titulo = $_POST['titulo'];
+			
+			$extensao = strtolower(substr($_FILES['pic']["name"],-4)); // extensão
+			$novo_nome = $titulo.$extensao; //novo nome
+			$diretorio = "./img/"; //diretório
+			$arquivo = $diretorio.$novo_nome;
+			
+			move_uploaded_file($_FILES['pic']["tmp_name"], $diretorio.$novo_nome); 
+			
+			$sql= "UPDATE $tabela SET $campos = '$arquivo' WHERE $id = '$id_user'";
+			
+			$instrucao = mysqli_query($conexao,$sql);
+			
+			if (!$instrucao) 
+			{
+				die(' Query Inválida: ' . mysqli_error($conexao));
+				echo 'Falha ao enviar arquivo!';
+			} 
+			else 
+			{
+				mysqli_close($conexao);
+				echo "Imagen enviada com sucesso!";
+				exit;
+
+			}
+		}
+		
 		else 
 		{
-			mysqli_close($conexao);
-			echo '<div class="msg"><p>Sucesso!</p></div>';
-			exit;
-
-		}	
+			echo "Arquivo inexistente";
+		}
 	}
-	?>
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Update de imagem</title>
+</head>
+<body>
+	<form action='' method='POST' enctype="multipart/form-data">
+        <label>Título: </label></b>
+        <input type="text" name="titulo"> </input><br>
+		<input type="file" name="pic" accept="image/*"></input>
+         <br><br>                           
+        <input type="submit" value="Enviar" name="Enviar"></button>
+        </form>
+</body>
+</html>
 	    
