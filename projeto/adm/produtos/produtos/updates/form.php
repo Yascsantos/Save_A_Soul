@@ -6,11 +6,11 @@
     <title>Cadastro dos Animais</title>
 </head>
 <body>
-    <h1>Cadastro de Produtos</h1>
+    <h1>Alteração de dados do produto</h1>
     <a href="../pg02.html">Voltar</a> <br>
     <!--<a href="../listagem/list.php">Listagem</a>-->
     <br> <br>
-    <form action="cad.php" method="post">
+    <form action="alter.php" method="post">
         
     <label>Categoria do produto: </label> <br>
     <?= include ("../listagem/cat.php"); ?> 

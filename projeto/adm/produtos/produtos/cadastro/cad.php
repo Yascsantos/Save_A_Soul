@@ -1,45 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=c">
-    <title>Cadastro dos Animais</title>
-</head>
-<body>
-    <h1>Cadastro de Produtos</h1>
-    <a href="../pg02.html">Voltar</a> <br>
-    <!--<a href="../listagem/list.php">Listagem</a>-->
-    <br> <br>
-    <form action="form.php" method="post">
-        
-    <label>Categoria do produto: </label> <br>
-    <?= include ("../listagem/cat.php"); ?> 
-    <br>  
-        <label>Produto: </label> <br>
-        <input type="text" placeholder="Produto" name="prod">
-        <br>
-        <label>Preço: </label> <br>
-        <input type="number" placeholder="Preço" name="preco">
-        <br>
-        <label>Quantidade: </label> <br>
-        <input type="number" placeholder="Quantidade" name="qtd">
-        <br>
-        <label>Tamanho: </label> <br>
-        <input type="text" placeholder="Tamanho" name="tam">
-        <br>
-        <label>Cor: </label> <br>
-        <input type="text" placeholder="Cor" name="cor">
-        <br>
-        <label>Modelo: </label> <br>
-        <input type="text" placeholder="Modelo" name="mod">
-        <br>
-        <label>Outros: </label> <br>
-        <input type="text" placeholder="Outras informações" name="out">
-        <br>
+<?php
+    include_once("../../../../conexaoBD.php");
+    $tabela="produto";
+    $campo= "id_cat, prod, preco, qtd, tamanho, cor, modelo, outros"; 
 
-        <input type="submit" name="cadastrar" value="Cadastrar produto">
-    </form>
+  if(isset($_POST['cadastrar']))
+  {
+    $cat = $_POST['cat'];
+    $prod = $_POST['prod'];
+    $preco = $_POST['preco'];
+    $qtd = $_POST['qtd'];
+    $tam = $_POST['tam'];
+    $cor = $_POST['cor'];
+    $mod = $_POST['mod'];
+    $out = $_POST['out'];
 
+    
+  }
 
-</body>
-</html>
+  $sql = "INSERT INTO $tabela ($campo) 
+            VALUES ('$cat','$prod','$preco', '$qtd', '$tam', '$cor', '$mod', '$out')";
+		
+	$instrucao = mysqli_query($conexao,$sql);
+		
+	if (!$instrucao) 
+	{
+		die(' Query Inválida: ' . mysqli_error($conexao));
+
+	} 
+	else 
+	{
+		mysqli_close($conexao);
+		header ('location:../pg02.html');
+		exit;
+	}
+?>
