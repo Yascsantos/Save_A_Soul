@@ -37,7 +37,9 @@
 			else 
 			{
 				mysqli_close($conexao);
-				echo "Imagen enviada com sucesso!";
+				echo "<h2 style='
+				@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+				font-family:'Poppins';'>Imagem enviada com sucesso!</h2>";
 				exit;
 
 			}
@@ -55,15 +57,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/perfil.css" type="text/css">
 	<title>Update de imagem</title>
 </head>
+<style>
+
+</style>
 <body>
 	<form action='' method='POST' enctype="multipart/form-data">
-        <label>Título: </label></b>
-        <input type="text" name="titulo"> </input><br>
-		<input type="file" name="pic" accept="image/*"></input>
-         <br><br>                           
-        <input type="submit" value="Enviar" name="Enviar"></button>
+	<b><label class='text'>Nome: </label></b>
+        <input type="text" name="titulo"> </input><br><br>
+		<b><label for="pic"class="input-arquivo">Selecionar Arquivo</label></b>
+		<input type="file" id="pic" name="pic" accept="image/*"></input>                        
+        <input type="submit" value="Enviar" name="Enviar" class="button">
         </form>
 </body>
 </html>

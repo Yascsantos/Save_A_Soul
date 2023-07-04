@@ -42,7 +42,8 @@
     <style>
   
     #iframeContainer {
-      display: none;
+     
+      border: none;
     }
 
   </style>
@@ -109,14 +110,9 @@
                               text-align: center;
                             }
                         
-                            .popup h1 {
-                              color: #333;
+                          .popup  iframe {
+                            border: none;
                             }
-                        
-                            .popup p {
-                              color: #777;
-                            }
-                        
                           
                             
                         </style>
@@ -167,7 +163,7 @@
            
     
   
-<button onclick="showPopup()">Sair</button>
+<a class='sair'onclick="showPopup()">Sair</a>
        </form>
    
 
@@ -191,7 +187,7 @@
 
     function performSair() {
     
-      window.location.href = '../../index/index.php';
+      window.location.href = 'logout.php';
     }
   </script>
 </body>
