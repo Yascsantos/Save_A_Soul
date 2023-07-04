@@ -26,7 +26,7 @@ CREATE table user (
 /*PRODUTO*/
 CREATE TABLE categoria (
 	id_cat INT  PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	nome VARCHAR(50)
+	nome_cat VARCHAR(50)
 );
 
 CREATE TABLE produto(
@@ -35,12 +35,11 @@ CREATE TABLE produto(
     prod VARCHAR(50),
     preco DECIMAL(10,2),
     qtd int,
-    tamanho DECIMAL(10,2),
+    tamanho VARCHAR(30),
     cor VARCHAR(20),
-    modelo VARCHAR(30)
-    capacidade DECIMAL(10,2),
+    modelo VARCHAR(30),
+    capacidade VARCHAR(20),
     	 
-    	FOREIGN KEY (id_desc)REFERENCES descricao (id_desc),
 		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)  	 
 );
 

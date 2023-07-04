@@ -1,7 +1,7 @@
 <?php
     include_once("../../../../conexaoBD.php");
     $tabela="categoria";
-    $campo="nome"; 
+    $campo="nome_cat"; 
 
   if(isset($_POST['cadastrar']))
   {

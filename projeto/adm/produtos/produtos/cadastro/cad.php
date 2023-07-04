@@ -6,19 +6,23 @@
     <title>Cadastro dos Animais</title>
 </head>
 <body>
-    <h1>Cadastro de categorias</h1>
+    <h1>Cadastro de Produtos</h1>
     <a href="../pg02.html">Voltar</a> <br>
     <!--<a href="../listagem/list.php">Listagem</a>-->
     <br> <br>
     <form action="form.php" method="post">
+        
+    <label>Categoria do produto: </label> <br>
+    <?= include ("../listagem/cat.php"); ?> 
+    <br>  
         <label>Produto: </label> <br>
         <input type="text" placeholder="Produto" name="prod">
         <br>
         <label>Preço: </label> <br>
-        <input type="text" placeholder="Preço" name="preco">
+        <input type="number" placeholder="Preço" name="preco">
         <br>
         <label>Quantidade: </label> <br>
-        <input type="text" placeholder="Quantidade" name="qtd">
+        <input type="number" placeholder="Quantidade" name="qtd">
         <br>
         <label>Tamanho: </label> <br>
         <input type="text" placeholder="Tamanho" name="tam">
@@ -33,7 +37,7 @@
         <input type="text" placeholder="Capacidade" name="cap">
         <br>
 
-        <input type="submit" name="cadastrar" value="Cadastrar categoria">
+        <input type="submit" name="cadastrar" value="Cadastrar produto">
     </form>
 
 
