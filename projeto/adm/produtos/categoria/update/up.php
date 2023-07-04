@@ -1,8 +1,9 @@
 <?php
-
+//FORMULÁRIO COM DADOS NÃO NULOS DE USUÁRIO
+///BASE PARA CONSULTA
         include_once("../../../conexaoBD.php");
-        $tabela="produto"; 
-        $id = "id_pro";  
+        $tabela="user"; 
+        $id = "id_user";  
 
 
         $sqlPesq = "SELECT * FROM $tabela WHERE $id= $id_user";

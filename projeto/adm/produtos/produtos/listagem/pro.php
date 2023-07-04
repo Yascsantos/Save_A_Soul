@@ -13,7 +13,7 @@
 
 <?php
     include_once("../../../../conexaoBD.php");
-    $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco AS preço, qtd AS quantidade, tamanho, cor, modelo, outros 
+    $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, qtd AS quantidade, tamanho, cor, modelo, outros 
                 FROM produto p 
 	            INNER JOIN categoria cat ON p.id_cat = cat.id_cat";
 
@@ -55,7 +55,7 @@
     {
         echo "
         <tr>
-            <td align='center'><a href='../update/alter.php?&codigo=".$exibe['id_pro']."'>Alterar </a></td>
+            <td align='center'><a href='../update/alter.php?&codigo=".$exibe['cod']."'>Alterar </a></td>
             <td></td>
             <td></td>
             <td align='center'>".$exibe['cod']."</td>
@@ -64,7 +64,7 @@
             <td></td>
             <td align='center'>".$exibe['produto']."</td>
             <td></td>
-            <td align='center'>".$exibe['preço']."</td>
+            <td align='center'>".$exibe['preco']."</td>
             <td></td>
             <td align='center'>".$exibe['quantidade']."</td>
             <td></td>
@@ -77,7 +77,7 @@
             <td align='center'>".$exibe['outros']."</td>
             <td></td>
 
-            <td align='center'><a href='../delete/del.php?&codigo=".$exibe['id_pro']."'>Delete</a></td> 
+            <td align='center'><a href='../delete/del.php?&codigo=".$exibe['cod']."'>Delete</a></td> 
             <td></td>
         </tr>
         ";
