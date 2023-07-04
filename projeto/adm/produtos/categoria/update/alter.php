@@ -2,7 +2,7 @@
 	include_once("../../../../conexaoBD.php");
 	$tabela="categoria";
 	$id = "id_cat"; 
-    $pesq="nome";
+    $pesq="nome_cat";
 	$edit = $_GET['codigo'];
 
 		
@@ -21,7 +21,7 @@
 		$nome = $_POST['nome'];
 		
 		$sql = "UPDATE $tabela SET 
-			nome = '$nome' 
+			nome_cat = '$nome' 
 			WHERE $id = $codigo";
 			
 		$instrucao = mysqli_query($conexao,$sql);

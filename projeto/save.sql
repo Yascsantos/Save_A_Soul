@@ -26,21 +26,20 @@ CREATE table user (
 /*PRODUTO*/
 CREATE TABLE categoria (
 	id_cat INT  PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	nome VARCHAR(50)
+	nome_cat VARCHAR(50)
 );
 
 CREATE TABLE produto(
     id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_cat INT, 
-    nome VARCHAR(50),
+    prod VARCHAR(50),
     preco DECIMAL(10,2),
     qtd int,
-    tamanho DECIMAL(10,2),
+    tamanho VARCHAR(30),
     cor VARCHAR(20),
-    modelo VARCHAR(30)
-    capacidade DECIMAL(10,2),
+    modelo VARCHAR(30),
+    outros VARCHAR(20),
     	 
-    	FOREIGN KEY (id_desc)REFERENCES descricao (id_desc),
 		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)  	 
 );
 
@@ -56,7 +55,7 @@ CREATE TABLE imgpro (
 /*ANIMAL*/
 CREATE table animal (
     id_ani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    nome  VARCHAR(30),
+    nome_ani  VARCHAR(30),
     raça VARCHAR(50),
     porte VARCHAR(30),
     sexo VARCHAR(20)
