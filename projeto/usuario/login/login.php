@@ -18,15 +18,16 @@
                 <a href='../cadastro/cadastro.php'>CADASTRE-SE</a>
             </label>
     </div>
+    <br>
     <form action="" method="post" >
         <div class="input">
         <label>Usuário: </label>
-        <input type="text" name="usuario" id="usuario" placeholder="Enter Your Name">
-        <div class="linha"></div></div>
-        <br>
+        <input type="text" name="usuario" id="usuario" placeholder="Digite seu apelido">
+        <div class="linha"></div>
+    </div>
         <div class="input">
         <label>Senha: </label>
-        <input type="password" name="senha" id="senha" placeholder="Enter Your Password">
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
         <div class="linha"></div></div>
         <br>          
 

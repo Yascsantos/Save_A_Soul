@@ -99,7 +99,7 @@
         <div class="input-dados">
             <div class="input-senha">
             <label for="nome"> Nome de usuário</label>
-            <input type="text" name="usuario" placeholder="Digite o seu user name" required>
+            <input type="text" name="usuario" placeholder="Digite um apelido" required>
             </div>
 
             <div class="input-senha">

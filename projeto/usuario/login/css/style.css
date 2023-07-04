@@ -9,7 +9,11 @@
 
 }
 body{
-    background: #adb5a0;
+    background-size:1400px 800px;
+    background-image:url(../imgs/fundo2.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+  
 }
 
 a{
@@ -18,15 +22,15 @@ a{
     text-decoration:none;
     font-size: 0.9rem;
     font-weight:600;
-    color:#1c044d;
+    color:#4c5838;
   }
  
  
   a:hover{
-    color:#3f2b68;
+    color:#adb5a0;
   }
 main.login {
-    background-color: rgba(255, 255, 255, 0.986);
+    background-color: rgba(255, 255, 255, 0.712);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     position: absolute;
@@ -54,7 +58,7 @@ main h2::before {
     bottom: 3px;
     left: 0;
     border-radius: 8px;
-    background: linear-gradient(45deg,  #1c0472,#2a2141);;
+    background: linear-gradient(45deg,  #adb5a0,#4c5838);;
 }
 
 form {
@@ -64,6 +68,7 @@ form {
 
 .input {
     position: relative;
+    
 }
 
 form .input:first-child {
@@ -83,7 +88,7 @@ form .input:first-child {
     width: 100%;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(45deg, #160c44,#9484b3);
+    background: linear-gradient(45deg, #4c5838,#adb5a0);
     transform: scaleX(0);
     transition: all .3s ease-in-out;
     transform-origin: left;
@@ -92,7 +97,10 @@ form .input:first-child {
 .input input:focus ~ .linha::after {
     transform: scaleX(1);
 }
-
+input[type="text"],input[type="password"]{
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+}
 .input input {
     outline: none;
     font-size: 0.9rem;
@@ -108,7 +116,7 @@ form input[type="submit"] {
     margin-top: 2rem;
     padding: 0.4rem;
     width: 100%;
-    background: linear-gradient(to left,#3a0db6,#52579b );
+    background: linear-gradient(to left,#4c5838,#adb5a0);
     cursor: pointer;
     color: white;
     font-size: 0.9rem;
@@ -119,7 +127,7 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     letter-spacing: 0.5px;
-    background: linear-gradient(to right, #1e1552,#292466 );
+    background: linear-gradient(to right,#4c5838,#adb5a0 );
 }
 
 main.erro {

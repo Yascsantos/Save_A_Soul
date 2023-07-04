@@ -84,7 +84,7 @@
                     
                         foreach ($requery as $exibe)
                         {
-                          echo "<div class='img' style='background-image: url(".$exibe['foto']."')><b><a onclick='openPopup()'>Editar</a><b></div>";
+                          echo "<div class='img' style='background-image: url(".$exibe['foto']."); background-position:center; background-size:100px 100px; background-repeat: no-repeat;'><b><a onclick='openPopup()'>Editar</a><b></div>";
                           echo "
                            <html>
                            <style>
