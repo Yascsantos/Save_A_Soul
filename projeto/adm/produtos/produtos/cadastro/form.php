@@ -1,7 +1,7 @@
 <?php
     include_once("../../../../conexaoBD.php");
     $tabela="produto";
-    $campo= "id_cat, prod, preco, qtd, tamanho, cor, modelo, capacidade "; 
+    $campo= "id_cat, prod, preco, qtd, tamanho, cor, modelo, outros"; 
 
   if(isset($_POST['cadastrar']))
   {
@@ -12,13 +12,13 @@
     $tam = $_POST['tam'];
     $cor = $_POST['cor'];
     $mod = $_POST['mod'];
-    $cap = $_POST['cap'];
+    $out = $_POST['out'];
 
     
   }
 
   $sql = "INSERT INTO $tabela ($campo) 
-            VALUES ('$cat','$prod','$preco', '$qtd', '$tam', '$cor', '$mod', '$cap')";
+            VALUES ('$cat','$prod','$preco', '$qtd', '$tam', '$cor', '$mod', '$out')";
 		
 	$instrucao = mysqli_query($conexao,$sql);
 		

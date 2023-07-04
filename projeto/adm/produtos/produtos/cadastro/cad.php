@@ -33,8 +33,8 @@
         <label>Modelo: </label> <br>
         <input type="text" placeholder="Modelo" name="mod">
         <br>
-        <label>Capacidade: </label> <br>
-        <input type="text" placeholder="Capacidade" name="cap">
+        <label>Outros: </label> <br>
+        <input type="text" placeholder="Outras informações" name="out">
         <br>
 
         <input type="submit" name="cadastrar" value="Cadastrar produto">
