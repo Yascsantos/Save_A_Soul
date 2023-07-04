@@ -15,7 +15,10 @@ main{
     color:white ;
 }
 body{
-    background-color:#180f1f;
+    background-size:100% 100%;
+    background-image:url(../imgs/fundo2.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
     color:white ;
    
 }
@@ -71,7 +74,7 @@ form .input-dados{
     margin-bottom: 15px;
 }
 form .input-dados label{
-    color: #1e1a33;
+    color: #4c5838;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
@@ -102,7 +105,7 @@ form .input-dados input{
     transition: all 0.4s ease;
 }
 form .input-dados input:focus{
-    border-color: #2f00ff69;
+    border-color: #adb5a0;
 }
  .submit {
     width: 50%;
@@ -113,7 +116,7 @@ form .input-dados input:focus{
 form .input-dados button{
     width: 50%;
     height: 47px;
-    background:  hsl(240, 28%, 25%);
+    background: #adb5a0;
     border-radius: 20px;
     outline: none;
     border: none;

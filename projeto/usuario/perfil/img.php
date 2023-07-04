@@ -61,7 +61,9 @@
 	<title>Update de imagem</title>
 </head>
 <style>
-
+form{
+    background-color:white;
+}
 </style>
 <body>
 	<form action='' method='POST' enctype="multipart/form-data">
@@ -70,6 +72,7 @@
 		<b><label for="pic"class="input-arquivo">Selecionar Arquivo</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input>                        
         <input type="submit" value="Enviar" name="Enviar" class="button">
+		
         </form>
 </body>
 </html>

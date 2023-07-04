@@ -31,20 +31,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/perfil.css" type="text/css">
     <title>Perfil</title>
-  <script>
-  
-    function exibirEnd() {
-      var iframeContainer = document.getElementById("iframeContainer");
-      iframeContainer.style.display = "block";
-    }
-  </script>
+ 
    
     <style>
   
-    #iframeContainer {
-     
-      border: none;
-    }
+  #endereco {
+            display: none;
+            width: 100%;
+            height: 200px;
+            border: none;
+            margin-top: 10px;
+        }
 
   </style>
 
@@ -119,8 +116,9 @@
                            <body>
                                <div id='popupContainer' style='display: none;''>
                                    <div  class='popup' >
+                                   <br><br>
                                  <iframe src='img.php'></iframe>
-                                   <button onclick='closePopup()'>Fechar</button>
+                                 <button onclick='closePopup()' class='button'>Fechar</button>
                                    </div>
                                </div>
                            
@@ -154,10 +152,22 @@
        Senha:  <?php foreach ($instrucao as $exibe){ echo $exibe['senha'];}?></p></b> 
        <br>
       </div>
-       <a class='end' onclick="exibirEnd()">EXEBIR ENDEREÇO</a>
-  <div id="iframeContainer"><iframe src="endereco.php"></iframe></div>
-
+      <a onclick="abrirEnd()" class="btn">Exibir endereço</a>
     
+    <!-- Iframe oculto inicialmente -->
+    <iframe id="endereco" src="endereco.php"></iframe>
+    
+    <script>
+        function abrirEnd() {
+            var iframe = document.getElementById("endereco");
+            if (iframe.style.display === "none") {
+                iframe.style.display = "block";
+            } else {
+                iframe.style.display = "none";
+            }
+        }
+    </script>
+
 
 <a href='./updates/form.php' class="submit"><button type='button'>Editar</button></a>
            
