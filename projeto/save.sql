@@ -38,7 +38,7 @@ CREATE TABLE produto(
     tamanho VARCHAR(30),
     cor VARCHAR(20),
     modelo VARCHAR(30),
-    outros VARCHAR(20),
+    outros VARCHAR(100),
     	 
 		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)  	 
 );

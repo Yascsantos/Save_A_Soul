@@ -6,17 +6,12 @@
 				session_start();
 			}
 
-	//Conectando ao banco		
 		include_once("../../../conexaoBD.php"); 
-	//Tabela no BD
 		$tabela="user"; 
-	//chave primaria
 		$id = "id_user";  
-	//código e/ou id vindo do formulário anterior
 		$id_user = $_SESSION['id_user'];  
  	
 
-	//busca de valores para alterar 
 		$sqlPesq = "SELECT * FROM $tabela WHERE $id= $id_user";
 	
 		$pesquisa = mysqli_query($conexao,$sqlPesq);
