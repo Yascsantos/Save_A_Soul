@@ -1,11 +1,5 @@
 <!--PHP-->
 <?php
-/*
-    05/07/2023
-    FAZER:
-    - Corrigir o erro que está dando na linha 13(codigo)
-    - Colocar o valor antigo do campo no placeholder
-*/
 	include_once("../../../../conexaoBD.php");
 	$tabela="produto";
 	$id = "id_pro"; 
@@ -114,10 +108,9 @@
     <!--<a href="../listagem/list.php">Listagem</a>-->
     <br> <br>
     <form action="" method="post">
-        
-    <label>Categoria do produto: </label> <br>
-
     <input type="hidden" name="codigo" value="<?= $edit;?>" />
+   
+    <label>Categoria do produto: </label> <br>
     <?= include ("../listagem/cat.php"); ?> 
     <br>  
         <label>Produto: </label> <br>

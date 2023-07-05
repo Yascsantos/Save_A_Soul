@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=c">
-    <title>Cadastro dos Animais</title>
+    <title>Cadastro dos produtos</title>
 </head>
 <body>
     <h1>Cadastro de Produtos</h1>

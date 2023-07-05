@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de categorias</title>
+    <title>Listagem dos produtos</title>
 </head>
 <body>
     <h1> Listagem dos produtos </h1>
@@ -44,6 +44,8 @@
             <th></th>
             <th align='center'>Outros</th>
             <th></th>
+            <th align='center'></th>
+            <th></th>
 
             <th></th>
             <th></th>
@@ -75,6 +77,8 @@
             <td align='center'>".$exibe['modelo']."</td>
             <td></td>
             <td align='center'>".$exibe['outros']."</td>
+            <td></td>
+            <td align='center'><a href='../../imagens/cad/cad.php?&codigo=".$exibe['cod']."'>Inserir imagem(s)</a></td> 
             <td></td>
 
             <td align='center'><a href='../delete/del.php?&codigo=".$exibe['cod']."'>Delete</a></td> 
