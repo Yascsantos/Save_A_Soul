@@ -43,7 +43,7 @@
             <td></td>
             <td align='center'>".$exibe['nome_cat']."</td>
             <td></td>
-            <td align='center'><a href='../delete/del.php?&codigo=".$exibe['id_cat']."'>Delete</a></td> 
+            <td align='center'><a href='../delete/drop.php?&codigo=".$exibe['id_cat']."'>Delete</a></td> 
             <td></td>
         </tr>
         ";

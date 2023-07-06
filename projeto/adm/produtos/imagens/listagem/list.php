@@ -8,7 +8,7 @@
 <body>
     <h1> Listagem das categorias dos produtos </h1>
     <a href="../cad/cad.php"> Cadastrar imagens </a><br>
-    <a href='../../produtos/listagem/pro.php'>Voltar</a><br>
+    <a href='../../produtos/listagem/pro.php'>Listar produtos</a><br>
     <br> <br>
 
 <?php
