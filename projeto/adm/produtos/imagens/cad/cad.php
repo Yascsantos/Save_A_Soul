@@ -2,16 +2,20 @@
 	include_once("../../../../conexaoBD.php");
 	$tabela="imgpro";
 	$id = "id_imgpro"; 
-	$edit = $_GET['codigo'];
 	$campo = "id_pro, img";
+
+	//sessão para pegar o ID do produto
+	if(!isset($_SESSION))
+    {
+        session_start();
+    }
+    $cod = $_SESSION['id_ip'];
+
 
     if(isset($_POST['Enviar']))
 	{
 		if(isset($_FILES['pic']))
 		{
-			$codigo = $_POST['codigo'];
-
-			
 			$extensao = strtolower(substr($_FILES['pic']["name"],-4)); // extensão
 			$novo_nome = date("Y.m.d-H.i.s").$extensao; //novo nome
 			$diretorio = "../img/"; //diretório
@@ -20,7 +24,7 @@
 			move_uploaded_file($_FILES['pic']["tmp_name"], $diretorio.$novo_nome); 
 			
             $sql = "INSERT INTO $tabela ($campo) 
-            VALUES ('$codigo','$arquivo')";
+            VALUES ('$cod','$arquivo')";
             
 			$instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 			
@@ -34,6 +38,9 @@
 			{
 				mysqli_close($conexao);
 				echo "<h2>Imagem enviada com sucesso!</h2>";
+				echo "<a href='../../produtos/listagem/pro.php'>Voltar</a><br>";
+				echo "<a href='../listagem/list.php'>Listagem</a><br>";
+
 				exit;
 
 			}
@@ -56,11 +63,13 @@
 	<title>Update de imagem</title>
 </head>
 <body>
-	<form action='' method='POST' enctype="multipart/form-data">
-	<input type="hidden" name="codigo" value="<?= $edit;?>" />
+	<a href='../../produtos/listagem/pro.php'>Voltar</a><br>
+	<a href='../listagem/list.php'>Listagem</a><br>
 
-		<b><label for="pic"class="input-arquivo">Selecione o Arquivo</label></b>
-		<input type="file" id="pic" name="pic" accept="image/*"></input>                        
+	<h2>Insira imagens do produto selecionado</h2>
+	<form action='' method='POST' enctype="multipart/form-data">
+		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
+		<input type="file" id="pic" name="pic" accept="image/*"></input><br>                        
         <input type="submit" value="Enviar" name="Enviar" class="button">
 		
         </form>

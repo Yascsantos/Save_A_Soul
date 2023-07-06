@@ -44,6 +44,7 @@
             <th></th>
             <th align='center'>Outros</th>
             <th></th>
+            <th></th>
             <th align='center'></th>
             <th></th>
 
@@ -78,7 +79,8 @@
             <td></td>
             <td align='center'>".$exibe['outros']."</td>
             <td></td>
-            <td align='center'><a href='../../imagens/cad/cad.php?&codigo=".$exibe['cod']."'>Inserir imagem(s)</a></td> 
+            <td></td>
+            <td align='center'><a href='../../imagens/pg03.php?&id=".$exibe['cod']."'>Imagem(s)</a></td> 
             <td></td>
 
             <td align='center'><a href='../delete/del.php?&codigo=".$exibe['cod']."'>Delete</a></td> 
