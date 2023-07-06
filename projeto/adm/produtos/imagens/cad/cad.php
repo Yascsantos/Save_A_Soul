@@ -60,13 +60,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/perfil.css" type="text/css">
-	<title>Update de imagem</title>
+	<title>Upload de imagem</title>
 </head>
 <body>
-	<a href='../../produtos/listagem/pro.php'>Voltar</a><br>
-	<a href='../listagem/list.php'>Listagem</a><br>
-
 	<h2>Insira imagens do produto selecionado</h2>
+	<a href='../../produtos/listagem/pro.php'>Listar produtos</a><br>
+	<a href='../listagem/list.php'>Listagem imagens</a><br><br>
+
 	<form action='' method='POST' enctype="multipart/form-data">
 		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input><br>                        

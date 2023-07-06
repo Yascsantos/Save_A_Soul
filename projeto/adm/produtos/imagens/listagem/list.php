@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1> Listagem das categorias dos produtos </h1>
-    <a href="../cad/cad.php"> Cadastrar mais imagens </a><br>
+    <a href="../cad/cad.php"> Cadastrar imagens </a><br>
     <a href='../../produtos/listagem/pro.php'>Voltar</a><br>
     <br> <br>
 
@@ -52,7 +52,7 @@
             <td align='center'><img src=".$exibe['img']."  width='100px' height='100px'></td>
             <td></td>
             <td></td>
-            <td align='center'><a href='../delete/del.php?&codigo=".$exibe['id_imgpro']."'>Delete</a></td> 
+            <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['id_imgpro']."'>Delete</a></td> 
             <td></td>
         </tr>
         ";

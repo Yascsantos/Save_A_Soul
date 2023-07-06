@@ -83,7 +83,7 @@
             <td align='center'><a href='../../imagens/pg03.php?&id=".$exibe['cod']."'>Imagem(s)</a></td> 
             <td></td>
 
-            <td align='center'><a href='../delete/del.php?&codigo=".$exibe['cod']."'>Delete</a></td> 
+            <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['cod']."'>Delete</a></td> 
             <td></td>
         </tr>
         ";

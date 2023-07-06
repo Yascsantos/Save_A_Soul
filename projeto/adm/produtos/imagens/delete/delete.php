@@ -1,7 +1,7 @@
 <?php
 	include_once("../../../../conexaoBD.php");
-	$tabela="produto";
-	$campos = "id_pro"; //chave primária
+	$tabela="imgpro";
+	$campos = "id_imgpro"; //chave primária
 	
 	$codigo = $_GET['codigo'];
 	
@@ -14,7 +14,7 @@
 
 	} else {
 		mysqli_close($conexao);
-			header ('location: ../listagem/pro.php');
+			header ('location: ../listagem/list.php');
 			
 			exit;
 	}
