@@ -29,9 +29,11 @@ CREATE TABLE categoria (
 	nome_cat VARCHAR(50)
 );
 
+
+
 CREATE TABLE produto(
     id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_cat INT, 
+    id_cat INT,
     prod VARCHAR(50),
     preco DECIMAL(10,2),
     qtd int,
@@ -39,34 +41,37 @@ CREATE TABLE produto(
     cor VARCHAR(20),
     modelo VARCHAR(30),
     outros VARCHAR(100),
+ 
     	 
-		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)  	 
+		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)
+		
 );
 
 CREATE TABLE imgpro (
 	id_imgpro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_pro INT,
+	id_pro INT, 
 	img VARCHAR(100),
 	
-	FOREIGN KEY (id_pro)REFERENCES produto (id_pro)
+		FOREIGN KEY (id_pro)REFERENCES produto (id_pro)	 
 );
-
 
 /*ANIMAL*/
 CREATE table animal (
     id_ani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id_imgani INT,
     nome_ani  VARCHAR(30),
     raça VARCHAR(50),
     porte VARCHAR(30),
     sexo VARCHAR(20)
+
 );
 
 CREATE TABLE imgani (
 	id_imgani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    	id_ani INT,
+	id_ani INT,
 	img VARCHAR(100),
-	
-	FOREIGN KEY (id_ani)REFERENCES animal (id_ani)
+		
+		FOREIGN KEY (id_ani)REFERENCES animal (id_ani)	
 );
 
 
