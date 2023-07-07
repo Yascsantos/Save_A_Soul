@@ -13,7 +13,7 @@
 
 <?php
     include_once("../../../../conexaoBD.php");
-    $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, qtd AS quantidade, tamanho, cor, modelo, outros 
+    $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, qtd AS quantidade, tamanho, cor, modelo, outros,img_pro 
                 FROM produto p 
 	            INNER JOIN categoria cat ON p.id_cat = cat.id_cat";
 
@@ -26,6 +26,8 @@
             <th></th>
             <th></th>
             <th></th>
+            <th align='center'>Imagem padrão</th>
+            <th> </th>
             <th align='center'>Código</th>
             <th> </th>
             <th align='center'>Categoria</th>
@@ -54,12 +56,13 @@
         </tr>";
 
     foreach ($instrucao as $exibe) 
-
     {
         echo "
         <tr>
             <td align='center'><a href='../update/alter.php?&codigo=".$exibe['cod']."'>Alterar </a></td>
             <td></td>
+            <td></td>
+            <td align='center'><a href='../cadastro/pg04.php?&codigo=".$exibe['cod']."'><img src=".$exibe['img_pro']."  width='100px' height='100px'></a></td>
             <td></td>
             <td align='center'>".$exibe['cod']."</td>
             <td></td>
@@ -90,6 +93,8 @@
     }
 
     echo"</table>";
+    echo "<a href='../../listagem/img/2023.07.07-15.50.20.jpg'>01</a><br>";
+
 
 
 ?>
