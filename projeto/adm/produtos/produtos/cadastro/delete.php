@@ -16,46 +16,31 @@
         die(' Query Inválida: ' . mysqli_error($conexao));
 		
 	} 
-	
-	if (isset($_POST['Cadastrar'])) 
-    {
-        $codigo = $_POST['codigo'];
-
-        if(isset($_FILES['pic']))
-		{
-			$extensao = strtolower(substr($_FILES['pic']["name"],-4)); // extensão
-			$novo_nome = date("Y.m.d-H.i.s").$extensao; //novo nome
-			$diretorio = "../listagem/img/"; //diretório
-			$arquivo = $diretorio.$novo_nome;
+    
+    $arquivo = " ";
 			
-			move_uploaded_file($_FILES['pic']["tmp_name"], $diretorio.$novo_nome); 
-			
-            $sql = "UPDATE produto SET 
+    $sql = "UPDATE produto SET 
 			img_pro = '$arquivo' 
 			WHERE id_pro = $id_imp";
             
-			$instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+	$instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 			
 			
-			if (!$instrucao) 
-			{
-				die(' Query Inválida: ' . mysqli_error($conexao));
-				echo 'Falha ao enviar arquivo!';
-			} 
-			else 
-			{
-				mysqli_close($conexao);
-				header ('location: ../listagem/pro.php');
-				exit;
+	if (!$instrucao) 
+	{
+		die(' Query Inválida: ' . mysqli_error($conexao));
+		echo 'ERRO!';
+	} 
+	
+    else 
+	{
+		mysqli_close($conexao);
+        header ('location: ../listagem/pro.php');
+		exit;
 
-			}
-		}
-		
-		else 
-		{
-			echo "Arquivo inexistente";
-		}
 	}
+
+
 
 		
 ?>

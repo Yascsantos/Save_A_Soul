@@ -7,8 +7,8 @@
 </head>
 <body>
     <h1> Listagem dos produtos </h1>
-    <a href="../pg02.html"> Voltar </a> <br>
-    <a href="../cadastro/form.php"> Cadastrar </a>
+    <a href="../pg02.html"> Voltar para a página inicial</a> <br>
+    <a href="../cadastro/form.php"> Cadastrar produtos </a>
     <br> <br>
 
 <?php
@@ -62,7 +62,7 @@
             <td align='center'><a href='../update/alter.php?&codigo=".$exibe['cod']."'>Alterar </a></td>
             <td></td>
             <td></td>
-            <td align='center'><a href='../cadastro/pg04.php?&codigo=".$exibe['cod']."'><img src=".$exibe['img_pro']."  width='100px' height='100px'></a></td>
+            <td align='center'><a href='../cadastro/pg04.php?&codigo=".$exibe['cod']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a></td>
             <td></td>
             <td align='center'>".$exibe['cod']."</td>
             <td></td>
@@ -83,7 +83,7 @@
             <td align='center'>".$exibe['outros']."</td>
             <td></td>
             <td></td>
-            <td align='center'><a href='../../imagens/pg03.php?&id=".$exibe['cod']."'>Imagem(s)</a></td> 
+            <td align='center'><a href='../../imagens/pg03.php?&id=".$exibe['cod']."'> + Imagem(s)</a></td> 
             <td></td>
 
             <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['cod']."'>Delete</a></td> 
@@ -93,7 +93,6 @@
     }
 
     echo"</table>";
-    echo "<a href='../../listagem/img/2023.07.07-15.50.20.jpg'>01</a><br>";
 
 
 

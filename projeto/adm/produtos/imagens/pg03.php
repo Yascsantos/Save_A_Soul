@@ -12,10 +12,10 @@
 
     }    
 
-    echo "<h2>Imagens</h2>
-        <a href='cad/cad.php'>Cadastrar imagens do produto: ".$id."</a>
+    echo "<h2>Mais imagens dos produtos</h2>
+        <a href='cad/cad.php'>Cadastrar</a>
         <br>
-        <a href='listagem/list.php'>Listar imagens do produto: ".$id."</a>
+        <a href='listagem/list.php'>Listar</a>
         <br><br>
         <a href='../index.html'>Voltar</a>
         "
