@@ -41,6 +41,7 @@ CREATE TABLE produto(
     cor VARCHAR(20),
     modelo VARCHAR(30),
     outros VARCHAR(100),
+    img_pro VARCHAR(100),
  
     	 
 		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)

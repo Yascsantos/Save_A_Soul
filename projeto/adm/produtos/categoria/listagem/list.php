@@ -8,7 +8,7 @@
 <body>
     <h1> Listagem das categorias dos produtos </h1>
     <a href="../pg.html"> Voltar </a> <br>
-    <a href="../cadastro/form.html"> Cadastrar </a>
+    <a href="../cadastro/form.html"> Cadastrar categorias </a>
     <br> <br>
 
 <?php
