@@ -7,8 +7,8 @@
 </head>
 <body>
     <h1> Listagem dos produtos </h1>
-    <a href="../pg02.html"> Voltar para a página inicial</a> <br>
-    <a href="../cadastro/form.php"> Cadastrar produtos </a>
+    <a href="../cadastro/form.php"> Cadastrar + produtos </a><br>
+    <a href="../pg02.html"> Voltar</a> <br>
     <br> <br>
 
 <?php
@@ -70,7 +70,7 @@
             <td></td>
             <td align='center'>".$exibe['produto']."</td>
             <td></td>
-            <td align='center'>".$exibe['preco']."</td>
+            <td align='center'>R$".$exibe['preco']."</td>
             <td></td>
             <td align='center'>".$exibe['quantidade']."</td>
             <td></td>

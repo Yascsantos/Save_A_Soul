@@ -13,9 +13,9 @@
     }    
 
     echo "<h2>Imagem padrão do produto</h2>
-        <a href='cads.php'>Cadastrar/mudar</a>
+        <a href='cad_img.php'>Cadastrar/mudar</a>
         <br>
-        <a href='delete.php'>Deletar</a>
+        <a href='../delete/del_img.php'>Deletar</a>
         <br><br>
         <a href='../index.html'>Voltar</a>
         "
