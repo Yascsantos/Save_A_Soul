@@ -1,9 +1,13 @@
-<?php
-    if(!isset($_SESSION))
-    {
-        session_start();
-    }
 
-    session_destroy();
-    header("Location:../../index/index.php");
+
+<?php
+// Inicia a sessão
+session_start();
+
+// Destroi a sessão
+session_destroy();
+
+// Redireciona para a página de login
+header("Location: ../../../../index/lading.php");
+exit;
 ?>
