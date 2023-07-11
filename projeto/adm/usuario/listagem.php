@@ -35,7 +35,7 @@
                 <td></td>
                 <td align='center'>".$exibe['telefone']."</td>
                 <td></td>
-                <td align='center'><a href='alter.php?&codigo=".$exibe['id_user']."'>Considerações</a></td>
+                <td align='center'><a href='./descricao/page.php?&codigo=".$exibe['id_user']."'>Considerações</a></td>
                 <td></td>
     
             </tr>
