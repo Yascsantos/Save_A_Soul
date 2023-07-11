@@ -1,30 +1,38 @@
 <?php
 	include_once("../../../../conexaoBD.php");
-	$tabela="imgpro";
-	$id = "id_imgpro"; 
-	$campo = "id_pro, img";
 
-	//sessão para pegar o ID do produto
-	if(!isset($_SESSION))
+    if(!isset($_SESSION))
     {
         session_start();
     }
-    $cod = $_SESSION['id_ip'];
 
+    $id_imp = $_SESSION['codigo'];
 
-    if(isset($_POST['Enviar']))
+    $sqlPesq = "SELECT img_pro FROM produto WHERE id_pro = $id_imp";
+	$pesquisa = mysqli_query($conexao,$sqlPesq);
+	
+	if (!$pesquisa)
 	{
-		if(isset($_FILES['pic']))
+        die(' Query Inválida: ' . mysqli_error($conexao));
+		
+	} 
+	
+	if (isset($_POST['Cadastrar'])) 
+    {
+        $codigo = $_POST['codigo'];
+
+        if(isset($_FILES['pic']))
 		{
 			$extensao = strtolower(substr($_FILES['pic']["name"],-4)); // extensão
 			$novo_nome = date("Y.m.d-H.i.s").$extensao; //novo nome
-			$diretorio = "../img/"; //diretório
+			$diretorio = "../listagem/img/"; //diretório
 			$arquivo = $diretorio.$novo_nome;
 			
 			move_uploaded_file($_FILES['pic']["tmp_name"], $diretorio.$novo_nome); 
 			
-            $sql = "INSERT INTO $tabela ($campo) 
-            VALUES ('$cod','$arquivo')";
+            $sql = "UPDATE produto SET 
+			img_pro = '$arquivo' 
+			WHERE id_pro = $id_imp";
             
 			$instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 			
@@ -37,10 +45,7 @@
 			else 
 			{
 				mysqli_close($conexao);
-				echo "<h2>Imagem enviada com sucesso!</h2>";
-				echo "<a href='../../produtos/listagem/pro.php'>Voltar</a><br>";
-				echo "<a href='../listagem/list.php'>Listagem</a><br>";
-
+				header ('location: ../listagem/pro.php');
 				exit;
 
 			}
@@ -52,6 +57,7 @@
 		}
 	}
 
+		
 ?>
 
 <!DOCTYPE html>
@@ -60,17 +66,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/perfil.css" type="text/css">
-	<title>Upload de imagem</title>
+	<title>Update de imagem</title>
 </head>
 <body>
-	<h2>Insira imagens do produto selecionado</h2>
-	<a href='../../produtos/listagem/pro.php'>Listar produtos</a><br>
-	<a href='../listagem/list.php'>Listagem imagens</a><br><br>
+    <h2>Cadastrar imagem padrão</h2>
+	<a href='../listagem/pro.php'>Voltar</a><br><br>
 
 	<form action='' method='POST' enctype="multipart/form-data">
+    <input type="hidden" name="codigo" value="<?= $cod;?>" />
 		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input><br>                        
-        <input type="submit" value="Enviar" name="Enviar" class="button">
+        <input type="submit" value="Cadastrar" name="Cadastrar" class="button">
 		
         </form>
 </body>

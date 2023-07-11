@@ -7,8 +7,9 @@
 </head>
 <body>
     <h1>Cadastro de Produtos</h1>
+    <a href="../listagem/pro.php">Listar produtos</a><br>
     <a href="../pg02.html">Voltar</a> <br>
-    <a href="../listagem/pro.php">Listagem</a>
+
     <br> <br>
     <form action="cad.php" method="post">
         

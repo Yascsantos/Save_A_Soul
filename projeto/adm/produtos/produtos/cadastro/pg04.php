@@ -4,17 +4,18 @@
         session_start();
     }
 
-    $_SESSION['id_ip'] = $_GET['id'];
-    $id = $_SESSION['id_ip'];
-    if($_GET['id'] == "" && $_GET['id'] == 0)
+    $_SESSION['codigo'] = $_GET['codigo']; //id_pro
+    $id_imp = $_SESSION['codigo'];
+
+    if($_GET['codigo'] == "" && $_GET['codigo'] == 0)
     {
 
     }    
 
-    echo "<h2>Imagens</h2>
-        <a href='cad/cad.php'>Cadastrar imagens do produto: ".$id."</a>
+    echo "<h2>Imagem padrão do produto</h2>
+        <a href='cad_img.php'>Cadastrar/mudar</a>
         <br>
-        <a href='listagem/list.php'>Listar imagens do produto: ".$id."</a>
+        <a href='../delete/del_img.php'>Deletar</a>
         <br><br>
         <a href='../index.html'>Voltar</a>
         "

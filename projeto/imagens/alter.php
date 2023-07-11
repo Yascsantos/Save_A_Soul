@@ -1,5 +1,5 @@
 <?php
-	include_once("../../../../conexaoBD.php");
+	include_once("../conexaoBD.php");
 	$tabela="imgpro";
 	$id = "id_imgpro"; 
     $pesq="id_pro, img";
@@ -44,8 +44,8 @@
 			{
 				mysqli_close($conexao);
 				echo "<h2>Imagem enviada com sucesso!</h2>";
-				echo "<a href='../../produtos/listagem/pro.php'>Voltar</a><br>";
-				echo "<a href='../listagem/list.php'>Listagem</a><br>";
+				echo "<a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a><br>";
+				echo "<a href='list.php'>Listagem</a><br>";
 
 				exit;
 

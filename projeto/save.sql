@@ -41,6 +41,7 @@ CREATE TABLE produto(
     cor VARCHAR(20),
     modelo VARCHAR(30),
     outros VARCHAR(100),
+    img_pro VARCHAR(100),
  
     	 
 		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)
@@ -89,7 +90,10 @@ CREATE TABLE adocao(
 
 CREATE TABLE descricao_ado (
 	id_descad INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	texto VARCHAR(2000)
+    id_user int,
+	texto VARCHAR(2000),
+
+            FOREIGN KEY (id_user)REFERENCES user (id_user)
 );
 
 
@@ -106,6 +110,10 @@ CREATE TABLE voluntario(
 
 CREATE TABLE descricao_vol (
 	id_descvol INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	texto VARCHAR(2000)
+    id_user int,
+	texto VARCHAR(2000),
+
+            FOREIGN KEY (id_user)REFERENCES user (id_user)
+
 );
 
