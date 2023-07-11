@@ -23,9 +23,11 @@
     echo "
     <table> 
         <tr>
+            <th align='center'></th>
             <th></th>
             <th></th>
             <th></th>
+
             <th align='center'>Imagem padrão</th>
             <th> </th>
             <th align='center'>Código</th>
@@ -47,11 +49,15 @@
             <th align='center'>Outros</th>
             <th></th>
             <th></th>
+            <th></th>
             <th align='center'></th>
             <th></th>
 
             <th></th>
             <th></th>
+            <th></th>
+            <th></th>
+
 
         </tr>";
 
@@ -59,9 +65,11 @@
     {
         echo "
         <tr>
-            <td align='center'><a href='../update/alter.php?&codigo=".$exibe['cod']."'>Alterar </a></td>
+            <td align='center'><a href='../../../../imagens/pg03.php?&id=".$exibe['cod']."'> + Imagem(s)</a></td> 
+            <td></td>            
             <td></td>
             <td></td>
+
             <td align='center'><a href='../cadastro/pg04.php?&codigo=".$exibe['cod']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a></td>
             <td></td>
             <td align='center'>".$exibe['cod']."</td>
@@ -83,11 +91,13 @@
             <td align='center'>".$exibe['outros']."</td>
             <td></td>
             <td></td>
-            <td align='center'><a href='../../imagens/pg03.php?&id=".$exibe['cod']."'> + Imagem(s)</a></td> 
             <td></td>
 
-            <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['cod']."'>Delete</a></td> 
+            <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['cod']."'>Apagar registo</a></td> 
             <td></td>
+            <td></td>
+            <td align='center'><a href='../update/alter.php?&codigo=".$exibe['cod']."'>Alterar registro </a></td>
+
         </tr>
         ";
     }

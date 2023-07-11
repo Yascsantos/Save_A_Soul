@@ -1,5 +1,5 @@
 <?php
-	include_once("../../../../conexaoBD.php");
+	include_once("../conexaoBD.php");
 	$tabela="imgpro";
 	$campos = "id_imgpro"; //chave primária
 	
@@ -14,7 +14,7 @@
 
 	} else {
 		mysqli_close($conexao);
-			header ('location: ../listagem/list.php');
+			header ('location: list.php');
 			
 			exit;
 	}

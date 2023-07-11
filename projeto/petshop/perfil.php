@@ -39,9 +39,10 @@
 
 
     //PRODUTOS
-    $sql_code= "SELECT * FROM produto";
+    $sql_code= "SELECT * FROM produto WHERE id_pro = $id";
     $pesquisa = mysqli_query($conexao,$sql_code);
     echo "<table>";
+    /*
     echo " 
         <tr>
             <th>-----------------------------------------</th>
@@ -67,34 +68,50 @@
         <tr></tr><tr></tr>
 
         <tr></tr>
-        ";
+        ";*/
 
     foreach ($pesquisa as $exibe) 
     {
         echo"
-            <tr></tr>
-
+            <br>
             <tr>
+                <td align='center'>Nome: </td>
                 <td align='center'>".$exibe['prod']."</td>
                 <td></td>
             </tr>
 
             <tr>
+                <td align='center'>Preço: </td>
                 <td align='center'>R$".$exibe['preco']."</td>
                 <td></td>
             </tr>
 
             <tr>
-                <td align='center'>".$exibe['qtd']"</td>
+                <td align='center'>Tamanho: </td>
+                <td align='center'>".$exibe['tamanho']."</td>
+                <td></td>
+            </tr> 
+
+            <tr>
+                <td align='center'>Cor: </td>
+                <td align='center'>".$exibe['cor']."</td>
+                <td></td>
+            </tr> 
+
+            <tr>
+                <td align='center'>Modelo: </td>
+                <td align='center'>".$exibe['modelo']."</td>
+                <td></td>
+            </tr> 
+
+            
+            <tr>
+                <td align='center'>Outras informações: </td>
+                <td align='center'>".$exibe['outros']."</td>
                 <td></td>
             </tr> 
 
             <tr></tr><tr></tr>
-
-            <tr>
-                <td>--------------------------------</td>
-                <td></td>
-            </tr>
         ";
     }
     echo "</table>";

@@ -13,11 +13,11 @@
     }    
 
     echo "<h2>Mais imagens dos produtos</h2>
-        <a href='cad/cad.php'>Cadastrar</a>
+        <a href='cad.php'>Cadastrar</a>
         <br>
-        <a href='listagem/list.php'>Listar</a>
+        <a href='list.php'>Listar</a>
         <br><br>
-        <a href='../index.html'>Voltar</a>
+        <a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a>
         "
 ?>
 

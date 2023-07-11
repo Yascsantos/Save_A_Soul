@@ -1,5 +1,5 @@
 <?php
-	include_once("../../../../conexaoBD.php");
+	include_once("../conexaoBD.php");
 	$tabela="imgpro";
 	$id = "id_imgpro"; 
 	$campo = "id_pro, img";
@@ -38,8 +38,8 @@
 			{
 				mysqli_close($conexao);
 				echo "<h2>Imagem enviada com sucesso!</h2>";
-				echo "<a href='../../produtos/listagem/pro.php'>Voltar</a><br>";
-				echo "<a href='../listagem/list.php'>Listagem</a><br>";
+				echo "<a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a><br>";
+				echo "<a href='list.php'>Listagem</a><br>";
 
 				exit;
 
@@ -64,8 +64,8 @@
 </head>
 <body>
 	<h2>Insira imagens do produto selecionado</h2>
-	<a href='../../produtos/listagem/pro.php'>Listar produtos</a><br>
-	<a href='../listagem/list.php'>Listagem imagens</a><br><br>
+	<a href='../adm/produtos/produtos/listagem/pro.php'>Listar produtos</a><br>
+	<a href='list.php'>Listagem imagens</a><br><br>
 
 	<form action='' method='POST' enctype="multipart/form-data">
 		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
