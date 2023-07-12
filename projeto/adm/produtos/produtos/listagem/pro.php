@@ -16,8 +16,8 @@
     $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, qtd AS quantidade, tamanho, cor, modelo, outros,img_pro 
                 FROM produto p 
 	            INNER JOIN categoria cat ON p.id_cat = cat.id_cat";
-
-    $instrucao = mysqli_query($conexao,$sql);
+     
+    $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
 
     echo "
