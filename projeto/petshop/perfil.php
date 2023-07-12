@@ -41,35 +41,8 @@
     //PRODUTOS
     $sql_code= "SELECT * FROM produto WHERE id_pro = $id";
     $pesquisa = mysqli_query($conexao,$sql_code);
+    
     echo "<table>";
-    /*
-    echo " 
-        <tr>
-            <th>-----------------------------------------</th>
-            <th align='center'></th>
-            <th> </th>
-        </tr> 
-
-        <tr>
-            <th align='center'></th>
-            <th> </th>
-        </tr>
-
-        <tr>
-            <th align='center'></th>
-            <th></th>
-        </tr>
-
-        <tr>
-            <th align='center'></th>
-            <th></th>
-        </tr>
-
-        <tr></tr><tr></tr>
-
-        <tr></tr>
-        ";*/
-
     foreach ($pesquisa as $exibe) 
     {
         echo"
