@@ -12,14 +12,36 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Copiando dados para a tabela save.categoria: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela save.adocao: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `adocao` DISABLE KEYS */;
+/*!40000 ALTER TABLE `adocao` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.animal: ~1 rows (aproximadamente)
+/*!40000 ALTER TABLE `animal` DISABLE KEYS */;
+INSERT INTO `animal` (`id_ani`, `nome_ani`, `raca`, `porte`, `sexo`, `img_ani`) VALUES
+	(2, 'Foozi', 'shih tzu', '', 'Macho', '../listagem/img/2023.07.12-16.33.16.jpg');
+/*!40000 ALTER TABLE `animal` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.categoria: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
 INSERT INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 	(1, 'Roupas'),
 	(2, 'Tigelas/Potes');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.imgpro: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela save.descricao_ado: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `descricao_ado` DISABLE KEYS */;
+/*!40000 ALTER TABLE `descricao_ado` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.descricao_vol: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `descricao_vol` DISABLE KEYS */;
+/*!40000 ALTER TABLE `descricao_vol` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.imgani: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `imgani` DISABLE KEYS */;
+/*!40000 ALTER TABLE `imgani` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.imgpro: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `imgpro` DISABLE KEYS */;
 INSERT INTO `imgpro` (`id_imgpro`, `id_pro`, `img`) VALUES
 	(1, 1, '../img_pro/2023.07.12-14.17.40.jpg'),
@@ -35,6 +57,10 @@ INSERT INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `qtd`, `tamanho`, `c
 -- Copiando dados para a tabela save.user: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.voluntario: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `voluntario` DISABLE KEYS */;
+/*!40000 ALTER TABLE `voluntario` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;

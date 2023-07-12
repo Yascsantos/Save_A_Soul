@@ -62,7 +62,8 @@ CREATE table animal (
     nome_ani  VARCHAR(30),
     raca VARCHAR(50),
     porte VARCHAR(30),
-    sexo VARCHAR(20)
+    sexo VARCHAR(20),
+    img_ani VARCHAR(100)
 
 );
 
