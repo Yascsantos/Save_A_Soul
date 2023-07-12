@@ -12,14 +12,29 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Copiando dados para a tabela save.descricao_vol: ~3 rows (aproximadamente)
-/*!40000 ALTER TABLE `descricao_vol` DISABLE KEYS */;
-INSERT INTO `descricao_vol` (`id_descvol`, `id_user`, `texto`) VALUES
-	(1, 1, ''),
-	(2, 1, 'Chata'),
-	(3, 1, 'Mala'),
-	(4, 2, 'Aprovada');
-/*!40000 ALTER TABLE `descricao_vol` ENABLE KEYS */;
+-- Copiando dados para a tabela save.categoria: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
+INSERT INTO `categoria` (`id_cat`, `nome_cat`) VALUES
+	(1, 'Roupas'),
+	(2, 'Tigelas/Potes');
+/*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.imgpro: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `imgpro` DISABLE KEYS */;
+INSERT INTO `imgpro` (`id_imgpro`, `id_pro`, `img`) VALUES
+	(1, 1, '../img_pro/2023.07.12-14.17.40.jpg'),
+	(2, 1, '../img_pro/2023.07.12-14.17.47.jpg');
+/*!40000 ALTER TABLE `imgpro` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.produto: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `produto` DISABLE KEYS */;
+INSERT INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `qtd`, `tamanho`, `cor`, `modelo`, `outros`, `img_pro`) VALUES
+	(1, 1, 'Vestido', 20.00, 10, 'M', 'Rosa e azul', 'Vestido rodado', 'Vestido para cachorrinhas de pequeno/mÃ©dio porte.', '../listagem/img/2023.07.12-14.17.27.jpg');
+/*!40000 ALTER TABLE `produto` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.user: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
