@@ -110,7 +110,7 @@ background-color:#adb5a0;
              
             </div>
      <ul class="nav-list">
-          <li> <a href="#">FUNÇÕES</a></li>
+          <li> <a href="ajude.php">AJUDE</a></li>
           <li> <a href="https://goo.gl/maps/E9MvDvJCDCmGBeWX7">ENDEREÇO</a></li>
           <li> <a href="#">CONTATO</a></li>
           <li> <a href="#">SOBRE NÓS</a></li>
@@ -120,78 +120,75 @@ background-color:#adb5a0;
 
        </nav>
 </header>
-           <section class="inicio" id="inicio">
-                      <div class="max-width">
-                      <div class="inicio-content">
-                      </div>
-                      </div>
-          </section>
-
-      
-    <section class="sobre" id="sobre">
-  
-  <div class="max-width">
-                <h2 class="title">Sobre</h2>
-              <p>  A Save a Soul tem como objetivo principal o resgate e a reabilitação de animais que foram abandonados e/ou maltratados, <br>
+        
+          <section class="sobre" id="sobre">
+        <div class="max-width">
+            <h2 class="title">Sobre</h2>
+            <div class="sobre-content">
+                <div class="column left">
+                    <img src="imgs/dog1.jpg" alt="">
+                </div>
+                <div class="column right">
+               <b><p>  A Save a Soul tem como objetivo principal o resgate e a reabilitação de animais que foram abandonados e/ou maltratados, <br>
         com a finalidade de disponibilizá-los para adoção responsável. <br>
-        Para isso, todos os animais resgatados são submetidos a uma triagem rigorosa, <br>
+        Para isso, todos os animais resgatados são submetidos a uma triagem rigorosa,
         que inclui exames médicos, consulta veterinária para vacinação e castração,  além de avaliação comportamental. <br>
         Após esse processo, eles são encaminhados para lares temporários. <br>
         Vale ressaltar que, para a Save a Soul, a saúde emocional dos animais é tão importante quanto a saúde física, e,
         <br> por isso, a associação também se dedica a proporcionar um ambiente seguro e acolhedor para esses animais,
-        <br> visando a sua recuperação integral e bem-estar geral.</p>
-  
-  </section>
+        <br> visando a sua recuperação integral e bem-estar geral.</p></b>
+                    <a href="../sobre/sobre.php">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vitima" >
+    <h3 class='title'>Números que assustam</h3>
+        <div class="max-width">
+        
+            <div class="vitima-content">
+               
+               <iframe src='https://g1.globo.com/to/tocantins/noticia/2023/07/11/mais-de-100-casos-de-maus-tratos-a-animais-de-estimacao-foram-registrados-este-ano-no-estado.ghtml'></iframe>
+                
+            </div>
+        </div>
+    </section>
 
+                
+                
+     
+    <section class="comeco" id="comeco">
+        <div class="max-width">
+            <h2 class="title">Como começou</h2>
+            <div class="comeco-content">
+                <div class="column left">
+                <b> <p> Luna vivia nas ruas de uma cidade movimentada. Ela era uma gatinha adorável, com pelagem preta e olhos brilhantes, <br>
+                mas infelizmente, sua vida não era tão bonita quanto sua aparência. <br>
+                Luna sofria maus tratos constantes nas mãos de pessoas cruéis e indiferentes.<br>
+                 Encontramo-la em um estado caótico, com muito medo e tristeza no olhar. Luna foi nossa primeira resgatada e não merecia tudo o que passou, <br>
+                 assim como nenhum animal merece. Infelizmente, não conseguimos salvá-la, mas seus últimos dias foram preenchidos de amor e carinho.<br>
+                 Porém sua vida não foi em vão, pois sua história serviu como estopim para a criação da Save a soul.
+                </div></b>
+                <div class="column right">
+              
+        <img src="imgs/luna.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="ajude" id="ajude">
-  
-  <div class="max-width">
-                <h2 class="title">Junte-se</h2>
-              <div class="carousel owl-carousel ">
-                  <div class="card">
-                    <div class="box">
-                        <img src="./imgs/dog4.jpg" alt="">
-                       
-                        <button class='submit'> <a href="#"> <p>Doe</p></a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./imgs/dog5.jpg" alt="">
-                        <button> <a href="#"><p>Seja voluntário</p></a></button>
-                    </div>
-                    </div>
-                    <div class="card">
-                      <div class="box">
-                          <img src="./imgs/dog3.jpg" alt="">
-                          <button><a href="#"><p>Adote</p></a></button>
-                      </div>
-                </div>
-                <div class="card">
-                      <div class="box">
-                          <img src="./imgs/dog6.jpg" alt="">
-                          <button><a href="#"><p>Petshop</p></a></button>
-                      </div>
-                </div>
-             
-            
-    </div>
-  
-  </section>
+   
 
 
     
 
         <footer >
                       <ul class="lista_informacoes">
-                     
                         <li> <span class="material-symbols-outlined">pin_drop </span>Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</li><br>
                         <li><span class="material-symbols-outlined">call</span>Telefone: (11) 96150-4684 </li><br>
                         <li><span class="material-symbols-outlined">mail </span>Email: saveasoul2023@gmail.com</li><br>
-                        <a  href="https://br.pinterest.com/daianemagalhaesdecastro/fotos-do-site/"><i  class="fa fa-pinterest fa-stack-1x">Imagens tiradas do Pinterest</i></a>
                       </ul>
-                      </div>
+                    
           
           
        

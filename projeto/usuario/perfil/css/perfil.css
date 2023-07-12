@@ -3,9 +3,10 @@
    h2{
     text-align: center;
   }
+ 
   body{
     background-size:100% 100%;
-    background-image:url(../updates/imgs/fundo2.jpg);
+    background-image:url(../updates/imgs/fundo-s.jpg);
     background-repeat: no-repeat;
     background-position: cover;
   }
@@ -112,9 +113,9 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
    .menu{
+    position: fixed;
     height: 100%;
     display: flex;
-    background-color: #adb5a0;
     text-align: justify;
     width: 250px;
     position: relative
@@ -144,10 +145,10 @@
   
 
  .perfil  {
-    margin-left: 15%;
+    margin-left: 0%;
     width: 50%;
     font-family: "Poppins", sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.993);
     padding: 30px 40px;
     text-align: justify;
     border-style: solid;

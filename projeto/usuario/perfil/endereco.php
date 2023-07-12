@@ -35,10 +35,13 @@
     #endereco{
     font-family: "Poppins";
     text-align: justify;
-    background-color:white;
+    background-color: white ;
+  
     }
+   
+    
     </style>
-    <body>
+    <body class='fundo'>
     <div id='endereco'>
         
             <b><p>CEP: <?php foreach ($instrucao as $exibe){ echo $exibe['cep'];}?><br>

@@ -8,7 +8,7 @@
     <link rel="icon" type="imagem/png" href="index/imgs/Amora.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/index.css" type="text/css"></head>
+    <link rel="stylesheet" href="css/ajude.css" type="text/css"></head>
 </head>
 <style>
       @keyframes navLinkFade {
@@ -110,7 +110,7 @@ background-color:#adb5a0;
              
             </div>
      <ul class="nav-list">
-          <li> <a href="../sobre/sobre.php">SOBRE</a></li>
+          <li> <a href="index.php">INICIO</a></li>
           <li> <a href="#">DOE</a></li>
           <li> <a href="#">ADOTE</a></li>
           <li> <a href="#">PETSHOP</a></li>
@@ -120,82 +120,71 @@ background-color:#adb5a0;
 
        </nav>
 </header>
-           <section class="inicio" id="inicio">
-                      <div class="max-width">
-                      <div class="inicio-content">
-                      </div>
-                      </div>
-          </section>
 
-      
-    <section class="sobre" id="sobre">
-  
-  <div class="max-width">
-                <h2 class="title">Sobre</h2>
-              <p>  A Save a Soul tem como objetivo principal o resgate e a reabilitação de animais que foram abandonados e/ou maltratados, <br>
-        com a finalidade de disponibilizá-los para adoção responsável. <br>
-        Para isso, todos os animais resgatados são submetidos a uma triagem rigorosa, <br>
-        que inclui exames médicos, consulta veterinária para vacinação e castração,  além de avaliação comportamental. <br>
-        Após esse processo, eles são encaminhados para lares temporários. <br>
-        Vale ressaltar que, para a Save a Soul, a saúde emocional dos animais é tão importante quanto a saúde física, e,
-        <br> por isso, a associação também se dedica a proporcionar um ambiente seguro e acolhedor para esses animais,
-        <br> visando a sua recuperação integral e bem-estar geral.</p>
-  
-  </section>
-
-
-    <section class="ajude" id="ajude">
-  
-  <div class="max-width">
-                <h2 class="title">Junte-se</h2>
-              <div class="carousel owl-carousel ">
-                  <div class="card">
-                    <div class="box">
-                        <img src="./imgs/dog4.jpg" alt="">
-                       
-                        <button class='submit'> <a href="#"> <p>Doe</p></a></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <img src="./imgs/dog5.jpg" alt="">
-                        <button> <a href="#"><p>Seja voluntário</p></a></button>
-                    </div>
-                    </div>
-                    <div class="card">
-                      <div class="box">
-                          <img src="./imgs/dog3.jpg" alt="">
-                          <button><a href="#"><p>Adote</p></a></button>
-                      </div>
-                </div>
-                <div class="card">
-                      <div class="box">
-                          <img src="./imgs/dog6.jpg" alt="">
-                          <button><a href="#"><p>Petshop</p></a></button>
-                      </div>
-                </div>
-             
+<section class="sobre" id="sobre">
+<h2 class='title'>Como ajudar</h2>
+        <div class="max-width">
             
-    </div>
-  
-  </section>
+            <div class="sobre-content">
+                <div class="column left">
+                    <img src="imgs/dog3.jpg" alt="">
+                </div>
+                <div class="column right">
+<b>
+A sua colaboração fortalece a defesa das nossas causas.
+
+Você pode escolher entre fazer uma doação recorrente, onde já fica programada uma doação mensal. Ou se preferir, você pode também fazer uma doação única, que nos apoia pontualmente.
+
+Para sua segurança, utilizamos a plataforma do Paypal para o recebimento das doações. Por isso, ao clicar no botão de doação, uma nova página será aberta para que a transação da doação seja realizada.
+
+Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidade e continuidade.<br></b>
+                    <a href="#">Doe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="max-width">
+            
+            <div class="sobre-content">
+                <div class="column left">
+                    <img src="imgs/dog4.jpg" alt="">
+                </div>
+                <div class="column right">
+
+                <b>A sua colaboração fortalece a defesa das nossas causas.
+
+Você pode escolher entre fazer uma doação recorrente, onde já fica programada uma doação mensal. Ou se preferir, você pode também fazer uma doação única, que nos apoia pontualmente.
+
+Para sua segurança, utilizamos a plataforma do Paypal para o recebimento das doações. Por isso, ao clicar no botão de doação, uma nova página será aberta para que a transação da doação seja realizada.
+
+Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidade e continuidade.<br></b>
+                    <a href="#">Seja voluntário</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="max-width">
+            
+            <div class="sobre-content">
+                <div class="column left">
+                    <img src="imgs/dog5.jpg" alt="">
+                </div>
+                <div class="column right"><b>
+
+                Preencha o formulário abaixo com seus dados corretos, responda com o máximo de precisão sobre suas expectativas e rotina, esse é o início do nosso processo de adoção,
+                 responda à todas as perguntas com atenção que em breve entraremos em contato.<br></b>
+                    <a href="#">Adote</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-    
 
-        <footer >
-                      <ul class="lista_informacoes">
-                     
-                        <li> <span class="material-symbols-outlined">pin_drop </span>Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</li><br>
-                        <li><span class="material-symbols-outlined">call</span>Telefone: (11) 96150-4684 </li><br>
-                        <li><span class="material-symbols-outlined">mail </span>Email: saveasoul2023@gmail.com</li><br>
-                        <a  href="https://br.pinterest.com/daianemagalhaesdecastro/fotos-do-site/"><i  class="fa fa-pinterest fa-stack-1x">Imagens tiradas do Pinterest</i></a>
-                      </ul>
-                      </div>
-          
-          
-       
-</footer>
+
 </body>
 </html>
 <script src="js/mobile-navbar.js"></script>

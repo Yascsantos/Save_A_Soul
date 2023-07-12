@@ -6,6 +6,16 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+    });
+
+    var typed = new Typed(".typing", {
+        strings:["Carinho"],
+        typeSpeed:100,
+        backSpeed:60,
+        loop:true
+    });
 
     $('.carousel').owlCarousel({
         margin:20,
@@ -23,7 +33,7 @@ $(document).ready(function(){
             },
         
             1000:{
-                items:4,
+                items:1,
                 nav:false
             }
         }
