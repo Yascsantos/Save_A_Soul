@@ -37,10 +37,7 @@
 			else 
 			{
 				mysqli_close($conexao);
-				echo "<h2>Imagem enviada com sucesso!</h2>";
-				echo "<a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a><br>";
-				echo "<a href='list.php'>Listagem</a><br>";
-
+				header ('location: list.php');
 				exit;
 
 			}
@@ -64,7 +61,7 @@
 </head>
 <body>
 	<h2>Insira imagens do produto selecionado</h2>
-	<a href='../adm/produtos/produtos/listagem/pro.php'>Listar produtos</a><br>
+	<a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a><br>
 	<a href='list.php'>Listagem imagens</a><br><br>
 
 	<form action='' method='POST' enctype="multipart/form-data">

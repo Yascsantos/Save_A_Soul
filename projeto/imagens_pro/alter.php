@@ -43,10 +43,7 @@
 			else 
 			{
 				mysqli_close($conexao);
-				echo "<h2>Imagem enviada com sucesso!</h2>";
-				echo "<a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a><br>";
-				echo "<a href='list.php'>Listagem</a><br>";
-
+				header ('location: list.php');
 				exit;
 
 			}
