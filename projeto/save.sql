@@ -60,7 +60,7 @@ CREATE TABLE imgpro (
 CREATE table animal (
     id_ani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome_ani  VARCHAR(30),
-    raça VARCHAR(50),
+    raca VARCHAR(50),
     porte VARCHAR(30),
     sexo VARCHAR(20)
 
