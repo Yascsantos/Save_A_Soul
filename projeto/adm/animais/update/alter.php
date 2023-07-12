@@ -1,9 +1,9 @@
 <!--PHP-->
 <?php
 	include_once("../../../conexaoBD.php");
-	$tabela="produto";
-	$id = "id_pro"; 
-    $pesq= "id_cat, prod, preco, qtd, tamanho, cor, modelo, outros";
+	$tabela="animal";
+	$id = "id_ani"; 
+    $pesq= "nome_ani, raca, porte, sexo";
 	$edit = $_GET['codigo'];
 
     $sql_code = "SELECT $pesq FROM $tabela WHERE $id = $edit";
@@ -30,58 +30,40 @@
     //Transformando o array em variáveis de apoio
         foreach ($pesquisa as $dados)
         {
-            $categoria = $dados['id_cat'];
-            $produto = $dados ['prod'];
-            $preco  = $dados['preco'];
-            $quantidade = $dados['qtd'];
-            $tamanho = $dados['tamanho'];
-            $col = $dados['cor'];
-            $modelo = $dados['modelo'];
-            $outros = $dados['outros'];
-
+            $name = $dados['nome_ani'];
+            $rac = $dados ['raca'];
+            $por  = $dados['porte'];
+            $sexo = $dados['sexo'];
         }
 
     //variáveis do form
         if (isset($_POST['alterar'])) 
         {
-                $codigo = $_POST['codigo'];
-                $cat = $_POST['cat'];
-                $prod = $_POST['prod'];
-                $pre = $_POST['preco'];
-                $qtd = $_POST['qtd'];
-                $tam = $_POST['tam'];
-                $cor = $_POST['cor'];
-                $mod = $_POST['mod'];
-                $out = $_POST['out'];
-    
+            $nome = $_POST['nome'];
+            $raca = $_POST['raca'];
+            $porte = $_POST['porte'];
+            $sx = $_POST['sx'];
+            
             //verificação de campos nulos
-                if(empty($cat)) {$cat = $categoria;}
-                if(empty($prod)) {$prod = $produto;}
-                if(empty($pre)) { $pre = $preco;}
-                if(empty($qtd)) { $qtd = $quantidade;}
-                if(empty($tam)) {$tam = $tamanho;}
-                if(empty($cor)) {$cor = $col;}
-                if(empty($mod)) {$mod = $modelo;}
-                if(empty($out)) {$out = $outros;}
+                if(empty($nome)) {$nome = $name;}
+                if(empty($raca)) {$raca = $rac;}
+                if(empty($porte)) { $pre = $por;}
+                if(empty($sx)) { $sx = $sexo;}
             
             //Script para atualizar um registro na tabela no Banco de Dados
                 $sql = "UPDATE $tabela SET 
-                id_cat = '$cat',
-                prod = '$prod', 
-                preco = '$pre',
-                qtd = '$qtd', 
-                tamanho = '$tam', 
-                cor = '$cor', 
-                modelo = '$mod', 
-                outros = '$out' 
-                WHERE $id = $codigo";
+                nome_ani = '$nome',
+                raca = '$raca', 
+                porte = '$porte',
+                sexo = '$sx' 
+                WHERE $id = $edit";
                 
 
                 $instrucao = mysqli_query($conexao,$sql);
                 if ($instrucao) 
                 {
                     mysqli_close($conexao);
-                    header ('Location:../listagem/pro.php');
+                    header ('Location:../listagem/animais.php');
                     exit;
 
                 } 
@@ -100,42 +82,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=c">
-    <title>Cadastro dos produtos</title>
+    <title>Alteração de dados do animal</title>
 </head>
 <body>
-    <h1>Cadastro de Produtos</h1>
-    <a href="../pg02.html">Voltar</a> <br>
+    <h1>Alteração de dados do animal</h1>
+    <a href="../pg05.html">Voltar</a> <br>
     <!--<a href="../listagem/list.php">Listagem</a>-->
     <br> <br>
     <form action="" method="post">
     <input type="hidden" name="codigo" value="<?= $edit;?>" />
    
-    <label>Categoria do produto: </label> <br>
-    <?= include ("../listagem/cat.php"); ?> 
-    <br>  
-        <label>Produto: </label> <br>
-        <input type="text"  name="prod" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['prod'];}?>">
+        <label>Nome: </label> <br>
+        <input type="text"  name="nome" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['nome_ani'];}?>">
         <br>
-        <label>Preço: </label> <br>
-        <input type="number" name="preco" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['preco'];}?>">
+        <label>Raça: </label> <br>
+        <input type="text" name="raca" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['raca'];}?>">
         <br>
-        <label>Quantidade: </label> <br>
-        <input type="number" name="qtd" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['qtd'];}?>">
+        <label>Porte: </label> <br>
+        <input type="text" name="porte" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['porte'];}?>">
         <br>
-        <label>Tamanho: </label> <br>
-        <input type="text"  name="tam" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['tamanho'];}?>">
+        <label>Sexo: </label> <br>
+        <input type="text"  name="sx" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['sexo'];}?>">
         <br>
-        <label>Cor: </label> <br>
-        <input type="text" name="cor" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['cor'];}?>">
-        <br>
-        <label>Modelo: </label> <br>
-        <input type="text" name="mod" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['modelo'];}?>">
-        <br>
-        <label>Outros: </label> <br>
-        <input type="text"  name="out" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['outros'];}?>">
-        <br><br>
-
-        <input type="submit" name="alterar" value="Alterar produto">
+        <input type="submit" name="alterar" value="Alterar dados">
     </form>
 
 
