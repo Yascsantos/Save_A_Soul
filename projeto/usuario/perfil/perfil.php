@@ -182,7 +182,7 @@
   <div id="sairPopup" class="popup" style="display: none;">
     <h3>Tem certeza que deseja Sair?</h3>
     <p>Todas as suas sessões ativas serão encerradas.</p>
-    <button onclick="performSair()">Sim</button>
+    <button onclick="Sair()">Sim</button>
     <button onclick="hidePopup()">Não</button>
   </div>
 
@@ -195,7 +195,7 @@
       document.getElementById('sairPopup').style.display = 'none';
     }
 
-    function performSair() {
+    function Sair() {
     
       window.location.href = 'logout.php';
     }

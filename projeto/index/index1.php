@@ -110,10 +110,10 @@ background-color:#adb5a0;
              
             </div>
      <ul class="nav-list">
-          <li> <a href="#">FUNÇÕES</a></li>
-          <li> <a href="https://goo.gl/maps/E9MvDvJCDCmGBeWX7">ENDEREÇO</a></li>
-          <li> <a href="#">CONTATO</a></li>
-          <li> <a href="#">SOBRE NÓS</a></li>
+          <li> <a href="../sobre/sobre.php">SOBRE</a></li>
+          <li> <a href="#">DOE</a></li>
+          <li> <a href="#">ADOTE</a></li>
+          <li> <a href="#">PETSHOP</a></li>
           <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
