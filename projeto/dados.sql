@@ -16,15 +16,17 @@
 /*!40000 ALTER TABLE `adocao` DISABLE KEYS */;
 /*!40000 ALTER TABLE `adocao` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.animal: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela save.animal: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `animal` DISABLE KEYS */;
+INSERT INTO `animal` (`id_ani`, `nome_ani`, `raca`, `porte`, `sexo`, `img_ani`) VALUES
+	(2, 'Foozi', 'shih tzu', '', 'Macho', '../listagem/img/2023.07.12-16.33.16.jpg');
 /*!40000 ALTER TABLE `animal` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.categoria: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
 INSERT INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 	(1, 'Roupas'),
-	(2, 'AcessÃ³rios');
+	(2, 'Tigelas/Potes');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.descricao_ado: ~0 rows (aproximadamente)
@@ -39,27 +41,21 @@ INSERT INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 /*!40000 ALTER TABLE `imgani` DISABLE KEYS */;
 /*!40000 ALTER TABLE `imgani` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.imgpro: ~4 rows (aproximadamente)
+-- Copiando dados para a tabela save.imgpro: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `imgpro` DISABLE KEYS */;
 INSERT INTO `imgpro` (`id_imgpro`, `id_pro`, `img`) VALUES
-	(1, 1, '../img/2023.07.10-19.34.24.jpg'),
-	(4, 1, '../img/2023.07.11-15.20.33.jpg'),
-	(5, 1, '../img/2023.07.11-15.19.09.jpg'),
-	(6, 2, '../img/2023.07.11-15.45.26.jpg');
+	(1, 1, '../img_pro/2023.07.12-14.17.40.jpg'),
+	(2, 1, '../img_pro/2023.07.12-14.17.47.jpg');
 /*!40000 ALTER TABLE `imgpro` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.produto: ~2 rows (aproximadamente)
+-- Copiando dados para a tabela save.produto: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `produto` DISABLE KEYS */;
 INSERT INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `qtd`, `tamanho`, `cor`, `modelo`, `outros`, `img_pro`) VALUES
-	(1, 1, 'Vestido', 15.00, 30, 'M', 'Rosa', 'Vestido para cachorrinhas', '---', '../listagem/img/2023.07.07-16.13.41.jpg'),
-	(2, 2, 'Lacinho', 10.00, 12, '5cm', 'Preta', 'Lacinho para amarrar', '---', '../listagem/img/2023.07.07-16.14.23.jpg'),
-	(3, 1, 'Camiseta', 10.00, 12, 'G', 'Azul', 'Camiseta de manda curta', 'Camiseta para cachorros de porte grande', '../listagem/img/2023.07.10-16.19.09.jpg');
+	(1, 1, 'Vestido', 20.00, 10, 'M', 'Rosa e azul', 'Vestido rodado', 'Vestido para cachorrinhas de pequeno/mÃ©dio porte.', '../listagem/img/2023.07.12-14.17.27.jpg');
 /*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.user: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` (`id_user`, `usuario`, `nome`, `email`, `telefone`, `senha`, `foto`, `cep`, `pais`, `estado`, `cidade`, `bairro`, `rua`, `numero`) VALUES
-	(1, 'Yasmin', 'Yasmin Correia dos Santos', 'yasmin2@gmail.com', '959819355', '3011', './img/01.jpg', '06528086', 'Brasil', 'SP', 'Santana de ParnaÃ­ba', '120', 'Rua do Astronauta', '280');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.voluntario: ~0 rows (aproximadamente)

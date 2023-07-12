@@ -23,7 +23,7 @@
 		{
 			$extensao = strtolower(substr($_FILES['pic']["name"],-4)); // extensão
 			$novo_nome = date("Y.m.d-H.i.s").$extensao; //novo nome
-			$diretorio = "../img/"; //diretório
+			$diretorio = "../img_pro/"; //diretório
 			$arquivo = $diretorio.$novo_nome;
 			
 			move_uploaded_file($_FILES['pic']["tmp_name"], $diretorio.$novo_nome); 
@@ -43,10 +43,7 @@
 			else 
 			{
 				mysqli_close($conexao);
-				echo "<h2>Imagem enviada com sucesso!</h2>";
-				echo "<a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a><br>";
-				echo "<a href='list.php'>Listagem</a><br>";
-
+				header ('location: list.php');
 				exit;
 
 			}

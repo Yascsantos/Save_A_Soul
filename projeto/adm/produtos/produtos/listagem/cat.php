@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php
+    
     include_once("../../../../conexaoBD.php");
     $sql= "SELECT * FROM categoria";
     $instrucao = mysqli_query($conexao,$sql);

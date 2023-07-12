@@ -12,7 +12,7 @@
 
     }    
 
-    echo "<h2>Mais imagens dos produtos</h2>
+    echo "<h2>Mais imagens do produto ".$id."</h2>
         <a href='cad.php'>Cadastrar</a>
         <br>
         <a href='list.php'>Listar</a>

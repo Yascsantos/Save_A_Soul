@@ -41,8 +41,6 @@ CREATE TABLE produto(
     cor VARCHAR(20),
     modelo VARCHAR(30),
     outros VARCHAR(100),
-    img_pro VARCHAR(100),
-
     	 
 		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)
 		
@@ -60,10 +58,9 @@ CREATE TABLE imgpro (
 CREATE table animal (
     id_ani INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome_ani  VARCHAR(30),
-    raca VARCHAR(50),
+    raça VARCHAR(50),
     porte VARCHAR(30),
-    sexo VARCHAR(20),
-    img_ani VARCHAR(100)
+    sexo VARCHAR(20)
 
 );
 
