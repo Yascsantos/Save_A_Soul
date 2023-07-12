@@ -90,7 +90,7 @@ CREATE TABLE adocao(
 
 CREATE TABLE descricao_ado (
 	id_descad INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user int,
+   id_user int,
 	texto VARCHAR(2000),
 
             FOREIGN KEY (id_user)REFERENCES user (id_user)
@@ -117,3 +117,4 @@ CREATE TABLE descricao_vol (
 
 );
 
+descricao_ado
