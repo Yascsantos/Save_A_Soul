@@ -1,5 +1,5 @@
 <?php
-    include_once("../../conexaoBD.php");
+    include_once("../../../conexaoBD.php");
 
     $sql= "SELECT * FROM user";
     $instrucao = mysqli_query($conexao,$sql);
@@ -35,14 +35,13 @@
                 <td></td>
                 <td align='center'>".$exibe['telefone']."</td>
                 <td></td>
-                <td align='center'><a href='./descricao/page.php?&codigo=".$exibe['id_user']."'>Considerações</a></td>
+                <td align='center'><a href='../descricao/page.php?&codigo=".$exibe['id_user']."'>Considerações</a></td>
                 <td></td>
     
             </tr>
             ";
         }
-        echo"</table>";
-    
+        echo"</table>";    
     }
 
 ?>

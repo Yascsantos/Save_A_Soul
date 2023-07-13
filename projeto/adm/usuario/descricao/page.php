@@ -25,8 +25,10 @@
     <p>Anote aqui as informações pertinentes, observadas no cliente após a entrevista.</p>
 
     <a href="formad.php">Adoção</a><br>
-    <a href="formlar.php">Lar voluntário</a><br><br>
-    <a href="../listagem.php">Voltar</a>
+    <a href="formlar.php">Lar voluntário</a><br>
+    <a href="../listagem/page01.php">Listar informações</a><br><br>
+
+    <a href="../listagem/listagem.php">Voltar</a>
 
 
 </body>
