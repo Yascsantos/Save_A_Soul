@@ -35,7 +35,7 @@
         else 
         {
             mysqli_close($conexao);
-            header ('location:../listagem.php');
+            header ('location:../listagem/listagem.php');
             exit;
         }
 ?>
