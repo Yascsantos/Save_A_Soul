@@ -24,9 +24,14 @@
     <h1>Informações adicionais</h1>
     <p>Anote aqui as informações pertinentes, observadas no cliente após a entrevista.</p>
 
-    <a href="formad.php">Adoção</a><br>
-    <a href="formlar.php">Lar voluntário</a><br>
-    <a href="../listagem/page01.php">Listar informações</a><br><br>
+    <h2>Cadastar notas</h2>
+    <a href="./adocao/formad.php">Adoção</a><br>
+    <a href="./lar/formlar.php">Lar voluntário</a><br>
+
+    <h2>Cadastar notas</h2>
+    <a href="../listagem/adocao/listado.php">Listar adoção</a><br>
+    <a href="../listagem/lar/listlar.php">Listar lar voluntário</a><br><br>
+
 
     <a href="../listagem/listagem.php">Voltar</a>
 
