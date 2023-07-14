@@ -82,9 +82,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=c">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Alteração de dados do animal</title>
 </head>
 <body>
+<main>
+        <div class="caixa">
+            <div class='espaco'></div>
+              <div class="caixa-dados">
     <h1>Alteração de dados do animal</h1>
     <a href="../pg05.html">Voltar</a> <br>
     <!--<a href="../listagem/list.php">Listagem</a>-->
@@ -104,9 +109,12 @@
         <label>Sexo: </label> <br>
         <input type="text"  name="sx" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['sexo'];}?>">
         <br>
-        <input type="submit" name="alterar" value="Alterar dados">
+        <button input type="submit" name="alterar" value="Alterar dados">Alterar</button>
     </form>
+    </div>
 
+</div>
+</main>
 
 </body>
 </html>

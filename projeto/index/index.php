@@ -95,9 +95,6 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-  body {
-background-color:#adb5a0;
-}
 </style>
 <body>
 <header id="menu">

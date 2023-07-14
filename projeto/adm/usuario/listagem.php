@@ -7,10 +7,70 @@
     foreach ($instrucao as $exibe) 
     {
         echo "
+        <style>
+        body{
+            background-image: url(../../index/imgs/fundo1.jpg);
+            background-size: 100% 100%;
+            background-position: 50%  20%;
+           }
+           @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+    
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            }
+         
+        
+         a{
+         font-family: 'Poppins', sans-serif;
+         font-size: 0.9rem;
+         font-size: 0.9rem;
+         font-weight:600;
+         color:#333235;
+         }
+         
+         
+         a:hover{
+         color:#33323591;
+         }
+         
+         table, th, td {
+         padding: 20px;
+         width: 50%;
+         top:auto;
+      
+        
+         }
+         h2{
+         font-size: 30px;
+         text-align: center;
+         }
+      
+            
+            table {
+            border-collapse: collapse;
+            margin: auto;
+            border-radius:20px;
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(40px);
+            }
+
+            th{
+            font-weight: bold;
+        
+            }
+             
+         }
+         </style>";
+         echo "<body>";
+         echo"<br><br><br><br><br><br><br><br><br><br><br>";
+         echo "<center>
+       
+              
         <table> 
             <tr>
                 <th align='center'>ID</th>
-                <th> </th>
+                <th> </th> 
                 <th align='center'>Usuário</th>
                 <th></th>
                 <th align='center'>Nome</th>
@@ -26,22 +86,23 @@
             echo "
             <tr>
                 <td align='center'>".$exibe['id_user']."</td>
-                <td></td>
+                <td></td>  
                 <td align='center'>".$exibe['usuario']."</td>
-                <td></td>
+                <td></td> 
                 <td align='center'>".$exibe['nome']."</td>
-                <td></td>
+                <td></td> 
                 <td align='center'>".$exibe['email']."</td>
-                <td></td>
+                <td></td> 
                 <td align='center'>".$exibe['telefone']."</td>
-                <td></td>
+                <td></td> 
                 <td align='center'><a href='./descricao/page.php?&codigo=".$exibe['id_user']."'>Considerações</a></td>
                 <td></td>
     
             </tr>
             ";
         }
-        echo"</table>";
+        echo"</table>
+        ";
     
     }
 
