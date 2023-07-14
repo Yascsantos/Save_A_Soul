@@ -111,7 +111,7 @@
     {
         echo "
         <tr>
-            <td align='center'><a href='../../../../imagens_pro/pg03.php?&id=".$exibe['id_ani']."'> + Imagem(s)</a></td> 
+            <td align='center'><a href='../../../imagens_ani/pg07.php?&id=".$exibe['id_ani']."'> + Imagem(s)</a></td> 
             <td></td>            
             <td></td>
             <td></td>

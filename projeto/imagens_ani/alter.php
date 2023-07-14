@@ -1,8 +1,8 @@
 <?php
 	include_once("../conexaoBD.php");
-	$tabela="imgpro";
-	$id = "id_imgpro"; 
-    $pesq="id_pro, img";
+	$tabela="imgani";
+	$id = "id_imgani"; 
+    $pesq="id_ani, img";
 	$edit = $_GET['codigo'];
 
 		
@@ -23,7 +23,7 @@
 		{
 			$extensao = strtolower(substr($_FILES['pic']["name"],-4)); // extensão
 			$novo_nome = date("Y.m.d-H.i.s").$extensao; //novo nome
-			$diretorio = "../img_pro/"; //diretório
+			$diretorio = "../img_ani/"; //diretório
 			$arquivo = $diretorio.$novo_nome;
 			
 			move_uploaded_file($_FILES['pic']["tmp_name"], $diretorio.$novo_nome); 
@@ -67,10 +67,10 @@
 	<title>Update de imagem</title>
 </head>
 <body>
-    <h2>Alterar imagem do produto</h2>
-	<a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a><br>
-	<a href='list.php'>Listagem imagens</a><br><br>
-	
+    <h2>Alterar imagem do animal</h2>
+	<a href='../adm/animais/listagem/animais.php'>Voltar</a><br>
+	<a href='list.php'>Listagem</a><br>
+
 	<form action='' method='POST' enctype="multipart/form-data">
     <input type="hidden" name="codigo" value="<?= $edit;?>" />
 		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
