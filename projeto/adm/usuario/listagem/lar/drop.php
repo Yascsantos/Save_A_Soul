@@ -1,7 +1,7 @@
 <?php
 	include_once("../../../../conexaoBD.php");
-	$tabela="descricao_ado";
-	$campos = "id_descad"; //chave primária
+	$tabela="descricao_vol";
+	$campos = "id_descvol"; //chave primária
 	
 	$codigo = $_GET['codigo'];
 	

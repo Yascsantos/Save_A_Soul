@@ -1,7 +1,7 @@
 <?php
 	include_once("../../../../conexaoBD.php");
-	$tabela="descricao_ado";
-	$id = "id_descad"; 
+	$tabela="descricao_vol";
+	$id = "id_descvol"; 
     $pesq="texto";
 	$edit = $_GET['codigo'];
     echo $edit;
@@ -35,7 +35,7 @@
         else 
         {
 			mysqli_close($conexao);
-            header ('location: ../listagem.php');
+            header ('location:../listagem.php');
 
 			exit;
 		}
