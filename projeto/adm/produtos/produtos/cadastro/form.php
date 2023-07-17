@@ -17,8 +17,9 @@
 
     <form action="cad.php" method="post">
         <div class='input-dados'>
-    <label>Categoria do produto: </label> <br>
-    <?= include_once("../listagem/cat.php"); ?> 
+    <label>Categoria do produto: </label>
+    <br>
+    <?= include("../listagem/cat.php");?> <br>
 
         <label>Produto: </label>
         <input type="text" placeholder="Produto" name="prod">
@@ -48,10 +49,10 @@
         <button input type="submit" name="cadastrar" value="Cadastrar produto">Cadastrar</button>
         </div>
 
-</div>
+</div></div>
 </main>
 
-    </form>
+</form>
 
 
 </body>

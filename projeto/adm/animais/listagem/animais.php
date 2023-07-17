@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    
     <title>Listagem dos animais</title>
 </head>
 <body>
+<<<<<<< HEAD
+    <h2> Listagem dos animais </h2>
+    
+    <a href="../cadastro/form.html"> Cadastrar mais animais </a><br>
+=======
     <h1> Listagem dos animais </h1>
     <a href="../cadastro/form.php"> Cadastrar mais animais </a><br>
+>>>>>>> 6019948347ffb6de4c0f820bf4cc1f238c715f99
     <a href="../pg05.html"> Voltar</a> <br>
     <br> <br>
 
@@ -21,17 +27,18 @@
     echo "
     <style>
     body{
-        background-image: url(../../index/imgs/fundo1.jpg);
-        background-size: 100% 100%;
-        background-position: 50%  20%;
-       }
+        background-size:1500px 900px;
+        background-image:url(../../../index/imgs/fundo1.jpg);
+        background-repeat: no-repeat;
+        color:white ;
+       
+    }
        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
     * {
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
         }
-     
     
      a{
      font-family: 'Poppins', sans-serif;
@@ -43,11 +50,11 @@
      
      
      a:hover{
-     color:#33323591;
+     color:white;
      }
      
      table, th, td {
-     padding: 20px;
+     padding: 8px;
      width: 50%;
      top:auto;
   
@@ -73,10 +80,7 @@
         }
          
      }
-     </style>";
-     echo "<body>";
-     echo"<br><br><br><br><br><br><br><br><br><br><br>";
-     echo "<center>
+     </style>
    
     <table> 
         <tr>
