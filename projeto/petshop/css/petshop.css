@@ -144,10 +144,34 @@ margin-top:auto;
   color: #efe6eb;
   }
 
+
+  .sobre .sobre-content{
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /*  sessão sobre  */
+  .title{
+      text-align: center;
+      color: #f1e8ec;
+  }
+  .sobre .sobre-content .left{
+    width: 30%;
+  }
+
+  .sobre .sobre-content .left img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
 .produto .carousel .card{
   background: 826990;
    border-radius: 6px;
-   padding: 25px 35px;
+   padding: 20px 20px;
    text-align: center;
    transition: all 0.3s ease;
 }
@@ -158,7 +182,7 @@ margin-top:auto;
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 5%;
     border: 5px solid #efe6eb;
     transition: all 0.3s ease;
 }
@@ -175,11 +199,7 @@ margin-top:auto;
 .produto .carousel .card:hover .box{
   transform: scale(1.05);
 }
-.produto .carousel .card .text{
-  font-size: 25px;
-  font-weight: 500;
-  margin: 10px 0 7px 0;
-}
+
 .owl-dots{
   text-align: center;
   margin-top: 20px;

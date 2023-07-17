@@ -110,7 +110,7 @@
           <li> <a href="index.php">INICIO</a></li>
           <li> <a href="#">DOE</a></li>
           <li> <a href="#">ADOTE</a></li>
-          <li> <a href="../petshop/petshop.html">PETSHOP</a></li>
+          <li> <a href="../adm/produtos/produtos/listagem/grade.php">PETSHOP</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
           <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
@@ -163,7 +163,7 @@ Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidad
         </div>
     </section>
 
-    <section class="sobre" id="sobre">
+   <section class="sobre" id="sobre">
         <div class="max-width">
             
             <div class="sobre-content">

@@ -134,7 +134,6 @@ margin-top:auto;
   }
 
 .sobre .sobre-content{
-  
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -147,8 +146,7 @@ margin-top:auto;
     color: #f1e8ec;
 }
 .sobre .sobre-content .left{
-
-  width: 45%;
+  width: 30%;
 }
 .sobre .sobre-content .right{
   width: 55%;
