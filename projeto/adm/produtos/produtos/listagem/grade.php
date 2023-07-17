@@ -96,6 +96,7 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
+<<<<<<< HEAD
 </style>
 <body>
 <header id="menu">
@@ -141,9 +142,15 @@
             <div class="sobre-content">
        
     <?php
+=======
+<?php
+    include_once("filtro.php");
+>>>>>>> 1f19206db77065f4cd18197c839f32063cb9643f
     include_once("../../../../conexaoBD.php");
     $sql= "SELECT * FROM produto";
     $instrucao = mysqli_query($conexao,$sql);
+
+
     echo "
     <style>
     body{
@@ -163,6 +170,7 @@
           margin-bottom: 10px;
       }
 
+<<<<<<< HEAD
   
           .popup {
             width: 300px;
@@ -215,6 +223,183 @@
 
     }
   
+=======
+<<<<<<< HEAD
+=======
+        th{
+        font-weight: bold;
+    
+        }
+         
+     }
+     </style>";
+     
+    echo "<table>";
+
+    if(isset($_POST['pesq']))
+    {
+        if(!isset($_SESSION))
+        {
+            session_start();
+        }
+    
+        $_SESSION['cat'] = $_POST['categoria']; //id_pro
+        $cat = $_SESSION['cat'];
+ 
+        //se o campo for nulo
+        if ($cat == "0")
+        {
+            include_once("../../../../conexaoBD.php");
+            $sql_code= "SELECT * FROM produto";
+            $pesquisa = mysqli_query($conexao,$sql_code);
+                       
+                       
+            echo "<table>";
+            echo "                        
+                <tr>
+                    <th align='center'></th>
+                    <th> </th>
+                </tr>
+                       
+                <tr>
+                    <th align='center'></th>
+                    <th></th>
+                </tr>
+                       
+                <tr></tr>
+                <tr></tr>
+                ";
+                       
+                foreach ($pesquisa as $exibe) 
+                {
+                    echo "
+                       <tr>
+                           <td align='center'><a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a></td>
+                           <td></td>
+                       </tr>
+                       
+                       <tr>
+                           <td align='center'><a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</td>
+                           <td></td>
+                       </tr>
+                       
+                       <tr>
+                           <td align='center'>R$".$exibe['preco']."</td>
+                           <td></td>
+                       </tr> 
+                       
+                       <tr></tr><tr></tr>
+                       ";
+                       
+                }
+                echo"</table>";
+               
+            }
+   
+
+        //se o filto for selecionado
+            include_once("../../../../conexaoBD.php");
+            $sql_query= "SELECT * FROM produto Where id_cat = $cat ";
+            $requery = mysqli_query($conexao,$sql_query);
+                
+                
+            echo "<table>";
+            echo "                 
+                <tr>
+                    <th align='center'></th>
+                    <th> </th>
+                </tr>
+                
+                <tr>
+                    <th align='center'></th>
+                        <th></th>
+                </tr>
+                
+                <tr></tr>
+                <tr></tr>
+                ";
+                
+            foreach ($requery as $dados) 
+            {
+                echo "
+                    <tr>
+                     <td align='center'><a href='../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'><img src=".$dados['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a></td>
+                     <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td align='center'><a href='../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'>".$dados['prod']."</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td align='center'>R$".$dados['preco']."</td>
+                        <td></td>
+                    </tr> 
+                
+                    <tr></tr><tr></tr>
+                    ";
+                
+            }
+                    
+                echo"</table>";
+
+
+    }
+        
+        
+
+
+    //Se o filtro NÃO for assionado
+        else 
+        { 
+            include_once("../../../../conexaoBD.php");
+            $code= "SELECT * FROM produto";
+            $query = mysqli_query($conexao,$code);
+        
+        
+            echo "<table>";
+            echo "        
+                <tr>
+                    <th align='center'></th>
+                    <th> </th>
+                </tr>
+        
+                <tr>
+                    <th align='center'></th>
+                    <th></th>
+                </tr>
+        
+                <tr></tr>
+                <tr></tr>
+                ";
+        
+            foreach ($query as $exibe) 
+            {
+                echo "
+                <tr>
+                    <td align='center'><a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a></td>
+                    <td></td>
+                </tr>
+        
+                <tr>
+                    <td align='center'><a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</td>
+                    <td></td>
+                </tr>
+        
+                <tr>
+                    <td align='center'>R$".$exibe['preco']."</td>
+                    <td></td>
+                </tr> 
+        
+                <tr></tr><tr></tr>
+                ";
+        
+            }
+            echo"</table>";
+    }
+
+>>>>>>> 1f19206db77065f4cd18197c839f32063cb9643f
 
 
 ?>

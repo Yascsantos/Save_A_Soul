@@ -19,7 +19,7 @@
         <div class='input-dados'>
     <label>Categoria do produto: </label>
     <br>
-    <?= include ("../listagem/cat.php"); ?> <br>
+    <?= include("../listagem/cat.php");?> <br>
 
         <label>Produto: </label>
         <input type="text" placeholder="Produto" name="prod">
@@ -52,7 +52,7 @@
 </div></div>
 </main>
 
-    </form>
+</form>
 
 
 </body>
