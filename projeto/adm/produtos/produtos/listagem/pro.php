@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/style.css">
+
     <title>Listagem dos produtos</title>
 </head>
 <body>
-    <h1> Listagem dos produtos </h1>
+    <h2> Listagem dos produtos </h2>
+    <div>
     <a href="../cadastro/form.php"> Cadastrar + produtos </a><br>
-    <a href="../pg02.html"> Voltar</a> <br>
+    <a href="../pg02.html"> Voltar</a> </div>
     <br> <br>
 
 <?php
@@ -24,10 +25,13 @@
     echo "
     <style>
     body{
-        background-image: url(../../index/imgs/fundo1.jpg);
-        background-size: 100% 100%;
-        background-position: 50%  20%;
-       }
+        background-size:1500px 900px;
+        background-image:url(../../../../index/imgs/fundo1.jpg);
+        background-position: cr ;
+        background-repeat: no-repeat;
+        color:white ;
+       
+    }
        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
     * {
@@ -50,7 +54,7 @@
      }
      
      table, th, td {
-     padding: 20px;
+     padding: 8px;
      width: 50%;
      top:auto;
   
@@ -77,9 +81,9 @@
          
      }
      </style>";
-     echo "<body>";
-     echo"<br><br><br><br><br><br><br><br><br><br><br>";
-     echo "<center>
+
+   
+     echo "
     <table> 
         <tr>
             <th align='center'></th>
@@ -166,9 +170,7 @@
 
 
 ?>
-  </div>
 
-</div>
 </main>
 </body>
 </html>
