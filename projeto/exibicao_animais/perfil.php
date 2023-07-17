@@ -70,6 +70,12 @@
                     <td align='center'>".$exibe['sexo']."</td>
                     <td></td>
                 </tr> 
+
+                <tr>
+                    <td align='center'><button><a href='../funcoes/adotar.html'>Adote</a><td></button>
+                    <td align='center'><button><a href='../funcoes/lar.html'>Seja voluntário</a><td></button>
+
+                </tr>
         
                 <tr></tr><tr></tr>
             ";
