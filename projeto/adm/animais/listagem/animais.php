@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1> Listagem dos animais </h1>
-    <a href="../cadastro/form.html"> Cadastrar mais animais </a><br>
+    <a href="../cadastro/form.php"> Cadastrar mais animais </a><br>
     <a href="../pg05.html"> Voltar</a> <br>
     <br> <br>
 

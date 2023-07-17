@@ -39,7 +39,7 @@ CREATE TABLE produto(
     qtd int,
     tamanho VARCHAR(30),
     cor VARCHAR(20),
-    modelo VARCHAR(30),
+    modelo VARCHAR(100),
     outros VARCHAR(100),
     img_pro VARCHAR(100),
 
