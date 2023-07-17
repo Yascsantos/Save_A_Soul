@@ -1,5 +1,5 @@
 <?php
-    include_once("../../conexaoBD.php");
+    include_once("../conexaoBD.php");
 
     if(!isset($_SESSION))
     {
