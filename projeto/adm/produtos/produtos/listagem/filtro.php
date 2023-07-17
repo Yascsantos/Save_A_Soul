@@ -20,7 +20,7 @@
 
     echo "<form action='grade.php' method='POST'>";
     echo "<select name='categoria' required>
-        <option value=''>Selecione a categoria</option>
+        <option value='0'>Selecione a categoria</option>
     ";
 
 
