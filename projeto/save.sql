@@ -39,7 +39,7 @@ CREATE TABLE produto(
     qtd int,
     tamanho VARCHAR(30),
     cor VARCHAR(20),
-    modelo VARCHAR(30),
+    modelo VARCHAR(100),
     outros VARCHAR(100),
     img_pro VARCHAR(100),
 
@@ -89,8 +89,8 @@ CREATE TABLE adocao(
 );
 
 CREATE TABLE descricao_ado (
-	id_descad INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-   id_user int,
+    id_descad INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id_user int,
 	texto VARCHAR(2000),
 
             FOREIGN KEY (id_user)REFERENCES user (id_user)

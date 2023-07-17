@@ -18,7 +18,7 @@
     $cod = $_SESSION['id_u'];
     
 
-    include_once("../../../conexaoBD.php");
+    include_once("../../../../conexaoBD.php");
 
     $sql= "SELECT * FROM descricao_ado WHERE id_user = $cod";
     $instrucao = mysqli_query($conexao,$sql);
@@ -29,20 +29,23 @@
     foreach ( $pesquisa as $dados)
     {
         $user = $dados['nome'];
-        echo $user;
     }
     
 
     foreach ($instrucao as $exibe) 
     {
-        echo "<a href='listagem.php'>Voltar</a><br><br>";
+        echo "<a href='../listagem.php'>Voltar</a><br><br>";
         echo "
         <table> 
             <tr>
+                <th></th>
+                <th></th>
                 <th align='center'>Usuário</th>
                 <th></th>
                 <th></th>
                 <th align='center'>texto</th>
+                <th></th>
+                <th></th>
                 <th></th>
             </tr>";
     
@@ -50,10 +53,14 @@
         {
             echo "
             <tr>
+                <td align='center'><a href='alter.php?&codigo=".$exibe['id_descad']."'>Alterar </a></td>
+                <td></td>
                 <td align='center'>".$user."</td>
                 <td></td>
                 <td></td>
                 <td align='center'>".$exibe['texto']."</td>
+                <td></td>
+                <td align='center'><a href='drop.php?&codigo=".$exibe['id_descad']."'>Delete</a></td> 
                 <td></td>
             </tr>
             ";

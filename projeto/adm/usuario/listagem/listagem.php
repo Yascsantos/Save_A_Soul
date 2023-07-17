@@ -94,25 +94,16 @@
                 <td align='center'>".$exibe['email']."</td>
                 <td></td> 
                 <td align='center'>".$exibe['telefone']."</td>
-<<<<<<< HEAD:projeto/adm/usuario/listagem.php
                 <td></td> 
-                <td align='center'><a href='./descricao/page.php?&codigo=".$exibe['id_user']."'>Considerações</a></td>
-=======
-                <td></td>
                 <td align='center'><a href='../descricao/page.php?&codigo=".$exibe['id_user']."'>Considerações</a></td>
->>>>>>> da6327fd39136aa760f22b0a7b65b37f37cddb91:projeto/adm/usuario/listagem/listagem.php
                 <td></td>
     
             </tr>
             ";
         }
-<<<<<<< HEAD:projeto/adm/usuario/listagem.php
         echo"</table>
         ";
     
-=======
-        echo"</table>";    
->>>>>>> da6327fd39136aa760f22b0a7b65b37f37cddb91:projeto/adm/usuario/listagem/listagem.php
     }
 
 ?>
