@@ -68,7 +68,7 @@
             </tr> 
 
             <tr>
-                <td align='center'>Cor: </td>
+                <td align='center'>Cores disponivéis: </td>
                 <td align='center'>".$exibe['cor']."</td>
                 <td></td>
             </tr> 
