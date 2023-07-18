@@ -1,5 +1,7 @@
 <?php
     include_once("../conexaoBD.php");
+    include("protect.php");
+
 
     if(!isset($_SESSION))
     {
@@ -83,6 +85,10 @@
                 <td align='center'>".$exibe['outros']."</td>
                 <td></td>
             </tr> 
+
+            <tr>
+                <td align='center'><button><a href='carrinho.html'>Adicionar ao carrinho</a><td></button>
+            </tr>
 
             <tr></tr><tr></tr>
         ";
