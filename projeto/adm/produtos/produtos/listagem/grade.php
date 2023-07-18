@@ -140,12 +140,10 @@
         <div class="max-width">
     
             <div class="sobre-content">
-       
-    <?php
-=======
+/*>>>>>>> 1f19206db77065f4cd18197c839f32063cb9643f*/
+     
 <?php
     include_once("filtro.php");
->>>>>>> 1f19206db77065f4cd18197c839f32063cb9643f
     include_once("../../../../conexaoBD.php");
     $sql= "SELECT * FROM produto";
     $instrucao = mysqli_query($conexao,$sql);
@@ -222,10 +220,12 @@
         ";
 
     }
-  
-=======
-<<<<<<< HEAD
-=======
+/*  
+  =======
+  <<<<<<< HEAD
+  =======
+*/
+echo "
         th{
         font-weight: bold;
     
@@ -399,7 +399,7 @@
             echo"</table>";
     }
 
->>>>>>> 1f19206db77065f4cd18197c839f32063cb9643f
+/*>>>>>>> 1f19206db77065f4cd18197c839f32063cb9643f*/
 
 
 ?>
