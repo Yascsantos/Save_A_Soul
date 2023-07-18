@@ -6,6 +6,8 @@
     <title>Carrinho</title>
 </head>
 <body>
-    <p>teste</p>
 </body>
 </html>
+<?php
+ echo "teste";
+?>

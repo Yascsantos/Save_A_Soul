@@ -32,12 +32,6 @@
         <input type="number" placeholder="Quantidade" name="qtd">
         </div>
         <div class='input-senha'>
-        <label>Tamanho: </label>
-        <input type="text" placeholder="Tamanho" name="tam">
-        </div>
-        <div class='input-senha'>
-        <label>Cor: </label>
-        <input type="text" placeholder="Cor" name="cor">
 </div>
         <label>Modelo: </label>
         <input type="text" placeholder="Modelo" name="mod">

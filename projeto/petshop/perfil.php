@@ -59,18 +59,6 @@
                 <td align='center'>Preço: </td>
                 <td align='center'>R$".$exibe['preco']."</td>
                 <td></td>
-            </tr>
-
-            <tr>
-                <td align='center'>Tamanho: </td>
-                <td align='center'>".$exibe['tamanho']."</td>
-                <td></td>
-            </tr> 
-
-            <tr>
-                <td align='center'>Cores disponivéis: </td>
-                <td align='center'>".$exibe['cor']."</td>
-                <td></td>
             </tr> 
 
             <tr>
@@ -84,16 +72,54 @@
                 <td align='center'>Outras informações: </td>
                 <td align='center'>".$exibe['outros']."</td>
                 <td></td>
-            </tr> 
-
+            </tr>
+            
             <tr>
-                <td align='center'><button><a href='carrinho.html'>Adicionar ao carrinho</a><td></button>
+            
+                <td align='center'>
             </tr>
 
             <tr></tr><tr></tr>
         ";
     }
     echo "</table>";
+
+    echo "<form action='carrinho.php' method='get'>";
+    //tamanho
+    $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
+    $instrucao = mysqli_query($conexao,$sql);
+
+    echo "<label>Tamanhos disponivéis</label><br>";
+    foreach ($instrucao as $exibe) 
+    {
+        echo "  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['id_tam'].">
+        <label for=".$exibe['tamanho'].">".$exibe['tamanho']."</label><br>
+        ";
+
+    }
+
+    //cores
+        $code= "SELECT * FROM cores WHERE id_pro = $id";
+        $busca = mysqli_query($conexao,$code);
+        
+        echo "<label>Cores disponivéis</label><br>";
+        foreach ($busca as $exibe) 
+        {
+            echo "  <input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['id_cor'].">
+            <label for=".$exibe['cor'].">".$exibe['cor']."</label><br>
+            ";
+    
+        }
+    echo "
+        <label>Quantidade: </label> 
+        <input type='number' placeholder='Quantidade' name='qtd'><br>
+
+    ";
+    echo "<br><br><input type='submit' name='salvar' value= 'Adicionar ao carrinho'></input>";
+    echo "</form>"
+
+    //quantidade
+
 
     
 

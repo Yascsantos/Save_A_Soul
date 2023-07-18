@@ -3,7 +3,7 @@
 	include_once("../../../../conexaoBD.php");
 	$tabela="produto";
 	$id = "id_pro"; 
-    $pesq= "id_cat, prod, preco, qtd, tamanho, cor, modelo, outros";
+    $pesq= "id_cat, prod, preco, qtd, modelo, outros";
 	$edit = $_GET['codigo'];
 
     $sql_code = "SELECT $pesq FROM $tabela WHERE $id = $edit";
@@ -34,8 +34,6 @@
             $produto = $dados ['prod'];
             $preco  = $dados['preco'];
             $quantidade = $dados['qtd'];
-            $tamanho = $dados['tamanho'];
-            $col = $dados['cor'];
             $modelo = $dados['modelo'];
             $outros = $dados['outros'];
 
@@ -49,8 +47,6 @@
                 $prod = $_POST['prod'];
                 $pre = $_POST['preco'];
                 $qtd = $_POST['qtd'];
-                $tam = $_POST['tam'];
-                $cor = $_POST['cor'];
                 $mod = $_POST['mod'];
                 $out = $_POST['out'];
     
@@ -59,8 +55,6 @@
                 if(empty($prod)) {$prod = $produto;}
                 if(empty($pre)) { $pre = $preco;}
                 if(empty($qtd)) { $qtd = $quantidade;}
-                if(empty($tam)) {$tam = $tamanho;}
-                if(empty($cor)) {$cor = $col;}
                 if(empty($mod)) {$mod = $modelo;}
                 if(empty($out)) {$out = $outros;}
             
@@ -70,8 +64,6 @@
                 prod = '$prod', 
                 preco = '$pre',
                 qtd = '$qtd', 
-                tamanho = '$tam', 
-                cor = '$cor', 
                 modelo = '$mod', 
                 outros = '$out' 
                 WHERE $id = $codigo";
@@ -121,12 +113,6 @@
         <br>
         <label>Quantidade: </label> <br>
         <input type="number" name="qtd" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['qtd'];}?>">
-        <br>
-        <label>Tamanho: </label> <br>
-        <input type="text"  name="tam" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['tamanho'];}?>">
-        <br>
-        <label>Cor: </label> <br>
-        <input type="text" name="cor" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['cor'];}?>">
         <br>
         <label>Modelo: </label> <br>
         <input type="text" name="mod" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['modelo'];}?>">

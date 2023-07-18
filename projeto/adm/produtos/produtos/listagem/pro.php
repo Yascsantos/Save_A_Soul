@@ -15,7 +15,7 @@
 
 <?php
     include_once("../../../../conexaoBD.php");
-    $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, qtd AS quantidade, tamanho, cor, modelo, outros,img_pro 
+    $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, qtd AS quantidade, modelo, outros,img_pro 
                 FROM produto p 
 	            INNER JOIN categoria cat ON p.id_cat = cat.id_cat";
      
@@ -103,14 +103,13 @@
             <th></th>
             <th align='center'>Quantidade</th>
             <th></th>
-            <th align='center'>Tamanho</th>
-            <th></th>
-            <th align='center'>Cor</th>
-            <th></th>
             <th align='center'>Modelo</th>
             <th></th>
             <th align='center'>Outros</th>
             <th></th>
+            <th align='center'></th>
+            <th></th>
+            <th align='center'></th>
             <th></th>
             <th></th>
             <th align='center'></th>
@@ -145,17 +144,14 @@
             <td></td>
             <td align='center'>".$exibe['quantidade']."</td>
             <td></td>
-            <td align='center'>".$exibe['tamanho']."</td>
-            <td></td>
-            <td align='center'>".$exibe['cor']."</td>
-            <td></td>
             <td align='center'>".$exibe['modelo']."</td>
             <td></td>
             <td align='center'>".$exibe['outros']."</td>
             <td></td>
+            <td align='center'><a href='../cadastro/tam/form.php?&codigo=".$exibe['cod']."'>Cadastrar tamanhos</a></td>
             <td></td>
+            <td align='center'><a href='../cadastro/cor/form.php?&codigo=".$exibe['cod']."'>Cadastrar cores</a></td>
             <td></td>
-
             <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['cod']."'>Apagar registo</a></td> 
             <td></td>
             <td></td>
