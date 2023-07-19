@@ -151,7 +151,7 @@
             <td></td>
             <td align='center'><a href='../cadastro/cor/page02.php?&codigo=".$exibe['cod']."'>Cadastrar cores</a></td>
             <td></td>
-            <td align='center'><a href='../../../../imagens_pro/pg03.php?&id=".$exibe['cod']."'> Cadastrar + imagens</a></td> 
+            <td align='center'><a href='../../../../imagens_pro/pg03.php?&codigo=".$exibe['cod']."'> Cadastrar + imagens</a></td> 
             <td></td>   
             <td align='center'><a href='../update/alter.php?&codigo=".$exibe['cod']."'>Alterar dados </a></td>
             <td></td>

@@ -15,6 +15,7 @@
 <?php
     include_once("../../../../conexaoBD.php");
 
+    
     if(!isset($_SESSION))
     {
         session_start();
@@ -27,40 +28,21 @@
     {
 
     }    
+    //IMAGENS
 
-    //IMAGENS 
-    $sql= "SELECT * FROM imgpro WHERE id_pro = $id";
-    $instrucao = mysqli_query($conexao,$sql);
-
-    echo "
-    <table> 
-        <tr>
-            <th align='center'></th>
-            <th> </th>
-        </tr>";
-
-    foreach ($instrucao as $exibe) 
-    {
         echo "
-        <tr>
-            <td align='center'><img src=".$exibe['img']."  width='100px' height='100px'></td>
-            <td></td>
-        </tr>
-        ";
-    }
-    echo"</table>";
-
+        <h3><a href='../../../../imagens_pro/listagem.php?&codigo=".$id."'>Listar imgens</a></h3>";
 
 
     //PRODUTOS
     $sql_code= "SELECT * FROM produto WHERE id_pro = $id";
     $pesquisa = mysqli_query($conexao,$sql_code);
     
+    echo "<label><h3>Descrição do produto</h3></label>";
     echo "<table>";
     foreach ($pesquisa as $exibe) 
     {
         echo"
-            <br>
             <tr>
                 <td align='center'>Nome: </td>
                 <td align='center'>".$exibe['prod']."</td>
@@ -102,7 +84,7 @@
     $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
 
-    echo "<label><b>Tamanhos disponivéis</b></label><br>";
+    echo "<label><h3>Tamanhos disponivéis</h3></label>";
     foreach ($instrucao as $exibe) 
     {
         echo "
@@ -121,7 +103,7 @@
         $busca = mysqli_query($conexao,$code);
 
         echo "<br>";
-        echo "<label><b>Cores disponivéis</b></label><br>";
+        echo "<label><h3>Cores disponivéis</h3></label>";
         foreach ($busca as $exibe) 
         {
             echo "

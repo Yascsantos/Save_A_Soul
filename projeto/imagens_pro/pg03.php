@@ -4,10 +4,10 @@
         session_start();
     }
 
-    $_SESSION['id_ip'] = $_GET['id']; //id_pro
+    $_SESSION['id_ip'] = $_GET['codigo']; //id_pro
     $id = $_SESSION['id_ip'];
 
-    if($_GET['id'] == "" && $_GET['id'] == 0)
+    if($_GET['codigo'] == "" && $_GET['codigo'] == 0)
     {
 
     }    

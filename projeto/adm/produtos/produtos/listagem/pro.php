@@ -6,7 +6,7 @@
     <title>Grade de produtos</title>
 </head>
 <body>
-    <h1>Produtos cadastrados</h1>
+    <h1>Listagem dos produtos cadastrados</h1>
     <a href="../pg02.html">Voltar</a>
 </body>
 </html>
