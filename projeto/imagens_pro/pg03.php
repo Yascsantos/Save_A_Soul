@@ -17,7 +17,7 @@
         <br>
         <a href='list.php'>Listar</a>
         <br><br>
-        <a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a>
+        <a href='../adm/produtos/produtos/cadastro/pro.php'>Voltar</a>
         "
 ?>
 

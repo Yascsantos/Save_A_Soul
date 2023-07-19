@@ -61,7 +61,7 @@
 </head>
 <body>
 	<h2>Insira imagens do produto selecionado</h2>
-	<a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a><br>
+	<a href='../adm/produtos/produtos/cadastro/pro.php'>Voltar</a><br>
 	<a href='list.php'>Listagem imagens</a><br><br>
 
 	<form action='' method='POST' enctype="multipart/form-data">

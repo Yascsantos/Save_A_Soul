@@ -12,6 +12,7 @@
     <a href="../cadastro/form.php"> Cadastrar + produtos </a><br>
     <a href="../pg02.html"> Voltar</a> </div>
     <br> <br>
+    <p>Clique na imagem para cadastrar, mudar ou deletar a imagem padrão do produto</p>
 
 <?php
     include_once("../../../../conexaoBD.php");
@@ -148,7 +149,7 @@
             <td></td>
             <td align='center'>".$exibe['outros']."</td>
             <td></td>
-            <td align='center'><a href='../cadastro/tam/form.php?&codigo=".$exibe['cod']."'>Cadastrar tamanhos</a></td>
+            <td align='center'><a href='../cadastro/tam/page01.php?&codigo=".$exibe['cod']."'>Cadastrar tamanhos</a></td>
             <td></td>
             <td align='center'><a href='../cadastro/cor/form.php?&codigo=".$exibe['cod']."'>Cadastrar cores</a></td>
             <td></td>

@@ -45,7 +45,7 @@
 			else 
 			{
 				mysqli_close($conexao);
-				header ('location: ../listagem/pro.php');
+				header ('location: pro.php');
 				exit;
 
 			}

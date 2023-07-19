@@ -18,11 +18,3 @@
 </body>
 </html>
 
-<?php
-    	if(!isset($_SESSION))
-        {
-            session_start();
-        }
-        $_SESSION['code'] = $_GET['codigo'];    
-        $code = $_SESSION['code'];
-?>
