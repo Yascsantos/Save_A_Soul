@@ -36,9 +36,7 @@ CREATE TABLE produto(
     id_cat INT,
     prod VARCHAR(50),
     preco DECIMAL(10,2),
-    qtd int,
-    tamanho VARCHAR(30),
-    cor VARCHAR(20),
+    qtd INT, 
     modelo VARCHAR(100),
     outros VARCHAR(100),
     img_pro VARCHAR(100),
@@ -52,6 +50,22 @@ CREATE TABLE imgpro (
 	id_imgpro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	id_pro INT, 
 	img VARCHAR(100),
+	
+		FOREIGN KEY (id_pro)REFERENCES produto (id_pro)	 
+);
+
+CREATE TABLE cores (
+	id_cor INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	id_pro INT, 
+	cor VARCHAR(20),
+	
+		FOREIGN KEY (id_pro)REFERENCES produto (id_pro)	 
+);
+
+CREATE TABLE tamanhos (
+	id_tam INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	id_pro INT, 
+	tamanho VARCHAR(30),
 	
 		FOREIGN KEY (id_pro)REFERENCES produto (id_pro)	 
 );
