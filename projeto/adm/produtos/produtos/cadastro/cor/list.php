@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de tamanhos</title>
+    <title>Listagem de cores</title>
 </head>
 <body>
-    <h1> Listagem de tamanhos dos produtos </h1>
+    <h1> Listagem de cores dos produtos </h1>
     <a href="../pro.php"> Voltar </a> <br>
-    <a href="form.php"> Cadastrar + tamanhos </a>
+    <a href="form.php"> Cadastrar + cores </a>
     <br> <br>
 
 <?php
@@ -19,7 +19,7 @@
         $code = $_SESSION['code'];
 
     include_once("../../../../../conexaoBD.php");
-    $sql= "SELECT * FROM tamanhos where id_pro = $code";
+    $sql= "SELECT * FROM cores where id_pro = $code ";
     $instrucao = mysqli_query($conexao,$sql);
 
     echo "
@@ -30,7 +30,7 @@
             <th> </th>
             <th align='center'>Produto</th>
             <th> </th>
-            <th align='center'>Tamanhos</th>
+            <th align='center'>Cores</th>
             <th></th>
             <th></th>
             <th></th>
@@ -41,14 +41,14 @@
     {
         echo "
         <tr>
-            <td align='center'><a href='alter.php?&codigo=".$exibe['id_tam']."'>Alterar </a></td>
+            <td align='center'><a href='alter.php?&codigo=".$exibe['id_cor']."'>Alterar </a></td>
             <td></td>
             <td></td>
             <td align='center'>".$exibe['id_pro']."</td>
             <td></td>
-            <td align='center'>".$exibe['tamanho']."</td>
+            <td align='center'>".$exibe['cor']."</td>
             <td></td>
-            <td align='center'><a href='drop.php?&codigo=".$exibe['id_tam']."'>Delete</a></td> 
+            <td align='center'><a href='drop.php?&codigo=".$exibe['id_cor']."'>Delete</a></td> 
             <td></td>
         </tr>
         ";

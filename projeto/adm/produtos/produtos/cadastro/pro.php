@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Listagem dos produtos</title>
+    <title>Cadastrar informações</title>
 </head>
 <body>
-    <h2> Listagem dos produtos </h2>
+    <h2> Cadastrar mais informações dos produtos</h2>
     <div>
     <a href="../cadastro/form.php"> Cadastrar + produtos </a><br>
     <a href="../pg02.html"> Voltar</a> </div>
@@ -87,9 +87,7 @@
      echo "
     <table> 
         <tr>
-            <th align='center'></th>
-            <th></th>
-            <th></th>
+
             <th></th>
 
             <th align='center'>Imagem padrão</th>
@@ -112,8 +110,10 @@
             <th></th>
             <th align='center'></th>
             <th></th>
+            <th align='center'></th>
             <th></th>
             <th align='center'></th>
+            <th></th>
             <th></th>
 
             <th></th>
@@ -128,9 +128,7 @@
     {
         echo "
         <tr>
-            <td align='center'><a href='../../../../imagens_pro/pg03.php?&id=".$exibe['cod']."'> + Imagem(s)</a></td> 
-            <td></td>            
-            <td></td>
+
             <td></td>
 
             <td align='center'><a href='../cadastro/pg04.php?&codigo=".$exibe['cod']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a></td>
@@ -151,12 +149,15 @@
             <td></td>
             <td align='center'><a href='../cadastro/tam/page01.php?&codigo=".$exibe['cod']."'>Cadastrar tamanhos</a></td>
             <td></td>
-            <td align='center'><a href='../cadastro/cor/form.php?&codigo=".$exibe['cod']."'>Cadastrar cores</a></td>
+            <td align='center'><a href='../cadastro/cor/page02.php?&codigo=".$exibe['cod']."'>Cadastrar cores</a></td>
             <td></td>
-            <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['cod']."'>Apagar registo</a></td> 
+            <td align='center'><a href='../../../../imagens_pro/pg03.php?&id=".$exibe['cod']."'> Cadastrar + imagens</a></td> 
+            <td></td>   
+            <td align='center'><a href='../update/alter.php?&codigo=".$exibe['cod']."'>Alterar dados </a></td>
             <td></td>
+            <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['cod']."'>Apagar produto</a></td> 
             <td></td>
-            <td align='center'><a href='../update/alter.php?&codigo=".$exibe['cod']."'>Alterar registro </a></td>
+
 
         </tr>
         ";
