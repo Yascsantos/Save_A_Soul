@@ -1,17 +1,6 @@
 
 <?php
-	if(!isset($_SESSION))
-    {
-        session_start();
-    }
-
-    if ($_SESSION['id_user'] == 0 or  $_SESSION['id_user'] == "")
-    {
-        header("Location: ../login/login.php");
-
-    }
-
-    
+    include_once("protect.php");
     include_once("../../conexaoBD.php");
     $tabela="user";
     $campo= "id_user";
