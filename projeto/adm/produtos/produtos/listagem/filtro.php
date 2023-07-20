@@ -5,9 +5,9 @@
     include_once("../../../../conexaoBD.php");
     $sql= "SELECT * FROM categoria";
     $instrucao = mysqli_query($conexao,$sql);
-
-    echo "<form action='fl.php' method='POST'>";
-    echo "<select name='categoria' required>
+    echo "<div class='input-dados'>
+<form action='fl.php' method='POST'>
+ <select name='categoria' required>
         <option value='0'>Selecione a categoria</option>
     ";
     foreach ($instrucao as $exibe) 
@@ -16,7 +16,9 @@
 
     }
     echo "</select>";
-    echo "<button input type='submit' name='pesq' value='pesq'>Pesquisar</button>";
+    echo "<br><button input type='submit' name='pesq' value='pesq'>
+    filtrar</button>";
     echo "</form>";
+    echo "</div>";
 
 ?>

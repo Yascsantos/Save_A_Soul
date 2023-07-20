@@ -96,7 +96,6 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
-<<<<<<< HEAD
 </style>
 <body>
 <header id="menu">
@@ -140,7 +139,6 @@
         <div class="max-width">
     
             <div class="sobre-content">
-/*>>>>>>> 1f19206db77065f4cd18197c839f32063cb9643f*/
      
 <?php
     include_once("filtro.php");
@@ -220,11 +218,7 @@
         ";
 
     }
-/*  
-  =======
-  <<<<<<< HEAD
-  =======
-*/
+
 echo "
         th{
         font-weight: bold;
@@ -399,7 +393,7 @@ echo "
             echo"</table>";
     }
 
-/*>>>>>>> 1f19206db77065f4cd18197c839f32063cb9643f*/
+
 
 
 ?>
