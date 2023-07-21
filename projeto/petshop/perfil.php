@@ -1,3 +1,4 @@
+
 <?php
     include_once("../conexaoBD.php");
     include("protect.php");
@@ -47,6 +48,16 @@
     echo "<table>";
     foreach ($pesquisa as $exibe) 
     {
+        ECHO "
+        <!DOCTYPE html>
+        <html lang='en'>
+        <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <title>".$exibe['prod']."</title>
+        </head>
+        </html>";
+
         echo"
             <br>
             <tr>
@@ -84,7 +95,7 @@
     }
     echo "</table>";
 
-    echo "<form action='carrinho.php' method='get'>";
+    echo "<form action='carrinho.php' method='post'>";
     //tamanho
     $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
@@ -116,11 +127,9 @@
 
     ";
     echo "<br><br><input type='submit' name='salvar' value= 'Adicionar ao carrinho'></input>";
-    echo "</form>"
+    echo "</form>";
 
 
-
-
-    
 
 ?>
+
