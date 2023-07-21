@@ -16,14 +16,20 @@
 /*!40000 ALTER TABLE `adocao` DISABLE KEYS */;
 /*!40000 ALTER TABLE `adocao` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.animal: ~2 rows (aproximadamente)
+-- Copiando dados para a tabela save.animal: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `animal` DISABLE KEYS */;
 INSERT INTO `animal` (`id_ani`, `nome_ani`, `raca`, `porte`, `sexo`, `img_ani`) VALUES
 	(2, 'Foozi', 'shih tzu', '', 'Macho', '../listagem/img/2023.07.13-16.46.40.jpg'),
 	(11, 'Pietra', 'Pinscher', '', 'feminino', '../listagem/img/2023.07.17-15.58.01.jpg');
 /*!40000 ALTER TABLE `animal` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.categoria: ~6 rows (aproximadamente)
+-- Copiando dados para a tabela save.carrinho: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `carrinho` DISABLE KEYS */;
+INSERT INTO `carrinho` (`id_car`, `id_user`, `id_pro`, `cor`, `tamanho`, `qtd`, `valor`) VALUES
+	(1, 1, 2, 'Roxo', '15cm', 30, 600.00);
+/*!40000 ALTER TABLE `carrinho` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.categoria: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
 INSERT INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 	(1, 'Roupas'),
@@ -35,7 +41,7 @@ INSERT INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 	(7, 'Roupas');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.cores: ~4 rows (aproximadamente)
+-- Copiando dados para a tabela save.cores: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `cores` DISABLE KEYS */;
 INSERT INTO `cores` (`id_cor`, `id_pro`, `cor`) VALUES
 	(1, 1, 'Roxo'),
@@ -60,7 +66,7 @@ INSERT INTO `imgani` (`id_imgani`, `id_ani`, `img`) VALUES
 	(3, 2, '../img_ani/2023.07.13-17.01.41.jpg');
 /*!40000 ALTER TABLE `imgani` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.imgpro: ~4 rows (aproximadamente)
+-- Copiando dados para a tabela save.imgpro: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `imgpro` DISABLE KEYS */;
 INSERT INTO `imgpro` (`id_imgpro`, `id_pro`, `img`) VALUES
 	(3, 2, '../img_pro/2023.07.13-16.44.51.jpg'),
@@ -68,14 +74,14 @@ INSERT INTO `imgpro` (`id_imgpro`, `id_pro`, `img`) VALUES
 	(5, 1, '../img_pro/2023.07.19-18.28.03.jpg');
 /*!40000 ALTER TABLE `imgpro` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.produto: ~2 rows (aproximadamente)
+-- Copiando dados para a tabela save.produto: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `produto` DISABLE KEYS */;
 INSERT INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `qtd`, `modelo`, `outros`, `img_pro`) VALUES
 	(1, 1, 'Botinha para cachorro', 15.00, 12, 'Botinha para cachorro', 'Botinha para cachorros de pequeno porte.', '../listagem/img/2023.07.18-17.48.31.jpg'),
 	(2, 2, 'Tigela para Ã¡gua ', 20.00, 10, 'Tigela de Ã¡gua', 'Capacidade: 250ml', '../listagem/img/2023.07.19-16.18.08.jpg');
 /*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.tamanhos: ~4 rows (aproximadamente)
+-- Copiando dados para a tabela save.tamanhos: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `tamanhos` DISABLE KEYS */;
 INSERT INTO `tamanhos` (`id_tam`, `id_pro`, `tamanho`) VALUES
 	(10, 1, 'G'),
@@ -84,7 +90,7 @@ INSERT INTO `tamanhos` (`id_tam`, `id_pro`, `tamanho`) VALUES
 	(14, 2, '15cm de diametro');
 /*!40000 ALTER TABLE `tamanhos` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.user: ~1 rows (aproximadamente)
+-- Copiando dados para a tabela save.user: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`id_user`, `usuario`, `nome`, `email`, `telefone`, `senha`, `foto`, `cep`, `pais`, `estado`, `cidade`, `bairro`, `rua`, `numero`) VALUES
 	(1, 'Emy', 'Emily Wayland', 'Emyway@yahoo.com.br', '(11)96972-8455', 'way', '../img/padrao.png', '06528086', 'Brasil', 'SP', 'Santana de ParnaÃ­ba', '120', 'Rua do Astronauta', '03');

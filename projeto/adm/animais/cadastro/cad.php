@@ -29,8 +29,8 @@
 		header ('location:../listagem/animais.php');
 		exit;
 	}
-<<<<<<< HEAD
-?>
+/*<<<<<<< HEAD
 =======
-?>
 >>>>>>> 6019948347ffb6de4c0f820bf4cc1f238c715f99
+*/
+?>

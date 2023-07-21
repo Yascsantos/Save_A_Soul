@@ -95,7 +95,7 @@
     }
     echo "</table>";
 
-    echo "<form action='carrinho.php' method='post'>";
+    echo "<form action='carrinho.php' method='POST'>";
     //tamanho
     $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
@@ -103,7 +103,7 @@
     echo "<label>Tamanhos disponivéis</label><br>";
     foreach ($instrucao as $exibe) 
     {
-        echo "  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['id_tam'].">
+        echo "  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['tamanho'].">
         <label for=".$exibe['tamanho'].">".$exibe['tamanho']."</label><br>
         ";
 
@@ -116,7 +116,7 @@
         echo "<label>Cores disponivéis</label><br>";
         foreach ($busca as $exibe) 
         {
-            echo "  <input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['id_cor'].">
+            echo "  <input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['cor'].">
             <label for=".$exibe['cor'].">".$exibe['cor']."</label><br>
             ";
     
