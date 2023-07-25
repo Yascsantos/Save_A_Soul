@@ -13,7 +13,8 @@
         {
     
         }    
-    
+    ?>
+    <?php
         //IMAGENS 
         $sql= "SELECT * FROM imgani WHERE id_ani = $id";
         $instrucao = mysqli_query($conexao,$sql);
@@ -54,19 +55,19 @@
                 </tr>
     
                 <tr>
-                    <td align='center'>Cor: </td>
+                    <td align='center'>Raça: </td>
                     <td align='center'>".$exibe['raca']."</td>
                     <td></td>
                 </tr> 
 
                 <tr>
-                    <td align='center'>Preço: </td>
-                    <td align='center'>R$".$exibe['porte']."</td>
+                    <td align='center'>Tamanho: </td>
+                    <td align='center'>".$exibe['porte']."</td>
                     <td></td>
                 </tr>
     
                 <tr>
-                    <td align='center'>Tamanho: </td>
+                    <td align='center'>Sexo: </td>
                     <td align='center'>".$exibe['sexo']."</td>
                     <td></td>
                 </tr> 

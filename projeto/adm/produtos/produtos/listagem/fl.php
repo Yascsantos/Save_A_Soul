@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+ 
+    * {
+         font-family: 'Poppins';
+         }
       @keyframes navLinkFade {
       from {
         opacity: 0;
@@ -108,29 +113,18 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
-  .popup label {
-           display: block;
-           margin-bottom: 10px;
-       }
- 
-
-   
-           .popup {
-             width: 300px;
-             padding: 20px;
-             background-color: #fff;
-             border: 1px solid #ccc;
-             position: absolute;
-             top: 50%;
-             left: 50%;
-             transform: translate(-50%, -50%);
-             text-align: center;
-           }
-       
-         .popup  iframe {
-           border: none;
-           }
-         
+  button{
+    width: 30%;
+    height:30px;
+    background: #adb5a0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+   margin-left: 20%;
+    font-size: 16px;
+}
 
 </style>
 <body>
@@ -144,11 +138,11 @@
              
             </div>
      <ul class="nav-list">
-          <li> <a href="../index/index.php">INICIO</a></li>
+          <li> <a href="../../../../index/index.php">INICIO</a></li>
           <li> <a href="#">DOAR</a></li>
-          <li> <a href="#">ADOTAR</a></li>
+          <li> <a href="../../../animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
-          <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <li><a href="../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
 
@@ -158,17 +152,14 @@
   <div class="max-width">
               
     <div class="filtro-content">
-      <div>
-      <span class='material-symbols-outlined' onclick='openPopup()'>
-    tune
-    </span></div>
-    <div id='popupContainer' style='display: none;'>
-                          <div  class='popup' >
-                          <br><br>
+      
+           <span class='material-symbols-outlined' onclick='openPopup()'>tune</span>
+        <div id='popupContainer' style='display: none;'>
+                    <div  class='popup' >
+                      <br><br>
                           <?php include_once("filtro.php"); ?>
-                        <button onclick='closePopup()' class='button'>Fechar</button>
                           </div>
-                      </div>
+                      
                   
                       <script>
                           function openPopup() {
@@ -179,8 +170,9 @@
                               document.getElementById('popupContainer').style.display = 'none';
                           }
                       </script>
-                        <div class="button"><?php  include_once("barra.php"); ?></div> 
-                              </div>
+                      </div>
+                        <div><?php  include_once("barra.php"); ?></div> 
+                        </div> </div> </div>
      
     <h2 class='title'>Petshop</h2>
     <section class="sobre" id="sobre">
@@ -198,18 +190,32 @@
                            
                 echo "
      <style>
-     body{
-         background-size:1500px 900px;
-         background-image:url(../../../../index/imgs/fundo1.jpg);
-         color:white ;
-        
-     }
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
- 
-     * {
-         box-sizing: border-box;
-         font-family: 'Poppins';
-         }
+
+      
+   
+         .popup label {
+          display: block;
+          margin-bottom: 10px;
+      }
+
+
+  
+          .popup {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+      
+        .popup  iframe {
+          border: none;
+          }
+  
       
       </style>";
                 
@@ -221,14 +227,14 @@
      
         <div class='column left'>
             
-                            <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a>
+                            <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
             
                     <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."
     
-                            <p>R$".$exibe['preco']."</p>
+                            <p>R$".$exibe['preco']."</p><br>
                             
                 
-                           
+                            </div>
         
                         ";
                            
@@ -245,29 +251,15 @@
                 $sql_query= "SELECT * FROM produto Where id_cat = $cat ";
                 $requery = mysqli_query($conexao,$sql_query);
                     
-                    
-                echo "<table>";
-                echo "                 
-                    <tr>
-                        <th align='center'></th>
-                        <th> </th>
-                    </tr>
-                    
-                    <tr>
-                        <th align='center'></th>
-                            <th></th>
-                    </tr>
-                    
-                    <tr></tr>
-                    <tr></tr>
-                    ";
+                  
                     
                 foreach ($requery as $dados) 
                 {
                     echo "
-                <a href='../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'><img src=".$dados['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a>
-                         <a href='../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'>".$dados['prod']."
-                        R$".$dados['preco']."
+                    <div class='column left'>
+                <a href='../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'><img src=".$dados['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
+                         <a href='../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'>".$dados['prod']."</a>
+                       <p> R$".$dados['preco']."</p>
                         ";
                     
                 }
@@ -285,11 +277,11 @@
             foreach ($instrucao as $exibe) 
             {
                 echo "
-            <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a></td>
+            <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
         
                     
-                <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."
-                    R$".$exibe['preco']."
+                <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
+                   <p> R$".$exibe['preco']."</p>
                 ";
             }
     

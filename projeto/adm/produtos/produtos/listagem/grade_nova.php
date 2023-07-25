@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
 <style>
+  *{
+    font-family: 'Poppins';
+  }
+   body {
+      font-family: 'Poppins';
+    }
       @keyframes navLinkFade {
       from {
         opacity: 0;
@@ -46,6 +52,7 @@
   @media (max-width: 999px) {
     body {
       overflow-x: hidden;
+    
     }
     .nav-list {
       position: absolute;
@@ -109,11 +116,11 @@
              
             </div>
      <ul class="nav-list">
-          <li> <a href="../index/index.php">INICIO</a></li>
+          <li> <a href="../../../../index/index.php">INICIO</a></li>
           <li> <a href="#">DOAR</a></li>
-          <li> <a href="#">ADOTAR</a></li>
+          <li> <a href="../../../animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
-          <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <li><a href="../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
 
@@ -141,7 +148,7 @@
                   
                 
                       </script>
-                        <div class="button"><?php  include_once("barra.php"); ?></div> 
+                        <div><?php  include_once("barra.php"); ?></div> 
                               </div>
      
     <h2 class='title'>Petshop</h2>
@@ -154,116 +161,38 @@
      $sql_code= "SELECT * FROM produto";
      $pesquisa = mysqli_query($conexao,$sql_code);
                 
-     echo "
-     <style>
-     body{
-         background-size:1500px 900px;
-         background-image:url(../../../../index/imgs/fundo1.jpg);
-         color:white ;
-        
-     }
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
- 
-     * {
-         box-sizing: border-box;
-         font-family: 'Poppins';
-         }
-         .popup label {
-           display: block;
-           margin-bottom: 10px;
-       }
- 
-
-   
-           .popup {
-             width: 300px;
-             padding: 20px;
-             background-color: #fff;
-             border: 1px solid #ccc;
-             position: absolute;
-             top: 50%;
-             left: 50%;
-             transform: translate(-50%, -50%);
-             text-align: center;
-           }
-       
-         .popup  iframe {
-           border: none;
-           }
-         
-form .input-dados input{
-    width: 100%;
-    height: 30px;
-    background-color: rgba(255, 255, 255, 0.32);
-    border-radius: 20px;
-    outline: none;
-    border: 2px solid transparent;
-    padding: 15px;
-    font-size: 15px;
-    color: #616161;
-    transition: all 0.4s ease;
-}
-form .input-dados input:focus{
-    border-color: pink;
-}
- select{
-    width: 100%;
-    height: 50px;
-    background-color: rgba(255, 255, 255, 0.32);
-    border-radius: 20px;
-    outline: none;
-    border: 2px solid transparent;
-    padding: 13px;
-    font-size: 15px;
-    color: #616161;
-    transition: all 0.4s ease;
-}
- button{
-    width: 30%;
-    height:30px;
-    background: #adb5a0;
-    border-radius: 20px;
-    outline: none;
-    border: none;
-    margin-top: 15px;
-    color: white;
-   margin-left: 20%;
-    font-size: 16px;
-}
-           
-      </style>";
-                
+  
      foreach ($pesquisa as $exibe) 
 
      {
         echo "
-        <div class='column left'>
-                    <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a>
+        <div class='column left'> 
+                    <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
                          <p> R$".$exibe['preco']."</p>
                               <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
-                              </div>
+                          
                         
-           
+                              </div>
         ";
      }
 
 
 ?>
-      </div>
-                  
-                  </div>
-                
-                </section>
+
+            
+            </div>
+          
+          </section>
 
 
-    </body>
+</body>
 </html>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="../../../../petshop/js/script.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../../../petshop/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+

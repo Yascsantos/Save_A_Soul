@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop| Save a Soul</title>
+    <link rel="icon" type="imagem/png" href="../index/imgs/logo1.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../../../../petshop/css/petshop.css" type="text/css"></head>
+</head>
 <?php
     //barra de pesquisa
     include_once("../../../../conexaoBD.php");
@@ -16,6 +29,7 @@
       font-size: 15px;
       color: #616161;
       transition: all 0.4s ease;
+      display:flex;
   }
   form .input-dados input:focus{
       border-color: pink;
@@ -32,24 +46,25 @@
       color: #616161;
       transition: all 0.4s ease;
   }
-   button{
-      width: 30%;
-      height:30px;
-      background: #adb5a0;
-      border-radius: 20px;
-      outline: none;
-      border: none;
-      margin-top: 15px;
-      color: white;
-     margin-left: 20%;
-      font-size: 16px;
-     
-  } </style>";
+  .pesq{
+    width: 20px;
+    height:30px;
+    background: #adb5a0;
+    outline: none;
+    border: none;
+   position:relative;
+   top:-45px;
+   left:180px;
+    color: white;
+   
+}  </style>";
     echo "<form action='br.php' method='POST'>
   <div class='input-dados'>
-
+ 
             <input type='text'name='barra' placeholder='Pesquise aqui o produto'/>
-            <button input type='submit'name='pesquisar' value='Pesquisar'>pes</button>
+            <button input type='submit'name='pesquisar' value='pesquisar' class='pesq'><span class='material-symbols-outlined'>
+            search
+            </span></button>
             </div>
             </form>"
    ;

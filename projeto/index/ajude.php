@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/ajude.css" type="text/css"></head>
 </head>
 <style>
+  *{
+    color:white;
+  }
       @keyframes navLinkFade {
       from {
         opacity: 0;
@@ -109,7 +112,7 @@
      <ul class="nav-list">
           <li> <a href="index.php">INICIO</a></li>
           <li> <a href="#">DOE</a></li>
-          <li> <a href="#">ADOTE</a></li>
+          <li> <a href="../adm/animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="../adm/produtos/produtos/listagem/grade_nova.php">PETSHOP</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
           <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
@@ -174,7 +177,7 @@ Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidad
 
                 Preencha o formulário abaixo com seus dados corretos, responda com o máximo de precisão sobre suas expectativas e rotina, esse é o início do nosso processo de adoção,
                  responda à todas as perguntas com atenção que em breve entraremos em contato.<br></b>
-                    <a href="#">Adote</a>
+                    <a href="../adm/animais/listagem/grade.php">Adote</a>
                 </div>
             </div>
         </div>

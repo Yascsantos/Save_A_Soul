@@ -49,12 +49,12 @@
     <br><br><br><br><br><br><br><br>
 <li> <a href="../../index/index.php">INICIO</a></li>
 <br>
-    <li> <a href='../../sobre/sobre.html'>SOBRE</a></li>
+    <li> <a href='../../sobre/sobre.php'>SOBRE</a></li>
     <br>
-    <li> <a href='#'>LOJA</a></li>
+    <li> <a href="../../adm/produtos/produtos/listagem/grade_nova.php">PETSHOP</a></li>
     <img scr="img/dog.jpg" class="dog">
     <br>
-    <li> <a href='#'>AJUDA</a></li>
+    <li> <a href='../../index/ajude.php'>AJUDE</a></li>
     <br>
 
 </ul>

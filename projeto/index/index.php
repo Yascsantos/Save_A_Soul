@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/index.css" type="text/css"></head>
 </head>
 <style>
+    *{
+    color:white;
+  }
       @keyframes navLinkFade {
       from {
         opacity: 0;
@@ -120,7 +123,7 @@
         
           <section class="sobre" id="sobre">
         <div class="max-width">
-            <h2 class="title">Sobre</h2>
+            <h2 class="title">Save a Soul</h2>
             <div class="sobre-content">
                 <div class="column left">
                     <img src="imgs/dog1.jpg" alt="">
