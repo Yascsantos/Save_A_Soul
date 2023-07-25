@@ -1,3 +1,4 @@
+
 <?php
     include_once("../conexaoBD.php");
     include("protect.php");
@@ -31,7 +32,7 @@
     {
         echo "
         <tr>
-            <td align='center'><img src=".$exibe['img']."  width='100px' height='100px'></td>
+            <td align='center'><img src=".$exibe['img']." width='100px' height='100px'></td>
             <td></td>
         </tr>
         ";
@@ -47,6 +48,16 @@
     echo "<table>";
     foreach ($pesquisa as $exibe) 
     {
+        ECHO "
+        <!DOCTYPE html>
+        <html lang='en'>
+        <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <title>".$exibe['prod']."</title>
+        </head>
+        </html>";
+
         echo"
             <br>
             <tr>
@@ -84,7 +95,7 @@
     }
     echo "</table>";
 
-    echo "<form action='carrinho.php' method='get'>";
+    echo "<form action='carrinho.php' method='POST'>";
     //tamanho
     $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
@@ -92,7 +103,7 @@
     echo "<label>Tamanhos disponivéis</label><br>";
     foreach ($instrucao as $exibe) 
     {
-        echo "  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['id_tam'].">
+        echo "  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['tamanho'].">
         <label for=".$exibe['tamanho'].">".$exibe['tamanho']."</label><br>
         ";
 
@@ -105,7 +116,7 @@
         echo "<label>Cores disponivéis</label><br>";
         foreach ($busca as $exibe) 
         {
-            echo "  <input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['id_cor'].">
+            echo "  <input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['cor'].">
             <label for=".$exibe['cor'].">".$exibe['cor']."</label><br>
             ";
     
@@ -116,11 +127,9 @@
 
     ";
     echo "<br><br><input type='submit' name='salvar' value= 'Adicionar ao carrinho'></input>";
-    echo "</form>"
+    echo "</form>";
 
 
-
-
-    
 
 ?>
+
