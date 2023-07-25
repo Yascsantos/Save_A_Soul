@@ -32,7 +32,7 @@
     {
         echo "
         <tr>
-            <td align='center'><img src=".$exibe['img']."  width='100px' height='100px'></td>
+            <td align='center'><img src=".$exibe['img']." width='100px' height='100px'></td>
             <td></td>
         </tr>
         ";
