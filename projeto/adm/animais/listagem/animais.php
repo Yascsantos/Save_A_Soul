@@ -12,11 +12,11 @@
     
     <a href="../cadastro/form.html"> Cadastrar mais animais </a><br>
 <!--=======-->
-    <h1> Listagem dos animais </h1>
-    <a href="../cadastro/form.php"> Cadastrar mais animais </a><br>
 <!-- >>>>>> 6019948347ffb6de4c0f820bf4cc1f238c715f99-->
     <a href="../pg05.html"> Voltar</a> <br>
     <br> <br>
+
+    <p> Clique na imagem para cadastrar a imagem padrão do animal </p>
 
 <?php
     include_once("../../../conexaoBD.php");
