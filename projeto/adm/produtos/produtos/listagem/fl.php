@@ -126,6 +126,33 @@
     font-size: 16px;
 }
 
+
+      
+   
+         .popup label {
+          display: block;
+          margin-bottom: 10px;
+      }
+
+
+  
+          .popup {
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+      
+        .popup  iframe {
+          border: none;
+          }
+  
+  
 </style>
 <body>
 <header id="menu">
@@ -187,37 +214,7 @@
                 $sql_code= "SELECT * FROM produto";
                 $pesquisa = mysqli_query($conexao,$sql_code);
                            
-                           
-                echo "
-     <style>
-
-      
-   
-         .popup label {
-          display: block;
-          margin-bottom: 10px;
-      }
-
-
-  
-          .popup {
-            width: 300px;
-            padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            position: absolute;
-            top: 40%;
-            left: 20%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-          }
-      
-        .popup  iframe {
-          border: none;
-          }
-  
-      
-      </style>";
+              
                 
      foreach ($pesquisa as $exibe) 
 
@@ -289,7 +286,7 @@
   
 
 ?>
-   </div>
+  
                   
                   </div>
                 
