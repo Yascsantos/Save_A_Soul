@@ -182,6 +182,22 @@ Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidad
             </div>
         </div>
     </section>
+    <section class="sobre" id="sobre">
+        <div class="max-width">
+            
+            <div class="sobre-content">
+                <div class="column left">
+                    <img src="imgs/dog6.jpg" alt="">
+                </div>
+                <div class="column right"><b>
+
+                Preencha o formulário abaixo com seus dados corretos, responda com o máximo de precisão sobre suas expectativas e rotina, esse é o início do nosso processo de adoção,
+                 responda à todas as perguntas com atenção que em breve entraremos em contato.<br></b>
+                    <a href="../adm/produtos/produtos/listagem/grade_nova.php">Petshop</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

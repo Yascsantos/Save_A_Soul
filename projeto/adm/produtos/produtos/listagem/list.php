@@ -33,8 +33,7 @@
         echo "
         <h3><a href='../../../../imagens_pro/listagem.php?&codigo=".$id."'>Listar imgens</a></h3>";
 
-
-    //PRODUTOS
+        //PRODUTOS
     $sql_code= "SELECT * FROM produto WHERE id_pro = $id";
     $pesquisa = mysqli_query($conexao,$sql_code);
     
