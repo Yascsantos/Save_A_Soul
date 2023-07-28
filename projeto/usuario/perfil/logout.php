@@ -8,6 +8,6 @@ session_start();
 session_destroy();
 
 // Redireciona para a página de login
-header("Location: ../../../../index/lading.php");
+header("Location:../../../projeto/index/index.php");
 exit;
 ?>
