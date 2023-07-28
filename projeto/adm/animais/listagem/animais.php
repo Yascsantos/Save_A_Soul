@@ -80,6 +80,17 @@
         }
          
      }
+     button{
+     width: 50%;
+     height: 47px;
+     background: #adb5a0;
+     border-radius: 20px;
+     outline: none;
+     border: none;
+     margin-top: 15px;
+     color: white;
+    margin-left: 20%;
+     font-size: 16px;}
      </style>
    
     <table> 

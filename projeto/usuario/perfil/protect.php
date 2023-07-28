@@ -6,7 +6,6 @@
 
     if(!isset($_SESSION['id_user']))
     {
-        //header("Location:../login/login.php");
         die
         (" 
         <style>
