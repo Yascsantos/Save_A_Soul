@@ -3,7 +3,7 @@
     Fazer a soma geral de todos os valores do carrinho do usuário que está com o id dentro da sessão que está
     iniciada
 */
-    include_once("../../conexaoBD.php");
+    include_once("../../../../conexaoBD.php");
     if(!isset($_SESSION))
     {
         session_start();
@@ -22,7 +22,7 @@
         $teste += $valor;
     }
 
-    echo $teste;
+    echo "Valor total do pedido: R$".$teste.".";
 
 
 

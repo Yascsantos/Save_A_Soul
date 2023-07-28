@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+</head>
+<body>
+    <h2>CARRINHO DE COMPRAS</h2>
+    <a href="../../../../usuario/perfil/perfil.php">Voltar ao perfil</a>
+    <br><br>Q
+</body>
+</html>
+
 <?php
     include_once("../../../../conexaoBD.php");
 
@@ -55,13 +69,20 @@
                 <td align='center'>".$tam."</td>
                 <td align='center'>".$qtd."</td>
                 <td align='center'>".$valor."</td>
-                <td><a href='../../../../petshop/perfil.php?&codigo=".$id_car."'>Alterar pedido</a></td>
-                <td><a href='../../../../petshop/perfil.php?&codigo=".$id_car."'>Deletar pedido</a></td>
+                <td><a href='../../../../petshop/carrinho/alter.php?&codigo=".$id_car."'>Alterar pedido</a></td>
+                <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'>Deletar pedido</a></td>
             </tr>
 
         ";
     }
     }  
     echo "</table>";
+    echo "<br><br><br>";
+
+    //exibição da soma geral do pedido
+    include_once("../../../../petshop/carrinho/proc.php");
+
+
 
 ?>
+

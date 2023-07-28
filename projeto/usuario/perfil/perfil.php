@@ -56,6 +56,9 @@
     <br>
     <li> <a href='../../index/ajude.php'>AJUDE</a></li>
     <br>
+    <li> <a href='../../adm/produtos/produtos/listagem/exibe_car.php'>CARRINHO <br>DE COMPRAS</a></li>
+    <br>
+
 
 </ul>
 
