@@ -22,7 +22,6 @@ CREATE table user (
 );
 
 
-
 /*PRODUTO*/
 CREATE TABLE categoria (
 	id_cat INT  PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -68,20 +67,6 @@ CREATE TABLE tamanhos (
 	tamanho VARCHAR(30),
 	
 		FOREIGN KEY (id_pro)REFERENCES produto (id_pro)	 
-);
-
-CREATE TABLE carrinho (
-	id_car INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	id_user INT, 
-	id_pro INT, 
-	cor VARCHAR(20),
-	tamanho VARCHAR(30),
-	qtd INT,
-	valor DECIMAL(10,2),
-	
-		FOREIGN KEY (id_pro)REFERENCES produto (id_pro),
-		FOREIGN KEY (id_user)REFERENCES user (id_user)
-	
 );
 
 /*ANIMAL*/
@@ -143,4 +128,20 @@ CREATE TABLE descricao_vol (
 
             FOREIGN KEY (id_user)REFERENCES user (id_user)
 
+);
+
+
+/*petshop*/
+CREATE TABLE carrinho (
+	id_car INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	id_user INT, 
+	id_pro INT,
+	cor VARCHAR(20),
+	tamanho VARCHAR(30), 
+	qtd INT,
+	valor DECIMAL(10,2),
+	
+		FOREIGN KEY (id_pro)REFERENCES produto (id_pro),
+		FOREIGN KEY (id_user)REFERENCES user (id_user)
+	
 );
