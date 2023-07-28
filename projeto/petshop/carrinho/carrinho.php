@@ -17,7 +17,7 @@
     $id_user = $_SESSION['id_user']; 
     $id = $_SESSION['id_p'];
 
-    include_once("../conexaoBD.php");
+    include_once("../../conexaoBD.php");
     $sql= "SELECT preco FROM produto where id_pro = $id";     
     $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
@@ -51,7 +51,7 @@
     else 
     {
         mysqli_close($conexao);
-        header ('location:../adm/produtos/produtos/listagem/grade_nova.php');
+        header ('location:../../adm/produtos/produtos/listagem/grade_nova.php');
         exit;
     }
 

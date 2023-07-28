@@ -95,7 +95,7 @@
     }
     echo "</table>";
 
-    echo "<form action='carrinho.php' method='POST'>";
+    echo "<form action='./carrinho/carrinho.php' method='POST'>";
     //tamanho
     $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
