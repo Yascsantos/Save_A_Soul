@@ -9,7 +9,6 @@
         session_start();
     }
     
-    $id = $_SESSION['id_p'];
     $id_user = $_SESSION['id_user']; 
 
     $sql="SELECT valor FROM carrinho WHERE id_user= $id_user";
