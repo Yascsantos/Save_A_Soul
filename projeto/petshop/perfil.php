@@ -8,9 +8,9 @@
     {
         session_start();
     }
-
     $_SESSION['id_p'] = $_GET['codigo']; //id_pro
     $id = $_SESSION['id_p'];
+
 
     if($_GET['codigo'] == "" && $_GET['codigo'] == 0)
     {

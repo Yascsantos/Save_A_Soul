@@ -8,7 +8,7 @@
 <body>
     <h2>CARRINHO DE COMPRAS</h2>
     <a href="../../../../usuario/perfil/perfil.php">Voltar ao perfil</a>
-    <br><br>Q
+    <br><br>
 </body>
 </html>
 
@@ -80,7 +80,7 @@
     echo "<br><br><br>";
 
     //exibição da soma geral do pedido
-    include_once("../../../../petshop/carrinho/proc.php");
+    include_once("proc.php");
 
 
 
