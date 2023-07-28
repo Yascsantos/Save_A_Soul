@@ -19,23 +19,14 @@
         $sql= "SELECT * FROM imgani WHERE id_ani = $id";
         $instrucao = mysqli_query($conexao,$sql);
     
-        echo "
-        <table> 
-            <tr>
-                <th align='center'></th>
-                <th> </th>
-            </tr>";
-    
         foreach ($instrucao as $exibe) 
         {
             echo "
-            <tr>
-                <td align='center'><img src=".$exibe['img']."  width='100px' height='100px'></td>
-                <td></td>
-            </tr>
+        <img src=".$exibe['img']."  width='100px' height='100px'>
+           
             ";
         }
-        echo"</table>";
+    
     
     
     
@@ -43,13 +34,67 @@
         $sql_code= "SELECT * FROM animal WHERE id_ani = $id";
         $pesquisa = mysqli_query($conexao,$sql_code);
         
-        echo "<table>";
         foreach ($pesquisa as $exibe) 
         {
             echo"
-                <br>
-                <tr>
-                    <td align='center'>Nome: </td>
+            <style>
+               @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+        
+            * {
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+                }
+                body{
+                    background-size:1500px 900px;
+                    background-image:url(../index/imgs/fundo1.jpg);
+                    background-repeat: no-repeat;
+                    color:white ;
+                   
+                }
+            
+             a{
+             font-family: 'Poppins', sans-serif;
+             font-size: 0.9rem;
+             font-size: 0.9rem;
+             font-weight:600;
+             color:#333235;
+             }
+             
+             
+             a:hover{
+             color:white;
+             }
+             
+             table, th, td {
+             padding: 8px;
+             width: 50%;
+             top:auto;
+          
+            
+             }
+             h2{
+             font-size: 30px;
+             text-align: center;
+             }
+          
+                
+                table {
+                border-collapse: collapse;
+                margin: auto;
+                border-radius:20px;
+                background-color: rgba(255, 255, 255, 0.4);
+                backdrop-filter: blur(40px);
+                }
+        
+                th{
+                font-weight: bold;
+            
+                }
+                 
+             }
+             </style>
+             <table>
+             <td align='center'>  Nome: </td>
                     <td align='center'>".$exibe['nome_ani']."</td>
                     <td></td>
                 </tr>
