@@ -69,7 +69,7 @@
                 <td align='center'>".$tam."</td>
                 <td align='center'>".$qtd."</td>
                 <td align='center'>".$valor."</td>
-                <td><a href='../../../../petshop/carrinho/alter.php?&codigo=".$id_car."'>Alterar pedido</a></td>
+                <td><a href='../../../../petshop/carrinho/form.php?&carrinho=".$id_car."&pro=".$id_pro."'>Alterar pedido</a></td>
                 <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'>Deletar pedido</a></td>
             </tr>
 
