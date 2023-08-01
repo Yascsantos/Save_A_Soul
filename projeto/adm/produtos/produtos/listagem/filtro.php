@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -29,8 +30,7 @@
 
     }
     echo "</select>";
-    echo "<br><button input type='submit' name='pesq' value='pesq'>
-    Filtrar</button>";
+    echo "<br><input type='submit' name='filtrar' value='filtrar'/>";
     echo "</form>";
     echo "</div>";
 

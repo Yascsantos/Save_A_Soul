@@ -120,7 +120,7 @@ margin-top:auto;
       <nav>
    <img src="../../../../index/imgs/logo.png" >
      <ul class="nav-list">
-          <li> <a href="../cadastro/form.php">CADASTRAR + ANIMAIS</a></li>
+          <li> <a href="../cadastro/form.php">CADASTRAR + PRODUTOS</a></li>
           <li> <a href="../pg02.html">VOLTAR</a></li>
           <br>
        </ul>
