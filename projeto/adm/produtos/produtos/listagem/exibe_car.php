@@ -51,8 +51,9 @@
         $qtd = $dade['qtd'];
         $valor = $dade['valor'];
 
-        $sql= "SELECT prod, preco, img_pro FROM produto where id_pro = $id_pro";     
+        $sql= "SELECT * FROM produto where id_pro = $id_pro";     
         $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+
 
         foreach($instrucao as $dados)
         {
@@ -72,10 +73,14 @@
                 <td><a href='../../../../petshop/carrinho/form.php?&carrinho=".$id_car."&pro=".$id_pro."'>Alterar pedido</a></td>
                 <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'>Deletar pedido</a></td>
             </tr>
+    
+            ";
+    
 
-        ";
+        }
+
     }
-    }  
+ 
     echo "</table>";
     echo "<br><br><br>";
 

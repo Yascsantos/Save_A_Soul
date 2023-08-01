@@ -12,7 +12,8 @@
 	if (!$instrucao) {
 		die(' Query Inválida: ' . mysqli_error($conexao));
 
-	} else {
+	} 
+	else {
 		mysqli_close($conexao);
 			header ('location: list.php');
 			

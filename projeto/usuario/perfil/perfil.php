@@ -162,6 +162,8 @@
 
 
 <a href='./updates/form.php' class="submit"><button type='button'>Editar</button></a>
+<a href='./drop/del.php' class="submit"><button type='button'>Deletar perfil</button></a>
+
            
     
   

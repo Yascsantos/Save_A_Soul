@@ -16,8 +16,8 @@ CREATE table user (
     pais VARCHAR(20),
     estado VARCHAR(5),
     cidade VARCHAR(50),
-    bairro VARCHAR(20),
-    rua VARCHAR(30),
+    bairro VARCHAR(30),
+    rua VARCHAR(50),
     numero VARCHAR(10)
 );
 
