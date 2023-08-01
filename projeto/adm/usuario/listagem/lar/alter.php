@@ -4,7 +4,6 @@
 	$id = "id_descvol"; 
     $pesq="texto";
 	$edit = $_GET['codigo'];
-    echo $edit;
 
 		
     $sqlPesq = "SELECT $pesq FROM $tabela WHERE $id= $edit";
@@ -56,7 +55,7 @@
 
         <label>Notas: </label> <br>
         <input type="text"  name="texto">
-        <input type="submit" name="alterar" placeholder="<?foreach($pesquisa as $exibe){echo $exibe['texto']}?>" value="Alterar categoria">
+        <input type="submit" name="alterar" value="Alterar categoria">
     </form>
 
 

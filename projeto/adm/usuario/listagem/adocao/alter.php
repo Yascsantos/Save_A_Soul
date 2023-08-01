@@ -1,14 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=c">
+    <title>Alteração de notas</title>
+</head>
+<body>
+    <h1>Alteração de notas</h1>
+    <form action="" method="post">
+        <input type="hidden" name="codigo" value="<?= $edit;?>" />
+
+        <label>Notas: </label> <br>
+        <input type="text"  name="texto">
+        <input type="submit" name="alterar" placeholder="Notas" value="Alterar categoria">
+    </form>
+
+
+</body>
+</html>
+
 <?php
 	include_once("../../../../conexaoBD.php");
 	$tabela="descricao_ado";
 	$id = "id_descad"; 
     $pesq="texto";
 	$edit = $_GET['codigo'];
-    echo $edit;
-
 		
-    $sqlPesq = "SELECT $pesq FROM $tabela WHERE $id= $edit";
-	$pesquisa = mysqli_query($conexao,$sqlPesq);
+    $sqlPesq = "SELECT $pesq FROM $tabela WHERE $id = $edit";
+    $pesquisa= $conexao->query($sqlPesq) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 	
 	if (!$pesquisa)
 	{
@@ -23,9 +42,9 @@
 		
 		$sql = "UPDATE $tabela SET 
 			texto = '$texto' 
-			WHERE $id = $codigo";
+			WHERE $id = $edit";
 			
-		$instrucao = mysqli_query($conexao,$sql);
+		$instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 		
 		if (!$instrucao) 
         {
@@ -42,23 +61,3 @@
 	}	
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=c">
-    <title>Alteração de notas</title>
-</head>
-<body>
-    <h1>Alteração de notas</h1>
-    <form action="" method="post">
-        <input type="hidden" name="codigo" value="<?= $edit;?>" />
-
-        <label>Notas: </label> <br>
-        <input type="text"  name="texto">
-        <input type="submit" name="alterar" placeholder="<?foreach($pesquisa as $exibe){echo $exibe['texto']}?>" value="Alterar categoria">
-    </form>
-
-
-</body>
-</html>
