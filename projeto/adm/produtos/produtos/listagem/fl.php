@@ -1,4 +1,15 @@
-
+<?php  
+  //caso o filto seja selecionado
+  if(isset($_POST['filtrar']))
+  {
+      if(!isset($_SESSION))
+      {
+          session_start();
+      }
+  
+      $_SESSION['cat'] = $_POST['categoria']; //id_pro
+      $cat = $_SESSION['cat'];
+    }?>
 
    <!DOCTYPE html>
 <html lang="pt-BR">
@@ -195,19 +206,8 @@
         <div class="max-width">
     
             <div class="sobre-content">
-   <?php  
+  
   <?php
-  //caso o filto seja selecionado
-  if(isset($_POST['filtrar']))
-  {
-      if(!isset($_SESSION))
-      {
-          session_start();
-      }
-  
-      $_SESSION['cat'] = $_POST['categoria']; //id_pro
-      $cat = $_SESSION['cat'];
-  
             //se o campo for nulo 
             if ($cat == "0")
             {
@@ -264,7 +264,7 @@
             
     
     
-        }
+        
     
         else
         {
