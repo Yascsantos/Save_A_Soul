@@ -70,7 +70,7 @@
                 <td align='center'>".$tam."</td>
                 <td align='center'>".$qtd."</td>
                 <td align='center'>".$valor."</td>
-                <td><a href='../../../../petshop/carrinho/form.php?&carrinho=".$id_car."&pro=".$id_pro."'>Alterar pedido</a></td>
+                <td><a href='../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'>Alterar pedido</a></td>
                 <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'>Deletar pedido</a></td>
             </tr>
     
@@ -82,10 +82,15 @@
     }
  
     echo "</table>";
-    echo "<br><br><br>";
-
+    echo "<br><br>";
     //exibição da soma geral do pedido
+    echo "<b>";
     include_once("proc.php");
+    echo "</b>";
+
+    echo "<br><br>";
+    echo "<a href='./updates/form.php' class='submit'><button type='button'>Finalizar compra</button></a>";
+
 
 
 
