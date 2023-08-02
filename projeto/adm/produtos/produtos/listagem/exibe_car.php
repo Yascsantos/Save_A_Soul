@@ -121,17 +121,17 @@
           <li> <a href="#">DOAR</a></li>
           <li> <a href="../../../animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
-          <li><a href="../../../../usuario/perfil/perfil.php">CONTINUAR COMPRANDO</a></li>
+          <li><a href="../../../../produtos/produtos/listagem/grade_nova.php">CONTINUAR COMPRANDO</a></li>
           <li><a href="../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
 
        </nav>
        </header>
-<section class="filtro">
-  <div class="max-width">
+       <section class='sobre' id='sobre'>
+<div class='max-width'>
 
-  <div class="sobre-content">
+    <div class='sobre-content'>
 <?php
     include_once("../../../../conexaoBD.php");
 
@@ -144,9 +144,10 @@
     $sql_code = "SELECT * FROM carrinho WHERE id_user = $id_user";
     $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
     
-    echo "<table>";
+  
 
     echo "
+    <table>
     <tr>
         <td align='center'></td>
         <td align='center'>Produto</td>
@@ -182,7 +183,7 @@
             $img_pro = $dados['img_pro'];
 
             echo "
-            <tr>
+  
                 <td align='center'><img src=".$img_pro." width='100px' height='100px'></td>
                 <td align='center'>".$prod."</td>
                 <td align='center'>".$preco."</td>
@@ -190,42 +191,33 @@
                 <td align='center'>".$tam."</td>
                 <td align='center'>".$qtd."</td>
                 <td align='center'>".$valor."</td>
-                <td><a href='../../../../petshop/carrinho/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
+                <td><a href='../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
                 add
                 </span></a></td>
                 <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
                 delete
                 </span></a></td>
-                <td><a href='../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'>Alterar pedido</a></td>
-                <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'>Deletar pedido</a></td>
-            </tr>
+                </table>
             ";
-/*
-    >>>>>>> 55f451de011605edcb303421e9ca0b68fa1cfd1b
-=======
-
-*/    
+  
 
         }
 
     }
- 
-    echo "</table>";
-    echo "<br><br>";
+    echo "<div class='car'>";
     //exibição da soma geral do pedido
     echo "<b>";
     include_once("proc.php");
     echo "</b>";
 
     echo "<br><br>";
-    echo "<a href='../../../../petshop/obtencao/forma.html' class='submit'><button type='button'>Finalizar compra</button></a>";
-
+    echo "<a href='../../../../petshop/obtencao/forma.html' class='submit'><button type='button'>Finalizar compra</button></a></div>";
+    echo "";
 
 
 
 ?>
-  </div>
-          
+         </div> 
           </section>
 
 
