@@ -190,7 +190,6 @@
                 <td align='center'>".$tam."</td>
                 <td align='center'>".$qtd."</td>
                 <td align='center'>".$valor."</td>
-<<<<<<< HEAD
                 <td><a href='../../../../petshop/carrinho/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
                 add
                 </span></a></td>
