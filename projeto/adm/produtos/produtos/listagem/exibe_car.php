@@ -89,7 +89,7 @@
     echo "</b>";
 
     echo "<br><br>";
-    echo "<a href='./updates/form.php' class='submit'><button type='button'>Finalizar compra</button></a>";
+    echo "<a href='../../../../petshop/obtencao/forma.html' class='submit'><button type='button'>Finalizar compra</button></a>";
 
 
 
