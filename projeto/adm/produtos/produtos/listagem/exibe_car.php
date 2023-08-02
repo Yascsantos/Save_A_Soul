@@ -196,14 +196,15 @@
                 <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
                 delete
                 </span></a></td>
-=======
                 <td><a href='../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'>Alterar pedido</a></td>
                 <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'>Deletar pedido</a></td>
->>>>>>> 55f451de011605edcb303421e9ca0b68fa1cfd1b
             </tr>
-    
             ";
-    
+/*
+    >>>>>>> 55f451de011605edcb303421e9ca0b68fa1cfd1b
+=======
+
+*/    
 
         }
 
