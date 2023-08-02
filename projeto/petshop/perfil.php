@@ -108,6 +108,7 @@
         ";
 
     }
+     echo "<br>";
 
     //cores
         $code= "SELECT * FROM cores WHERE id_pro = $id";
@@ -121,6 +122,8 @@
             ";
     
         }
+        echo "<br>";
+
     echo "
         <label>Quantidade: </label> 
         <input type='number' placeholder='Quantidade' name='qtd'><br>

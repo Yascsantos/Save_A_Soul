@@ -1,6 +1,6 @@
 
 <?php
-    include_once("../../conexaoBD.php");
+    include_once("../conexaoBD.php");
 
     if(!isset($_SESSION))
     {
@@ -97,7 +97,7 @@
     echo "</table>";
     
 //formulário
-    echo "<form action='alter.php' method='POST'>";
+    echo "<form action='./carrinho/alter.php' method='POST'>";
     //tamanho
     $sql= "SELECT * FROM tamanhos WHERE id_pro = $pro";
     $instrucao = mysqli_query($conexao,$sql);

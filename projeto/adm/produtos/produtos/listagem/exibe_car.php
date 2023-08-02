@@ -190,12 +190,17 @@
                 <td align='center'>".$tam."</td>
                 <td align='center'>".$qtd."</td>
                 <td align='center'>".$valor."</td>
+<<<<<<< HEAD
                 <td><a href='../../../../petshop/carrinho/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
                 add
                 </span></a></td>
                 <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
                 delete
                 </span></a></td>
+=======
+                <td><a href='../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'>Alterar pedido</a></td>
+                <td><a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'>Deletar pedido</a></td>
+>>>>>>> 55f451de011605edcb303421e9ca0b68fa1cfd1b
             </tr>
     
             ";
@@ -206,10 +211,15 @@
     }
  
     echo "</table>";
-    echo "<br><br><br>";
-
+    echo "<br><br>";
     //exibição da soma geral do pedido
+    echo "<b>";
     include_once("proc.php");
+    echo "</b>";
+
+    echo "<br><br>";
+    echo "<a href='../../../../petshop/obtencao/forma.html' class='submit'><button type='button'>Finalizar compra</button></a>";
+
 
 
 
