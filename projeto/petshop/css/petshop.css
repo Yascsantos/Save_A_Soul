@@ -248,21 +248,22 @@ margin-top:auto;
     background-color: #909687;
     display: flex;
    flex-wrap: wrap;
-   align-items: center;
    justify-content: space-between;
    border: 2px solid #555c4ce0;
   
+  
  }
  .carrinho .carrinho-content .finalizar{
-  background-color:  #909687;
-  width:40%;
-  height: 500px;
-  margin-left: 60%;
-  margin-top:-2765px;
+ 
+  width:457px;
+  height: 400px;
+  position: fixed;
+  margin-left: 680px;
   text-align: center;
   border-bottom: 2px solid #555c4ce0;
 
  }
+
  section .finalizar .title {
   color: #fff;
   font-family: 'poppins';
@@ -276,8 +277,9 @@ margin-top:auto;
   .carrinho .carrinho-content .car{
     padding: 40px 60px;
     width: 60%;
-    background-color:#90968700;
+    height: 300px;
     display: flex;
+    background-color:#90968700;
     border-right: 2px solid #555c4ce0;
     border-bottom: 2px solid #555c4ce0;
   }
