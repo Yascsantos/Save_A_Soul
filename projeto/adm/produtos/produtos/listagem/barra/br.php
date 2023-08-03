@@ -1,13 +1,4 @@
 <?php
-        if(isset($_POST['pesquisar']))
-        {
-            if(!isset($_SESSION))
-            {
-                session_start();
-            }
-              
-            $_SESSION['prod'] = $_POST['barra']; 
-            $prod = $_SESSION['prod'];
     
     ?>
      <!DOCTYPE html>
@@ -21,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="../../../../petshop/css/petshop.css" type="text/css"></head>
+    <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
 <style>
     * {
@@ -129,7 +120,7 @@
 <body>
 <header id="menu">
       <nav>
-   <img src="../../../../index/imgs/logo.png" >
+   <img src="../../../../../index/imgs/logo.png" >
         <div class="mobile-menu">
               <div class="line1"></div>
               <div class="line2"></div>
@@ -137,11 +128,12 @@
              
             </div>
      <ul class="nav-list">
-          <li> <a href="../../../../index/index.php">INICIO</a></li>
+          <li> <a href="../../../../../index/index.php">INICIO</a></li>
           <li> <a href="#">DOAR</a></li>
           <li> <a href="#">ADOTAR</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
-          <li><a href="../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <li><a href='../pet/grade_nova.php'>CONTINUE COMPRANDO</a></li>
+          <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
 
@@ -156,7 +148,7 @@
         <div id='popupContainer' style='display: none;'>
                     <div  class='popup' >
                       <br><br>
-                          <?php include_once("filtro.php"); ?>
+                          <?php include_once("../filtro/filtro.php"); ?>
                           </div>
                       
                   
@@ -179,35 +171,36 @@
     
             <div class="sobre-content">
     <?php
-            //se o campo NÃO for nulo 
-            include_once("../../../../conexaoBD.php");
-            $sql= "SELECT * FROM produto WHERE prod = '$prod'";
-            $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-                               
-                               
-                               
-            foreach ($instrucao as $exibe) 
+            if(isset($_POST['pesquisar']))
             {
-                echo "
-            
                   
-                    <div class='column left'>
-                    <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
-                 
-                              <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a><br>
-                              <p> R$".$exibe['preco']."</p>
-                              <a href='grade_nova.php'>Voltar a página inicial</a> 
-                              </div>  ";
-                               
-            }
-          
-          
-    
-            //Campo nulo 
-            if ($prod == "" )
-            {
-                include_once("filtro.php");
-            }
+                $_SESSION['prod'] = $_POST['barra']; 
+                $prod = $_SESSION['prod'];
+
+              //se o campo NÃO for nulo 
+                include_once("../../../../../conexaoBD.php");
+                $sql= "SELECT * FROM produto WHERE prod = '$prod'";
+                $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+                                  
+                foreach ($instrucao as $exibe) 
+                {
+                    echo "
+                
+                      
+                        <div class='column left'>
+                        <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
+                    
+                                  <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a><br>
+                                  <p> R$".$exibe['preco']."</p><br> 
+                                  </div>  ";
+                                  
+                }
+              
+              //Campo nulo 
+                if ($prod == "" )
+                {
+                    include_once("../filtro/filtro.php");
+                }
     
         }
     

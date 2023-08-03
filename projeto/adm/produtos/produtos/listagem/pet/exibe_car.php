@@ -139,7 +139,7 @@ include_once("proc.php");
 echo "</b>";
 
 echo " <li><a href='grade_nova.php'>CONTINUAR COMPRANDO</a></li><br><br>";
-echo "<a href='../../../../petshop/obtencao/forma.html' ><button  class='comprar'><b>Finalizar compra</b></button></a>";
+echo "<a href='../../../../../petshop/obtencao/forma.html' ><button  class='comprar'><b>Finalizar compra</b></button></a>";
 echo "
 </div>";
 
@@ -190,10 +190,10 @@ echo "
              Qtd: ".$qtd."
         <button class='valor'>  <b>R$ ".$valor."</b></button>
              <br><br>
-                <a href='../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
+                <a href='../../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
                 add
                 </span></a>
-                <a href='../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
+                <a href='../../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
                 delete
                 </span></a></div>
                 </div> 

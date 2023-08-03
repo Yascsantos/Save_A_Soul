@@ -44,7 +44,7 @@
 			else 
 			{
 				mysqli_close($conexao);
-				header ('location: ../pro.php');
+				header ('location: ../infos/pro.php');
 				exit;
 
 			}
@@ -69,7 +69,7 @@
 </head>
 <body>
     <h2>Cadastrar imagem padrão</h2>
-	<a href='../listagem/pro.php'>Voltar</a><br><br>
+	<a href='../../listagem/pro.php'>Voltar</a><br><br>
 
 	<form action='' method='POST' enctype="multipart/form-data">
     <input type="hidden" name="codigo" value="<?= $cod;?>" />

@@ -11,7 +11,7 @@
         body{
         font-family: 'Poppins';
         background-size:1500px 900px;
-        background-image:url(../../../../petshop/imgs/fundo1.jpg);
+        background-image:url(../../../../../petshop/imgs/fundo1.jpg);
 
         color:white ;
        
@@ -118,10 +118,10 @@ margin-top:auto;
 <body>
 <header id="menu">
       <nav>
-   <img src="../../../../index/imgs/logo.png" >
+   <img src="../../../../../index/imgs/logo.png" >
      <ul class="nav-list">
-          <li> <a href="../cadastro/form.php">CADASTRAR + PRODUTOS</a></li>
-          <li> <a href="../pg02.html">VOLTAR</a></li>
+          <li> <a href="../form.php">CADASTRAR + PRODUTOS</a></li>
+          <li> <a href="../../pg02.html">VOLTAR</a></li>
           <br>
        </ul>
 
@@ -134,7 +134,7 @@ margin-top:auto;
     <div class='msg'><br>Clique na imagem para cadastrar, mudar ou deletar a imagem padrão do produto<br><br></div>
 </div></section>
 <?php
-    include_once("../../../../conexaoBD.php");
+    include_once("../../../../../conexaoBD.php");
     $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, qtd AS quantidade, modelo, outros,img_pro 
                 FROM produto p 
 	            INNER JOIN categoria cat ON p.id_cat = cat.id_cat";
@@ -242,7 +242,7 @@ margin-top:auto;
 
             <td></td>
 
-            <td align='center'><a href='../cadastro/pg04.php?&codigo=".$exibe['cod']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a></td>
+            <td align='center'><a href='../pg04.php?&codigo=".$exibe['cod']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a></td>
             <td></td>
             <td align='center'>".$exibe['cod']."</td>
             <td></td>
@@ -258,15 +258,15 @@ margin-top:auto;
             <td></td>
             <td align='center'>".$exibe['outros']."</td>
             <td></td>
-            <td align='center'><a href='../cadastro/tam/page01.php?&codigo=".$exibe['cod']."'>Cadastrar tamanhos</a></td>
+            <td align='center'><a href='../../cadastro/tam/page01.php?&codigo=".$exibe['cod']."'>Cadastrar tamanhos</a></td>
             <td></td>
-            <td align='center'><a href='../cadastro/cor/page02.php?&codigo=".$exibe['cod']."'>Cadastrar cores</a></td>
+            <td align='center'><a href='../../cadastro/cor/page02.php?&codigo=".$exibe['cod']."'>Cadastrar cores</a></td>
             <td></td>
-            <td align='center'><a href='../../../../imagens_pro/pg03.php?&codigo=".$exibe['cod']."'> Cadastrar + imagens</a></td> 
+            <td align='center'><a href='../../../../../imagens_pro/pg03.php?&codigo=".$exibe['cod']."'> Cadastrar + imagens</a></td> 
             <td></td>   
-            <td align='center'><a href='../update/alter.php?&codigo=".$exibe['cod']."'>Alterar dados </a></td>
+            <td align='center'><a href='../../update/alter.php?&codigo=".$exibe['cod']."'>Alterar dados </a></td>
             <td></td>
-            <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['cod']."'>Apagar produto</a></td> 
+            <td align='center'><a href='../../delete/delete.php?&codigo=".$exibe['cod']."'>Apagar produto</a></td> 
             <td></td>
 
 

@@ -1,17 +1,4 @@
-<?php  
-  //caso o filto seja selecionado
-  if(isset($_POST['filtrar']))
-  {
-      if(!isset($_SESSION))
-      {
-          session_start();
-      }
-  
-      $_SESSION['cat'] = $_POST['categoria']; //id_pro
-      $cat = $_SESSION['cat'];
-    }?>
-
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -157,7 +144,7 @@
 <body>
 <header id="menu">
       <nav>
-   <img src="../../../../index/imgs/logo.png" >
+   <img src="../../../../../index/../imgs/logo.png" >
         <div class="mobile-menu">
               <div class="line1"></div>
               <div class="line2"></div>
@@ -165,11 +152,11 @@
              
             </div>
      <ul class="nav-list">
-          <li> <a href="../../../../index/index.php">INICIO</a></li>
+          <li> <a href="../../../../../index/index.php">INICIO</a></li>
           <li> <a href="#">DOAR</a></li>
           <li> <a href="../../../animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
-          <li><a href="../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
 
@@ -208,10 +195,21 @@
             <div class="sobre-content">
   
   <?php
+    //caso o filto seja selecionado
+    if(isset($_POST['filtrar']))
+    {
+        if(!isset($_SESSION))
+        {
+            session_start();
+        }
+    
+        $_SESSION['cat'] = $_POST['categoria']; //id_pro
+        $cat = $_SESSION['cat'];
+      }
             //se o campo for nulo 
             if ($cat == "0")
             {
-                include_once("../../../../conexaoBD.php");
+                include_once("../../../../../../conexaoBD.php");
                 $sql_code= "SELECT * FROM produto";
                 $pesquisa = mysqli_query($conexao,$sql_code);
                            
@@ -225,9 +223,9 @@
      
         <div class='column left'>
             
-                            <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
+                            <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
             
-                    <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."
+                    <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."
     
                             <p>R$".$exibe['preco']."</p><br>
                             
@@ -245,7 +243,7 @@
     
     
                 //campo NÃO for nulo
-                include_once("../../../../conexaoBD.php");
+                include_once("../../../../../conexaoBD.php");
                 $sql_query= "SELECT * FROM produto Where id_cat = $cat ";
                 $requery = mysqli_query($conexao,$sql_query);
                     
@@ -255,8 +253,8 @@
                 {
                     echo "
                     <div class='column left'>
-                <a href='../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'><img src=".$dados['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
-                         <a href='../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'>".$dados['prod']."</a>
+                <a href='../../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'><img src=".$dados['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
+                         <a href='../../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'>".$dados['prod']."</a>
                        <p> R$".$dados['preco']."</p>
                         ";
                     
@@ -275,10 +273,10 @@
             foreach ($instrucao as $exibe) 
             {
                 echo "
-            <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
+            <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
         
                     
-                <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
+                <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
                    <p> R$".$exibe['preco']."</p>
                 ";
             }

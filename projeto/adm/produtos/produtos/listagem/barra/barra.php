@@ -13,7 +13,7 @@
 </head>
 <?php
     //barra de pesquisa
-    include_once("../../../../conexaoBD.php");
+    include_once("../../../../../conexaoBD.php");
 
     //formulário
     echo"
@@ -58,7 +58,7 @@
     color: white;
    
 }  </style>";
-    echo "<form action='br.php' method='POST'>
+    echo "<form action='../barra/br.php' method='POST'>
   <div class='input-dados'>
  
             <input type='text'name='barra' placeholder='Pesquise aqui o produto'/>

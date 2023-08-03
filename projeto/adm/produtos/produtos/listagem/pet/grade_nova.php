@@ -137,7 +137,7 @@
     <div id='popupContainer' style='display: none;'>
                           <div  class='popup' >
                           <br><br>
-                          <?php include_once("../filro/filtro.php"); ?>
+                          <?php include_once("../filtro/filtro.php"); ?>
                           </div>
                       </div>
                   
@@ -167,7 +167,7 @@
      {
         echo "
         <div class='column left'> 
-                    <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
+                    <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
                          <p> R$".$exibe['preco']."</p>
                               <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
                           
