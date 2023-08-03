@@ -47,13 +47,36 @@ body{
     width: 30%;
     height:30px;
     background: #adb5a0;
-    border-radius: 20px;
+
     outline: none;
     border: none;
     margin-top: 15px;
     color: white;
    margin-left: 20%;
     font-size: 16px;
+}
+.valor{
+  width: 50%;
+  height:30px;
+  background: #adb5a0;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  color: white;
+ margin-left: 70%;
+ margin-top:10%;
+  font-size: 16px;
+}
+.comprar{
+  align-items: center;
+  width: 50%;
+  height:50px;
+  background: #080808;
+  margin-right: 20%;
+  margin-top: 5px;
+  color: white;
+  font-size: 20px;
 }
   /*  todos os codigos similares  */
   section{
@@ -211,7 +234,7 @@ margin-top:auto;
       color: #f1e8ec;
   }
   .sobre .sobre-content .left{
-    width: 70%;
+    width: 30%;
   }
 
   .sobre .sobre-content .left img{
@@ -220,13 +243,53 @@ margin-top:auto;
     object-fit: cover;
     border-radius: 6px;
   }
-  .sobre .sobre-content .car{
-    width: 30%;
-  }
 
-  .sobre .sobre-content .car img{
-    width: 250px;
-    height: 250px;
+  .carrinho .carrinho-content{
+    background-color: #909687;
+    display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   border: 2px solid #555c4ce0;
+  
+ }
+ .carrinho .carrinho-content .finalizar{
+  background-color:  #909687;
+  width: 40%;
+  height: 500px;
+  margin-left: 60%;
+  margin-top: -261%;
+  text-align: center;
+  border-bottom: 2px solid #555c4ce0;
+
+ }
+ section .finalizar .title {
+  color: #fff;
+  font-family: 'poppins';
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  position: relative;
+}
+  .carrinho .carrinho-content .car{
+    padding: 40px 60px;
+    width: 60%;
+    background-color:#90968700;
+    display: flex;
+    border-right: 2px solid #555c4ce0;
+    border-bottom: 2px solid #555c4ce0;
+  }
+  .carrinho .carrinho-content .car .text{
+text-align: justify;
+margin-top: 5%;
+margin-left: 20px;
+
+  }
+  .carrinho .carrinho-content .car img{
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 6px;
   }

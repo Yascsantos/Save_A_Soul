@@ -22,7 +22,7 @@
         $teste += $valor;
     }
 
-    echo "Valor total do pedido: R$".$teste.".";
+    echo "<p class='title'><br>Valor total do pedido:<br> R$".$teste.",00</p>";
 
 
 
