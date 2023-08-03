@@ -121,7 +121,7 @@
           <li> <a href="#">DOAR</a></li>
           <li> <a href="../../../animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
-          <li><a href="grade_nova.php">CONTINUAR COMPRANDO</a></li>
+          
           <li><a href="../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
@@ -129,8 +129,10 @@
        </nav>
        </header>
        <section class='carrinho'>
+      <b> <h2 class='title'>Seu carrinho de Compra</h2></b>
 <div class='max-width'>
     <div class='carrinho-content'>
+   
 <?php
     include_once("../../../../conexaoBD.php");
 
@@ -195,9 +197,10 @@
     include_once("proc.php");
     echo "</b>";
 
-    echo "<br><br>";
+    echo " <li><a href='grade_nova.php'>CONTINUAR COMPRANDO</a></li><br><br>";
     echo "<a href='../../../../petshop/obtencao/forma.html' ><button  class='comprar'><b>Finalizar compra</b></button></a>";
-    echo "</div>";
+    echo "
+</div>";
 
 
 
