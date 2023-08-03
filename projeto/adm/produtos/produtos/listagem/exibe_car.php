@@ -131,7 +131,21 @@
        <section class='carrinho'>
       <b> <h2 class='title'>Seu carrinho de Compra</h2></b>
 <div class='max-width'>
-    <div class='carrinho-content'>
+<div class='carrinho-content'>
+   <?php 
+   
+echo "<div class='finalizar'>";
+include_once("proc.php");
+echo "</b>";
+
+echo " <li><a href='grade_nova.php'>CONTINUAR COMPRANDO</a></li><br><br>";
+echo "<a href='../../../../petshop/obtencao/forma.html' ><button  class='comprar'><b>Finalizar compra</b></button></a>";
+echo "
+</div>";
+
+
+
+?>
    
 <?php
     include_once("../../../../conexaoBD.php");
@@ -169,8 +183,6 @@
 
             echo "
             <div class='car'>
-            
-          
         <img src=".$img_pro." width='100px' height='100px'>
         <div class='text'>
               ".$prod."     ".$cor." ".$tam."<br><br>
@@ -193,19 +205,7 @@
     }
     
     //exibição da soma geral do pedido
-    echo "<div class='finalizar'>";
-    include_once("proc.php");
-    echo "</b>";
-
-    echo " <li><a href='grade_nova.php'>CONTINUAR COMPRANDO</a></li><br><br>";
-    echo "<a href='../../../../petshop/obtencao/forma.html' ><button  class='comprar'><b>Finalizar compra</b></button></a>";
-    echo "
-</div>";
-
-
-
-?>
-         </div> 
+   ?>      </div> 
             </div> 
           </section>
 
