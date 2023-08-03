@@ -17,7 +17,7 @@
     <div class='caixa'>
         <div class='espaco'></div>
           <div class='caixa-dados'><h2>Imagem padrão do produto</h2>
-        <a href='cad_img.php'>Cadastrar/mudar</a>
+        <a href='./img_padrao/cad_img.php'>Cadastrar/mudar</a>
         <br>
         <a href='../delete/del_img.php'>Deletar</a>
         <br><br>

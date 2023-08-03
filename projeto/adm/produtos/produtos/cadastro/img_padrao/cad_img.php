@@ -1,5 +1,5 @@
 <?php
-	include_once("../../../../conexaoBD.php");
+	include_once("../../../../../conexaoBD.php");
 
     if(!isset($_SESSION))
     {
@@ -10,7 +10,6 @@
 
     $sqlPesq = "SELECT img_pro FROM produto WHERE id_pro = $id_imp";
 	$pesquisa = mysqli_query($conexao,$sqlPesq);
-	
 	if (!$pesquisa)
 	{
         die(' Query Inválida: ' . mysqli_error($conexao));
@@ -25,7 +24,7 @@
 		{
 			$extensao = strtolower(substr($_FILES['pic']["name"],-4)); // extensão
 			$novo_nome = date("Y.m.d-H.i.s").$extensao; //novo nome
-			$diretorio = "../listagem/img/"; //diretório
+			$diretorio = "../../listagem/img/"; //diretório
 			$arquivo = $diretorio.$novo_nome;
 			
 			move_uploaded_file($_FILES['pic']["tmp_name"], $diretorio.$novo_nome); 
@@ -45,7 +44,7 @@
 			else 
 			{
 				mysqli_close($conexao);
-				header ('location: pro.php');
+				header ('location: ../pro.php');
 				exit;
 
 			}

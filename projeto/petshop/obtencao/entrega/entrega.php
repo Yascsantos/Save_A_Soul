@@ -6,5 +6,8 @@
     $id_user = $_SESSION['id_user']; 
     echo $id_user;
     
+    include_once("../../../conexaoBD.php");
+
+    
     
 ?>

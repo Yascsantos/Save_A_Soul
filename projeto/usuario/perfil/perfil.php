@@ -51,12 +51,12 @@
 <br>
     <li> <a href='../../sobre/sobre.php'>SOBRE</a></li>
     <br>
-    <li> <a href="../../adm/produtos/produtos/listagem/grade_nova.php">PETSHOP</a></li>
+    <li> <a href="../../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
     <img scr="img/dog.jpg" class="dog">
     <br>
     <li> <a href='../../index/ajude.php'>AJUDE</a></li>
     <br>
-    <li> <a href='../../adm/produtos/produtos/listagem/exibe_car.php'>CARRINHO <br>DE COMPRAS</a></li>
+    <li> <a href='../../adm/produtos/produtos/listagem/pet/exibe_car.php'>CARRINHO <br>DE COMPRAS</a></li>
     <br>
 
 

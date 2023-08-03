@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho| Save a Soul</title>
-    <link rel="icon" type="imagem/png" href="../index/imgs/logo1.png" />
+    <link rel="icon" type="imagem/png" href="../../index/imgs/logo1.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="../../../../petshop/css/petshop.css" type="text/css"></head>
+    <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
    
     <style>
@@ -109,7 +109,7 @@
 <body>
 <header id="menu">
       <nav>
-   <img src="../../../../index/imgs/logo.png" >
+   <img src="../../../../../index/imgs/logo.png" >
         <div class="mobile-menu">
               <div class="line1"></div>
               <div class="line2"></div>
@@ -117,12 +117,12 @@
              
             </div>
      <ul class="nav-list">
-          <li> <a href="../../../../index/index.php">INICIO</a></li>
+          <li> <a href="../../../../../index/index.php">INICIO</a></li>
           <li> <a href="#">DOAR</a></li>
           <li> <a href="../../../animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
           
-          <li><a href="../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
 
@@ -134,7 +134,7 @@
     <div class='carrinho-content'>
    
 <?php
-    include_once("../../../../conexaoBD.php");
+    include_once("../../../../../conexaoBD.php");
 
     if(!isset($_SESSION))
     {

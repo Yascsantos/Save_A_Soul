@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="../../../../petshop/css/petshop.css" type="text/css"></head>
+    <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
 <style>
   *{
@@ -108,7 +108,7 @@
 <body>
 <header id="menu">
       <nav>
-   <img src="../../../../index/imgs/logo.png" >
+   <img src="../../../../../index/imgs/logo.png" >
         <div class="mobile-menu">
               <div class="line1"></div>
               <div class="line2"></div>
@@ -116,11 +116,11 @@
              
             </div>
      <ul class="nav-list">
-          <li> <a href="../../../../index/index.php">INICIO</a></li>
+          <li> <a href="../../../../../index/index.php">INICIO</a></li>
           <li> <a href="#">DOAR</a></li>
           <li> <a href="../../../animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
-          <li><a href="../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
 
@@ -137,7 +137,7 @@
     <div id='popupContainer' style='display: none;'>
                           <div  class='popup' >
                           <br><br>
-                          <?php include_once("filtro.php"); ?>
+                          <?php include_once("../filro/filtro.php"); ?>
                           </div>
                       </div>
                   
@@ -148,7 +148,7 @@
                   
                 
                       </script>
-                        <div><?php  include_once("barra.php"); ?></div> 
+                        <div><?php  include_once("../barra/barra.php"); ?></div> 
                               </div>
      
     <h2 class='title'>Petshop</h2>
@@ -157,7 +157,7 @@
     
             <div class="sobre-content">
 <?php
-     include_once("../../../../conexaoBD.php");
+     include_once("../../../../../conexaoBD.php");
      $sql_code= "SELECT * FROM produto";
      $pesquisa = mysqli_query($conexao,$sql_code);
                 
@@ -169,7 +169,7 @@
         <div class='column left'> 
                     <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
                          <p> R$".$exibe['preco']."</p>
-                              <a href='../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
+                              <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
                           
                         
                               </div>
