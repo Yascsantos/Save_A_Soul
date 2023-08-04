@@ -28,12 +28,13 @@
 		else 
 		{
 			mysqli_close($conexao);
-			header ('location: ../cadastro/pro.php');
+			header ('location: ../cadastro/infos/pro.php');
 			exit;
 		}
 
 
 		mysqli_close($conexao);
-		header ('location: ../cadastro/pro.php');
+		header ('location: ../cadastro/infos/pro.php');
 		exit;
 	}
+?>

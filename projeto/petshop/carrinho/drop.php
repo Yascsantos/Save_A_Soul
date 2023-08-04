@@ -21,7 +21,7 @@
     
         } else {
             mysqli_close($conexao);
-                header ('location: ../../adm/produtos/produtos/listagem/exibe_car.php');
+                header ('location: ../../adm/produtos/produtos/listagem/pet/exibe_car.php');
                 
                 exit;
         }    

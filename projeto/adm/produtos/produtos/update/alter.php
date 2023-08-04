@@ -73,7 +73,7 @@
                 if ($instrucao) 
                 {
                     mysqli_close($conexao);
-                    header ('Location:../cadastro/pro.php');
+                    header ('Location:../cadastro/infos/pro.php');
                     exit;
 
                 } 
