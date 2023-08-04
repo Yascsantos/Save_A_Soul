@@ -96,7 +96,7 @@
                      {
         
                         mysqli_close($conexao);
-                         header ('Location:../../adm/produtos/produtos/listagem/exibe_car.php');
+                         header ('Location:../../adm/produtos/produtos/listagem/pet/exibe_car.php');
                          exit;
      
                      } 
