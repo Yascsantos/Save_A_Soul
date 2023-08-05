@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra registrada</title>
+</head>
+<body>
+    <h1>Seu pedido foi registrado :)</h1>
+    <p>Abaixo estão os itens escolhidos. Muito obrigada pela confiança. </p>
+    <a href= "../../../../../index/index.php">Voltar a página inicial </a> <br><br>
+</body>
+</html>
+
 <?php
     include_once("../../../../../conexaoBD.php");
 
@@ -11,39 +25,6 @@
     $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
     
     echo "<table>";
-    echo "
-        <tr>
-            <td align='center'> 
-                FOTO 
-            </td>
-            <td></td>
-
-            <td align='center'>
-                PRODUTO 
-            </td>
-
-            <td align='center'>
-                COR
-            </td>
-
-            <td align='center'>
-                TAMANHO
-            </td>
-
-            <td align='center'>
-                PREÇO UNITÁRIO
-            </td>
-
-            <td align='center'>
-                QUANTIDADE 
-            </td>
-
-            <td align='center'>
-                VALOR 
-            </td>
-    </tr>
-    ";
-
     foreach($code as $dade)
     {
         $id_car = $dade['id_car'];
@@ -74,7 +55,7 @@
                     <td align='center'>
                         ".$prod." 
                     </td>
-
+                    
                     <td align='center'>
                         ".$cor."
                     </td>

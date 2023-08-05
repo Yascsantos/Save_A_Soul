@@ -8,8 +8,16 @@
 </head>
 <body>
     <h1>Escolha a forma de obtenção</h1>
-    <a href='./entrega/entrega.php' class='submit'><button type='button'>Retira</button></a>
-    <a href='../../adm/produtos/produtos/listagem/entrega.php' class='submit'><button type='button'>Entrega</button></a>
+    
+    <form action="./entrega/entrega.php" method="post">
+        <a href='./entrega/entrega.php'><button type='submit' name="entrega">Entrega</button></a>
+    </form>
+
+    <form action="../../adm/produtos/produtos/listagem/notas/retira.php" method="post">
+        <a href='../../../adm/produtos/produtos/listagem/notas/retira.php'><button type='submit' name="retira">Retira</button></a>
+    </form>
+
+
 
 </body>
 </html>
