@@ -10,7 +10,7 @@
         body{
         font-family: 'Poppins';
         background-size:1500px 900px;
-        background-image:url(../../../index/imgs/fundo1.jpg);
+        background-image:url(../../index/imgs/fundo1.jpg);
 
         color:white ;
        
@@ -119,7 +119,7 @@ margin-top:auto;
   
     <header id="menu">
       <nav>
-   <img src="../../../petshop/imgs/logo.png" >
+   <img src="../../petshop/imgs/logo.png" >
      <ul class="nav-list">
           <li> <a href="../../index.html">VOLTAR</a></li>
           <br>
@@ -131,7 +131,7 @@ margin-top:auto;
 </html>
 
 <?php
-    include_once("../../../conexaoBD.php");
+    include_once("../../conexaoBD.php");
 
     $sql= "SELECT * FROM user";
     $instrucao = mysqli_query($conexao,$sql);
@@ -230,7 +230,7 @@ margin-top:auto;
                 <td></td> 
                 <td align='center'>".$exibe['telefone']."</td>
                 <td></td> 
-                <td align='center'><a href='../descricao/page.php?&codigo=".$exibe['id_user']."'>Dados</a></td>
+                <td align='center'><a href='pag.php?&codigo=".$exibe['id_user']."'>Dados</a></td>
                 <td></td>
     
             </tr>
