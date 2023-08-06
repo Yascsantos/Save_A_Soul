@@ -31,7 +31,6 @@
 
             foreach($code as $dade)
             {
-                $id_car = $dade['id_car'];
                 $id_pro = $dade['id_pro'];
                 $cor = $dade['cor'];
                 $tam = $dade['tamanho'];
@@ -87,9 +86,9 @@
                 }
 
             }
-            echo "</table>";
-
     }
+    echo "</table>";
+    include_once ("../pet/proc.php");
 
 
 

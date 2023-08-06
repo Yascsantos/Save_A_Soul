@@ -196,10 +196,8 @@ echo "
                 <a href='../../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
                 delete
                 </span></a></div>
-                </div> 
+                </div>
             ";
-  
-
         }
 
     }

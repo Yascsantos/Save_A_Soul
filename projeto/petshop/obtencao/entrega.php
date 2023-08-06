@@ -16,7 +16,7 @@
     }
     $id_user = $_SESSION['id_user']; 
     
-    include_once("../../../conexaoBD.php");
+    include_once("../../conexaoBD.php");
 
     if(isset($_POST['entrega']))
     {
@@ -37,7 +37,7 @@
  
     if(isset($_POST['conf']))
     {   
-        header ('location:../../../adm/produtos/produtos/listagem/notas/entrega.php');
+        header ('location:../../adm/produtos/produtos/listagem/notas/entrega/entrega.php');
 
     }
 
