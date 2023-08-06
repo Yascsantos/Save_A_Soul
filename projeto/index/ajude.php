@@ -121,12 +121,26 @@
 
        </nav>
 </header>
-
-<section class="sobre" id="sobre">
-<h2 class='title'>Como ajudar</h2>
-        <div class="max-width">
+</section>
+    <section class="ajuda" id="sobre">
+    
             
+            <div class="ajuda-content">
+            <div class="column left">
+  <h2 class='title'>VOCÊ TAMBÉM PODE FAZER PARTE DESTA LUTA</h2>
+<p>A sua ajuda pode salvar a vida de diversos animais carentes e auxiliar na luta contra o abandono e maus-tratos.</p>
+</div>
+
+
+        </div>
+    </section>
+
+<section class="sobre">
+
+        <div class="max-width">
+
             <div class="sobre-content">
+
                 <div class="column left">
                     <img src="imgs/dog3.jpg" alt="">
                 </div>
