@@ -6,6 +6,8 @@
     <title>Notas</title>
 </head>
 <body>
+    <a href='../page.html'>Voltar</a><br>
+
     <form action="adocao.php" method="post">        
         <label>Notas: </label> <br>
         <input type="text"  name="texto" placeholder="Coloque aqui suas notas da entrevista">

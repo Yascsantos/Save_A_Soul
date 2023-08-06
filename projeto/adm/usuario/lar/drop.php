@@ -1,5 +1,5 @@
 <?php
-	include_once("../../../../conexaoBD.php");
+	include_once("../../../conexaoBD.php");
 	$tabela="descricao_vol";
 	$campos = "id_descvol"; //chave primária
 	
@@ -14,7 +14,7 @@
 
 	} else {
 		mysqli_close($conexao);
-        header ('location:../listagem.php');
+        header ('location:../page.html');
 			
 			exit;
 	}

@@ -7,6 +7,7 @@
 </head>
 <body>
     <h2>Listagem de informações observadas na entrevista para adoção</h2>
+    <a href='../page.html'>Voltar</a><br>
 </body>
 </html>
 
@@ -18,7 +19,7 @@
     $cod = $_SESSION['id_u'];
     
 
-    include_once("../../../../conexaoBD.php");
+    include_once("../../../conexaoBD.php");
 
     $sql= "SELECT * FROM descricao_ado WHERE id_user = $cod";
     $instrucao = mysqli_query($conexao,$sql);
@@ -34,7 +35,6 @@
 
     foreach ($instrucao as $exibe) 
     {
-        echo "<a href='../listagem.php'>Voltar</a><br><br>";
         echo "
         <table> 
             <tr>

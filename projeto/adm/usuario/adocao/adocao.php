@@ -1,5 +1,5 @@
 <?php
-    include_once("../../../../conexaoBD.php");
+    include_once("../../../conexaoBD.php");
 
     if(!isset($_SESSION))
     {
@@ -35,7 +35,7 @@
         else 
         {
             mysqli_close($conexao);
-            header ('location:listagem.php');
+            header ('location:../page.html');
             exit;
         }
 ?>
