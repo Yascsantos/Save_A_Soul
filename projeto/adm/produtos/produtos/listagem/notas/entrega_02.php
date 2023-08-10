@@ -8,7 +8,10 @@
 <body>
     <h1>Seu pedido foi registrado :)</h1>
     <p>Abaixo estão os itens escolhidos. Muito obrigada pela confiança. </p>
-    <a href= "./entrega/armazena.php">Voltar a página inicial </a> <br><br>
+    <p>OBS: Caso você volte para o carrinho, sua compra será interrompida.</p>
+    <a href= "./entrega/armazena.php">Finalizar compra</a>
+    <a href= "./entrega/back.php">Voltar ao carrinho</a> <br><br>
+
 </body>
 </html>
 

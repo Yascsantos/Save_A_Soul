@@ -49,7 +49,7 @@
         else 
         {
             mysqli_close($conexao);
-            header ('location: ../entrega_02.php');
+            header ('location: ../retira_02.php');
             exit;
     
         }
