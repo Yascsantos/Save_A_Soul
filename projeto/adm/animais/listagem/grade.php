@@ -119,7 +119,7 @@
      <ul class="nav-list">
           <li> <a href="../../../index/index.php">INICIO</a></li>
           <li> <a href="#">DOAR</a></li>
-          <li> <a href="../../produtos/produtos/listagem/grade_nova.php">PETSHOP</a></li>
+          <li> <a href="../../produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
           <li><a href="../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
