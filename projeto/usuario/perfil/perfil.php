@@ -19,6 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/perfil.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Perfil</title>
 
    
@@ -56,8 +57,8 @@
     <br>
     <li> <a href='../../index/ajude.php'>AJUDE</a></li>
     <br>
-    <li> <a href='../../adm/produtos/produtos/listagem/pet/exibe_car.php'>CARRINHO <br>DE COMPRAS</a></li>
-    <br>
+   <li><a href='../../adm/produtos/produtos/listagem/pet/exibe_car.php'><span class="material-symbols-outlined">shopping_cart</span></a>
+      </li> <br>
 
 
 </ul>

@@ -149,11 +149,17 @@ margin-top:auto;
   height: 500px;
   width: 100%;
 }
-.sobre .ajuda-content .left{
-  padding: 20px;
-  width: 30%;
+#ajuda .ajuda-content .left .p{
+  padding: 30px;
+  width: 40%;
   font-family: 'Poppins';
 
+ 
+
+}
+
+#ajuda{
+background-color: #3a3a3bae;
 }
 .title{
     text-align: center;

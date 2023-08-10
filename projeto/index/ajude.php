@@ -122,16 +122,15 @@
        </nav>
 </header>
 </section>
-    <section class="ajuda" id="sobre">
-    
-            
+    <section id="ajuda">
             <div class="ajuda-content">
             <div class="column left">
-  <h2 class='title'>VOCÊ TAMBÉM PODE FAZER PARTE DESTA LUTA</h2>
-  <div>
-<p >A sua ajuda pode salvar a vida de diversos animais carentes e auxiliar na luta <br>
-contra o abandono e maus-tratos.</p>
-</div></div>
+ 
+<div class='p'>
+<b><h2 class='title'>VOCÊ TAMBÉM PODE FAZER PARTE DESTA LUTA</h2></b>
+<p>A sua ajuda pode salvar a vida de diversos animais carentes e auxiliar na luta <br>
+contra o abandono e maus-tratos.</div>
+</div>
 
 
         </div>
@@ -152,7 +151,7 @@ contra o abandono e maus-tratos.</p>
             </div>
         </div>
     </section>
-    
+
     <section class="sobre" id="sobre">
         <div class="max-width">
             
