@@ -121,7 +121,7 @@ margin-top:auto;
       <nav>
    <img src="../../petshop/imgs/logo.png" >
      <ul class="nav-list">
-          <li> <a href="../../index.html">VOLTAR</a></li>
+          <li> <a href="../index.html">VOLTAR</a></li>
           <br>
        </ul>
 
