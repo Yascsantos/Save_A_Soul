@@ -197,16 +197,7 @@
   
   <?php
     //caso o filto seja selecionado
-    if(isset($_POST['filtrar']))
-    {
-        if(!isset($_SESSION))
-        {
-            session_start();
-        }
-    
-        $_SESSION['cat'] = $_POST['categoria']; //id_pro
-        $cat = $_SESSION['cat'];
-      }
+   
         include_once("../../../../../conexaoBD.php");
             //se o campo for nulo 
             if ($cat == "0")

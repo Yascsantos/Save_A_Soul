@@ -154,6 +154,13 @@
     <h2 class='title'>Petshop</h2>
     <section class="sobre" id="sobre">
         <div class="max-width">
+
+        </div>
+          
+          </section>
+            <div class="sobre-content">
+    <section class="sobre" id="sobre">
+        <div class="max-width">
     
             <div class="sobre-content">
 <?php
