@@ -150,7 +150,7 @@
         echo "
         <div class='column left'>
     <a href='../../../exibicao_animais/perfil.php?&codigo=".$exibe['id_ani']."'><img src=".$exibe['img_ani']." alt='Imagem padrão' width='100px' height='100px'></a><br>
-        <a href='../../../exibicao_animais/perfil.php?&codigo=".$exibe['id_ani']."'>".$exibe['nome_ani']."
+        <a href='../../../exibicao_animais/perfil.php?&codigo=".$exibe['id_ani']."'><h2>".$exibe['nome_ani']." </h2></a>
        
         </div> ";
 

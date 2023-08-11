@@ -55,17 +55,16 @@
       text-align: center;
     }
     .button{
-      width: 30%;
-      height: 25px;
-      text-align: center;
-      background:   #adb5a0;
-      border-radius: 20px;
+      width: 10%;
+      height: 30px;
+      align-items: center;
+      background:   #474845;
+     border-radius: 50%;
       outline: none;
       border: none;
       margin-top: 10px;
-      color: white;
-      margin-left: 10%;
-      font-family: "Poppins";
+      margin-left: 70%;
+  
   }
   .sair{
     color:red;
@@ -77,8 +76,7 @@
   button{
     width: 20%;
     height: 30px;
-    background:  #adb5a0;
-    border-radius: 20px;
+    background:   #474845;
     outline: none;
     border: none;
     margin-top: 10px;
@@ -171,7 +169,7 @@
   
   }
   .alterar:hover{
-    color:#816daa; 
+    color:#aaa6b3; 
   }
 
  .dog img {

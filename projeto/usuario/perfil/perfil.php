@@ -48,7 +48,9 @@
     <br><br>
     <div class="logo"><img src="../../index/imgs/logo.png"  ></div>
     <br><br><br><br><br><br><br><br>
-<li> <a href="../../index/index.php">INICIO</a></li>
+<li> <a href="../../index/index.php"><span class="material-symbols-outlined">
+home
+</span></a></li>
 <br>
     <li> <a href='../../sobre/sobre.php'>SOBRE</a></li>
     <br>
@@ -69,7 +71,7 @@
     
 <form class='perfil'>
     <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></strong></p><br>
-                  
+               
         <!--Colocando a imagem padrão do perfil -->
   <?php
                 $sql_query = "SELECT * FROM $tabela WHERE $campo ='$id'";
@@ -109,9 +111,13 @@
                            <body>
                                <div id='popupContainer' style='display: none;''>
                                    <div  class='popup' >
+                                   <button onclick='closePopup()' class='button'><span class='material-symbols-outlined'>
+                                   close
+                                   </span></button>
                                    <br><br>
+                                 
                                  <iframe src='img.php'></iframe>
-                                 <button onclick='closePopup()' class='button'>Fechar</button>
+                                
                                    </div>
                                </div>
                            
@@ -132,7 +138,9 @@
 
 
 <div class="dados">
-          <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?><br>
+          <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?> <a href='./updates/form.php'><span class="material-symbols-outlined" style>
+edit
+</span></a>  <br>
 		
 
        <p>Nome:  <?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?><br>
@@ -162,13 +170,15 @@
     </script>
 
 
-<a href='./updates/form.php' class="submit"><button type='button'>Editar</button></a>
+
 <a href='./drop/del.php' class="submit"><button type='button'>Deletar perfil</button></a>
 
            
     
   
-<a class='sair'onclick="showPopup()">Sair</a>
+<a class='sair'onclick="showPopup()"><span class="material-symbols-outlined">
+login
+</span></a>
        </form>
    
 
