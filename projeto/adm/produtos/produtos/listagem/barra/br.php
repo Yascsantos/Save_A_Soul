@@ -132,7 +132,7 @@
           <li> <a href="#">DOAR</a></li>
           <li> <a href="#">ADOTAR</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
-          <li><a href='../pet/grade_nova.php'>CONTINUE COMPRANDO</a></li>
+          <li><a href='../pet/grade_nova.php'>VOLTAR</a></li>
           <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
@@ -179,8 +179,9 @@
 
               //se o campo NÃO for nulo 
                 include_once("../../../../../conexaoBD.php");
-                $sql= "SELECT * FROM produto WHERE prod = '$prod'";
+                $sql= "SELECT * FROM produto WHERE prod LIKE '%$prod%'";
                 $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+
                                   
                 foreach ($instrucao as $exibe) 
                 {
@@ -197,9 +198,10 @@
                 }
               
               //Campo nulo 
-                if ($prod == "" )
+                if ($prod == " " )
                 {
-                    include_once("../filtro/filtro.php");
+
+                  header('location:../pet/grade_nova.php');
                 }
     
         }

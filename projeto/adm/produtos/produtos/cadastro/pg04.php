@@ -21,7 +21,7 @@
         <br>
         <a href='../delete/del_img.php'>Deletar</a>
         <br><br>
-        <a href='../index.html'>Voltar</a></div>
+        <a href='./infos/pro.php'>Voltar</a></div>
 
         </div>
         </main>

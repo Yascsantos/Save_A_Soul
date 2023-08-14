@@ -122,18 +122,54 @@
        </nav>
 </header>
 </section>
-    <section class="ajuda" id="sobre">
-    
-            
+    <section id="ajuda">
             <div class="ajuda-content">
             <div class="column left">
-  <h2 class='title'>VOCÊ TAMBÉM PODE FAZER PARTE DESTA LUTA</h2>
-<p>A sua ajuda pode salvar a vida de diversos animais carentes e auxiliar na luta contra o abandono e maus-tratos.</p>
+ 
+<div class='p'>
+<b><h2 class='title'>VOCÊ TAMBÉM PODE FAZER PARTE DESTA LUTA</h2></b>
+<p>A sua ajuda pode salvar a vida de diversos animais carentes e auxiliar na luta <br>
+contra o abandono e maus-tratos.</div>
 </div>
 
 
         </div>
     </section>
+    <section class="sobre" id="sobre">
+        <div class="max-width">
+            
+            <div class="sobre-content">
+                <div class="column left">
+                    <img src="imgs/dog6.jpg" alt="">
+                </div>
+                <div class="column right"><b>
+
+                Preencha o formulário abaixo com seus dados corretos, responda com o máximo de precisão sobre suas expectativas e rotina, esse é o início do nosso processo de adoção,
+                 responda à todas as perguntas com atenção que em breve entraremos em contato.<br></b>
+                    <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">Petshop</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+        <div class="max-width">
+            
+            <div class="sobre-content">
+                <div class="column left">
+                    <img src="imgs/dog5.jpg" alt="">
+                </div>
+                <div class="column right"><b>
+
+                Preencha o formulário abaixo com seus dados corretos, responda com o máximo de precisão sobre suas expectativas e rotina, esse é o início do nosso processo de adoção,
+                 responda à todas as perguntas com atenção que em breve entraremos em contato.<br></b>
+                    <a href="../adm/animais/listagem/grade.php">Adote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 <section class="sobre">
 
@@ -180,40 +216,7 @@ Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidad
         </div>
     </section>
 
-   <section class="sobre" id="sobre">
-        <div class="max-width">
-            
-            <div class="sobre-content">
-                <div class="column left">
-                    <img src="imgs/dog5.jpg" alt="">
-                </div>
-                <div class="column right"><b>
-
-                Preencha o formulário abaixo com seus dados corretos, responda com o máximo de precisão sobre suas expectativas e rotina, esse é o início do nosso processo de adoção,
-                 responda à todas as perguntas com atenção que em breve entraremos em contato.<br></b>
-                    <a href="../adm/animais/listagem/grade.php">Adote</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="sobre" id="sobre">
-        <div class="max-width">
-            
-            <div class="sobre-content">
-                <div class="column left">
-                    <img src="imgs/dog6.jpg" alt="">
-                </div>
-                <div class="column right"><b>
-
-                Preencha o formulário abaixo com seus dados corretos, responda com o máximo de precisão sobre suas expectativas e rotina, esse é o início do nosso processo de adoção,
-                 responda à todas as perguntas com atenção que em breve entraremos em contato.<br></b>
-                    <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">Petshop</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
+  
 
 
 </body>

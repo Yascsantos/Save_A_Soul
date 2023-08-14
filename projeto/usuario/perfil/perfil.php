@@ -19,6 +19,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/perfil.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Perfil</title>
 
    
@@ -47,7 +48,9 @@
     <br><br>
     <div class="logo"><img src="../../index/imgs/logo.png"  ></div>
     <br><br><br><br><br><br><br><br>
-<li> <a href="../../index/index.php">INICIO</a></li>
+<li> <a href="../../index/index.php"><span class="material-symbols-outlined">
+home
+</span></a></li>
 <br>
     <li> <a href='../../sobre/sobre.php'>SOBRE</a></li>
     <br>
@@ -56,8 +59,8 @@
     <br>
     <li> <a href='../../index/ajude.php'>AJUDE</a></li>
     <br>
-    <li> <a href='../../adm/produtos/produtos/listagem/pet/exibe_car.php'>CARRINHO <br>DE COMPRAS</a></li>
-    <br>
+   <li><a href='../../adm/produtos/produtos/listagem/pet/exibe_car.php'><span class="material-symbols-outlined">shopping_cart</span></a>
+      </li> <br>
 
 
 </ul>
@@ -68,7 +71,7 @@
     
 <form class='perfil'>
     <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></strong></p><br>
-                  
+               
         <!--Colocando a imagem padrão do perfil -->
   <?php
                 $sql_query = "SELECT * FROM $tabela WHERE $campo ='$id'";
@@ -108,9 +111,13 @@
                            <body>
                                <div id='popupContainer' style='display: none;''>
                                    <div  class='popup' >
+                                   <button onclick='closePopup()' class='button'><span class='material-symbols-outlined'>
+                                   close
+                                   </span></button>
                                    <br><br>
+                                 
                                  <iframe src='img.php'></iframe>
-                                 <button onclick='closePopup()' class='button'>Fechar</button>
+                                
                                    </div>
                                </div>
                            
@@ -131,7 +138,9 @@
 
 
 <div class="dados">
-          <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?><br>
+          <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?> <a href='./updates/form.php'><span class="material-symbols-outlined" style>
+edit
+</span></a>  <br>
 		
 
        <p>Nome:  <?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?><br>
@@ -161,13 +170,15 @@
     </script>
 
 
-<a href='./updates/form.php' class="submit"><button type='button'>Editar</button></a>
+
 <a href='./drop/del.php' class="submit"><button type='button'>Deletar perfil</button></a>
 
            
     
   
-<a class='sair'onclick="showPopup()">Sair</a>
+<a class='sair'onclick="showPopup()"><span class="material-symbols-outlined">
+login
+</span></a>
        </form>
    
 

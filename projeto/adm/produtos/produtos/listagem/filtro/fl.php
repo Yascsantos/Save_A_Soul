@@ -156,6 +156,7 @@
           <li> <a href="#">DOAR</a></li>
           <li> <a href="../../../animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
+          <li><a href='../pet/grade_nova.php'>VOLTAR</a></li>
           <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
@@ -196,59 +197,17 @@
   
   <?php
     //caso o filto seja selecionado
-    if(isset($_POST['filtrar']))
-    {
-        if(!isset($_SESSION))
-        {
-            session_start();
-        }
-    
-        $_SESSION['cat'] = $_POST['categoria']; //id_pro
-        $cat = $_SESSION['cat'];
-      }
+   
+        include_once("../../../../../conexaoBD.php");
             //se o campo for nulo 
             if ($cat == "0")
             {
-                include_once("../../../../../../conexaoBD.php");
-                $sql_code= "SELECT * FROM produto";
-                $pesquisa = mysqli_query($conexao,$sql_code);
-                           
-              
-                
-     foreach ($pesquisa as $exibe) 
-
-     {
-  
-        echo "
-     
-        <div class='column left'>
-            
-                            <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
-            
-                    <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."
-    
-                            <p>R$".$exibe['preco']."</p><br>
-                            
-                
-                            </div>
-        
-                        ";
-                           
-                }
-        
-
-
-                   
+              header('location:../pet/grade_nova.php');
             }
     
-    
                 //campo NÃO for nulo
-                include_once("../../../../../conexaoBD.php");
                 $sql_query= "SELECT * FROM produto Where id_cat = $cat ";
                 $requery = mysqli_query($conexao,$sql_query);
-                    
-                  
-                    
                 foreach ($requery as $dados) 
                 {
                     echo "
@@ -267,19 +226,7 @@
         else
         {
             //se o filtro NÃO for selecionado 
-            $sql= "SELECT * FROM produto";
-            $instrucao = mysqli_query($conexao,$sql);
-    
-            foreach ($instrucao as $exibe) 
-            {
-                echo "
-            <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
-        
-                    
-                <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
-                   <p> R$".$exibe['preco']."</p>
-                ";
-            }
+            header('location:../pet/grade_nova.php');
     
         }
   

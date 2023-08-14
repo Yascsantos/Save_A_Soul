@@ -145,3 +145,41 @@ CREATE TABLE carrinho (
 		FOREIGN KEY (id_user)REFERENCES user (id_user)
 	
 );
+
+CREATE TABLE pedido (
+	id_ped INT PRIMARY KEY NOT NULL Auto_increment,
+	id_user INT, 
+	id_pro INT,
+	numero INT,
+	cor VARCHAR(20),
+	tamanho VARCHAR(30), 
+	qtd INT,
+	valor DECIMAL(10,2),
+ 
+	
+		FOREIGN KEY (id_pro)REFERENCES produto (id_pro),
+		FOREIGN KEY (id_user)REFERENCES user (id_user)
+	
+);
+
+CREATE TABLE armazena (
+	id_arm INT PRIMARY KEY NOT NULL Auto_increment,
+	id_user INT, 
+	id_pro INT,
+	numero INT,
+	cor VARCHAR(20),
+	tamanho VARCHAR(30), 
+	qtd INT,
+	valor DECIMAL(10,2),
+ 
+	
+		FOREIGN KEY (id_pro)REFERENCES produto (id_pro),
+		FOREIGN KEY (id_user)REFERENCES user (id_user)
+	
+);
+
+
+
+
+
+

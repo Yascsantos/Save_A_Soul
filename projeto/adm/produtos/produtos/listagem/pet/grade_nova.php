@@ -182,6 +182,13 @@
 
     <section class="sobre" id="sobre">
         <div class="max-width">
+
+        </div>
+          
+          </section>
+            <div class="sobre-content">
+    <section class="sobre" id="sobre">
+        <div class="max-width">
     
             <div class="sobre-content">
 <?php

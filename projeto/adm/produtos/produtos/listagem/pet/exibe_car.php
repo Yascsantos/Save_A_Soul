@@ -119,9 +119,8 @@
      <ul class="nav-list">
           <li> <a href="../../../../../index/index.php">INICIO</a></li>
           <li> <a href="#">DOAR</a></li>
-          <li> <a href="../../../animais/listagem/grade.php">ADOTE</a></li>
+          <li> <a href="../../../../animais/listagem/grade.php">ADOTE</a></li>
           <li> <a href="#">SEJA VOLUNTÁRIO</a></li>
-          <li> <a href="grade_nova.php">CONTINUAR COMPRANDO</a></li>
           <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
@@ -196,10 +195,8 @@ echo "
                 <a href='../../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
                 delete
                 </span></a></div>
-                </div> 
+                </div>
             ";
-  
-
         }
 
     }

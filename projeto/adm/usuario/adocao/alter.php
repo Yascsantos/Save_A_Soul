@@ -20,7 +20,7 @@
 </html>
 
 <?php
-	include_once("../../../../conexaoBD.php");
+	include_once("../../../conexaoBD.php");
 	$tabela="descricao_ado";
 	$id = "id_descad"; 
     $pesq="texto";
@@ -54,7 +54,7 @@
         else 
         {
 			mysqli_close($conexao);
-            header ('location: ../listagem.php');
+            header ('location: ../page.html');
 
 			exit;
 		}

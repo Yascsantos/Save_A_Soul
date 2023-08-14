@@ -1,7 +1,7 @@
 <?php
-	include_once("../../../../conexaoBD.php");
-	$tabela="descricao_vol";
-	$campos = "id_descvol"; //chave primária
+	include_once("../../../conexaoBD.php");
+	$tabela="descricao_ado";
+	$campos = "id_descad"; //chave primária
 	
 	$codigo = $_GET['codigo'];
 	
@@ -14,7 +14,7 @@
 
 	} else {
 		mysqli_close($conexao);
-        header ('location:../listagem.php');
+        header ('location:../page.html');
 			
 			exit;
 	}

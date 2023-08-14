@@ -38,6 +38,7 @@
 			{
 				mysqli_close($conexao);
 				echo "<h2 style='
+				@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 				@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
 				font-family:'Poppins';'>Imagem enviada com sucesso!</h2>";
 				exit;
@@ -71,7 +72,9 @@ form{
         <input type="text" name="titulo"> </input><br><br>
 		<b><label for="pic"class="input-arquivo">Selecionar Arquivo</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input>                        
-        <input type="submit" value="Enviar" name="Enviar" class="button">
+        <input type="submit" value="Enviar" name="<span class='material-symbols-outlined'>
+check
+</span>" class="button">
 		
         </form>
 </body>

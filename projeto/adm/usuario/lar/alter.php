@@ -1,5 +1,5 @@
 <?php
-	include_once("../../../../conexaoBD.php");
+	include_once("../../../conexaoBD.php");
 	$tabela="descricao_vol";
 	$id = "id_descvol"; 
     $pesq="texto";
@@ -34,7 +34,7 @@
         else 
         {
 			mysqli_close($conexao);
-            header ('location:../listagem.php');
+            header ('location:../page.html');
 
 			exit;
 		}
@@ -50,6 +50,8 @@
 </head>
 <body>
     <h1>Alteração de notas</h1>
+	<a href='../page.html'>Voltar</a><br>
+
     <form action="" method="post">
         <input type="hidden" name="codigo" value="<?= $edit;?>" />
 

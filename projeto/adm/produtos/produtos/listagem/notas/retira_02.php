@@ -9,7 +9,10 @@
     <h1>Seu pedido foi registrado :)</h1>
     <p>Seu pedido já estã pronto para ser retirado em nossa unidade.</p>
     <p>Abaixo estão os itens escolhidos. Muito obrigada pela confiança. </p>
-    <a href= "../../../../../index/index.php">Voltar a página inicial </a> <br><br>
+    <p>OBS: Caso você volte para o carrinho, sua compra será interrompida.</p>
+    <a href= "./retira/armazena.php">Finalizar compra</a>
+    <a href= "./retira/back.php">Voltar ao carrinho</a> <br><br>
+
 </body>
 </html>
 
@@ -21,17 +24,16 @@
         session_start();
     }
     $id_user = $_SESSION['id_user']; 
+    $numero = $_SESSION['id_car'];
 
-    if(isset($_POST['retira']))
-    {
-        $sql_code = "SELECT * FROM carrinho WHERE id_user = $id_user";
+
+        $sql_code = "SELECT * FROM pedido WHERE numero = $numero";
         $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
         
         echo "<table>";
 
             foreach($code as $dade)
             {
-                $id_car = $dade['id_car'];
                 $id_pro = $dade['id_pro'];
                 $cor = $dade['cor'];
                 $tam = $dade['tamanho'];
@@ -87,9 +89,9 @@
                 }
 
             }
-            echo "</table>";
 
-    }
+    echo "</table>";
+    include_once ("../pet/proc.php");
 
 
 

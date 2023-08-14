@@ -6,7 +6,9 @@
     <title>Notas</title>
 </head>
 <body>
-    <form action="adocao.php" method="post">        
+    <a href='../page.html'>Voltar</a><br>
+
+    <form action="lar.php" method="post">        
         <label>Notas: </label> <br>
         <input type="text"  name="texto" placeholder="Coloque aqui suas notas da entrevista">
         <input type="submit" name="Registrar" value="Registrar">
