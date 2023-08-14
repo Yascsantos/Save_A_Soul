@@ -152,6 +152,34 @@
                               </div>
      
     <h2 class='title'>Petshop</h2>
+    <section class="produto" id="produto">
+
+<div class="max-width">
+              <h2 class="title">Junte-se</h2>
+            <div class="carousel owl-carousel ">
+                <div class="card">
+                  <div class="box">
+                      <img src="./imgs/dog4.jpg" alt="">
+                     
+                      <button> <a href="#"> <p>Doe</p></a></button>
+                  </div>
+              </div>
+              <div class="card">
+                  <div class="box">
+                      <img src="./imgs/dog5.jpg" alt="">
+                      <button> <a href="#"><p>Seja voluntário</p></a></button>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <div class="box">
+                        <img src="./imgs/dog3.jpg" alt="">
+                        <button><a href="#"><p>Adote</p></a></button>
+                    </div>
+              </div>
+           
+          
+  </div>
+
     <section class="sobre" id="sobre">
         <div class="max-width">
     
