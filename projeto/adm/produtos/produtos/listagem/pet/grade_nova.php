@@ -8,6 +8,7 @@
     <link rel="icon" type="imagem/png" href="../index/imgs/logo1.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
@@ -151,46 +152,13 @@
                         <div><?php  include_once("../barra/barra.php"); ?></div> 
                               </div>
      
-    <h2 class='title'>Petshop</h2>
-    <section class="produto" id="produto">
-
-<div class="max-width">
-              <h2 class="title">Junte-se</h2>
-            <div class="carousel owl-carousel ">
-                <div class="card">
-                  <div class="box">
-                      <img src="./imgs/dog4.jpg" alt="">
-                     
-                      <button> <a href="#"> <p>Doe</p></a></button>
-                  </div>
-              </div>
-              <div class="card">
-                  <div class="box">
-                      <img src="./imgs/dog5.jpg" alt="">
-                      <button> <a href="#"><p>Seja voluntário</p></a></button>
-                  </div>
-                  </div>
-                  <div class="card">
-                    <div class="box">
-                        <img src="./imgs/dog3.jpg" alt="">
-                        <button><a href="#"><p>Adote</p></a></button>
-                    </div>
-              </div>
-           
-          
-  </div>
-
-    <section class="sobre" id="sobre">
-        <div class="max-width">
-
-        </div>
-          
-          </section>
-            <div class="sobre-content">
-    <section class="sobre" id="sobre">
-        <div class="max-width">
     
-            <div class="sobre-content">
+        <section  id="produto">
+        <h2 class='title'>Petshop</h2>
+<div class="max-width">
+            <div class="produto">
+          
+         
 <?php
      include_once("../../../../../conexaoBD.php");
      $sql_code= "SELECT * FROM produto";
@@ -201,31 +169,31 @@
 
      {
         echo "
-        <div class='column left'> 
-                    <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." ></a><br>
+        <div class='card'>
+ 
+                    <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." style='height:250px;  width:250px;'></a><br>
                          <p> R$".$exibe['preco']."</p>
-                              <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
-                          
-                        
+                         <b>   ".$exibe['prod']."</b><br>
+                              <button>   <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'> <p>compre</p></a></button>
+                            
                               </div>
+                        
         ";
      }
 
 
-?>
+?> 
 
+                  </div> 
+              </div>
 
-            </div>
-          
-          </section>
-
-
+    </section>
 </body>
 </html>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="../../../../petshop/js/script.js"></script>
+<script src="../../../../../petshop/js/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>

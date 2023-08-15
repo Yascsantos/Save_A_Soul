@@ -50,16 +50,22 @@
     <br><br><br><br><br><br><br><br>
 <li> <a href="../../index/index.php"><span class="material-symbols-outlined">
 home
-</span></a></li>
+</span > INICIO</a></li>
 <br>
-    <li> <a href='../../sobre/sobre.php'>SOBRE</a></li>
+    <li> <a href='../../sobre/sobre.php'> <span class="material-symbols-outlined">
+group
+</span> SOBRE</a></li>
     <br>
-    <li> <a href="../../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
+    <li> <a href="../../adm/produtos/produtos/listagem/pet/grade_nova.php"><span class="material-symbols-outlined">
+pet_supplies
+</span> PETSHOP</a></li>
     <img scr="img/dog.jpg" class="dog">
     <br>
-    <li> <a href='../../index/ajude.php'>AJUDE</a></li>
+    <li> <a href='../../index/ajude.php'><span class="material-symbols-outlined">
+handshake
+</span> AJUDA</a></li>
     <br>
-   <li><a href='../../adm/produtos/produtos/listagem/pet/exibe_car.php'><span class="material-symbols-outlined">shopping_cart</span></a>
+   <li><a href='../../adm/produtos/produtos/listagem/pet/exibe_car.php'><span class="material-symbols-outlined">shopping_cart</span> COMPRAS</a>
       </li> <br>
 
 
@@ -105,15 +111,18 @@ home
                           .popup  iframe {
                             border: none;
                             }
-                          
+                            .popup .material-symbols-outlined{
+                              margin-left:90%;
+                              color:rgb(156, 0, 0);
+                            }
                             
                         </style>
                            <body>
                                <div id='popupContainer' style='display: none;''>
                                    <div  class='popup' >
-                                   <button onclick='closePopup()' class='button'><span class='material-symbols-outlined'>
+                                    <span class='material-symbols-outlined' onclick='closePopup()'>
                                    close
-                                   </span></button>
+                                   </span> 
                                    <br><br>
                                  
                                  <iframe src='img.php'></iframe>

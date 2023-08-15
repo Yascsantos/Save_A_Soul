@@ -26,44 +26,37 @@ body{
            display: block;
            margin-bottom: 10px;
        }
- 
-  /*sessão de produto*/
-  .produto .title::after{
-   
-    content: "a nós";
-}
-.produto .carousel .card{
+
+       #produto .produto {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+       }
+#produto .produto .card{
   background: 826990;
    border-radius: 6px;
    padding: 25px 35px;
    text-align: center;
    transition: all 0.3s ease;
+  
 }
-.produto .carousel .card:hover{
+#produto .produto .card:hover{
     background: #efe6eb;
 }
-.produto .carousel .card img{
-    width: 150px;
-    height: 150px;
+#produto .produto .card img{
+    width: 250px;
+    height: 250px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #efe6eb;
+      border: 5px solid #efe6eb;
     transition: all 0.3s ease;
 }
-.produto .carousel .card:hover img{
+#produto .produto  .card:hover img{
     border-color: #fff;
 }
-.produto .carousel .card .box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.produto .carousel .card:hover .box{
-  transform: scale(1.05);
-}
-.produto .carousel .card .text{
+
+#produto .produto .card .text{
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;

@@ -164,12 +164,13 @@
                       </div>
                         <div><?php  include_once("barra.php"); ?></div> 
                         </div> </div> </div>
-     
-    <h2 class='title'>Petshop</h2>
-    <section class="sobre" id="sobre">
-        <div class="max-width">
-    
-            <div class="sobre-content">
+                    
+        <section  id="produto">
+        <h2 class='title'>Petshop</h2>
+<div class="max-width">
+            <div class="produto">
+          
+           
     <?php
             if(isset($_POST['pesquisar']))
             {
@@ -181,20 +182,21 @@
                 include_once("../../../../../conexaoBD.php");
                 $sql= "SELECT * FROM produto WHERE prod LIKE '%$prod%'";
                 $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-
+           
                                   
                 foreach ($instrucao as $exibe) 
                 {
                     echo "
                 
                       
-                        <div class='column left'>
-                        <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
+                    <div class='card'>
+                        <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' style='height:250px;  width:250px;'></a><br>
                     
-                                  <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a><br>
+                           ".$exibe['prod']."<br>
                                   <p> R$".$exibe['preco']."</p><br> 
-                                  </div>  ";
-                                  
+                                  <button>   <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'> <p>compre</p></a></button>
+                            
+                                  </div>";
                 }
               
               //Campo nulo 
@@ -209,11 +211,11 @@
      
     
 ?>
- </div>
-                  
-                  </div>
-                
-                </section>
+
+</div> 
+              </div>
+
+    </section>
 
 
     </body>
@@ -221,7 +223,7 @@
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="../../../../petshop/js/script.js"></script>
+      <script src="../../../../../petshop/js/script.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>

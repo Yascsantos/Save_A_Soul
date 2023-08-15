@@ -72,9 +72,7 @@ form{
         <input type="text" name="titulo"> </input><br><br>
 		<b><label for="pic"class="input-arquivo">Selecionar Arquivo</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input>                        
-        <input type="submit" value="Enviar" name="<span class='material-symbols-outlined'>
-check
-</span>" class="button">
+        <button input type="submit" value="Enviar" name="Enviar">Enviar</button >
 		
         </form>
 </body>
