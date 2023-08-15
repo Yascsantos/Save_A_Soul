@@ -35,7 +35,7 @@ body{
         justify-content: space-between;
        }
 #produto .produto .card{
-  background: #345c3d8f;
+
    border-radius: 6px;
    padding: 25px 35px;
    text-align: center;
@@ -85,8 +85,16 @@ body{
     border: none;
     margin-top: 15px;
     color: white;
-   margin:auto;
+   margin-left:20%;
     font-size: 16px;
+}
+.compra {
+  width: 100%;
+display: flex;  
+margin-left: 30%;
+}
+ #ver{
+  margin-left: 150%;
 }
 .valor{
   width: 50%;

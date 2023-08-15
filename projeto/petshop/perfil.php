@@ -31,10 +31,10 @@
     foreach ($instrucao as $exibe) 
     {
         echo "
-        <tr>
-            <td align='center'><img src=".$exibe['img']." width='100px' height='100px'></td>
+        <div>
+            <td align='center'><img src=".$exibe['img']." width='300px' height='300px'></td>
             <td></td>
-        </tr>
+        </div>
         ";
     }
     echo"</table>";
