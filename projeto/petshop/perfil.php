@@ -1,4 +1,11 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php'> Voltar a comprar</a>
+</body>
+</html>
 <?php
     include_once("../conexaoBD.php");
     include("protect.php");
