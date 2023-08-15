@@ -35,7 +35,7 @@ body{
         justify-content: space-between;
        }
 #produto .produto .card{
-  background: 826990;
+  background: #345c3d8f;
    border-radius: 6px;
    padding: 25px 35px;
    text-align: center;
@@ -43,17 +43,18 @@ body{
   
 }
 #produto .produto .card:hover{
-    background: #efe6eb;
+    background: #2a563eca;
 }
 #produto .produto .card img{
     width: 250px;
     height: 250px;
+    border-radius: 8px;
     object-fit: cover;
       border: 5px solid #efe6eb;
     transition: all 0.3s ease;
 }
 #produto .produto  .card:hover img{
-    border-color: #fff;
+    border-color: #2a503bca
 }
 
 #produto .produto .card .text{
@@ -61,29 +62,7 @@ body{
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
-.owl-dots{
-  text-align: center;
-  margin-top: 20px;
-}
-.owl-dot{
-  width: 14px;
-  height: 14px;
-  outline: none!important;
-  border-radius: 50%;
-  border: 2px solid #adb5a0!important;
-  transition: all 0.3s ease;
-}
-.owl-dot.active{
-  width: 35px;
-  border-radius: 15px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-  background:#adb5a0!important;
-}
 
-
-   
        
 
  select{
@@ -102,12 +81,11 @@ body{
     width: 30%;
     height:30px;
     background: #adb5a0;
-
     outline: none;
     border: none;
     margin-top: 15px;
     color: white;
-   margin-left: 20%;
+   margin:auto;
     font-size: 16px;
 }
 .valor{
