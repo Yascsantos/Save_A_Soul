@@ -185,8 +185,8 @@ echo "
         <img src=".$img_pro." width='100px' height='100px'>
         <div class='text'>
               ".$prod."     ".$cor." ".$tam."<br><br>
-              <b> Preço unitário: R$".$preco."</b><br>
-             <b> Quantidade: ".$qtd." </b>
+              <b>R$".$preco."</b>
+             <b> Qtd: ".$qtd." </b>
              
         <button class='valor'>  <b>R$ ".$valor."</b></button>
              <br><br>
