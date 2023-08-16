@@ -27,6 +27,7 @@
     echo "<table>";
     foreach($code as $dade)
     {
+        
         $id_pro = $dade['id_pro'];
         $cor = $dade['cor'];
         $tam = $dade['tamanho'];
@@ -42,7 +43,6 @@
             $prod = $dados['prod'];
             $preco = $dados['preco'];
             $img_pro = $dados['img_pro'];
-
 
             echo "
                 <tr>

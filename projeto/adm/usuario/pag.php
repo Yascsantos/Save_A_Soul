@@ -11,6 +11,16 @@
     {
 
     }
+    include_once("../../conexaoBD.php");
+    $sql= "SELECT * FROM user WHERE id_user = $cod";
+    $instrucao = mysqli_query($conexao,$sql);
+
+    foreach ($instrucao as $exibe) 
+    {
+        $nome = $exibe['nome'];
+    }
+
+
 
 ?>
 
@@ -22,10 +32,12 @@
     <title>Usuários</title>
 </head>
 <body>
-    <h1>Usuários :)</h1>
-    <h3><a href="../produtos/produtos/listagem/usuario/nota.php">Pedidos do usuário</a></h3>
+    <h1>Informações dos usuários</h1>
+    <p>Usuário(a): <b><?php echo $nome;?></b></p>
 
-    <h3><a href="page.html">Cadastar notas </a></h3>
+    <h3><a href="../produtos/produtos/listagem/usuario/nota.php">Pedidos já feitos</a></h3>
+
+    <h3><a href="page.html">Notas das entrevistas</a></h3>
 
     <a href="listagem.php">Voltar</a>
 
