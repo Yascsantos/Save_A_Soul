@@ -173,9 +173,13 @@
  
                     <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." style='height:250px;  width:250px;'></a><br>
                         
-                         <b>   ".$exibe['prod']."</b><br> <p> R$".$exibe['preco']."</p>
-                              <button>   <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'> <p>compre</p></a></button>
-                            
+                         <b>   ".$exibe['prod']."</b><br> <p> R$".$exibe['preco']."</p><br>
+                         <div class='compra'>
+                         <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'> <span class='material-symbols-outlined' >visibility</span></a>
+                         <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><span class='material-symbols-outlined' id='ver'>
+                         shopping_cart
+                         </span></a>
+                            </div>
                               </div>
                         
         ";
