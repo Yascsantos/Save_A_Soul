@@ -159,7 +159,8 @@ edit
           Telefone:  <?php foreach ($instrucao as $exibe){ echo $exibe['telefone'];}?>
 		<br>
 
-       Senha:  <?php foreach ($instrucao as $exibe){ echo $exibe['senha'];}?></p></b> 
+       <!--Senha-->
+       <a href='./updates/senha.php'>Senha</a></p></b>
        <br>
       </div>
       <a onclick="abrirEnd()" class="btn">Exibir endereço</a>
