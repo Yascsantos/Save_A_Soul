@@ -19,6 +19,7 @@
     include_once("../../../../../conexaoBD.php");
     $sql= "SELECT * FROM categoria";
     $instrucao = mysqli_query($conexao,$sql);
+
     if(isset($_POST['pesq']))
     {
         if(!isset($_SESSION))
@@ -28,12 +29,12 @@
     
         $_SESSION['cat'] = $_POST['categoria']; //id_pro
         $cat = $_SESSION['cat'];
-      }
+    }
       
     echo "<div class='input-dados'>
-<form action='../filtro/fl.php' method='POST'>
- <select name='categoria' required>
-        <option value='0'>Selecione a categoria</option>
+            <form action='../filtro/fl.php' method='POST'>
+            <select name='categoria' required>
+            <option value='0'>Selecione a categoria</option>
     ";
     foreach ($instrucao as $exibe) 
     {

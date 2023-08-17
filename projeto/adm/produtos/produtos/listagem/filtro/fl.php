@@ -186,10 +186,8 @@
                           }
                       </script>
                       </div>
-                        <div><?php  include_once("barra.php"); ?></div> 
+                        <div><?php  include_once("../barra/barra.php"); ?></div> 
                         </div> </div> </div>
-     
-    <h2 class='title'>Petshop</h2>
     <section  id="produto">
         <h2 class='title'>Petshop</h2>
 <div class="max-width">
@@ -201,16 +199,20 @@
     //caso o filto seja selecionado
    
         include_once("../../../../../conexaoBD.php");
+
             //se o campo for nulo 
             if ($cat == "0")
             {
               header('location:./pet/grade_nova.php');
             }
-    
+            
+
+            if ($cat != "0")
+            {
                 //campo NÃO for nulo
                 $sql_query= "SELECT * FROM produto Where id_cat = $cat ";
                 $requery = mysqli_query($conexao,$sql_query);
-                foreach ($requery as $dados) 
+                foreach ($requery as $exibe) 
                 {
                     echo "
                     <div class='card'>
@@ -229,11 +231,10 @@
                         ";
                     
                 }
-            
-    
-    
+
+              }
+
         
-    
         else
         {
             //se o filtro NÃO for selecionado 
