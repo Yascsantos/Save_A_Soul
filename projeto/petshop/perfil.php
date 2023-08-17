@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-</head>
+
+        <!DOCTYPE html>
+        <html lang='pt-br'>
+        <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+           
+            <title></title>
+        </head>
+
 <body>
-    <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php'> Voltar a comprar</a>
+   
 </body>
 </html>
 <?php
@@ -29,8 +35,23 @@
     $instrucao = mysqli_query($conexao,$sql);
 
     echo "
-    <table> 
-        <tr>
+    <style>
+    .sobre-produto{
+      margin: center;
+       display:flex;
+   }
+   .img img{
+      width:300px;
+      heigth:300px;
+      
+   }
+   .info-prod {
+       margin-top: auto;
+       padding:30px;
+   }
+    </style>
+    <div class='sobre-produto'> 
+        
             <th align='center'></th>
             <th> </th>
         </tr>";
@@ -38,13 +59,13 @@
     foreach ($instrucao as $exibe) 
     {
         echo "
-        <div>
-            <td align='center'><img src=".$exibe['img']." width='300px' height='300px'></td>
-            <td></td>
+        <div class='img'>
+    <img src=".$exibe['img'].">
+        
         </div>
         ";
     }
-    echo"</table>";
+
 
 
 
@@ -52,57 +73,26 @@
     $sql_code= "SELECT * FROM produto WHERE id_pro = $id";
     $pesquisa = mysqli_query($conexao,$sql_code);
     
-    echo "<table>";
+    echo "<div class='info-prod'>";
     foreach ($pesquisa as $exibe) 
     {
-        ECHO "
-        <!DOCTYPE html>
-        <html lang='pt-br'>
-        <head>
-            <meta charset='UTF-8'>
-            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-            <title>".$exibe['prod']."</title>
-        </head>
-        </html>";
+       
 
         echo"
             <br>
-            <tr>
-                <td align='center'>Nome: </td>
-                <td align='center'>".$exibe['prod']."</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td align='center'>Preço: </td>
-                <td align='center'>R$".$exibe['preco']."</td>
-                <td></td>
-            </tr> 
-
-            <tr>
-                <td align='center'>Modelo: </td>
-                <td align='center'>".$exibe['modelo']."</td>
-                <td></td>
-            </tr> 
-
-            
-            <tr>
-                <td align='center'>Outras informações: </td>
-                <td align='center'>".$exibe['outros']."</td>
-                <td></td>
-            </tr>
-            
-            <tr>
-            
-                <td align='center'>
-            </tr>
-
-            <tr></tr><tr></tr>
+            Nome: ".$exibe['prod']."<br>
+            Preço:R$".$exibe['preco']."<br>
+            Modelo: 
+             ".$exibe['modelo']."<br>
+              Outras informações: 
+            ".$exibe['outros']."<br>
+           
         ";
     }
-    echo "</table>";
+  
 
-    echo "<form action='./carrinho/carrinho.php' method='POST'>";
+    echo "<form action='./carrinho/carrinho.php' method='POST'>
+";
     //tamanho
     $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
@@ -112,10 +102,11 @@
     {
         echo "  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['tamanho'].">
         <label for=".$exibe['tamanho'].">".$exibe['tamanho']."</label><br>
+     
         ";
-
+   
     }
-     echo "<br>";
+    
 
     //cores
         $code= "SELECT * FROM cores WHERE id_pro = $id";
@@ -132,11 +123,16 @@
         echo "<br>";
 
     echo "
+   
         <label>Quantidade: </label> 
         <input type='number' placeholder='Quantidade' name='qtd'><br>
+        <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php'> Voltar a comprar</a>
 
     ";
-    echo "<br><br><input type='submit' name='salvar' value= 'Adicionar ao carrinho'></input>";
+   
+ echo "<br><br><input type='submit' name='salvar' value= 'Adicionar ao carrinho'></input>";
+ echo "</div>";
+     echo "</div>";
     echo "</form>";
 
 
