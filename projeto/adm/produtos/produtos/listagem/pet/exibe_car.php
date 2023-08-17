@@ -163,7 +163,7 @@ echo "
 
     foreach($code as $dade)
     {
-      $id_car = $dade['id_car'];
+        $id_car = $dade['id_car'];
         $id_u = $dade['id_user'];
         $id_pro = $dade['id_pro'];
         $cor = $dade['cor'];
@@ -173,7 +173,6 @@ echo "
 
         $sql= "SELECT * FROM produto where id_pro = $id_pro";     
         $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-
 
         foreach($instrucao as $dados)
         {
