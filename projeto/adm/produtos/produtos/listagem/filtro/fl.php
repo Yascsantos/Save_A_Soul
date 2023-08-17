@@ -190,10 +190,12 @@
                         </div> </div> </div>
      
     <h2 class='title'>Petshop</h2>
-    <section class="sobre" id="sobre">
-        <div class="max-width">
-    
-            <div class="sobre-content">
+    <section  id="produto">
+        <h2 class='title'>Petshop</h2>
+<div class="max-width">
+            <div class="produto">
+          
+         
   
   <?php
     //caso o filto seja selecionado
@@ -211,10 +213,19 @@
                 foreach ($requery as $dados) 
                 {
                     echo "
-                    <div class='column left'>
-                <a href='../../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'><img src=".$dados['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
-                         <a href='../../../../../petshop/perfil.php?&codigo=".$dados['id_pro']."'>".$dados['prod']."</a>
-                       <p> R$".$dados['preco']."</p>
+                    <div class='card'>
+ 
+                    <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." style='height:250px;  width:250px;'></a><br>
+                        
+                         <b>   ".$exibe['prod']."</b><br> <p> R$".$exibe['preco']."</p><br>
+                         <div class='compra'>
+                         <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'> <span class='material-symbols-outlined' >visibility</span></a>
+                         <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><span class='material-symbols-outlined' id='ver'>
+                         shopping_cart
+                         </span></a>
+                            </div>
+                              </div>
+                        
                         ";
                     
                 }

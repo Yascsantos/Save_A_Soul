@@ -190,20 +190,24 @@
                 
                       
                     <div class='card'>
-                        <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' style='height:250px;  width:250px;'></a><br>
-                    
-                           ".$exibe['prod']."<br>
-                                  <p> R$".$exibe['preco']."</p><br> 
-                                  <button>   <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'> <p>compre</p></a></button>
-                            
-                                  </div>";
+ 
+                    <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." style='height:250px;  width:250px;'></a><br>
+                        
+                         <b>   ".$exibe['prod']."</b><br> <p> R$".$exibe['preco']."</p><br>
+                         <div class='compra'>
+                         <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'> <span class='material-symbols-outlined' >visibility</span></a>
+                         <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><span class='material-symbols-outlined' id='ver'>
+                         shopping_cart
+                         </span></a>
+                            </div>
+                              </div>";
                 }
               
               //Campo nulo 
                 if ($prod == " " )
                 {
 
-                  header('location:../pet/grade_nova.php');
+                  header('location:./pet/grade_nova.php');
                 }
     
         }
