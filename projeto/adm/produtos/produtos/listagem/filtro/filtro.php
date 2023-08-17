@@ -41,7 +41,7 @@
 
     }
     echo "</select>";
-    echo "<br><button input type='submit' name='filtrar' value='filtrar'>Filtro<button/>";
+    echo "<br><button input type='submit' name='pesq' value='pesq'>Filtro<button/>";
     echo "</form>";
     echo "</div>";
 

@@ -204,7 +204,7 @@
             //se o campo for nulo 
             if ($cat == "0")
             {
-              header('location:../pet/grade_nova.php');
+              header('location:./pet/grade_nova.php');
             }
     
                 //campo NÃO for nulo
@@ -237,7 +237,7 @@
         else
         {
             //se o filtro NÃO for selecionado 
-            header('location:../pet/grade_nova.php');
+            header('location:./pet/grade_nova.php');
     
         }
   
