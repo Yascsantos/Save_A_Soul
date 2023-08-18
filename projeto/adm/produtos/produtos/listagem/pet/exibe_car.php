@@ -153,7 +153,9 @@
       if(empty($id_u))
       {
         echo "
-            Carrinho vazio
+        <div class='vazio'>
+          <h1>Seu carrinho está vazio</h1>
+          <img src='car.png'> </div>
             <a href='grade_nova.php'><b>COMEÇE A COMPRAR</b></a>
         ";
       }
