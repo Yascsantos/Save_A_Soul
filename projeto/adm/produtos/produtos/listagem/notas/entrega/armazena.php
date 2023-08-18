@@ -12,7 +12,8 @@
 
     $sql_code = "SELECT * FROM pedido WHERE id_user = $id_user";
     $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-    
+    $data = date("d-m-y");
+
     foreach($code as $dade)
     {
         $id_pro = $dade['id_pro'];
@@ -32,8 +33,8 @@
             $preco = $dados['preco'];
             $img_pro = $dados['img_pro'];
 
-            $dados = "INSERT INTO armazena (id_user,id_pro,numero, cor, tamanho, qtd, valor) 
-            VALUES ('$id_user','$id_pro','$num','$cor', '$tam', '$qtd', '$valor')";
+            $dados = "INSERT INTO armazena (id_user,id_pro,numero, cor, tamanho, qtd, valor, data) 
+            VALUES ('$id_user','$id_pro','$num','$cor', '$tam', '$qtd', '$valor', '$data' )";
             $dados_save = $conexao->query($dados) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
         }
 
