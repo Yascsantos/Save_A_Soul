@@ -36,6 +36,7 @@
 
     echo "
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
     .sobre-produto{
       margin: center;
        display:flex;
@@ -48,6 +49,9 @@
    .info-prod {
        margin-top: auto;
        padding:30px;
+       text-aling:center;
+       font-family:'Roboto';
+
    }
     </style>
     <div class='sobre-produto'> 
@@ -79,13 +83,10 @@
        
 
         echo"
-            <br>
-            Nome: ".$exibe['prod']."<br>
-            Preço:R$".$exibe['preco']."<br>
-            Modelo: 
-             ".$exibe['modelo']."<br>
-              Outras informações: 
-            ".$exibe['outros']."<br>
+       <p> ".$exibe['outros']."</p>
+       <h2>".$exibe['prod']." / ".$exibe['modelo']."</h2>
+        <h3 align='center' > Preço:R$".$exibe['preco']."</h3>
+            
            
         ";
     }
@@ -97,7 +98,7 @@
     $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
 
-    echo "<label>Tamanhos disponivéis</label><br>";
+    echo "<label>Tamanhos</label><br>";
     foreach ($instrucao as $exibe) 
     {
         echo "  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['tamanho'].">
@@ -124,10 +125,10 @@
 
     echo "
    
-        <label>Quantidade: </label> 
+        <div>Quantidade: 
         <input type='number' placeholder='Quantidade' name='qtd'><br>
         <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php'> Voltar a comprar</a>
-
+</div>
     ";
    
  echo "<br><br><input type='submit' name='salvar' value= 'Adicionar ao carrinho'></input>";
