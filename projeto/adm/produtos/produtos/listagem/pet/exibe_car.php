@@ -131,22 +131,8 @@
       <b> <h2 class='title'>Seu carrinho de Compra</h2></b>
 <div class='max-width'>
 <div class='carrinho-content'>
-   <?php 
-   
-echo "<div class='finalizar'>";
-include_once("proc.php");
-echo "</b>";
-
-echo " <li><a href='grade_nova.php'>CONTINUAR COMPRANDO</a></li><br><br>";
-echo "<a href='../../../../../petshop/obtencao/forma.html' ><button  class='comprar'><b>Finalizar compra</b></button></a>";
-echo "
-</div>";
-
-
-
-?>
-   
-<?php
+<?php 
+  //processamento
     include_once("../../../../../conexaoBD.php");
 
     if(!isset($_SESSION))
@@ -154,58 +140,84 @@ echo "
         session_start();
     }
     $id_user = $_SESSION['id_user']; 
+    //echo "TESTE: ".$id_user."<br>";
 
-    $sql_code = "SELECT * FROM carrinho WHERE id_user = $id_user";
-    $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-    
-  
+    $query= "SELECT * FROM carrinho WHERE id_user = $id_user";     
+    $requery= $conexao->query($query) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
-
-    foreach($code as $dade)
+    foreach($requery as $dados)
     {
-        $id_car = $dade['id_car'];
-        $id_u = $dade['id_user'];
-        $id_pro = $dade['id_pro'];
-        $cor = $dade['cor'];
-        $tam = $dade['tamanho'];
-        $qtd = $dade['qtd'];
-        $valor = $dade['valor'];
-
-        $sql= "SELECT * FROM produto where id_pro = $id_pro";     
-        $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-
-        foreach($instrucao as $dados)
-        {
-            $prod = $dados['prod'];
-            $preco = $dados['preco'];
-            $img_pro = $dados['img_pro'];
-
-            echo "
-            <div class='car'>
-        <img src=".$img_pro." width='100px' height='100px'>
-        <div class='text'>
-              ".$prod."     ".$cor." ".$tam."<br><br>
-              <b>R$".$preco."</b>
-             <b> Qtd: ".$qtd." </b>
-             
-        <button class='valor'>  <b>R$ ".$valor."</b></button>
-             <br><br>
-                <a href='../../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
-                add
-                </span></a>
-                <a href='../../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
-                delete
-                </span></a></div>
-                </div>
-            ";
-        }
-
+        $id_u = $dados['id_user'];
     }
-    
-    //exibição da soma geral do pedido
-   ?>      </div> 
-            </div> 
-          </section>
+
+      if(empty($id_u))
+      {
+        echo "
+            Carrinho vazio
+            <a href='grade_nova.php'><b>COMEÇE A COMPRAR</b></a>
+        ";
+      }
+
+      else 
+      {
+        //finalizar compra
+          echo "<div class='finalizar'>";
+          include_once("proc.php");
+          echo "</b>";
+          echo " <li><a href='grade_nova.php'>CONTINUAR COMPRANDO</a></li><br><br>";
+          echo "<a href='../../../../../petshop/obtencao/forma.html' ><button  class='comprar'><b>Finalizar compra</b></button></a>";
+          echo "
+          </div>";
+
+          $sql_code = "SELECT * FROM carrinho WHERE id_user = $id_user";
+          $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+      
+          foreach($code as $dade)
+          {
+              $id_car = $dade['id_car'];
+              $id_u = $dade['id_user'];
+              $id_pro = $dade['id_pro'];
+              $cor = $dade['cor'];
+              $tam = $dade['tamanho'];
+              $qtd = $dade['qtd'];
+      
+              $sql= "SELECT * FROM produto where id_pro = $id_pro";     
+              $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+      
+              foreach($instrucao as $dados)
+              {
+                  $prod = $dados['prod'];
+                  $preco = $dados['preco'];
+                  $img_pro = $dados['img_pro'];
+          
+                  echo "
+                  <div class='car'>
+                  <img src=".$img_pro." width='100px' height='100px'>
+                  <div class='text'>
+                      ".$prod."     ".$cor." ".$tam."<br><br>
+                      <b>R$".$preco."</b>
+                      <b> Qtd: ".$qtd." </b>
+                   
+                  <button class='valor'>  <b>R$ ".$valor."</b></button>
+                    <br><br>
+                      <a href='../../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
+                      add
+                      </span></a>
+                      <a href='../../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
+                      delete
+                      </span></a></div>
+                      </div>
+                  ";
+              }
+      
+          }
+      }
+
+
+?>      
+        </div> 
+        </div> 
+        </section>
 
 
 </body>

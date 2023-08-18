@@ -24,14 +24,17 @@
         $rua = $_POST['rua'];
         $bairro = $_POST['bairro'];
         $numero = $_POST['numero'];
-	
 
 		$arquivo = $diretorio.$arq; 	
 		
 		if ( $senha == $confirma)
 		{
+            define ("SECRETKEY", "mysecretkey1234");
+            $hash = password_hash($senha, PASSWORD_DEFAULT); //senha codificada 
+            //var_dump($hash);
+
 			$sql = "INSERT INTO $tabela ($campos) 
-			VALUES ('$usuario','$nome','$email','$tel','$senha','$arquivo', '$cep','$pais',
+			VALUES ('$usuario','$nome','$email','$tel','$hash','$arquivo', '$cep','$pais',
 			'$estado','$cidade','$rua','$bairro','$numero')";
 		
 			$instrucao = mysqli_query($conexao,$sql);
@@ -61,11 +64,7 @@
 					</main>";
 		}
 
-
 	}
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

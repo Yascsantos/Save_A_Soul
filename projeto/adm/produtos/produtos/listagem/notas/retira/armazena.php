@@ -12,7 +12,11 @@
 
     $sql_code = "SELECT * FROM pedido WHERE id_user = $id_user";
     $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-    
+    $data = date("d/m/y (H:i:s)");
+
+    echo $data; 
+
+    /*
     foreach($code as $dade)
     {
         $id_pro = $dade['id_pro'];
@@ -39,6 +43,6 @@
 
     }
     include_once("drop.php");
-
+*/
 
 ?>
