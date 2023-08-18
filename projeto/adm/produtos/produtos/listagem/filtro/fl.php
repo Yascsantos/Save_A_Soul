@@ -144,7 +144,7 @@
 <body>
 <header id="menu">
       <nav>
-   <img src="../../../../../index/../imgs/logo.png" >
+   <img src="../../../../../index/imgs/logo.png" >
         <div class="mobile-menu">
               <div class="line1"></div>
               <div class="line2"></div>

@@ -22,13 +22,11 @@
 
     if(isset($_POST['pesq']))
     {
-        if(!isset($_SESSION))
-        {
-            session_start();
-        }
+       
     
         $_SESSION['cat'] = $_POST['categoria']; //id_pro
         $cat = $_SESSION['cat'];
+       
     }
       
     echo "<div class='input-dados'>
