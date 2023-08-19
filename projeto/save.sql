@@ -33,7 +33,7 @@ CREATE TABLE categoria (
 CREATE TABLE produto(
     id_pro INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_cat INT,
-    prod VARCHAR(50),
+    prod VARCHAR(50), /*Nome do produto*/
     preco DECIMAL(10,2),
     qtd INT, 
     modelo VARCHAR(100),
@@ -76,7 +76,8 @@ CREATE table animal (
     raca VARCHAR(50),
     porte VARCHAR(30),
     sexo VARCHAR(20),
-    img_ani VARCHAR(100)
+    img_ani VARCHAR(100), 
+	status VARCHAR(15)
 
 );
 
@@ -94,41 +95,31 @@ CREATE TABLE imgani (
 CREATE TABLE adocao(
     id_ado INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
+	id_ani
     hora TIME,
     data_entr DATE, /*data da entrevista*/
+	status VARCHAR(15),
 
-        FOREIGN KEY (id_user)REFERENCES user (id_user)
+        FOREIGN KEY (id_user)REFERENCES user (id_user),
+		FOREIGN KEY (id_ani)REFERENCES animal (id_ani)	
+
 
 );
-
-CREATE TABLE descricao_ado (
-    id_descad INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user int,
-	texto VARCHAR(2000),
-
-            FOREIGN KEY (id_user)REFERENCES user (id_user)
-);
-
 
 /*lar voluntário*/
 CREATE TABLE voluntario(
     id_vol INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
+	id_ani
     hora TIME,
     data_entr DATE, /*data da entrevista*/
+	status VARCHAR(15),
 
-        FOREIGN KEY (id_user)REFERENCES user (id_user)
-
-);
-
-CREATE TABLE descricao_vol (
-	id_descvol INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user int,
-	texto VARCHAR(2000),
-
-            FOREIGN KEY (id_user)REFERENCES user (id_user)
+        FOREIGN KEY (id_user)REFERENCES user (id_user),
+		FOREIGN KEY (id_ani)REFERENCES animal (id_ani)	
 
 );
+
 
 
 /*petshop*/
