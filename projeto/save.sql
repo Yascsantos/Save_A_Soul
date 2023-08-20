@@ -95,9 +95,9 @@ CREATE TABLE imgani (
 CREATE TABLE adocao(
     id_ado INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
-	id_ani
-    hora TIME,
-    data_entr DATE, /*data da entrevista*/
+	id_ani INT 
+   hora TIME,
+   data_entr DATE /*data da entrevista*/
 	status_ani VARCHAR(15),
 
         FOREIGN KEY (id_user)REFERENCES user (id_user),
@@ -110,9 +110,9 @@ CREATE TABLE adocao(
 CREATE TABLE voluntario(
     id_vol INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
-	id_ani
+	id_ani INT 
     hora TIME,
-    data_entr DATE, /*data da entrevista*/
+    data_entr DATE /*data da entrevista*/,
 	status_ani VARCHAR(15),
 
         FOREIGN KEY (id_user)REFERENCES user (id_user),
