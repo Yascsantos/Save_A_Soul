@@ -39,7 +39,6 @@ CREATE TABLE produto(
     modelo VARCHAR(100),
     outros VARCHAR(100),
     img_pro VARCHAR(100),
-
     	 
 		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)
 		
@@ -77,7 +76,8 @@ CREATE table animal (
     porte VARCHAR(30),
     sexo VARCHAR(20),
     img_ani VARCHAR(100), 
-	status VARCHAR(15)
+	status VARCHAR(15),
+	modalidade VARCHAR(20)
 
 );
 
@@ -147,7 +147,6 @@ CREATE TABLE pedido (
 	qtd INT,
 	valor DECIMAL(10,2),
  
-	
 		FOREIGN KEY (id_pro)REFERENCES produto (id_pro),
 		FOREIGN KEY (id_user)REFERENCES user (id_user)
 	
@@ -162,7 +161,6 @@ CREATE TABLE armazena (
 	tamanho VARCHAR(30), 
 	qtd INT,
 	valor DECIMAL(10,2),
- 
 	
 		FOREIGN KEY (id_pro)REFERENCES produto (id_pro),
 		FOREIGN KEY (id_user)REFERENCES user (id_user)
