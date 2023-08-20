@@ -36,9 +36,7 @@
     <p>Usuário(a): <b><?php echo $nome;?></b></p>
 
     <h3><a href="../produtos/produtos/listagem/usuario/nota.php">Pedidos já feitos</a></h3>
-
-    <h3><a href="page.html">Notas das entrevistas</a></h3>
-
+    <!--Mudar status-->
     <a href="listagem.php">Voltar</a>
 
 
