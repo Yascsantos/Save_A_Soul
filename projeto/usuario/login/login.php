@@ -15,7 +15,7 @@
     <div>
     <label>
                 Ainda não possui cadastro?<br>
-                <a href='../cadastro/cadastro.php'>CADASTRE-SE</a>
+                <a href='../cadastro/cadastro.html'>CADASTRE-SE</a>
             </label>
     </div>
     <br>
@@ -56,7 +56,7 @@
             $usuario= $conexao->real_escape_string($_POST['usuario']);
             $senha= $conexao->real_escape_string($_POST['senha']);
 
-            $sql_code= "SELECT * FROM user WHERE usuario= '$usuario' AND senha='$senha'";
+            $sql_code= "SELECT * FROM user WHERE usuario= '$usuario' AND confirma='$senha'";
             $sql_query= $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
             $quantidade= $sql_query->num_rows;

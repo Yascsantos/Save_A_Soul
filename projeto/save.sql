@@ -11,6 +11,7 @@ CREATE table user (
     email VARCHAR(40),
     telefone VARCHAR(20),
     senha VARCHAR(20),
+    confirma VARCHAR(20),
     foto VARCHAR(100),
     cep VARCHAR(8),
     pais VARCHAR(20),
@@ -166,3 +167,9 @@ CREATE TABLE armazena (
 		FOREIGN KEY (id_user)REFERENCES user (id_user)
 	
 );
+
+
+
+
+
+

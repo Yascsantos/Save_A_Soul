@@ -102,13 +102,6 @@ INSERT INTO `tamanhos` (`id_tam`, `id_pro`, `tamanho`) VALUES
 	(8, 3, 'G');
 /*!40000 ALTER TABLE `tamanhos` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.user: ~0 rows (aproximadamente)
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` (`id_user`, `usuario`, `nome`, `email`, `telefone`, `senha`, `foto`, `cep`, `pais`, `estado`, `cidade`, `bairro`, `rua`, `numero`) VALUES
-	(1, 'Clary', 'Clarissa Fairy', 'Frairy@gmail.com', '(11)96972-8755', 'jace', '../img/padrao.png', '49060730', 'Brasil', 'SE', 'Aracaju', 'Santo AntÃ´nio', 'Travessa Santo AntÃ´nio', '18'),
-	(2, 'Maya', 'Maya Santos', 'MayaST@gmail.com', '(11)96972-8455', '456', '../img/padrao.png', '60521080', 'Brasil', 'CE', 'Fortaleza', 'Henrique Jorge', 'Travessa VeranÃ³poles', '300'),
-	(3, 'Izzy', 'Izabelle Lightwood', 'Lightwood@yahoo.com.br', '(11)96972-8400', 'Lightwood', '../img/padrao.png', '12501020', 'Brasil', 'SP', 'GuaratinguetÃ¡', 'Centro', 'Dom Pedro II', '20');
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.voluntario: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `voluntario` DISABLE KEYS */;
