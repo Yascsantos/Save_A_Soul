@@ -98,7 +98,7 @@ CREATE TABLE adocao(
 	id_ani
     hora TIME,
     data_entr DATE, /*data da entrevista*/
-	status VARCHAR(15),
+	status_ani VARCHAR(15),
 
         FOREIGN KEY (id_user)REFERENCES user (id_user),
 		FOREIGN KEY (id_ani)REFERENCES animal (id_ani)	
@@ -113,7 +113,7 @@ CREATE TABLE voluntario(
 	id_ani
     hora TIME,
     data_entr DATE, /*data da entrevista*/
-	status VARCHAR(15),
+	status_ani VARCHAR(15),
 
         FOREIGN KEY (id_user)REFERENCES user (id_user),
 		FOREIGN KEY (id_ani)REFERENCES animal (id_ani)	
