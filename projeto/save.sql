@@ -95,12 +95,12 @@ CREATE TABLE imgani (
 CREATE TABLE adocao(
     id_ado INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
-	id_ani INT 
-   hora TIME,
-   data_entr DATE /*data da entrevista*/
-	status_ani VARCHAR(15),
+	 id_ani INT, 
+    data_entre DATE,
+    horario TIME,
+	 status_ani VARCHAR(15),
 
-        FOREIGN KEY (id_user)REFERENCES user (id_user),
+      FOREIGN KEY (id_user)REFERENCES user (id_user),
 		FOREIGN KEY (id_ani)REFERENCES animal (id_ani)	
 
 
@@ -110,12 +110,12 @@ CREATE TABLE adocao(
 CREATE TABLE voluntario(
     id_vol INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     id_user INT,
-	id_ani INT 
-    hora TIME,
-    data_entr DATE /*data da entrevista*/,
-	status_ani VARCHAR(15),
+	 id_ani INT,
+    data_entre DATE,
+    horario TIME,
+	 status_ani VARCHAR(15),
 
-        FOREIGN KEY (id_user)REFERENCES user (id_user),
+      FOREIGN KEY (id_user)REFERENCES user (id_user),
 		FOREIGN KEY (id_ani)REFERENCES animal (id_ani)	
 
 );
@@ -166,9 +166,3 @@ CREATE TABLE armazena (
 		FOREIGN KEY (id_user)REFERENCES user (id_user)
 	
 );
-
-
-
-
-
-

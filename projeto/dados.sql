@@ -63,14 +63,6 @@ INSERT INTO `cores` (`id_cor`, `id_pro`, `cor`) VALUES
 	(5, 2, 'Marrom e cinza');
 /*!40000 ALTER TABLE `cores` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.descricao_ado: ~0 rows (aproximadamente)
-/*!40000 ALTER TABLE `descricao_ado` DISABLE KEYS */;
-/*!40000 ALTER TABLE `descricao_ado` ENABLE KEYS */;
-
--- Copiando dados para a tabela save.descricao_vol: ~0 rows (aproximadamente)
-/*!40000 ALTER TABLE `descricao_vol` DISABLE KEYS */;
-/*!40000 ALTER TABLE `descricao_vol` ENABLE KEYS */;
-
 -- Copiando dados para a tabela save.imgani: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `imgani` DISABLE KEYS */;
 /*!40000 ALTER TABLE `imgani` ENABLE KEYS */;
