@@ -16,20 +16,10 @@
         $tel = $_POST['telefone'];
         $senha = $_POST['senha'];
 		$confirma = $_POST['confirma'];
-        
-        /*$cep = $_POST['cep'];
-        $pais = $_POST['pais'];
-        $estado = $_POST['estado'];
-		$cidade = $_POST['cidade'];
-        $rua = $_POST['rua'];
-        $bairro = $_POST['bairro'];
-        $numero = $_POST['numero'];*/
-
 		$arquivo = $diretorio.$arq; 	
 		
 		if ( $senha == $confirma)
 		{
-
             $senha_1 = strlen($senha);
             if ($senha_1 < 8)
             {

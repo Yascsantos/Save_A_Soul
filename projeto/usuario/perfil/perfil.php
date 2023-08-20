@@ -160,7 +160,7 @@ edit
 		<br>
 
        <!--Senha-->
-       <a href='./updates/senha.php'>Senha</a></p></b>
+       <a href='./senha/senha.html'>Senha</a></p></b>
        <br>
       </div>
       <a onclick="abrirEnd()" class="btn">Exibir endereço</a>
