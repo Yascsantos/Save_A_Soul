@@ -161,6 +161,7 @@ CREATE TABLE armazena (
 	tamanho VARCHAR(30), 
 	qtd INT,
 	valor DECIMAL(10,2),
+	data date, 
 	
 		FOREIGN KEY (id_pro)REFERENCES produto (id_pro),
 		FOREIGN KEY (id_user)REFERENCES user (id_user)
