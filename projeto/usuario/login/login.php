@@ -44,79 +44,44 @@
 
     if (isset($_POST['Logar'])) 
 	{
-        if(!isset($_SESSION))
-        {
-            session_start();
-        }
-        $id = $_SESSION['id_cad'];
-        echo $id;
+        $password = $_POST['senha'];
+        $usuario = $_POST['usuario'];
 
-        $sql= "SELECT senha FROM user WHERE id_user = $id";
+        $sql= "SELECT * FROM user WHERE usuario = '$usuario'";
         $query= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
         foreach($query as $dados)
         {
-            $password = $dados['senha'];
-            echo $password;
+            $hash = $dados['senha'];
+            $user = $dados['id_user'];
         }
 
-        if(isset($_POST['usuario']) || isset($_POST['senha']))
-        {
-            
-            if(strlen($_POST['usuario']) == 0 && strlen($_POST['senha']) == 0  )
-            {
-                echo "<main class='erro'><h3>Preencha seus dados</h3>
-                <img src='./imgs/atenção.png'></main>";
-            }
       
-        }
-
-
-   
-    /*
-       
-
-    else 
-    {
-        if(password_verify($password, $hash))
+        if(strlen($usuario) == 0 && strlen($password) == 0  )
         {
-            $teste = "Senha correta";
-        } else {
-            $teste = "Senha incorreta";
+            echo "<main class='erro'><h3>Preencha seus dados</h3>
+                <img src='./imgs/atenção.png'></main>";
         }
-        echo $teste;
-        
 
-            /*$usuario= $conexao->real_escape_string($_POST['usuario']);
-            $senha= $conexao->real_escape_string($_POST['senha']);*/
-/*
-            $sql_code= "SELECT * FROM user WHERE usuario= '$usuario' AND confirma='$senha'";
-            $sql_query= $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-
-            $quantidade= $sql_query->num_rows;
-
-            if($quantidade == 1)
+        else 
+        {
+            if(password_verify($password, $hash))
             {
-                $usuario = $sql_query->fetch_assoc();
-                
-
-                $_SESSION['id_user'] = $usuario['id_user'];
-
-
-                header("Location: ../../index/index.php");
+                header ('Location:../../index/index.php');
+                if(!isset($_SESSION))
+                {
+                    session_start();
+                }
+                $_SESSION['id_user'] = $user;
+            } 
+            else 
+            {
+                $teste = "Senha incorreta";
+                echo $teste;
 
             }
-            else
-            {
-                echo "<main class='erro'><h3>Falha ao Logar!
-                      <br> 
-                      Usuário ou senha incorretos</h3>
-                      <img src='./imgs/atenção.png'>
-                      </main>";
-            }
-    }
-}*/
-    
+        }
+    } 
 
 
 ?>
