@@ -16,10 +16,8 @@
 	{
 		if(isset($_FILES['pic']))
 		{
-			$titulo = $_POST['titulo'];
-			
 			$extensao = strtolower(substr($_FILES['pic']["name"],-4)); // extensão
-			$novo_nome = $titulo.$extensao; //novo nome
+			$novo_nome = date("Y.m.d-H.i.s").$extensao; //novo nome
 			$diretorio = "./img/"; //diretório
 			$arquivo = $diretorio.$novo_nome;
 			
