@@ -108,8 +108,8 @@ INSERT INTO `tamanhos` (`id_tam`, `id_pro`, `tamanho`) VALUES
 
 -- Copiando dados para a tabela save.user: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` (`id_user`, `usuario`, `nome`, `email`, `telefone`, `senha`, `confirma`, `foto`, `cep`, `pais`, `estado`, `cidade`, `bairro`, `rua`, `numero`) VALUES
-	(1, 'Yas', 'Yasmin Santos', 'yasmin2@gmail.com', '(11)96972-8466', '$2y$10$uf5W..PEtc7Jr91STHU2ou77e6G4ontShNBnAiqTdnnf620r6.RZK', 'yasminco', '../img/padrao.png', '06528086', 'Brasil', 'SP', 'Santana de ParnaÃ­ba', 'Varzea de souza ', 'Rua do Astronauta', '280');
+INSERT INTO `user` (`id_user`, `usuario`, `nome`, `email`, `telefone`, `senha`, `foto`, `cep`, `pais`, `estado`, `cidade`, `bairro`, `rua`, `numero`) VALUES
+	(1, 'Yas', 'Yasmin Santos', 'yasmin2@gmail.com', '(11)96972-8466', '$2y$10$uf5W..PEtc7Jr91STHU2ou77e6G4ontShNBnAiqTdnnf620r6.RZK', '../img/padrao.png', '06528086', 'Brasil', 'SP', 'Santana de ParnaÃ­ba', 'Varzea de souza ', 'Rua do Astronauta', '280');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.voluntario: ~0 rows (aproximadamente)

@@ -2,7 +2,7 @@
 <?php
 	include_once("../../conexaoBD.php");
 	$tabela="user";
-	$campos = "usuario, nome, email, telefone, senha, confirma, foto";
+	$campos = "usuario, nome, email, telefone, senha, foto";
 
 	$diretorio = "../img/";
 	$arq= "padrao.png"; 
@@ -32,7 +32,7 @@
                 $hash = password_hash($senha, PASSWORD_DEFAULT); //senha codificada 
     
                 $sql = "INSERT INTO $tabela ($campos) 
-                VALUES ('$usuario','$nome','$email','$tel','$hash', '$confirma','$arquivo')";
+                VALUES ('$usuario','$nome','$email','$tel','$hash','$arquivo')";
             
                 $instrucao = mysqli_query($conexao,$sql);
             

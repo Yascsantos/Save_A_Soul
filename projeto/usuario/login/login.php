@@ -41,21 +41,55 @@
 </body>
 
 <?php
-    if(isset($_POST['usuario']) || isset($_POST['senha']))
-    {
-        
-        if(strlen($_POST['usuario']) == 0 && strlen($_POST['senha']) == 0  )
+
+    if (isset($_POST['Logar'])) 
+	{
+        if(!isset($_SESSION))
         {
-            echo "<main class='erro'><h3>Preencha seus dados</h3>
-            <img src='./imgs/atenção.png'></main>";
+            session_start();
         }
+        $id = $_SESSION['id_cad'];
+        echo $id;
+
+        $sql= "SELECT senha FROM user WHERE id_user = $id";
+        $query= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+
+        foreach($query as $dados)
+        {
+            $password = $dados['senha'];
+            echo $password;
+        }
+
+        if(isset($_POST['usuario']) || isset($_POST['senha']))
+        {
+            
+            if(strlen($_POST['usuario']) == 0 && strlen($_POST['senha']) == 0  )
+            {
+                echo "<main class='erro'><h3>Preencha seus dados</h3>
+                <img src='./imgs/atenção.png'></main>";
+            }
+      
+        }
+
+
+   
+    /*
        
 
     else 
     {
-            $usuario= $conexao->real_escape_string($_POST['usuario']);
-            $senha= $conexao->real_escape_string($_POST['senha']);
+        if(password_verify($password, $hash))
+        {
+            $teste = "Senha correta";
+        } else {
+            $teste = "Senha incorreta";
+        }
+        echo $teste;
+        
 
+            /*$usuario= $conexao->real_escape_string($_POST['usuario']);
+            $senha= $conexao->real_escape_string($_POST['senha']);*/
+/*
             $sql_code= "SELECT * FROM user WHERE usuario= '$usuario' AND confirma='$senha'";
             $sql_query= $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
@@ -65,10 +99,6 @@
             {
                 $usuario = $sql_query->fetch_assoc();
                 
-                if(!isset($_SESSION))
-                {
-                    session_start();
-                }
 
                 $_SESSION['id_user'] = $usuario['id_user'];
 
@@ -85,7 +115,7 @@
                       </main>";
             }
     }
-}
+}*/
     
 
 
