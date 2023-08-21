@@ -43,7 +43,6 @@
     </style>
     <body class='fundo'>
     <div id='endereco'>
-        
             <b><p>CEP: <?php foreach ($instrucao as $exibe){ echo $exibe['cep'];}?><br>
 
             País: <?php foreach ($instrucao as $exibe){ echo $exibe['pais'];}?><br>

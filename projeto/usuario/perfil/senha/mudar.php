@@ -6,18 +6,17 @@
     <title>Editar senha</title>
 </head>
 <body>
-    <h2>Sua senha</h2>
-    <p>Abaixo está a sua senha para ser editada.</p>
+    <h2>Editar senha</h2>
     <a href="../perfil.php">Voltar ao perfil</a><br><br>
 
 
     <form action="mudar.php" method="POST">
     
     <h2>Preencha seus dados</h2><br>
-    <label for="senha">Senha</label>
-    <input type="password" name="senha" placeholder="Digite sua senha" required><br><br>
+    <label for="senha">Nova senha:</label>
+    <input type="password" name="senha" placeholder="Digite sua senha" required><br>
 
-    <label for="confirma">Confirmar Senha</label>
+    <label for="confirma">Confirmar nova senha:</label>
     <input type="password" name="confirma" placeholder="Confirme a senha" required><br><br>
 
     <button input type="submit" name="editar" value="editar"> Editar</button>
@@ -33,7 +32,6 @@
         session_start();
     }
     $id= $_SESSION['id_user'];
-
 
 	if (isset($_POST['editar'])) 
 	{
@@ -57,8 +55,7 @@
             
             
                 $sql = "UPDATE user SET  
-                senha = '$hash', 
-                confirma = '$confirma' 
+                senha = '$hash'
                 WHERE id_user = '$id'";
                     
                 $instrucao = mysqli_query($conexao,$sql);
