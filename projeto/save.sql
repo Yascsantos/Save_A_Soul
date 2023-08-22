@@ -10,7 +10,7 @@ CREATE table user (
     nome VARCHAR(50),
     email VARCHAR(40),
     telefone VARCHAR(20),
-    senha VARCHAR(20),
+    senha VARCHAR(100),
     foto VARCHAR(100),
     cep VARCHAR(8),
     pais VARCHAR(20),

@@ -37,52 +37,46 @@
 </head>
 <body>
 <main>
-<section class="editar">
-                      <h2>Editar perfil</h2>
-                    <div class="carousel owl-carousel ">
-                        <div class="card">
-                            <div class="box">
-                                <form action="update.php" method="POST">
-                                    <h2>Editar </h2>
-                                    <a href="../perfil.php">Voltar ao perfil</a><br><br>
-                          
-                                      <div class="input-dados">
-                          
-                                          <label for="nome"> Nome de usuário</label>
-                                          <input type="text" name="usuario" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['usuario'];}?>" >
-                                          <br> <br>
-                          
-                                          <label for="nome"> Nome Completo</label>
-                                          <input type="text" name="nome" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['nome'];}?>" >
-                                          <br> <br>
-                          
-                                          <label for="email">E-mail</label>
-                                          <input type="email" name="email" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['email'];}?>" >
-                                          <br> <br>
-                          
-                              
-                                          <div class="input-senha">
-                                          <label for="telefone">Telefone</label>
-                                          <input type="tel" name="telefone" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['telefone'];}?>" >
-                                          <br> <br> </div>
-                                      </div>
-                                      <br><br>
-                                      <button input type="submit" name="alterar" value="Alterar"> Alterar</button>
-                                  
-                                  </div>
-                                     
-                              </form>
-                            </div>
-                        </div>
-                        <div class="card">
-                          <div class="box">
+      <h1>Editar perfil</h1><br>
+      </main>
+<main>
 
-    <form action="alter.php" method="POST">
-          <h2>Editar endereço</h2>
+  <div class="caixa">
+      <div class="img-caixa">
+          <img src="imgs/dog.jpg">
+      </div>
+
+    <div class="caixa-dados">
+    <form action="update.php" method="POST">
+               
+    
+    
+          <h2>Editar </h2>
           <a href="../perfil.php">Voltar ao perfil</a><br><br>
 
             <div class="input-dados">
 
+                <label for="nome"> Nome de usuário</label>
+                <input type="text" name="usuario" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['usuario'];}?>" >
+                <br> <br>
+
+                <label for="nome"> Nome Completo</label>
+                <input type="text" name="nome" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['nome'];}?>" >
+                <br> <br>
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['email'];}?>" >
+                <br> <br>
+
+    
+                <div class="input-senha">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['telefone'];}?>" >
+                <br> <br> </div>
+            </div>
+            <br><br>
+            
+            <!--      
             <div class="input-dados">
             <div class="input-senha">
                 <label for="cep"> CEP:</label>
@@ -142,7 +136,7 @@
                 <label for="numero">Número:</label>
                 <input type="number" name="numero" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['numero'];}?>" >
                 <br> <br></div>
-
+        -->
         <button input type="submit" name="alterar" value="Alterar"> Alterar</button>
         
     </div>
