@@ -75,68 +75,6 @@
                 <br> <br> </div>
             </div>
             <br><br>
-            
-            <!--      
-            <div class="input-dados">
-            <div class="input-senha">
-                <label for="cep"> CEP:</label>
-                <input type="text" name="cep" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['cep'];}?>" >
-                <br> <br></div>
-                <div >
-                <label for="estado">Estado:</label>
-                <select name="estado">
-                <option value=" " required> <?php foreach ($pesquisa as $exibe){ echo $exibe['estado'];}?></option>
-                    <option value="AC"> AC-Acre</option>
-                    <option value="AL">AL-Alagoas</option>
-                    <option value="AP">AP-Amapá</option>
-                    <option value="AM">AM-Amazonas</option>
-                    <option value="BA">BA-Bahia</option>
-                    <option value="CE">CE-Ceará</option>
-                    <option value="DF">DF-Destrito Federal</option>
-                    <option value="ES">ES-Espiríto Santo</option>
-                    <option value="GO">GO-Goiás</option>
-                    <option value="MA">MA-Maranhão</option>
-                    <option value="MT">MT-Mato Grosso</option>
-                    <option value="MS">MS-Mato Grosso do Sul</option>
-                    <option value="MG">MG-Minas Gerais</option>
-                    <option value="PA">PA-Pará</option>
-                    <option value="PB">PB-Paraíba</option>
-                    <option value="PE">PE-Pernambuco</option>
-                    <option value="PI">PI-Piauí</option>
-                    <option value="RJ">RJ-Rio de Janeiro</option>
-                    <option value="RN">RN-Rio Grande do Norte</option>
-                    <option value="RS">RS-Rio Grande do Sul</option>
-                    <option value="RO">RO-Rondônia</option>
-                    <option value="RR">RR-Roraima</option>
-                    <option value="SC">SC-Santa Catarina </option>
-                    <option value="SP">SP-São Paulo </option>
-                    <option value="SE">SE-Sergipe</option>
-                    <option value="TO">TO-Tocantins</option>
-        </select>
-                <br> <br>
-                </div>
-                <div class="input-senha">
-                <label for="pais">País:</label>
-                <input type="text" name="pais" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['pais'];}?>" >
-                </div> 
-                <div class="input-senha">
-                <label for="cidade">Cidade:</label>
-                <input type="text" name="cidade" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['cidade'];}?>" >
-                <br> <br></div>
-    
-    
-                <label for="bairro">Bairro</label>
-                <input type="text" name="bairro" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['bairro'];}?>" >
-                <br> <br>
-                <div class="input-senha">
-                <label for="rua">Rua:</label>
-                <input type="text" name="rua" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['rua'];}?>" >
-                </div>
-                 <div class="input-senha">
-                <label for="numero">Número:</label>
-                <input type="number" name="numero" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['numero'];}?>" >
-                <br> <br></div>
-        -->
         <button input type="submit" name="alterar" value="Alterar"> Alterar</button>
         
     </div>

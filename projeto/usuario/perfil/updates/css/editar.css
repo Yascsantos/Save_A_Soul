@@ -107,7 +107,7 @@ form .input-dados input{
 form .input-dados input:focus{
     border-color: #adb5a0;
 }
- .submit {
+ .submit{
     width: 50%;
     float: right;
     padding-right: 15px;
