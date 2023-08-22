@@ -33,6 +33,8 @@
         $tam = $dade['tamanho'];
         $qtd = $dade['qtd'];
         $valor = $dade['valor'];
+        $data = $dade['data'];
+
 
         $sql= "SELECT * FROM produto where id_pro = $id_pro";     
         $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
@@ -74,6 +76,11 @@
                     <td align='center'>
                         R$".$valor."
                     </td>
+
+                    <td align='center'>
+                        ".$data."
+                    </td>
+
 
 
             </tr>
