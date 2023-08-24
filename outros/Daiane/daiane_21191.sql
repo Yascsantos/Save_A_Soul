@@ -1,0 +1,11 @@
+CREATE database IF NOT EXISTS `etec`;
+CREATE TABLE `usuario` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(32) NULL DEFAULT NULL,
+  `senha` VARCHAR(32) NULL DEFAULT NULL,
+  `telefone` VARCHAR(32) NULL DEFAULT NULL,
+  `imagem` VARCHAR(50) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`));
+eNGINE = InnoDB
+AUTO_INCREMENT = 4
+INSERT INTO usuario (nome,senha) VALUES ("daiane", MD5("1234"));
