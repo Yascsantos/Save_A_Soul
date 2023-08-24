@@ -41,37 +41,9 @@
    
     
     </style>
-      <section class="produto" id="produto">
-
-<div class="max-width">
-              <h2 class="title">Produtos</h2>
-            <div class="carousel owl-carousel ">
-                <div class="card">
-                    <div class="box">
-                    <b><p>CEP: <?php foreach ($instrucao as $exibe){ echo $exibe['cep'];}?><br>
-
-País: <?php foreach ($instrucao as $exibe){ echo $exibe['pais'];}?><br>
-
-Estado: <?php foreach ($instrucao as $exibe){ echo $exibe['estado'];}?><br>
-
-Cidade: <?php foreach ($instrucao as $exibe){ echo $exibe['cidade'];}?><br>
-
-Bairro: <?php foreach ($instrucao as $exibe){ echo $exibe['bairro'];}?><br>
-
-Rua: <?php foreach ($instrucao as $exibe){ echo $exibe['rua'];}?><br>
-
-Número: <?php foreach ($instrucao as $exibe){ echo $exibe['numero'];}?></p>
-                        
-                    </div>
-                </div>
-              
-           
-          
-  </div>
-
-</section>
     <body class='fundo'>
     <div id='endereco'>
+        
             <b><p>CEP: <?php foreach ($instrucao as $exibe){ echo $exibe['cep'];}?><br>
 
             País: <?php foreach ($instrucao as $exibe){ echo $exibe['pais'];}?><br>
