@@ -92,7 +92,7 @@ form .input-dados input{
     color: #616161;
     transition: all 0.4s ease;
 }
- select{
+  form select{
     width: 50%;
     height: 50px;
     background-color: rgba(255, 255, 255, 0.32);

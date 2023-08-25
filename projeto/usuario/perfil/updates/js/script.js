@@ -9,11 +9,11 @@ $(document).ready(function(){
         autoplayHoverPauser:true,
         responsive:{
             0:{
-                items:3,
+                items:0,
                 nav:false
             },
             800:{
-                items:2,
+                items:1,
                 nav:false
             },
         
