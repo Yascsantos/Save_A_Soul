@@ -160,7 +160,7 @@ edit
 		<br>
 
        <!--Senha-->
-       <a href='./senha/mudar.php'>Editar senha</a></p></b>
+       <a class='Senha'onclick="Senha()">Editar senha</a></b>    
        <br>
       </div>
       <a onclick="abrirEnd()" class="btn">Exibir endereço</a>
@@ -183,7 +183,7 @@ edit
 
 <a href='./drop/del.php' class="submit"><button type='button'>Deletar perfil</button></a>
 
-           
+
     
   
 <a class='sair'onclick="showPopup()"><span class="material-symbols-outlined">
@@ -191,7 +191,35 @@ login
 </span></a>
        </form>
    
+       <div id="Senha" class="popup" style="display: none;">
+       <form action="./senha/mudar.php" method="POST">
+    
+    <h2>Preencha seus dados</h2><br>
+    <label for="senha">Nova senha:</label>
+    <input type="password" name="senha" placeholder="Digite sua senha" required><br>
 
+    <label for="confirma">Confirmar nova senha:</label>
+    <input type="password" name="confirma" placeholder="Confirme a senha" required><br><br>
+
+    <button input type="submit" name="editar" value="editar"> Editar</button>
+
+    </form>
+  </div>
+
+  <script>
+    function Senha() {
+      document.getElementById('Senha').style.display = 'block';
+    }
+
+    function hidePopup() {
+      document.getElementById('Senha').style.display = 'none';
+    }
+
+    function Sair() {
+    
+      window.location.href = 'logout.php';
+    }
+  </script>
   
 
   <div id="sairPopup" class="popup" style="display: none;">
