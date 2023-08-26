@@ -152,7 +152,7 @@
                 
                 
      
-    <section class="comeco" id="comeco">
+    <section class="comeco">
         <div class="max-width">
             <h1 class="title">Como começou</h1>
             <div class="comeco-content">
@@ -164,9 +164,6 @@
                  assim como nenhum animal merece. Infelizmente, não conseguimos salvá-la, mas seus últimos dias foram preenchidos de amor e carinho.<br>
                  Porém sua vida não foi em vão, pois sua história serviu como estopim para a criação da Save a soul.
                 </div></b>
-                <div class="column right">
-              
-        <img src="imgs/luna.jpg" alt="">
                 </div>
             </div>
         </div>
