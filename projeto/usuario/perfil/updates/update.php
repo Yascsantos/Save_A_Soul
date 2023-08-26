@@ -32,6 +32,7 @@
             $name = $dados ['nome'];
             $mail = $dados['email'];
             $phone = $dados['telefone'];
+          
 
         }
 
@@ -42,12 +43,15 @@
                 $nome = $_POST['nome'];
                 $email = $_POST['email'];
                 $tel = $_POST['telefone'];
+              
 
             //verificação de campos nulos
                 if(empty($usuario)) {$usuario = $user;}
                 if(empty($nome)) {$nome = $name;}
                 if(empty($email)) { $email = $mail;}
                 if(empty($telefone)){$tel = $phone;}
+                if(empty($cep)) { $cep = $num;}
+               
             
             //Script para atualizar um registro na tabela no Banco de Dados
                 $sql = "UPDATE $tabela SET 
@@ -56,7 +60,8 @@
                 email = '$email', 
                 telefone = '$tel'
                 WHERE $id = '$id_user'";
-                
+              
+    
             // executando instrução SQL para anterar os dados 
                 $instrucao = mysqli_query($conexao,$sql);
 
@@ -64,7 +69,7 @@
                 if ($instrucao) 
                 {
                     mysqli_close($conexao);
-                    header ('Location:../perfil.php');
+                    header ('Location:pessoal.php');
                     exit;
 
                 } 

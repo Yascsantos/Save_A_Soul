@@ -31,65 +31,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/editar.css">
-    <title>Editar perfil</title>
+    <title>Editar perfil/Save a Soul</title>
   
 </head>
-<section class="produto" id="produto">
+<body>
+    <br><br>
 
-<div class="max-width">
-            <div class="carousel owl-carousel ">
-                <div class="card">
-                    <div class="box">
-     
-      </main>
-<main>
+<div class="carousel owl-carousel ">
+             
+               </main>
+                     <main>
 
   <div class="caixa">
       <div class="img-caixa">
           <img src="imgs/dog.jpg">
       </div>
-
-    <div class="caixa-dados">
-    <form action="update.php" method="POST">
-          <h2>Editar </h2>
+     <div class="caixa-dados">
+       <form action="update.php" method="POST">
+          <h2>Editar dados pessoais</h2>
           <a href="../perfil.php">Voltar ao perfil</a><br><br>
 
             <div class="input-dados">
 
                 <label for="nome"> Nome de usuário</label>
                 <input type="text" name="usuario" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['usuario'];}?>" >
-                <br> <br>
+                <br>
 
                 <label for="nome"> Nome Completo</label>
                 <input type="text" name="nome" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['nome'];}?>" >
-                <br> <br>
+                <br> 
 
                 <label for="email">E-mail</label>
                 <input type="email" name="email" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['email'];}?>" >
-                <br> <br>
+                <br>
 
     
                 <div class="input-senha">
                 <label for="telefone">Telefone</label>
                 <input type="tel" name="telefone" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['telefone'];}?>" >
-                <br> <br> </div>
-        
+                <br></div>
+                <button input type="submit" name="alterar" value="Alterar">Avançar</button>
         </div>
-                <div class="card">
-                  <div class="box">  
-                  <div class="caixa">
-                  <div class="img-caixa">
-          <img src="imgs/dog.jpg">
-      </div>
+     </form>
+
+
+    </div>
+    </main>
+                     <main>
+    <div class="caixa">
+                  <div class="img-caixa"><img src="imgs/dog.jpg"></div>
 
     <div class="caixa-dados">
+	<form action="alter.php" method="POST">
+          <h2>Editar endereço</h2>
+          <a href="../perfil.php">Voltar ao perfil</a><br><br>
             <div class="input-dados">
-            <div class="input-senha">
+                 <div class="input-senha">
+            <label for="pais">País:</label>
+                <input type="text" name="pais" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['pais'];}?>" >
                 <label for="cep"> CEP:</label>
                 <input type="text" name="cep" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['cep'];}?>" >
-                <br> <br></div>
-                <div >
+                <br> <br>
+            </div>
+                <div class="input-senha">
                 <label for="estado">Estado:</label>
                 <select name="estado">
                 <option value=" " required> <?php foreach ($pesquisa as $exibe){ echo $exibe['estado'];}?></option>
@@ -119,22 +125,16 @@
                     <option value="SP">SP-São Paulo </option>
                     <option value="SE">SE-Sergipe</option>
                     <option value="TO">TO-Tocantins</option>
-        </select>
-                <br> <br>
-                </div>
-                <div class="input-senha">
-                <label for="pais">País:</label>
-                <input type="text" name="pais" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['pais'];}?>" >
-                </div> 
-                <div class="input-senha">
+             </select>
+            
                 <label for="cidade">Cidade:</label>
                 <input type="text" name="cidade" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['cidade'];}?>" >
-                <br> <br></div>
-    
-    
-                <label for="bairro">Bairro</label>
+                <br> 
+            </div>
+            <div class="input-bairro">
+                <label for="bairro">Bairro:</label>
                 <input type="text" name="bairro" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['bairro'];}?>" >
-                <br> <br>
+                <br> </div>
                 <div class="input-senha">
                 <label for="rua">Rua:</label>
                 <input type="text" name="rua" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['rua'];}?>" >
@@ -142,16 +142,16 @@
                  <div class="input-senha">
                 <label for="numero">Número:</label>
                 <input type="number" name="numero" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['numero'];}?>" >
-                <br> <br></div>
+                <br></div>
     
-        <button input type="submit" name="alterar" value="Alterar"> Alterar</button>
-        
-    </div>
+              <button input type="submit" name="alterar" value="Alterar"> Alterar</button>
+        </div>
     </form>
-    </div>
-    </div>
+	</div>
+</div>
 
-</section>
+
+
 </body>
 </html>
 <script src="js/mobile-navbar.js"></script>
@@ -162,4 +162,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    

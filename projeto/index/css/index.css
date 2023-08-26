@@ -16,17 +16,15 @@
     scroll-behavior: smooth;
 }
 body{
-  background-image: url(../imgs/fundo-s.jpg);
-  background-size: 110%;
-  background-position:right -5;
+  background-color: #adb5a0;
 }
   /*  todos os codigos similares  */
   section{
     padding: 100px 0;
   }
   section .title{
-    color: #fff;
-    font-family: 'poppins';
+    color: #4c5838;
+    font-family: 'Lazy Dog';
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -57,7 +55,14 @@ body{
     transform: translateX(-50%);
   }
 
-
+.inicio{
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100% 100% ;
+  background-image: url(../imgs/fundo-s.jpg);
+  background-position: cover;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -135,7 +140,7 @@ margin-top:auto;
 
 
 .sobre .sobre-content{
-  
+ 
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -183,12 +188,6 @@ margin-top:auto;
 }
 
 
-.vitima .vitima-content iframe{
-  height: 500px;
-  width: 100%;
-  border: none;
-  align-items: center;
-}
 
 
 
@@ -299,7 +298,7 @@ margin: 10px 0 7px 0;
 
 /*  sessão footer  */
 footer{
-background: #161616;
+background: #4c5838;
 padding: 50px 50px;
 color: #fff;
 

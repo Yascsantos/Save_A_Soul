@@ -15,7 +15,6 @@ main{
     color:white ;
 }
 body{
-    background-size:100% 100%;
     background-image:url(../imgs/fundo1.jpg);
     background-repeat: no-repeat;
     background-position: cover;
@@ -31,6 +30,11 @@ h2{
     width: 50%;
     float: left;
     padding-right: 15px;
+}
+.input-bairro{
+    width: 100%;
+    float: right;
+    
 }
 .caixa{
     display: flex;
@@ -146,45 +150,10 @@ form .input-dados button{
 }
 
 
-.editar .carousel .card{
-    background: rgba(146, 94, 94, 0.788);
-     border-radius: 6px;
-     padding: 25px 35px;
-     text-align: center;
-     transition: all 0.3s ease;
-  }
-  .editar .carousel .card:hover{
-      background: #ad7d7ba2;
-  }
-  .editar .carousel .card img{
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid #ad7d7ba2;
-      transition: all 0.3s ease;
-  }
-  .editar .carousel .card:hover img{
-      border-color: #fff;
-  }
-  .editar .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  .editar .carousel .card:hover .box{
-    transform: scale(1.05);
-  }
-  .editar .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-  }
+
   .owl-dots{
     text-align: center;
-    margin-top: 20px;
+    margin-top:-30px;
   }
   .owl-dot{
     width: 14px;

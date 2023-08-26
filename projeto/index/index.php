@@ -8,6 +8,7 @@
     <link rel="icon" type="imagem/png" href="index/imgs/Amora.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/lazy-dog" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" type="text/css"></head>
 </head>
 <style>
@@ -120,7 +121,11 @@
 
        </nav>
 </header>
-        
+<section class="inicio">
+        <div class="max-width">
+
+</div>
+</section>
           <section class="sobre" id="sobre">
         <div class="max-width">
             <h2 class="title">Save a Soul</h2>
@@ -142,24 +147,14 @@
             </div>
         </div>
     </section>
-    <section class="vitima" >
-    <h3 class='title'>Números que assustam</h3>
-        <div class="max-width">
-        
-            <div class="vitima-content">
-               
-               <iframe src='https://g1.globo.com/to/tocantins/noticia/2023/07/11/mais-de-100-casos-de-maus-tratos-a-animais-de-estimacao-foram-registrados-este-ano-no-estado.ghtml'></iframe>
-                
-            </div>
-        </div>
-    </section>
+   
 
                 
                 
      
     <section class="comeco" id="comeco">
         <div class="max-width">
-            <h2 class="title">Como começou</h2>
+            <h1 class="title">Como começou</h1>
             <div class="comeco-content">
                 <div class="column left">
                 <b> <p> Luna vivia nas ruas de uma cidade movimentada. Ela era uma gatinha adorável, com pelagem preta e olhos brilhantes, <br>

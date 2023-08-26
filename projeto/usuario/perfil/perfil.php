@@ -147,7 +147,7 @@ handshake
 
 
 <div class="dados">
-          <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?> <a href='./updates/edit.html'><span class="material-symbols-outlined" style>
+          <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?> <a href='./updates/pessoal.php'><span class="material-symbols-outlined" style>
 edit
 </span></a>  <br>
 		

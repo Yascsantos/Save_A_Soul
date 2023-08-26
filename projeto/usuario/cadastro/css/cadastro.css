@@ -15,9 +15,7 @@ main{
     color:white ;
 }
 body{
-    background-size:100% 100%;
     background-image:url(../imgs/fundo1.jpg);
-    background-repeat: no-repeat;
     background-position: cover;
     color:white ;
    
