@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adote| Save a Soul</title>
+    <title>Animais| Save a Soul</title>
     <link rel="icon" type="imagem/png" href="../index/imgs/logo1.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -134,7 +134,7 @@
 </div>
     
             <div class="sobre-content">
-    <h2 class='title'>Adote</h2>
+    <h2 class='title'>Animais</h2>
     <section class="sobre" id="sobre">
         <div class="max-width">
     
@@ -151,6 +151,10 @@
         <div class='column left'>
     <a href='../../../exibicao_animais/perfil.php?&codigo=".$exibe['id_ani']."'><img src=".$exibe['img_ani']." alt='Imagem padrão' width='100px' height='100px'></a><br>
         <a href='../../../exibicao_animais/perfil.php?&codigo=".$exibe['id_ani']."'><h2>".$exibe['nome_ani']." </h2></a>
+        <a href='../../../funcoes/adocao/adotar.php?&codigo=".$exibe['id_ani']."'>Adotar</a>
+        
+        <a href='../../../funcoes/abrigo/lar.php?&codigo=".$exibe['id_ani']."'>Abrigar</a>
+
        
         </div> ";
 

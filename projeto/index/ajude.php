@@ -161,9 +161,10 @@ contra o abandono e maus-tratos.</div>
                 </div>
                 <div class="column right"><b>
 
-                Preencha o formulário abaixo com seus dados corretos, responda com o máximo de precisão sobre suas expectativas e rotina, esse é o início do nosso processo de adoção,
-                 responda à todas as perguntas com atenção que em breve entraremos em contato.<br></b>
-                    <a href="../adm/animais/listagem/grade.php">Adote</a>
+                Nossos amiguinhos precisam muito de um novo lar e um abrigo. <br>
+                Ajude-nos a cuidar deles.<br>
+                Conheça nossos amiguinhos<br></b>
+                    <a href="../adm/animais/listagem/grade.php">Animais</a>
                 </div>
             </div>
         </div>
@@ -194,6 +195,7 @@ Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidad
             </div>
         </div>
     </section>
+<!--
     <section class="sobre" id="sobre">
         <div class="max-width">
             
@@ -215,7 +217,7 @@ Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidad
             </div>
         </div>
     </section>
-
+-->
   
 
 

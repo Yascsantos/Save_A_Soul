@@ -118,8 +118,8 @@
                 </tr> 
 
                 <tr>
-                    <td align='center'><button><a href='../funcoes/adotar.html'>Adote</a><td></button>
-                    <td align='center'><button><a href='../funcoes/lar.html'>Seja voluntário</a><td></button>
+                    <td align='center'><button><a href='../funcoes/adocao/adotar.php?&codigo=".$id."'>Adote</a><td></button>
+                    <td align='center'><button><a href='../funcoes/abrigo/lar.php?&codigo=".$id."'>Seja voluntário</a><td></button>
 
                 </tr>
         
