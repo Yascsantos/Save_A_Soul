@@ -51,9 +51,20 @@
         } 
         else 
         {
-            mysqli_close($conexao);
-            header ('location:../../adm/animais/listagem/grade.php');
-            exit;
+            $sql_code = "SELECT * FROM adocao where id_ani = $id and id_user = $user";
+            $code = mysqli_query($conexao,$sql_code);
+            foreach ($code as $dade) 
+            {
+                $id_adocao = $dade['id_ado'];
+                $_SESSION['id_adocao'] = $id_adocao;
+                header ('location:compro.php');
+            }
+
+    
+    
+    
+
+
         }
 
     }
