@@ -39,17 +39,15 @@ body{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #ffffff;
+    background: #667948;
     transform: translateX(-50%);
   }
   section .title::after{
-    COLOR: #ffffff;
+    COLOR: #4c5838;
     position: absolute;
     bottom:-12px;
     left: 50%;
     font-size: 20px;
-    background:  #d4987e;
-    color: #f1e8ec;
     padding: 5px;
     border-radius: 10%;
     transform: translateX(-50%);
@@ -140,7 +138,6 @@ margin-top:auto;
 
 
 .sobre .sobre-content{
- 
   display: flex;
   flex-wrap: wrap;
   align-items: center;

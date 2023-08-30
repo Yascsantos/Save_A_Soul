@@ -124,16 +124,7 @@
 </section>
     <section id="ajuda">
             <div class="ajuda-content">
-            <div class="column left">
- 
-<div class='p'>
-<b><h2 class='title'>VOCÊ TAMBÉM PODE FAZER PARTE DESTA LUTA</h2></b>
-<p>A sua ajuda pode salvar a vida de diversos animais carentes e auxiliar na luta <br>
-contra o abandono e maus-tratos.</div>
-</div>
-
-
-        </div>
+          
     </section>
     <section class="sobre" id="sobre">
         <div class="max-width">
@@ -141,6 +132,24 @@ contra o abandono e maus-tratos.</div>
             <div class="sobre-content">
                 <div class="column left">
                     <img src="imgs/dog6.jpg" alt="">
+                </div>
+                <div class="column right"><b>
+                    <h2>Oi, eu sou o Duke</h2><br>
+                Felizmente já fui adotado e agora vivo uma vida feliz com a minha nova familia,
+                 mas tenho muitos outros aumigos que precisam de um lar, 
+                 click abaixo e conheça alguns dos meus aumigos, talvez você se apaixone assim como a mamãe se apaixonou por mim.
+          </b><br>
+                    <a href="../adm/animais/listagem/grade.php">Animais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="max-width">
+            
+            <div class="sobre-content">
+                <div class="column left">
+                    <img src="imgs/dog4.jpg" alt="">
                 </div>
                 <div class="column right"><b>
 
@@ -152,23 +161,7 @@ contra o abandono e maus-tratos.</div>
         </div>
     </section>
 
-    <section class="sobre" id="sobre">
-        <div class="max-width">
-            
-            <div class="sobre-content">
-                <div class="column left">
-                    <img src="imgs/dog5.jpg" alt="">
-                </div>
-                <div class="column right"><b>
-
-                Nossos amiguinhos precisam muito de um novo lar e um abrigo. <br>
-                Ajude-nos a cuidar deles.<br>
-                Conheça nossos amiguinhos<br></b>
-                    <a href="../adm/animais/listagem/grade.php">Animais</a>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 
 
 

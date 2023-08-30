@@ -16,9 +16,7 @@
     scroll-behavior: smooth;
 }
 body{
-    background-image:url(../imgs/fundo-s.jpg);
-    background-position: left -4% ;
-    background-size: 100% ;
+  background-color: #adb5a0;
 
 }
   /*  todos os codigos similares  */
@@ -35,27 +33,17 @@ body{
     position: relative;
   }
  
-  section .title::after{
-    position: absolute;
-    bottom:-12px;
-    left: 50%;
-    font-size: 20px;
-    background:  #d4987e;
-    color: #f1e8ec;
-    padding: 5px;
-    border-radius: 10%;
-    transform: translateX(-50%);
-  }
+
 .ajude button{
     display: inline-block;
-    background: #d4987e;
+    background: #4c5838;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #d4987e;
+    border: 2px solid  #4c5838;
     transition: all 0.3s ease;
 } 
 
@@ -159,16 +147,19 @@ margin-top:auto;
 }
 
 #ajuda{
-background-color: #3a3a3bae;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:100% 100% ;
+  background-image: url(../imgs/ajude.jpg);
+  background-position: cover;
 }
-.title{
-    text-align: center;
-    color: #f1e8ec;
-}
+
 .sobre .sobre-content .left{
   width: 30%;
 }
 .sobre .sobre-content .right{
+  text-align: justify;
   width: 55%;
   font-family: 'Poppins';
 }
@@ -182,18 +173,18 @@ background-color: #3a3a3bae;
 }
 .sobre .sobre-content .right a{
   display: inline-block;
-  background: #d4987e;
+  background: #4c5838;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   padding: 10px 30px;
   margin-top: 20px;
   border-radius: 6px;
-  border: 2px solid #d4987e;
+  border: 2px solid #4c5838;
   transition: all 0.3s ease;
 }
 .sobre .sobre-content .right a:hover{
-  color: #d4987e;
+  color: #4c5838;
   background: none;
 }
 .sobre .sobre-content .left img{
