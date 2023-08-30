@@ -54,12 +54,13 @@ body{
   }
 
 .inicio{
-  height: 700px;
+  height: 550px;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size:100% 100% ;
   background-image: url(../imgs/fundo-s.jpg);
-  background-position: cover;
+
 }
 .max-width{
     max-width: 1300px;

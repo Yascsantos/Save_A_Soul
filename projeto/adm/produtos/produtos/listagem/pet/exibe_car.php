@@ -127,7 +127,6 @@
        </nav>
        </header>
        <section class='carrinho'>
-      <b> <h2 class='title'>Seu carrinho de Compra</h2></b>
 <div class='max-width'>
 <div class='carrinho-content'>
 <?php 
@@ -152,10 +151,17 @@
       if(empty($id_u))
       {
         echo "
-        <center class='vazio'>
-          <h1>Seu carrinho está vazio</h1>
+        <style>
+        .car img{
+          align:center;
+          height: 700px;
+          width: 700px;
+          background-image: url(../../adm/produtos/produtos/listagem/pet/car.png);
+          }
+        </style>
+        <div class='car'>
           <img src='car.png'> 
-            <a href='grade_nova.php'><b>COMEÇE A COMPRAR</b></a></center>
+            <a href='grade_nova.php'><b>COMEÇE A COMPRAR</b></a></div>
         ";
       }
 

@@ -128,7 +128,7 @@
 </section>
           <section class="sobre" id="sobre">
         <div class="max-width">
-            <h2 class="title">Save a Soul</h2>
+            <h2 class="title">Sobre a save a soul</h2>
             <div class="sobre-content">
                 <div class="column left">
                     <img src="imgs/dog1.jpg" alt="">
