@@ -22,7 +22,7 @@
       width: 100%;
       height: 30px;
       background-color: rgba(255, 255, 255, 0.32);
-      border-radius: 20px;
+      border-radius: 10px;
       outline: none;
       border: 2px solid transparent;
       padding: 15px;
@@ -49,7 +49,7 @@
   .pesq{
     width: 20px;
     height:30px;
-    background: #adb5a0;
+    background-color: #08080800;
     outline: none;
     border: none;
    position:relative;

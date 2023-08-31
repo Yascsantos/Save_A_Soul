@@ -29,7 +29,32 @@
        
     }
       
-    echo "<div class='input-dados'>
+    echo "
+    <style>
+    select{
+        width: 100%;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.32);
+        border-radius: 20px;
+        outline: none;
+        border: 2px solid transparent;
+        padding: 13px;
+        font-size: 15px;
+        color: #616161;
+        transition: all 0.4s ease;
+    }
+    button .pesq{
+      width: 20px;
+      height:30px;
+      background-color: #08080800;
+      outline: none;
+      border: none;
+     position:relative;
+     top:-45px;
+     left:180px;
+      color: white;
+     
+  }  </style> <div class='input-dados'>
             <form action='../filtro/fl.php' method='POST'>
             <select name='categoria' required>
             <option value='0'>Selecione a categoria</option>
