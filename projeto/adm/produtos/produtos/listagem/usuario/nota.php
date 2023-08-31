@@ -17,7 +17,8 @@
     if (empty($id_user))
     {
         echo "O usuário não possui pedidos ainda <br><br>";
-        echo "<a href= '../../../../usuario/listagem.php'>Voltar</a> <br><br>";
+        echo "<title>Lembrete!!</title>
+        <a href= '../../../../usuario/listagem.php'>Voltar</a> <br><br>";
     }
 
     else 
