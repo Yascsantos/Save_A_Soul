@@ -152,10 +152,10 @@
      
     
         <section  id="produto">
-        <h2 class='title'>Petshop</h2>
+   
 <div class="max-width">
             <div class="produto">
-          
+            <h2 class='title'>Petshop</h2>
          
 <?php
      include_once("../../../../../conexaoBD.php");
@@ -167,6 +167,7 @@
 
      {
         echo "
+
         <div class='card'>
  
                     <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." style='height:250px;  width:250px;'></a><br>
