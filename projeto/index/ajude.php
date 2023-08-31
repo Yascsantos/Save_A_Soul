@@ -153,8 +153,8 @@
                 </div>
                 <div class="column right"><b>
                 Esse é Thomas nosso lindo vira-latinha, que adora estar na moda.
-                 Você também pode deixar seu pet estiloso e confortável, assim como Thomas, basta clicar no botão abaixo ou no menu e verifique algumas das nossas diversas ropinhas, acessorios e utencilios, 
-        desse modo, você ajuda a nossa causa, pois uma parte do dinheira vai para o nosso abrigo.
+                 Você também pode deixar seu pet estiloso e confortável, assim como Thomas, basta clicar no botão abaixo ou no menu e verifique algumas das nossas diversas ropinhas, acessorios e utencilios. 
+        Desse modo, você ajuda a nossa causa, pois uma parte do dinheira vai para o nosso abrigo.
               <br></b>
                     <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">Petshop</a>
                 </div>
