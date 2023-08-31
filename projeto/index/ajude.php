@@ -152,9 +152,10 @@
                     <img src="imgs/dog4.jpg" alt="">
                 </div>
                 <div class="column right"><b>
-
-                Preencha o formulário abaixo com seus dados corretos, responda com o máximo de precisão sobre suas expectativas e rotina, esse é o início do nosso processo de adoção,
-                 responda à todas as perguntas com atenção que em breve entraremos em contato.<br></b>
+                Esse é Thomas nosso lindo vira-latinha, que adora estar na moda.
+                 Você também pode deixar seu pet estiloso e confortável, assim como Thomas, basta clicar no botão abaixo ou no menu e verifique algumas das nossas diversas ropinhas, acessorios e utencilios, 
+         você ajuda a nossa causa.
+              <br></b>
                     <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">Petshop</a>
                 </div>
             </div>
