@@ -128,9 +128,8 @@
 </header>
 <section class="filtro">
   <div class="max-width">
-              
     <div class="filtro-content">
-      <div>
+      <div class='lupa'>
       <span class='material-symbols-outlined' onclick='openPopup()'>
     tune
     </span></div>
