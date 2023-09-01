@@ -127,9 +127,9 @@
        </nav>
 </header>
 <section class="filtro">
-  <div class="max-width">
+ 
     <div class="filtro-content">
-      <div class='lupa'>
+      <div class='filt'>
       <span class='material-symbols-outlined' onclick='openPopup()'>
     tune
     </span></div>
@@ -147,13 +147,12 @@
                   
                 
                       </script>
-                        <div><?php  include_once("../barra/barra.php"); ?></div> 
-                              </div>
+                        <div class='but'> <a href='#produto' ></a></div><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
+                       
+                        </section>
      
     
         <section  id="produto">
-   
-<div class="max-width">
             <div class="produto">
             <h2 class='title'>Petshop</h2>
          
@@ -188,7 +187,7 @@
 ?> 
 
                   </div> 
-              </div>
+              
 
     </section>
 </body>

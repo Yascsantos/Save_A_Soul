@@ -170,11 +170,11 @@
     </nav>
   </header>
   <section class="filtro">
-    <div class="max-width">
+ 
 
       <div class="filtro-content">
-
-        <span class='material-symbols-outlined' onclick='openPopup()'>tune</span>
+<div class='filt'>
+        <span class='material-symbols-outlined' onclick='openPopup()'>tune</span></div>
         <div id='popupContainer' style='display: none;'>
           <div class='popup'>
             <br><br>
@@ -192,10 +192,10 @@
             }
           </script>
         </div>
-        <div><?php include_once("../barra/barra.php"); ?></div>
+        <div class='lupa'><?php include_once("../barra/barra.php"); ?></div>
       </div>
     </div>
-    </div>
+          </section>
     <section id="produto">
       <h2 class='title'>Petshop</h2>
       <div class="max-width">
