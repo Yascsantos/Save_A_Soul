@@ -173,4 +173,3 @@ CREATE TABLE armazena (
 
 
 
-saveuser
