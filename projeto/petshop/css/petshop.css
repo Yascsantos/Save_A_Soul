@@ -20,7 +20,10 @@
            display: block;
            margin-bottom: 10px;
        }
-
+       #produto{
+        border: #080808;
+       
+       }
        #produto .produto {
         text-align: center;
         display: flex;
@@ -158,8 +161,15 @@ margin-left: 30%;
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+    display: flex;
 }
-
+.filt{
+  margin-left:5%;
+}
+.barra{
+  float: 10px;
+  margin-right:5%;
+}
 #menu{
 
   position: fixed;
@@ -228,11 +238,15 @@ margin-top:auto;
     color:#3a3a3b;
   }
 
+
   .filtro{
+    max-width: 1300px;
+    height: 500px;
     background-image: url(../imgs/fundo-s.gif);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 110% 110%;
+    border-bottom: 5px solid #224b2b;
   }
   .filtro .filtro-content{
     display: flex;
