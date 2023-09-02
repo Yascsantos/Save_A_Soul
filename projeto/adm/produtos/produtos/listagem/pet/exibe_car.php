@@ -128,7 +128,7 @@
        </header>
        <section class='carrinho'>
       <b> <h2 class='title'>Seu carrinho de Compra</h2></b>
-<div class='max-width'>
+      <div class='max-width'>
 <div class='carrinho-content'>
 <?php 
   //processamento

@@ -147,14 +147,15 @@
                   
                 
                       </script>
-                        <div class='but'> <a href='#produto' ></a></div><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
+                        <a href='#produto' class='but' ></a><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
                        
                         </section>
      
     
         <section  id="produto">
+        <h2 class='title'>Petshop</h2>
             <div class="produto">
-            <h2 class='title'>Petshop</h2>
+           
          
 <?php
      include_once("../../../../../conexaoBD.php");
