@@ -35,8 +35,10 @@
     <h1>Informações dos usuários</h1>
     <p>Usuário(a): <b><?php echo $nome;?></b></p>
 
-    <h3><a href="../produtos/produtos/listagem/usuario/nota.php">Pedidos já feitos</a></h3>
+    <h3><a href="../produtos/produtos/listagem/usuario/compras.php">Pedidos já feitos</a></h3>
     <!--Mudar status-->
+    <h3><a href="./adocao/list.php">Status da adoção</a></h3>
+
     <a href="listagem.php">Voltar</a>
 
 
