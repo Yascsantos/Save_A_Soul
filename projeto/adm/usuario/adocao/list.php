@@ -12,6 +12,9 @@
     foreach($query as $exibe)
     {
         $id_user = $exibe['id_user'];
+        $id_ado = $exibe['id_ado'];
+
+
     }
 
     if (empty($id_user))
@@ -32,7 +35,8 @@
             <td align='center'>RAÇA</td>     
             <td align='center'>PORTE</td> 
             <td align='center'>SEXO</td>     
-            <td align='center'>STATUS</td>     
+            <td align='center'>STATUS</td>
+            <td align='center'></td>
         </tr>
         ";
         foreach($query as $dade)
@@ -95,6 +99,10 @@
         
                             <td align='center'>
                                 ".$status."
+                            </td>
+
+                            <td align='center'>
+                                <a href='form.php?&codigo=".$id_ado."'>Mudar status</a>
                             </td>
         
                     </tr>
