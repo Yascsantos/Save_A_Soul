@@ -1,3 +1,7 @@
+<?php
+      include_once("protect.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
