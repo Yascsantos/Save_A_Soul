@@ -49,6 +49,7 @@
     echo "<table>";
     echo "
     <tr>
+        <td align='center'></td>
         <td align='center'>DATA</td>     
         <td align='center'>HORÁRIO</td>  
         <td align='center'>ANIMAL</td>     
@@ -78,8 +79,10 @@
             $sexo = $dados['sexo'];
     
                 echo "
-
                     <tr>  
+                        <td align='center'>
+                            <a href='drop.php?&codigo=".$id_ado."'>Deletar registro</a>
+                        </td>
                         <td align='center'>
                             ".$data." 
                         </td>

@@ -1,7 +1,7 @@
 <?php
     include_once("../../../conexaoBD.php");
     $tabela="animal";
-    $campo= "nome_ani, raca, porte, sexo"; 
+    $campo= "nome_ani, raca, porte, sexo, status, modalidade"; 
 
   if(isset($_POST['cadastrar']))
   {
@@ -9,12 +9,15 @@
     $raca = $_POST['raca'];
     $porte = $_POST['porte'];
     $sx = $_POST['sx'];
+    $moda = "---";
+    $status = "disponivel";
+
 
     
   }
 
     $sql = "INSERT INTO $tabela ($campo) 
-            VALUES ('$nome','$raca','$porte', '$sx')";
+            VALUES ('$nome','$raca','$porte', '$sx', '$status', '$moda')";
 		
     $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 		
