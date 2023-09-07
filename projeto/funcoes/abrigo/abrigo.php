@@ -38,10 +38,10 @@
         $hora = $_POST['horas'];
     
         $tabela="voluntario";
-        $campo= "id_user, id_ani, data_entre, horario"; 
+        $campo= "id_user, id_ani, data_entre, horario, status"; 
 
         $sql = "INSERT INTO $tabela ($campo) 
-        VALUES ('$user','$id','$data', '$hora')";
+        VALUES ('$user','$id','$data', '$hora', '---')";
 
         $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
