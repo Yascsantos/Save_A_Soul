@@ -300,13 +300,31 @@ margin-top:auto;
   border: none;
   }
   
+  #inicio{
+    background-image: url('../imgs/animais.gif');
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    text-align: center;
+    height: 700px;
+  
+  }
+#sobre{
+  background-image: url('../imgs/animas.gif');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size:99.6% 100%;
+  text-align: center;
 
-  .sobre .sobre-content{
-     text-align: center;
+}
+  #sobre .sobre-content{
+    padding: 45px 85px;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    color: #fffffe;
   }
   .text
 {
@@ -318,16 +336,30 @@ margin-top:auto;
       font-family: 'Lazy Dog';
       color: #ffffff;
   }
-  .sobre .sobre-content .left{
-    width: 30%;
+  #sobre .sobre-content .card{
+    background-color: #ADB5A0;
+    border: 2px solid #586445;
+    border-radius: 20%;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
   }
 
-  .sobre .sobre-content .left img{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 6px;
+
+  #sobre .sobre-content .card:hover{
+      background: #586445;
   }
+  #sobre .sobre-content .card img{
+      width: 250px;
+      height: 300px;
+      border-radius: 50px;
+        border: 5px solid #4a5327;
+      transition: all 0.3s ease;
+  }
+ 
+  
+
+  
 
   .carrinho .carrinho-content{
     background-color: #909687;
