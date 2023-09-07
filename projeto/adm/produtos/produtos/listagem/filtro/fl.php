@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petshop| Save a Soul</title>
   <link rel="icon" type="imagem/png" href="../index/imgs/logo1.png" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link rel="stylesheet" href="../../../../petshop/css/petshop.css" type="text/css">
+  <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css">
 </head>
 </head>
 <style>
@@ -171,36 +171,36 @@
   </header>
   <section class="filtro">
  
-
-      <div class="filtro-content">
-<div class='filt'>
-        <span class='material-symbols-outlined' onclick='openPopup()'>tune</span></div>
-        <div id='popupContainer' style='display: none;'>
-          <div class='popup'>
-            <br><br>
-            <?php include_once("filtro.php"); ?>
-          </div>
-
-
-          <script>
-            function openPopup() {
-              document.getElementById('popupContainer').style.display = 'block';
-            }
-
-            function closePopup() {
-              document.getElementById('popupContainer').style.display = 'none';
-            }
-          </script>
-        </div>
-        <div class='lupa'><?php include_once("../barra/barra.php"); ?></div>
-      </div>
-    </div>
-          </section>
-    <section id="produto">
-      <h2 class='title'>Petshop</h2>
-      <div class="max-width">
-        <div class="produto">
-
+ <div class="filtro-content">
+   <div class='filt'>
+   <span class='material-symbols-outlined' onclick='openPopup()'>
+ tune
+ </span></div>
+ <div id='popupContainer' style='display: none;'>
+                       <div  class='popup' >
+                       <br><br>
+                       <?php include_once("../filtro/filtro.php"); ?>
+                       </div>
+                   </div>
+               
+                   <script>
+                       function openPopup() {
+                           document.getElementById('popupContainer').style.display = 'block';
+                       }
+               
+             
+                   </script>
+                     <a href='#produto' class='but' ></a><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
+                    
+                     </section>
+  
+ 
+                     <section  id="produto">
+        <h2 class='title'>Tudo para seu pet</h2>
+        <p class='text1'>Aqui temos diversos itens para o conforto e alegria do seu pet...
+        <br>  <br> <br>  <br>
+        </p>
+            <div class="produto">
 
 
           <?php
