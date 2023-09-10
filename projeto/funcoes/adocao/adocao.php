@@ -48,22 +48,34 @@
         if (!$instrucao) 
         {
             die(' Query Inválida: ' . mysqli_error($conexao));
-        } 
+        }
+        
+        
         else 
         {
-            $sql_code = "SELECT * FROM adocao where id_ani = $id and id_user = $user";
-            $code = mysqli_query($conexao,$sql_code);
-            foreach ($code as $dade) 
+            $code = "UPDATE animal SET 
+            status = 'analise',
+            modalidade = '---' 
+            WHERE id_ani = $id";
+            $codigo= $conexao->query($code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+
+            if (!$codigo) 
             {
-                $id_adocao = $dade['id_ado'];
-                $_SESSION['id_adocao'] = $id_adocao;
-                header ('location:compro.php');
+                die(' Query Inválida: ' . mysqli_error($conexao));
             }
 
+            else 
+            {
+                $sql_code = "SELECT * FROM adocao where id_ani = $id and id_user = $user";
+                $code = mysqli_query($conexao,$sql_code);
+                foreach ($code as $dade) 
+                {
+                    $id_adocao = $dade['id_ado'];
+                    $_SESSION['id_adocao'] = $id_adocao;
+                    header ('location:compro.php');
+                }
     
-    
-    
-
+            }
 
         }
 

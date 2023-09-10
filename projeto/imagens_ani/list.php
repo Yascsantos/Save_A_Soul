@@ -17,7 +17,7 @@
     {
         session_start();
     }
-    $cod = $_SESSION['id_ip'];
+    $cod = $_SESSION['id_imgani'];
 
     include_once("../conexaoBD.php");
     $sql= "SELECT * FROM imgani WHERE id_ani = $cod";

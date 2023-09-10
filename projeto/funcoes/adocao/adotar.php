@@ -28,19 +28,7 @@
     }
     $_SESSION['id_ani'] = $_GET['codigo']; //id_ani
     $id = $_SESSION['id_ani'];
-    
-    //IMAGENS 
-    $query= "SELECT * FROM imgani WHERE id_ani = $id";
-    $busca = mysqli_query($conexao,$query);
-    
-    foreach ($busca as $dados) 
-    {
-        echo "
-        <img src=".$dados['img']."  width='100px' height='100px'>
-        ";
-    }
-    echo "<br><br>";
-    
+       
     //ANIMAIS
     $sql= "SELECT * FROM animal where id_ani = $id";
     $instrucao = mysqli_query($conexao,$sql);

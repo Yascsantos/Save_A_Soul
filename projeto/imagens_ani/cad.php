@@ -9,7 +9,8 @@
     {
         session_start();
     }
-    $cod = $_SESSION['id_ani'];
+    $cod = $_SESSION['id_imgani'];
+ 
 
 
     if(isset($_POST['Enviar']))
