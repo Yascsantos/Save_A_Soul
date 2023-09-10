@@ -6,7 +6,7 @@
     <title>+ Imagens</title>
 </head>
 <body>
-    <h1> Listagem das imagens dos produtos </h1>
+    <h1> Listagem das imagens dos animais </h1>
     <a href="cad.php"> Cadastrar imagens </a><br>
     <a href='../adm/animais/listagem/animais.php'>Voltar</a><br>
     <br> <br>
@@ -23,14 +23,14 @@
     $sql= "SELECT * FROM imgani WHERE id_ani = $cod";
     $instrucao = mysqli_query($conexao,$sql);
 
-    echo "<h3>Imagens do produto ".$cod.".</h3>";
+    echo "<h3>Imagens</h3>";
     echo "
     <table> 
         <tr>
             <th></th>
             <th></th>
             <th> </th>
-            <th align='center'>Código do produto</th>
+            <th align='center'>Código do animal</th>
             <th> </th>
             <th align='center'>Imagem</th>
             <th></th>

@@ -12,7 +12,7 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Copiando dados para a tabela save.adocao: ~2 rows (aproximadamente)
+-- Copiando dados para a tabela save.adocao: ~3 rows (aproximadamente)
 /*!40000 ALTER TABLE `adocao` DISABLE KEYS */;
 INSERT INTO `adocao` (`id_ado`, `id_user`, `id_ani`, `data_entre`, `horario`, `status`) VALUES
 	(1, 1, 12, '2023-09-02', '14:56:00', '---'),
@@ -20,12 +20,13 @@ INSERT INTO `adocao` (`id_ado`, `id_user`, `id_ani`, `data_entre`, `horario`, `s
 	(3, 1, 2, '2023-09-06', '15:28:00', '---');
 /*!40000 ALTER TABLE `adocao` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.animal: ~2 rows (aproximadamente)
+-- Copiando dados para a tabela save.animal: ~4 rows (aproximadamente)
 /*!40000 ALTER TABLE `animal` DISABLE KEYS */;
 INSERT INTO `animal` (`id_ani`, `nome_ani`, `raca`, `porte`, `sexo`, `img_ani`, `status`, `modalidade`) VALUES
 	(2, 'Foozi', 'Shih tzu', 'Pequeno', 'macho', '../listagem/img/2023.07.13-16.46.40.jpg', 'disponivel', '---'),
 	(11, 'Pietra', 'Pinscher', 'Pequeno', 'feminino', '../listagem/img/2023.07.17-15.58.01.jpg', 'disponivel', '---'),
-	(12, 'Simba', 'Golden Retriver', 'Grande', 'macho', '../listagem/img/2023.09.06-18.11.37.jpg', 'disponivel', '---');
+	(12, 'Simba', 'Golden Retriver', 'Grande', 'macho', '../listagem/img/2023.09.06-18.11.37.jpg', 'disponivel', '---'),
+	(13, 'Fluffy', 'Persa', 'Pequeno', 'femea', '../listagem/img/2023.09.10-19.26.40jfif', 'disponivel', '---');
 /*!40000 ALTER TABLE `animal` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.armazena: ~0 rows (aproximadamente)
@@ -46,7 +47,7 @@ INSERT INTO `carrinho` (`id_car`, `id_user`, `id_pro`, `cor`, `tamanho`, `qtd`, 
 	(13, 3, 2, 'Roxo', '20cm', 9, 180.00);
 /*!40000 ALTER TABLE `carrinho` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.categoria: ~7 rows (aproximadamente)
+-- Copiando dados para a tabela save.categoria: ~8 rows (aproximadamente)
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
 INSERT INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 	(1, 'Roupas'),
@@ -55,7 +56,8 @@ INSERT INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 	(4, 'Acessorios'),
 	(5, 'Racao'),
 	(6, 'Tigelas'),
-	(7, 'Roupas');
+	(7, 'Roupas'),
+	(8, 'Higiene');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.cores: ~5 rows (aproximadamente)
@@ -68,12 +70,13 @@ INSERT INTO `cores` (`id_cor`, `id_pro`, `cor`) VALUES
 	(5, 2, 'Marrom e cinza');
 /*!40000 ALTER TABLE `cores` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.imgani: ~3 rows (aproximadamente)
+-- Copiando dados para a tabela save.imgani: ~4 rows (aproximadamente)
 /*!40000 ALTER TABLE `imgani` DISABLE KEYS */;
 INSERT INTO `imgani` (`id_imgani`, `id_ani`, `img`) VALUES
 	(1, 2, '../img_ani/2023.09.10-18.14.59jfif'),
 	(3, 11, '../img_ani/2023.09.10-18.23.24jfif'),
-	(4, 12, '../img_ani/2023.09.10-18.23.54jfif');
+	(4, 12, '../img_ani/2023.09.10-18.23.54jfif'),
+	(6, 13, '../img_ani/2023.09.10-19.27.53jfif');
 /*!40000 ALTER TABLE `imgani` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.imgpro: ~5 rows (aproximadamente)
@@ -115,7 +118,7 @@ INSERT INTO `tamanhos` (`id_tam`, `id_pro`, `tamanho`) VALUES
 	(8, 3, 'G');
 /*!40000 ALTER TABLE `tamanhos` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.user: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela save.user: ~1 rows (aproximadamente)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`id_user`, `usuario`, `nome`, `email`, `telefone`, `senha`, `foto`, `cep`, `pais`, `estado`, `cidade`, `bairro`, `rua`, `numero`) VALUES
 	(1, 'Yas', 'Yasmin Santos', 'yasmin2@gmail.com', '(11)96972-8466', '$2y$10$r84x8i8cP/QSu29YJRCa2u2CLjCLwMoY6t89Yf7Y.0rsUKXu3B4GG', './img/2023.09.10-17.45.24.jpg', '06528086', 'Brasil', 'SP', 'Santana de ParnaÃ­ba', 'Varzea de souza ', 'Rua do Astronauta', '280');

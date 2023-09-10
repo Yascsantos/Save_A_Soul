@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Cadastro de categorias</h2>
-    <a href="../../pg.html">Voltar</a> <br>
+    <a href="../infos/pro.php"> Voltar </a> <br>
     <a href=".././listagem/list.php">Listar categorias</a><br><br>
 
     <form action="cad_cor.php" method="post">

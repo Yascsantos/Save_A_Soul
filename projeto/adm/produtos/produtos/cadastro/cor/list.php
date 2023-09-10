@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1> Listagem de cores dos produtos </h1>
-    <a href="../pro.php"> Voltar </a> <br>
+    <a href="../infos/pro.php"> Voltar </a> <br>
     <a href="form.php"> Cadastrar + cores </a>
     <br> <br>
 
