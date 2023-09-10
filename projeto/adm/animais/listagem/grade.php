@@ -129,17 +129,10 @@
 
        </nav>
 </header>
-<section class="filtro">
-  <div class="max-width">
-              
-    <div class="filtro-content">
-</div>
-    
-            <div class="sobre-content">
-    <h2 class='title'>Animais</h2>
-    <section class="sobre" id="sobre">
-        <div class="max-width">
-    
+<section id="inicio">
+</section>
+<section id="sobre">
+<h2 class='title'>Animais</h2>
             <div class="sobre-content">
 <?php
     include_once("../../../conexaoBD.php");
@@ -150,13 +143,15 @@
     foreach ($instrucao as $exibe) 
     {
         echo "
-        <div class='column left'>
-    <a href='../../../exibicao_animais/perfil.php?&codigo=".$exibe['id_ani']."'><img src=".$exibe['img_ani']." alt='Imagem padrão' width='100px' height='100px'></a><br>
-        <a href='../../../exibicao_animais/perfil.php?&codigo=".$exibe['id_ani']."'><h2>".$exibe['nome_ani']." </h2></a>
+        <div class='card'>
+<img src=".$exibe['img_ani']." alt='Imagem padrão' width='100px' height='100px'><br>
+
+      <h2>".$exibe['nome_ani']." </h2>
+
         <a href='../../../funcoes/adocao/adotar.php?&codigo=".$exibe['id_ani']."'>Adotar</a>
         
         <a href='../../../funcoes/abrigo/lar.php?&codigo=".$exibe['id_ani']."'>Abrigar</a>
-
+        
        
         </div> ";
 
@@ -168,8 +163,8 @@
 
                   
                   </div>
-                
-                </section>
+                  </section>
+               
 
 
     </body>

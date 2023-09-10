@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lazy-dog');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
 
 *{
@@ -21,38 +22,48 @@
            margin-bottom: 10px;
        }
 
+       #produto{
+        background-image: url('../imgs/pet.jpg');
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-size:99.6% 100%;
+        text-align: center;
+ 
+       }
        #produto .produto {
+      padding: 30px 25px 25px 25px;
         text-align: center;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        color: #fffffe;
        }
 #produto .produto .card{
-
-   border-radius: 6px;
+  background-color: #ADB5A0;
+   border: 2px solid #586445;
+   border-radius: 20%;
    padding: 25px 35px;
    text-align: center;
    transition: all 0.3s ease;
   
 }
 #produto .produto .card:hover{
-    background: #2a563eca;
+    background: #586445;
 }
 #produto .produto .card img{
     width: 250px;
-    height: 250px;
-    border-radius: 8px;
-    object-fit: cover;
-      border: 5px solid #efe6eb;
+    height: 700px;
+    border-radius: 50px;
+      border: 5px solid #4a5327;
     transition: all 0.3s ease;
 }
 #produto .produto  .card:hover img{
-    border-color: #2a503bca
+    border-color: #50352a
 }
 
 #produto .produto .card .text{
-  font-size: 25px;
+  font-size: 25px ;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
@@ -126,8 +137,8 @@ margin-left: 30%;
     text-align: center;
     font-size: 40px;
     font-weight: 600;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
     position: relative;
   }
   section .title::before{
@@ -213,7 +224,10 @@ margin-top:auto;
     transform: translateX(0);
   }
   
-
+  body{
+    background-color: #adb5a0;
+  
+  }
 
   a{
     font-family: 'Poppins';
@@ -233,8 +247,9 @@ margin-top:auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 500px;
-    border-bottom:  5px solid ;
+    height: 700px;
+ 
+  
   }
   .filt{
     margin-left: 5%;
@@ -244,13 +259,14 @@ margin-top:auto;
     margin-right: 10%;
   }
   .but{
-
-    margin-left: 70%;
+ 
+    margin-left: 66%;
     position: fixed;
-    width: 100px;
-    background: #4c5838;
-    padding: 10px 30px;
-    margin-top: 350px;
+    width: 190px;
+    min-width:126px; 
+    background: #4c583800;
+    padding: 100px 20px;
+    margin-top:50%;
    
   }
   .filtro .filtro-content{
@@ -284,30 +300,66 @@ margin-top:auto;
   border: none;
   }
   
+  #inicio{
+    background-image: url('../imgs/animais.gif');
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    text-align: center;
+    height: 700px;
+  
+  }
+#sobre{
+  background-image: url('../imgs/animas.gif');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size:99.6% 100%;
+  text-align: center;
 
-  .sobre .sobre-content{
-     text-align: center;
+}
+  #sobre .sobre-content{
+    padding: 45px 85px;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    color: #fffffe;
   }
-  
+  .text
+{
+  color: #ffffff;
+}
   /*  sessão sobre  */
-  .title{
-      text-align: center;
-      color: #f1e8ec;
+.text1 {
+      font-size: 40px;
+      font-family: 'Lazy Dog';
+      color: #ffffff;
   }
-  .sobre .sobre-content .left{
-    width: 30%;
+  #sobre .sobre-content .card{
+    background-color: #ADB5A0;
+    border: 2px solid #586445;
+    border-radius: 20%;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
   }
 
-  .sobre .sobre-content .left img{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 6px;
+
+  #sobre .sobre-content .card:hover{
+      background: #586445;
   }
+  #sobre .sobre-content .card img{
+      width: 250px;
+      height: 300px;
+      border-radius: 50px;
+        border: 5px solid #4a5327;
+      transition: all 0.3s ease;
+  }
+ 
+  
+
+  
 
   .carrinho .carrinho-content{
     background-color: #909687;
@@ -318,6 +370,7 @@ margin-top:auto;
   
   
  }
+
  .carrinho .carrinho-content .finalizar{
   color: #fff;
   width:457px;
@@ -325,7 +378,7 @@ margin-top:auto;
   position: fixed;
   margin-left: 680px;
   text-align: center;
-  border-bottom: 2px solid #555c4ce0;
+ 
 
  }
 
@@ -335,8 +388,7 @@ margin-top:auto;
   text-align: center;
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
+ 
   position: relative;
 }
   .carrinho .carrinho-content .car{
@@ -361,7 +413,7 @@ margin-left: 20px;
     border-radius: 6px;
   }
 .produto .carousel .card{
-  background: 826990;
+  background: #826990;
    border-radius: 6px;
    padding: 20px 20px;
    text-align: center;

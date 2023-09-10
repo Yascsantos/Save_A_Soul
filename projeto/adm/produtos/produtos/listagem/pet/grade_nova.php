@@ -8,7 +8,7 @@
     <link rel="icon" type="imagem/png" href="../index/imgs/logo1.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="https://fonts.cdnfonts.com/css/lazy-dog" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
@@ -147,14 +147,18 @@
                   
                 
                       </script>
-                        <div class='but'> <a href='#produto' ></a></div><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
+                        <a href='#produto' class='but' ></a><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
                        
                         </section>
      
     
         <section  id="produto">
+        <h2 class='title'>Tudo para seu pet</h2>
+        <p class='text1'>Aqui temos diversos itens para o conforto e alegria do seu pet...
+        <br>  <br> <br>  <br>
+        </p>
             <div class="produto">
-            <h2 class='title'>Petshop</h2>
+           
          
 <?php
      include_once("../../../../../conexaoBD.php");

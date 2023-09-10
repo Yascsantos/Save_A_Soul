@@ -8,6 +8,7 @@
     <link rel="icon" type="imagem/png" href="../../index/imgs/logo1.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <linl rel='stylesheet' href="https://eng.m.fontke.com/family/1742293/">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
@@ -128,7 +129,7 @@
        </header>
        <section class='carrinho'>
       <b> <h2 class='title'>Seu carrinho de Compra</h2></b>
-<div class='max-width'>
+      <div class='max-width'>
 <div class='carrinho-content'>
 <?php 
   //processamento
@@ -152,10 +153,26 @@
       if(empty($id_u))
       {
         echo "
-        <center class='vazio'>
-          <h1>Seu carrinho está vazio</h1>
-          <img src='car.png'> 
-            <a href='grade_nova.php'><b>COMEÇE A COMPRAR</b></a></center>
+    <style>
+    .finalizar img{
+      height:300px;
+      width:400px;
+    }
+.car{
+  font-family:'La Lou';
+}
+   
+    
+    </style>
+    
+    <div class='finalizar'>
+    <img src='car.jpg'> 
+      </div>
+      <div class='car'>
+        <h2 class='text'>Seu carrinho está vazio <br> <a href='grade_nova.php'><b>comece a comprar</b></a></h2><br>
+        
+     </div>
+        
         ";
       }
 

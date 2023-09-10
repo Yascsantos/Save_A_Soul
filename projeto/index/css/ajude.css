@@ -15,10 +15,7 @@
   html{
     scroll-behavior: smooth;
 }
-body{
-  background-color: #adb5a0;
 
-}
   /*  todos os codigos similares  */
   section{
     padding: 100px 0;
@@ -154,7 +151,12 @@ margin-top:auto;
   background-image: url(../imgs/ajude.jpg);
   background-position: cover;
 }
+body {
+  background-image: url(../imgs/pet1.jpg);
+  background-size: 300% 130%;
+ background-position: center;
 
+}
 .sobre .sobre-content .left{
   width: 30%;
 }

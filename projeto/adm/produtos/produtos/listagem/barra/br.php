@@ -138,36 +138,37 @@
        </nav>
 </header>
 <section class="filtro">
-  <div class="max-width">
-              
+ 
     <div class="filtro-content">
-      
-           <span class='material-symbols-outlined' onclick='openPopup()'>tune</span>
-        <div id='popupContainer' style='display: none;'>
-                    <div  class='popup' >
-                      <br><br>
+      <div class='filt'>
+      <span class='material-symbols-outlined' onclick='openPopup()'>
+    tune
+    </span></div>
+    <div id='popupContainer' style='display: none;'>
+                          <div  class='popup' >
+                          <br><br>
                           <?php include_once("../filtro/filtro.php"); ?>
                           </div>
-                      
+                      </div>
                   
                       <script>
                           function openPopup() {
                               document.getElementById('popupContainer').style.display = 'block';
                           }
                   
-                          function closePopup() {
-                              document.getElementById('popupContainer').style.display = 'none';
-                          }
+                
                       </script>
-                      </div>
-                        <div><?php  include_once("barra.php"); ?></div> 
-                        </div> </div> </div>
-                    
-        <section  id="produto">
-        <h2 class='title'>Petshop</h2>
-<div class="max-width">
+                        <a href='#produto' class='but' ></a><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
+                       
+                        </section>
+     
+    
+                        <section  id="produto">
+        <h2 class='title'>Tudo para seu pet</h2>
+        <p class='text1'>Aqui temos diversos itens para o conforto e alegria do seu pet...
+        <br>  <br> <br>  <br>
+        </p>
             <div class="produto">
-          
            
     <?php
             if(isset($_POST['pesquisar']))
