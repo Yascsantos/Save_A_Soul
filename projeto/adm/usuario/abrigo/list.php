@@ -6,7 +6,7 @@
     }
     $id_u = $_SESSION['id_u']; 
 
-    $num1 = "SELECT * FROM adocao WHERE id_user = $id_u";
+    $num1 = "SELECT * FROM voluntario WHERE id_user = $id_u";
     $num2 = $conexao->query($num1) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
     foreach($num2 as $num3)
@@ -26,7 +26,7 @@
 
     else 
     {
-    $sql_query = "SELECT * FROM adocao WHERE id_user = $id_u";
+    $sql_query = "SELECT * FROM voluntario WHERE id_user = $id_u";
     $query = $conexao->query($sql_query) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 
 
@@ -63,7 +63,7 @@
     foreach($query as $exibe)
     {
         $id_user = $exibe['id_user'];
-        $id_ado = $exibe['id_ado'];
+        $id_ado = $exibe['id_vol'];
         $id_ani = $exibe['id_ani'];
         $data = $exibe['data_entre'];
         $hora = $exibe['horario'];
@@ -125,6 +125,7 @@
 
     }
 }
+
 
 
 

@@ -4,8 +4,8 @@
         session_start();
     }
 
-    $_SESSION['id_ani'] = $_GET['id']; //id_pro
-    $id_ani = $_SESSION['id_ani'];
+    $_SESSION['id_imgani'] = $_GET['id']; //id_do animal
+    $id_ani = $_SESSION['id_imgani'];
 
     if($_GET['id'] == "" && $_GET['id'] == 0)
     {

@@ -136,7 +136,7 @@
             <div class="sobre-content">
 <?php
     include_once("../../../conexaoBD.php");
-    $sql= "SELECT * FROM animal";
+    $sql= "SELECT * FROM animal WHERE status = 'disponivel'";
     $instrucao = mysqli_query($conexao,$sql);
 
 

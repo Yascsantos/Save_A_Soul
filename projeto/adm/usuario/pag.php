@@ -38,6 +38,8 @@
     <h3><a href="../produtos/produtos/listagem/usuario/compras.php">Pedidos já feitos</a></h3>
     <!--Mudar status-->
     <h3><a href="./adocao/list.php">Status da adoção</a></h3>
+    <h3><a href="./abrigo/list.php">Status do abrigo</a></h3>
+
 
     <a href="listagem.php">Voltar</a>
 

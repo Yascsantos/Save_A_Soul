@@ -6,16 +6,13 @@
     <title>Adotar</title>
 </head>
 <body>
-    <H2>Lar voluntário</H2>
     <p>
-        Muitos animais  quando ficam em situação de rua por muito tempo dentem a desacostumar a lidar com humanos. 
-        Para ajudar eles a se readaptarem a ONG Save a Soul desenvolveu um projeto de parceria com todos que 
-        tiverem desejo de ajudar.     
+    Quando os animais ficam muito tempo em situação de rua, eles desaprendem a lidar com humanos.
+    Para reverter esse problema a Save a Soul, propôs um projeto em colaboração com a comunidade de 
+    “Lar voluntário” onde os voluntários ajudariam esses animais a se reabilitarem, com o auxilio da ONG 
+    (em medicamentos, comida, vacinas, etc.)
     </p>
         
-    <p>Consiste em levar o animal para uma casa onde ele terá contato com outras pessoas para se readaptar.</p>
-    <p><b>OBS:</b> Caso necessário a ONG ajudará a mantê-lo durante o período da sua reabilitação. </p>
-
 </body>
 </html>
 <?php
@@ -28,18 +25,6 @@
     $_SESSION['id_ani'] = $_GET['codigo']; //id_ani
     $id = $_SESSION['id_ani'];
     
-    //IMAGENS 
-    $query= "SELECT * FROM imgani WHERE id_ani = $id";
-    $busca = mysqli_query($conexao,$query);
-    
-    foreach ($busca as $dados) 
-    {
-        echo "
-        <img src=".$dados['img']."  width='100px' height='100px'>
-        ";
-    }
-    echo "<br><br>";
-    
     //ANIMAIS
     $sql= "SELECT * FROM animal where id_ani = $id";
     $instrucao = mysqli_query($conexao,$sql);
@@ -50,11 +35,17 @@
         $porte = $exibe['porte'];
         $sexo = $exibe['sexo'];
 
-        echo "Esse(a) é o(a) $nome. <br> Ele(a) é um(a) $raca, de porte $porte e um(a) $sexo.";
+        echo "<p>
+                O nome do animal faz parte desse projeto. Deseja ajuda-lo?
+                <a href='abrigo.php?codigo=$id'>Sim</a>
+                <a href='../../adm/animais/listagem/grade.php'>   Não</a>
+            </p>";
+
+        echo "MAIS INFORMAÇÕES SOBRE ELE(A): <br> 
+            RAÇA: $raca <br>
+            PORTE: $porte <br>
+            SEXO: $sexo <br> .";
         echo "<br><br>";
-        echo "Deseja ajuda-lo? ";
-        echo "<a href='abrigo.php?codigo=$id'>Sim</a>";
-        echo "<a href='../../adm/animais/listagem/grade.php'>   Não</a>";
 
     }
 ?>   

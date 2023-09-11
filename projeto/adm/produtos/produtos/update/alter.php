@@ -96,7 +96,7 @@
 </head>
 <body>
     <h1>Cadastro de Produtos</h1>
-    <a href="../pg02.html">Voltar</a> <br>
+    <a href="../cadastro/infos/pro.php">Voltar</a> <br>
     <!--<a href="../listagem/list.php">Listagem</a>-->
     <br> <br>
     <form action="" method="post">

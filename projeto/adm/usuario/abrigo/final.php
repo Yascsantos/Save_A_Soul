@@ -7,7 +7,7 @@
     }
     $id = $_SESSION['codigo'];
 
-    $sql= "SELECT * FROM adocao where id_ado = $id";     
+    $sql= "SELECT * FROM voluntario where id_vol = $id";     
     $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
     foreach($instrucao as $cod)
     {
@@ -26,10 +26,10 @@
             $stt = $dados['status'];
             $mod = $dados['modalidade'];
         }
-        $moda = "adocao";
+        $moda = "abrigo";
         $status = "indisponivel";
     
-            $code = "UPDATE animal SET 
+            $code = "UPDATE voluntario SET 
                     status = '$status',
                     modalidade = '$moda' 
                     WHERE id_ani = $id_ani";
