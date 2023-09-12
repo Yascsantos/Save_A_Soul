@@ -14,6 +14,10 @@
   html{
     scroll-behavior: smooth;
 }
+.linha{
+  background-color:#52583a;
+  height: 30px;
+}
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
          .popup label {
@@ -22,10 +26,7 @@
        }
 
        #produto{
-        background-image: url('../imgs/pet.jpg');
-        background-position: cover;
-        background-repeat: no-repeat;
-        background-size:99.6% 100%;
+        background-color: #586445a8;
         text-align: center;
  
        }
