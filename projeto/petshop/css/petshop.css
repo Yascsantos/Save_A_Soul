@@ -15,8 +15,14 @@
     scroll-behavior: smooth;
 }
 .linha{
-  background-color:#52583a;
-  height: 30px;
+  background-color:#51703E;
+  text-align: center;
+  color: #fff;
+    font-family:  'League Spartan';
+    text-align: center;
+   
+
+  
 }
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
@@ -26,7 +32,7 @@
        }
 
        #produto{
-        background-color: #586445a8;
+        background-color: #ADB5A0;
         text-align: center;
  
        }
