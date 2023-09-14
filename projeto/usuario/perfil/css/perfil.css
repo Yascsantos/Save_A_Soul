@@ -6,7 +6,10 @@
   }
  
   body{
-    background-color: #2a3f268f;
+    background-image: url(../../../index/imgs/fundo-s.jpg);
+    background-position: center;
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
   }
 .text{
   font-family: "Poppins";
