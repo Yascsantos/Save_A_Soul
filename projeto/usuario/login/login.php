@@ -48,40 +48,58 @@
         $usuario = $_POST['usuario'];
 
         $sql= "SELECT * FROM user WHERE usuario = '$usuario'";
-        $query= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+        $query= $conexao->query($sql);
 
         foreach($query as $dados)
         {
-            $hash = $dados['senha'];
             $user = $dados['id_user'];
         }
 
-      
-        if(strlen($usuario) == 0 && strlen($password) == 0  )
+        if(empty($user))
         {
-            echo "<main class='erro'><h3>Preencha seus dados</h3>
+            echo "<main class='erro'><h3>Usuário não encontrodado</h3>
                 <img src='./imgs/atenção.png'></main>";
         }
 
-        else 
+        else
         {
-            if(password_verify($password, $hash))
-            {
-                header ('Location:../../index/index.php');
-                if(!isset($_SESSION))
-                {
-                    session_start();
-                }
-                $_SESSION['id_user'] = $user;
-            } 
+            foreach($query as $exibercent)
+            $hash = $exibercent['senha'];
+
+            if(strlen($usuario) == 0 && strlen($password) == 0  )
+            {           
+                echo "<main class='erro'><h3>Preencha seus dados</h3>
+                    <img src='./imgs/atenção.png'></main>";
+            }
+            
             else 
             {
-                $teste = "Senha incorreta";
-                echo $teste;
-
-            }
+                if(password_verify($password, $hash))
+                {
+                    header ('Location:../../index/index.php');
+                    if(!isset($_SESSION))
+                    {
+                        session_start();
+                    }
+                    $_SESSION['id_user'] = $user;
+                } 
+                else 
+                {
+                    echo "<main class='erro'><h3>SENHA INCORRETA</h3>
+                    <img src='./imgs/atenção.png'></main>";
+            
+            
+                }
+            }            
         }
-    } 
+    }
+
+    
+
+
+
+
+
 
 
 ?>
