@@ -21,6 +21,14 @@ CREATE table user (
     numero VARCHAR(10)
 );
 
+CREATE table parceiro (
+    id_par INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(50),
+    email VARCHAR(40),
+    senha VARCHAR(100),
+    foto VARCHAR(100)
+);
+
 
 /*PRODUTO*/
 CREATE TABLE categoria (
@@ -119,6 +127,27 @@ CREATE TABLE voluntario(
 		FOREIGN KEY (id_ani)REFERENCES animal (id_ani)	
 
 );
+
+CREATE TABLE doacao(
+    id_doa INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id_par INT,
+    data DATE,
+	forma VARCHAR(15),
+
+      FOREIGN KEY (id_par)REFERENCES parceiro (id_par)
+);
+
+CREATE TABLE planos(
+    id_pla INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    id_user INT,
+    data DATE,
+	forma VARCHAR(15),
+	tipo VARCHAR(15),
+
+      FOREIGN KEY (id_user)REFERENCES user (id_user)
+
+);
+
 
 
 
