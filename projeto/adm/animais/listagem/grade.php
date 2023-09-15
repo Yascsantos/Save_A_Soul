@@ -132,7 +132,7 @@
 <section id="inicio">
 </section>
 <section id="sobre">
-<h2 class='title'>Animais</h2>
+<h2 class='title'>A espera de um lar...</h2>
             <div class="sobre-content">
 <?php
     include_once("../../../conexaoBD.php");

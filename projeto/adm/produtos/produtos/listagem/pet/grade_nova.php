@@ -151,12 +151,13 @@
                        
                         </section>
      
-    
-        <section  id="produto">
-        <h2 class='title'>Tudo para seu pet</h2>
+    <div class='linha'>
+      <br><h2 class='title'>Tudo para seu pet</h2>
         <p class='text1'>Aqui temos diversos itens para o conforto e alegria do seu pet...
         <br>  <br> <br>  <br>
-        </p>
+        </p></div>
+        <section  id="produto">
+        
             <div class="produto">
            
          
