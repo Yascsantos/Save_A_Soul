@@ -32,7 +32,10 @@
        }
 
        #produto{
-        background-color: #ADB5A0;
+        background-image: url(../imgs/prod.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:100% 100% ;
         text-align: center;
  
        }
@@ -47,7 +50,7 @@
        }
 #produto .produto .card{
   background-color: #ADB5A0;
-   border: 2px solid #586445;
+   border: 2px solid #51703E;
    border-radius: 20%;
    padding: 25px 35px;
    text-align: center;
@@ -55,7 +58,7 @@
   
 }
 #produto .produto .card:hover{
-    background: #586445;
+    background: #51703E;
 }
 #produto .produto .card img{
     width: 250px;
@@ -163,7 +166,7 @@ margin-left: 30%;
     bottom:-12px;
     left: 50%;
     font-size: 20px;
-    background:  #d4987e;
+    background: #51703E;
     color: #f1e8ec;
     padding: 5px;
     border-radius: 10%;
