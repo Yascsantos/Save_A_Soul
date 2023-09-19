@@ -46,18 +46,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=c">
+	<link rel="stylesheet" href="../../../css/style.css">
     <title>Alteração da categoria</title>
 </head>
+
 <body>
+<main>
+        <div class="caixa">
+            <div class='espaco'></div>
+              <div class="caixa-dados">
     <h1>Cadastro de categorias</h1>
     <form action="" method="post">
         <input type="hidden" name="codigo" value="<?= $edit;?>" />
-
+<div class='input-dados'>
         <label>Categoria: </label> <br>
         <input type="text" placeholder="Mude a categoria" name="nome">
-        <input type="submit" name="alterar" value="Alterar categoria">
+        <button input type="submit" name="alterar" value="Alterar categoria">Alterar</button></div>
     </form>
-
+	</div>
+</div>
+</div>
+</main>
 
 </body>
 </html>

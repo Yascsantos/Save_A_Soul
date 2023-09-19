@@ -29,10 +29,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../projeto/adm/css/style.css">
     <title>Usuários</title>
 </head>
 <body>
-    <h1>Informações dos usuários</h1>
+<main>
+<div class="caixa">
+            <div class='espaco'></div>
+              <div class="caixa-dados">
+    <h2>Informações dos usuários</h2><br>
     <p>Usuário(a): <b><?php echo $nome;?></b></p>
 
     <h3><a href="../produtos/produtos/listagem/usuario/compras.php">Pedidos já feitos</a></h3>
@@ -44,5 +49,9 @@
     <a href="listagem.php">Voltar</a>
 
 
+    </div>
+
+</div>
+</main>
 </body>
 </html>

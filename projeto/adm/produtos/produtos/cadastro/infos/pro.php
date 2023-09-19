@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Cadastrar informações</title>
 </head>
@@ -130,7 +131,7 @@ margin-top:auto;
 
 <section class="sobre" id="sobre">
         <div class="max-width">
-    <h2 class='title'> Cadastrar mais informações dos produtos</h2>
+    <h2 class='title'> Cadastre mais informações dos produtos</h2>
     <div class='msg'><br>Clique na imagem para cadastrar, mudar ou deletar a imagem padrão do produto<br><br></div>
 </div></section>
 <?php
@@ -262,11 +263,17 @@ margin-top:auto;
             <td></td>
             <td align='center'><a href='../../cadastro/cor/page02.php?&codigo=".$exibe['cod']."'>Cadastrar cores</a></td>
             <td></td>
-            <td align='center'><a href='../../../../../imagens_pro/pg03.php?&codigo=".$exibe['cod']."'> Cadastrar + imagens</a></td> 
+            <td align='center'><a href='../../../../../imagens_pro/pg03.php?&codigo=".$exibe['cod']."'><span class='material-symbols-outlined'>
+            add_photo_alternate
+            </span></a></td> 
             <td></td>   
-            <td align='center'><a href='../../update/alter.php?&codigo=".$exibe['cod']."'>Alterar dados </a></td>
+            <td align='center'><a href='../../update/alter.php?&codigo=".$exibe['cod']."'><span class='material-symbols-outlined'>
+            app_registration
+            </span> </a></td>
             <td></td>
-            <td align='center'><a href='../../delete/delete.php?&codigo=".$exibe['cod']."'>Apagar produto</a></td> 
+            <td align='center'>
+           <a href='../../delete/delete.php?&codigo=".$exibe['cod']."'> <span class='material-symbols-outlined'>
+           delete</span></a></td> 
             <td></td>
 
 

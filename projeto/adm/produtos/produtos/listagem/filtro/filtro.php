@@ -53,9 +53,11 @@
      top:-45px;
      left:180px;
       color: white;
+      font: size 14px;px;
      
   }  </style> <div class='input-dados'>
             <form action='../filtro/fl.php' method='POST'>
+            <h2>Escolha a categoria</h2>
             <select name='categoria' required>
             <option value='0'>Selecione a categoria</option>
     ";

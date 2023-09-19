@@ -194,7 +194,7 @@ margin-top:auto;
         margin-left: 20%;
          font-size: 16px;
         }
-         </style>
+    
        
          </style>";
          echo "<body>";

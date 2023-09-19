@@ -17,10 +17,45 @@
     if (empty($id_user))
     {
         echo"
+        <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+body{
+            background-image: url(../../imgs/Aviso.gif);
+            background-position:center;
+            background-size:100% 100%;
+        }
+        .aviso{
+            margin-left:60%;
+            width:50%;
+            font-size:30px;
+            font-family:'League Spartan';
+            text-align: justify;
+            margin-top:20%;
+        }
+       .aviso h2{
+        
+            color:#AF2A2A;
+        }
+
+        a{
+            font-family:  'League Spartan';
+            text-decoration:none;
+            font-weight:600;
+            color:green;
+          }
+         
+          a:hover{
+            color:#3a3a3b;
+          }
+        
+        </style>
             <title>Lembrete!!</title>
+            
+            <div class='aviso'>
             <h2>Aviso!!!</h2>
-            O usuário não marcou nenhuma entrevista para adoção ainda <br><br>
-            <a href= '../listagem.php'>Voltar</a> <br><br>
+            O usuário não marcou nenhuma <br>entrevista para adoção ainda <br><br>
+            <a href= '../listagem.php'>Voltar</a> <br><br><div>
         ";
     }
 

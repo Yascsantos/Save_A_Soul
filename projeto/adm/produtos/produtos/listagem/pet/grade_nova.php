@@ -13,98 +13,139 @@
     <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
 <style>
-  *{
-    font-family: 'Poppins';
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins';
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
-   body {
-      font-family: 'Poppins';
-    }
-      @keyframes navLinkFade {
-      from {
-        opacity: 0;
-        transform: translateX(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    .mobile-menu.active .line1 {
-      transform: rotate(-45deg) translate(-8px, 8px);
-    }
-    
-    .mobile-menu.active .line2 {
-      opacity: 0;
-    }
-    
-    .mobile-menu.active .line3 {
-      transform: rotate(45deg) translate(-5px, -7px);
-    }
-   
-    @media (max-width: 1300px){
-      .navbar .max-width{
-          margin-left: 0;
-      }
-  }
-  
-  
-  
-  @media (max-width: 999px) {
-    body {
-      overflow-x: hidden;
-    
-    }
-    .nav-list {
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background-color:#cbacaad3;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
-  .nav-list.active {
+
+  to {
+    opacity: 1;
     transform: translateX(0);
   }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media (max-width: 1300px) {
+  .navbar .max-width {
+    margin-left: 0;
   }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
   }
-  
-  .mobile-menu.active .line2 {
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background-color: #cbacaad3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
     opacity: 0;
   }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
   }
 
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+button {
+  width: 30%;
+  height: 30px;
+  background: #adb5a0;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-top: 15px;
+  color: white;
+  margin-left: 20%;
+  font-size: 16px;
+}
+
+
+
+
+.popup label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+
+.popup {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.popup iframe {
+  border: none;
+}
 </style>
 <body>
 <header id="menu">
@@ -128,11 +169,18 @@
 </header>
 <section class="filtro">
  
-    <div class="filtro-content">
+    
+                        </section>
+     
+  
+        <section  id="produto">
+      <h2 class='title'>Tudo para seu pet</h2>
+       
+      <div class="filtro-content">
       <div class='filt'>
-      <span class='material-symbols-outlined' onclick='openPopup()'>
+     <butonn><span class='material-symbols-outlined' onclick='openPopup()'>
     tune
-    </span></div>
+    </span></butonn> </div>
     <div id='popupContainer' style='display: none;'>
                           <div  class='popup' >
                           <br><br>
@@ -149,14 +197,9 @@
                       </script>
                         <a href='#produto' class='but' ></a><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
                        
-                        </section>
-     
-  
-        <section  id="produto">
-      <h2 class='title'>Tudo para seu pet</h2>
-       
-  
+              
             <div class="produto">
+
         
          
 <?php
@@ -189,8 +232,6 @@
 
 ?> 
 
-                  </div> 
-              
 
     </section>
 </body>

@@ -172,7 +172,14 @@
   </header>
   <section class="filtro">
  
- <div class="filtro-content">
+ 
+                    
+                     </section>
+  
+ 
+                     <section  id="produto">
+                     <h2 class='title'>Tudo para seu pet</h2>
+                     <div class="filtro-content">
    <div class='filt'>
    <span class='material-symbols-outlined' onclick='openPopup()'>
  tune
@@ -192,15 +199,9 @@
              
                    </script>
                      <a href='#produto' class='but' ></a><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
-                    
-                     </section>
-  
- 
-                     <section  id="produto">
-        <h2 class='title'>Tudo para seu pet</h2>
-        <p class='text1'>Aqui temos diversos itens para o conforto e alegria do seu pet...
-        <br>  <br> <br>  <br>
-        </p>
+
+       
+     
             <div class="produto">
 
 
