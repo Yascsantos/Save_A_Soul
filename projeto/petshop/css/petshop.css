@@ -262,7 +262,7 @@ margin-top:auto;
   
   }
   .filt{
-    margin-left: 70%;
+    margin-left: 60%;
   
   }
   .lupa{
@@ -297,9 +297,8 @@ margin-top:auto;
   .popup {
     width: 300px;
     padding: 20px;
-   background-color: #08080800;
-    position: absolute;
-    top: 135%;
+     background-color: #08080800;
+    top: 1100px;
     left: 83%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -340,16 +339,15 @@ margin-top:auto;
   }
   #sobre .sobre-content .card{
     background-color: #ADB5A0;
-    border: 2px solid #586445;
-    border-radius: 20%;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
+   border-radius: 20%;
+   padding: 25px 35px;
+   text-align: center;
+   transition: all 0.3s ease;
   }
 
 
   #sobre .sobre-content .card:hover{
-      background: #586445;
+    background: #51703E;
   }
   #sobre .sobre-content .card img{
       width: 250px;
