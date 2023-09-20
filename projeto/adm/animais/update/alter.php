@@ -96,7 +96,7 @@
     <br> <br>
     <form action="" method="post">
     <input type="hidden" name="codigo" value="<?= $edit;?>" />
-   
+    <div class="input-dados">
         <label>Nome: </label> <br>
         <input type="text"  name="nome" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['nome_ani'];}?>">
         <br>
@@ -109,7 +109,7 @@
         <label>Sexo: </label> <br>
         <input type="text"  name="sx" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['sexo'];}?>">
         <br>
-        <button input type="submit" name="alterar" value="Alterar dados">Alterar</button>
+        <button input type="submit" name="alterar" value="Alterar dados">Alterar</button></div>
     </form>
     </div>
 

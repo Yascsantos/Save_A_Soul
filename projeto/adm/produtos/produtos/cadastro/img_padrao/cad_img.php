@@ -36,6 +36,7 @@
 			$instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 			
 			
+			
 			if (!$instrucao) 
 			{
 				die(' Query Inválida: ' . mysqli_error($conexao));
@@ -44,7 +45,10 @@
 			else 
 			{
 				mysqli_close($conexao);
-				header ('location: ../infos/pro.php');
+				echo "<h2 style='
+				@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+				@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+				font-family:'Poppins';'>Imagem enviada com sucesso!</h2>";
 				exit;
 
 			}
@@ -55,7 +59,7 @@
 			echo "Arquivo inexistente";
 		}
 	}
-
+		
 		
 ?>
 
@@ -64,18 +68,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/perfil.css" type="text/css">
+	<link rel="stylesheet" href="../../../../../usuario/perfil/css/perfil.css" type="text/css">
 	<title>Update de imagem</title>
+	<style>
+form{
+    background-color:white;
+}
+</style>
 </head>
 <body>
-    <h2>Cadastrar imagem padrão</h2>
-	<a href='../../listagem/pro.php'>Voltar</a><br><br>
-
+   
 	<form action='' method='POST' enctype="multipart/form-data">
     <input type="hidden" name="codigo" value="<?= $cod;?>" />
 		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input><br>                        
-        <input type="submit" value="Cadastrar" name="Cadastrar" class="button">
+        <button input type="submit" value="Cadastrar" name="Cadastrar">Cadastrar</button>
 		
         </form>
 </body>

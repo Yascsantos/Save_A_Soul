@@ -12,7 +12,7 @@
             <div class='espaco'></div>
               <div class="caixa-dados">
     <h1>Cadastro de Produtos</h1>
-    <a href="../listagem/pro.php">Listar produtos</a><br>
+    <a href="./infos/pro.php">Listar produtos</a><br>
     <a href="../pg02.html">Voltar</a> <br>
 
     <form action="cad.php" method="post">
