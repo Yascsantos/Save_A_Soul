@@ -168,8 +168,8 @@ button {
        </nav>
 </header>
 <section class="filtro">
- 
-    
+<a href='#produto' class='but'></a>
+
                         </section>
      
   
@@ -195,11 +195,11 @@ button {
                   
                 
                       </script>
-                        <a href='#produto' class='but' ></a><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
+                        <div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
                        
               
             <div class="produto">
-
+       
         
          
 <?php

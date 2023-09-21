@@ -14,16 +14,7 @@
   html{
     scroll-behavior: smooth;
 }
-.linha{
-  background-color:#51703E;
-  text-align: center;
-  color: #fff;
-    font-family:  'League Spartan';
-    text-align: center;
-   
 
-  
-}
 
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
          .popup label {
@@ -268,15 +259,15 @@ margin-top:auto;
   .lupa{
     margin-right: 10%;
   }
-  .but{
- 
-    margin-left: 66%;
+   .but{
+   margin: 20%;
+   margin-left: 60%;
     position: fixed;
     width: 190px;
     min-width:126px; 
-    background: #4c583800;
+    background: #1f271400;
     padding: 100px 20px;
-    margin-top:50%;
+
    
   }
 .filtro-content{
