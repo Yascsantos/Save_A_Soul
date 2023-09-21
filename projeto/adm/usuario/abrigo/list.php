@@ -54,7 +54,7 @@ body{
             
             <div class='aviso'>
             <h2>Aviso!!!</h2>
-            O usuário não marcou nenhuma <br>entrevista para adoção ainda <br><br>
+            O usuário não marcou nenhuma <br>entrevista para lar volontário ainda <br><br>
             <a href= '../listagem.php'>Voltar</a> <br><br><div>
         ";
     }
