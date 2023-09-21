@@ -68,7 +68,7 @@ form{
 	<form action='' method='POST' enctype="multipart/form-data">
 		<b><label for="pic"class="input-arquivo">Selecionar Arquivo</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input>                        
-        <button input type="submit" value="Enviar" name="Enviar">Enviar</button >
+        <button input type="submit" value="Enviar" name="Enviar">Enviar</button>
 		
         </form>
 </body>

@@ -43,7 +43,10 @@
 			else 
 			{
 				mysqli_close($conexao);
-				header ('location: list.php');
+				echo "<h2 style='
+				@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+				@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+				font-family:'Poppins';'>Imagem enviada com sucesso!</h2>";
 				exit;
 
 			}
@@ -54,7 +57,6 @@
 			echo "Arquivo inexistente";
 		}
 	}
-
 		
 ?>
 
@@ -63,19 +65,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/perfil.css" type="text/css">
+	<link rel="stylesheet" href="../usuario/perfil/css/perfil.css" type="text/css">
 	<title>Update de imagem</title>
 </head>
+<style>
+form{
+    background-color:white;
+}
+</style>
 <body>
-    <h2>Alterar imagem do produto</h2>
-	<a href='../adm/produtos/produtos/cadastro/infos/pro.php'>Voltar</a><br>
-	<a href='list.php'>Listagem imagens</a><br><br>
 	
 	<form action='' method='POST' enctype="multipart/form-data">
     <input type="hidden" name="codigo" value="<?= $edit;?>" />
 		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input><br>                        
-        <input type="submit" value="Alterar" name="Alterar" class="button">
+        <button input type="submit" value="Alterar" name="Alterar">Alterar</button>
 		
         </form>
 </body>
