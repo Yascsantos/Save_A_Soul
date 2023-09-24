@@ -186,7 +186,8 @@
           include_once("proc.php");
           echo "</b>";
           echo " <li><a href='grade_nova.php'>CONTINUAR COMPRANDO</a></li><br><br>";
-          echo "<a href='../../../../../petshop/obtencao/forma.html' ><button  class='comprar'><b>Finalizar compra</b></button></a>";
+          echo "<a href='../../../../../petshop/obtencao/forma.html' ><button  class='comprar'><b>Finalizar compra</b></button></a>
+          ";
           echo "
           </div>";
 

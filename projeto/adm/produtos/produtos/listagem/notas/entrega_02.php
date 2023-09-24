@@ -3,17 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Compra registrada</title>
 </head>
-<body>
-    <h1>Seu pedido foi registrado :)</h1>
-    <p>Abaixo estão os itens escolhidos. Muito obrigada pela confiança. </p>
-    <p>OBS: Caso você volte para o carrinho, sua compra será interrompida.</p>
-    <a href= "./entrega/armazena.php">Finalizar compra</a>
-    <a href= "./entrega/back.php">Voltar ao carrinho</a> <br><br>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
 
-</body>
-</html>
+    p{
+        font-family: 'league Spartan';
+    }
+</style>
+<body>
+<section class='carrinho'>
+      <b> <h2 class='title'>Seu pedido foi registrado :)</h2></b>
+     
+      <div class='max-width'>
+<div class='carrinho-content'>
+
+    
 
 <?php
     include_once("../../../../../conexaoBD.php");
@@ -27,8 +35,18 @@
 
     $sql_code = "SELECT * FROM pedido WHERE numero = $numero";
     $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-    
-    echo "<table>";
+   echo" <div class='finalizar'>";
+
+   
+    echo"<p>Ao lado estão os itens escolhidos. Muito obrigada pela confiança. </p>
+    <p>OBS: Caso você volte para o carrinho, sua compra será interrompida.<br>
+    <a href= './entrega/armazena.php'><button  class='comprar'>Finalizar compra</button></a>
+    <a href= './entrega/back.php'><span class='material-symbols-outlined'>
+    shopping_cart
+    </span></a> </p>";
+    include_once ("../pet/proc.php");
+    echo "</div>";
+   
     foreach($code as $dade)
     {
         $id_pro = $dade['id_pro'];
@@ -47,48 +65,49 @@
             $preco = $dados['preco'];
             $img_pro = $dados['img_pro'];
 
-
+            echo " <div class='car'>";
             echo "
-                <tr>
-                    <td align='center'>
+            
+                
                         <img src=".$img_pro." width='100px' height='100px'>
-                    </td>
-                    <td></td>
+                   
+                    <div class='text'>
 
-                    <td align='center'>
-                        ".$prod." 
-                    </td>
-                    
-                    <td align='center'>
+                 
+                    <h2>".$prod." </h2>
+                 
                         ".$cor."
-                    </td>
-
-                    <td align='center'>
+                
                         ".$tam."
-                    </td>
+                   
 
-                    <td align='center'>
+              
                         R$".$preco."
-                    </td>
+                
 
-                    <td align='center'>
+                  
                         ".$qtd."
-                    </td>
-
-                    <td align='center'>
-                        R$".$valor."
-                    </td>
+                        <button class='valor'> 
+                        R$".$valor."</b></button></div>
+            
 
 
-            </tr>
+                    </div>
             ";  
 
         }
 
     }
-    echo "</table>";
-    include_once ("../pet/proc.php");
+    echo "     
+    </div> 
+    </div> 
+    </section>
+";
+   
 
 
 
 ?>
+
+</body>
+</html>

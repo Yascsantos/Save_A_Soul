@@ -2,19 +2,6 @@
       include_once("protect.php");
 ?>
 
-
-        <!DOCTYPE html>
-        <html lang='pt-br'>
-        <head>
-            <meta charset='UTF-8'>
-            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    
-           
-            <title></title>
-        </head>
-
-<body>
-
 <?php
     include_once("../conexaoBD.php");
     include("protect.php");
@@ -37,13 +24,25 @@
     $sql= "SELECT * FROM imgpro WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
 
+    
     echo "
+   
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+    body{
+        background-image:url('imgs/fundo-s.jpg');
+        font-family:'Roboto';}
+   
     .sobre-produto{
-      margin: center;
+      margin-left:10% ;
+      width:80%;
        display:flex;
+       background-color: rgba(255, 255, 255, 0.4);
+       backdrop-filter: blur(40px);
+       padding: 30px 40px;
+       border-radius: 20px 20px ;
    }
+   
    .img img{
       width:300px;
       heigth:300px;
@@ -54,6 +53,7 @@
        padding:30px;
        text-aling:center;
        font-family:'Roboto';
+       color: #4c5838;
 
    }
    .tam {
@@ -67,38 +67,36 @@ label{
 }
 .comprar{
     align-items: center;
-    width: 50%;
     height:50px;
     background: #080808;
-    margin-right: 20%;
-    margin-top: 5px;
     color: white;
     font-size: 20px;
   }
 
+  .num{
+    width:20%;
+
+  }
  input {
     background-color: rgba(255, 255, 255, 0.32);
     border-radius: 20px;
     outline: none;
     border: 2px solid transparent;
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
     color: #616161;
     transition: all 0.4s ease;
+}
+form  input:focus{
+    border-color: #adb5a0;
 }
 a{
     color: hsl(257, 11%, 88%);
     text-decoration: none;
 }
-form  input:focus{
-    border-color: #adb5a0;
-}
     </style>
-    <div class='sobre-produto'> 
-        
-            <th align='center'></th>
-            <th> </th>
-        </tr>";
+        <div class='sobre-produto'> ";
+      
 
     foreach ($instrucao as $exibe) 
     {
@@ -121,7 +119,9 @@ form  input:focus{
     foreach ($pesquisa as $exibe) 
     {
        
-        echo "<div class='info-prod'>";
+        echo "
+        <title>" .$exibe['prod']."</title>
+   <div class='info-prod'>";
         echo"
        <p> ".$exibe['outros']."</p>
        <h2>".$exibe['prod']." / ".$exibe['modelo']."</h2>
@@ -157,7 +157,7 @@ form  input:focus{
         foreach ($busca as $exibe) 
         {
             echo "  <div class='tam'><input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['cor'].">
-            <p for=".$exibe['cor'].">".$exibe['cor']."</p></div>
+            ".$exibe['cor']."</div>
             ";
     
         }
@@ -166,7 +166,7 @@ form  input:focus{
     echo "
    
         <div>Quantidade: 
-        <input type='number' placeholder='Quantidade' name='qtd'><br>
+        <input type='number' placeholder='Qtd' name='qtd' class='num'><br>
         <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php'> Voltar a comprar</a>
 </div>
     ";

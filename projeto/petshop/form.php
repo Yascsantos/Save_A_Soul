@@ -23,12 +23,27 @@
     $instrucao = mysqli_query($conexao,$sql);
 
     echo "
+   
+   
+
     <style>
+   
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+    body{
+        background-image:url('imgs/fundo-s.jpg');
+           font-family:'Roboto';
+       }
+   
     .sobre-produto{
-      margin: center;
+      margin-left:10% ;
+      width:80%;
        display:flex;
+       background-color: rgba(255, 255, 255, 0.4);
+       backdrop-filter: blur(40px);
+       padding: 30px 40px;
+       border-radius: 20px 20px ;
    }
+   
    .img img{
       width:300px;
       heigth:300px;
@@ -39,6 +54,7 @@
        padding:30px;
        text-aling:center;
        font-family:'Roboto';
+       color: #4c5838;
 
    }
    .tam {
@@ -52,21 +68,22 @@ label{
 }
 .comprar{
     align-items: center;
-    width: 50%;
     height:50px;
     background: #080808;
-    margin-right: 20%;
-    margin-top: 5px;
     color: white;
     font-size: 20px;
   }
 
+  .num{
+    width:20%;
+
+  }
  input {
     background-color: rgba(255, 255, 255, 0.32);
     border-radius: 20px;
     outline: none;
     border: 2px solid transparent;
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
     color: #616161;
     transition: all 0.4s ease;
@@ -74,48 +91,41 @@ label{
 form  input:focus{
     border-color: #adb5a0;
 }
+a{
+    color: hsl(257, 11%, 88%);
+    text-decoration: none;
+}
     </style>
-        <div class='sobre-produto'> 
-    <table> 
-        <tr>
-            <th align='center'></th>
-            <th> </th>
-        </tr>";
-
-    foreach ($instrucao as $exibe) 
-    {
-        echo "
-        <tr>
-            <td align='center'><img src=".$exibe['img']." width='100px' height='100px'></td>
-            <td></td>
-        </tr>
-        ";
-    }
-    echo"</table>";
+        <div class='sobre-produto'> ";
 
 
+        foreach ($instrucao as $exibe) 
+        {
+            echo "
+            <div class='img'>
+        <img src=".$exibe['img'].">
+            
+            </div>
+         ";
+        
+        }
+    
+     
 
+        echo"<div class='info-prod'>";
     //PRODUTOS
     $sql_code= "SELECT * FROM produto WHERE id_pro = $pro";
     $pesquisa = mysqli_query($conexao,$sql_code);
-    
-    echo "<table>";
+   
     foreach ($pesquisa as $exibe) 
     {
-        ECHO "
-        <!DOCTYPE html>
-        <html lang='pt-br'>
-        <head>
-            <meta charset='UTF-8'>
-            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-            <title>".$exibe['prod']."</title>
-        </head>
-       
-      ";
+        
 
-  
+   
         
         echo"
+        <title>" .$exibe['prod']."</title>
+   
        <p> ".$exibe['outros']."</p>
        <h2>".$exibe['prod']." / ".$exibe['modelo']."</h2>
         <h3 align='center' > Preço:R$".$exibe['preco']."</h3>
@@ -134,8 +144,8 @@ form  input:focus{
     echo "<label>Tamanhos disponivéis</label><br>";
     foreach ($instrucao as $exibe) 
     {
-        echo "  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['tamanho'].">
-        <label for=".$exibe['tamanho'].">".$exibe['tamanho']."</label><br>
+        echo "  <div class='tam'> <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['tamanho'].">
+        ".$exibe['tamanho']."</div>
      
         ";
 
@@ -148,8 +158,8 @@ form  input:focus{
         echo "<label>Cores disponivéis</label><br>";
         foreach ($busca as $exibe) 
         {
-      echo "  <input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['cor'].">
-            <label for=".$exibe['cor'].">".$exibe['cor']."</label><br>
+      echo "  <div class='tam'><input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['cor'].">
+        ".$exibe['cor']."</div>
             ";
     
         }
@@ -157,7 +167,7 @@ form  input:focus{
     echo "
    
     <div>Quantidade: 
-    <input type='number' placeholder='Quantidade' name='qtd'><br>
+    <input type='number' placeholder='Qnt' name='qtd' class='num'><br>
     <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php'> Voltar a comprar</a>
 </div>
 ";
