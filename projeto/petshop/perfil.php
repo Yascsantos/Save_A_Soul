@@ -8,14 +8,13 @@
         <head>
             <meta charset='UTF-8'>
             <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    
            
             <title></title>
         </head>
 
 <body>
-   
-</body>
-</html>
+
 <?php
     include_once("../conexaoBD.php");
     include("protect.php");
@@ -57,6 +56,43 @@
        font-family:'Roboto';
 
    }
+   .tam {
+  display:flex;
+  
+}
+label{
+    color: #4c5838;
+    font-weight: bold;
+    display: block;
+}
+.comprar{
+    align-items: center;
+    width: 50%;
+    height:50px;
+    background: #080808;
+    margin-right: 20%;
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+  }
+
+ input {
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+a{
+    color: hsl(257, 11%, 88%);
+    text-decoration: none;
+}
+form  input:focus{
+    border-color: #adb5a0;
+}
     </style>
     <div class='sobre-produto'> 
         
@@ -81,11 +117,11 @@
     $sql_code= "SELECT * FROM produto WHERE id_pro = $id";
     $pesquisa = mysqli_query($conexao,$sql_code);
     
-    echo "<div class='info-prod'>";
+  
     foreach ($pesquisa as $exibe) 
     {
        
-
+        echo "<div class='info-prod'>";
         echo"
        <p> ".$exibe['outros']."</p>
        <h2>".$exibe['prod']." / ".$exibe['modelo']."</h2>
@@ -102,11 +138,11 @@
     $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
 
-    echo "<label>Tamanhos</label><br>";
+    echo "<label>Tamanhos</label>";
     foreach ($instrucao as $exibe) 
     {
-        echo "  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['tamanho'].">
-        <label for=".$exibe['tamanho'].">".$exibe['tamanho']."</label><br>
+        echo "<div class='tam'>  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['tamanho'].">
+        ".$exibe['tamanho']."</div>
      
         ";
    
@@ -117,11 +153,11 @@
         $code= "SELECT * FROM cores WHERE id_pro = $id";
         $busca = mysqli_query($conexao,$code);
         
-        echo "<label>Cores disponivéis</label><br>";
+        echo "<label>Cores </label>";
         foreach ($busca as $exibe) 
         {
-            echo "  <input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['cor'].">
-            <label for=".$exibe['cor'].">".$exibe['cor']."</label><br>
+            echo "  <div class='tam'><input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['cor'].">
+            <p for=".$exibe['cor'].">".$exibe['cor']."</p></div>
             ";
     
         }
@@ -135,7 +171,7 @@
 </div>
     ";
    
- echo "<br><br><input type='submit' name='salvar' value= 'Adicionar ao carrinho'></input>";
+ echo "<br><br><input type='submit' name='salvar' value= 'Adicionar ao carrinho' class='comprar'/>";
  echo "</div>";
      echo "</div>";
     echo "</form>";
@@ -144,3 +180,6 @@
 
 ?>
 
+   
+</body>
+</html>
