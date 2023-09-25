@@ -90,6 +90,9 @@ form .input-dados input{
     color: #616161;
     transition: all 0.4s ease;
 }
+form .input-dados input:focus{
+    border-color: #adb5a0;
+}
  select{
     width: 50%;
     height: 50px;
@@ -102,9 +105,7 @@ form .input-dados input{
     color: #616161;
     transition: all 0.4s ease;
 }
-form .input-dados input:focus{
-    border-color: #adb5a0;
-}
+
  .submit {
     width: 50%;
     float: right;
