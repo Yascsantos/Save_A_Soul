@@ -133,7 +133,7 @@
         <body>
         <header id='menu'>
         <nav>
-     <img src='../../../../petshop/imgs/logo.png' >
+     <img src='../../../../../petshop/imgs/logo.png' >
        <ul class='nav-list'>
             <li><a href='../../listagem/list.php'>VOLTAR</a> </li>
             <br>
@@ -149,7 +149,7 @@
             <div class='espaco'></div>
               <div class='caixa-dados'>
             <tr>
-            <th>  <h2>Pedidos realizados pelo usuári</h2></th></tr>
+            <th>  <h2>Pedidos realizados pelo usuário</h2></th></tr>
                     <tr>"; 
         foreach($query as $dade)
         {
@@ -175,35 +175,35 @@
         
                     echo "
                
-                            
+                          
                                 <img src=".$img_pro." width='100px' height='100px'>
                          
-        
-                                ".$prod." 
+                                <div class='info'>
+                                ".$prod." /
                           
                             
                        
-                                ".$cor."
+                                ".$cor."/
                               
         
                         
-                                ".$tam."
+                                ".$tam."/
                               
                          
-                                R$".$preco."
+                                R$".$preco."/
                                
         
                           
-                                ".$qtd."
+                                ".$qtd."/
                                
                        
-                                R$".$valor."
+                                R$".$valor."/
                             
         
                          
                                 ".$data."
                                 
-                                <br>
+                                </div>
         
         
                     ";  
