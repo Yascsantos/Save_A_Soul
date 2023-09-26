@@ -17,20 +17,11 @@
     $id_user = $_SESSION['id_user']; 
     
     include_once("../../conexaoBD.php");
-
+   
     if(isset($_POST['entrega']))
     {
         echo "
-            <form action='' method='post'>
-                <input type='radio'  id=pix name='pag' value= 'pix'>
-                <label for='pix'>PIX</label><br>
-
-                <input type='radio'  id='cartao' name='pag' value= 'cartao'>
-                <label for='cartao'>CARTÃO</label><br>
-
-                <input type='submit' name='conf' value= 'Confirmar'>
-
-            </form>
+       
         ";    
         
     }

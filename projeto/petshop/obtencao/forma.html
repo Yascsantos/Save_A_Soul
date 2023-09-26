@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +58,35 @@ button{
           <div class="caixa-dados">
     <h2>Qual a forma de retirada?</h2>
     <form action="entrega.php" method="post">
-        <a href='entrega.php'><button type='submit' name="entrega">Entrega</button></a>
+      <button type='submit' name="entrega" onclick='openPopup()'>Entrega</button>
+      <div id='popupContainer' style='display: none;''>
+        <div  class='popup' >
+         <span class='material-symbols-outlined' onclick='closePopup()'>
+        close
+        </span> 
+        <form action='entrega.php' method='post'>
+            <input type='radio'  id=pix name='pag' value= 'pix'>
+            <label for='pix'>PIX</label><br>
+
+            <input type='radio'  id='cartao' name='pag' value= 'cartao'>
+            <label for='cartao'>CARTÃO</label><br>
+
+            <input type='submit' name='conf' value= 'Confirmar'>
+
+        </form>
+     
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popupContainer').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popupContainer').style.display = 'none';
+        }
+    </script>
     </form>
 
     <form action="retira.php" method="post">
@@ -71,3 +100,4 @@ button{
 
 </body>
 </html>
+
