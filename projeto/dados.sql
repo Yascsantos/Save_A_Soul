@@ -19,8 +19,8 @@
 -- Copiando dados para a tabela save.animal: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `animal` DISABLE KEYS */;
 INSERT INTO `animal` (`id_ani`, `nome_ani`, `raca`, `porte`, `sexo`, `img_ani`, `status`, `modalidade`) VALUES
-	(2, 'Foozi', 'shih tzu', 'Pequeno', 'Macho', '../listagem/img/2023.07.13-16.46.40.jpg', NULL, NULL),
-	(11, 'Pietra', 'Pinscher', 'Pequeno', 'feminino', '../listagem/img/2023.07.17-15.58.01.jpg', NULL, NULL);
+	(2, 'Foozi', 'shih tzu', 'Pequeno', 'Macho', '../listagem/img/2023.07.13-16.46.40.jpg', 'disponivel', NULL),
+	(11, 'Pietra', 'Pinscher', 'Pequeno', 'feminino', '../listagem/img/2023.07.17-15.58.01.jpg', 'disponivel', NULL);
 /*!40000 ALTER TABLE `animal` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.armazena: ~0 rows (aproximadamente)

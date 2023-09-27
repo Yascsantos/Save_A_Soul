@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../petshop/css/petshop.css" type="text/css">
     <title>Adotar</title>
 </head>
-<body>
+<body> 
+<div class="caixa-dados">
     <p>
+    
         Muitas pessoas querem um animalzinho em casa para fazer companhia porém não tem condições de comprar um.<br>
         Em contrapartida, muitos animais querem e precisam de um lar.
     </p>
-        
+        <br>
     <p> 
         Porque não resolver esses dois problemas de uma vez só??
         Por isso a ONG desenvolveu um sistema de adoção para que todos possam ter um bichinho em suas casas sem 
         precisar pagar para isso.
     </p>
 
-</body>
-</html>
+
 <?php
     include_once("../../conexaoBD.php");
 
@@ -41,9 +43,28 @@
 
         echo "Esse(a) é o(a) $nome. <br> Ele(a) é um(a) $raca, de porte $porte e um(a) $sexo.";
         echo "<br><br>";
+        
         echo "Deseja adota-lo? ";
-        echo "<a href='adocao.php?codigo=$id'>Sim</a>";
-        echo "<a href='../../adm/animais/listagem/grade.php'>   Não</a>";
+        echo "<a onclick='openPopup()'>Sim</a>
+        <div id='popupContainer' style='display: none;'>
+        <div  class='popup' >
+         <span class='material-symbols-outlined' onclick='closePopup()'>
+        close
+        </span> 
+<iframe href='adocao.php?codigo=$id'></iframe>        </div>
+    </div>
+    <script>
+        function openPopup() {
+            document.getElementById('popupContainer').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popupContainer').style.display = 'none';
+        }
+    </script>";
+        echo "<a href='../../adm/animais/listagem/grade.php'> Não</a>";
 
     }
-?>   
+?>   </div>
+</body>
+</html>      
