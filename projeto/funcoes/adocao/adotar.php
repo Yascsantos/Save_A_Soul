@@ -1,13 +1,78 @@
+<?php
+include_once("../../conexaoBD.php");
+
+if(!isset($_SESSION))
+{
+    session_start();
+}
+$user = $_SESSION['id_user'];
+$id = $_SESSION['id_ani'];
+
+if(isset($_POST['enviar']))    
+{
+    $data = $_POST['data'];
+    $hora = $_POST['horas'];
+
+    $tabela="adocao";
+    $campo= "id_user, id_ani, data_entre, horario, status"; 
+
+    $sql = "INSERT INTO $tabela ($campo) 
+    VALUES ('$user','$id','$data', '$hora', '---')";
+
+    $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+
+    if (!$instrucao) 
+    {
+        die(' Query Inválida: ' . mysqli_error($conexao));
+    }
+    
+    
+    else 
+    {
+        $code = "UPDATE animal SET 
+        status = 'analise',
+        modalidade = '---' 
+        WHERE id_ani = $id";
+        $codigo= $conexao->query($code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+
+        if (!$codigo) 
+        {
+            die(' Query Inválida: ' . mysqli_error($conexao));
+        }
+
+        else 
+        {
+            $sql_code = "SELECT * FROM adocao where id_ani = $id and id_user = $user";
+            $code = mysqli_query($conexao,$sql_code);
+            foreach ($code as $dade) 
+            {
+                $id_adocao = $dade['id_ado'];
+                $_SESSION['id_adocao'] = $id_adocao;
+                header ('location:compro.php');
+            }
+
+        }
+
+    }
+
+}
+
+
+
+?>  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../petshop/css/petshop.css" type="text/css">
+    <link rel="stylesheet" href="../../adm/css/style.css">
     <title>Adotar</title>
 </head>
+
 <body> 
+    <main>
 <div class="caixa-dados">
+
     <p>
     
         Muitas pessoas querem um animalzinho em casa para fazer companhia porém não tem condições de comprar um.<br>
@@ -50,8 +115,21 @@
         <div  class='popup' >
          <span class='material-symbols-outlined' onclick='closePopup()'>
         close
-        </span> 
-<iframe href='adocao.php?codigo=$id'></iframe>        </div>
+        </span>
+
+<p>Antes de adota-lo você precisa conhece-lo. <br>
+    Preencha o formulário a baixo para marcarmos seu encontro.
+</p>
+
+<h2>Escolha data e horário</h2>
+
+
+<form method='post' action=''>
+    <input type='date' name='data'/>
+    <input type='time' name='horas'/><br>
+     <button input type='submit' name='enviar' value='Enviar' />Agendar</button>
+</form>
+     </div>
     </div>
     <script>
         function openPopup() {
@@ -65,6 +143,8 @@
         echo "<a href='../../adm/animais/listagem/grade.php'> Não</a>";
 
     }
-?>   </div>
+?>   </div></main>
 </body>
 </html>      
+
+
