@@ -25,8 +25,7 @@ CREATE table parceiro (
     id_par INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     nome VARCHAR(50),
     email VARCHAR(40),
-    senha VARCHAR(100),
-    foto VARCHAR(100)
+    senha VARCHAR(100)
 );
 
 
