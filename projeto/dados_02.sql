@@ -70,6 +70,10 @@ INSERT INTO `cores` (`id_cor`, `id_pro`, `cor`) VALUES
 	(5, 2, 'Marrom e cinza');
 /*!40000 ALTER TABLE `cores` ENABLE KEYS */;
 
+-- Copiando dados para a tabela save.doacao: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `doacao` DISABLE KEYS */;
+/*!40000 ALTER TABLE `doacao` ENABLE KEYS */;
+
 -- Copiando dados para a tabela save.imgani: ~4 rows (aproximadamente)
 /*!40000 ALTER TABLE `imgani` DISABLE KEYS */;
 INSERT INTO `imgani` (`id_imgani`, `id_ani`, `img`) VALUES
@@ -89,6 +93,12 @@ INSERT INTO `imgpro` (`id_imgpro`, `id_pro`, `img`) VALUES
 	(5, 3, '../img_pro/2023.08.01-23.22.10.jpg');
 /*!40000 ALTER TABLE `imgpro` ENABLE KEYS */;
 
+-- Copiando dados para a tabela save.parceiro: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `parceiro` DISABLE KEYS */;
+INSERT INTO `parceiro` (`id_par`, `nome`, `email`, `senha`, `foto`) VALUES
+	(1, 'Maya Santos', 'Frairy@gmail.com', '$2y$10$3rapSOqwYNGBL9iY24E/l.RxI9LnMi4aTZAItXZcrBefJS./DhcIG', NULL);
+/*!40000 ALTER TABLE `parceiro` ENABLE KEYS */;
+
 -- Copiando dados para a tabela save.pedido: ~3 rows (aproximadamente)
 /*!40000 ALTER TABLE `pedido` DISABLE KEYS */;
 INSERT INTO `pedido` (`id_ped`, `id_user`, `id_pro`, `numero`, `cor`, `tamanho`, `qtd`, `valor`) VALUES
@@ -96,6 +106,10 @@ INSERT INTO `pedido` (`id_ped`, `id_user`, `id_pro`, `numero`, `cor`, `tamanho`,
 	(2, 1, 1, 4, 'Roxo', 'M', 10, 150.00),
 	(3, 1, 3, 4, 'Roxo', 'M', 2, 24.00);
 /*!40000 ALTER TABLE `pedido` ENABLE KEYS */;
+
+-- Copiando dados para a tabela save.planos: ~0 rows (aproximadamente)
+/*!40000 ALTER TABLE `planos` DISABLE KEYS */;
+/*!40000 ALTER TABLE `planos` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.produto: ~3 rows (aproximadamente)
 /*!40000 ALTER TABLE `produto` DISABLE KEYS */;
@@ -118,15 +132,11 @@ INSERT INTO `tamanhos` (`id_tam`, `id_pro`, `tamanho`) VALUES
 	(8, 3, 'G');
 /*!40000 ALTER TABLE `tamanhos` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.user: ~1 rows (aproximadamente)
+-- Copiando dados para a tabela save.user: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` (`id_user`, `usuario`, `nome`, `email`, `telefone`, `senha`, `foto`, `cep`, `pais`, `estado`, `cidade`, `bairro`, `rua`, `numero`) VALUES
 	(1, 'Yas', 'Yasmin Santos', 'yasmin2@gmail.com', '(11)96972-8466', '$2y$10$r84x8i8cP/QSu29YJRCa2u2CLjCLwMoY6t89Yf7Y.0rsUKXu3B4GG', './img/2023.09.10-17.45.24.jpg', '06528086', 'Brasil', 'SP', 'Santana de ParnaÃ­ba', 'Varzea de souza ', 'Rua do Astronauta', '280');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
-
--- Copiando dados para a tabela save.usuario: ~0 rows (aproximadamente)
-/*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-/*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.voluntario: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `voluntario` DISABLE KEYS */;
