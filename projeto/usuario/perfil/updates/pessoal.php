@@ -121,7 +121,7 @@
                     <option value="RS">RS-Rio Grande do Sul</option>
                     <option value="RO">RO-Rondônia</option>
                     <option value="RR">RR-Roraima</option>
-            .        <option value="SC">SC-Santa Catarina </option>
+                    <option value="SC">SC-Santa Catarina </option>
                     <option value="SP">SP-São Paulo </option>
                     <option value="SE">SE-Sergipe</option>
                     <option value="TO">TO-Tocantins</option>

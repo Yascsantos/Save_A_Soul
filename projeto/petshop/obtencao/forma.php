@@ -1,11 +1,16 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../../adm/css/style.css">
-    <title>Forma de obtenção</title>
+<title>Forma de obtenção</title>
 </head><style>
     body {
         background-image: url(../imgs/fundo.jpg);
@@ -53,21 +58,37 @@ button{
 
 </style>
 <body>
-
-          <div class="caixa-dados">
+   
+<div class="caixa-dados">
     <h2>Qual a forma de retirada?</h2>
     <form action="entrega.php" method="post">
-        <a href='entrega.php'><button type='submit' name="entrega">Entrega</button></a>
-    </form>
+    <a type='submit' name="entrega" onclick='openPopup()'><h2>Entrega</h2></a>
+      <div id='popupContainer' style='display: none;'>
+        <div  class='popup' >
+         <span class='material-symbols-outlined' onclick='closePopup()'>
+        close
+        </span> 
+            <input type='radio'  id=pix name='pag' value= 'pix'>
+            <label for='pix'>PIX</label><br>
 
+            <input type='radio'  id='cartao' name='pag' value= 'cartao'>
+            <label for='cartao'>CARTÃO</label><br>
+
+            <input type='submit' name='conf' value= 'Confirmar'>
+        </div>
+    </div></form>
     <form action="retira.php" method="post">
         <a href='retira.php'><button type='submit' name="retira">Retira</button></a>
     </form>
-    
 
+    <script>
+        function openPopup() {
+            document.getElementById('popupContainer').style.display = 'block';
+        }
 
-</div>
-
-
+        function closePopup() {
+            document.getElementById('popupContainer').style.display = 'none';
+        }
+    </script>
 </body>
 </html>
