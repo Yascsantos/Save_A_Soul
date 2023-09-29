@@ -113,7 +113,7 @@
           <li> <a href="index.php">INICIO</a></li>
           <li> <a href="../adm/animais/listagem/grade.php">ANIMAIS</a></li>
           <li> <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
-          <li> <a href="../funcoes/doacao/pag_01.html">DOE</a></li>
+          <li> <a href="../funcoes/doacao/painel.html">DOE</a></li>
           <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
@@ -183,7 +183,7 @@ Você pode escolher entre fazer uma doação recorrente, onde já fica programad
 Para sua segurança, utilizamos a plataforma do Paypal para o recebimento das doações. Por isso, ao clicar no botão de doação, uma nova página será aberta para que a transação da doação seja realizada.
 
 Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidade e continuidade.<br></b>
-                    <a href="../funcoes/doacao/pag_01.html">Doe</a>
+                    <a href="../funcoes/doacao/painel.html">Doe</a>
                 </div>
             </div>
         </div>

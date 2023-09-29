@@ -37,6 +37,20 @@
                 } 
                 else 
                 {
+                    $sql_code= "SELECT id_par FROM parceiro WHERE senha='$hash'";
+                    $sql_query= $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
+        
+                    foreach ($sql_query as $dados)
+                    {
+                        $par = $dados['id_par'];
+                        if(!isset($_SESSION))
+                        {
+                            session_start();
+                        }
+        
+                        $_SESSION['id_par'] = $par;
+        
+                    }
                     mysqli_close($conexao);
                     header ('Location:mens.php');
                     exit;
