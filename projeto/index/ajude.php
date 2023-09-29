@@ -120,7 +120,6 @@
 
        </nav>
 </header>
-</section>
     <section id="ajuda">
             <div class="ajuda-content">
           
