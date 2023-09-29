@@ -65,25 +65,64 @@ if(isset($_POST['enviar']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../index/css/index.css">
     <link rel="stylesheet" href="../../adm/css/style.css">
+    <link rel="stylesheet" href="../../petshop/css/petshop.css">
     <title>Adotar</title>
 </head>
+<style> 
+.Popup {
+     background-color:#pink;
+     color:black;
+     top: 50%;
+ margin-left:30%;
+   
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+</style>
 
 <body> 
+<header id="menu">
+      <nav>
+   <img src="../../index/imgs/logo.png" >
+        <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+             
+            </div>
+     <ul class="nav-list">
+          <li> <a href="index.php">INICIO</a></li>
+          <li> <a href="../adm/animais/listagem/grade.php">ANIMAIS</a></li>
+          <li> <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
+          <li> <a href="../funcoes/doacao/pag_01.html">DOE</a></li>
+          <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <br>
+       </ul>
+
+       </nav>
+</header>
+<section id="ajuda">
+            <div class="ajuda-content">
+</div>
+    </section>
     <main>
 <div class="caixa-dados">
-
-    <p>
+        <p>
     
-        Muitas pessoas querem um animalzinho em casa para fazer companhia porém não tem condições de comprar um.<br>
-        Em contrapartida, muitos animais querem e precisam de um lar.
-    </p>
-        <br>
-    <p> 
-        Porque não resolver esses dois problemas de uma vez só??
-        Por isso a ONG desenvolveu um sistema de adoção para que todos possam ter um bichinho em suas casas sem 
-        precisar pagar para isso.
-    </p>
+    Muitas pessoas querem um animalzinho em casa para fazer companhia porém não tem condições de comprar um.<br>
+    Em contrapartida, muitos animais querem e precisam de um lar.
+</p>
+    <br>
+<p> 
+    Porque não resolver esses dois problemas de uma vez só??
+    Por isso a ONG desenvolveu um sistema de adoção para que todos possam ter um bichinho em suas casas sem 
+    precisar pagar para isso.
+</p>
+
+
+   
 
 
 <?php
@@ -112,7 +151,7 @@ if(isset($_POST['enviar']))
         echo "Deseja adota-lo? ";
         echo "<a onclick='openPopup()'>Sim</a>
         <div id='popupContainer' style='display: none;'>
-        <div  class='popup' >
+        <div class='Popup'> 
          <span class='material-symbols-outlined' onclick='closePopup()'>
         close
         </span>
@@ -143,7 +182,9 @@ if(isset($_POST['enviar']))
         echo "<a href='../../adm/animais/listagem/grade.php'> Não</a>";
 
     }
-?>   </div></main>
+?>          
+</div>
+</main>
 </body>
 </html>      
 
