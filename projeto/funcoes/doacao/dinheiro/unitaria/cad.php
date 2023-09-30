@@ -37,7 +37,7 @@
                 } 
                 else 
                 {
-                    $sql_code= "SELECT id_par FROM parceiro WHERE senha='$hash'";
+                    $sql_code= "SELECT id_par FROM parceiro WHERE senha='$hash' and nome='$nome'";
                     $sql_query= $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
         
                     foreach ($sql_query as $dados)

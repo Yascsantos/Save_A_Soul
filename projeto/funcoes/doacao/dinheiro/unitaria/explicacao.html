@@ -6,13 +6,41 @@
     <title>Doação de dinheiro</title>
 </head>
 <body>
+    <h2> DOAÇÃO ÚNICA </h2>
     <p>
-        No sistema de doação unitária, você pode doar um valor para a nossa instituição para nos 
-        ajudar a manter os cuidados com os animaizinhos apenas nas vezes que você tiver interesse.<br>
-        Deseja realizar essa doação?
-        <br><br><br>
-        <button type="button"><a href="./form.html">SIM</a> </button><br>
-        <button type="button"> <a href="../../pag_01.html">NÃO </a> </button><br>
+        No sistema de doação única, você pode doar um valor para a ajudar o nosso projeto na quantia que você puder e desejar.<br>
     </p>
+    <P>
+        Para garantir uma melhor segurança, mandaremos os dados para realizar a doação em seu e-mail. <br>
+    </P>
+
+    <p>
+        Preencha o formulário abaixo com seu nome, e-mail e uma senha de sua preferencia para podermos mandar os dados a você.
+    </P>
+
+    <h2> Formulário</h2>
+    <form method="post" action="./cad.php">
+        <label for="nome"> Nome:</label>
+        <input type="text" name="nome" placeholder="Nome" >
+        <br>
+
+        <label for="email"> E-mail:</label>
+        <input type="email" name="email" placeholder="E-mail" >
+        <br>
+
+        <label for="senha"> Senha:</label>
+        <input type="password" name="senha" placeholder="Senha" >
+        
+        <label for="confirma"> Confirmar senha:</label>
+        <input type="password" name="confirma" placeholder="Confirmar senha" >
+
+        <br><br>
+
+
+        <input type="submit" name="cadastrar" value="Cadastrar" >
+
+    
+    </form>
+
 </body>
 </html>
