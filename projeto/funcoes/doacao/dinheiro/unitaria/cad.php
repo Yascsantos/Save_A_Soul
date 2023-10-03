@@ -34,7 +34,8 @@
                 {
                     die(' Query Inválida: ' . mysqli_error($conexao));
     
-                } 
+                }
+
                 else 
                 {
                     $sql_code= "SELECT id_par FROM parceiro WHERE senha='$hash' and nome='$nome'";
@@ -42,13 +43,13 @@
         
                     foreach ($sql_query as $dados)
                     {
-                        $par = $dados['id_par'];
+
                         if(!isset($_SESSION))
                         {
                             session_start();
                         }
         
-                        $_SESSION['id_par'] = $par;
+                        $_SESSION['id_par'] = $dados['id_par'];
         
                     }
                     mysqli_close($conexao);

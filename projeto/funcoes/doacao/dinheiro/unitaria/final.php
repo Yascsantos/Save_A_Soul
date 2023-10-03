@@ -1,0 +1,26 @@
+<?php
+	include_once("../../../../conexaoBD.php");
+    $codigo = $_GET['codigo'];
+    $data = date('Y-m-d');
+    $forma = "Dinheiro";
+    $campos = "id_par, data, forma";
+
+
+        
+    $sql = "INSERT INTO doacao ($campos) 
+    VALUES ('$codigo','$data','$forma')";
+
+    $instrucao = mysqli_query($conexao,$sql);
+
+    if (!$instrucao) 
+    {
+        die(' Query Inválida: ' . mysqli_error($conexao));
+
+    }
+    else
+    {
+        mysqli_close($conexao);
+        header ('Location:../../../../index/ajude.php');
+        exit;
+    }
+?>
