@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +12,7 @@
     body {
         background-image: url(../imgs/fundo.jpg);
         background-position: center;
+        background-repeat:no-repeat ;
         color: #2d3520;
     
     }
@@ -22,10 +20,10 @@
 
 
 .caixa-dados{
-    margin: 29%;
+    margin: 20%;
     margin-left:35%;
   text-align: center;
-    background-color: rgba(135, 156, 117, 0);
+    background-color: #FFC229;
     padding: 30px 40px;
     width: 30%;
     border-radius: 20px;
@@ -37,7 +35,7 @@
     text-decoration:none;
     font-size: 0.9rem;
     font-weight:600;
-    color: #2d3520;
+    color: #361B0D;
   }
  
  .caixa-dados a:hover{
@@ -49,7 +47,7 @@
 button{
     width: 30%;
     height: 30px;
-    background: #2d3520;
+    background: #361B0D;
     outline: none;
     border: none;
     color: white;
@@ -62,19 +60,22 @@ button{
 <div class="caixa-dados">
     <h2>Qual a forma de retirada?</h2>
     <form action="entrega.php" method="post">
-    <a type='submit' name="entrega" onclick='openPopup()'><h2>Entrega</h2></a>
+    <a type='submit' name="entrega" onclick='openPopup()'><h2>Entrega </h2></a>
       <div id='popupContainer' style='display: none;'>
         <div  class='popup' >
          <span class='material-symbols-outlined' onclick='closePopup()'>
         close
-        </span> 
+        </span> <BR>
             <input type='radio'  id=pix name='pag' value= 'pix'>
-            <label for='pix'>PIX</label><br>
+            <label for='pix' class="material-symbols-outlined">
+qr_code_2</label>PIX<br>
 
             <input type='radio'  id='cartao' name='pag' value= 'cartao'>
-            <label for='cartao'>CARTÃO</label><br>
+            <label for='cartao' class="material-symbols-outlined">
+credit_card
+</label>CARTÃO<br>
 
-            <input type='submit' name='conf' value= 'Confirmar'>
+            <BUTTON input type='submit' name='conf' value= 'Confirmar'>Confirmar</BUTTON>
         </div>
     </div></form>
     <form action="retira.php" method="post">

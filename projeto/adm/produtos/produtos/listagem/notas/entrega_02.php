@@ -13,11 +13,15 @@
     p{
         font-family: 'league Spartan';
     }
+    body
+    {background-color: #E6DED4;}
 </style>
 <body>
 <section class='carrinho'>
-      <b> <h2 class='title'>Seu pedido foi registrado :)</h2></b>
-     
+    
+      <div  class="dog">
+        <br><br><br><br><br><br>
+     <img src="../../../../../petshop/imgs/fundo-1.png"><br></div>
       <div class='max-width'>
 <div class='carrinho-content'>
 
@@ -35,16 +39,22 @@
 
     $sql_code = "SELECT * FROM pedido WHERE numero = $numero";
     $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
-   echo" <div class='finalizar'>";
+   echo" <div class='finalizar'>  <br><br>";
 
-   
-    echo"<p>Ao lado estão os itens escolhidos. Muito obrigada pela confiança. </p>
-    <p>OBS: Caso você volte para o carrinho, sua compra será interrompida.<br>
+    echo"
+    <b> <h2 class='title'>Seu pedido                foi registrado :)</h2></b>";
+      
+ 
+    echo"
+    <p>Ao lado estão os itens escolhidos. Muito obrigada pela confiança. </p>
+    <p>OBS: Caso você volte para o carrinho, sua compra será interrompida.<br>";
+    include_once ("../pet/proc.php");
+    echo"
     <a href= './entrega/armazena.php'><button  class='comprar'>Finalizar compra</button></a>
     <a href= './entrega/back.php'><span class='material-symbols-outlined'>
     shopping_cart
     </span></a> </p>";
-    include_once ("../pet/proc.php");
+  
     echo "</div>";
    
     foreach($code as $dade)
@@ -65,9 +75,9 @@
             $preco = $dados['preco'];
             $img_pro = $dados['img_pro'];
 
-            echo " <div class='car'>";
+            echo " <div class='car'>    ";
             echo "
-            
+       
                 
                         <img src=".$img_pro." width='100px' height='100px'>
                    
@@ -98,7 +108,7 @@
         }
 
     }
-    echo "     
+    echo " 
     </div> 
     </div> 
     </section>
