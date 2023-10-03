@@ -88,7 +88,7 @@ margin-top:auto;
 .inicio{
     background-size: cover;
     background-position: center;
-    background-image: url(../imgs/fundo2.jpg);
+    background-image: url(../imgs/fundo-s.jpg);
     height: 700px;
     min-height: 500px;
   
@@ -142,7 +142,7 @@ margin-top:auto;
     transition: all 0.3s ease;
 }
 .scroll-up-btn.show{
-    bottom: 30px;
+    bottom: 70px;
     opacity: 1;
     pointer-events:auto;
     

@@ -46,6 +46,7 @@
       
  
     echo"
+   
     <p>Ao lado estão os itens escolhidos. Muito obrigada pela confiança. </p>
     <p>OBS: Caso você volte para o carrinho, sua compra será interrompida.<br>";
     include_once ("../pet/proc.php");

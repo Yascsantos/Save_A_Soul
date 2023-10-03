@@ -67,7 +67,7 @@
 
     }
     echo "</select>";
-    echo "<br><button input type='submit' name='pesq' value='pesq'>Filtro<button/>";
+    echo "<br><button input type='submit' name='pesq' value='pesq'>Filtrar</button>";
     echo "</form>";
     echo "</div>";
 

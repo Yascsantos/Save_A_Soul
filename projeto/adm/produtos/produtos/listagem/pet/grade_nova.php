@@ -146,6 +146,47 @@ button {
 .popup iframe {
   border: none;
 }
+.carrinho {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-carrinho  {
+  background-color: #ADB5A0;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    color:#fff;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+#car{
+    width: 100%;
+  height: 400px;
+            border: none;
+            margin-top: 10px;
+
+  }
+
 </style>
 <body>
 <header id="menu">
@@ -160,7 +201,25 @@ button {
      <ul class="nav-list">
           <li> <a href="../../../../../index/index.php">INICIO</a></li>
           <li> <a href="../../../../../index/ajude.php">AJUDAR</a></li>
-          <li> <a href="exibe_car.php">CARRINHO</a></li>
+          <li><a id="open-cart">CARRINHO</a> </li>
+
+<div id="cart-modal" class="carrinho">
+    <div class="content-carrinho">
+        <span class="fechar" id="close-cart">&times;</span>
+        <b> <h1 class='title'>Seu carrinho de Compra</h1></b>
+     
+        <iframe src="exibe_car.php" id="car"></iframe>
+        
+        <button  class='comprar'> <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>CONTINUAR COMPRANDO</a></button>
+        <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+
+</ul>
+
           <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
