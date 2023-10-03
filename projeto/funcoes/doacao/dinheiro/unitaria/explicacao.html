@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação de dinheiro</title>
+</head>
+<body>
+    <h2> DOAÇÃO ÚNICA </h2>
+    <p>
+        No sistema de doação única, você pode doar um valor para a ajudar o nosso projeto na quantia que você puder e desejar.<br>
+    </p>
+    <P>
+        Para garantir uma melhor segurança, mandaremos os dados para realizar a doação em seu e-mail. <br>
+    </P>
+
+    <p>
+        Preencha o formulário abaixo com seu nome, e-mail e uma senha de sua preferencia para podermos mandar os dados a você.
+    </P>
+
+    <h2> Formulário</h2>
+    <form method="post" action="./cad.php">
+        <label for="nome"> Nome:</label>
+        <input type="text" name="nome" placeholder="Nome" >
+        <br>
+
+        <label for="email"> E-mail:</label>
+        <input type="email" name="email" placeholder="E-mail" >
+        <br>
+
+        <label for="senha"> Senha:</label>
+        <input type="password" name="senha" placeholder="Senha" >
+        
+        <label for="confirma"> Confirmar senha:</label>
+        <input type="password" name="confirma" placeholder="Confirmar senha" >
+
+        <br><br>
+
+
+        <input type="submit" name="cadastrar" value="Cadastrar" >
+
+    
+    </form>
+
+</body>
+</html>

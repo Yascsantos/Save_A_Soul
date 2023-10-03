@@ -113,14 +113,13 @@
           <li> <a href="index.php">INICIO</a></li>
           <li> <a href="../adm/animais/listagem/grade.php">ANIMAIS</a></li>
           <li> <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
-          <li> <a href="#">DOE</a></li>
+          <li> <a href="../funcoes/doacao/painel.html">DOE</a></li>
           <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
 
        </nav>
 </header>
-</section>
     <section id="ajuda">
             <div class="ajuda-content">
           
@@ -183,34 +182,12 @@ Você pode escolher entre fazer uma doação recorrente, onde já fica programad
 Para sua segurança, utilizamos a plataforma do Paypal para o recebimento das doações. Por isso, ao clicar no botão de doação, uma nova página será aberta para que a transação da doação seja realizada.
 
 Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidade e continuidade.<br></b>
-                    <a href="#">Doe</a>
+                    <a href="../funcoes/doacao/painel.html">Doe</a>
                 </div>
             </div>
         </div>
     </section>
-<!--
-    <section class="sobre" id="sobre">
-        <div class="max-width">
-            
-            <div class="sobre-content">
-                <div class="column left">
-                    <img src="imgs/dog4.jpg" alt="">
-                </div>
-                <div class="column right">
 
-                <b>A sua colaboração fortalece a defesa das nossas causas.
-
-Você pode escolher entre fazer uma doação recorrente, onde já fica programada uma doação mensal. Ou se preferir, você pode também fazer uma doação única, que nos apoia pontualmente.
-
-Para sua segurança, utilizamos a plataforma do Paypal para o recebimento das doações. Por isso, ao clicar no botão de doação, uma nova página será aberta para que a transação da doação seja realizada.
-
-Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidade e continuidade.<br></b>
-                    <a href="#">Seja voluntário</a>
-                </div>
-            </div>
-        </div>
-    </section>
--->
   
 
 
