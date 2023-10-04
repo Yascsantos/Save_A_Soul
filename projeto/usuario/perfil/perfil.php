@@ -52,6 +52,9 @@ $instrucao = mysqli_query($conexao, $sql);
 .content-carrinho  {
   background-color: #ADB5A0;
     border-radius: 5px;
+    width:50%;
+    height:500px;
+    margin-left:53%;
     padding: 10px;
     text-align: center;
     color:#fff;
@@ -62,7 +65,7 @@ $instrucao = mysqli_query($conexao, $sql);
 .fechar {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 20px;
     font-size: 24px;
     cursor: pointer;
 }
@@ -110,15 +113,16 @@ handshake
    <li><a id="open-cart">CARRINHO</a> </li>
 
 <div id="cart-modal" class="carrinho">
+
     <div class="content-carrinho">
-        <span class="fechar" id="close-cart">&times;</span>
+    <span class="fechar" id="close-cart">&times;</span>
         
      
         <iframe src="../../adm/produtos/produtos/listagem/pet/exibe_car.php" id="car"></iframe>
-       
-        <button  class='comprar'> <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>CONTINUAR COMPRANDO</a></button>
+      
+    
         <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
-    </div>
+        <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>Continuar comprando</a> </div>
 </div>
 
     <script src="script.js"></script>

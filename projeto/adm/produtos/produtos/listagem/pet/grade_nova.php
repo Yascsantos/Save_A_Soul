@@ -146,7 +146,21 @@ button {
 .popup iframe {
   border: none;
 }
-.carrinho {
+#car{
+    width: 100%;
+  height: 400px;
+            border: none;
+            margin-top: 10px;
+
+  }
+  #endereco {
+            display: none;
+            width: 100%;
+            height: 200px;
+            border: none;
+            margin-top: 10px;
+        }
+        .carrinho {
     display: none;
     position: fixed;
     top: 0;
@@ -162,7 +176,10 @@ button {
 .content-carrinho  {
   background-color: #ADB5A0;
     border-radius: 5px;
-    padding: 20px;
+    width:50%;
+    height:500px;
+    margin-left:53%;
+    padding: 10px;
     text-align: center;
     color:#fff;
     font-family: 'Poppins';
@@ -172,21 +189,19 @@ button {
 .fechar {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 20px;
     font-size: 24px;
     cursor: pointer;
 }
-
-
-
-#car{
-    width: 100%;
-  height: 400px;
-            border: none;
-            margin-top: 10px;
+.comprar{
+    width: 30%;
+    height: 30px;
+    background:   #474845;
+    color: white;
+    font-size: 13px;
+    border-radius:;
 
   }
-
 </style>
 <body>
 <header id="menu">
@@ -203,20 +218,20 @@ button {
           <li> <a href="../../../../../index/ajude.php">AJUDAR</a></li>
           <li><a id="open-cart">CARRINHO</a> </li>
 
-<div id="cart-modal" class="carrinho">
-    <div class="content-carrinho">
-        <span class="fechar" id="close-cart">&times;</span>
-        <b> <h1 class='title'>Seu carrinho de Compra</h1></b>
-     
-        <iframe src="exibe_car.php" id="car"></iframe>
-        
-        <button  class='comprar'> <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>CONTINUAR COMPRANDO</a></button>
-        <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
-    </div>
+          <div id="cart-modal" class="carrinho">
+
+<div class="content-carrinho">
+<span class="fechar" id="close-cart">&times;</span>
+    
+ 
+    <iframe src="exibe_car.php" id="car"></iframe>
+  
+
+    <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+    <a href='grade_nova.php'>Continuar comprando</a> </div>
 </div>
 
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 
 </ul>
 
@@ -242,6 +257,7 @@ button {
     </span></butonn> </div>
     <div id='popupContainer' style='display: none;'>
                           <div  class='popup' >
+            
                           <br><br>
                           <?php include_once("../filtro/filtro.php"); ?>
                           </div>

@@ -38,9 +38,9 @@
 <?php 
   //processamento
     include_once("../../../../../conexaoBD.php");
-    echo" <div class='finalizar'>";
+   
     include_once('proc.php'); 
-    echo"</div>";
+
     echo"<div class='carrinho-content'>";
     if(!isset($_SESSION))
     {
@@ -61,7 +61,7 @@
       {
         echo "
     <style>
-    .finalizar img{
+    .car img{
       height:300px;
       width:400px;
     }
@@ -70,12 +70,10 @@
     
     </style>
     
-    <div class='finalizar'>
-    <img src='car.jpg'> 
-      </div>
+  
       <div class='car'>
         <h2 class='text'>Seu carrinho está vazio <br> <a href='grade_nova.php'<br>
-        
+        <img src='car.jpg'> 
      </div>
         
         ";

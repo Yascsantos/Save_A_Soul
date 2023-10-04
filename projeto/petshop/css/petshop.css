@@ -75,17 +75,7 @@
     color: #616161;
     transition: all 0.4s ease;
 }
- button{
-    width: 30%;
-    height:30px;
-    background: #adb5a0;
-    outline: none;
-    border: none;
-    margin-top: 15px;
-    color: white;
-   margin-left:20%;
-    font-size: 16px;
-}
+
 
 
 .compra {
