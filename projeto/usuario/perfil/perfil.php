@@ -52,7 +52,7 @@ $instrucao = mysqli_query($conexao, $sql);
 .content-carrinho  {
   background-color: #ADB5A0;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color:#fff;
     font-family: 'Poppins';
@@ -112,10 +112,10 @@ handshake
 <div id="cart-modal" class="carrinho">
     <div class="content-carrinho">
         <span class="fechar" id="close-cart">&times;</span>
-        <b> <h1 class='title'>Seu carrinho de Compra</h1></b>
+        
      
         <iframe src="../../adm/produtos/produtos/listagem/pet/exibe_car.php" id="car"></iframe>
-        
+       
         <button  class='comprar'> <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>CONTINUAR COMPRANDO</a></button>
         <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
     </div>

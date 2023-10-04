@@ -32,12 +32,16 @@
 
 <body>
        <section class='carrinho'>
-      <div class='max-width'>
-<div class='carrinho-content'>
+     
+
+
 <?php 
   //processamento
     include_once("../../../../../conexaoBD.php");
-
+    echo" <div class='finalizar'>";
+    include_once('proc.php'); 
+    echo"</div>";
+    echo"<div class='carrinho-content'>";
     if(!isset($_SESSION))
     {
         session_start();
@@ -52,7 +56,7 @@
     {
         $id_u = $dados['id_user'];
     }
-
+    
       if(empty($id_u))
       {
         echo "
@@ -79,14 +83,9 @@
 
       else 
       {
-        //finalizar compra
-          echo "<div class='finalizar'>       <br><br>      <br><br>";
-    
-          include_once("proc.php");
-          echo "</b>";
         
-          echo "
-          </div>";
+    
+     
 
           $sql_code = "SELECT * FROM carrinho WHERE id_user = $id_user";
           $code = $conexao->query($sql_code) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
@@ -108,15 +107,14 @@
                   $prod = $dados['prod'];
                   $preco = $dados['preco'];
                   $img_pro = $dados['img_pro'];
-          
-                  echo "
+            echo"
                   <div class='car'>
                   <img src=".$img_pro." width='100px' height='100px'>
                   <div class='text'>
                       ".$prod."     ".$cor." ".$tam."<br><br>
                       <b>R$".$preco."</b>
                       <b> Qtd: ".$qtd." </b>
-                   
+                
                   <button class='valor'>  <b>R$ ".$valor."</b></button>
                     <br><br>
                       <a href='../../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
@@ -124,9 +122,9 @@
                       </span></a>
                       <a href='../../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
                       delete
-                      </span></a></div>
-                      </div>
-                  ";
+                      </span></a></div>";
+                     echo" </div>";   
+                
               }
       
           }
@@ -134,7 +132,7 @@
 
 
 ?>      
-        </div> 
+      
         </div> 
         </section>
 
