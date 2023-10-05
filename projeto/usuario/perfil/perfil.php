@@ -1,16 +1,14 @@
-
 <?php
-    include_once("protect.php");
-    include_once("../../conexaoBD.php");
-    $tabela="user";
-    $campo= "id_user";
-    $id= $_SESSION['id_user'];
+include_once("protect.php");
+include_once("../../conexaoBD.php");
+$tabela = "user";
+$campo = "id_user";
+$id = $_SESSION['id_user'];
 
-    $sql = "select * from $tabela where $campo ='$id'";
-    
-    $instrucao = mysqli_query($conexao,$sql);
+$sql = "select * from $tabela where $campo ='$id'";
+
+$instrucao = mysqli_query($conexao, $sql);
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +22,13 @@
 
    
     <style>
-  
+  #car{
+    width: 100%;
+  height: 400px;
+            border: none;
+            margin-top: 10px;
+
+  }
   #endereco {
             display: none;
             width: 100%;
@@ -32,6 +36,45 @@
             border: none;
             margin-top: 10px;
         }
+        .carrinho {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-carrinho  {
+  background-color: #ADB5A0;
+    border-radius: 5px;
+    width:50%;
+    height:500px;
+    margin-left:53%;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
   </style>
 
@@ -65,8 +108,24 @@ pet_supplies
 handshake
 </span> AJUDA</a></li>
     <br>
-   <li><a href='../../adm/produtos/produtos/listagem/pet/exibe_car.php'><span class="material-symbols-outlined">shopping_cart</span> COMPRAS</a>
-      </li> <br>
+
+    
+   <li><a id="open-cart">CARRINHO</a> </li>
+
+<div id="cart-modal" class="carrinho">
+
+    <div class="content-carrinho">
+    <span class="fechar" id="close-cart">&times;</span>
+        
+     
+        <iframe src="../../adm/produtos/produtos/listagem/pet/exibe_car.php" id="car"></iframe>
+      
+    
+        <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+        <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>Continuar comprando</a> </div>
+</div>
+
+    <script src="script.js"></script>
 
 
 </ul>

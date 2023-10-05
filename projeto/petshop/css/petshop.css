@@ -22,14 +22,6 @@
            margin-bottom: 10px;
        }
 
-       #produto{
-        background-image: url(../imgs/prod.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size:100% 100% ;
-        text-align: center;
- 
-       }
       
        #produto .produto {
         float: left;
@@ -43,18 +35,18 @@
         color: #fffffe;
        }
 #produto .produto .card{
-  background-color: #ADB5A0;
+
    border-radius: 20%;
-   padding: 25px 35px;
+   padding: 15% 10%;
    text-align: center;
    transition: all 0.3s ease;
   
 }
 #produto .produto .card:hover{
-    background: #51703E;
+  background-color: #ADB5A0;
 }
 #produto .produto .card img{
-    width: 250px;
+    width: 550px;
     height: 700px;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -66,7 +58,7 @@
 #produto .produto .card .text{
   font-size: 25px ;
   font-weight: 500;
-  margin: 10px 0 7px 0;
+  margin: 10px 0 7px 0px;
 }
 
        
@@ -83,17 +75,7 @@
     color: #616161;
     transition: all 0.4s ease;
 }
- button{
-    width: 30%;
-    height:30px;
-    background: #adb5a0;
-    outline: none;
-    border: none;
-    margin-top: 15px;
-    color: white;
-   margin-left:20%;
-    font-size: 16px;
-}
+
 
 
 .compra {
@@ -117,16 +99,7 @@ margin-left: 30%;
  margin-top:10%;
   font-size: 16px;
 }
-.comprar{
-  align-items: center;
-  width: 50%;
-  height:50px;
-  background: #080808;
-  margin-right: 20%;
 
-  color: white;
-  font-size: 20px;
-}
   /*  todos os codigos similares  */
   section{
     padding: 100px 0;
@@ -158,7 +131,7 @@ margin-left: 30%;
     bottom:-12px;
     left: 50%;
     font-size: 20px;
-    background: #51703E;
+     background-color: #3b5a21; 
     color: #f1e8ec;
     padding: 5px;
     border-radius: 10%;
@@ -173,12 +146,10 @@ margin-left: 30%;
 }
 
 #menu{
-
-  position: fixed;
   width:100%;
   height:110px;
-
- 
+  margin-bottom: 10px;    
+  background-color: #3b5a21; 
 }
 img{
   width:100px;
@@ -226,7 +197,7 @@ margin-top:auto;
   }
   
   body{
-    background-color: #adb5a0;
+    background-color: #3b5a21; 
   
   }
 
@@ -291,7 +262,7 @@ margin-top:auto;
     width: 300px;
     padding: 20px;
      background-color: #08080800;
-    top: 1100px;
+    top: 1200px;
     left: 83%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -373,10 +344,10 @@ margin-top:auto;
 
  .carrinho .carrinho-content .finalizar{
   color: #fff;
-  width:457px;
-  height: 400px;
-  position: fixed;
-  margin-left: 680px;
+  width:20%;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 93%;
   text-align: center;
  
 
@@ -393,7 +364,7 @@ margin-top:auto;
 }
   .carrinho .carrinho-content .car{
     padding: 40px 60px;
-    width: 60%;
+    width: 100%;
     height: 300px;
     display: flex;
     background-color:#90968700;

@@ -18,7 +18,7 @@
 	} 
 	else {
 		mysqli_close($conexao);
-			header ('location: ../../../../../../index/index.php');
+			header ('location: ../../../../../../usuario/perfil/perfil.php');
 			
 			exit;
 	}
