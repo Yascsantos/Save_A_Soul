@@ -15,6 +15,8 @@
     <title>Plano semestral</title>
 </head>
 <body>
+    <a href="../../../../../index/ajude.php">X</a>
+
     <div align = 'center'>
     <br><br>
         <h2> PLANO DE DOAÇÃO SEMESTRAL </h2>
