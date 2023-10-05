@@ -1,6 +1,6 @@
 
 <?php
-	include_once("../../../../conexaoBD.php");
+	include_once("../../../../../conexaoBD.php");
 	$tabela="parceiro";
 	$campos = "nome, email, senha ";
 	
@@ -50,7 +50,7 @@
         
                     }
                     mysqli_close($conexao);
-                    header ('Location:mens.php');
+                    header ('Location:mens6.php');
                     exit;
                 }
     

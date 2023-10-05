@@ -1,16 +1,27 @@
+<?php
+    if(!isset($_SESSION))
+    {
+        session_start();
+    }
+
+    $_SESSION['semestral'] = "Semestral";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doação de dinheiro</title>
+    <title>Plano semestral</title>
 </head>
 <body>
     <div align = 'center'>
     <br><br>
-        <h2> DOAÇÃO ÚNICA </h2>
+        <h2> PLANO DE DOAÇÃO SEMESTRAL </h2>
         <p>
-            No sistema de doação única, você pode doar um valor para a ajudar o nosso projeto na quantia que você puder e desejar.<br>
+            No plano de doação semestral, você pode doar um valor para a ajudar o nosso projeto na quantia que você puder e desejar.
+            E no dia do semestre em que você tiver disponibilidade para fazer essa(s) doação(s).
+            <br>
         </p>
         <P>
             Para garantir uma melhor segurança, mandaremos os dados para realizar a doação em seu e-mail. <br>
@@ -24,7 +35,7 @@
     
     <fieldset  align = 'center'>
         <h2> Formulário</h2>
-        <form method="post" action="./cad.php">
+        <form method="post" action="./cad6.php">
             <label for="nome"> Nome:</label>
             <input type="text" name="nome" placeholder="Nome" >
             <br>
