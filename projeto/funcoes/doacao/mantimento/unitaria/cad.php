@@ -1,6 +1,6 @@
 
 <?php
-	include_once("../../../../../conexaoBD.php");
+	include_once("../../../../conexaoBD.php");
 	$tabela="parceiro";
 	$campos = "nome, email, senha ";
 	
@@ -9,7 +9,7 @@
 		$nome = $_POST['nome'];
 		$email = $_POST['email'];
         $senha = $_POST['senha'];
-		$data = $_POST['data'];
+        $data = $_POST['data'];
 
             $senha_1 = strlen($senha);
             if ($senha_1 < 8)
@@ -50,7 +50,7 @@
                         $_SESSION['data'] = $data;
                     }
                     mysqli_close($conexao);
-                    header ('Location:mens1.php');
+                    header ('Location:mens.php');
                     exit;
                 }
     

@@ -1,7 +1,12 @@
 <?php
+    if(!isset($_SESSION))
+    {
+        session_start();
+        
+    }
 	include_once("../../../../../conexaoBD.php");
     $codigo = $_GET['codigo'];
-    $data = date('Y-m-d');
+    $data = $_SESSION['data'];
     $forma = "Dinheiro";
     $campos = "id_par, data, forma, tipo";
 

@@ -46,6 +46,11 @@
             <input type="email" name="email" placeholder="E-mail" >
             <br>
 
+            <label for="data"> Data:</label>
+            <input type="date" name="data">
+            <br>
+
+
             <label for="senha"> Senha:</label>
             <input type="password" name="senha" placeholder="Senha" >
             <br><br>

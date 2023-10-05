@@ -7,7 +7,7 @@
 	include_once("../../../../conexaoBD.php");
     $codigo = $_GET['codigo'];
     $data = $_SESSION['data'];
-    $forma = "Dinheiro";
+    $forma = "Mantimentos";
     $campos = "id_par, data, forma";
 
 
