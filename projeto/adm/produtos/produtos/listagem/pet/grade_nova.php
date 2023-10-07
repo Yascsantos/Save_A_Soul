@@ -227,7 +227,7 @@ button {
     <iframe src="exibe_car.php" id="car"></iframe>
   
 
-    <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+    <button  class='comprar'>    <a href='../../../../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
     <a href='grade_nova.php'>Continuar comprando</a> </div>
 </div>
 
