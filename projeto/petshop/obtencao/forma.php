@@ -17,7 +17,62 @@
     
     }
   
+    #car{
+    width: 100%;
+  height: 400px;
+            border: none;
+            margin-top: 10px;
 
+  }
+  #endereco {
+            display: none;
+            width: 100%;
+            height: 200px;
+            border: none;
+            margin-top: 10px;
+        }
+        .carrinho {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-carrinho  {
+  background-color: #ADB5A0;
+    border-radius: 5px;
+    width:50%;
+    height:500px;
+    margin-left:53%;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.comprar{
+    width: 30%;
+    height: 30px;
+    background:   #474845;
+    color: white;
+    font-size: 13px;
+ 
+
+  }
 
 .caixa-dados{
     margin: 20%;
@@ -79,9 +134,23 @@ credit_card
         </div>
     </div></form>
     <form action="retira.php" method="post">
-        <a href='retira.php'><button type='submit' name="retira">Retira</button></a>
+        <a id="open-cart"><button type='submit' name="retira">Retira</button></a>
+       
+       
     </form>
+    <div id="cart-modal" class="carrinho">
 
+<div class="content-carrinho">
+<span class="fechar" id="close-cart">&times;</span>
+    
+ 
+    <iframe src='entrega.php'id="car"></iframe>
+  
+
+    <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+    <a href='grade_nova.php'>Continuar comprando</a> </div>
+</div>
+<script src="script.js"></script>
     <script>
         function openPopup() {
             document.getElementById('popupContainer').style.display = 'block';
