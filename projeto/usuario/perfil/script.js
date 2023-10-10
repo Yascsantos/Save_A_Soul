@@ -1,31 +1,3 @@
-const cartModal = document.getElementById('cart-modal');
-const openCartButton = document.getElementById('open-cart');
-const closeCartButton = document.getElementById('close-cart');
-
-// Event listener to open the cart modal
-openCartButton.addEventListener('click', () => {
-    cartModal.style.display = 'block';
-});
-
-// Event listener to close the cart modal
-closeCartButton.addEventListener('click', () => {
-    cartModal.style.display = 'none';
-});
-
-
-const produtoModal = document.getElementById('produto');
-const openProdButton = document.getElementById('open-produto');
-const closeProdButton = document.getElementById('close-produto');
-
-// Event listener to open the cart modal
-openCartButton.addEventListener('click', () => {
-    cartModal.style.display = 'block';
-});
-
-// Event listener to close the cart modal
-closeProdButton.addEventListener('click', () => {
-    produtoModal.style.display = 'none';
-});
 
 
 function resizeIframe() {

@@ -97,7 +97,47 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+  #car{
+    width: 100%;
+  height: 500px;
+  border: none;
+  margin-top: 10px;
 
+  }
+  
+        .carrinho {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-carrinho  {
+  background-color: #ADB5A0;
+    border-radius: 5px;
+    width:40%;
+    height:700px;
+    margin:auto;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
 </style>
 <body>
 <header id="menu">
@@ -182,7 +222,35 @@ Você pode escolher entre fazer uma doação recorrente, onde já fica programad
 Para sua segurança, utilizamos a plataforma do Paypal para o recebimento das doações. Por isso, ao clicar no botão de doação, uma nova página será aberta para que a transação da doação seja realizada.
 
 Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidade e continuidade.<br></b>
-                    <a href="../funcoes/doacao/painel.html">Doe</a>
+                    <a id="open-doe">Doe</a>
+                    <div id="doe" class="carrinho">
+
+<div class="content-carrinho">
+<span class="fechar" id="close-doe">&times;</span>
+    
+ 
+    <iframe src="../funcoes/doacao/painel.html" id="car"></iframe>
+    <script>
+    const doeModal = document.getElementById('doe');
+const openDoeButton = document.getElementById('open-doe');
+const closeDoeButton = document.getElementById('close-doe');
+
+// Event listener to open the cart modal
+openDoeButton.addEventListener('click', () => {
+  doeModal.style.display = 'block';
+});
+
+// Event listener to close the cart modal
+closeDoeButton.addEventListener('click', () => {
+    doeModal.style.display = 'none';
+});
+
+</script>
+
+ </div>
+</div>
+
+
                 </div>
             </div>
         </div>

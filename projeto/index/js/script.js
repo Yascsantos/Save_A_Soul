@@ -46,3 +46,17 @@ $(document).ready(function(){
     });
    
 });
+const cartModal = document.getElementById('cart-modal');
+const openCartButton = document.getElementById('open-cart');
+const closeCartButton = document.getElementById('close-cart');
+
+// Event listener to open the cart modal
+openCartButton.addEventListener('click', () => {
+    cartModal.style.display = 'block';
+});
+
+// Event listener to close the cart modal
+closeCartButton.addEventListener('click', () => {
+    cartModal.style.display = 'none';
+});
+

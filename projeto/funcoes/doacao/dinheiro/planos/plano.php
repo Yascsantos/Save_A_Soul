@@ -6,7 +6,7 @@
     <title>Doação de dinheiro</title>
 </head>
 <body>
-    <a href="../../../../index/ajude.php">X</a>
+
 
     <div align = 'center'>
         <br><br>

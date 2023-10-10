@@ -106,7 +106,47 @@
     transform: rotate(45deg) translate(-5px, -7px);
   }
 
+  #car{
+    width: 100%;
+  height: 500px;
+  border: none;
+  margin-top: 10px;
 
+  }
+  
+        .carrinho {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-carrinho  {
+  background-color: #ADB5A0;
+    border-radius: 5px;
+    width:40%;
+    height:700px;
+    margin:auto;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
 </style>
 <body>
 <header id="menu">
@@ -148,8 +188,32 @@
 
       <h2>".$exibe['nome_ani']." </h2>
 
-        <a href='../../../funcoes/adocao/adotar.php?&codigo=".$exibe['id_ani']."'>Adotar</a>
+        <a id='open-doe'>Adotar</a>
+        <div id='doe' class='carrinho'>
+
+        <div class='content-carrinho'>
+        <span class='fechar' id='close-doe'>&times;</span>
+            
+         
+            <iframe src='../../../funcoes/adocao/adotar.php?&codigo=".$exibe['id_ani']."' id='car'></iframe>
+            <script>
+            const doeModal = document.getElementById('doe');
+        const openDoeButton = document.getElementById('open-doe');
+        const closeDoeButton = document.getElementById('close-doe');
         
+        // Event listener to open the cart modal
+        openDoeButton.addEventListener('click', () => {
+          doeModal.style.display = 'block';
+        });
+        
+        // Event listener to close the cart modal
+        closeDoeButton.addEventListener('click', () => {
+            doeModal.style.display = 'none';
+        });
+        
+        </script>
+        
+         </div>
         <a href='../../../funcoes/abrigo/lar.php?&codigo=".$exibe['id_ani']."'>Abrigar</a>
         
        
