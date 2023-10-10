@@ -83,30 +83,7 @@ if(isset($_POST['enviar']))
 </style>
 
 <body> 
-<header id="menu">
-      <nav>
-   <img src="../../index/imgs/logo.png" >
-        <div class="mobile-menu">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-             
-            </div>
-     <ul class="nav-list">
-          <li> <a href="index.php">INICIO</a></li>
-          <li> <a href="../adm/animais/listagem/grade.php">ANIMAIS</a></li>
-          <li> <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
-          <li> <a href="../funcoes/doacao/pag_01.html">DOE</a></li>
-          <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
-          <br>
-       </ul>
 
-       </nav>
-</header>
-<section id="ajuda">
-            <div class="ajuda-content">
-</div>
-    </section>
     <main>
 <div class="caixa-dados">
         <p>
