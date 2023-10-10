@@ -51,7 +51,7 @@
     else 
     {
         mysqli_close($conexao);
-        header ('location:../../adm/produtos/produtos/listagem/pet/grade_nova.php');
+        header ('location:../../adm/produtos/produtos/listagem/pet/exibe_car.php');
         exit;
     }
 

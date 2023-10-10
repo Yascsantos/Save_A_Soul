@@ -168,7 +168,7 @@ a{
    
     <div>Quantidade: 
     <input type='number' placeholder='Qnt' name='qtd' class='num'><br>
-    <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php'> Voltar a comprar</a>
+    <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php' id='fecharEAbriLink'> Voltar a comprar</a>
 </div>
 ";
 
@@ -180,3 +180,14 @@ echo "</form>";
 
 ?>
   </html>
+  <style>
+  
+
+    /* Adicione media queries para estilos responsivos */
+    @media screen and (max-width: 768px) {
+        .sobre-produto {
+            flex-direction: column; 
+
+        }
+    }
+</style>
