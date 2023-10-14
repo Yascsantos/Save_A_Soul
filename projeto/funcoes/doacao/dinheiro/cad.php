@@ -1,6 +1,6 @@
 
 <?php
-	include_once("../../../../conexaoBD.php");
+	include_once("../../../conexaoBD.php");
 	$tabela="parceiro";
 	$campos = "nome, email, senha ";
 	

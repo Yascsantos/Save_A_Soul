@@ -214,7 +214,7 @@ button {
              
             </div>
      <ul class="nav-list">
-          <li> <a href="../../../../../index/index.php">INICIO</a></li>
+          <li> <a href="../../../../../index.php">INICIO</a></li>
           <li> <a href="../../../../../index/ajude.php">AJUDAR</a></li>
           <li><a id="open-cart">CARRINHO</a> </li>
 

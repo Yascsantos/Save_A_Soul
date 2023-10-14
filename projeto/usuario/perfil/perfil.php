@@ -91,7 +91,7 @@ $instrucao = mysqli_query($conexao, $sql);
     <br><br>
     <div class="logo"><img src="../../index/imgs/logo.png"  ></div>
     <br><br><br><br><br><br><br><br>
-<li> <a href="../../index/index.php"><span class="material-symbols-outlined">
+<li> <a href="../../index.php"><span class="material-symbols-outlined">
 home
 </span > INICIO</a></li>
 <br>

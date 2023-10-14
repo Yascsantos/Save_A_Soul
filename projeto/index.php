@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio| Save a Soul</title>
-    <link rel="icon" type="imagem/png" href="index/imgs/Amora.png" />
+    <link rel="icon" type="imagem/png" href="./index/imgs/Amora.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.cdnfonts.com/css/lazy-dog" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css" type="text/css"></head>
+    <link rel="stylesheet" href="./index/css/index.css" type="text/css"></head>
 </head>
 <style>
     *{
@@ -103,7 +103,7 @@
 <body>
 <header id="menu">
       <nav>
-   <img src="./imgs/logo.png" >
+   <img src="./index/imgs/logo.png" >
         <div class="mobile-menu">
               <div class="line1"></div>
               <div class="line2"></div>
@@ -111,11 +111,11 @@
              
             </div>
      <ul class="nav-list">
-          <li> <a href="ajude.php">AJUDE</a></li>
+          <li> <a href="./index/ajude.php">AJUDE</a></li>
           <li> <a href="https://goo.gl/maps/E9MvDvJCDCmGBeWX7">ENDEREÇO</a></li>
           <li> <a href="#">CONTATO</a></li>
           <li> <a href="#">SOBRE NÓS</a></li>
-          <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <li><a href="./usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
 
@@ -131,7 +131,7 @@
             <h2 class="title">Save a Soul</h2>
             <div class="sobre-content">
                 <div class="column left">
-                    <img src="imgs/dog1.jpg" alt="">
+                    <img src="./index/imgs/dog1.jpg" alt="">
                 </div>
                 <div class="column right">
                <b><p>  A Save a Soul tem como objetivo principal o resgate e a reabilitação de animais que foram abandonados e/ou maltratados, <br>

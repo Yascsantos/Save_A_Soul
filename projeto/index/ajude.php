@@ -150,7 +150,7 @@
              
             </div>
      <ul class="nav-list">
-          <li> <a href="index.php">INICIO</a></li>
+          <li> <a href="../index.php">INICIO</a></li>
           <li> <a href="../adm/animais/listagem/grade.php">ANIMAIS</a></li>
           <li> <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
           <li> <a href="../funcoes/doacao/painel.html">DOE</a></li>

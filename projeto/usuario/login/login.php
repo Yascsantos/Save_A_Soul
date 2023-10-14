@@ -76,7 +76,7 @@
             {
                 if(password_verify($password, $hash))
                 {
-                    header ('Location:../../index/index.php');
+                    header ('Location:../../index.php');
                     if(!isset($_SESSION))
                     {
                         session_start();

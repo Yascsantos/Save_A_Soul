@@ -4,7 +4,7 @@
         session_start();
         
     }
-	include_once("../../../../conexaoBD.php");
+	include_once("../../../conexaoBD.php");
     $codigo = $_GET['codigo'];
     $data = $_SESSION['data'];
     $forma = "Dinheiro";
