@@ -187,43 +187,43 @@
 
       <h2>".$exibe['nome_ani']." </h2>
 
-        <a id='open-doe'>Adotar</a>
-        <div id='doe' class='carrinho'>
-
-        <div class='content-carrinho'>
-        <span class='fechar' id='close-doe'>&times;</span>
-            
-         
-            <iframe src='../../../funcoes/adocao/adotar.php?&codigo=".$exibe['id_ani']."' id='car'></iframe>
-            <script>
-            const doeModal = document.getElementById('doe');
-        const openDoeButton = document.getElementById('open-doe');
-        const closeDoeButton = document.getElementById('close-doe');
-        
-        // Event listener to open the cart modal
-        openDoeButton.addEventListener('click', () => {
-          doeModal.style.display = 'block';
-        });
-        
-        // Event listener to close the cart modal
-        closeDoeButton.addEventListener('click', () => {
-            doeModal.style.display = 'none';
-        });
-        
-        </script>
-        
-         </div>
-        <a href='../../../funcoes/abrigo/lar.php?&codigo=".$exibe['id_ani']."'>Abrigar</a>
-        
+        <a id='?&codigo=".$exibe['id_ani']."'>Adotar</a>
        
-        </div> ";
+       <a href='../../../funcoes/abrigo/lar.php?&codigo=".$exibe['id_ani']."'>Abrigar</a> </div> ";
 
     }
   
 
 
 ?>
+ <div id='doe' class='carrinho'>
 
+<div class='content-carrinho'>
+<span class='fechar' id='close-doe'>&times;</span>
+    
+ 
+   <?php echo" <iframe src='../../../funcoes/adocao/adotar.php?&codigo=".$exibe['id_ani']."' id='car'></iframe>";?>
+    <script>
+    const doeModal = document.getElementById('doe');
+const openDoeButton = document.getElementById('".$exibe['id_ani']."');
+const closeDoeButton = document.getElementById('close-doe');
+
+// Event listener to open the cart modal
+openDoeButton.addEventListener('click', () => {
+  doeModal.style.display = 'block';
+});
+
+// Event listener to close the cart modal
+closeDoeButton.addEventListener('click', () => {
+    doeModal.style.display = 'none';
+});
+
+</script>
+
+
+
+
+</div>  
                   
                   </div>
                   </section>
