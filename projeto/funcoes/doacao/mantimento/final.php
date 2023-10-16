@@ -6,12 +6,12 @@
     }
 	include_once("../../../conexaoBD.php");
     $codigo = $_GET['codigo'];
-    $data = $_SESSION['data'];
+    $data = date("Y.m.d");
     $forma = "Mantimentos";
     $campos = "id_par, data, forma";
 
 
-        
+       
     $sql = "INSERT INTO doacao ($campos) 
     VALUES ('$codigo','$data','$forma')";
 
@@ -25,7 +25,7 @@
     else
     {
         mysqli_close($conexao);
-        header ('Location:../../../../index/ajude.php');
+        header ('Location:../../../index/ajude.php');
         exit;
     }
 ?>
