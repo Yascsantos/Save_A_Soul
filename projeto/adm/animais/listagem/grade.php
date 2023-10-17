@@ -1,6 +1,8 @@
 <?php
-      include_once("protect.php");
+include_once("protect.php");
 ?>
+
+
     <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -15,96 +17,9 @@
     <link rel="stylesheet" href="../../../petshop/css/petshop.css" type="text/css">
 </head>
 <style>
-  *{
-    font-family: 'Poppins';
-  }
-   body {
-      font-family: 'Poppins';
-    }
-      @keyframes navLinkFade {
-      from {
-        opacity: 0;
-        transform: translateX(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    .mobile-menu.active .line1 {
-      transform: rotate(-45deg) translate(-8px, 8px);
-    }
-    
-    .mobile-menu.active .line2 {
-      opacity: 0;
-    }
-    
-    .mobile-menu.active .line3 {
-      transform: rotate(45deg) translate(-5px, -7px);
-    }
-   
-    @media (max-width: 1300px){
-      .navbar .max-width{
-          margin-left: 0;
-      }
-  }
-  
-  
-  
-  @media (max-width: 999px) {
-    body {
-      overflow-x: hidden;
-    
-    }
-    .nav-list {
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background-color:#cbacaad3;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
+ #modal-iframe{
+  width:500px;
+ }
 
   #car{
     width: 100%;
@@ -187,7 +102,7 @@
 
       <h2>".$exibe['nome_ani']." </h2>
 
-        <a id='?&codigo=".$exibe['id_ani']."'>Adotar</a>
+        <a class='adotar'>Adotar</a>
        
        <a href='../../../funcoes/abrigo/lar.php?&codigo=".$exibe['id_ani']."'>Abrigar</a> </div> ";
 
@@ -196,48 +111,40 @@
 
 
 ?>
- <div id='doe' class='carrinho'>
+ <div id="doe" class="carrinho">
+        <div class="content-carrinho">
+            <span class="fechar" id="close-doe">&times;</span>
+            <iframe id="modal-iframe"></iframe>
+        </div>
+    </div>
 
-<div class='content-carrinho'>
-<span class='fechar' id='close-doe'>&times;</span>
-    
- 
-   <?php echo" <iframe src='../../../funcoes/adocao/adotar.php?&codigo=".$exibe['id_ani']."' id='car'></iframe>";?>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../../../petshop/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
     <script>
-    const doeModal = document.getElementById('doe');
-const openDoeButton = document.getElementById('".$exibe['id_ani']."');
-const closeDoeButton = document.getElementById('close-doe');
+        const doeModal = document.querySelector('.carrinho');
+        const openDoeButtons = document.querySelectorAll('.adotar');
+        const closeDoeButton = document.getElementById('close-doe');
+        const modalIframe = document.getElementById('modal-iframe');
 
-// Event listener to open the cart modal
-openDoeButton.addEventListener('click', () => {
-  doeModal.style.display = 'block';
-});
+        openDoeButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const id_ani = e.target.getAttribute('data-id_ani');
+                modalIframe.src = '../../../funcoes/adocao/adotar.php?codigo=' + $exibe['id_ani'];
+                doeModal.style.display = 'block';
+            });
+        });
 
-// Event listener to close the cart modal
-closeDoeButton.addEventListener('click', () => {
-    doeModal.style.display = 'none';
-});
-
-</script>
-
-
-
-
-</div>  
-                  
-                  </div>
-                  </section>
-               
-
-
-    </body>
+        closeDoeButton.addEventListener('click', () => {
+            doeModal.style.display = 'none';
+        });
+    </script>
+</body>
 </html>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="../../../../petshop/js/script.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-

@@ -98,10 +98,6 @@ if(isset($_POST['enviar']))
     precisar pagar para isso.
 </p>
 
-
-   
-
-
 <?php
     include_once("../../conexaoBD.php");
 
