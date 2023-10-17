@@ -17,7 +17,7 @@ include_once("protect.php");
     <link rel="stylesheet" href="../../../petshop/css/petshop.css" type="text/css">
 </head>
 <style>
- #modal-iframe{
+ #adote{
   width:500px;
  }
 
@@ -114,7 +114,7 @@ include_once("protect.php");
  <div id="doe" class="carrinho">
         <div class="content-carrinho">
             <span class="fechar" id="close-doe">&times;</span>
-            <iframe id="modal-iframe"></iframe>
+            <iframe id="adotar"></iframe>
         </div>
     </div>
 
@@ -131,13 +131,13 @@ include_once("protect.php");
         const doeModal = document.querySelector('.carrinho');
         const openDoeButtons = document.querySelectorAll('.adotar');
         const closeDoeButton = document.getElementById('close-doe');
-        const modalIframe = document.getElementById('modal-iframe');
+        const modalIframe = document.getElementById('adote');
 
         openDoeButtons.forEach(button => {
             button.addEventListener('click', (e) => {
                 e.preventDefault();
                 const id_ani = e.target.getAttribute('data-id_ani');
-                modalIframe.src = '../../../funcoes/adocao/adotar.php?codigo=' + $exibe['id_ani'];
+                modalIframe.src = href='../../../funcoes/adocao/adotar.php?codigo=' + $exibe['id_ani']
                 doeModal.style.display = 'block';
             });
         });
