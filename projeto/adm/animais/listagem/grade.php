@@ -18,7 +18,8 @@ include_once("protect.php");
 </head>
 <style>
  #adote{
-  width:500px;
+  width:400px;
+  height: 500px;
  }
 
   #car{
@@ -108,17 +109,17 @@ include_once("protect.php");
 
     }
   
-
-
 ?>
  <div id="doe" class="carrinho">
         <div class="content-carrinho">
             <span class="fechar" id="close-doe">&times;</span>
-            <iframe id="adotar"></iframe>
+            <iframe id="adote"></iframe>
         </div>
     </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   
+</body>
+</html> <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../../../petshop/js/script.js"></script>
@@ -137,7 +138,7 @@ include_once("protect.php");
             button.addEventListener('click', (e) => {
                 e.preventDefault();
                 const id_ani = e.target.getAttribute('data-id_ani');
-                modalIframe.src = href='../../../funcoes/adocao/adotar.php?codigo=' + id_ani
+                modalIframe.src = href='../../../funcoes/adocao/adotar.php?&codigo=$exibe[id_ani]'
                 doeModal.style.display = 'block';
             });
         });
@@ -146,5 +147,3 @@ include_once("protect.php");
             doeModal.style.display = 'none';
         });
     </script>
-</body>
-</html>

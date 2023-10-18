@@ -114,7 +114,7 @@
           <li> <a href="./index/ajude.php">AJUDE</a></li>
           <li> <a href="https://goo.gl/maps/E9MvDvJCDCmGBeWX7">ENDEREÇO</a></li>
           <li> <a href="#">CONTATO</a></li>
-          <li> <a href="#">SOBRE NÓS</a></li>
+          <li> <a href="sobre/sobre.php">SOBRE NÓS</a></li>
           <li><a href="./usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>

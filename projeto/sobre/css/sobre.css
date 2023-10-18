@@ -9,6 +9,7 @@
   box-sizing: border-box;
   text-decoration: none
 
+
   }
 
   html{
@@ -17,7 +18,7 @@
 
 #menu{
   width:100%;
-
+ position: fixed;
   height:110px;
 
  

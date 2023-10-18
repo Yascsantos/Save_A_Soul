@@ -103,7 +103,7 @@ if(isset($_POST['enviar']))
 
 
 <?php
-    include_once("../../conexaoBD.php");
+  
 
     if(!isset($_SESSION))
     {

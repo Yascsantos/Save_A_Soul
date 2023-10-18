@@ -15,9 +15,7 @@
     <link rel="stylesheet" href="css/sobre.css">
 </head>
 <style>
-body {
-background-color:#fff;
-}
+
 @keyframes navLinkFade {
       from {
         opacity: 0;
