@@ -49,7 +49,7 @@
         
         <div class='protect'><br><h2 ><b>Logue para acessar seu perfil</b></h2> 
              CLIQUE AQUI PARA <b>----></b><button type='button'><a href='../../../usuario/login/login.php'>LOGAR </a></button><BR>OU VOLTE AO 
-             <B>----></B><button type='button'><a href='../../../index/index.php'>INICIO </a></button>
+             <B>----></B><button type='button'><a href='../../index.php'>INICIO </a></button>
              <BR><BR>  </form><BR></div>
         ");
     }

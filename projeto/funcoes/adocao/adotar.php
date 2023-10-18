@@ -1,5 +1,6 @@
 <?php
 include_once("../../conexaoBD.php");
+include_once("protect.php");
 
 if(!isset($_SESSION))
 {
