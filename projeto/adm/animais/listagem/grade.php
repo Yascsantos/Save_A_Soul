@@ -137,7 +137,7 @@ include_once("protect.php");
             button.addEventListener('click', (e) => {
                 e.preventDefault();
                 const id_ani = e.target.getAttribute('data-id_ani');
-                modalIframe.src = href='../../../funcoes/adocao/adotar.php?codigo=' + $exibe['id_ani']
+                modalIframe.src = href='../../../funcoes/adocao/adotar.php?codigo=' + id_ani
                 doeModal.style.display = 'block';
             });
         });
