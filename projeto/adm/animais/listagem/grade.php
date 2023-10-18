@@ -1,9 +1,4 @@
-<?php
-include_once("protect.php");
-?>
-
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
