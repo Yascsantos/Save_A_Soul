@@ -142,7 +142,7 @@
         Vale ressaltar que, para a Save a Soul, a saúde emocional dos animais é tão importante quanto a saúde física, e,
         <br> por isso, a associação também se dedica a proporcionar um ambiente seguro e acolhedor para esses animais,
         <br> visando a sua recuperação integral e bem-estar geral.</p></b>
-                    <a href="ajude.php">Saiba mais</a>
+                    <a href="./index/ajude.php">Saiba mais</a>
                 </div>
             </div>
         </div>
