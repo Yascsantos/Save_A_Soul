@@ -136,19 +136,6 @@ CREATE TABLE doacao(
       FOREIGN KEY (id_par)REFERENCES parceiro (id_par)
 );
 
-CREATE TABLE planos(
-    id_pla INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    id_user INT,
-    data DATE,
-	forma VARCHAR(15),
-	tipo VARCHAR(15),
-
-      FOREIGN KEY (id_user)REFERENCES user (id_user)
-
-);
-
-
-
 
 /*petshop*/
 CREATE TABLE carrinho (
