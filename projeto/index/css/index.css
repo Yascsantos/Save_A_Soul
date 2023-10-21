@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none
+  text-decoration: none;
 
   }
 
@@ -15,14 +15,14 @@
     scroll-behavior: smooth;
 }
 body{
-  background-color: #adb5a0;
+  background-color:#DEE8CD;
 }
   /*  todos os codigos similares  */
   section{
     padding: 100px 0;
   }
   section .title{
-    color: #4c5838;
+    color: #373D39;
     font-family:  'League Spartan';
     text-align: center;
     font-size: 40px;
@@ -42,7 +42,7 @@ body{
     transform: translateX(-50%);
   }
   section .title::after{
-    COLOR: #4c5838;
+    COLOR: #373D39;
     position: absolute;
     bottom:-12px;
     left: 50%;
@@ -159,6 +159,7 @@ margin-top:auto;
 .sobre .sobre-content .right p{
   font-family:  'Poppins';
   text-align: justify;
+  color:#373D39;
 }
 .sobre .sobre-content .right a{
   display: inline-block;
@@ -212,11 +213,13 @@ margin-top:auto;
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 10px;
+
 }
 
 .comeco .comeco-content .left p{
   font-family:  'Poppins';
-  text-align: justify;
+
+  color:#373D39;
 }
 
 
@@ -301,7 +304,7 @@ margin: 10px 0 7px 0;
 
 /*  sessão footer  */
 footer{
-background: #4c5838;
+background:#4C6937;
 padding: 50px 50px;
 color: #fff;
 

@@ -62,12 +62,6 @@
 <header id="menu">
       <nav>
       <img src="../../../petshop/imgs/logo.png" >
-        <div class="mobile-menu">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-             
-            </div>
      <ul class="nav-list">
           <li> <a href="../../../index.php">INICIO</a></li>
           <li> <a href="../../produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
@@ -81,8 +75,9 @@
 <section id="inicio">
 </section>
 <section id="sobre">
-<h2 class='title'>A espera de um lar...</h2>
+
             <div class="sobre-content">
+            <h1 >A espera de um lar...</h1>
 <?php
     include_once("../../../conexaoBD.php");
     $sql= "SELECT * FROM animal WHERE status = 'disponivel'";
@@ -93,7 +88,7 @@
     {
         echo "
         <div class='card'>
-<img src=".$exibe['img_ani']." alt='Imagem padrão' width='100px' height='100px'><br>
+<img src=".$exibe['img_ani']." alt='Imagem padrão' width='100px' height='100px'><br><br>
 
       <h2>".$exibe['nome_ani']." </h2>
 

@@ -22,7 +22,29 @@
         $teste += $valor;
     }
 
-    echo "<p class='title'><br>Seu pedido é de :<br> R$".$teste.",00</p>";
+    echo"<style>.title{
+      
+        color: #373D39;
+        font-family:  'League Spartan';
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 10px;
+        position: relative;
+      }
+     .title::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: #667948;
+        transform: translateX(-50%);
+      }
+     </style>";
+    echo "<br><h2 class='title'>Total: R$".$teste.",00</h2>";
 
 
 

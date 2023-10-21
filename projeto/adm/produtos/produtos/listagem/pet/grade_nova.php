@@ -19,100 +19,12 @@
   font-family: 'Poppins';
 }
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-  opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
-}
-
-@media (max-width: 1300px) {
-  .navbar .max-width {
-    margin-left: 0;
-  }
-}
-
-
-
-@media (max-width: 999px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .nav-list {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background-color: #cbacaad3;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-  }
-
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
-  }
-
-  .mobile-menu {
-    display: block;
-  }
-}
-
-.nav-list.active {
-  transform: translateX(0);
-}
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-  opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
-}
 
 button {
   width: 30%;
   height: 30px;
   background: #adb5a0;
-  border-radius: 20px;
+  
   outline: none;
   border: none;
   margin-top: 15px;
@@ -174,7 +86,7 @@ button {
 }
 
 .content-carrinho  {
-  background-color: #ADB5A0;
+  background-color:#667948;
     border-radius: 5px;
     width:50%;
     height:500px;
@@ -202,6 +114,7 @@ button {
  
 
   }
+  
 </style>
 <body>
 <header id="menu">
@@ -217,24 +130,20 @@ button {
           <li> <a href="../../../../../index.php">INICIO</a></li>
           <li> <a href="../../../../../index/ajude.php">AJUDAR</a></li>
           <li><a id="open-cart">CARRINHO</a> </li>
-
           <div id="cart-modal" class="carrinho">
 
 <div class="content-carrinho">
 <span class="fechar" id="close-cart">&times;</span>
-    
+    Carrinho de Compras
  
     <iframe src="exibe_car.php" id="car"></iframe>
   
 
-    <button  class='comprar'>    <a href='../../../../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
-    <a href='grade_nova.php'>Continuar comprando</a> </div>
+  <a href='grade_nova.php'>Continuar comprando</a>    <button  class='comprar'>    <a href='../../../../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+   </div>
 </div>
 
 <script src="script.js"></script>
-
-</ul>
-
           <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>

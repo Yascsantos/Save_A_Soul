@@ -13,12 +13,74 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <linl rel='stylesheet' href="https://eng.m.fontke.com/family/1742293/">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css"></head>
+   
 </head>
    <style>
-    body{
-      background-color: #ADB5A0;
-    }
+      @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap'); 
+   .carrinho {
+            font-family: 'League Spartan', sans-serif;
+            text-align: center;
+          background-color: #fff;
+          box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
+        
+        }
+
+
+        .max-width {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+      
+        .car {
+         
+            padding: 20px;
+            font-family: 'League Spartan';
+            margin-top: 20px;
+           
+        }
+
+    
+        .car .detalhes .item a{
+          color: #777;
+        
+          
+        }
+        .car .detalhes .item a:hover{
+          color: #333;
+        
+        
+        
+        }
+
+
+     
+        .car .detalhes  {
+            margin: 10px 5PX;
+            display: flex;
+            border-bottom: 1px solid #555c4ce0;
+           
+        }
+
+        .car .detalhes .item P {
+            display: inline-block;
+            margin-left:15PX ;
+            color: #333;
+        }
+     
+        .car .detalhes .item h2 {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .car .detalhes .item .valor {
+            text-align: right;
+            margin-top: 100%;
+        }
+
+      
+      
+    
     .comprar{
   align-items: center;
   width: 50%;
@@ -31,8 +93,10 @@
    </style>
 
 <body>
-       <section class='carrinho'>
-     
+<section class='carrinho'>
+      
+        <div class='max-width'>
+            <div class='carrinho-content'>
 
 
 <?php 
@@ -41,7 +105,7 @@
    
     include_once('proc.php'); 
 
-    echo"<div class='carrinho-content'>";
+    echo "<div class='car'>";
     if(!isset($_SESSION))
     {
         session_start();
@@ -61,7 +125,8 @@
       {
         echo "
     <style>
-    .car img{
+    .recibo img{
+    
       height:300px;
       width:400px;
     }
@@ -71,9 +136,9 @@
     </style>
     
   
-      <div class='car'>
+      <div class='recibo'>
         <h2 class='text'>Seu carrinho está vazio <br> <a href='grade_nova.php'<br>
-        <img src='car.jpg'> 
+        <img src='car.png'> 
      </div>
         
         ";
@@ -106,22 +171,34 @@
                   $preco = $dados['preco'];
                   $img_pro = $dados['img_pro'];
             echo"
-                  <div class='car'>
-                  <img src=".$img_pro." width='100px' height='100px'>
-                  <div class='text'>
-                      ".$prod."     ".$cor." ".$tam."<br><br>
-                      <b>R$".$preco."</b>
-                      <b> Qtd: ".$qtd." </b>
+            <div class='detalhes'>
+                       
+            <div class='Descrição'>
+            <img src=".$img_pro." width='100px' height='100px'><br>
+            <b>  ".$prod." </b>".$cor." Tam:".$tam."  </div>
+                           
+            <div class='item'>
+            <p >Quantidade:
+                ".$qtd."</p>
+            </div><BR>
+            <div class='item'>
+                <p>Preço unitário:R$".$preco." </p><br>
+              
+                <a href='../../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
+                delete
+                </span></a>  <a href='../../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
+                add
+                </span></a>
+            </div>
+            <div class='item'>
+                <p class='valor'>Total:R$".$valor."</p>
+               
+            </div>
+        </div>
                 
-                  <button class='valor'>  <b>R$ ".$valor."</b></button>
-                    <br><br>
-                      <a href='../../../../../petshop/form.php?&carrinho=".$id_car."&pro=".$id_pro."'><span class='material-symbols-outlined'>
-                      add
-                      </span></a>
-                      <a href='../../../../../petshop/carrinho/drop.php?&codigo=".$id_car."'><span class='material-symbols-outlined'>
-                      delete
-                      </span></a></div>";
-                     echo" </div>";   
+    
+                  ";
+                    
                 
               }
       

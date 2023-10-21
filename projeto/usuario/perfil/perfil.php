@@ -50,8 +50,8 @@ $instrucao = mysqli_query($conexao, $sql);
 }
 
 .content-carrinho  {
-  background-color: #ADB5A0;
-    border-radius: 5px;
+  background-color:#667948;
+     border-radius: 5px;
     width:50%;
     height:500px;
     margin-left:53%;
@@ -116,13 +116,13 @@ handshake
 
     <div class="content-carrinho">
     <span class="fechar" id="close-cart">&times;</span>
-        
+        Carrinho de Compras
      
         <iframe src="../../adm/produtos/produtos/listagem/pet/exibe_car.php" id="car"></iframe>
       
     
-        <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
-        <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>Continuar comprando</a> </div>
+        <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>Continuar comprando</a>     <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+        </div>
 </div>
 
     <script src="script.js"></script>

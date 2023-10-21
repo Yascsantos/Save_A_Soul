@@ -159,10 +159,12 @@
                 <div class="column left">
                 <b> <p> Luna vivia nas ruas de uma cidade movimentada. Ela era uma gatinha adorável, com pelagem preta e olhos brilhantes, <br>
                 mas infelizmente, sua vida não era tão bonita quanto sua aparência. <br>
-                Luna sofria maus tratos constantes nas mãos de pessoas cruéis e indiferentes.<br>
-                 Encontramo-la em um estado caótico, com muito medo e tristeza no olhar. Luna foi nossa primeira resgatada e não merecia tudo o que passou, <br>
-                 assim como nenhum animal merece. Infelizmente, não conseguimos salvá-la, mas seus últimos dias foram preenchidos de amor e carinho.<br>
-                 Porém sua vida não foi em vão, pois sua história serviu como estopim para a criação da Save a soul.
+                Luna sofria maus tratos constantes nas mãos de pessoas cruéis.<br>
+                 Foi encontrada em um estado caótico, com muito medo e machucada. <br>
+                 Luna foi nossa primeira resgatada e não merecia tudo o que passou, <br>
+                 assim como nenhum animal merece, infelizmente não conseguimos <br>
+                 salvá-la já que suas feridas eram muito profundas.<br>
+              Porém sua morte não foi em vão, poi a história de luna serviu como <br>estopim para a criação da Save a soul.
                 </div></b>
 
                 </div>

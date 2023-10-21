@@ -15,7 +15,7 @@
 	} 
 	else {
 		mysqli_close($conexao);
-			header ('location: ../../../../../../index/index.php');
+			header ('location: ../../../../../../index.php');
 			
 			exit;
 	}

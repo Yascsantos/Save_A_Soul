@@ -188,6 +188,12 @@ body {
   color: #4c5838;
   background: none;
 }
+.pet .pet-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 .sobre .sobre-content .left img{
   width: 400px;
   height: 400px;
@@ -195,7 +201,44 @@ body {
   border-radius: 6px;
 }
 
+.pet .pet-content .left{
+  width: 30%;
+}
+.pet .pet-content .right{
+  text-align: justify;
+  width: 55%;
+  font-family: 'Poppins';
+}
 
+.pet .pet-content .right p{
+  font-family: 'Poppins';
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.pet .pet-content .right a{
+  display: inline-block;
+  background: #4c5838;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid #4c5838;
+  transition: all 0.3s ease;
+}
+.pet .pet-content .right a:hover{
+  color: #4c5838;
+  background: none;
+}
+.pet .pet-content .left img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
 
 
 /* Responsivo */
