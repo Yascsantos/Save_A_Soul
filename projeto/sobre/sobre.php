@@ -16,7 +16,7 @@
 </head>
 <style>
 body{
-  background-color: #adb5a0;
+  background-color: #DEE8CD;
 }
 @keyframes navLinkFade {
       from {
@@ -133,6 +133,19 @@ body{
                
 
             </div>
+        </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <div class="max-width">
+    <h2>Como começou </h2>
+      <br>
+                    <p>Em junho de 2015 nascia a nossa ONG, ainda sem muita ideia de onde chegaria, nem de quantos animais teria a oportunidade de salvar, <br>
+                    apenas com um – e mais forte – ideal: o de lutar incansavelmente pelos que pouco podiam fazer para mudar seus tristes destinos de abandono,<br>
+                     maus tratos e crueldade...</p>
+
+                        
+          
+      
         </div>
     </section>
 

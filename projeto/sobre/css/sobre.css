@@ -87,10 +87,10 @@ margin-top:auto;
 
 
 .inicio{
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-image: url(../imgs/fundo-s.jpg);
-    height: 700px;
+    height: 600px;
     min-height: 500px;
   
 }
@@ -237,14 +237,21 @@ section .title::after{
     color: #ad7d7ba2;
     background: none;
 }
-.sobre .sobre-content .left video{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 6px;
+
+.sobre, p{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 500;
+    
 }
-
-
+.sobre, h2{
+    text-align: center;
+    font-family: 'Righteous';
+    font-size: 25px;
+    font-weight: 500;
+    
+}
 /*  sessão equipe  */
 .equipe .title::after{
     content: "Integrantes";
