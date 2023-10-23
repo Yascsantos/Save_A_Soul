@@ -128,9 +128,8 @@ body{
     <section class="inicio" id="inicio">
         <div class="max-width">
             <div class="inicio-content">
-                <div class="text-1">Página de apresentação</div>
-               
-                <div class="text-3">Produzida por <span class="typing"></span></div> 
+             
+          
                
 
             </div>
