@@ -137,21 +137,11 @@ body{
     </section>
     <!--sessão sobre-->
     <section class="sobre" id="sobre">
-    <h2>Como começou </h2>
+    
         <div class="max-width">
-        <br>
             <div class="sobre-content">
-                <div class="column left">
-        
-                </div>
-                <div class="column right">
-                    <div class="text">  <span class="typing-2"></span></div>
-                    <p>Em junho de 2015 nascia a nossa ONG, ainda sem muita ideia de onde chegaria, nem de quantos animais teria a oportunidade de salvar, <br>
-                    apenas com um – e mais forte – ideal: o de lutar incansavelmente pelos que pouco podiam fazer para mudar seus tristes destinos de abandono,<br>
-                     maus tratos e crueldade...</p>
-
-                  
-                        
+              
+          
                 </div>
             </div>
         </div>
