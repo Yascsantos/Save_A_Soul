@@ -194,11 +194,15 @@ section .title::after{
     justify-content: space-between;
 }
 
-/*  sessão sobre  */
-
-.sobre .title::after{
-    content: "nós";
+.sobre{
+    background-image: url('https://i.pinimg.com/564x/00/79/68/00796898ef2db7d2f7b3d064a03ae3ac.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
 }
+
+
 .sobre .sobre-content .left{
     width: 45%;
 }
@@ -217,7 +221,7 @@ section .title::after{
     font-family: 'Righteous', cursive;
 }
 .sobre .sobre-content .right p{
-    font-family: 'Righteous', cursive;
+    font-family: 'Poppins', cursive;
     text-align: justify;
     color: rgba(136, 127, 127, 0.815);
 }

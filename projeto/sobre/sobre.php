@@ -135,38 +135,21 @@ body{
             </div>
         </div>
     </section>
+    <!--sessão sobre-->
     <section class="sobre" id="sobre">
-        <div class="max-width">
     <h2>Como começou </h2>
-      <br>
+        <div class="max-width">
+        <br>
+            <div class="sobre-content">
+                <div class="column left">
+        
+                </div>
+                <div class="column right">
+                    <div class="text">  <span class="typing-2"></span></div>
                     <p>Em junho de 2015 nascia a nossa ONG, ainda sem muita ideia de onde chegaria, nem de quantos animais teria a oportunidade de salvar, <br>
                     apenas com um – e mais forte – ideal: o de lutar incansavelmente pelos que pouco podiam fazer para mudar seus tristes destinos de abandono,<br>
                      maus tratos e crueldade...</p>
 
-                        
-          
-      
-        </div>
-    </section>
-
-    <!--sessão sobre-->
-    <section class="sobre" id="sobre">
-        <div class="max-width">
-            <h2 class="title">Sobre</h2>
-            <div class="sobre-content">
-                <div class="column left">
-                  
-                </div>
-                <div class="column right">
-                    <div class="text">  <span class="typing-2"></span></div>
-                    <p > A Save a Soul tem como objetivo principal o resgate e a reabilitação de animais que foram abandonados e/ou maltratados, <br>
-        com a finalidade de disponibilizá-los para adoção responsável. <br>
-        Para isso, todos os animais resgatados são submetidos a uma triagem rigorosa, <br>
-        que inclui exames médicos, consulta veterinária para vacinação e castração,  além de avaliação comportamental. <br>
-        Após esse processo, eles são encaminhados para lares temporários. <br>
-        Vale ressaltar que, para a Save a Soul, a saúde emocional dos animais é tão importante quanto a saúde física, e,
-        <br> por isso, a associação também se dedica a proporcionar um ambiente seguro e acolhedor para esses animais,
-        <br> visando a sua recuperação integral e bem-estar geral.</p>
                   
                         
                 </div>
