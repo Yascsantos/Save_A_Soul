@@ -66,12 +66,14 @@ if(isset($_POST['enviar']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../index/css/index.css">
-    <link rel="stylesheet" href="../../adm/css/style.css">
-    <link rel="stylesheet" href="../../petshop/css/petshop.css">
+    <link rel="stylesheet" href="../../index/css/index.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Adotar</title>
 </head>
 <style> 
+.inicio{
+
+}
 .Popup {
      background-color:#pink;
      color:black;
@@ -84,9 +86,28 @@ if(isset($_POST['enviar']))
 </style>
 
 <body> 
+<header id="menu">
+      <nav>
+   <img src="./index/imgs/logo.png" >
+        <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+             
+            </div>
+     <ul class="nav-list">
+          <li> <a href="./index/ajude.php">AJUDE</a></li>
+          <li> <a href="https://goo.gl/maps/E9MvDvJCDCmGBeWX7">ENDEREÇO</a></li>
+          <li> <a href="#">CONTATO</a></li>
+          <li> <a href="sobre/sobre.php">SOBRE NÓS</a></li>
+          <li><a href="./usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <br>
+       </ul>
 
-    <main>
-<div class="caixa-dados">
+       </nav>
+</header>
+<section class="inicio">
+        <div class="max-width">
         <p>
     
     Muitas pessoas querem um animalzinho em casa para fazer companhia porém não tem condições de comprar um.<br>
@@ -99,7 +120,8 @@ if(isset($_POST['enviar']))
     precisar pagar para isso.
 </p>
 
-
+</div>
+</section>
    
 
 
