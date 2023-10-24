@@ -194,8 +194,8 @@ section .title::after{
     justify-content: space-between;
 }
 
-.sobre{
-    background-image: url('https://i.pinimg.com/564x/00/79/68/00796898ef2db7d2f7b3d064a03ae3ac.jpg');
+.sobre .sobre-content{
+    background-image: url('../imgs/sobre.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;

@@ -92,7 +92,7 @@
 
       <h2>".$exibe['nome_ani']." </h2>
 
-        <a class='adotar'>Adotar</a>
+        <a href='../../../funcoes/adocao/adotar.php?&codigo=$exibe[id_ani]'>Adotar</a>
        
        <a href='../../../funcoes/abrigo/lar.php?&codigo=".$exibe['id_ani']."'>Abrigar</a> </div> ";
 
@@ -126,7 +126,7 @@
             button.addEventListener('click', (e) => {
                 e.preventDefault();
                 const id_ani = e.target.getAttribute('data-id_ani');
-                modalIframe.src = href='../../../funcoes/adocao/adotar.php?&codigo=$exibe[id_ani]'
+                modalIframe.src = href=''
                 doeModal.style.display = 'block';
             });
         });
