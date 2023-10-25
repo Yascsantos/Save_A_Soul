@@ -136,13 +136,22 @@ body{
         </div>
     </section>
     <!--sessão sobre-->
+    <section class="comeco" id="inicio">
+        <div class="max-width">
+        <h2>Como começou</h2><br>
+            <div class="comeco-content">
+            <br><br>
+        <p>
+        Em junho de 2022 nascia a nossa ONG, ainda sem muita ideia de onde chegaria, <br>nem de quantos animais teria a oportunidade de salvar, <br>apenas com um – e mais forte – ideal: o de lutar incansavelmente pelos que pouco podiam fazer para mudar seus tristes destinos de abandono, maus tratos e crueldade...
+               
+</p>
+            </div>
+        </div>
+    </section>
     <section class="sobre" id="sobre">
     
         <div class="max-width">
-            <div class="sobre-content">
-              
-          
-                </div>
+           
             </div>
         </div>
     </section>
@@ -151,7 +160,6 @@ body{
      <!--sessão equipe-->
      <section class="equipe" id="equipe">
         <div class="max-width">
-            <h2 class="title">Desenvolvedores</h2>
          <div class="carousel owl-carousel ">
                <div class="card">
                    <div class="box">
@@ -176,7 +184,7 @@ body{
                 </div>
         </div>
 
-
+</section>
 
     <!--sessão  footer-->
     <footer>
@@ -189,7 +197,7 @@ body{
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.sobre.js"></script>
+    <script src="js/sobre.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>

@@ -15,17 +15,7 @@ $(document).ready(function(){
          $('html').animate({scrollTop: 0});
      });
 
-     var typed = new Typed(".typing", {
-         strings:["Daiane", "Yasmin", "Winicius"],
-         typeSpeed:100,
-         backSpeed:60,
-         loop:true
-     });
-
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
+   
     $('.carousel').owlCarousel({
         margin:20,
         loop:true,

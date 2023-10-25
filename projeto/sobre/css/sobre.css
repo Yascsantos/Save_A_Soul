@@ -194,15 +194,29 @@ section .title::after{
     justify-content: space-between;
 }
 
-.sobre .max-width .sobre-content{
+.sobre{
     background-image: url('../imgs/sobre.jpg');
-    background-position: center;
+    background-position: cover;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    height: 500px;
+
+}
+.comeco{
+    background-image: url('../imgs/comeco.jpg');
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
+    color:#fffefef5;
 
 }
 
-
+.comeco .comeco-content{
+    width: 35%;
+    margin-left: 60%;
+  
+}
 .sobre .sobre-content .left{
     width: 45%;
 }
