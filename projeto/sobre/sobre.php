@@ -129,8 +129,6 @@ body{
         <div class="max-width">
             <div class="inicio-content">
              
-          
-               
 
             </div>
         </div>
@@ -138,7 +136,7 @@ body{
     <!--sessão sobre-->
     <section class="sobre" id="sobre">
     
-        <div class="max-width">
+        
             <div class="sobre-content">
               
           
@@ -150,8 +148,7 @@ body{
     
      <!--sessão equipe-->
      <section class="equipe" id="equipe">
-        <div class="max-width">
-            <h2 class="title">Desenvolvedores</h2>
+     
          <div class="carousel owl-carousel ">
                <div class="card">
                    <div class="box">
@@ -174,9 +171,9 @@ body{
                         <p>Responsavel pelo Frontend (Estilização do site).</p>
                     </div>
                 </div>
-        </div>
+                </div>
 
-
+</section>
 
     <!--sessão  footer-->
     <footer>
@@ -189,7 +186,27 @@ body{
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/script.sobre.js"></script>
+    <script>
+    $('.carousel').owlCarousel({
+        margin:20,
+        loop:true,
+        autoplayTimeOut:2000,
+        autoplayHoverPauser:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:false
+            }
+        }
+    });</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
