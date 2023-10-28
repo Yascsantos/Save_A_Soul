@@ -157,9 +157,8 @@ button {
      
   
         <section  id="produto">
-      <h2 class='title'>Tudo para seu pet</h2>
-       
-      <div class="filtro-content">
+    
+  
       <div class='filt'>
      <butonn><span class='material-symbols-outlined' onclick='openPopup()'>
     tune
@@ -216,7 +215,7 @@ button {
 
 ?> 
 
-
+</div>   </div>
     </section>
 </body>
 </html>

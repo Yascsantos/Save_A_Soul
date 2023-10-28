@@ -22,21 +22,20 @@
            margin-bottom: 10px;
        }
 
-      
-       #produto .produto {
-        float: left;
-        width: 70%;
-      padding: 30px 25px 25px 25px;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
+       #produto  {
+        border-top: 1px solid #686565;
+    
         align-items: center;
-        justify-content: space-between;
         color: #fffffe;
        }
+       #produto .produto {
+        border-top: 1px solid #686565;
+  
+        text-align: center;
+        display: flex;
+      
+       }
 #produto .produto .card{
-
-   border-radius: 20%;
    padding: 15% 10%;
    text-align: center;
    transition: all 0.3s ease;
@@ -366,37 +365,7 @@ margin-top:auto;
   position: relative;
 }
 
-.produto .carousel .card{
-  background: #826990;
-   border-radius: 6px;
-   padding: 20px 20px;
-   text-align: center;
-   transition: all 0.3s ease;
-}
-.produto .carousel .card:hover{
-    background: #efe6eb;
-}
-.produto .carousel .card img{
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5%;
-    border: 5px solid #efe6eb;
-    transition: all 0.3s ease;
-}
-.produto .carousel .card:hover img{
-    border-color: #fff;
-}
-.produto .carousel .card .box{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.produto .carousel .card:hover .box{
-  transform: scale(1.05);
-}
+
 
 .owl-dots{
   text-align: center;
