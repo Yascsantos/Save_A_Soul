@@ -36,11 +36,6 @@
       
        }
 #produto .produto .card{
-<<<<<<< HEAD
-=======
-
-  
->>>>>>> a66982293e61caf30834b92b0138ddae1dacfb4a
    padding: 15% 10%;
    text-align: center;
    transition: all 0.3s ease;
@@ -142,13 +137,15 @@ margin-left: 30%;
     transform: translateX(-50%);
   }
 
+body{
+  background-color: #3b5a2175; 
+}
 
 
 #menu{
   width:100%;
   height:100px;
   margin-bottom: 10px;   
-  background-color: #3b5a21;
  
 }
 
@@ -222,9 +219,8 @@ margin-top:auto;
   
   }
   .filt{
-
-  margin-left: 60%;
-  margin-top: 3%;
+    margin-left: 60%;
+  
   }
   .lupa{
     margin-right: 10%;
@@ -266,9 +262,7 @@ margin-top:auto;
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  body{
-    background-color: #efe8d7;
-  }
+
 .popup  iframe {
   border: none;
   }
@@ -373,5 +367,25 @@ margin-top:auto;
 
 
 
+.owl-dots{
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot{
+  width: 14px;
+  height: 14px;
+  outline: none!important;
+  border-radius: 50%;
+  border: 2px solid #adb5a0!important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active{
+  width: 35px;
+  border-radius: 15px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background:#adb5a0!important;
+}
 
 
