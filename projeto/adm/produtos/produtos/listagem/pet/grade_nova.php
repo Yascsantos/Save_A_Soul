@@ -157,9 +157,18 @@ button {
      
   
         <section  id="produto">
+<<<<<<< HEAD
     
   
       <div class='filt'>
+=======
+      <h2 class='title'>Tudo para seu pet</h2>
+       
+      <div class="filtro-content">
+      <div class='filt'><?php  include_once("../barra/barra.php"); ?>  </div> 
+      <div class='lupa'>
+      
+>>>>>>> a66982293e61caf30834b92b0138ddae1dacfb4a
      <butonn><span class='material-symbols-outlined' onclick='openPopup()'>
     tune
     </span></butonn> </div>
@@ -178,7 +187,7 @@ button {
                   
                 
                       </script>
-                        <div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
+                    
                        
               
             <div class="produto">
