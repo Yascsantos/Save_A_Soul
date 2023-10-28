@@ -160,7 +160,9 @@ button {
       <h2 class='title'>Tudo para seu pet</h2>
        
       <div class="filtro-content">
-      <div class='filt'>
+      <div class='filt'><?php  include_once("../barra/barra.php"); ?>  </div> 
+      <div class='lupa'>
+      
      <butonn><span class='material-symbols-outlined' onclick='openPopup()'>
     tune
     </span></butonn> </div>
@@ -179,7 +181,7 @@ button {
                   
                 
                       </script>
-                        <div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
+                    
                        
               
             <div class="produto">

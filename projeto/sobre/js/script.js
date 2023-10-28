@@ -15,6 +15,7 @@ $(document).ready(function(){
          $('html').animate({scrollTop: 0});
      });
 
+<<<<<<< HEAD:projeto/sobre/js/script.sobre.js
      var typed = new Typed(".typing", {
          strings:["Daiane", "Yasmin", "Winicius"],
          typeSpeed:100,
@@ -26,6 +27,9 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+    
+=======
+   
     $('.carousel').owlCarousel({
         margin:20,
         loop:true,
@@ -46,4 +50,5 @@ $(document).ready(function(){
             }
         }
     });
+>>>>>>> 89da26b1dcd44ad96130ba236b02e1dcfe642235:projeto/sobre/js/script.js
 });
