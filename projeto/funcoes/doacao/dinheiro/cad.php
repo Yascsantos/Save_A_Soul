@@ -58,6 +58,7 @@
 		else 
 		{
 			echo "
+            
 			<main style='min-width: 320px; min-height: 20vh; color:white'></main>";
 			echo "<h3>Senhas diferentes, por favor digite a mesma senha em ambos os campos<h3>";
 		}

@@ -31,6 +31,44 @@ a {
     text-decoration: none;
     color: white; 
     font-weight: bold;
+}
+body{
+    color:white;
+}
+form .input-dados label{
+                color: #4c5838;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+            }
+            
+            form .input-dados input{
+                width: 50%;
+                height: 30px;
+                background-color: rgba(255, 255, 255, 0.32);
+                border-radius: 20px;
+                outline: none;
+                border: 2px solid transparent;
+                padding: 15px;
+                font-size: 15px;
+                color: #616161;
+                transition: all 0.4s ease;
+            }
+            form .input-dados input:focus{
+    border-color:  #52692b;
+}
+
+
+input[type='submit']  {
+    width: 50%;
+    height: 47px;
+    background: #52692b;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: white;
+    font-size: 16px;
 }</style>
 <body>
   
@@ -54,6 +92,7 @@ a {
     <fieldset  align = 'center'>
         <h2> Formulário</h2>
         <form method="post" action="./cad.php">
+            <div class="input-dados">
             <label for="nome"> Nome:</label>
             <input type="text" name="nome" placeholder="Nome" >
             <br>
@@ -65,9 +104,9 @@ a {
             <label for="senha"> Senha:</label>
             <input type="password" name="senha" placeholder="Senha" >
             <br><br>
-
-            <input type="submit" name="cadastrar" value="Cadastrar" >
-
+        </div>
+            <input type="submit" name="cadastrar" value="Cadastrar">
+        
         </form>
 </fieldset>
 </body>

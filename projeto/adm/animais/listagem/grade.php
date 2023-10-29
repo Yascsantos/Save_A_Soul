@@ -99,12 +99,7 @@
     }
   
 ?>
- <div id="doe" class="carrinho">
-        <div class="content-carrinho">
-            <span class="fechar" id="close-doe">&times;</span>
-            <iframe id="adote"></iframe>
-        </div>
-    </div>
+
   
 </body>
 </html> <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -115,23 +110,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
-    <script>
-        const doeModal = document.querySelector('.carrinho');
-        const openDoeButtons = document.querySelectorAll('.adotar');
-        const closeDoeButton = document.getElementById('close-doe');
-        const modalIframe = document.getElementById('adote');
-
-        openDoeButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                const id_ani = e.target.getAttribute('data-id_ani');
-                modalIframe.src = href=''
-                doeModal.style.display = 'block';
-            });
-        });
-
-        closeDoeButton.addEventListener('click', () => {
-            doeModal.style.display = 'none';
-        });
-    </script>  

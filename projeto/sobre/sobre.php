@@ -148,16 +148,15 @@ body{
     </section>
     <section class="sobre" id="sobre">
     
-<<<<<<< HEAD
+
         
             <div class="sobre-content">
               
           
                 </div>
-=======
+
         <div class="max-width">
-           
->>>>>>> 89da26b1dcd44ad96130ba236b02e1dcfe642235
+
             </div>
         </div>
     </section>
@@ -165,11 +164,9 @@ body{
     
      <!--sessão equipe-->
      <section class="equipe" id="equipe">
-<<<<<<< HEAD
-     
-=======
+
         <div class="max-width">
->>>>>>> 89da26b1dcd44ad96130ba236b02e1dcfe642235
+
          <div class="carousel owl-carousel ">
                <div class="card">
                    <div class="box">
@@ -192,11 +189,10 @@ body{
                         <p>Responsavel pelo Frontend (Estilização do site).</p>
                     </div>
                 </div>
-<<<<<<< HEAD
-                </div>
-=======
+       </div>
+
         </div>
->>>>>>> 89da26b1dcd44ad96130ba236b02e1dcfe642235
+
 
 </section>
 
@@ -211,7 +207,7 @@ body{
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<<<<<<< HEAD
+
     <script>
     $('.carousel').owlCarousel({
         margin:20,
@@ -233,9 +229,8 @@ body{
             }
         }
     });</script>
-=======
+
     <script src="js/sobre.js"></script>
->>>>>>> 89da26b1dcd44ad96130ba236b02e1dcfe642235
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>

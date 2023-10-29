@@ -66,63 +66,17 @@ if(isset($_POST['enviar']))
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../index/css/index.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Adotar</title>
 </head>
-<style> 
-.inicio{
+<style>
+    
 
-}
-.Popup {
-     background-color:#pink;
-     color:black;
-     top: 50%;
- margin-left:30%;
-   
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
 </style>
 
 <body> 
-<header id="menu">
-      <nav>
-   <img src="./index/imgs/logo.png" >
-        <div class="mobile-menu">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-             
-            </div>
-     <ul class="nav-list">
-          <li> <a href="./index/ajude.php">AJUDE</a></li>
-          <li> <a href="https://goo.gl/maps/E9MvDvJCDCmGBeWX7">ENDEREÇO</a></li>
-          <li> <a href="#">CONTATO</a></li>
-          <li> <a href="sobre/sobre.php">SOBRE NÓS</a></li>
-          <li><a href="./usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
-          <br>
-       </ul>
 
-       </nav>
-</header>
-<section class="inicio">
-        <div class="max-width">
-        <p>
-    
-    Muitas pessoas querem um animalzinho em casa para fazer companhia porém não tem condições de comprar um.<br>
-    Em contrapartida, muitos animais querem e precisam de um lar.
-</p>
-    <br>
-<p> 
-    Porque não resolver esses dois problemas de uma vez só??
-    Por isso a ONG desenvolveu um sistema de adoção para que todos possam ter um bichinho em suas casas sem 
-    precisar pagar para isso.
-</p>
 
-</div>
-</section>
-   
 
 
 <?php
@@ -140,12 +94,13 @@ if(isset($_POST['enviar']))
     $instrucao = mysqli_query($conexao,$sql);
     foreach ($instrucao as $exibe) 
     {
+       
         $nome = $exibe['nome_ani'];
         $raca = $exibe['raca'];
         $porte = $exibe['porte'];
         $sexo = $exibe['sexo'];
 
-        echo "Esse(a) é o(a) $nome. <br> Ele(a) é um(a) $raca, de porte $porte e um(a) $sexo.";
+        echo " Esse(a) é o(a) $nome. <br> Ele(a) é um(a) $raca, de porte $porte e um(a) $sexo.";
         echo "<br><br>";
         
         echo "Deseja adota-lo? ";
@@ -183,8 +138,7 @@ if(isset($_POST['enviar']))
 
     }
 ?>          
-</div>
-</main>
+
 </body>
 </html>      
 

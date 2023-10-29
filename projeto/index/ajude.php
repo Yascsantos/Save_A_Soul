@@ -153,7 +153,33 @@
           <li> <a href="../index.php">INICIO</a></li>
           <li> <a href="../adm/animais/listagem/grade.php">ANIMAIS</a></li>
           <li> <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
-          <li> <a href="../funcoes/doacao/painel.html">DOE</a></li>
+          <li> <a id="open-doar">DOE</a></li>
+          <div id="doar" class="carrinho">
+
+<div class="content-carrinho">
+<span class="fechar" id="close-doar">&times;</span>
+    
+ 
+    <iframe src="../funcoes/doacao/painel.html" id="car"></iframe>
+    <script>
+    const doarModal = document.getElementById('doar');
+const openDoarButton = document.getElementById('open-doar');
+const closeDoarButton = document.getElementById('close-doar');
+
+// Event listener to open the cart modal
+openDoarButton.addEventListener('click', () => {
+  doarModal.style.display = 'block';
+});
+
+// Event listener to close the cart modal
+closeDoarButton.addEventListener('click', () => {
+    doarModal.style.display = 'none';
+});
+
+</script>
+
+</div>
+</div>
           <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
