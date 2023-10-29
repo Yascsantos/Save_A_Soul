@@ -124,26 +124,8 @@ button {
              
             </div>
      <ul class="nav-list">
-          <li> <a href="../../../../../index.php">INICIO</a></li>
-          <li> <a href="../../../../../index/ajude.php">AJUDAR</a></li>
-          <li><a id="open-cart">CARRINHO</a> </li>
-          <div id="cart-modal" class="carrinho">
-
-<div class="content-carrinho">
-<span class="fechar" id="close-cart">&times;</span>
-    Carrinho de Compras
- 
-    <iframe src="exibe_car.php" id="car"></iframe>
-  
-
-  <a href='grade_nova.php'>Continuar comprando</a>    <button  class='comprar'>    <a href='../../../../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
-   </div>
-</div>
-
-<script src="script.js"></script>
-          <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
-          <br>
-       </ul>
+     <li> <a href="../../../../../index/ajude.php">COMO AJUDAR?</a></li>
+</ul>
        <div class='filt'><?php  include_once("../barra/barra.php"); ?>  
       
 
@@ -166,6 +148,31 @@ button {
                  
                        </script>
                      </div> 
+                     <ul class="nav-list">
+                     <li> <a href="../../../../../index.php"><span class="material-symbols-outlined">
+home
+</span></a></li>
+    
+          <li><a id="open-cart"><span class="material-symbols-outlined">
+shopping_cart
+</span></a> </li>
+          <div id="cart-modal" class="carrinho">
+
+<div class="content-carrinho">
+<span class="fechar" id="close-cart">&times;</span>
+    Carrinho de Compras
+ 
+    <iframe src="exibe_car.php" id="car"></iframe>
+  
+
+  <a href='grade_nova.php'>Continuar comprando</a>    <button  class='comprar'>    <a href='../../../../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+   </div>
+</div>
+
+<script src="script.js"></script>
+          <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <br>
+       </ul>
        </nav>
 </header>
 <section class="filtro">
