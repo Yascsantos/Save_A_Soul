@@ -1,7 +1,4 @@
-<?php
-    
-    ?>
-     <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +8,7 @@
     <link rel="icon" type="imagem/png" href="../index/imgs/logo1.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.cdnfonts.com/css/lazy-dog" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../../../../../petshop/css/petshop.css" type="text/css"></head>
 </head>
@@ -20,59 +18,13 @@
 * {
   font-family: 'Poppins';
 }
-#car{
-  width: 100%;
-height: 400px;
-          border: none;
-          margin-top: 10px;
-
-}
-.carrinho {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  justify-content: center;
-  align-items: center;
-}
-
-.content-carrinho  {
-background-color:#667948;
-  border-radius: 5px;
-  width:50%;
-  height:500px;
-  margin-left:53%;
-  padding: 10px;
-  text-align: center;
-  color:#fff;
-  font-family: 'Poppins';
-  position: relative;
-}
-
-.fechar {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  font-size: 24px;
-  cursor: pointer;
-}
-.comprar{
-  width: 30%;
-  height: 30px;
-  background:   #474845;
-  color: white;
-  font-size: 13px;
 
 
-}
 button {
   width: 30%;
   height: 30px;
   background: #adb5a0;
+  
   outline: none;
   border: none;
   margin-top: 15px;
@@ -106,70 +58,133 @@ button {
 .popup iframe {
   border: none;
 }
-</style>
+#car{
+    width: 100%;
+  height: 400px;
+            border: none;
+            margin-top: 10px;
 
+  }
+  #endereco {
+            display: none;
+            width: 100%;
+            height: 200px;
+            border: none;
+            margin-top: 10px;
+        }
+        .carrinho {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-carrinho  {
+  background-color:#667948;
+    border-radius: 5px;
+    width:50%;
+    height:500px;
+    margin-left:53%;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    font-family: 'Poppins';
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.comprar{
+    width: 30%;
+    height: 30px;
+    background:   #474845;
+    color: white;
+    font-size: 13px;
+ 
+
+  }
+  
+</style>
 <body>
 <header id="menu">
-  <nav>
-    <img src="../../../../../index/imgs/logo.png">
-    
-    <ul class="nav-list">
-      <li> <a href="../../../../../index/index.php">INICIO</a></li>
-      <li> <a href="../../../../../index/ajude.php">AJUDAR</a></li>
-      <li> <a href="../pet/grade_nova.php">VOLTAR</a></li>
-      <li><a id="open-cart">CARRINHO</a> </li>
-        <div id="cart-modal" class="carrinho">
+      <nav>
+   <img src="../../../../../index/imgs/logo.png" >
+        <div class="mobile-menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+             
+            </div>
+     <ul class="nav-list">
+          <li> <a href="../../../../../index.php">INICIO</a></li>
+          <li> <a href="../../../../../index/ajude.php">AJUDAR</a></li>
+          <li><a id="open-cart">CARRINHO</a> </li>
+          <div id="cart-modal" class="carrinho">
 
 <div class="content-carrinho">
 <span class="fechar" id="close-cart">&times;</span>
-  Carrinho de Compras
+    Carrinho de Compras
+ 
+    <iframe src="exibe_car.php" id="car"></iframe>
+  
 
-  <iframe src="../pet/exibe_car.php" id="car"></iframe>
-
-
-<a href='../pet/grade_nova.php'>Continuar comprando</a>    <button  class='comprar'>    <a href='../../../../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
- </div>
+  <a href='grade_nova.php'>Continuar comprando</a>    <button  class='comprar'>    <a href='../../../../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+   </div>
 </div>
 
-<script src="../pet/script.js"></script>
+<script src="script.js"></script>
           <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
+       <div class='filt'><?php  include_once("../barra/barra.php"); ?>  
+      
 
+      <butonn class='lupa'><span class='material-symbols-outlined' onclick='openPopup()'>
+     tune
+     </span></butonn>
+     <div id='popupContainer' style='display: none;'>
+                           <div  class='popup' >
+             
+                           <br><br>
+                           <?php include_once("../filtro/filtro.php"); ?>
+                           </div>
+                       </div>
+                   
+                       <script>
+                           function openPopup() {
+                               document.getElementById('popupContainer').style.display = 'block';
+                           }
+                   
+                 
+                       </script>
+                     </div> 
        </nav>
 </header>
 <section class="filtro">
- 
 <a href='#produto' class='but'></a>
-                       
+
                         </section>
      
-    
-                        <section  id="produto">
-        <h2 class='title'>Tudo para seu pet</h2>
-        <div class="filtro-content">
-      <div class='filt'>
-      <span class='material-symbols-outlined' onclick='openPopup()'>
-    tune
-    </span></div>
-    <div id='popupContainer' style='display: none;'>
-                          <div  class='popup' >
-                          <br><br>
-                          <?php include_once("../filtro/filtro.php"); ?>
-                          </div>
-                      </div>
-                  
-                      <script>
-                          function openPopup() {
-                              document.getElementById('popupContainer').style.display = 'block';
-                          }
-                  
-                
-                      </script>
-                        <a href='#produto' class='but' ></a><div class='lupa'><?php  include_once("../barra/barra.php"); ?>  </div> 
+  
+        <section  id="produto">
+
+      <h2 class='title'>Tudo para seu pet</h2>
+       
+      <div class="filtro-content">
       
-            <div class="produto">
-           
+               
+                       
     <?php
             if(isset($_POST['pesquisar']))
             {
@@ -215,19 +230,16 @@ button {
     
 ?>
 
-</div> 
-              </div>
-
+</div>
     </section>
-
-
-    </body>
+</body>
 </html>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="../../../../../petshop/js/script.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../../../../petshop/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+

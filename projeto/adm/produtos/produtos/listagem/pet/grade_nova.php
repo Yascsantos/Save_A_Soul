@@ -24,7 +24,6 @@ button {
   width: 30%;
   height: 30px;
   background: #adb5a0;
-  
   outline: none;
   border: none;
   margin-top: 15px;
@@ -49,8 +48,6 @@ button {
   background-color: #fff;
   border: 1px solid #ccc;
   position: absolute;
-  top: 40%;
-  left: 20%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -147,7 +144,28 @@ button {
           <li><a href="../../../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
        </ul>
+       <div class='filt'><?php  include_once("../barra/barra.php"); ?>  
+      
 
+      <butonn class='lupa'><span class='material-symbols-outlined' onclick='openPopup()'>
+     tune
+     </span></butonn>
+     <div id='popupContainer' style='display: none;'>
+                           <div  class='popup' >
+             
+                           <br><br>
+                           <?php include_once("../filtro/filtro.php"); ?>
+                           </div>
+                       </div>
+                   
+                       <script>
+                           function openPopup() {
+                               document.getElementById('popupContainer').style.display = 'block';
+                           }
+                   
+                 
+                       </script>
+                     </div> 
        </nav>
 </header>
 <section class="filtro">
@@ -157,43 +175,13 @@ button {
      
   
         <section  id="produto">
-<<<<<<< HEAD
-    
-  
-      <div class='filt'>
-=======
+
       <h2 class='title'>Tudo para seu pet</h2>
        
       <div class="filtro-content">
-      <div class='filt'><?php  include_once("../barra/barra.php"); ?>  </div> 
-      <div class='lupa'>
       
->>>>>>> a66982293e61caf30834b92b0138ddae1dacfb4a
-     <butonn><span class='material-symbols-outlined' onclick='openPopup()'>
-    tune
-    </span></butonn> </div>
-    <div id='popupContainer' style='display: none;'>
-                          <div  class='popup' >
-            
-                          <br><br>
-                          <?php include_once("../filtro/filtro.php"); ?>
-                          </div>
-                      </div>
-                  
-                      <script>
-                          function openPopup() {
-                              document.getElementById('popupContainer').style.display = 'block';
-                          }
-                  
-                
-                      </script>
-                    
                        
-              
-            <div class="produto">
-       
-        
-         
+            
 <?php
      include_once("../../../../../conexaoBD.php");
      $sql_code= "SELECT * FROM produto";

@@ -23,38 +23,30 @@
        }
 
        #produto  {
-        border-top: 1px solid #686565;
-    
-        align-items: center;
         color: #fffffe;
-       }
-       #produto .produto {
-        border-top: 1px solid #686565;
-  
+        border: 1px solid #686565;
         text-align: center;
-        display: flex;
+    
       
        }
-#produto .produto .card{
-   padding: 15% 10%;
+#produto .card{
+  justify-content: space-around;
+  border-right: 1px solid #686565;
+  box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
+   padding: 5% 7% 5% 7%;
    text-align: center;
    transition: all 0.3s ease;
-  
-}
-#produto .produto .card:hover{
-  background-color: #ADB5A0;
-}
-#produto .produto .card img{
-    width: 550px;
-    height: 700px;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-}
-#produto .produto  .card:hover img{
-    border-color: #50352a
+   background-color: #8ba364;
 }
 
-#produto .produto .card .text{
+#produto .card img{
+    width: 600px;
+    height: 700px;
+    transition: all 0.3s ease;
+}
+
+
+#produto .card .text{
   font-size: 25px ;
   font-weight: 500;
   margin: 10px 0 7px 0px;
@@ -177,23 +169,9 @@ margin-top:auto;
    
   }
   
-  .mobile-menu {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-    margin: 8px;
-    transition: 0.3s;
-  }
  
-  .nav-list.active {
-    transform: translateX(0);
-  }
   
+
  
 
   a{
@@ -210,6 +188,7 @@ margin-top:auto;
   }
 
   .filtro{
+    box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
     background-image: url(../imgs/fundo-s.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -218,13 +197,7 @@ margin-top:auto;
  
   
   }
-  .filt{
-    margin-left: 60%;
-  
-  }
-  .lupa{
-    margin-right: 10%;
-  }
+ 
    .but{
    margin: 20%;
    margin-left: 60%;
@@ -238,10 +211,18 @@ margin-top:auto;
   }
 .filtro-content{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    
   }
+ .filt{
+  margin-top: 90px;
+  display: flex;
+ }
+
+ .lupa{
+  position: relative;
+  margin-left: 60px;
+  margin-top: 7px;
+ }
   .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -249,15 +230,14 @@ margin-top:auto;
     'GRAD' 0,
     'opsz' 48;
   color: #ffffff;
-  margin-left:15px;
-  margin-top: 10%;
+  
 
   }
   .popup {
     width: 300px;
     padding: 20px;
      background-color: #08080800;
-    top: 1200px;
+    top: 200px;
     left: 83%;
     transform: translate(-50%, -50%);
     text-align: center;

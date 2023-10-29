@@ -20,9 +20,9 @@
     <style>
     form .input-dados input{
       width: 100%;
-      height: 30px;
-      background-color: rgba(255, 255, 255, 0.32);
-      border-radius: 10px;
+      height: 40px;
+      background-color:white;
+      border-radius: 5px;
       outline: none;
       border: 2px solid transparent;
       padding: 15px;
@@ -47,14 +47,15 @@
       transition: all 0.4s ease;
   }
   .pesq{
-    width: 20px;
-    height:30px;
-    background-color: #08080800;
+    width: 40px;
+    height:40px;
+    border-radius:left 20px;
+    background-color:black;
     outline: none;
     border: none;
    position:relative;
-   top:-45px;
-   left:180px;
+   top:-55px;
+   left:170px;
     color: white;
    
 }  </style>";
