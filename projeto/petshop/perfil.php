@@ -43,8 +43,8 @@
    
    .img img{
     padding: 10px 50px 50px 50px;
-      width:400px;
-      heigth:400px;
+      width:300px;
+      heigth:300px;
       
    }
    .info-prod {
