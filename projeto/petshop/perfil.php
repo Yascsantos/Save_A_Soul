@@ -30,25 +30,26 @@
     <style>
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
     body{
-        background-image:url('imgs/fundo-s.jpg');
+      
         font-family:'Roboto';}
    
     .sobre-produto{
-      margin-left:10% ;
-      width:80%;
+        box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
+      border-top:1px solid black;
        display:flex;
-       background-color: rgba(255, 255, 255, 0.4);
-       backdrop-filter: blur(40px);
        padding: 30px 40px;
-       border-radius: 20px 20px ;
+      
    }
    
    .img img{
-      width:300px;
-      heigth:300px;
+    padding: 10px 50px 50px 50px;
+      width:400px;
+      heigth:400px;
       
    }
    .info-prod {
+    border-left:1px solid black;
+
        margin-top: auto;
        padding:30px;
        text-aling:center;
