@@ -111,7 +111,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 200%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
     justify-content: center;
@@ -119,10 +119,9 @@
 }
 
 .content-carrinho  {
-  background-color: #ADB5A0;
+    background-color: #ECFFCC;
     border-radius: 5px;
     width:40%;
-    height:700px;
     margin:auto;
     padding: 10px;
     text-align: center;
@@ -137,6 +136,7 @@
     left: 20px;
     font-size: 24px;
     cursor: pointer;
+    color:#2c491b;
 }
 </style>
 <body>
