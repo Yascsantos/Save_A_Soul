@@ -6,7 +6,10 @@
     <title>Encontro Agenado</title>
 </head>
 <body>
+    <a href='../../adm/animais/listagem/grade.php'>X</a>
     <h2>Encontro Agenado</h2>
+
+
 </body>
 </html>
 <?php
@@ -50,10 +53,9 @@
             $porte = $exibe['porte'];
             $sexo = $exibe['sexo'];
 
-            echo "Olá ".$nome_user."!<br>  Você marcou um encontro com o(a) $nome. Na data de $data e as $hora. <br> Esperamos você!!<br>";
+            echo "Olá ".$nome_user."!<br>  Você marcou um encontro com o(a) $nome. <br> <br><b>Esperamos você!!</b><br><br>";
             echo "OBS: Você receberá as demais informações no seu e-mail:  ".$email." <br>";
             echo "<br><br>";
-            echo "<a href='../../adm/animais/listagem/grade.php'>Voltar</a><br><br>";
 
         }
 

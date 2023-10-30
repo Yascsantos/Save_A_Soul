@@ -43,11 +43,5 @@
                 <a href='../../adm/animais/listagem/grade.php'>   Não</a>
             </p>";
 
-        echo "MAIS INFORMAÇÕES SOBRE ELE(A): <br> 
-            RAÇA: $raca <br>
-            PORTE: $porte <br>
-            SEXO: $sexo <br> .";
-        echo "<br><br>";
-
     }
 ?>   
