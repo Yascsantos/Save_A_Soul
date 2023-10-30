@@ -87,6 +87,7 @@ margin-top:auto;
 
 
 .inicio{
+    box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
     background-size: 100% 100%;
     background-position: center;
     background-image: url(../imgs/fundo-s.jpg);
@@ -196,7 +197,7 @@ section .title::after{
 
 
 .sobre{
-
+   
     background-image: url('../imgs/sobre.jpg');
     background-position: cover;
     background-repeat: no-repeat;
