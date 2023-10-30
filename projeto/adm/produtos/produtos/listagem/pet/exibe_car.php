@@ -92,12 +92,14 @@
 }
    </style>
 
+
 <body>
+<a href='grade_nova.php'>X</a>
+
 <section class='carrinho'>
       
         <div class='max-width'>
             <div class='carrinho-content'>
-
 
 <?php 
   //processamento
