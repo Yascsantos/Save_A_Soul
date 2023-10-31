@@ -5,12 +5,7 @@
     text-align: center;
   }
  
-  body{
-    background-image: url(../../../index/imgs/fundo-s.jpg);
-    background-position: center;
- background-repeat: no-repeat;
- background-size: 100% 100%;
-  }
+
 .text{
   font-family: "Poppins";
   text-align: center;
@@ -23,23 +18,30 @@
      
      
     }
-  
-    .menu a {
-      font-family:  'League Spartan';
-      font-size: 0.9rem;
-      text-decoration:none;
-      font-size: 0.9rem;
-      font-weight:600;
-      color:#fcfcfc;
-    }
+  .contener{
+    border:1px solid black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+ 
+  }
+     .menu{
+      position: fixed;background-color: #baafa5;
+      height: 100%;
+      display: flex;
+      text-align: justify;
+      width: 250px;
+      position: relative
    
-     a {
+     }
+
+   .menu  a {
       font-family:  'League Spartan';
       font-size: 0.9rem;
       text-decoration:none;
       font-size: 0.9rem;
       font-weight:600;
       color:#555454;
+      
     }
    
     a:hover{
@@ -108,25 +110,28 @@
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
-   .menu{
-    position: fixed;
-    height: 100%;
-    display: flex;
-    text-align: justify;
-    width: 250px;
-    position: relative
  
-   }
  
 
-   .nav-list {
+   ul {
     list-style: none;
 
   }
   
-  .nav-list li {
+ ul li {
     letter-spacing: 3px;
     margin-left: 32px;
+ 
+    border-radius:20px ;
+    background-color:#ffffff ;
+    height: 40px;
+    padding: 10px 10px;
+  }
+ul li:hover {
+   
+    background-color:#baafa5 ;
+    height: 40px;
+    padding: 10px 10px;
   }
   
   .contener{
@@ -139,20 +144,23 @@
   
 
   
+.ola{
+  padding-right: 50px;
+  padding-left: 50px;
+  height: 40px;
+}
+ form .perfil  {
 
- .perfil  {
-    margin-left: 0%;
-    width: 50%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+
     font-family: "Poppins", sans-serif;
     background-color: rgba(255, 255, 255, 0.993);
     padding: 30px 40px;
     text-align: justify;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #251531;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    position: relative
+    border-left: 1px solid#251531 ;
+    border-top: 1px solid#251531 ;
+ 
  
   }
  .compra {

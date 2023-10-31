@@ -79,15 +79,12 @@ $instrucao = mysqli_query($conexao, $sql);
   </style>
 
 </head>
-
-
 <body>
-
  <div class='contener'>
-
+ 
 <div class='menu'>
 
-<ul class='nav-list'>
+<ul>
     <br><br>
     <div class="logo"><img src="../../index/imgs/logo.png"  ></div>
     <br><br><br><br><br><br><br><br>
@@ -110,7 +107,9 @@ handshake
     <br>
 
     
-   <li><a id="open-cart">CARRINHO</a> </li>
+   <li><a id="open-cart"><span class="material-symbols-outlined">
+shopping_cart
+</span></a> </li>
 
 <div id="cart-modal" class="carrinho">
 
@@ -132,10 +131,12 @@ handshake
 
 
 </div>
-
-    
-<form class='perfil'>
-    <p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></strong></p><br>
+<div class='ola'>
+<p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></strong></p><br>
+</div>
+<form >
+  <div class='perfil'>
+   
                
         <!--Colocando a imagem padrão do perfil -->
   <?php
