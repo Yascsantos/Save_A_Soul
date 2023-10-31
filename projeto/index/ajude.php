@@ -157,7 +157,7 @@
           <div id="doar" class="carrinho">
 
 <div class="content-carrinho">
-<span class="fechar" id="close-doar">&times;</span>
+<span class="fechar" id="close-doar"  onclick="reloadPage()">&times;</span>
     
  
     <iframe src="../funcoes/doacao/painel.html" id="car"></iframe>
@@ -175,7 +175,9 @@ openDoarButton.addEventListener('click', () => {
 closeDoarButton.addEventListener('click', () => {
     doarModal.style.display = 'none';
 });
-
+function reloadPage() {
+            location.reload();
+        }
 </script>
 
 </div>
@@ -213,7 +215,7 @@ closeDoarButton.addEventListener('click', () => {
             
             <div class="pet-content">
                 <div class="column right">
-                Esse é Thomas nosso lindo vira-latinha, que adora estar na moda.
+               <b> Esse é Thomas nosso lindo vira-latinha, que adora estar na moda.
                  Você também pode deixar seu pet estiloso e confortável, assim como Thomas, basta clicar no botão abaixo ou no menu e verifique algumas das nossas diversas ropinhas, acessorios e utencilios. 
         Desse modo, você ajuda a nossa causa, pois uma parte do dinheira vai para o nosso abrigo.
               <br></b>
@@ -253,7 +255,7 @@ Seja qual for a sua escolha, seu apoio ajuda nosso trabalho ter mais estabilidad
                     <div id="doe" class="carrinho">
 
 <div class="content-carrinho">
-<span class="fechar" id="close-doe">&times;</span>
+<span class="fechar" id="close-doe"  onclick="reloadPage()">&times;</span>
     
  
     <iframe src="../funcoes/doacao/painel.html" id="car"></iframe>

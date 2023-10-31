@@ -169,7 +169,7 @@ a{
    
     <div>Quantidade: 
     <input type='number' placeholder='Qnt' name='qtd' class='num'><br>
-    <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php' id='fecharEAbriLink'> Voltar a comprar</a>
+   
 </div>
 ";
 
