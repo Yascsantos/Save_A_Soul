@@ -32,6 +32,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="css/editar.css">
     <title>Editar perfil/Save a Soul</title>
   
@@ -51,7 +52,9 @@
      <div class="caixa-dados">
        <form action="update.php" method="POST">
           <h2>Editar dados pessoais</h2>
-          <a href="../perfil.php">Voltar ao perfil</a><br><br>
+          <a href="../perfil.php"><span class="material-symbols-outlined">
+arrow_back
+</span></a><br><br>
 
             <div class="input-dados">
 
@@ -86,7 +89,9 @@
     <div class="caixa-dados">
 	<form action="alter.php" method="POST">
           <h2>Editar endereço</h2>
-          <a href="../perfil.php">Voltar ao perfil</a><br><br>
+          <a href="../perfil.php"><span class="material-symbols-outlined">
+arrow_back
+</span></a><br><br>
             <div class="input-dados">
                  <div class="input-senha">
             <label for="pais">País:</label>

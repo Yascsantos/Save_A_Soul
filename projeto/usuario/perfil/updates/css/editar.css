@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+a{
+text-decoration:none;
+color: #758354b0;
+}
 main{
   
     display: flex;
@@ -66,8 +70,9 @@ h2{
     font-weight: bold;
     color: #3d3d3d;
 }
-.caixa-dados p a{
-    color: hsl(258, 46%, 75%);
+.caixa-dados a{
+    text-decoration:none;
+    color: hsl(0, 0%, 97%);
     text-decoration: none;
 }
 .caixa-dados form{

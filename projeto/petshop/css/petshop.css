@@ -347,25 +347,3 @@ margin-top:auto;
 
 
 
-.owl-dots{
-  text-align: center;
-  margin-top: 20px;
-}
-.owl-dot{
-  width: 14px;
-  height: 14px;
-  outline: none!important;
-  border-radius: 50%;
-  border: 2px solid #adb5a0!important;
-  transition: all 0.3s ease;
-}
-.owl-dot.active{
-  width: 35px;
-  border-radius: 15px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-  background:#adb5a0!important;
-}
-
-

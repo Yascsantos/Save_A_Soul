@@ -71,13 +71,80 @@ if(isset($_POST['enviar']))
 </head>
 <style>
     
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+    body{
+      
+        font-family:'Roboto';}
+   
+    .sobre-produto{
+        box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
+      border-top:1px solid black;
+       display:flex;
+       padding: 30px 40px;
+      
+   }
+   
+   .img img{
+    padding: 10px 50px 50px 50px;
+      width:300px;
+      heigth:300px;
+      
+   }
+   .info-prod {
+    border-left:1px solid black;
 
-</style>
+       margin-top: auto;
+       padding:30px;
+       text-aling:center;
+       font-family:'Roboto';
+       color: #4c5838;
+
+   }
+   .tam {
+  display:flex;
+  
+}
+label{
+    color: #4c5838;
+    font-weight: bold;
+    display: block;
+}
+.comprar{
+    align-items: center;
+    height:50px;
+    background: #080808;
+    color: white;
+    font-size: 20px;
+  }
+
+  .num{
+    width:20%;
+
+  }
+ input {
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 10px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+form  input:focus{
+    border-color: #adb5a0;
+}
+a{
+    color: hsl(257, 11%, 88%);
+    text-decoration: none;
+}
+    </style>
+
 
 <body> 
 
 
-
+<div class='sobre-produto'>
 
 <?php
   
@@ -85,22 +152,30 @@ if(isset($_POST['enviar']))
     if(!isset($_SESSION))
     {
         session_start();
-    }
+   
     $_SESSION['id_ani'] = $_GET['codigo']; //id_ani
     $id = $_SESSION['id_ani'];
-       
+
+   }
     //ANIMAIS
     $sql= "SELECT * FROM animal where id_ani = $id";
     $instrucao = mysqli_query($conexao,$sql);
     foreach ($instrucao as $exibe) 
     {
-       
+    
         $nome = $exibe['nome_ani'];
         $raca = $exibe['raca'];
         $porte = $exibe['porte'];
         $sexo = $exibe['sexo'];
-
-        echo " Esse(a) é o(a) $nome. <br> Ele(a) é um(a) $raca, de porte $porte e um(a) $sexo.";
+        echo "
+        <div class='img'>
+        <img src=".$exibe['img_ani'].">
+        
+        </div>
+        "; 
+        
+        echo "  <div class='info-prod'>
+         Esse(a) é o(a) $nome. <br> Ele(a) é um(a) $raca, de porte $porte e um(a) $sexo.";
         echo "<br><br>";
         
         echo "Deseja adota-lo? ";
@@ -138,7 +213,7 @@ if(isset($_POST['enviar']))
 
     }
 ?>          
-
+</div></div>
 </body>
 </html>      
 

@@ -47,6 +47,7 @@
       heigth:300px;
       
    }
+   
    .info-prod {
     border-top:1px solid black;
 

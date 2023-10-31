@@ -40,7 +40,10 @@
            
         }
 
-    
+        a{
+    text-decoration:none;
+    color: #758354b0;
+   }
         .car .detalhes .item a{
           color: #777;
         
