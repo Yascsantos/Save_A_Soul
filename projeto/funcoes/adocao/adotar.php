@@ -169,7 +169,7 @@ a{
         $sexo = $exibe['sexo'];
         echo "
         <div class='img'>
-        <img src=".$exibe['img_ani'].">
+    imagem aqui
         
         </div>
         "; 
@@ -190,7 +190,8 @@ a{
     Preencha o formulário a baixo para marcarmos seu encontro.
 </p>
 
-<h2>Escolha data e horário</h2>
+
+<h3>Escolha data e horário</h3>
 
 
 <form method='post' action=''>
