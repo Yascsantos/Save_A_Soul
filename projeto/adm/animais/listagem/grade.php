@@ -96,7 +96,7 @@
 
       <h2>".$exibe['nome_ani']." </h2>
 
-        <a href='../../../funcoes/adocao/adotar.php?&codigo=$exibe[id_ani]'>Adotar</a>
+        <a href='../../../funcoes/adocao/adocao.php?&codigo=".$exibe['id_ani']."'>Adotar</a>
        
        <a href='../../../funcoes/abrigo/lar.php?&codigo=".$exibe['id_ani']."'>Abrigar</a> </div> ";
 

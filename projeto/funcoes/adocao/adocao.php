@@ -1,12 +1,14 @@
 <?php
     include_once("../../conexaoBD.php");
+    include_once("protect.php");
 
     if(!isset($_SESSION))
     {
         session_start();
     }
     $user = $_SESSION['id_user'];
-    $id = $_SESSION['id_ani'];
+    $id = $_GET ['codigo'];
+    $_SESSION['id_ani'] = $id;
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +26,7 @@
     </p>
 
     <h2>Formulário</h2>
-    <form method="post" action="adocao.php">
+    <form method="post" action="">
         <input type="date" name="data"/>
         <input type="time" name="horas"/>
         <input type="submit" name="enviar" value="Enviar" />
