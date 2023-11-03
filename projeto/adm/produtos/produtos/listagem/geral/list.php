@@ -195,8 +195,14 @@ margin-top:auto;
             <tr>
                 <td align='center'>Outras informações: </td>
                 <td align='center'>".$exibe['outros']."</td>
-                <td>  <h3><a href='../../../../../imagens_pro/imagens.php?&codigo=".$id."'>Imgens</a></h3></td>
                 <td></td>
+            </tr>
+            <tr>
+              <td></td>
+
+              <td align='center'>  <h3 ><a href='../../../../../imagens_pro/imagens.php?&codigo=".$id."'>Imgens</a></h3></td>
+              <td></td>
+
             </tr>
     <th align='center'><h3>Tamanhos disponivéis:</h3></th>
     <th align='center'><h3>Cores disponivéis</h3></th></tr>

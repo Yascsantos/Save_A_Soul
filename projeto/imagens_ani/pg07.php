@@ -54,7 +54,7 @@
     echo "<main>
         <div class='caixa'>
             <div class='caixa-dados'>
-            <h2>Mais imagens do animal ".$id."</h2>
+            <h2>Mais imagens do animal ".$id_ani."</h2>
             <a onclick='openCad()'>Cadastrar</a>
     <br>
             <div id='popupContainer' style='display: none;'>
@@ -79,7 +79,7 @@
               </script>
                 <a href='list.php'>Listar</a>
                 <br><br>
-                <a href='../adm/produtos/produtos/listagem/pro.php'>Voltar</a>
+                <a href='../adm/animais/listagem/animais.php'>Voltar</a>
             </div>
         </div>
     </main>";

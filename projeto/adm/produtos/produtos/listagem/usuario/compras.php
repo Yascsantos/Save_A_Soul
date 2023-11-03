@@ -135,7 +135,7 @@
         <nav>
      <img src='../../../../../petshop/imgs/logo.png' >
        <ul class='nav-list'>
-            <li><a href='../../listagem/list.php'>VOLTAR</a> </li>
+            <li><a href='../../../../usuario/listagem.php'>VOLTAR</a> </li>
             <br>
          </ul>
   

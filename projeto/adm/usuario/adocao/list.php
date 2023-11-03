@@ -77,7 +77,7 @@
     <body>
         <h1>Pedidos</h1>
         <p>Abaixo estão os animais que você adotou</p>
-        <a href= '../../listagem.php'>Voltar</a> <br><br>
+        <a href= '../listagem.php'>Voltar</a> <br><br>
     </body>
     </html>
         ";

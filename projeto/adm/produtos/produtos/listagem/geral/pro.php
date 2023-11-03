@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Listagem dos produtos cadastrados</h1>
-    <a href="../pg02.html">Voltar</a>
+    <a href="../../pg02.html">Voltar</a>
 </body>
 </html>
 <?php
