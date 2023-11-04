@@ -71,9 +71,79 @@ body{
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200'/>
         <title>Adoções</title>
     </head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+    main{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 10vh;
+
+}
+body{
+    font-family: 'Poppins';
+    background-size:1500px 900px;
+    background-image:url(../../../index/imgs/fundo1.jpg);
+
+   
+}
+a{
+    font-size: 0.9rem;
+    text-decoration:none;
+    font-size: 0.9rem;
+    font-weight:600;
+    color:black;
+  }
+ 
+  a:hover{
+    color:#3a3a3b;
+  }
+    .encontro{
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 700px;
+     margin-top: 200px;
+  
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.993);
+    padding: 30px 40px;
+    text-align: justify;
+    }
+    input label{
+    color: #4c5838;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form  input{
+    width: 20%;
+    height: 27px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+form  input:focus{
+    border-color: #adb5a0;
+}
+input[type='submit']{
+    background:#4c5838;
+    color: #fff;
+    height: 47px;
+}
+</style>
     <body>
+    <main>
+    <div class='encontro' >
         <h1>Pedidos</h1>
         <p>Abaixo estão os animais que você adotou</p>
         <a href= '../listagem.php'>Voltar</a> <br><br>
@@ -116,7 +186,9 @@ body{
                 echo "
                     <tr>  
                         <td align='center'>
-                            <a href='drop.php?&codigo=".$id_ado."'>Deletar registro</a>
+                            <a href='drop.php?&codigo=".$id_ado."'><span class='material-symbols-outlined'>
+                            delete
+                            </span></a>
                         </td>
                         <td align='center'>
                             ".$data." 
@@ -164,7 +236,10 @@ body{
 
 
 
-    echo "</table>";
+    echo "</div>
+    </main>
+    </body>
+    </html>";
 
 
 

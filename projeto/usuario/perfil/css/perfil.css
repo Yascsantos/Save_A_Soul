@@ -11,7 +11,16 @@
   text-align: center;
 } 
 
+body {
+  background-image: url('../../../index/imgs/fundo.jpg');
+  background-position: center;
+  background-size: 100% 100%;
 
+}
+a{
+  color: rgba(70, 97, 36, 0.993);
+  text-decoration: none;
+}
     .logo img{
       width: 13vh;
       height:12vh;
@@ -19,18 +28,22 @@
      
     }
   .contener{
-    border:1px solid black;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
     display: flex;
  
   }
      .menu{
-      position: fixed;background-color: #baafa5;
+      position: fixed;
+      background-color: #4C6937;
       height: 100%;
       display: flex;
       text-align: justify;
       width: 250px;
-      position: relative
+      position: relative;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
    
      }
 
@@ -40,7 +53,7 @@
       text-decoration:none;
       font-size: 0.9rem;
       font-weight:600;
-      color:#555454;
+      color: #ffffff;
       
     }
    
@@ -121,22 +134,21 @@
  ul li {
     letter-spacing: 3px;
     margin-left: 32px;
- 
+     text-align: center;
     border-radius:20px ;
-    background-color:#ffffff ;
+    background-color:#506e3a ;
     height: 40px;
     padding: 10px 10px;
   }
 ul li:hover {
    
-    background-color:#baafa5 ;
+    background-color:#4C6937 ;
     height: 40px;
     padding: 10px 10px;
   }
   
   .contener{
     align-items: center;
-    display: flex;
     height:900px;
    
 
@@ -147,19 +159,21 @@ ul li:hover {
 .ola{
   padding-right: 50px;
   padding-left: 50px;
-  height: 40px;
+  margin-top: -50%;
+  font-family: 'League Spartan';
+  font-size: 20px;
+
 }
  form .perfil  {
-
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  width: 100%;
-
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 600px;
+     margin-top: -100px;
+    margin-left: -340px;
     font-family: "Poppins", sans-serif;
     background-color: rgba(255, 255, 255, 0.993);
     padding: 30px 40px;
     text-align: justify;
-    border-left: 1px solid#251531 ;
-    border-top: 1px solid#251531 ;
+
  
  
   }

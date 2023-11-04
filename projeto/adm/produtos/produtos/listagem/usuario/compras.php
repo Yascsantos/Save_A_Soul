@@ -68,89 +68,101 @@
         <head>
             <meta charset='UTF-8'>
             <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-            <link rel='stylesheet' href='../../../../css/style.css'>
+        
             <title>Compra registrada</title>
         </head>
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
-        body{
-            background-image: url(../../../../../index/imgs/fundo-s.jpg);
-            background-position:center;
-            background-size:100% 100%;
-        }
-        main{
-            display: flex;
-             align-items: center;
-             justify-content: center;
-             padding: 20px;
-             min-height: 900px;
-             color:white ;
-         }
-    
-         }
-  
-         .espaco{
-             width: 30%;
-             display: flex;
-             align-items: center;
-             padding: 20px;
-             border-radius: 20px  0 0 20px;
-         }
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap'); 
+     .carrinho {
+              font-family: 'League Spartan', sans-serif;
+              text-align: center;
          
-         .input-senha{
-             width: 50%;
-             float: left;
-             padding-right: 15px;
-         }
-         .caixa{
-             display: flex;
-             width: 1000px;
-         }
-         
-         .caixa-dados{
-             background-color: rgba(255, 255, 255, 0.4);
-             backdrop-filter: blur(40px);
-             padding: 30px 40px;
-             width: 80%;
-             border-radius: 20px;
-             
-         }
-         .caixa-dados h2{
-             font-size: 20px;
-         }
-         .caixa-dados  a{
-             font-family: 'Poppins';
-             text-decoration:none;
-             font-size: 0.9rem;
-             font-weight:600;
-             color:#fcfcfc;
-           }
+            background-color: #fff;
+            box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
           
-          .caixa-dados a:hover{
-             color:#3a3a3b;
-           }
-         </style>
-        <body>
-        <header id='menu'>
-        <nav>
-     <img src='../../../../../petshop/imgs/logo.png' >
-       <ul class='nav-list'>
-            <li><a href='../../../../usuario/listagem.php'>VOLTAR</a> </li>
-            <br>
-         </ul>
+          }
   
-         </nav>
-  </header>
+  
+  
+        
+          .car {
+           
+              padding: 20px;
+              font-family: 'League Spartan';
+              margin-top: 20px;
+             
+          }
+  
+          a{
+      text-decoration:none;
+      color: #758354b0;
+     }
+          .car .detalhes .item a{
+            color: #777;
+          
+            
+          }
+          .car .detalhes .item a:hover{
+            color: #333;
+          
+          
+          
+          }
+  
+  
+       
+          .car .detalhes  {
+              margin: 10px 5PX;
+              display: flex;
+              border-bottom: 1px solid #555c4ce0;
+             
+          }
+  
+          .car .detalhes .item P {
+              display: inline-block;
+              margin-left:15PX ;
+              color: #333;
+          }
+       
+          .car .detalhes .item h2 {
+              font-size: 16px;
+              margin: 0;
+          }
+  
+          .car .detalhes .item .valor {
+              text-align: right;
+              margin-top: 100%;
+          }
+  
+        
+        
+      
+      .comprar{
+    align-items: center;
+    width: 50%;
+    height:50px;
+    background: #080808;
+    margin-right: 20%;
+    color: white;
+    font-size: 20px;
+  }
+     </style>
+        <body>
+  
+      
+           
         
         
             ";
             
-            echo "<div class='caixa'>
-            <div class='espaco'></div>
-              <div class='caixa-dados'>
-            <tr>
-            <th>  <h2>Pedidos realizados pelo usuário</h2></th></tr>
-                    <tr>"; 
+            echo "<section class='carrinho'>
+      
+           
+            
+            <a href='../../../../usuario/listagem.php'><-VOLTAR</a> 
+
+                <div class='carrinho-content'> <h2>Pedidos realizados pelo usuário</h2>"; 
+                
         foreach($query as $dade)
         {
             $id_pro = $dade['id_pro'];
@@ -173,37 +185,36 @@
 
                   
         
-                    echo "
-               
-                          
-                                <img src=".$img_pro." width='100px' height='100px'>
-                         
-                                <div class='info'>
-                                ".$prod." /
-                          
-                            
+                
+                    echo "<div class='car'>
+                    <div class='detalhes'>
                        
-                                ".$cor."/
-                              
-        
-                        
-                                ".$tam."/
-                              
-                         
-                                R$".$preco."/
-                               
-        
+                    <div class='Descrição'>
                           
-                                ".$qtd."/
+                              
+                              
+                                <div class='Descrição'>
+                                <img src=".$img_pro." width='100px' height='100px'><br>
+                                <b>  ".$prod." </b>".$cor." Tam:".$tam."  </div>
+                                               
+                                <div class='item'>
+                                <p >Quantidade:
+                                    ".$qtd."</p>
+                                </div><BR>
                                
-                       
-                                R$".$valor."/
-                            
-        
-                         
-                                ".$data."
-                                
+                                <p>Data da compra ".$data."</p>
+                                </div><BR>
+                                <div class='item'>
+                <p>Preço unitário:R$".$preco." </p><br>
+                                    </div>
+                                    <div class='item'>
+                                        <p class='valor'>Total:R$".$valor."</p>
+                                       
+                                    </div>
                                 </div>
+                            
+                                
+                              
         
         
                     ";  
@@ -216,7 +227,7 @@
 
     echo "</div>
 
-    </div>
+   
     
    ";
 

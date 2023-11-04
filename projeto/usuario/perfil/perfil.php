@@ -61,7 +61,10 @@ $instrucao = mysqli_query($conexao, $sql);
     font-family: 'Poppins';
     position: relative;
 }
-
+.content-carrinho  a {
+  color :#fff;
+  text-decoration: none;
+}
 .fechar {
     position: absolute;
     top: 10px;
@@ -79,7 +82,7 @@ $instrucao = mysqli_query($conexao, $sql);
   </style>
 
 </head>
-<body>
+
  <div class='contener'>
  
 <div class='menu'>
@@ -88,43 +91,17 @@ $instrucao = mysqli_query($conexao, $sql);
     <br><br>
     <div class="logo"><img src="../../index/imgs/logo.png"  ></div>
     <br><br><br><br><br><br><br><br>
-<li> <a href="../../index.php"><span class="material-symbols-outlined">
-home
-</span > INICIO</a></li>
+<li><br> <a href="../../index.php"> INICIO </a></li>
 <br>
-    <li> <a href='../../sobre/sobre.php'> <span class="material-symbols-outlined">
-group
-</span> SOBRE</a></li>
+    <li><br> <a href='../../sobre/sobre.php'>SOBRE</a></li>
     <br>
-    <li> <a href="../../adm/produtos/produtos/listagem/pet/grade_nova.php"><span class="material-symbols-outlined">
-pet_supplies
-</span> PETSHOP</a></li>
+    <li> <br><a href="../../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
     <img scr="img/dog.jpg" class="dog">
     <br>
-    <li> <a href='../../index/ajude.php'><span class="material-symbols-outlined">
-handshake
-</span> AJUDA</a></li>
+    <li><br> <a href='../../index/ajude.php'> COMO AJUDAR?</a></li>
     <br>
 
     
-   <li><a id="open-cart"><span class="material-symbols-outlined">
-shopping_cart
-</span></a> </li>
-
-<div id="cart-modal" class="carrinho">
-
-    <div class="content-carrinho">
-    <span class="fechar" id="close-cart">&times;</span>
-        Carrinho de Compras
-     
-        <iframe src="../../adm/produtos/produtos/listagem/pet/exibe_car.php" id="car"></iframe>
-      
-    
-        <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>Continuar comprando</a>     <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
-        </div>
-</div>
-
-    <script src="script.js"></script>
 
 
 </ul>
@@ -132,9 +109,9 @@ shopping_cart
 
 </div>
 <div class='ola'>
-<p>Seja bem vinda ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?></strong></p><br>
+<p>Seja bem vinda(o) ao seu perfil <strong><?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?>:)</strong></p><br>
 </div>
-<form >
+<form>
   <div class='perfil'>
    
                
@@ -209,7 +186,24 @@ shopping_cart
 <div class="dados">
           <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?> <a href='./updates/pessoal.php'><span class="material-symbols-outlined" style>
 edit
-</span></a>  <br>
+</span></a>  <br><a id="open-cart"><span class="material-symbols-outlined">
+shopping_cart
+</span></a> 
+
+<div id="cart-modal" class="carrinho">
+
+    <div class="content-carrinho">
+    <span class="fechar" id="close-cart">&times;</span>
+        Carrinho de Compras
+     
+        <iframe src="../../adm/produtos/produtos/listagem/pet/exibe_car.php" id="car"></iframe>
+      
+    
+        <a href='../../adm/produtos/produtos/listagem/pet/grade_nova.php'>Continuar comprando</a>     <button  class='comprar'>    <a href='../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+        </div>
+</div>
+
+    <script src="script.js"></script>
 		
 
        <p>Nome:  <?php foreach ($instrucao as $exibe){ echo $exibe['nome'];}?><br>

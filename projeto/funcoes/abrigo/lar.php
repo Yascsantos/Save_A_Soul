@@ -13,9 +13,11 @@
         font-family:'Roboto';}
    
     .sobre-produto{
+        width: 500px;
+        margin-top: 100pX;
+        margin-left: 30%;
         box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
       border-top:1px solid black;
-       display:flex;
        padding: 30px 40px;
       
    }
@@ -23,17 +25,16 @@
    .img img{
     padding: 10px 50px 50px 50px;
       width:300px;
-      heigth:300px;
+      height:300px;
       
    }
    .info-prod {
-    border-left:1px solid black;
-
+   border-top: 1px solid black;
        margin-top: auto;
        padding:30px;
-       text-aling:center;
+       text-align:center;
        font-family:'Roboto';
-       color: #4c5838;
+       color: black;
 
    }
    .tam {
@@ -74,6 +75,23 @@ a{
     color: hsl(257, 11%, 88%);
     text-decoration: none;
 }
+
+  button{
+        height: 57px;
+        width: 55px;
+          border: none;
+    border-radius:20px ;
+    background-color:#506e3a ;
+
+   
+  }
+ 
+button:hover {
+   
+    background-color:#4C6937 ;
+
+   
+  }
     </style>
 <body>
 <div class='sobre-produto'>
@@ -84,10 +102,11 @@ a{
     include_once("protect.php");
 
     echo "  <div class='img'>
+    <H2> Por que abrigar?</H2>
     <p>
     Quando os animais ficam muito tempo em situação de rua, eles desaprendem a lidar com humanos.<br>
     Para reverter esse problema a Save a Soul,<br>
-     propôs um projeto em colaboração com a comunidade de <br>
+     propôs um projeto em colaboração com a comunidade de 
     “Lar voluntário” onde os voluntários ajudariam esses animais a se reabilitarem, 
     <br>com o auxilio da ONG 
     (em medicamentos, comida, vacinas, etc.)
@@ -115,11 +134,11 @@ a{
         $sexo = $exibe['sexo'];
 
        
-        echo "   Esse(a) é o(a) $nome. <br> Ele(a) é um(a) $raca, de porte $porte e um(a) $sexo.
+        echo "   O animal que você escolheu foi o(a) é o(a) $nome. <br> Ele(a) é um(a) $raca,  $sexo de porte $porte.
       <br><br>"; echo " 
-                O $nome faz parte desse projeto. Deseja ajuda-lo?
-                <a href='abrigo.php?codigo=$id'>Sim</a>
-                <a href='../../adm/animais/listagem/grade.php'>   Não</a>
+                O $nome faz parte desse projeto. <BR>Deseja ajuda-lo?<br><br>
+                <button><a href='abrigo.php?codigo=$id'> Sim</a></button>
+                <button> <a href='../../adm/animais/listagem/grade.php'>Não</a></button>
             </p>";
 
     }
