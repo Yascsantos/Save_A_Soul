@@ -28,10 +28,6 @@
         <input type="number" placeholder="Preço" name="preco">
         </div>
         <div class='input-senha'>
-        <label>Quantidade: </label>
-        <input type="number" placeholder="Quantidade" name="qtd">
-        </div>
-        <div class='input-senha'>
 </div>
         <label>Modelo: </label>
         <input type="text" placeholder="Modelo" name="mod">

@@ -42,7 +42,6 @@ CREATE TABLE produto(
     id_cat INT,
     prod VARCHAR(50), /*Nome do produto*/
     preco DECIMAL(10,2),
-    qtd INT, 
     modelo VARCHAR(100),
     outros VARCHAR(100),
     img_pro VARCHAR(100),

@@ -84,10 +84,10 @@ INSERT INTO `pedido` (`id_ped`, `id_user`, `id_pro`, `numero`, `cor`, `tamanho`,
 -- Copiando dados para a tabela save.planos: ~0 rows (aproximadamente)
 
 -- Copiando dados para a tabela save.produto: ~3 rows (aproximadamente)
-INSERT INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `qtd`, `modelo`, `outros`, `img_pro`) VALUES
-	(1, 1, 'Vestido', 15.00, 30, 'Vestido rodado', 'Vestido para cachorrinhas de pequeno/mÃ©dio porte.', '../../listagem/img/2023.08.06-14.57.25.jpg'),
-	(2, 2, 'Pote para comida', 20.00, 10, 'Tigela dupla para comida', 'Capacidade: 250g', '../../listagem/img/2023.08.06-14.57.36.jpg'),
-	(4, 8, 'Kit de banho', 25.00, 30, 'Para filhotes', '---', '../../listagem/img/2023.11.03-17.20.58jfif');
+INSERT INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `modelo`, `outros`, `img_pro`) VALUES
+	(1, 1, 'Vestido', 15.00, 'Vestido rodado', 'Vestido para cachorrinhas de pequeno/mÃ©dio porte.', '../../listagem/img/2023.08.06-14.57.25.jpg'),
+	(2, 2, 'Pote para comida', 20.00,'Tigela dupla para comida', 'Capacidade: 250g', '../../listagem/img/2023.08.06-14.57.36.jpg'),
+	(4, 8, 'Kit de banho', 25.00, 'Para filhotes', '---', '../../listagem/img/2023.11.03-17.20.58jfif');
 
 -- Copiando dados para a tabela save.tamanhos: ~7 rows (aproximadamente)
 INSERT INTO `tamanhos` (`id_tam`, `id_pro`, `tamanho`) VALUES
