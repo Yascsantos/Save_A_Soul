@@ -11,92 +11,7 @@
     <link rel="stylesheet" href="css/ajude.css" type="text/css"></head>
 </head>
 <style>
-  *{
-    color:white;
-  }
-      @keyframes navLinkFade {
-      from {
-        opacity: 0;
-        transform: translateX(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    .mobile-menu.active .line1 {
-      transform: rotate(-45deg) translate(-8px, 8px);
-    }
-    
-    .mobile-menu.active .line2 {
-      opacity: 0;
-    }
-    
-    .mobile-menu.active .line3 {
-      transform: rotate(45deg) translate(-5px, -7px);
-    }
-   
-    @media (max-width: 1300px){
-      .navbar .max-width{
-          margin-left: 0;
-      }
-  }
   
-  
-  
-  @media (max-width: 999px) {
-    body {
-      overflow-x: hidden;
-    }
-    .nav-list {
-      position: absolute;
-      top: 8vh;
-      right: 0;
-      width: 50vw;
-      height: 92vh;
-      background-color:#cbacaad3;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      transform: translateX(100%);
-      transition: transform 0.3s ease-in;
-    }
-    .nav-list li {
-      margin-left: 0;
-      opacity: 0;
-    }
-    .mobile-menu {
-      display: block;
-    }
-  }
-  
-  .nav-list.active {
-    transform: translateX(0);
-  }
-  
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  .mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-  }
-  
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-  }
   #car{
     width: 100%;
   height: 500px;
@@ -120,7 +35,6 @@
 
 .content-carrinho  {
     background-color: #ECFFCC;
-    border-radius: 5px;
     width:40%;
     margin:auto;
     padding: 10px;
@@ -166,12 +80,13 @@
 const openDoarButton = document.getElementById('open-doar');
 const closeDoarButton = document.getElementById('close-doar');
 
-// Event listener to open the cart modal
+
+
 openDoarButton.addEventListener('click', () => {
   doarModal.style.display = 'block';
 });
 
-// Event listener to close the cart modal
+
 closeDoarButton.addEventListener('click', () => {
     doarModal.style.display = 'none';
 });

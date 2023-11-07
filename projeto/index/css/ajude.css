@@ -152,9 +152,8 @@ margin-top:auto;
   background-position: cover;
 }
 body {
-  background-image: url(../imgs/pet1.jpg);
-  background-size: 300% 130%;
- background-position: center;
+  background-color: #7c8764ab;
+ 
 
 }
 .sobre .sobre-content .left{
