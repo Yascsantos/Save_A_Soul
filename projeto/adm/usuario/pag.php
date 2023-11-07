@@ -106,10 +106,9 @@ body{
     <h2>Informações dos usuários</h2><br>
     <p>Usuário(a): <b><?php echo $nome;?></b></p>
 
-    <h3>-><a href="../produtos/produtos/listagem/usuario/compras.php">Pedidos já feitos</a></h3>
     <!--Mudar status-->
-    <h3>-><a href="./adocao/list.php">Status da adoção</a></h3>
-    <h3>-><a href="./abrigo/list.php">Status do abrigo</a></h3>
+    <h3>-><a href="./adocao/list.php">Adoção</a></h3>
+    <h3>-><a href="./abrigo/list.php">Abrigo</a></h3>
 
 
     <a href="listagem.php">Voltar</a>
