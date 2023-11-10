@@ -36,7 +36,7 @@
    padding: 5% 7% 5% 7%;
    text-align: center;
    transition: all 0.3s ease;
-   background-color: #8ba364;
+   background-color: #6b7a53;
 }
 
 #produto .card img{
@@ -213,6 +213,9 @@ margin-top:auto;
     display: flex;
     
   }
+.card img{
+    box-shadow:2px 3px 10px 2px rgba(0, 0, 0, 0.2);
+  }
  .filt{
   margin-top: 90px;
   display: flex;
@@ -308,6 +311,7 @@ margin-top:auto;
       width: 300px;
       height: 300px;
       transition: all 0.3s ease;
+ 
   }
  
   
