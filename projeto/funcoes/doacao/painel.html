@@ -3,47 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Doação</title>
 </head>
-<style>   body {
-  
-    font-family: 'Arial', sans-serif;
+<style>  
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+
+
+body {
+        font-family: 'Poppins';
+        text-align: center;
+       
+       
+    }
+    div{
+        border-top:1px rgba(0, 0, 0, 0.555) solid ;
+       
+       
+    }
+    .form{
+        display: flex;
+
+    }
+.money{
+    width: 50%;
 }
-div {
-    text-align: center;
-    margin-top: 20px;
-}
-h1 {
-    font-size: 36px;
-    color: #2c491b;}
-h3 {
-    font-size: 24px;
-    color: #2c491b;;
-}
-button {
-    background-color:  #2c491b;;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 10px; 
+.mant{
+    width: 50%;
 }
 a {
-    text-decoration: none;
-    color: white; 
-    font-weight: bold;
-}</style>
-<body>
     
-    <div align = 'center'>
-        <br><br><br>
-        <h1>Olá!!! </h1>
-        <h3>Escolha a forma de doação na qual deseja colaborar.</h3> <br><br><br>
+      font-size: 0.9rem;
+      text-decoration:none;
+      font-size: 14px;
+      font-weight:600;
+      color: black;
+      
+    }
+   
+    a:hover{
+      color:#3a3a3b;
+    }
+  
+    input label{
+    color: #4c5838;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form  input{
+    width: 20%;
+    height: 27px;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+form  input:focus{
+    border-color: #adb5a0;
+}
+input[type='submit']{
+    background:#4c5838;
+    color: #fff;
+    height: 47px;
+}
+</style>
+<body>
+
+
+        <h1>Outras formas de colaborar  </h1>
+        <div>
+        <p>
+            Temos várias opções para você escolher como quer nos ajudar a melhorar a vida de algum peludinho!
+            <br> 
+            Escolha uma forma de doação </p> 
+            <br>
+            <div class='form'>
+            <div class='money'> 
+    <br>
+      <a href="./dinheiro/explicacao.html"><span class="material-symbols-outlined">
+        payments
+        </span>Doar dinheiro </a> </div>
+    <div class='mant'>  <br>
+     <a href="./mantimento/explicacao.html"> <span class="material-symbols-outlined">
+            grocery
+            </span>Doar mantimentos</a></div> <br><br>
+        </div>
     </div>
 
-    <div align = 'center'>
-        <button type="button"> <a href="./dinheiro/explicacao.html">DINHEIRO</a> </button>
-        <button type="button"><a href="./mantimento/explicacao.html">MANTIMENTOS</a> </button><br>
-    </div>
     
 </body>
 </html>

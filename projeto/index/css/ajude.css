@@ -18,6 +18,7 @@
   /*  todos os codigos similares  */
   section{
     padding: 100px 0;
+   
   }
   section .title{
     font-family: 'Poppins', sans-serif;
@@ -153,7 +154,10 @@ margin-top:auto;
 }
 body {
   background-color: #7c8764ab;
- 
+background-image: url('../../petshop/imgs/patinha.png');
+
+
+
 
 }
 .sobre .sobre-content .left{

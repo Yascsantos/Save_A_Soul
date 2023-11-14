@@ -16,10 +16,26 @@
         $nome = $dados['nome'];
         $email = $dados['email'];
 
-        echo "<a href='final.php?&codigo=".$dados['id_par']."'>";
-        echo "<br><br><br>";
+        echo " <style>   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap'); div{
+   
+            font-family: 'Poppins', sans-serif;
+            background-color: rgba(255, 255, 255, 0.993);
+            padding: 30px 40px;
+            text-align: justify;
+            border-bottom:1px solid black;
+              
+            }
+            img{
+                height:300px;
+                margin-left:30%;
+            }</style>
+            <div>
+                <h3  align = 'center'><a href='final.php?&codigo=".$dados['id_par']."'></a>";
+   
         echo "<h3  align = 'center'>Olá $nome, para garantir a segurança dos seus dados, <br>
         mandaremos as informações para a doação no seu e-mail: $email.</h3>";
+           
+        echo" <img src='thanks.png'>Obrigado por sua colaboração!</div>";
 
     }
     

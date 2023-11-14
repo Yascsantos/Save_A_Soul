@@ -157,7 +157,7 @@ $instrucao = mysqli_query($conexao, $sql);
                            <body>
                                <div id='popupContainer' style='display: none;''>
                                    <div  class='popup' >
-                                    <span class='material-symbols-outlined' onclick='closePopup()'>
+                                    <span class='material-symbols-outlined'  onclick='reloadPage()'>
                                    close
                                    </span> 
                                    <br><br>
@@ -166,16 +166,7 @@ $instrucao = mysqli_query($conexao, $sql);
                                 
                                    </div>
                                </div>
-                           
-                               <script>
-                                   function openPopup() {
-                                       document.getElementById('popupContainer').style.display = 'block';
-                                   }
-                           
-                                   function closePopup() {
-                                       document.getElementById('popupContainer').style.display = 'none';
-                                   }
-                               </script>
+                          
                            </body>
                            </html>";
                         }
@@ -222,16 +213,6 @@ shopping_cart
     <!-- Iframe oculto inicialmente -->
     <iframe id="endereco" src="endereco.php"></iframe>
     
-    <script>
-        function abrirEnd() {
-            var iframe = document.getElementById("endereco");
-            if (iframe.style.display === "none") {
-                iframe.style.display = "block";
-            } else {
-                iframe.style.display = "none";
-            }
-        }
-    </script>
 
 
 
@@ -297,5 +278,29 @@ login
       window.location.href = 'logout.php';
     }
   </script>
+   
+   <script>
+                                   function openPopup() {
+                                       document.getElementById('popupContainer').style.display = 'block';
+                                   }
+                           
+                                   function closePopup() {
+                                       document.getElementById('popupContainer').style.display = 'none';
+                                   }
+                                   function reloadPage() {
+                                    location.reload();
+                                }
+                               </script>
+                                   <script>
+        function abrirEnd() {
+            var iframe = document.getElementById("endereco");
+            if (iframe.style.display === "none") {
+                iframe.style.display = "block";
+            } else {
+                iframe.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>
