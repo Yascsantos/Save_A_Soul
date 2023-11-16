@@ -27,7 +27,7 @@
             }
             img{
                 height:300px;
-                margin-left:30%;
+                margin-left:10%;
             }</style>
             <div>
                 <h3  align = 'center'><a href='final.php?&codigo=".$dados['id_par']."'></a>";

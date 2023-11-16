@@ -30,7 +30,7 @@
     }
     img{
         height:300px;
-        margin-left:30%;
+        margin-left:10%;
     }</style>
     <div>
         <h3  align = 'center'>Olá $nome, para garantir a segurança dos seus dados, <br>

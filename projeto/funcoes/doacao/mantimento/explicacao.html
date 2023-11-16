@@ -9,7 +9,14 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
  
-
+    .material-symbols-outlined{
+        margin-top: 13px;
+        margin-right: 2px;
+        position: absolute;
+    }
+label{
+    margin-left: 5%;
+}
 a {
     
       font-size: 0.9rem;
@@ -76,15 +83,15 @@ input[type='submit']{
   <br>  </p>
         <form method="post" action="./cad.php">
             <div class='input-dados'>
-            <label for="nome"><label class="material-symbols-outlined">
-                person
-            </label> Nome:</label>
+                <span class="material-symbols-outlined">
+                    person
+                </span> <label for="nome">Nome:</label>
             <input type="text" name="nome" placeholder="Nome" >
             <br>
 
-            <label for="email"><span class="material-symbols-outlined">
+            <span class="material-symbols-outlined">
                 mail
-                </span> E-mail:</label>
+                </span><label for="email"> E-mail:</label>
             <input type="email" name="email" placeholder="E-mail" >
             <br>
 
