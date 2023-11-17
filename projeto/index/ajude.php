@@ -12,14 +12,7 @@
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
-  #car{
-    width: 100%;
-  height: 600px;
-  border: none;
-  margin-top: 10px;
-  overflow-y: hidden;
 
-  }
 
         .carrinho {
     display: none;
@@ -37,21 +30,18 @@
 
 .content-carrinho  {
     background-color: #ffff;
-    width:60%;
-    margin:auto;
     padding: 10px;
     text-align: center;
     color:#fff;
     font-family: 'Poppins';
     position: relative;
- 
-
     font-family: 'Poppins';
         background-size:cover;
         justify-content: center;
      
    
 }
+
 
 .fechar {
     position: absolute;
