@@ -19,9 +19,8 @@ main{
     color:white ;
 }
 body{
-    background-image:url(../imgs/fundo1.jpg);
-    background-repeat: no-repeat;
-    background-position: cover;
+    background-image:url(../../../../index/imgs/fundo-s.jpg);
+    background-size:cover;
     color:white ;
    
 }

@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -42,8 +43,8 @@ a{
     color:#3a3a3b;
   }
 
-.navbar.sticky{
-     background: #00804b;
+.navbar.cor{
+     background:#576c40;
      padding: 15px 0;
 }
 .navbar .max-width{
@@ -73,7 +74,7 @@ a{
 .navbar .menu li a:hover{
     color:#3a3a3b;
 }
-.navbar.sticky .menu li a:hover{
+.navbar.cor .menu li a:hover{
     color: #fff;
 }
 /*  Home   inicio  */
@@ -84,39 +85,39 @@ a{
     height: 100vh;
     color: #fff;
     min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .inicio .max-width{
     margin: auto 0 auto 40px;
 }
 .inicio .inicio-content .text-1{
-    font-size: 27px;
+    font-size: 37px;
 }
 .inicio .inicio-content .text-2{
-    font-size: 75px;
+    font-size: 55px;
     font-weight: 500;
     margin-left: -3px;
 }
 .inicio .inicio-content .text-3{
-    font-size: 40px;
+    font-size: 18px;
     margin: 5px 0;
 }
 .inicio .inicio-content .text-3 span{
-    color:#00804b ;
+    color:#6F7959 ;
     font-weight: 500;
 }
 .inicio .inicio-content a{
     display: inline-block;
-    background: #00804b;
+    background: #6F7959;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #00804b;
+    border: 2px solid #6F7959;
 }
 .inicio .inicio-content a:hover{
-    color: #00804b;
+    color: #6F7959;
     background: none;
 }
 
@@ -136,7 +137,7 @@ a{
     text-align: center;
     line-height: 50px;
     color: #fff;
-    background: #00804b;
+    background: #6F7959;
     border-radius: 6px;
     font-size: 30px;
     z-index: 9999;
@@ -157,7 +158,7 @@ section{
     padding: 100px 0;
 }
 section .title{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'League Spartan', sans-serif;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
@@ -181,17 +182,16 @@ section .title::after{
     left: 50%;
     font-size: 20px;
     background: #fff;
-    color: #00804b;
+    color: #667948;
     padding: 5px;
     transform: translateX(-50%);
 }
-.about, .services, .skills, .teams, .contact, footer{
-    font-family: 'Roboto', sans-serif;
+.sobre, .ajudar, .equipe, .contato, footer{
+    font-family:  'Josefin Sans', sans-serif;
 }
-.about .about-content,
-.services .serv-content,
-.skills .skills-content,
-.contact .contact-content{
+.sobre .sobre-content,
+.ajudar .ajudar-content,
+.contato .contato-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -200,129 +200,117 @@ section .title::after{
 
 /*  sessão sobre  */
 
-.about .title::after{
-    content: "Quem sou eu";
+.sobre .title::after{
+    content: "começou";
 }
-.about .about-content .left{
+.sobre .sobre-content .left{
     width: 45%;
 }
-.about .about-content .right{
+.sobre .sobre-content .right{
     width: 55%;
 }
-.about .about-content .right .text{
+.sobre .sobre-content .right .text{
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
-    color: #00804b;
+.sobre .sobre-content .right .text span{
+    color:#667948;
 }
-.about .about-content .right p{
+.sobre .sobre-content .right p{
     text-align: justify;
+    font-family: 'Poppins';
+    color:black;
 }
-.about .about-content .right a{
-    display: inline-block;
-    background: #00804b;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #00804b;
-    transition: all 0.3s ease;
-}
-.about .about-content .right a:hover{
-    color: #00804b;
-    background: none;
-}
-.about .about-content .left img{
+
+
+.sobre .sobre-content .left img{
     width: 400px;
     height: 400px;
     object-fit: cover;
     border-radius: 6px;
 }
-/*  sessão serviços */
-.services, .teams{
-    background: #111;
-    color: #fff;
+
+.ajudar, .equipe{
+    background:#667948;
+    color: rgb(255, 255, 255);
 }
-.services .title::before,
-.teams .title::before{
+.ajudar .title::before,
+.equipe .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
-    background: #111;
+.ajudar .title::after,
+.equipe .title::after{
+    background:  rgb(255, 255, 255);
     content: "ajudar";
 }
-.services .serv-content .card{
+.ajudar .ajudar-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background:#576c40;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
-    background: #00804b;
+.ajudar .ajudar-content .card:hover{
+    background: #BCCFA8;
 }
-.services .serv-content .card .box{
+.ajudar .ajudar-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.ajudar .ajudar-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card ion-icon{
+.ajudar .ajudar-content .card .material-symbols-outlined{
     font-size: 70px;
-    color: #00804b;
-}
-.services .serv-content .card:hover ion-icon{
     color: #fff;
 }
-.services .serv-content .card .text{
+.ajudar .ajudar-content .card:hover .material-symbols-outlined{
+    color: #91ad73;
+}
+.ajudar .ajudar-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 /*  sessão equipe  */
-.teams .title::after{
-    content: "Especializada";
+.equipe .title::after{
+    content: "fundadores";
 }
-.teams .carousel .card{
-    background: #222;
+.equipe .carousel .card{
+    background: #576c40;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
-    background: #00804b;
+.equipe .carousel .card:hover{
+    background: #BCCFA8;
 }
-.teams .carousel .card img{
+.equipe .carousel .card img{
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #00804b;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.equipe .carousel .card:hover img{
     border-color: #fff;
 }
-.teams .carousel .card .box{
+.equipe .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.equipe .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.equipe .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -336,7 +324,7 @@ section .title::after{
     height: 14px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid #00804b!important;
+    border: 2px solid #6F7959!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -345,58 +333,58 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background: #00804b!important;
+    background: #6F7959!important;
 }
 /*  sessão Contato  */
-.contact .title::after{
-    content: "Fale conosco";
+.contato .title::after{
+    content: "Denuncie maus tratos";
 }
-.contact .contact-content .column{
+.contato .contato-content .column{
     width: calc(50% - 30px);
 }
-.contact .contact-content{
+.contato .contato-content{
     align-items: flex-start;
 }
-.contact .contact-content .left p{
+.contato .contato-content .left p{
     text-align: justify;
 }
-.contact .contact-content .text{
+.contato .contato-content .text{
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.contact .contact-content .left .icons{
+.contato .contato-content .left .icons{
     margin: 10px 0;
 }
-.contact .contact-content .row{
+.contato .contato-content .row{
     display: flex;
     height: 65px;
     align-items: center;
 }
-.contact .contact-content .row .info{
+.contato .contato-content .row .info{
     margin-left: 30px
 }
-.contact .contact-content .row .info .head{
+.contato .contato-content .row .info .head{
     font-weight: 500;
 }
-.contact .contact-content .row .info .sub-title{
+.contato .contato-content .row .info .sub-title{
     color: #333;
 }
-.contact .contact-content .row ion-icon{
+.contato .contato-content .row ion-icon{
     font-size: 25px;
-    color: #00804b;
+    color: #576c40;
 }
-.contact .rigth form .fields{
+.contato .rigth form .fields{
     display: flex;
 }
-.contact .rigth form .field,
-.contact .rigth form .fields .field{
+.contato .rigth form .field,
+.contato .rigth form .fields .field{
     width: 100%;
     height: 45px;
     margin-bottom: 15px;
 }
-.contact .rigth form .field input,
-.contact .rigth form .textarea textarea{
+.contato .rigth form .field input,
+.contato .rigth form .textarea textarea{
     width: 100%;
     height: 100%;
     border: 1px solid #ccc;
@@ -406,29 +394,29 @@ section .title::after{
     font-size: 17px;
     font-family: 'Roboto',sans-serif;
 }
-.contact .rigth form .name{
+.contato .rigth form .name{
     margin-right: 10px;
 }
-.contact .rigth form .email{
+.contato .rigth form .email{
     margin-left: 10px;
 }
-.contact .rigth form .textarea{
+.contato .rigth form .textarea{
     width: 100%;
     height: 80px;
 }
-.contact .rigth form .textarea textarea{
+.contato .rigth form .textarea textarea{
     padding-top: 10px;
     resize: none;
 }
-.contact .rigth form .button{
+.contato .rigth form .button{
     width: 170px;
     height: 47px;
 }
-.contact .rigth form .button button{
+.contato .rigth form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid #00804b;
-    background: #00804b;
+    border: 2px solid #576c40;
+    background:#576c40;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -436,8 +424,8 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.contact .rigth form .button button:hover{
-    color: #00804b;
+.contato .rigth form .button button:hover{
+    color: #576c40;
     background: none;
 }
 
@@ -449,7 +437,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: #00804b;
+    color: #576c40;
     text-decoration: none;
 }
 footer span a:hover{
@@ -457,107 +445,3 @@ footer span a:hover{
 }
 
 
-/*  responsivo  */
-@media (max-width: 1300px){
-    .navbar .max-width{
-        margin-left: 0;
-    }
-}
-@media (max-width: 1104px){
-    .about .about-content .left img{
-        width: 350px;
-        height: 350px;
-    }
-}
-@media (max-width: 991px){
-    .navbar .max-width{
-        padding: 0 50px;
-    }
-}
-@media (max-width: 947px){
-    .max-width{
-        max-width: 800px;
-        padding: 0 50px;
-    }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .navbar .menu{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        left: -100%;
-        top: 0;
-        background: #111;
-        padding-top: 80px;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active{
-        left: 0;
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .home .home-content .text-2{
-        font-size: 70px;
-    }
-    .home .home-content .text-3{
-        font-size: 35px;
-    }
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-    .about .about-content .column{
-        width: 50%;
-    }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .right{
-        flex: 100%;
-    }
-    .services .serv-content .card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
-    footer{
-        margin-top: 15px;
-    }
-}
-@media (max-width: 690px){
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
-    }
-    .services .serv-content .card {
-        width:100%;
-    }
-}
-@media (max-width: 500px){
-    .home .home-content .text-2{
-        font-size: 50px;
-    }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
-}

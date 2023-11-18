@@ -15,8 +15,8 @@ main{
     color:white ;
 }
 body{
-    background-image:url(../../../index/imgs/fundo.jpg);
-    background-position: cover;
+    background-image:url(../../../index/imgs/fundo-s.jpg);
+    background-size:cover;
     color:white ;
    
 }

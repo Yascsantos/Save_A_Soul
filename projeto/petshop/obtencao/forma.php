@@ -19,7 +19,10 @@
   padding: 20px;
   min-height: 10vh;
 
-}a{
+}
+body{
+        background-image: url(../../index/imgs/fundo.png);
+    }a{
     
       font-size: 0.9rem;
       text-decoration:none;
@@ -91,13 +94,7 @@ label {
     
 }
 
-body{
-        font-family: 'Poppins';
-        background-size:1500px 900px;
-        background-image:url(../index/imgs/fundo.jpg);
 
-       
-    }
   
 
         .carrinho {

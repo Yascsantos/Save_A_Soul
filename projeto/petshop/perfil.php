@@ -38,6 +38,8 @@
       border-top:1px solid black;
        display:flex;
        padding: 30px 40px;
+       width:80%;
+       margin:auto;
       
    }
    
@@ -75,7 +77,7 @@ label{
   }
 
   .num{
-    width:20%;
+    width:30%;
 
   }
  input {

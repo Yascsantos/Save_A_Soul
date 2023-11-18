@@ -12,8 +12,12 @@
 </head>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+#car{
+    height: 600px;
+    width: 600px;
+    border: none;
 
-
+}
         .carrinho {
     display: none;
     position: fixed;
@@ -22,7 +26,6 @@
     width: 100%;
     height: 200%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-
     z-index: 1;
     justify-content: center;
     align-items: center;
@@ -36,8 +39,13 @@
     font-family: 'Poppins';
     position: relative;
     font-family: 'Poppins';
-        background-size:cover;
+    background-size:cover;
         justify-content: center;
+        width: 700px;
+        margin-left:25%;
+      
+  
+       
      
    
 }
@@ -64,7 +72,7 @@
             </div>
      <ul class="nav-list">
           <li> <a href="../index.php">INICIO</a></li>
-          <li> <a href="../adm/animais/listagem/grade.php">ANIMAIS</a></li>
+          <li> <a href="../adm/animais/listagem/grade.php">VER ANIMAIS</a></li>
           <li> <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
           <li> <a id="open-doar">DOE</a></li>
           <div id="doar" class="carrinho">

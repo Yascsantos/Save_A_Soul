@@ -22,16 +22,13 @@
             text-align: center;
           background-color: #fff;
           box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
+          width: 600PX;
+          margin: AUTO;
         
         }
 
 
-        .max-width {
-            max-width: 600px;
-            margin: 0 auto;
-        }
 
-      
         .car {
          
             padding: 20px;
@@ -43,6 +40,8 @@
         a{
     text-decoration:none;
     color: #758354b0;
+    margin-left: 25%;
+    margin-top: 40px;
    }
         .car .detalhes .item a{
           color: #777;
@@ -97,8 +96,8 @@
 
 
 <body>
-<a href='grade_nova.php'>X</a>
 
+<a href='grade_nova.php'>X</a>
 <section class='carrinho'>
       
         <div class='max-width'>

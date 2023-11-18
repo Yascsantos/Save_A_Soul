@@ -81,18 +81,25 @@
 
       
         .comprar {
-            background-color: #007BFF;
+            background-color: #6F7959;
             color: #fff;
             padding: 10px 20px;
             font-size: 16px;
             border: none;
             cursor: pointer;
             margin-top: 10px;
+            margin-left: 10%;
         }
 
         .comprar:hover {
-            background-color: #0056b3;
+            background-color: #BCCFA8;
         }
+        .material-symbols-outlined{
+        margin-top: 20px;
+        margin-right: 25px;
+        position: absolute;
+        color:black;
+    }
     </style>
     <title>Compra registrada</title>
 </head>
