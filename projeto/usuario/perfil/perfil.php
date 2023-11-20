@@ -72,10 +72,61 @@ $instrucao = mysqli_query($conexao, $sql);
     font-size: 24px;
     cursor: pointer;
 }
+ #open-cart .material-symbols-outlined{
+        margin-top: 2px;
+        margin-left:15px;
+        position: absolute;
+    }
+.senha{
+                              border:none ;
+                              background-color: #fff;
+                              font-size: 0.9rem;
+                              text-decoration:none;
+                              font-size: 0.9rem;
+                              font-weight:600;
+                              color: black;
+                              margin-left: 70%;
+                              font-family: 'Poppins', sans-serif;
+                              
+                            }
+                           .senha:hover{
+                              border-bottom:2px solid black ;
+                              
+                            }
 
-
-
-
+                            .sim{
+                              border:none ;
+                              background-color: #fff;
+                              color: black;
+                              font-size: 0.9rem;   
+                  font-size: 0.9rem;
+                  color: black;
+                  position: absolute;
+                              margin-right: 10%;
+                              font-family: 'Poppins', sans-serif;
+                              
+                            }
+                           .sim:hover{
+                              border-bottom:2px solid black ;
+                              
+                            }
+                            .nao{
+                              position: absolute;
+                              border:none ;
+                              background-color: #fff;
+                              font-size: 0.9rem;
+                  
+                              font-size: 0.9rem;
+                              color: black;
+                              margin-top: 8px;
+                              margin-left: 30%;
+                              font-family: 'Poppins', sans-serif;
+                              
+                            }
+                           .nao:hover{
+                              border-bottom:2px solid black ;
+                              
+                            }
 
 
 
@@ -93,7 +144,7 @@ $instrucao = mysqli_query($conexao, $sql);
     <br><br><br><br><br><br><br><br>
 <li><br> <a href="../../index.php"> INICIO </a></li>
 <br>
-    <li><br> <a href='../../sobre/sobre.php'>SOBRE</a></li>
+    <li><br> <a href='../../sobre/sobre.php'>SOBRE NÓS</a></li>
     <br>
     <li> <br><a href="../../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
     <img scr="img/dog.jpg" class="dog">
@@ -133,18 +184,37 @@ $instrucao = mysqli_query($conexao, $sql);
                         }
                 
                     
-                            .popup {
-                              width: 300px;
-                              padding: 20px;
-                              background-color: #fff;
-                              border: 1px solid #ccc;
-                              position: absolute;
-                              top: 50%;
-                              left: 50%;
-                              transform: translate(-50%, -50%);
-                              text-align: center;
+                        .popup {
+                          width: 300px;
+                          padding: 20px;
+                          background-color: #fff;
+                          border: 1px solid #ccc;
+                          position: absolute;
+                          top: 50%;
+                          left: 50%;
+                          transform: translate(-50%, -50%);
+                          text-align: center;
+                          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+                          
+                          
+                          font-family: 'Poppins', sans-serif;
+                          background-color: rgba(255, 255, 255, 0.993);
+      
+                          text-align: justify;
+                        }
+                        .popup form  input{
+                  
+                          outline: none;
+                          border:none;
+                          padding: 15px;
+                          font-size: 15px;
+                          color: #616161;
+                          transition: all 0.4s ease;
+                          }
+                         .popup form  input:focus{
+                     
+                            border-bottom: 2px solid #adb5a0;
                             }
-                        
                           .popup  iframe {
                             border: none;
                             }
@@ -157,7 +227,7 @@ $instrucao = mysqli_query($conexao, $sql);
                            <body>
                                <div id='popupContainer' style='display: none;''>
                                    <div  class='popup' >
-                                    <span class='material-symbols-outlined' onclick='closePopup()'>
+                                    <span class='material-symbols-outlined'  onclick='reloadPage()'>
                                    close
                                    </span> 
                                    <br><br>
@@ -166,16 +236,7 @@ $instrucao = mysqli_query($conexao, $sql);
                                 
                                    </div>
                                </div>
-                           
-                               <script>
-                                   function openPopup() {
-                                       document.getElementById('popupContainer').style.display = 'block';
-                                   }
-                           
-                                   function closePopup() {
-                                       document.getElementById('popupContainer').style.display = 'none';
-                                   }
-                               </script>
+                          
                            </body>
                            </html>";
                         }
@@ -186,9 +247,9 @@ $instrucao = mysqli_query($conexao, $sql);
 <div class="dados">
           <b>  <p>Usuário:  <?php foreach ($instrucao as $exibe){ echo $exibe['usuario'];}?> <a href='./updates/pessoal.php'><span class="material-symbols-outlined" style>
 edit
-</span></a>  <br><a id="open-cart"><span class="material-symbols-outlined">
+</span></a> <a id="open-cart"><span class="material-symbols-outlined">
 shopping_cart
-</span></a> 
+</span></a> <br>
 
 <div id="cart-modal" class="carrinho">
 
@@ -220,18 +281,8 @@ shopping_cart
       <a onclick="abrirEnd()" class="btn">Exibir endereço</a>
     
     <!-- Iframe oculto inicialmente -->
-    <iframe id="endereco" src="endereco.php"></iframe>
+    <iframe id="endereco" src="endereco.php" scrolling="no"></iframe>
     
-    <script>
-        function abrirEnd() {
-            var iframe = document.getElementById("endereco");
-            if (iframe.style.display === "none") {
-                iframe.style.display = "block";
-            } else {
-                iframe.style.display = "none";
-            }
-        }
-    </script>
 
 
 
@@ -255,7 +306,7 @@ login
     <label for="confirma">Confirmar nova senha:</label>
     <input type="password" name="confirma" placeholder="Confirme a senha" required><br><br>
 
-    <button input type="submit" name="editar" value="editar"> Editar</button>
+    <button input type="submit" name="editar" value="editar" class='senha'> >Editar</button>
 
     </form>
   </div>
@@ -279,8 +330,8 @@ login
   <div id="sairPopup" class="popup" style="display: none;">
     <h3>Tem certeza que deseja Sair?</h3>
     <p>Todas as suas sessões ativas serão encerradas.</p>
-    <button onclick="Sair()">Sim</button>
-    <button onclick="hidePopup()">Não</button>
+    <button onclick="Sair()" class='sim'><b>Sim</b></button>
+    <button onclick="hidePopup()" class='nao'><b>Não</b></button><br><br>
   </div>
 
   <script>
@@ -297,5 +348,29 @@ login
       window.location.href = 'logout.php';
     }
   </script>
+   
+   <script>
+                                   function openPopup() {
+                                       document.getElementById('popupContainer').style.display = 'block';
+                                   }
+                           
+                                   function closePopup() {
+                                       document.getElementById('popupContainer').style.display = 'none';
+                                   }
+                                   function reloadPage() {
+                                    location.reload();
+                                }
+                               </script>
+                                   <script>
+        function abrirEnd() {
+            var iframe = document.getElementById("endereco");
+            if (iframe.style.display === "none") {
+                iframe.style.display = "block";
+            } else {
+                iframe.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>

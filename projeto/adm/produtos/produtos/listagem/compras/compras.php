@@ -23,9 +23,10 @@
      .carrinho {
               font-family: 'League Spartan', sans-serif;
               text-align: center;
-         
+         width:700px;
             background-color: #fff;
             box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
+            margin-left:25%;
           
           }
   
@@ -76,11 +77,16 @@
               margin: 0;
           }
   
-          .car .detalhes .item .valor {
+          .car .detalhes .valor {
               text-align: right;
-              margin-top: 100%;
+              margin-top: 100px;
           }
-  
+          .car .detalhes .preco {
+          position:absolute;
+            margin-left:460px;
+            margin-top: 80px;
+        }
+
         
         
       
@@ -108,7 +114,7 @@
             
             <a href='../../../../index.html'><-VOLTAR</a> 
 
-                <div class='carrinho-content'> <h2>Pedidos realizados pelo usuário</h2>"; 
+                <div class='carrinho-content'> <h2>Pedidos realizados pelos usuários</h2>"; 
                 
         foreach($query as $dade)
         {
@@ -135,11 +141,7 @@
                 
                     echo "<div class='car'>
                     <div class='detalhes'>
-                       
-                    <div class='Descrição'>
-                          
-                              
-                              
+            
                                 <div class='Descrição'>
                                 <img src=".$img_pro." width='100px' height='100px'><br>
                                 <b>  ".$prod." </b>".$cor." Tam:".$tam."  </div>
@@ -150,11 +152,10 @@
                                 </div><BR>
                                
                                 <p>Data da compra ".$data."</p>
-                                </div><BR>
-                                <div class='item'>
-                <p>Preço unitário:R$".$preco." </p><br>
-                                    </div>
-                                    <div class='item'>
+                        
+                              
+                                <p class='preco'>Preço unitário:R$".$preco." </p><br>
+                                    
                                         <p class='valor'>Total:R$".$valor."</p>
                                        
                                     </div>
@@ -172,15 +173,12 @@
 
 
 
-    echo "</div>
 
-   
-    
-   ";
 
 
 
 ?> 
+</section>
  </main>
 </body>
     </html>

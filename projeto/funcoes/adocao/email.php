@@ -57,7 +57,7 @@
             echo "<br><br>";
         }
 
-        <?php
+       
         use PHPMailer\PHPMailer\PHPMailer;
         use PHPMailer\PHPMailer\SMTP;
         use PHPMailer\PHPMailer\Exception;
@@ -83,7 +83,7 @@
             $mail->isHTML(true);                                
             $mail->Subject = 'Olá'.$nome_user.'. Agradecemos muito a sua participação no projeto.';
             $mail->Body = 'Olá! Aqui tem fala é a ONG Save a Soul.<br> 
-                            Você marcou uma entevista de adoção com o(a).'$nome'. Sua entrevista será dia '.$data.' as '.$hora.'.<br>
+                            Você marcou uma entevista de adoção com o(a)'.$nome.'Sua entrevista será dia '.$data.' as '.$hora.'.<br>
                             Sua entrevista será realizada na Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001. 
                             Na sala 13.
                             <br><br>

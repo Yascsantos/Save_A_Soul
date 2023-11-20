@@ -17,12 +17,11 @@
     {
         echo "
 <style>
-  .radio  input [type='radio']{
-color: #4c5838;
-background-color: red;
+ input [type='radio']{
+width: 12px;
 }
 </style>";
-        echo "  <input type='radio' class='radio' id=".$exibe['nome_cat']." name='cat' value=".$exibe['id_cat'].">
+        echo "  <input type='radio' id=".$exibe['nome_cat']." name='cat' value=".$exibe['id_cat'].">
         <label for=".$exibe['nome_cat'].">".$exibe['nome_cat']."</label><br>
         ";
 

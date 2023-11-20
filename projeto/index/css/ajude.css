@@ -18,6 +18,7 @@
   /*  todos os codigos similares  */
   section{
     padding: 100px 0;
+   
   }
   section .title{
     font-family: 'Poppins', sans-serif;
@@ -153,7 +154,10 @@ margin-top:auto;
 }
 body {
   background-color: #7c8764ab;
- 
+background-image: url('../../petshop/imgs/patinha.png');
+
+
+
 
 }
 .sobre .sobre-content .left{
@@ -241,59 +245,3 @@ body {
 }
 
 
-/* Responsivo */
-@media (max-width: 947px){
-  
-  .inicio .inicio-content .text-2{
-      font-size: 70px;
-  }
-  .inicio .inicio-content .text-3{
-      font-size: 35px;
-  }
-  .inicio .inicio-content a{
-      font-size: 23px;
-      padding: 10px 30px;
-  }
-  .ajude .ajude-content .column{
-      width: 50%;
-  }
-  .ajude .ajude-content .left{
-      display: flex;
-      justify-content: center;
-      margin: 0 auto 60px;
-  }
-  .ajude .ajude-content .right{
-      flex: 100%;
-  }
-
-
-  footer{
-      margin-top: 15px;
-  }
-}
-@media (max-width: 690px){
-  .inicio .inicio-content .text-2{
-      font-size: 60px;
-  }
-  .inicio .inicio-content .text-3{
-      font-size: 32px;
-  }
-  .inicio .inicio-content a{
-      font-size: 20px;
-  }
- 
-}
-@media (max-width: 500px){
-    .inicio .inicio-content .text-2{
-        font-size: 50px;
-    }
-    .inicio .inicio-content .text-3{
-        font-size: 27px;
-    }
-}
-@media (max-width: 1104px){
-  .ajude .ajude-content .left img{
-      width: 350px;
-      height: 350px;
-  }
-}

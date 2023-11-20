@@ -17,6 +17,7 @@
     <title>Encontro</title>
 </head>
 <style>
+    
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
     main{
   
@@ -27,6 +28,9 @@
   min-height: 10vh;
 
 }
+body{
+        background-image: url(../../sobre/imgs/fundo-s.jpg);
+    }
     .encontro{
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     width: 600px;

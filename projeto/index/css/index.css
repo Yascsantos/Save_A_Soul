@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 
 *{
    
@@ -66,7 +68,7 @@ body{
     margin: auto;
 }
 
-#menu{
+#menu {
   position: fixed;
   width:100%;
   height:110px;
@@ -93,6 +95,10 @@ margin-top:auto;
     display: flex;
   
   }
+  #menu .cor{
+    background:#576c40;
+    padding: 15px 0;
+}
   
   .nav-list li {
     letter-spacing: 3px;
@@ -185,7 +191,49 @@ margin-top:auto;
 }
 
 
-
+section{
+  padding: 100px 0;
+}
+section .title{
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  position: relative;
+}
+section .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after{
+  position: absolute;
+  bottom:-12px;
+  left: 50%;
+  font-size: 20px;
+  background: #fff;
+  color: #667948;
+  padding: 5px;
+  transform: translateX(-50%);
+}
+.sobre, .ajudar, .equipe, .contato, footer{
+  font-family:  'Josefin Sans', sans-serif;
+}
+.sobre .sobre-content,
+.ajudar .ajudar-content,
+.contato .contato-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .comeco{
   height: 700px;
@@ -231,57 +279,51 @@ margin-top:auto;
 }
 
 
-.ajude{
-  background-size:100% 100%;
-  height: 700px;
-  min-height: 500px;
-  background-image:url(../imgs/fundo.jpg);
-  background-repeat: no-repeat;
- 
-}
 
-.ajude .title::after{
-   
-  content: "a nós";
+.ajudar{
+  background:#4d6938;
+  color: rgb(255, 255, 255);
 }
-.ajude .carousel .card{
-
- border-radius: 6px;
- padding: 25px 35px;
- text-align: center;
- transition: all 0.3s ease;
+.ajudar .title::before{
+  background: #fff;
 }
-.ajude .carousel .card:hover{
-  background: #efe6eb;
+.ajudar .title::after{
+  background:  rgb(255, 255, 255);
+  content: "ajudar";
 }
-.ajude .carousel .card img{
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #efe6eb;
+.ajudar .ajudar-content .card{
+  width: calc(33% - 20px);
+  background:#576c40;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
-.ajude .carousel .card:hover img{
-  border-color: #fff;
+.ajudar .ajudar-content .card:hover{
+  background: #BCCFA8;
 }
-.ajude .carousel .card .box{
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-transition: all 0.3s ease;
+.ajudar .ajudar-content .card .box{
+  transition: all 0.3s ease;
 }
-.ajude .carousel .card:hover .box{
-transform: scale(1.05);
+.ajudar .ajudar-content .card:hover .box{
+  transform: scale(1.05);
 }
-.ajude .carousel .card .text{
-font-size: 25px;
-font-weight: 500;
-margin: 10px 0 7px 0;
+.ajudar .ajudar-content .card .material-symbols-outlined{
+  font-size: 70px;
+  color: #fff;
+}
+.ajudar .ajudar-content .card:hover .material-symbols-outlined{
+  color: #91ad73;
+}
+.ajudar .ajudar-content .card .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+  font-family: 'Josefin Sans', sans-serif;
 }
 .owl-dots{
-  align-items: center;
+  text-align: center;
   margin-top: 20px;
 }
 .owl-dot{
@@ -289,106 +331,126 @@ margin: 10px 0 7px 0;
   height: 14px;
   outline: none!important;
   border-radius: 50%;
-  border: 2px solid #adb5a0!important;
+  border: 2px solid #6F7959!important;
   transition: all 0.3s ease;
 }
 .owl-dot.active{
   width: 35px;
   border-radius: 15px;
 }
-.owl-dot.active, .owl-dot:hover{
-  background:#adb5a0!important;
+.owl-dot.active,
+.owl-dot:hover{
+  background: #6F7959!important;
 }
 
 
+
+
+.contato .title::after{
+  content: "Denuncie maus tratos";
+}
+.contato .contato-content .column{
+  width: calc(50% - 30px);
+}
+.contato .contato-content{
+  align-items: flex-start;
+}
+.contato .contato-content .left p{
+  text-align: justify;
+}
+.contato .contato-content .text{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.contato .contato-content .left .icons{
+  margin: 10px 0;
+}
+.contato .contato-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contato .contato-content .row .info{
+  margin-left: 30px
+}
+.contato .contato-content .row .info .head{
+  font-weight: 500;
+}
+.contato .contato-content .row .info .sub-title{
+  color: #333;
+}
+.contato .contato-content .row ion-icon{
+  font-size: 25px;
+  color: #576c40;
+}
+.contato .rigth form .fields{
+  display: flex;
+}
+.contato .rigth form .field,
+.contato .rigth form .fields .field{
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+}
+.contato .rigth form .field input,
+.contato .rigth form .textarea textarea{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Roboto',sans-serif;
+}
+.contato .rigth form .name{
+  margin-right: 10px;
+}
+.contato .rigth form .email{
+  margin-left: 10px;
+}
+.contato .rigth form .textarea{
+  width: 100%;
+  height: 80px;
+}
+.contato .rigth form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contato .rigth form .button{
+  width: 170px;
+  height: 47px;
+}
+.contato .rigth form .button button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #576c40;
+  background:#576c40;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contato .rigth form .button button:hover{
+  color: #576c40;
+  background: none;
+}
 
 /*  sessão footer  */
 footer{
-background:#4C6937;
-padding: 50px 50px;
-color: #fff;
-
+  background: #111;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
 }
-
-span{
-  font-family:  'League Spartan';
-font-size:40px;
-font-weight:600;
-color:white;
-left: 50%;
+footer span a{
+  color: #576c40;
+  text-decoration: none;
 }
 footer span a:hover{
-text-decoration: underline;
+  text-decoration: underline;
 }
 
-.lista_informacoes li{
-  font-family:  'League Spartan';
-font-size:16px;
-font-weight:400;
-color:white;
-display: flex;
-list-style: none;
-letter-spacing: 3px;
-margin-left: 32px;
-
-}
-
-
-
-
-/* Responsivo */
-@media (max-width: 947px){
-  
-  .inicio .inicio-content .text-2{
-      font-size: 70px;
-  }
-  .inicio .inicio-content .text-3{
-      font-size: 35px;
-  }
-  .inicio .inicio-content a{
-      font-size: 23px;
-      padding: 10px 30px;
-  }
-  .ajude .ajude-content .column{
-      width: 50%;
-  }
-  .ajude .ajude-content .left{
-      display: flex;
-      justify-content: center;
-      margin: 0 auto 60px;
-  }
-  .ajude .ajude-content .right{
-      flex: 100%;
-  }
-
-
-  footer{
-      margin-top: 15px;
-  }
-}
-@media (max-width: 690px){
-  .inicio .inicio-content .text-2{
-      font-size: 60px;
-  }
-  .inicio .inicio-content .text-3{
-      font-size: 32px;
-  }
-  .inicio .inicio-content a{
-      font-size: 20px;
-  }
- 
-}
-@media (max-width: 500px){
-    .inicio .inicio-content .text-2{
-        font-size: 50px;
-    }
-    .inicio .inicio-content .text-3{
-        font-size: 27px;
-    }
-}
-@media (max-width: 1104px){
-  .ajude .ajude-content .left img{
-      width: 350px;
-      height: 350px;
-  }
-}

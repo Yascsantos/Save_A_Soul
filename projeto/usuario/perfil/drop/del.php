@@ -66,5 +66,5 @@
 
 	} 
 
-    header ('location:../../../index/index.php');
+    header ('location:../../../index.php');
 ?>

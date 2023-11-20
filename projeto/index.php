@@ -11,20 +11,16 @@
     <link href="https://fonts.cdnfonts.com/css/lazy-dog" rel="stylesheet">
     <link rel="stylesheet" href="./index/css/index.css" type="text/css"></head>
 </head>
+
 <body>
 <header id="menu">
       <nav>
    <img src="./index/imgs/logo.png" >
-        <div class="mobile-menu">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-             
-            </div>
+     
      <ul class="nav-list">
-          <li> <a href="./index/ajude.php">AJUDE</a></li>
+          <li> <a href="./index/ajude.php">QUERO ADOTAR</a></li>
           <li> <a href="https://goo.gl/maps/E9MvDvJCDCmGBeWX7">ENDEREÇO</a></li>
-          <li> <a href="#">CONTATO</a></li>
+          <li> <a href="#contato">CONTATO</a></li>
           <li> <a href="sobre/sobre.php">SOBRE NÓS</a></li>
           <li><a href="./usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
           <br>
@@ -53,14 +49,13 @@
         Vale ressaltar que, para a Save a Soul, a saúde emocional dos animais é tão importante quanto a saúde física, e,
         <br> por isso, a associação também se dedica a proporcionar um ambiente seguro e acolhedor para esses animais,
         <br> visando a sua recuperação integral e bem-estar geral.</p></b>
-                    <a href="./index/ajude.php">Saiba mais</a>
+                    <a href="./sobre/sobre.php">Saiba mais</a>
                 </div>
             </div>
         </div>
     </section>
    
 
-                
                 
      
     <section class="comeco" >
@@ -85,21 +80,117 @@
 
    
 
+   <!--sessão serviços-->
+   <section class="ajudar" id='ajudar'>
+        <div class="max-width">
+            <h2 class="title">Como  </h2>
+            <div class="ajudar-content">
+                
+               <div class="card">
+                   <div class="box">
+                   <span class="material-symbols-outlined">
+volunteer_activism
+</span>
+                    <div class="text"><a href='index/ajude.php' class='text'>Doação</a></div>
+                    <p>Efetue doações monetarias ou de mantimentos para ajudar nos nossos resgates!</p>
+                   </div>
+               </div>
+               <div class="card">
+                <div class="box">
+                <span class="material-symbols-outlined">
+favorite
+</span>
+                <div class="text"> <a href='#contato' class='text'>Seja voluntário</a></div>
+                 <p>Entre em contato conosco e faça parte do projeto, fornecendo lar temporário ou ajudando na manutenção da ong. E o mais importante Denuncie situações de maus tratos!! </p>
+                </div>
+            </div>
+               <div class="card">
+                <div class="box">
+                <span class="material-symbols-outlined">
+shopping_bag
+</span>
+                 <div class="text"><a href='adm/produtos/produtos/listagem/pet/grade_nova.php' class='text'>Pet shop</a> </div>
+                 <p>Efetue compras no nosso petshop on-line, pois uma parte do lucro das vendas ajuda na manutenção da ong!</p>
+                </div>
+            </div>
 
-    
+           
+            </div>
+        </div>
+    </section>
 
-        <footer >
-                      <ul class="lista_informacoes">
-                        <li> <span class="material-symbols-outlined">pin_drop </span>Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</li><br>
-                        <li><span class="material-symbols-outlined">call</span>Telefone: (11) 96150-4684 </li><br>
-                        <li><span class="material-symbols-outlined">mail </span>Email: saveasoul2023@gmail.com</li><br>
-                      </ul>
-                    
+  
           
-          
+                      <section class="contato" id='contato'>
+        <div class="max-width">
+            <h2 class="title">Contato</h2>
+            <div class="contato-content">
+               <div class="column left">
+                   <div class="text">Fale Conosco</div>
+                   <p>Fazemos valer as leis que protegem os animais, fiscalizamos os órgãos públicos e denunciamos crimes. Isso é dar voz a quem não pode falar, e quanto mais gente, melhor! Por isso contamos com você nessa tarefa!</p>
+               
+               <div class="icons">
+                   <div class="row">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Nome</div>
+                            <div class="sub-title">Ong-Save a Soul</div>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <ion-icon name="earth-outline"></ion-icon>
+                    <div class="info">
+                        <div class="head">Endereço</div>
+                        <div class="sub-title">Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</div>
+                    </div>
+               </div>
+               <div class="row">
+                <ion-icon name="person-outline"></ion-icon>
+                <div class="info">
+                    <div class="head">Email</div>
+                    <div class="sub-title">saveasoul2023@gmail.com</div>
+                </div>
+           </div>
+               </div>
+            </div><!--column left-->
+            <div class="column rigth">
+                <div class="text">Mensagem</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Nome" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="field">
+                            <input type="text" placeholder="Sobrenome" required>
+                        </div>
+                        <div class="field textarea">
+                           <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--sessão  footer-->
+    <footer>
+        <span>Criado para <a href="#"></a>Fins educacionais | TCC dos discentes da Etec-Bartolomeu Bueno da Silva 2023</span>
+    </footer>
+
+                
        
-</footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
 </body>
 </html>
-     
-    

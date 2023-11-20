@@ -3,34 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../css/style.css">
+  
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Listagem de categorias</title>
 </head>
 <Style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-        body{
-        background-image: url('../../../../index/imgs/fundo-s.jpg');
-        background-size: 100% 100%;
-        background-position: center;
-       }
-       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-
-       table {
-      width:80%;
-       
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+        main{
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      min-height: 10vh;
+    
+    }
+    body{
+        background-size: cover;
+            background-position: cover;
+            background-image:url(../../../../index/imgs/fundo.jpg);
+    
+           
         }
+    a {
+        
+          font-size: 0.9rem;
+          text-decoration:none;
+          font-size: 0.9rem;
+          font-weight:600;
+          color: black;
+          
+        }
+       
+        a:hover{
+          color:#3a3a3b;
+        }
+        .encontro{
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        width: 700px;
+         margin-top: 200px;
+      
+        font-family: 'Poppins', sans-serif;
+        background-color: rgba(255, 255, 255, 0.993);
+        padding: 30px 40px;
+        text-align: justify;
+        }
+
     </style>
 <body>
-<main>
+
         
 
 
 <main>
-<div class="caixa">
-
-              <div class="caixa-dados">
+        <div class='encontro' > 
     <h2> Listagem de categorias dos produtos </h2>
     <a href="../pg.html"> Voltar </a> <br>
 <a href="../cadastro/form.html"> Cadastrar categorias </a>
@@ -92,9 +118,9 @@
 
 
 ?>
-</div>
-</div>
+
 </div>
 </main>
+
 </body>
 </html>
