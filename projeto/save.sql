@@ -43,7 +43,6 @@ CREATE TABLE produto(
     prod VARCHAR(50), /*Nome do produto*/
     preco DECIMAL(10,2),
     modelo VARCHAR(100),
-    outros VARCHAR(100),
     img_pro VARCHAR(100),
     	 
 		FOREIGN KEY (id_cat)REFERENCES categoria (id_cat)

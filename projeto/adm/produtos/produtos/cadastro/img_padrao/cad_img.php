@@ -6,9 +6,9 @@
         session_start();
     }
 
-    $id_imp = $_SESSION['codigo'];
+    $id_pro = $_SESSION['id_pro'];
 
-    $sqlPesq = "SELECT img_pro FROM produto WHERE id_pro = $id_imp";
+    $sqlPesq = "SELECT img_pro FROM produto WHERE id_pro = $id_pro";
 	$pesquisa = mysqli_query($conexao,$sqlPesq);
 	if (!$pesquisa)
 	{
@@ -31,7 +31,7 @@
 			
             $sql = "UPDATE produto SET 
 			img_pro = '$arquivo' 
-			WHERE id_pro = $id_imp";
+			WHERE id_pro = $id_pro";
             
 			$instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 			
@@ -49,6 +49,7 @@
 				@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 				@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
 				font-family:'Poppins';'>Imagem enviada com sucesso!</h2>";
+				header ('Location:../infos/pro.php');
 				exit;
 
 			}

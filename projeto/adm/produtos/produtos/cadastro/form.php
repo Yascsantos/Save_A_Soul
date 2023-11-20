@@ -32,10 +32,6 @@
         <label>Modelo: </label>
         <input type="text" placeholder="Modelo" name="mod">
 
-        <label>Outros: </label>
-        <input type="text" placeholder="Outras informações" name="out">
-        <br>
-
         <button input type="submit" name="cadastrar" value="Cadastrar produto">Cadastrar</button>
         </div>
 

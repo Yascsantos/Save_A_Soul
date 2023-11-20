@@ -9,14 +9,14 @@
     {
         session_start();
     }
-    $code = $_SESSION['code'];
+    $id_pro = $_SESSION['id_pro'];
 
   if(isset($_POST['cadastrar']))
   {
     $tam = $_POST['tam'];
   }
 
-  $sql = "INSERT INTO $tabela ($campo) VALUES ('$code','$tam')";
+  $sql = "INSERT INTO $tabela ($campo) VALUES ('$id_pro','$tam')";
 		
   $instrucao= $conexao->query($sql) or die("Falha na execução do códigdo SQL: ". mysqli_error($conexao));
 		
@@ -28,7 +28,7 @@
 	else 
 	{
 		mysqli_close($conexao);
-		header ('location: list.php');
+		header ('location: ../img_padrao/cad_img.php');
 		exit;
 	}
 ?>

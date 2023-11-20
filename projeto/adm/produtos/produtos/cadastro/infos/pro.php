@@ -259,9 +259,9 @@ margin-top:auto;
             <td></td>
             <td align='center'>".$exibe['outros']."</td>
             <td></td>
-            <td align='center'><a href='../../cadastro/tam/page01.php?&codigo=".$exibe['cod']."'>Cadastrar tamanhos</a></td>
+            <td align='center'><a href='../../cadastro/tam/page01.php?&codigo=".$exibe['cod']."'>Gerir tamanhos</a></td>
             <td></td>
-            <td align='center'><a href='../../cadastro/cor/page02.php?&codigo=".$exibe['cod']."'>Cadastrar cores</a></td>
+            <td align='center'><a href='../../cadastro/cor/page02.php?&codigo=".$exibe['cod']."'>Gerir cores</a></td>
             <td></td>
             <td align='center'><a href='../../../../../imagens_pro/pg03.php?&codigo=".$exibe['cod']."'><span class='material-symbols-outlined'>
             add_photo_alternate
