@@ -216,8 +216,6 @@ margin-top:auto;
             <th></th>
             <th align='center'>Modelo</th>
             <th></th>
-            <th align='center'>Outros</th>
-            <th></th>
             <th align='center'></th>
             <th></th>
             <th align='center'></th>
@@ -256,8 +254,6 @@ margin-top:auto;
             <td align='center'>".$exibe['quantidade']."</td>
             <td></td>
             <td align='center'>".$exibe['modelo']."</td>
-            <td></td>
-            <td align='center'>".$exibe['outros']."</td>
             <td></td>
             <td align='center'><a href='../../cadastro/tam/page01.php?&codigo=".$exibe['cod']."'>Gerir tamanhos</a></td>
             <td></td>

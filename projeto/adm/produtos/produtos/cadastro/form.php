@@ -99,17 +99,13 @@ body{
         <label>Modelo: </label>
         <input type="text" placeholder="Modelo" name="mod">
 
-<<<<<<< HEAD
-        <button input type="submit" name="cadastrar" value="Cadastrar produto">Cadastrar</button>
+
         </div>
-=======
-        <label>Outros: </label>
-        <input type="text" placeholder="Outras informações" name="out">
-        <br></div>
+
 
         <input type="submit" name="cadastrar" value="Cadastrar">
       
->>>>>>> 270f7cce6ab875feca11efd7c0d591abfa0e0772
+ <!--<<<<<<< HEAD =======>>>>>>> 270f7cce6ab875feca11efd7c0d591abfa0e0772-->
 
 </div>
 </main>
