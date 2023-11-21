@@ -170,7 +170,7 @@ shopping_bag
                 </div>
            </div>
                </div>
-            </div><!--column left-->
+            </div>
             <div class="column rigth">
                 <div class="text">Mensagem</div>
                 <form action="#">

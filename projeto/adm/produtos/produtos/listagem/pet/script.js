@@ -25,5 +25,5 @@ function resizeIframe() {
     iframe.style.height = height + "px";
 }
 
-// Chama a função quando o conteúdo dentro do iframe é carregado
+
 document.getElementById("myIframe").onload = resizeIframe;
