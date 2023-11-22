@@ -115,7 +115,7 @@ button{
 	<form action='' method='POST' enctype="multipart/form-data">
     <input type="hidden" name="codigo" value="<?= $cod;?>" />
 		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
-		<input type="file" id="pic" name="pic" accept="image/*"></input><br>                        
+		<input type="file" id="pic" name="pic" accept="image/*"></input>                   
         <button input type="submit" value="Cadastrar" name="Cadastrar" >Cadastrar</button>
 		
         </form>
