@@ -18,7 +18,7 @@
    <img src="./index/imgs/logo.png" >
      
      <ul class="nav-list">
-          <li> <a href="./index/ajude.php">QUERO ADOTAR</a></li>
+          <li> <a href="./adm/animais/listagem/grade.php">QUERO ADOTAR</a></li>
           <li> <a href="https://goo.gl/maps/E9MvDvJCDCmGBeWX7">ENDEREÇO</a></li>
           <li> <a href="#contato">CONTATO</a></li>
           <li> <a href="sobre/sobre.php">SOBRE NÓS</a></li>
