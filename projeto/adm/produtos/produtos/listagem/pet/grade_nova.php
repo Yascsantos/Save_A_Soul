@@ -176,7 +176,7 @@ shopping_cart
                         </section>
      
   
-        <section  id="produto">
+        <section  id="produto" >
 
       <h2 class='title'>Tudo para seu pet</h2>
        

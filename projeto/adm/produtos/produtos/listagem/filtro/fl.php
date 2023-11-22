@@ -200,7 +200,7 @@ shopping_cart
 
           //se o campo for nulo 
           if ($cat == "0") {
-            header('location:./pet/grade_nova.php');
+            header('location:location:http://localhost/Save_A_Soul/projeto/adm/produtos/produtos/listagem/filtro/fl.php#produto');
           }
 
 
@@ -227,7 +227,7 @@ shopping_cart
             }
           } else {
             //se o filtro NÃO for selecionado 
-            header('location:./pet/grade_nova.php');
+            header('location:http://localhost/Save_A_Soul/projeto/adm/produtos/produtos/listagem/filtro/fl.php#produto');
           }
 
 

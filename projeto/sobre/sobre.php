@@ -77,7 +77,7 @@ Em março de 2016' nascia a nossa ONG, ainda sem muita ideia de onde chegaria, n
                    <span class="material-symbols-outlined">
 volunteer_activism
 </span>
-                    <div class="text"><a href='../index/ajude.php' class='text'>Doação</a></div>
+                    <div class="text"><a href='http://localhost/Save_A_Soul/projeto/index/ajude.php#sobre' class='text'>Doação</a></div>
                     <p>Efetue doações monetarias ou de mantimentos para ajudar nos nossos resgates!</p>
                    </div>
                </div>
@@ -115,21 +115,21 @@ shopping_bag
               
                <div class="card">
                 <div class="box">
-                    <img src="./imgs/img-2.jpg" alt="">
+                    <img src="img1.jpeg" alt="">
                     <div class="text">Yasmin</div>
                     <p>Responsável peo BackEnd/PHP do site </p>
                 </div>
             </div>
             <div class="card">
                    <div class="box">
-                       <img src="./imgs/img-1.jpg" alt="">
+                       <img src="img3.jpeg" alt="">
                        <div class="text">Daiane</div>
                        <p>Responsável pelo FrontEnd/CSS do site .</p>
                    </div>
                </div>
             <div class="card">
                 <div class="box">
-                    <img src="./imgs/img-3.jpg" alt="">
+                    <img src="img2.jpeg" alt="">
                     <div class="text">Winicius</div>
                     <p>Responsável pelo TCC escrito.</p>
                 </div>

@@ -114,7 +114,7 @@ function reloadPage() {
             <div class="ajuda-content">
           
     </section>
-    <section class="sobre" id="sobre">
+    <section class="sobre" >
         <div class="max-width">
             
             <div class="sobre-content">
@@ -156,7 +156,7 @@ function reloadPage() {
 
 
 
-<section class="sobre">
+<section class="sobre" id='sobre'>
 
         <div class="max-width">
 
@@ -213,12 +213,6 @@ closeDoeButton.addEventListener('click', () => {
 
 </body>
 </html>
-<script src="js/mobile-navbar.js"></script>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
       <script src="js/script.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     
