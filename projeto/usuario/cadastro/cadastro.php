@@ -1,4 +1,3 @@
-
 <?php
 	include_once("../../conexaoBD.php");
 	$tabela="user";
@@ -8,7 +7,67 @@
 	$arq= "padrao.png"; 
 
 	
-	if (isset($_POST['avançar'])) 
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <main>
+      
+            <h1>Cadastre-se</h1>
+            </main>
+    <main>
+       
+    <div class="caixa">
+        <div class="img-caixa">
+            <img src="imgs/dog.jpg">
+        </div>
+    
+          <!--Formulário-->
+          
+          <div class="caixa-dados">
+            <form action="" method="POST">
+    
+          <h2>Preencha seus dados</h2><br>
+        <div class="input-dados">
+            <div class="input-senha">
+            <label for="nome"> Nome de usuário</label>
+            <input type="text" name="usuario" placeholder="Digite um apelido" required>
+            </div>
+
+            <div class="input-senha">
+            <label for="nome"> Nome Completo</label>
+            <input type="text" name="nome" placeholder="Digite o seu nome " required>
+            </div>
+        </div>
+
+            <div class="input-dados">
+                <div class="input-senha">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" placeholder="Digite o seu email" required>
+                <br> </div>
+
+                <div class="input-senha">
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" placeholder="+55 (11) 96150-4684" required>
+              </div>
+                <div class="input-senha">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <div class="input-senha">
+                <label for="confirma">Confirmar Senha</label>
+                <input type="password" name="confirma" placeholder="Confirme a senha" required>
+                </div>
+                <button input type="submit" name="avançar" value="avançar"> Avançar</button>
+              <?php 
+                if (isset($_POST['avançar'])) 
 	{
         $usuario = $_POST['usuario'];
 		$nome = $_POST['nome'];
@@ -23,7 +82,7 @@
             $senha_1 = strlen($senha);
             if ($senha_1 < 8)
             {
-                echo "A senha tem que ter no mínimo 8 caracteres";
+                echo "<p class='aviso'>A senha tem que ter no mínimo 8 caracteres</p>";
             }
 
             else
@@ -67,15 +126,23 @@
 		
 		else 
 		{
-			echo "
-			<main style='min-width: 320px; min-height: 20vh; color:white'>";
-			echo "<h3>Senhas diferentes, por favor digite a mesma senha em ambos os campos<h3>";
-			echo "<img src='./imgs/atenção.png' style='width: 100px;
-			height: 8vh;'>
+		
+			echo "<p class='aviso'>Senhas diferentes, por favor digite a mesma senha em ambos os campos!!</p>";
+			
 
-					</main>";
 		}
 
 	}
 ?>
+         </div>
+      
 
+    
+    </div>
+    
+</main>
+
+
+    </form>
+</body>
+</html>

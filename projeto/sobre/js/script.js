@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
      var typed = new Typed(".typing", {
-         strings:["Daiane", "Yasmin", "e", "Winicius"],
+         strings:["Daiane", "Yasmin", "Winicius"],
          typeSpeed:100,
          backSpeed:60,
          loop:true
      });
      var typed = new Typed(".typing-2", {
-        strings:["2016"],
+        strings:["2018"],
         typeSpeed:100,
         backSpeed:60,
         loop:true

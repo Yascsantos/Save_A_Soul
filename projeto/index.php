@@ -60,7 +60,7 @@
      
     <section class="comeco" >
         <div class="max-width">
-            <h1 class="title">Como começou</h1>
+            <h1 class="title">Primeiro resgate</h1>
             <div class="comeco-content">
                 <div class="column left">
                 <b> <p> Luna vivia nas ruas de uma cidade movimentada. Ela era uma gatinha adorável, com pelagem preta e olhos brilhantes, <br>
