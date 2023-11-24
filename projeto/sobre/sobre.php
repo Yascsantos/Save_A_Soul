@@ -77,7 +77,7 @@ Em março de 2016' nascia a nossa ONG, ainda sem muita ideia de onde chegaria, n
                    <span class="material-symbols-outlined">
 volunteer_activism
 </span>
-                    <div class="text"><a href='http://localhost/Save_A_Soul/projeto/index/ajude.php#sobre' class='text'>Doação</a></div>
+                    <div class="text"><a href='../index/ajude.php#sobre' class='text'>Doação</a></div>
                     <p>Efetue doações monetarias ou de mantimentos para ajudar nos nossos resgates!</p>
                    </div>
                </div>

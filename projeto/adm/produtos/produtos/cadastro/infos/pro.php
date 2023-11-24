@@ -136,7 +136,7 @@ margin-top:auto;
 </div></section>
 <?php
     include_once("../../../../../conexaoBD.php");
-    $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, qtd AS quantidade, modelo, outros,img_pro 
+    $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, modelo, img_pro 
                 FROM produto p 
 	            INNER JOIN categoria cat ON p.id_cat = cat.id_cat";
      
@@ -212,8 +212,6 @@ margin-top:auto;
             <th></th>
             <th align='center'>Preço</th>
             <th></th>
-            <th align='center'>Quantidade</th>
-            <th></th>
             <th align='center'>Modelo</th>
             <th></th>
             <th align='center'></th>
@@ -250,8 +248,6 @@ margin-top:auto;
             <td align='center'>".$exibe['produto']."</td>
             <td></td>
             <td align='center'>R$".$exibe['preco']."</td>
-            <td></td>
-            <td align='center'>".$exibe['quantidade']."</td>
             <td></td>
             <td align='center'>".$exibe['modelo']."</td>
             <td></td>

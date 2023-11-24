@@ -9,48 +9,42 @@
         die
         (" 
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
-        body{
-            background-image:url('updates/imgs/fundo1.jpg');
-        }
-
-        .protect{
-            background-color:red;
-            margin-top:20%;
-            margin-left:33%;
-            width:500px;
-            text-align:center;
-            font-family: 'Poppins';
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
        
-            border-radius:5px;
-            background-color: white;
-            backdrop-filter: blur(40px);
-        }
-        button{
-            
-            width: 20%;
-            height: 30px;
-            text-align: center;
-            background:   #adb5a0;
-            border-radius: 20px;
-            outline: none;
-            border: none;
-            margin-top: 30px;
-            color: white;
+
         
-        }
-        a{
-            color:white;
-            font-family: 'Poppins'; 
-        text-decoration:none;
-        }
+            main{
+  
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               
+              
+              }
+              .protect{
+                  
+                  font-family: 'Poppins', sans-serif;
+                  background-color: rgba(255, 255, 255, 0.993);
+                  padding: 30px 40px;
+                  text-align: justify;
+                  }
+        a {
+    
+            font-size: 0.9rem;
+            text-decoration:none;
+            font-size: 0.9rem;
+            font-weight:600;
+            color: black;
+            
+          }
+         
 
         </style>
-        
+        <main>
         <div class='protect'><br><h2 ><b>Logue para acessar seu perfil</b></h2> 
-             CLIQUE AQUI PARA <b>----></b><button type='button'><a href='../../usuario/login/login.php'>LOGAR </a></button><BR>OU VOLTE AO 
-             <B>----></B><button type='button'><a href='../../index.php'>INICIO </a></button>
-             <BR><BR>  </form><BR></div>
+             CLIQUE AQUI PARA <b>-><a href='../../usuario/login/login.php'>LOGAR </a><BR>OU VOLTE AO 
+             <B>-><a href='../../index.php'>INICIO </a>
+             <BR><BR>  </form><BR></div>  </main>
         ");
     }
     
