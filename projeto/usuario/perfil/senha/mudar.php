@@ -17,8 +17,11 @@
 
 }
 body{
-        background-image: url(../../index/imgs/fundo.png);
-    }a{
+    background-image:url(../../../petshop/imgs/patinha.png);
+    background-color: #c7daa9;
+
+   
+}a{
     
       font-size: 0.9rem;
       text-decoration:none;

@@ -16,7 +16,7 @@
  
      
              .popup {
-                height:200px;
+                height:100px;
                width: 400px;
                padding: 20px;
                background-color: #fff;
@@ -40,21 +40,6 @@
       
 </style>
 </head>
-<Style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-        body{
-        background-image: url('../index/imgs/fundo-s.jpg');
-        background-size: 100% 100%;
-        background-position: center;
-       }
-       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-
-       table {
-      width:80%;
-       
-        }
-    </style>
 <body>
 
         
@@ -77,9 +62,8 @@
 
     echo "
     <main>
-<div class='caixa'>
-
-              <div class='caixa-dados'><h2>Mais imagens do produto ".$id."</h2>
+<div class='encontro'>
+<h2>Mais imagens do produto ".$id."</h2>
         <a onclick='openCad()'>Cadastrar</a>
 <br>
         <div id='popupContainer' style='display: none;'>
@@ -109,8 +93,6 @@
         "
 ?>
 
-</div>
-</div>
 </div>
 </main>
 </body>

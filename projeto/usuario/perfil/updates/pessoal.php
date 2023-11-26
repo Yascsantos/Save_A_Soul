@@ -74,7 +74,8 @@ arrow_back
                 <div class="input-senha">
                 <label for="telefone">Telefone</label>
                 <input type="tel" name="telefone" placeholder="<?php foreach ($pesquisa as $exibe){ echo $exibe['telefone'];}?>" >
-                <br></div>
+                <br>  <h5>Passe para o lado se quiser editar o endereço</h5></div>
+              
                 <button input type="submit" name="alterar" value="Alterar">Avançar</button>
         </div>
      </form>
@@ -82,7 +83,7 @@ arrow_back
 
     </div>
     </main>
-                     <main>
+                     <main id='end'>
     <div class="caixa">
                   <div class="img-caixa"><img src="imgs/dog.jpg"></div>
 

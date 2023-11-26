@@ -8,12 +8,7 @@
     <title>+ Imagens</title>
 </head>
 <Style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-        body{
-        background-image: url('../index/imgs/fundo-s.jpg');
-        background-size: 100% 100%;
-        background-position: center;
-       }
+    
        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 
@@ -57,9 +52,7 @@
 
 
 <main>
-<div class="caixa">
-
-              <div class="caixa-dados">
+<div class="encontro">
     <h1> Listagem das imagens dos produtos </h1>
     <a onclick='openCad()' > Cadastrar imagens </a><br>
     
@@ -85,7 +78,6 @@
                 }
             </script>
     <a href='../adm/produtos/produtos/cadastro/infos/pro.php'>Voltar</a><br>
-    <br> <br>
 
 <?php
     //id
@@ -165,8 +157,6 @@
 
 
 ?>
-</div>
-</div>
 </div>
 </main>
 </body>

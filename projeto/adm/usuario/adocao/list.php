@@ -108,7 +108,6 @@ a{
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     width: 700px;
      margin-top: 200px;
-  
     font-family: 'Poppins', sans-serif;
     background-color: rgba(255, 255, 255, 0.993);
     padding: 30px 40px;
@@ -146,7 +145,7 @@ input[type='submit']{
     <main>
     <div class='encontro' >
         <h1>Pedidos</h1>
-        <p>Abaixo estão os animais que você adotou</p>
+        <p>Abaixo estão os animais que esse usuario adotou</p>
         <a href= '../listagem.php'>Voltar</a> <br><br>
     </body>
     </html>

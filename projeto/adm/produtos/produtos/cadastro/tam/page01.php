@@ -17,17 +17,14 @@
 </head>
 <body>
 <main>
-        <div class="caixa">
-            <div class='espaco'></div>
-              <div class="caixa-dados">
+        <div class="encontro">
+           
     <h1>Tamanhos</h1>
     <a href="form.php">Cadastrar tamanhos</a><br>
     <a href="list.php">Listar tamanhos</a><br><br>
-    <a href="../pro.php">Voltar</a><br>
+    <a href="../infos/pro.php"><-Voltar</a><br>
 
     
-</div>
-
 </div>
 </main>
     

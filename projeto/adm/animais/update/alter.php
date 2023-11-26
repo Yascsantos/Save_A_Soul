@@ -146,13 +146,7 @@ input[type='submit']{
     color: #fff;
     height: 47px;
 }
-body{
-        font-family: 'Poppins';
-        background-size:1500px 900px;
-        background-image:url(../../../../projeto/index/imgs/fundo-s.jpg);
 
-       
-    }
 </style>
 </head>
 <body>
@@ -160,24 +154,22 @@ body{
     <div class='encontro' >
     <h1>Alteração de dados do animal</h1>
     <a href="../pg05.html">Voltar</a> <br>
-    <!--<a href="../listagem/list.php">Listagem</a>-->
-    <br> <br>
     <form action="" method="post">
     <input type="hidden" name="codigo" value="<?= $edit;?>" />
-    <div class="input-dados">
-        <label>Nome: </label> <br>
+ 
+        <label>Nome: </label> 
         <input type="text"  name="nome" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['nome_ani'];}?>">
-        <br>
-        <label>Raça: </label> <br>
+       
+        <label>Raça: </label> 
         <input type="text" name="raca" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['raca'];}?>">
-        <br>
-        <label>Porte: </label> <br>
+        
+        <label>Porte: </label> 
         <input type="text" name="porte" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['porte'];}?>">
-        <br>
+        
         <label>Sexo: </label> <br>
         <input type="text"  name="sx" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['sexo'];}?>">
         <br>
-        <button input type="submit" name="alterar" value="Alterar dados">Alterar</button></div>
+        <input type="submit" name="alterar" value="Alterar dados"></div>
     </form>
     </div>
 

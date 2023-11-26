@@ -5,10 +5,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-a{
-text-decoration:none;
-color: #758354b0;
-}
 main{
   
     display: flex;
@@ -16,12 +12,12 @@ main{
     justify-content: center;
     padding: 20px;
     min-height: 10vh;
-    color:white ;
+   
 }
 body{
-    background-image:url(../../../../index/imgs/fundo-s.jpg);
-    background-size:cover;
-    color:white ;
+    background-image:url(../../../../petshop/imgs/patinha.png);
+    background-color: #c7daa9;
+
    
 }
 h2{
@@ -33,11 +29,6 @@ h2{
     width: 50%;
     float: left;
     padding-right: 15px;
-}
-.input-bairro{
-    width: 100%;
-    float: right;
-    
 }
 .caixa{
     display: flex;
@@ -55,23 +46,23 @@ h2{
     width: 100%;
 }
 .caixa-dados{
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(40px);
-    padding: 30px 40px;
-    width: 50%;
-    border-radius: 0 20px 20px 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+                  width: 600px;
+                  font-family: 'Poppins', sans-serif;
+                  background-color: rgba(255, 255, 255, 0.993);
+                  padding: 30px 40px;
+                  text-align: justify;
     
 }
 .caixa-dados h2{
     font-size: 20px;
+    color:hsl(86, 22%, 33%);
 }
-.caixa-dados p{
-    font-weight: bold;
-    color: #3d3d3d;
+.caixa-dados .aviso{
+    color: #ef0a0a;
 }
 .caixa-dados a{
-    text-decoration:none;
-    color: hsl(0, 0%, 97%);
+    color: hsl(86, 22%, 33%);
     text-decoration: none;
 }
 .caixa-dados form{
@@ -93,6 +84,7 @@ form .input-dados input{
     height: 47px;
     background-color: rgba(255, 255, 255, 0.32);
     border-radius: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     outline: none;
     border: 2px solid transparent;
     padding: 15px;
@@ -100,10 +92,12 @@ form .input-dados input{
     color: #616161;
     transition: all 0.4s ease;
 }
-  form select{
+form .input-dados input:focus{
+    border-color: #adb5a0;
+}
+ select{
     width: 50%;
     height: 50px;
-    background-color: rgba(255, 255, 255, 0.32);
     border-radius: 20px;
     outline: none;
     border: 2px solid transparent;
@@ -112,26 +106,27 @@ form .input-dados input{
     color: #616161;
     transition: all 0.4s ease;
 }
-form .input-dados input:focus{
-    border-color: #adb5a0;
-}
- .submit{
+
+ .submit {
     width: 50%;
     float: right;
     padding-right: 15px;
     
 }
 form .input-dados button{
-    width: 50%;
-    height: 47px;
-    background: #adb5a0;
-    border-radius: 20px;
-    outline: none;
+    width: 30%;
+    height: 37px;
+   
     border: none;
-    margin-top: 15px;
-    color: white;
-   margin-left: 20%;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+   margin-left: 65%;
     font-size: 16px;
+}
+form .input-dados button:hover{
+    border-radius: 5px;
+    border-bottom:2px solid  #adb5a0;
 }
 
 @media (max-width:930px) {
@@ -152,27 +147,3 @@ form .input-dados button{
         padding: 0;
     }
 }
-
-
-
-  .owl-dots{
-    text-align: center;
-    margin-top:-30px;
-  }
-  .owl-dot{
-    width: 14px;
-    height: 14px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid #ad7d7ba2!important;
-    transition: all 0.3s ease;
-  }
-  .owl-dot.active{
-    width: 35px;
-    border-radius: 15px;
-  }
-  .owl-dot.active,
-  .owl-dot:hover{
-    background:#ad7d7ba2!important;
-  }
-  

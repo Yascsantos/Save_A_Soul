@@ -6,93 +6,13 @@
     <link rel="stylesheet" href="../../../../css/style.css">
     <title>Listagem de cores</title>
 </head>
-<style>
-                @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-        body{
-        font-family: 'Poppins';
-        background-size:100% 100%;
-        background-image:url(../../../../../index/imgs/fundo-s.jpg);
-        color:white ;
-       
-    }
-       
-  #menu{
-  position: fixed;
-  width:100%;
-  height:110px;
-  font-family: 'Poppins';
-
- 
-}
-img{
-  width:100px;
-  height:100px;
-margin-top:auto;
-}
-
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Poppins';
-    height: 12vh;
-  }
-  
-
-  .nav-list {
-    list-style: none;
-    display: flex;
-  
-  }
-  
-  .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-    margin-top: auto;
-   
-  }
- 
-
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-#menu a{
-    font-family: 'Poppins';
-    font-size: 0.9rem;
-    text-decoration:none;
-    font-size: 0.9rem;
-    font-weight:600;
-    color:#fcfcfc;
-  }
- 
-  #menu a:hover{
-    color:#3a3a3b;
-  }
-    </style>
 <body>
-
-<header id="menu">
-      <nav>
-   <img src="../../../../../petshop/imgs/logo.png" >
-     <ul class="nav-list">
-          <li>
-          <a href="../infos/pro.php"> Voltar </a> </li>
-          <li> <a href="form.php"> Cadastrar + cores </a></li>
-       </ul>
-
-       </nav>
-</header>
 <main>
-<div class="caixa">
-            <div class='espaco'></div>
-              <div class="caixa-dados">
-    <h1> Listagem de cores dos produtos </h1>
-    <br>
+  <div class='encontro'>
+  <a href='../infos/pro.php'> <-Voltar </a> <br>
+   <a href='form.php'> Cadastrar + cores </a>
+    <h3> Listagem de cores dos produtos </h3>
    
-    <br> <br>
-
 <?php
     	if(!isset($_SESSION))
         {
@@ -105,7 +25,8 @@ margin-top:auto;
     $instrucao = mysqli_query($conexao,$sql);
 
     echo "
-    <table> 
+    <table > 
+ 
         <tr>
             <th></th>
             <th></th>
@@ -138,6 +59,5 @@ margin-top:auto;
     echo"</table>";
 ?>
 </div>
-</div>
-</div>
+
 </main>

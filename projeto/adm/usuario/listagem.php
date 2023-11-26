@@ -39,7 +39,7 @@ a {
     }
     .encontro{
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    width: 700px;
+    width: 900px;
      margin-top: 200px;
   
     font-family: 'Poppins', sans-serif;

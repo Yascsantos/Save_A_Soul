@@ -52,20 +52,16 @@
 
 <body>
 <main>
-        <div class="caixa">
-            <div class='espaco'></div>
-              <div class="caixa-dados">
+        <div class="encontro">
     <h1>Cadastro de categorias</h1>
     <form action="" method="post">
         <input type="hidden" name="codigo" value="<?= $edit;?>" />
 <div class='input-dados'>
         <label>Categoria: </label> <br>
-        <input type="text" placeholder="Mude a categoria" name="nome">
-        <button input type="submit" name="alterar" value="Alterar categoria">Alterar</button></div>
+        <input type="text" placeholder="Mude a categoria" name="nome"><br>
+        <input type="submit" name="alterar" value="Alterar categoria"></div>
     </form>
 	</div>
-</div>
-</div>
 </main>
 
 </body>

@@ -8,20 +8,11 @@
     <title>Cadastrar informações</title>
 </head>
  <Style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-        body{
-        font-family: 'Poppins';
-        background-size:1500px 900px;
-        background-image:url(../../../../../petshop/imgs/fundo1.jpg);
-
-        color:white ;
-       
-    }
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
        
   #menu{
   position: fixed;
   width:100%;
-  height:110px;
   font-family: 'Poppins';
 
  
@@ -53,66 +44,80 @@ margin-top:auto;
     margin-top: auto;
    
   }
-  section{
-    padding: 55px 0;
-  }
-  section .title{
-    color: #fff;
-    font-family: 'poppins';
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    position: relative;
-  }
-  section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #ffffff;
-    transform: translateX(-50%);
-  }
-  section .title::after{
-    COLOR: #ffffff;
-    position: absolute;
-    bottom:-12px;
-    left: 50%;
-    font-size: 20px;
-    background:  #d4987e;
-    color: #f1e8ec;
-    padding: 5px;
-    border-radius: 10%;
-    transform: translateX(-50%);
-  }
 
+main{
 
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+min-height: 10vh;
+
 }
-#menu a{
+body{
     font-family: 'Poppins';
-    font-size: 0.9rem;
-    text-decoration:none;
-    font-size: 0.9rem;
-    font-weight:600;
-    color:#fcfcfc;
-  }
- 
-  #menu a:hover{
-    color:#3a3a3b;
-  }
+    background-size:cover;
+    background-image:url(../../index/imgs/fundo.jpg);
+
+   
+}
+a {
+
+  font-size: 0.9rem;
+  text-decoration:none;
+  font-size: 0.9rem;
+  font-weight:600;
+  color: black;
+  
+}
+
+a:hover{
+  color:#3a3a3b;
+}
+.encontro{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+width: 800px;
+ margin-top: 200px;
+
+font-family: 'Poppins', sans-serif;
+background-color: rgba(255, 255, 255, 0.993);
+padding: 30px 40px;
+text-align: justify;
+}
+input label{
+color: #4c5838;
+font-weight: bold;
+display: block;
+margin-bottom: 5px;
+}
+
+form  input{
+width: 20%;
+height: 27px;
+background-color: rgba(255, 255, 255, 0.32);
+border-radius: 20px;
+outline: none;
+border: 2px solid transparent;
+padding: 15px;
+font-size: 15px;
+color: #616161;
+transition: all 0.4s ease;
+}
+form  input:focus{
+border-color: #adb5a0;
+}
+input[type='submit']{
+background:#4c5838;
+color: #fff;
+height: 47px;
+}
   .msg{
     background-color: #3a3a3b;
-    width: 300px;
-    height: 130px;
     text-align: center;
-    border-radius: 3px;
+    color:white;
+  margin-top: -190px;
+  width: 100%;
+    position: absolute;
   }
     </style>
 </head>
@@ -128,12 +133,8 @@ margin-top:auto;
 
        </nav>
 </header> 
+    <div class='msg'><br>Cadastre mais informações dos produtos, clique na imagem para cadastrar, mudar ou deletar a imagem padrão do produto<br><br></div>
 
-<section class="sobre" id="sobre">
-        <div class="max-width">
-    <h2 class='title'> Cadastre mais informações dos produtos</h2>
-    <div class='msg'><br>Clique na imagem para cadastrar, mudar ou deletar a imagem padrão do produto<br><br></div>
-</div></section>
 <?php
     include_once("../../../../../conexaoBD.php");
     $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, modelo, img_pro 
@@ -167,8 +168,8 @@ margin-top:auto;
      }
      
      table, th, td {
-     padding: 4px;
-     width: 50%;
+     padding: 7px;
+     width: 90%;
      top:auto;
   
     
@@ -182,9 +183,6 @@ margin-top:auto;
         table {
         border-collapse: collapse;
         margin: auto;
-        border-radius:20px;
-        background-color: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(40px);
         }
 
         th{
@@ -197,7 +195,7 @@ margin-top:auto;
 
    
      echo "
-    <table> 
+    <table class='encontro'> 
         <tr>
 
             <th></th>

@@ -16,6 +16,10 @@
   min-height: 10vh;
 
 }
+.prod{
+    padding: 10px;
+}
+    
 a {
     
       font-size: 0.9rem;
@@ -40,6 +44,7 @@ a {
     }
 .img{
     display: flex;
+    border-bottom: 1px solid black;
 }
 body{
         font-family: 'Poppins';
@@ -54,7 +59,7 @@ body{
     <main>
     <div class='encontro' > 
 
-    <h1>Listagem dos produtos cadastrados</h1>
+    <h3>Listagem dos produtos cadastrados</h3>
     <a href="../../pg02.html">Voltar</a>
 
 <?php
@@ -72,10 +77,8 @@ body{
             
         
            
-                 <div align='center'> <a href='list.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a>
-                
-           
-                 <div align='center'><a href='list.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</div>
+                 <div align='center' class='prod'> <a href='list.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
+      <a href='list.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</div>
           
              ";
                 
