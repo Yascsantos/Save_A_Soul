@@ -72,9 +72,43 @@
 
 	<title>Update de imagem</title>
 	<style>
-form{
-    background-color:white;
-}
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+button{
+    width: 20%;
+    height: 30px;
+    background:   #474845;
+    margin-top: 10px;
+    color: white;
+    margin-left: 10%;
+    font-size: 13px;
+    font-family: "Poppins";
+  }
+  input[type='file'] {
+    display: none;
+    
+  }
+
+  .input-arquivo{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #e9e9e9;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Poppins";
+  }
+  
+  .input-arquivo:hover {
+    background-color: #dcdcdc;
+  }
+  
+  .input-arquivo:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+ 
 </style>
 </head>
 <body>
@@ -83,7 +117,7 @@ form{
     <input type="hidden" name="codigo" value="<?= $cod;?>" />
 		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input><br>                        
-        <button input type="submit" value="Cadastrar" name="Cadastrar">Cadastrar</button>
+        <input type="submit" value="Cadastrar" name="Cadastrar">
 		
         </form>
 </body>
