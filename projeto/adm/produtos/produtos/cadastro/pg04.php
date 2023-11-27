@@ -85,30 +85,11 @@ body{
 <body>
     <main>
     <div class='encontro' > <h2>Imagem padrão do produto</h2>
-          <a onclick='openCad()' >Cadastrar/mudar</a><br>
-    
-    
-        <div id='popupContainer' style='display: none;'>
-            <div  class='popup' >
-             <span class='material-symbols-outlined' onclick='closeCad()'>
-            close
-            </span> 
-            <br><br>
-          
-          <iframe src='./img_padrao/cad_img.php'></iframe>
+
+   
+          <a href='img_padrao/cad_img.php'>Cadastrar/mudar</a>
          
-            </div>
-        </div>
     
-        <script>
-            function openCad() {
-                document.getElementById('popupContainer').style.display = 'block';
-            }
-    
-            function closeCad() {
-                document.getElementById('popupContainer').style.display = 'none';
-            }
-        </script>
         <a href='../delete/del_img.php'>Deletar</a>
         <br><br>
         <a href='./infos/pro.php'>Voltar</a></div>

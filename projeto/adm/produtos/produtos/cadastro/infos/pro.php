@@ -10,25 +10,18 @@
  <Style>
      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
        
-  #menu{
-  position: fixed;
-  width:100%;
-  font-family: 'Poppins';
-
  
-}
-img{
-  width:100px;
-  height:100px;
-margin-top:auto;
-}
+
 
   nav {
+   
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Poppins';
     height: 12vh;
+    margin-top:10px;
+    margin-left:55%;
   }
   
 
@@ -76,11 +69,8 @@ a:hover{
 }
 .encontro{
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-width: 800px;
- margin-top: 200px;
-
+ margin-top: 100px;
 font-family: 'Poppins', sans-serif;
-background-color: rgba(255, 255, 255, 0.993);
 padding: 30px 40px;
 text-align: justify;
 }
@@ -115,26 +105,23 @@ height: 47px;
     background-color: #3a3a3b;
     text-align: center;
     color:white;
-  margin-top: -190px;
   width: 100%;
     position: absolute;
   }
     </style>
 </head>
 <body>
-<header id="menu">
-      <nav>
-   <img src="../../../../../index/imgs/logo.png" >
-     <ul class="nav-list">
-          <li> <a href="../form.php">CADASTRAR + PRODUTOS</a></li>
-          <li> <a href="../../pg02.html">VOLTAR</a></li>
-          <br>
-       </ul>
+<nav>
+  
+  <ul class="nav-list">
+       <li> <a href="../form.php">CADASTRAR + PRODUTOS</a></li>
+       <li> <a href="../../pg02.html">VOLTAR</a></li>
+       <br>
+    </ul>
 
-       </nav>
-</header> 
+    </nav>
     <div class='msg'><br>Cadastre mais informações dos produtos, clique na imagem para cadastrar, mudar ou deletar a imagem padrão do produto<br><br></div>
-
+  
 <?php
     include_once("../../../../../conexaoBD.php");
     $sql= "SELECT  id_pro AS cod, nome_cat AS categoria, prod AS produto, preco, modelo, img_pro 
@@ -196,6 +183,7 @@ height: 47px;
    
      echo "
     <table class='encontro'> 
+    
         <tr>
 
             <th></th>
