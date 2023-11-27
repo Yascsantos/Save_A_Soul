@@ -79,7 +79,7 @@ form{
     <input type="hidden" name="codigo" value="<?= $edit;?>" />
 		<b><label for="pic"class="input-arquivo">Selecione a imagem</label></b>
 		<input type="file" id="pic" name="pic" accept="image/*"></input><br>                        
-        <button input type="submit" value="Alterar" name="Alterar">Alterar</button>
+        <input type="submit" value="Alterar" name="Alterar">
 		
         </form>
 </body>

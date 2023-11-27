@@ -3,7 +3,7 @@
 	include_once("../../../../conexaoBD.php");
 	$tabela="produto";
 	$id = "id_pro"; 
-    $pesq= "id_cat, prod, preco, qtd, modelo, outros";
+    $pesq= "id_cat, prod, preco, modelo";
 	$edit = $_GET['codigo'];
 
     $sql_code = "SELECT $pesq FROM $tabela WHERE $id = $edit";
@@ -33,9 +33,7 @@
             $categoria = $dados['id_cat'];
             $produto = $dados ['prod'];
             $preco  = $dados['preco'];
-            $quantidade = $dados['qtd'];
             $modelo = $dados['modelo'];
-            $outros = $dados['outros'];
 
         }
 
@@ -46,26 +44,20 @@
                 $cat = $_POST['cat'];
                 $prod = $_POST['prod'];
                 $pre = $_POST['preco'];
-                $qtd = $_POST['qtd'];
                 $mod = $_POST['mod'];
-                $out = $_POST['out'];
     
             //verificação de campos nulos
                 if(empty($cat)) {$cat = $categoria;}
                 if(empty($prod)) {$prod = $produto;}
                 if(empty($pre)) { $pre = $preco;}
-                if(empty($qtd)) { $qtd = $quantidade;}
                 if(empty($mod)) {$mod = $modelo;}
-                if(empty($out)) {$out = $outros;}
             
             //Script para atualizar um registro na tabela no Banco de Dados
                 $sql = "UPDATE $tabela SET 
                 id_cat = '$cat',
                 prod = '$prod', 
                 preco = '$pre',
-                qtd = '$qtd', 
-                modelo = '$mod', 
-                outros = '$out' 
+                modelo = '$mod'
                 WHERE $id = $codigo";
                 
 
@@ -117,15 +109,10 @@
       
         <label>Preço: </label>
         <input type="number" name="preco" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['preco'];}?>">
-  
-        <label>Quantidade: </label>
-        <input type="number" name="qtd" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['qtd'];}?>">
-        
+          
         <label>Modelo: </label> 
         <input type="text" name="mod" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['modelo'];}?>">
 
-        <label>Outros: </label>
-        <input type="text"  name="out" placeholder="<?php foreach ($pesquisa as $dados){ echo $dados['outros'];}?>">
     <br>
 
         <input type="submit" name="alterar" value="Alterar produto">

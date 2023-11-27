@@ -200,7 +200,7 @@ margin-top:auto;
             <tr>
               <td></td>
 
-              <td align='center'>  <h3 ><a href='../../../../../imagens_pro/imagens.php?&codigo=".$id."'>Imgens</a></h3></td>
+              <td align='center'>  <h3 ><a href='../../../../../imagens_pro/imagens.php?&codigo=".$id."'>Imagens</a></h3></td>
               <td></td>
 
             </tr>

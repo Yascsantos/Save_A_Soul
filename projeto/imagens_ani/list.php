@@ -63,10 +63,7 @@ a{
     color:#3a3a3b;
   }
     .encontro{
-       
-      
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(255, 255, 255, 0.993);
     padding: 30px 40px;
     text-align: justify;
     }
