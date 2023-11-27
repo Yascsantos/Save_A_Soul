@@ -20,7 +20,7 @@
         <div class="encontro">
            
     <h1>Tamanhos</h1>
-    <a href="form.php">Cadastrar tamanhos</a><br>
+    <a href="formu.php">Cadastrar tamanhos</a><br>
     <a href="list.php">Listar tamanhos</a><br><br>
     <a href="../infos/pro.php"><-Voltar</a><br>
 

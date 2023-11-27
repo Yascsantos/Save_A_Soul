@@ -23,9 +23,9 @@
 
               <div class="encontro">
     <h1>Cores</h1>
-    <a href="form.php">Cadastrar cores</a><br>
+    <a href="formu.php">Cadastrar cores</a><br>
     <a href="list.php">Listar cores</a><br><br>
-    <a href="../pro.php">Voltar</a><br>
+    <a href="../infos/pro.php">Voltar</a><br>
 
 </div>
 </main>
