@@ -73,7 +73,7 @@
 	<title>Update de imagem</title>
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
-button{
+input [type='submit']{
     width: 20%;
     height: 30px;
     background:   #474845;
