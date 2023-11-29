@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+a{
+
+    color:#111111;
+  }
+ 
+  a:hover{
+    color:rgb(28, 28, 144);
+  }
+
+.background{
+    background-image: url('https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/05/30/375562427-protecao-animal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-color: #fff;
+    padding: 14px 14%;
+}
+.pesq{
+    width: 40px;
+    height:40px;
+    border-radius:left 20px;
+    background-color:black;
+    outline: none;
+    border: none;
+   position:relative;
+ margin-top: 6%;
+ margin-left: -40%;
+    color: white;
+   
+} 
+
+.logo img{
+    width:50px;
+    height:50px;
+  margin-top:auto;
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+}
+
+.cabeçalho-link a{
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cabeçalho-link a:hover{
+    color: #c8815f;
+}
+
+.icon span{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon span:hover{
+    color: #5f883c;
+}
+
+.inicio{
+    color: #fafff7;
+    background-image: url('../../../../../petshop/imgs/ong.jpg');
+    background-size: 100% 100%;
+    padding: 7rem 0 0 8.5rem;
+    line-height: 4rem;
+    height: 500px;
+ 
+    
+}
+
+.inicio h1{
+    font-size: 4rem;
+    
+}
+
+.inicio button{
+    color: #fafff7;
+    background-color: #5f883c;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+
+}
+
+.inicio button:hover{
+      background-color: rgb(141, 179, 121);
+      transform: scaleY(1.2);
+}
+
+section{
+    padding: 100px 0;
+  }
+  .max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+section h1{
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.tipos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+   
+}
+
+.cards img{
+    width: 250px;
+    height: auto;
+    transition: 0.35s ease;
+    
+}
+
+.cards img:hover{
+     transform: scale(0.9) translateY(-5px);
+     cursor: pointer;
+   
+     
+}
+
+
+.promo{
+    height: 500px;
+    width: 100%;
+    background-image: url('../../../../../petshop/imgs/DOG.jpg');
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+  
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.text-promo{
+    padding-left: 5rem;
+}
+
+.text-promo h6{
+    font-size: 17px;
+	font-weight: 500;
+	letter-spacing: .6px;
+	margin-bottom: 14px;
+
+}
+
+.text-promo h4{
+    font-size: 3.3rem;
+	line-height: 1.2;
+	letter-spacing: .6rem;
+	margin-bottom: 30px;
+}
+
+.text-promo a{
+    background-color: #326827;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.promo img{
+     width: 650px;
+
+     margin-left: 10%;
+     
+
+}
+
+.text-promo a:hover{
+    background-color: #111;
+      transform: scaleY(1.2);
+
+}
+
+.Container-produto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+
+.Container-produto img:hover{
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.produto img{
+    width: 250px;
+    height: auto;
+}
+
+.produto:hover{
+    background-color: rgb(96, 120, 48);
+    color: #fafff7;
+}
+  
+
+.carrinho .carrinho-content{
+    background-color: #909687;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   border: 2px solid #555c4ce0;
+  
+  
+ }
+
+ .carrinho .carrinho-content .finalizar{
+  color: #fff;
+  width:20%;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 93%;
+  text-align: center;
+ 
+
+ }
+
+ section .finalizar .title {
+  color: #fff;
+  font-family:  'League Spartan';
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+ 
+  position: relative;
+ }
+.contato-content{
+  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contato .contato-content .column{
+    width: calc(50% - 30px);
+  }
+  .contato .contato-content{
+    align-items: flex-start;
+  }
+  .contato .contato-content .left p{
+    text-align: justify;
+  }
+  .contato .contato-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .contato .contato-content .left .icons{
+    margin: 10px 0;
+  }
+  .contato .contato-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+  }
+  .contato .contato-content .row .info{
+    margin-left: 30px
+  }
+  .contato .contato-content .row .info .head{
+    font-weight: 500;
+  }
+  .contato .contato-content .row .info .sub-title{
+    color: #333;
+  }
+  .contato .contato-content .row ion-icon{
+    font-size: 25px;
+    color: #576c40;
+  }
+  .contato .rigth form .fields{
+    display: flex;
+  }
+  .contato .rigth form .field,
+  .contato .rigth form .fields .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+  .contato .rigth form .field input,
+  .contato .rigth form .textarea textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Roboto',sans-serif;
+  }
+  .contato .rigth form .name{
+    margin-right: 10px;
+  }
+  .contato .rigth form .email{
+    margin-left: 10px;
+  }
+  .contato .rigth form .textarea{
+    width: 100%;
+    height: 80px;
+  }
+  .contato .rigth form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+  }
+  .contato .rigth form .button{
+    width: 170px;
+    height: 47px;
+  }
+  .contato .rigth form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #576c40;
+    background:#576c40;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .contato .rigth form .button button:hover{
+    color: #576c40;
+    background: none;
+  }
+  
+  /*  sessão footer  */
+  footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+  }
+  footer span a{
+    color: #576c40;
+    text-decoration: none;
+  }
+  footer span a:hover{
+    text-decoration: underline;
+  }
+  
+  
