@@ -22,7 +22,7 @@
           <li> <a href="https://goo.gl/maps/E9MvDvJCDCmGBeWX7">ENDEREÇO</a></li>
           <li> <a href="#contato">CONTATO</a></li>
           <li> <a href="sobre/sobre.php">SOBRE NÓS</a></li>
-          <li><a href="./usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <li><a href="./usuario/perfil/perfil.php"><span><ion-icon name="person"></a></ion-icon></span>
           <br>
        </ul>
 

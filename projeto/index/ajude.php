@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/ajude.css" type="text/css"></head>
 </head>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 #car{
     height: 600px;
     width: 600px;
@@ -104,7 +104,7 @@ function reloadPage() {
 
 </div>
 </div>
-          <li><a href="../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a></li>
+          <li><a href="../usuario/perfil/perfil.php"><span><ion-icon name="person"></a></ion-icon></span></li>
           <br>
        </ul>
 
@@ -208,11 +208,78 @@ closeDoeButton.addEventListener('click', () => {
         </div>
     </section>
 
-  
+    <section class="contato" id='contato'>
+        <div class="max-width">
+            <h2>Contato</h2>
+            <div class="contato-content">
+               <div class="column left">
 
+                   <p>Fazemos valer as leis que protegem os animais, fiscalizamos os órgãos públicos e denunciamos crimes. Isso é dar voz a quem não pode falar, e quanto mais gente, melhor! Por isso contamos com você nessa tarefa!</p>
+               
+               <div class="icons">
+                   <div class="row">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <div class="info">
+                            <div class="head">Nome</div>
+                            <div class="sub-title">Ong-Save a Soul</div>
+                        </div>
+                   </div>
+                   <div class="row">
+                    <ion-icon name="earth-outline"></ion-icon>
+                    <div class="info">
+                        <div class="head">Endereço</div>
+                        <div class="sub-title">Endereço: Av. Ten. Marques, s/n - Fazendinha, Santana de Parnaíba - SP, 06529-001</div>
+                    </div>
+               </div>
+               <div class="row">
+                <ion-icon name="person-outline"></ion-icon>
+                <div class="info">
+                    <div class="head">Email</div>
+                    <div class="sub-title">saveasoul2023@gmail.com</div>
+                </div>
+           </div>
+               </div>
+            </div><!--column left-->
+            <div class="column rigth">
+                <div class="text">Mensagem</div>
+                <form action="#">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" placeholder="Nome" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="field">
+                            <input type="text" placeholder="Sobrenome" required>
+                        </div>
+                        <div class="field textarea">
+                           <textarea  cols="30" rows="10" placeholder="Escrever...." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
 
+    <!--sessão  footer-->
+    <footer>
+        <span>Criado para <a href="#"></a>Fins educacionais | TCC dos discentes da Etec-Bartolomeu Bueno da Silva 2023</span>
+    </footer>
+
+                
+
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
 </body>
-</html>
-  
-      <script src="js/script.js"></script>
-     
+</html> 
+

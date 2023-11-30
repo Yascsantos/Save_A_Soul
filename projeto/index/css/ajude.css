@@ -1,7 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200;1,300&family=Righteous&display=swap');
-
 *{
    
   margin: 0;
@@ -154,7 +151,7 @@ margin-top:auto;
 }
 body {
   background-color: #7c8764ab;
-background-image: url('../../petshop/imgs/patinha.png');
+
 
 
 
@@ -168,7 +165,10 @@ background-image: url('../../petshop/imgs/patinha.png');
   width: 55%;
   font-family: 'Poppins';
 }
-
+ion-icon{
+  font-size: 30px;
+  
+}
 .sobre .sobre-content .right p{
   font-family: 'Poppins';
   text-align: justify;
@@ -242,6 +242,123 @@ background-image: url('../../petshop/imgs/patinha.png');
   height: 400px;
   object-fit: cover;
   border-radius: 6px;
+}
+#contato{
+  background-color: #42443f;
+  color: #ffffff;
+}
+.contato-content{
+  font-family: 'Poppins';
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contato .contato-content .column{
+  width: calc(50% - 30px);
+}
+.contato .contato-content{
+  align-items: flex-start;
+}
+.contato .contato-content .left p{
+  text-align: justify;
+}
+.contato .contato-content .text{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.contato .contato-content .left .icons{
+  margin: 10px 0;
+}
+.contato .contato-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contato .contato-content .row .info{
+  margin-left: 30px
+}
+.contato .contato-content .row .info .head{
+  font-weight: 500;
+}
+.contato .contato-content .row .info .sub-title{
+  color: #d8d2d2;
+}
+.contato .contato-content .row ion-icon{
+  font-size: 25px;
+  color: #9fb884;
+}
+.contato .rigth form .fields{
+  display: flex;
+}
+.contato .rigth form .field,
+.contato .rigth form .fields .field{
+  width: 100%;
+  height: 45px;
+  margin-bottom: 15px;
+}
+.contato .rigth form .field input,
+.contato .rigth form .textarea textarea{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #faf8f8;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Roboto',sans-serif;
+}
+.contato .rigth form .name{
+  margin-right: 10px;
+}
+.contato .rigth form .email{
+  margin-left: 10px;
+}
+.contato .rigth form .textarea{
+  width: 100%;
+  height: 80px;
+}
+.contato .rigth form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contato .rigth form .button{
+  width: 170px;
+  height: 47px;
+}
+.contato .rigth form .button button{
+  width: 100%;
+  height: 100%;
+  border: 2px solid #576c40;
+  background:#576c40;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contato .rigth form .button button:hover{
+  color: #576c40;
+  background: none;
+}
+
+/*  sessão footer  */
+footer{
+  font-family: 'Poppins';
+  background: #111;
+  padding: 20px 23px;
+  color: #fff;
+  text-align: center;
+}
+footer span a{
+  color: #576c40;
+  text-decoration: none;
+}
+footer span a:hover{
+  text-decoration: underline;
 }
 
 

@@ -1,4 +1,38 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Save a soul|Compra</title>
+</head>
+<body>
+
+    <header>
+        <a href="../index.php" class="logo"><img src='../index/imgs/logo.png'>Save a soul</a>
+
+        <ul class="navegação">
+            <li><a href='../adm/produtos/produtos/listagem/pet/grade_nova.php'>Voltar</a></li>
+            <li><a href="../index.php">Inicio</a></li>
+            <li><a href="../index/ajude.php#sobre">Doar</a></li>
+            <li><a href="../index.php#contato">Contate nos</a></li>
+        </ul><!--navegação-->
+
+
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+        <?php
       include_once("protect.php");
 ?>
 
@@ -24,165 +58,106 @@
     $sql= "SELECT * FROM imgpro WHERE id_pro = $id";
     $instrucao = mysqli_query($conexao,$sql);
 
-    
-    echo "
-   
-    <style>
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
-    body{
-      
-        font-family:'Roboto';}
-   
-    .sobre-produto{
-        box-shadow:2px 3px 10px 5px rgba(0, 0, 0, 0.2);
-      border-top:1px solid black;
-       display:flex;
-       padding: 30px 40px;
-       width:80%;
-       margin:auto;
-      
-   }
-   
-   .img img{
-    padding: 10px 50px 50px 50px;
-      width:300px;
-      heigth:300px;
-      
-   }
-   .info-prod {
-    border-left:1px solid black;
-
-       margin-top: auto;
-       padding:30px;
-       text-aling:center;
-       font-family:'Roboto';
-       color: #4c5838;
-
-   }
-   .tam {
-  display:flex;
-  
-}
-label{
-    color: #4c5838;
-    font-weight: bold;
-    display: block;
-}
-.comprar{
-    align-items: center;
-    height:50px;
-    background: #080808;
-    color: white;
-    font-size: 20px;
-  }
-
-  .num{
-    width:30%;
-
-  }
- input {
-    background-color: rgba(255, 255, 255, 0.32);
-    border-radius: 20px;
-    outline: none;
-    border: 2px solid transparent;
-    padding: 10px;
-    font-size: 15px;
-    color: #616161;
-    transition: all 0.4s ease;
-}
-form  input:focus{
-    border-color: #adb5a0;
-}
-a{
-    color: hsl(257, 11%, 88%);
-    text-decoration: none;
-}
-    </style>
-        <div class='sobre-produto'> ";
-      
-
     foreach ($instrucao as $exibe) 
     {
         echo "
-        <div class='img'>
-    <img src=".$exibe['img'].">
+         
+            <img src=".$exibe['img']." class='one'>
         
-        </div>
-        ";
-    }
-
-
-
-
-    //PRODUTOS
-    $sql_code= "SELECT * FROM produto WHERE id_pro = $id";
-    $pesquisa = mysqli_query($conexao,$sql_code);
-    
-  
-    foreach ($pesquisa as $exibe) 
-    {
-       
-        echo "
-        <title>" .$exibe['prod']."</title>
-   <div class='info-prod'>";
-        echo"
-       <p> ".$exibe['outros']."</p>
-       <h2>".$exibe['prod']." / ".$exibe['modelo']."</h2>
-        <h3 align='center' > Preço:R$".$exibe['preco']."</h3>
-            
-           
-        ";
-    }
-  
-
-    echo "<form action='./carrinho/carrinho.php' method='POST'>
-";
-    //tamanho
-    $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
-    $instrucao = mysqli_query($conexao,$sql);
-
-    echo "<label>Tamanhos</label>";
-    foreach ($instrucao as $exibe) 
-    {
-        echo "<div class='tam'>  <input type='radio' class='radio' id=".$exibe['tamanho']." name='tamanho' value=".$exibe['tamanho'].">
-        ".$exibe['tamanho']."</div>
-     
-        ";
-   
-    }
-    
-
-    //cores
-        $code= "SELECT * FROM cores WHERE id_pro = $id";
-        $busca = mysqli_query($conexao,$code);
-        
-        echo "<label>Cores </label>";
-        foreach ($busca as $exibe) 
-        {
-            echo "  <div class='tam'><input type='radio' class='radio' id=".$exibe['cor']." name='cor' value=".$exibe['cor'].">
-            ".$exibe['cor']."</div>
+            </div>
             ";
-    
         }
-        echo "<br>";
+    
+ 
+     
+ //PRODUTOS
+ $sql_code= "SELECT * FROM produto WHERE id_pro = $id";
+ $pesquisa = mysqli_query($conexao,$sql_code);
+ 
 
-    echo "
-   
-        <div>Quantidade: 
-        <input type='number' placeholder='Qtd' name='qtd' class='num'><br>
-        <a href='../adm/produtos/produtos/listagem/pet/grade_nova.php'> Voltar a comprar</a>
-</div>
-    ";
-   
- echo "<br><br><input type='submit' name='salvar' value= 'Adicionar ao carrinho' class='comprar'/>";
- echo "</div>";
-     echo "</div>";
-    echo "</form>";
+ foreach ($pesquisa as $exibe) 
+ {
+    echo" <div class='home-text'>";
+     echo "
+
+            <h1> <br>" .$exibe['prod']."<br> ".$exibe['modelo']."</h1>
+            <h5>".$exibe['outros']."</h5>
+            <h3>R$".$exibe['preco']."</h3>
+     
+      
+            ";
+        }
+      echo"   <form action='./carrinho/carrinho.php' method='POST'>";
+    
+            //tamanho
+            $sql= "SELECT * FROM tamanhos WHERE id_pro = $id";
+            $instrucao = mysqli_query($conexao,$sql);
+        
+           echo"<div class='tam'> <label for=''>Tamanhos:</label>
+           <select name='tamanho' required>
+           ";
+            foreach ($instrucao as $exibe) 
+            {
+                echo "    
+            
+                    <option for='".$exibe['tamanho']."' value='".$exibe['tamanho']."'required> ".$exibe['tamanho']."</option>  
+                   
+             
+                ";
+           
+            }
+         echo" </select>"
+ ;       
+            //cores
+                $code= "SELECT * FROM cores WHERE id_pro = $id";
+                $busca = mysqli_query($conexao,$code);
+                
+                echo "<label>Cores:</label>
+                <select name='cor' required>";
+                foreach ($busca as $exibe) 
+                {
+                    echo "  <option for='".$exibe['cor']."' name='cor' value=".$exibe['cor'].">
+                    ".$exibe['cor']."</option>  
+                    ";
+            
+                }
+                echo" </select></div>";
+        
+            echo "
+        
+                <input type='number' placeholder='Qtd' name='qtd'><br><br>
+               
+         <input type='submit' name='salvar' value= 'Adicionar ao carrinho' class='comprar'>
+            ";
+          
+            echo "</form>";
+        
+        
+        
+        ?>
+        </div>
+    </section>
+
+
+  
 
 
 
-?>
+     
+  
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
 
-   
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+    
 </body>
 </html>

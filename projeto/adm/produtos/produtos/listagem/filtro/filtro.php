@@ -20,7 +20,7 @@
     $sql= "SELECT * FROM categoria";
     $instrucao = mysqli_query($conexao,$sql);
 
-    if(isset($_POST['pesq']))
+    if(isset($_POST['Filtrar']))
     {
        
     
@@ -43,19 +43,12 @@
         color: #616161;
         transition: all 0.4s ease;
     }
-    button .pesq{
-      width: 20px;
-      height:30px;
-      background-color: #08080800;
-      outline: none;
-      border: none;
-     position:relative;
-     top:-45px;
-     left:180px;
-      color: white;
-      font: size 14px;px;
-     
-  }  </style> <div class='input-dados'>
+    input[type='submit']{
+        height:30px;
+        border:none;
+        background-color:white;
+        border-bottom: 2px solid black;
+      }  </style> <div class='input-dados'>
             <form action='../filtro/fl.php' method='POST'>
             <h2>Escolha a categoria</h2>
             <select name='categoria' required>
@@ -67,7 +60,7 @@
 
     }
     echo "</select>";
-    echo "<br><button input type='submit' name='pesq' value='pesq'>Filtrar</button>";
+    echo "<br><input type='submit' name='Filtrar' value='Filtrar'>";
     echo "</form>";
     echo "</div>";
 

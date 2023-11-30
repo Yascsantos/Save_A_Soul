@@ -57,9 +57,10 @@
     font-size: 24px;
     cursor: pointer;
 }
-.material-symbols-outlined{
-    margin-top:70px;
-    margin-left:43px;
+
+ion-icon{
+  font-size: 30px;
+  
 }
 </style>
 <body>
@@ -70,7 +71,7 @@
           <li> <a href="../../../index.php">INICIO</a></li>
           <li> <a href="../../produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
           <li> <a href="../../../sobre/sobre.php">SOBRE NÓS</a></li>
-       <a href="../../../usuario/perfil/perfil.php"><span class="material-symbols-outlined">account_circle</span></a>
+       <li><a href="../../../usuario/perfil/perfil.php"><span><ion-icon name="person"></a></ion-icon></span>
           <br>
        </ul>
 

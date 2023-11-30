@@ -93,11 +93,11 @@
 
    
         <header>
-            <div class="logo">
+        <div class="logo">
          
-<h3>save a soul</h3>
-     
-            </div><!--logo-->
+         <img src="../../../../../index/imgs/logo.png" >
+  
+</div>
 
             <div class="cabeçalho-link">
                 <li>
@@ -117,14 +117,15 @@
 <span class="fechar" id="close-cart">&times;</span>
     Carrinho de Compras
  
-    <iframe src="exibe_car.php" id="car"></iframe>
+    <iframe src="../pet/exibe_car.php" id="car"></iframe>
   
 
-  <a href='grade_nova.php'>Continuar comprando</a>    <button  class='comprar'>    <a href='../../../../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
+  <a href='../pet/grade_nova.php'>Continuar comprando</a>    <button  class='comprar'>    <a href='../../../../../petshop/obtencao/forma.php'><b>Finalizar compra</b></button></a>
    </div>
 </div>
 
-<script src="script.js"></script>
+<script src="../pet/script.js"></script>
+         
          
             <div class="icon" ><a href="../../../../../usuario/perfil/perfil.php"><span><ion-icon name="person"></a></ion-icon></span></div>
             <div id='popupContainer' style='display: none;'>
@@ -145,7 +146,7 @@
                      </div> 
 
         </header> 
-        <BR>
+        <BR><br>
     
     <section>
         <h1>PRODUTOS ENCONTRADOS</h1>
@@ -191,44 +192,7 @@
 </div>
 
     </section>
-    <section>
-        <div class="inicio">
-            <br>
-            <h1>PARTICIPE ATIVAMENTE </h1>
-            <H1>COMPRANDO NOSSOS </H1><P>PRODUTOS PARTE DO LUCRO DAS VENDAS VÃO PARA MANUTENÇÃO DA ONG</P>
-            <A HREF='../../../../../index/ajude.php'> <button>ver mais</A></button>
-          
-
-        </div>
-    </div> 
-         
-</section>
-<section class="promo">
-        <div class="text-promo">
-            <h6> NA PRIMEIRA COMPRA</h6>
-           
-            <h4>20% OFF<br>CONFIRA JÁ</h4>
-            <a href="#" class="btn">Compre agora</a>
-        
-        </div>
-    </section><!--cta-->
-
-<section>
-        <h1>VARIEDADE DE PRODUTOS</h1>
-        <div class="tipos">
-        <div class="cards">
-                <img src="../../../../../petshop/imgs/ali.png">
-            </div>
-            <div class="cards">
-                <img src="../../../../../petshop/imgs/ca.jpg">
-            </div>
-            <div class="cards">
-                <img src="../../../../../petshop/imgs/grande.jpg">
-            </div>
-</div>
     
-    </section>
-
  
 
     <section class="contato" id='contato'>
