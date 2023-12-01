@@ -92,7 +92,15 @@
     font-size: 13px;
  
 
-  }</style></style>
+  }
+  .black{
+    color:black;
+  }
+  .black:hover{
+    color:black;
+    border-bottom:1px solid black;
+
+  }</style>
 <body>
 
    
@@ -188,14 +196,18 @@
                 if ($prod == " " )
                 {
 
-                  header('location:http://localhost/Save_A_Soul/projeto/adm/produtos/produtos/listagem/barra/br.php#produto');
+                    echo "
+                    Ops... você selecionou a categoria vazia. <br><br>
+                    <a href='../pet/grade_nova.php' class='black'>Clique aqui</a> para voltar ao Pet Shop
+                    ";
                 }
     
         }
-    
+      
+
+          ?>
      
     
-?>
 
 
 </div>
