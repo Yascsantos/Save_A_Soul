@@ -25,36 +25,59 @@
     </head>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-a{
-    font-size: 0.9rem;
-    text-decoration:none;
-    font-size: 0.9rem;
-    font-weight:600;
-    color:black;
-  }
- 
-  a:hover{
-    color:#3a3a3b;
-    border-bottom:2px solid black;
-  }
-    .encontro{
-      background:pink;
-      
-    font-family: 'Poppins', sans-serif;
-    width:60%
-    ;
-    text-align: justify;
-    }
-
-#endereco {
-    display:flex;
-
+    main{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 10vh;
 
 }
-</style><body>
+.prod{
+    padding: 10px;
+    display: flex;
+}
+    
+a {
+    
+      font-size: 0.9rem;
+      text-decoration:none;
+      font-size: 0.9rem;
+      font-weight:600;
+      color: black;
+      
+    }
+   
+    a:hover{
+      color:#3a3a3b;
+    }
+    .encontro{
+       
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
 
-<div class='encontro' >
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 40px;
+    text-align: justify;
+    }
+.img{
+   
+    border-bottom: 1px solid black;
+}
+
+body{
+        font-family: 'Poppins';
+        background-size:cover;
+        background-image:url(../../../../index/imgs/fundo.jpg);
+
+       
+    }
+
+</style>
+<body>
+    <main>
+    <div class='encontro' > 
 <h2>listagem de imagens</h2>
     
     ";
@@ -70,14 +93,14 @@ a{
 
     foreach ($instrucao as $exibe) 
     {
+        echo "<div class='img'>";
         echo "
-        <div id='encontro'>
             <td align='center'><img src=".$exibe['img']."  width='100px' height='100px'></td>
             <td></td>
         </div>
         ";
     }
-    echo"<br></table>";
+ 
 
 
 ?>

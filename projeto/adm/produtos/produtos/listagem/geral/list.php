@@ -6,93 +6,63 @@
     <title>Listagem do produto</title>
 </head>
 <Style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-        body{
-        font-family: 'Poppins';
-        background-size:1500px 900px;
-        background-image:url(../../../../../index/imgs/fundo-s.jpg);
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+    main{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 10vh;
 
-        color:white ;
+}
+.prod{
+    padding: 10px;
+    display: flex;
+}
+    
+a {
+    
+      font-size: 0.9rem;
+      text-decoration:none;
+      font-size: 0.9rem;
+      font-weight:600;
+      color: black;
+      
+    }
+   
+    a:hover{
+      color:#3a3a3b;
+    }
+    .encontro{
+       
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+
+    font-family: 'Poppins', sans-serif;
+    padding: 30px 40px;
+    text-align: justify;
+    }
+.img{
+   
+    border-bottom: 1px solid black;
+}
+
+body{
+        font-family: 'Poppins';
+        background-size:cover;
+        background-image:url(../../../../index/imgs/fundo.jpg);
+
        
     }
-       
-  #menu{
-  position: fixed;
-  width:100%;
-  height:110px;
-  font-family: 'Poppins';
 
- 
-}
-img{
-  width:100px;
-  height:100px;
-margin-top:auto;
-}
-
-  nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Poppins';
-    height: 12vh;
-  }
-  
-
-  .nav-list {
-    list-style: none;
-    display: flex;
-  
-  }
-  
-  .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
-    margin-top: auto;
-   
-  }
- 
-
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-#menu a{
-    font-family: 'Poppins';
-    font-size: 0.9rem;
-    text-decoration:none;
-    font-size: 0.9rem;
-    font-weight:600;
-    color:#fcfcfc;
-  }
- 
-  #menu a:hover{
-    color:#3a3a3b;
-  }
-  .msg{
-    background-color: #3a3a3b;
-    width: 300px;
-    height: 100px;
-    text-align: center;
-    border-radius: 3px;
-  }
-    </style>
+</style>
 <body>
-    
-<header id="menu">
-      <nav>
-   <img src="../../../../../petshop/imgs/logo.png" >
-     <ul class="nav-list">
-          <li>
+    <main>
+    <div class='encontro' > 
   
-    <a href="pro.php">Voltar</a><br>
-    <br>
-       </ul>
-
-       </nav>
-</header>
-<br><br><br>
+    <a href="pro.php">Voltar</a>
+  
 <?php
     include_once("../../../../../conexaoBD.php");
 
@@ -145,7 +115,6 @@ margin-top:auto;
             border-collapse: collapse;
             margin: auto;
             border-radius:20px;
-            background-color: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(40px);
             }
     
@@ -192,11 +161,7 @@ margin-top:auto;
             </tr> 
 
             
-            <tr>
-                <td align='center'>Outras informações: </td>
-                <td align='center'>".$exibe['outros']."</td>
-                <td></td>
-            </tr>
+         
             <tr>
               <td></td>
 
@@ -242,6 +207,6 @@ margin-top:auto;
 
     
 
-?>
+?></div>
 </body>
 </html>
