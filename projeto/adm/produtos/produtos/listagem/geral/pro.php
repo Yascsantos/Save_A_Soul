@@ -18,6 +18,7 @@
 }
 .prod{
     padding: 10px;
+    display: flex;
 }
     
 a {
@@ -34,18 +35,19 @@ a {
       color:#3a3a3b;
     }
     .encontro{
+       
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    width: 700px;
-     margin-top: 200px;
+    width: 400px;
+
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(255, 255, 255, 0.993);
     padding: 30px 40px;
     text-align: justify;
     }
 .img{
-    display: flex;
+   
     border-bottom: 1px solid black;
 }
+
 body{
         font-family: 'Poppins';
         background-size:cover;
@@ -68,23 +70,22 @@ body{
      $pesquisa = mysqli_query($conexao,$sql_code);
                 
                 
-     echo "<div class='img'>";
+    
   
                 
      foreach ($pesquisa as $exibe) 
-     {
+     { echo "<div class='img'>";
          echo "
             
         
            
-                 <div align='center' class='prod'> <a href='list.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
-      <a href='list.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</div>
-          
+                  <a href='list.php?&codigo=".$exibe['id_pro']."'><img src=".$exibe['img_pro']." alt='Imagem padrão' width='100px' height='100px'></a><br>
+      <a href='list.php?&codigo=".$exibe['id_pro']."'>".$exibe['prod']."</a>
+      </div>
              ";
                 
      }
     
-     echo"</div>";
 
 ?>
 </div>
