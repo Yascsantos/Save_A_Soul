@@ -132,7 +132,7 @@
                            <div  class='popup' >
              
                            <br><br>
-                           <?php include_once("../filtro/filtro.php"); ?>
+                           <?php include_once("filtro.php"); ?>
                            </div>
                        </div>
                    
@@ -156,35 +156,37 @@
           //caso o filto seja selecionado
 
           include_once("../../../../../conexaoBD.php");
-
-          //se o campo for nulo 
-          if ($cat == "0") {
-            header('location:location:http://localhost/Save_A_Soul/projeto/adm/produtos/produtos/listagem/filtro/fl.php#produto');
+          if(!isset($_SESSION))
+          {
+              session_start();
           }
+          $cat = $_SESSION['cat'];
 
-
-          if ($cat != "0") {
-            //campo NÃO for nulo
+          if ($cat != '0')
+          {
             $sql_query = "SELECT * FROM produto Where id_cat = $cat ";
             $requery = mysqli_query($conexao, $sql_query);
-            foreach ($requery as $exibe) {
+            foreach ($requery as $exibe) 
+            {
               echo "
-                                  
-            <div class='produto'>
-            <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>  <img src=".$exibe['img_pro']." style='height:350px;  width:350px;'>
-            </a>
-          <p> ".$exibe['prod']."</p>
-                <h5>R$".$exibe['preco']."</h5>
-                  <ion-icon name='cart-outline'></ion-icon>
-            </div>";
-                        
-                     
+                <div class='produto'>
+                <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>  <img src=".$exibe['img_pro']." style='height:350px;  width:350px;'>
+                </a>
+                <p> ".$exibe['prod']."</p>
+                    <h5>R$".$exibe['preco']."</h5>
+                    <ion-icon name='cart-outline'></ion-icon>
+                </div>";
             }
-          } else {
-            //se o filtro NÃO for selecionado 
-            header('location:http://localhost/Save_A_Soul/projeto/adm/produtos/produtos/listagem/filtro/fl.php#produto');
+
           }
 
+        else
+        {
+            echo "
+                Ops... você selecionou a categoria vazia. <br><br>
+                <a href='../pet/grade_nova.php' color= 'black'>Clique aqui</a> para voltar ao Pet Shop
+                ";
+        }
 
           ?>
 

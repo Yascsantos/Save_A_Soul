@@ -22,8 +22,6 @@
 
     if(isset($_POST['Filtrar']))
     {
-       
-    
         $_SESSION['cat'] = $_POST['categoria']; //id_pro
         $cat = $_SESSION['cat'];
        
