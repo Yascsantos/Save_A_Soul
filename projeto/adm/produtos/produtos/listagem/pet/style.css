@@ -198,13 +198,6 @@ section h1{
    cursor: pointer;
    transition: 0.3s;
 }
-.promo img{
-     width: 650px;
-
-     margin-left: 10%;
-     
-
-}
 
 .text-promo a:hover{
     background-color: #111111;

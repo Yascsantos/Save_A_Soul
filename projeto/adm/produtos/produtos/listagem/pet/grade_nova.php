@@ -97,11 +97,11 @@
 
    
         <header>
-            <div class="logo">
+        <div class="logo">
          
-            <img src="../../../../../index/imgs/logo.png" >
-     
-            </div><!--logo-->
+         <img src="../../../../../index/imgs/logo.png" >
+  
+         </div><!--logo-->
 
             <div class="cabeçalho-link">
                 <li>
@@ -109,7 +109,7 @@
                 </li>
             
                 <li> <a href="../../../../../index/ajude.php">Como ajudar?</a></li>
-
+</ul>
 <?php  include_once("../barra/barra.php"); ?>  
       
             </div><!--cabeçalho-link-->
@@ -147,7 +147,6 @@
                  
                        </script>
                      </div> 
-
         </header> 
         <section>
         <div class="inicio">
@@ -161,25 +160,7 @@
     </div> 
          
 </section>
-
-
-<section>
-        <h1>VARIEDADE DE PRODUTOS</h1>
-        <div class="tipos">
-        <div class="cards">
-                <img src="../../../../../petshop/imgs/ali.png">
-            </div>
-            <div class="cards">
-                <img src="../../../../../petshop/imgs/ca.jpg">
-            </div>
-            <div class="cards">
-                <img src="../../../../../petshop/imgs/grande.jpg">
-            </div>
-</div>
-    
-    </section>
-
-    <section class="promo">
+<section class="promo">
         <div class="text-promo">
             <h6> NA PRIMEIRA COMPRA</h6>
            
@@ -189,8 +170,9 @@
         </div>
     </section><!--cta-->
 
-    <section>
-        <h1>PRODUTOS DE QUALIDADE</h1>
+
+<section>
+        <h1>Variedade de produtos</h1>
         <div class="Container-produto">
         <?php
      include_once("../../../../../conexaoBD.php");
@@ -205,7 +187,7 @@
 
      
             <div class='produto'>
-            <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>  <img src=".$exibe['img_pro']." style='height:250px;  width:250px;'>
+            <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>  <img src=".$exibe['img_pro']." style='height:350px;  width:350px;'>
             </a>
           <p> ".$exibe['prod']."</p>
                 <h5>R$".$exibe['preco']."</h5>
@@ -218,8 +200,26 @@
    
    ?> 
 
- </div><!--container-roupas-->
+ </div>
     </section>
+
+
+    <section>
+        <h1>Marcas</h1>
+        <div class="tipos">
+        <div class="cards">
+                <img src="../../../../../petshop/imgs/ali.png">
+            </div>
+            <div class="cards">
+                <img src="../../../../../petshop/imgs/ca.jpg">
+            </div>
+            <div class="cards">
+                <img src="../../../../../petshop/imgs/grande.jpg">
+            </div>
+</div>
+    
+    </section>
+   
 
     <section class="contato" id='contato'>
         <div class="max-width">

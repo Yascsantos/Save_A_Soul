@@ -149,7 +149,7 @@
         <BR><br>
     
     <section>
-        <h1>PRODUTOS ENCONTRADOS</h1>
+        <h1>Produtos encontrados</h1>
         <div class="Container-produto">
 
           <?php
@@ -171,7 +171,7 @@
               echo "
                                   
             <div class='produto'>
-            <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>  <img src=".$exibe['img_pro']." style='height:250px;  width:250px;'>
+            <a href='../../../../../petshop/perfil.php?&codigo=".$exibe['id_pro']."'>  <img src=".$exibe['img_pro']." style='height:350px;  width:350px;'>
             </a>
           <p> ".$exibe['prod']."</p>
                 <h5>R$".$exibe['preco']."</h5>
