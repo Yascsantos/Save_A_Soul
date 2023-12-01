@@ -88,7 +88,15 @@
     font-size: 13px;
  
 
-  }</style></style>
+  }
+  .black{
+    color:black;
+  }
+  .black:hover{
+    color:black;
+    border-bottom:1px solid black;
+
+  }</style>
 <body>
 
    
@@ -184,7 +192,7 @@
         {
             echo "
                 Ops... você selecionou a categoria vazia. <br><br>
-                <a href='../pet/grade_nova.php' color= 'black'>Clique aqui</a> para voltar ao Pet Shop
+                <a href='../pet/grade_nova.php' class='black'>Clique aqui</a> para voltar ao Pet Shop
                 ";
         }
 
