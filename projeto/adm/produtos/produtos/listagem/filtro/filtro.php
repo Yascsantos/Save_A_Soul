@@ -50,7 +50,6 @@
             <form action='../filtro/fl.php' method='POST'>
             <h2>Escolha a categoria</h2>
             <select name='categoria' required>
-            <option value='0'>Selecione a categoria</option>
     ";
     foreach ($instrucao as $exibe) 
     {
