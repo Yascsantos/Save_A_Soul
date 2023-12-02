@@ -153,25 +153,25 @@
             <br>
             <h1>PARTICIPE ATIVAMENTE </h1>
             <H1>COMPRANDO NOSSOS </H1><P>PRODUTOS PARTE DO LUCRO DAS VENDAS VÃO PARA MANUTENÇÃO DA ONG</P>
-            <button>ver mais</button>
+            <button>Confira abaixo</button>
           
 
         </div>
     </div> 
          
 </section>
-<section class="promo">
+<section class="promo" >
         <div class="text-promo">
             <h6> NA PRIMEIRA COMPRA</h6>
            
             <h4>20% OFF<br>CONFIRA JÁ</h4>
-            <a href="#" class="btn">Compre agora</a>
+            <a href="#produto" class="btn">Compre agora</a>
         
         </div>
     </section><!--cta-->
 
 
-<section>
+<section id='produto'>
         <h1>Variedade de produtos</h1>
         <div class="Container-produto">
         <?php
