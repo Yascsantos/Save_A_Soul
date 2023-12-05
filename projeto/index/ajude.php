@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/ajude.css" type="text/css"></head>
 </head>
 <style>
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 #car{
     height: 600px;
     width: 600px;
@@ -64,17 +64,11 @@
 <header id="menu">
       <nav>
    <img src="./imgs/logo.png" >
-        <div class="mobile-menu">
-              <div class="line1"></div>
-              <div class="line2"></div>
-              <div class="line3"></div>
-             
-            </div>
      <ul class="nav-list">
-          <li> <a href="../index.php">INICIO</a></li>
-          <li> <a href="../adm/animais/listagem/grade.php">VER ANIMAIS</a></li>
-          <li> <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">PETSHOP</a></li>
-          <li> <a id="open-doar">DOE</a></li>
+          <li> <a href="../index.php">Inicio</a></li>
+          <li> <a href="../adm/animais/listagem/grade.php">Ver animais</a></li>
+          <li> <a href="../adm/produtos/produtos/listagem/pet/grade_nova.php">Petshop</a></li>
+          <li> <a id="open-doar">Doe</a></li>
           <div id="doar" class="carrinho">
 
 <div class="content-carrinho">
