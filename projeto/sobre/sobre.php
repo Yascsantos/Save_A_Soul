@@ -117,7 +117,7 @@ shopping_bag
                 <div class="box">
                     <img src="img1.jpeg" alt="">
                     <div class="text">Yasmin</div>
-                    <p>Responsável peo BackEnd/PHP do site </p>
+                    <p>Responsável pelo BackEnd/PHP do site </p>
                 </div>
             </div>
             <div class="card">

@@ -112,7 +112,7 @@ input[type='submit']{
         <br>
         <a href='../delete/del_img.php'>Deletar</a>
         <br><br>
-        <a href='../pg05.html'>Voltar</a>
+        <a href='../listagem/animais.php'>Voltar</a>
         "
 ?>
 
