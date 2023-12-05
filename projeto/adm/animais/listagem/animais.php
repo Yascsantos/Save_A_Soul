@@ -92,12 +92,10 @@ input[type='submit']{
        <a href='../pg05.html '> <-VOLTAR</a>
     <table> 
         <tr>
-            <th align='center'></th>
-            <th></th>
             <th></th>
             <th></th>
 
-            <th align='center'>Imagem padrão</th>
+            <th align='center'>Imagem</th>
             <th> </th>
             <th align='center'>Código</th>
             <th> </th>
@@ -108,6 +106,8 @@ input[type='submit']{
             <th align='center'>Porte</th>
             <th></th>
             <th align='center'>Sexo</th>
+            <th></th>
+            <th></th>
             <th></th>
             <th></th>
 
@@ -123,8 +123,6 @@ input[type='submit']{
     {
         echo "
         <tr>
-            <td align='center'><a href='../../../imagens_ani/pg07.php?&id=".$exibe['id_ani']."'> + Imagem(s)</a></td> 
-            <td></td>            
             <td></td>
             <td></td>
 
@@ -141,11 +139,13 @@ input[type='submit']{
             <td align='center'>".$exibe['sexo']."</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
 
-            <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['id_ani']."'>Apagar registo</a></td> 
+            <td align='center'><a href='../delete/delete.php?&codigo=".$exibe['id_ani']."'>Apagar</a></td> 
             <td></td>
             <td></td>
-            <td align='center'><a href='../update/alter.php?&codigo=".$exibe['id_ani']."'>Alterar registro </a></td>
+            <td align='center'><a href='../update/alter.php?&codigo=".$exibe['id_ani']."'>Alterar </a></td>
 
         </tr>
         ";
