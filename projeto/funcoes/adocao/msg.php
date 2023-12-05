@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrigar</title>
+    <title>Adotar</title>
 </head>
 <style>
     
@@ -111,14 +111,12 @@ button:hover {
     include_once("protect.php");
 
     echo "  <div class='img'>
-    <H2> Por que abrigar?</H2>
+    <H2> Por que adotar?</H2>
     <p>
-    Quando os animais ficam muito tempo em situação de rua, eles desaprendem a lidar com humanos.<br>
-    Para reverter esse problema a Save a Soul,<br>
-     propôs um projeto em colaboração com a comunidade de 
-    “Lar voluntário” onde os voluntários ajudariam esses animais a se reabilitarem, 
-    <br>com o auxilio da ONG 
-    (em medicamentos, comida, vacinas, etc.)
+    Os animaizinhos também são seres vivos, eles merecem carinho, amor e cuidado. <br>
+    Sabemos que muitos animais não possuem casas e muitas pessoas querem um animalzinho mas não conseguem comprar um. Para isso existe
+    o processo de adoção, para poder dar um lar para todos os animais. Você pode adota-lo de forma totalmente gratuita. Então venha
+    fazer parte do nosso projeto.
     </p>
         
         "; 
@@ -149,7 +147,7 @@ button:hover {
       echo " 
             <div class='info-prod'>
                 O $nome faz parte desse projeto. <BR>Deseja ajuda-lo?<br><br>
-                <button><a href='abrigo.php?codigo=$id'> Sim</a></button>
+                <button><a href='adocao.php?codigo=$id'> Sim</a></button>
                 <button> <a href='../../adm/animais/listagem/grade.php'>Não</a></button>
             </p>";
 

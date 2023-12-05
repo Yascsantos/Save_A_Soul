@@ -1,11 +1,7 @@
 <?php
 	include_once("../../conexaoBD.php");
 	$tabela="user";
-	$campos = "usuario, nome, email, telefone, senha, confirma, foto";
-
-	$diretorio = "../img/";
-	$arq= "padrao.png"; 
-
+    
     if(!isset($_SESSION))
     {
         session_start();
