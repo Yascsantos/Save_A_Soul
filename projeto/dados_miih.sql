@@ -14,10 +14,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Copiando dados para a tabela save.adocao: ~0 rows (aproximadamente)
-INSERT INTO `adocao` (`id_ado`, `id_user`, `id_ani`, `data_entre`, `horario`, `status`) VALUES
-	(1, 1, 1, '2023-12-21', '12:00:00', '---');
-
 -- Copiando dados para a tabela save.animal: ~7 rows (aproximadamente)
 INSERT INTO `animal` (`id_ani`, `nome_ani`, `raca`, `porte`, `sexo`, `img_ani`, `status`, `modalidade`) VALUES
 	(1, 'Billy', 'Vira Lata', 'Médio', 'macho', '../listagem/img/2023.12.05-21.41.27webp', 'disponivel', '---'),
@@ -58,7 +54,7 @@ INSERT INTO `animal` (`id_ani`, `nome_ani`, `raca`, `porte`, `sexo`, `img_ani`, 
 
 -- Copiando dados para a tabela save.user: ~6 rows (aproximadamente)
 INSERT INTO `user` (`id_user`, `usuario`, `nome`, `email`, `telefone`, `senha`, `foto`, `cep`, `pais`, `estado`, `cidade`, `bairro`, `rua`, `numero`) VALUES
-	(1, 'Miih', 'Yasmin Santos', 'yasminsantosyasxp@gmail.com', '11 913280693', '$2y$10$bH1ZnYKV9BSpbz99qH0LjexgyJCxf796jRKr4xM/JwrO5KfCdbGl6', '../img/padrao.png', '06528086', 'Brasil', 'SP', 'Santana de Parnaíba', 'Varzéa de Souza', 'Rua do Astronauta', '280');
+	(2, 'Miih', 'Yasmin Santos', 'yasminsantosyasxp@gmail.com', '11 913280693', '$2y$10$bH1ZnYKV9BSpbz99qH0LjexgyJCxf796jRKr4xM/JwrO5KfCdbGl6', '../img/padrao.png', '06528086', 'Brasil', 'SP', 'Santana de Parnaíba', 'Varzéa de Souza', 'Rua do Astronauta', '280');
 
 -- Copiando dados para a tabela save.voluntario: ~0 rows (aproximadamente)
 

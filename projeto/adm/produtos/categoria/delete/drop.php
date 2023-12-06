@@ -27,6 +27,7 @@
             $_SESSION['id_prod'] = $dados['id_pro'];
             $id = $_SESSION['id_prod'];
         }
+    }
 
 
         $sql_01 = "DELETE FROM imgpro WHERE id_pro ='$id'";
@@ -103,8 +104,7 @@
 
     
 
-    }
-
+    
         mysqli_close($conexao);
 		header ('location: ../listagem/list.php');	
 		exit;

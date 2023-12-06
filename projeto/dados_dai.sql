@@ -18,14 +18,6 @@ REPLACE INTO `adocao` (`id_ado`, `id_user`, `id_ani`, `data_entre`, `horario`, `
 	(1, 2, 2, '2023-11-11', '14:11:00', 'Aprovado');
 /*!40000 ALTER TABLE `adocao` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.animal: ~3 rows (aproximadamente)
-/*!40000 ALTER TABLE `animal` DISABLE KEYS */;
-REPLACE INTO `animal` (`id_ani`, `nome_ani`, `raca`, `porte`, `sexo`, `img_ani`, `status`, `modalidade`) VALUES
-	(2, 'Foozi', 'shih tzu', 'Pequeno', 'Macho', '../listagem/img/2023.11.03-17.51.42jfif', 'indisponivel', 'adocao'),
-	(11, 'Pietra', 'Pinscher', 'Pequeno', 'feminino', '../listagem/img/2023.07.17-15.58.01.jpg', 'disponivel', '---'),
-	(12, 'Garfiel', 'Persa', 'Grande', 'macho', '../listagem/img/2023.11.03-17.49.00jfif', 'disponivel', '---');
-/*!40000 ALTER TABLE `animal` ENABLE KEYS */;
-
 -- Copiando dados para a tabela save.armazena: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `armazena` DISABLE KEYS */;
 REPLACE INTO `armazena` (`id_arm`, `id_user`, `id_pro`, `numero`, `cor`, `tamanho`, `qtd`, `valor`, `data`) VALUES
@@ -47,13 +39,14 @@ REPLACE INTO `carrinho` (`id_car`, `id_user`, `id_pro`, `cor`, `tamanho`, `qtd`,
 /*!40000 ALTER TABLE `categoria` DISABLE KEYS */;
 REPLACE INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 	(1, 'Roupas'),
-	(2, 'Tigelas/Potes'),
 	(3, 'Sapatos'),
 	(4, 'Acessorios'),
 	(5, 'Racao'),
 	(6, 'Tigelas'),
 	(7, 'Roupas'),
-	(8, 'Higiene');
+	(8, 'Higiene'),
+	(9, 'Potes');
+
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.cores: ~24 rows (aproximadamente)
@@ -139,13 +132,13 @@ REPLACE INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `modelo`, `img_pro`
 	(1, 1, 'vestido', 25.00, 'Plaid Print Pet Dress', '../../listagem/img/2023.12.01-13.39.18.jpg'),
 	(2, 1, 'moletom', 30.00, 'Tracksuit Top', '../../listagem/img/2023.12.01-13.42.12.jpg'),
 	(3, 3, 'sapatinho', 10.00, '5 Best Dog Boots of 2023', '../../listagem/img/2023.12.01-13.47.21.jpg'),
-	(4, 2, 'comedouro e bebedouro', 50.00, 'Double Cat Bowls with Water Bottle - Green', '../../listagem/img/2023.12.01-13.51.37.jpg'),
+	(4, 6, 'comedouro e bebedouro', 50.00, 'Double Cat Bowls with Water Bottle - Green', '../../listagem/img/2023.12.01-13.51.37.jpg'),
 	(5, 6, 'Pote de racao e agua', 20.00, ' Alimentador automÃ¡tico para animais de estimaÃ§Ã£o', '../../listagem/img/2023.12.01-13.56.07.jpg'),
 	(6, 4, 'conjunto de acessorios', 60.00, 'Bandana, peitoral, gravatinha, guias e coleiras', '../../listagem/img/2023.12.01-14.01.18.jpg'),
 	(7, 4, 'Cama para gatos', 130.00, 'Cama para Gatos - Pet Circle - Amarelo', '../../listagem/img/2023.12.01-14.03.51.jpg'),
 	(8, 4, 'Peitoral ', 120.00, 'Peitoral com mochila embutida', '../../listagem/img/2023.12.01-14.05.46.jpg'),
 	(9, 5, 'RaÃ§Ã£o CÃ£es Special Dog ', 150.00, 'RaÃ§Ã£o CÃ£es Special Dog Carne 15kg', '../../listagem/img/2023.12.01-14.09.02.jpg'),
-	(10, 2, 'Pote de armazenamento', 40.00, 'Pote de armazenamento de raÃ§Ã£o ', '../../listagem/img/2023.12.01-14.11.01.jpg'),
+	(10, 9, 'Pote de armazenamento', 40.00, 'Pote de armazenamento de raÃ§Ã£o ', '../../listagem/img/2023.12.01-14.11.01.jpg'),
 	(11, 8, 'kit banho', 100.00, 'kit banho/shampoo, condicionador e perfume ', '../../listagem/img/2023.12.01-14.13.47.jpg'),
 	(12, 8, 'kit salÃ£o', 107.00, 'kit salÃ£o, escova para pelos longos,curtos ecortador de unha', '../../listagem/img/2023.12.01-14.15.43.jpg'),
 	(13, 8, 'Tapete higienico', 50.00, 'Tapete Higienico Lavavel para Caes', '../../listagem/img/2023.12.01-14.17.22.jpg'),
