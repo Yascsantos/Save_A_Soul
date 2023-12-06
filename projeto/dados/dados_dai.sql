@@ -138,7 +138,7 @@ REPLACE INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `modelo`, `img_pro`
 	(7, 4, 'Cama para gatos', 130.00, 'Cama para Gatos - Pet Circle - Amarelo', '../../listagem/img/2023.12.01-14.03.51.jpg'),
 	(8, 4, 'Peitoral ', 120.00, 'Peitoral com mochila embutida', '../../listagem/img/2023.12.01-14.05.46.jpg'),
 	(9, 5, 'Racao Special Dog ', 150.00, 'Special Dog sabor Carne e legumes 15kg', '../../listagem/img/2023.12.01-14.09.02.jpg'),
-	(10, 9, 'Pote de armazenamento', 40.00, 'Pote de armazenamento de raÃ§Ã£o ', '../../listagem/img/2023.12.01-14.11.01.jpg'),
+	(10, 9, 'Pote de armazenamento', 40.00, 'Pote de armazenamento de racao ', '../../listagem/img/2023.12.01-14.11.01.jpg'),
 	(11, 8, 'Kit banho', 100.00, 'kit banho/shampoo, condicionador e perfume ', '../../listagem/img/2023.12.01-14.13.47.jpg'),
 	(12, 8, 'Kit salao', 107.00, 'kit salao, escova para pelos longos,curtos e cortador de unha', '../../listagem/img/2023.12.01-14.15.43.jpg'),
 	(13, 8, 'Tapete higienico', 50.00, 'Tapete Higienico Lavavel para Caes', '../../listagem/img/2023.12.01-14.17.22.jpg'),
