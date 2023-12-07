@@ -53,7 +53,6 @@ INSERT INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 	(4, 'Acessorios'),
 	(5, 'Racao'),
 	(6, 'Tigelas'),
-	(7, 'Roupas'),
 	(8, 'Higiene'),
 	(9, 'Potes');
 
