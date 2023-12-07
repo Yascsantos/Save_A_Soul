@@ -42,7 +42,7 @@ REPLACE INTO `armazena` (`id_arm`, `id_user`, `id_pro`, `numero`, `cor`, `tamanh
 	(3, 2, 2, 14, 'Marrom', '15cm', 12, 240.00, '2003-11-23');
 /*!40000 ALTER TABLE `armazena` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.carrinho: ~5 rows (aproximadamente)
+-- Copiando dados para a tabela save.carrinho: ~3 rows (aproximadamente)
 /*!40000 ALTER TABLE `carrinho` DISABLE KEYS */;
 REPLACE INTO `carrinho` (`id_car`, `id_user`, `id_pro`, `cor`, `tamanho`, `qtd`, `valor`) VALUES
 	(11, 3, 1, 'Roxo', 'M', 3, 45.00),
@@ -62,7 +62,7 @@ REPLACE INTO `categoria` (`id_cat`, `nome_cat`) VALUES
 	(9, 'Potes');
 /*!40000 ALTER TABLE `categoria` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.cores: ~24 rows (aproximadamente)
+-- Copiando dados para a tabela save.cores: ~41 rows (aproximadamente)
 /*!40000 ALTER TABLE `cores` DISABLE KEYS */;
 REPLACE INTO `cores` (`id_cor`, `id_pro`, `cor`) VALUES
 	(1, 1, 'Roxo'),
@@ -139,7 +139,18 @@ REPLACE INTO `imgpro` (`id_imgpro`, `id_pro`, `img`) VALUES
 	(18, 7, '../img_pro/2023.12.01-14.46.00.jpg'),
 	(20, 5, '../img_pro/2023.12.01-14.47.00.jpg'),
 	(21, 4, '../img_pro/2023.12.01-14.47.27.jpg'),
-	(22, 3, '../img_pro/2023.12.01-14.47.59.jpg');
+	(22, 3, '../img_pro/2023.12.01-14.47.59.jpg'),
+	(23, 23, '../img_pro/2023.12.07-19.48.19.jpg'),
+	(24, 21, '../img_pro/2023.12.07-19.50.26.jpg'),
+	(25, 20, '../img_pro/2023.12.07-19.53.50.jpg'),
+	(26, 22, '../img_pro/2023.12.07-19.54.51.jpg'),
+	(27, 24, '../img_pro/2023.12.07-19.56.40.jpg'),
+	(28, 25, '../img_pro/2023.12.07-19.57.14.jpg'),
+	(29, 30, '../img_pro/2023.12.07-20.00.30.jpg'),
+	(30, 26, '../img_pro/2023.12.07-20.01.31.jpg'),
+	(31, 31, '../img_pro/2023.12.07-20.02.43.jpg'),
+	(32, 29, '../img_pro/2023.12.07-20.03.53.jpg'),
+	(33, 28, '../img_pro/2023.12.07-20.04.24.jpg');
 /*!40000 ALTER TABLE `imgpro` ENABLE KEYS */;
 
 -- Copiando dados para a tabela save.parceiro: ~2 rows (aproximadamente)
@@ -156,7 +167,7 @@ REPLACE INTO `pedido` (`id_ped`, `id_user`, `id_pro`, `numero`, `cor`, `tamanho`
 	(2, 1, 1, 4, 'Roxo', 'M', 10, 150.00);
 /*!40000 ALTER TABLE `pedido` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.produto: ~16 rows (aproximadamente)
+-- Copiando dados para a tabela save.produto: ~28 rows (aproximadamente)
 /*!40000 ALTER TABLE `produto` DISABLE KEYS */;
 REPLACE INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `modelo`, `img_pro`) VALUES
 	(1, 1, 'Vestido', 25.00, 'Plaid Print Pet Dress', '../../listagem/img/2023.12.01-13.39.18.jpg'),
@@ -189,7 +200,7 @@ REPLACE INTO `produto` (`id_pro`, `id_cat`, `prod`, `preco`, `modelo`, `img_pro`
 	(31, 4, 'Bolsa de viagem', 154.00, 'Bolsa multiuso para cÃ£es ao ar livre, aviÃ£o aprovado com fecho de seguranÃ§a com trava', '../../listagem/img/2023.12.07-19.29.49.jpg');
 /*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.tamanhos: ~27 rows (aproximadamente)
+-- Copiando dados para a tabela save.tamanhos: ~39 rows (aproximadamente)
 /*!40000 ALTER TABLE `tamanhos` DISABLE KEYS */;
 REPLACE INTO `tamanhos` (`id_tam`, `id_pro`, `tamanho`) VALUES
 	(1, 1, 'P'),
@@ -233,7 +244,7 @@ REPLACE INTO `tamanhos` (`id_tam`, `id_pro`, `tamanho`) VALUES
 	(40, 31, 'unico');
 /*!40000 ALTER TABLE `tamanhos` ENABLE KEYS */;
 
--- Copiando dados para a tabela save.user: ~1 rows (aproximadamente)
+-- Copiando dados para a tabela save.user: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 REPLACE INTO `user` (`id_user`, `usuario`, `nome`, `email`, `telefone`, `senha`, `foto`, `cep`, `pais`, `estado`, `cidade`, `bairro`, `rua`, `numero`) VALUES
 	(1, 'Daiane', 'Daiane MagalhÃ£es de Castro', 'daianemagalhaesdecasro@gmail.com', '+5511961504684', '$2y$10$8SJY9ENUSrJbRhi0iSv1R.r3Pk6saaEf6CTdA2eD.RRl/.7Ppkk1S', '../img/padrao.png', '06535020', 'Brasil', 'RN', 'Santana', 'cid. SÃ£o Pedro', 'Av. Fortunato Camargo', '992'),
