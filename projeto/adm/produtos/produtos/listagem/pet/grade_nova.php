@@ -205,7 +205,7 @@
 
 
     <section>
-        <h1>Marcas</h1>
+        <h1>Parceiros</h1>
         <div class="tipos">
         <div class="cards">
                 <img src="../../../../../petshop/imgs/ali.png">

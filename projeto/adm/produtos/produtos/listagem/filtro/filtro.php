@@ -45,8 +45,16 @@
         height:30px;
         border:none;
         background-color:white;
+       
+      }
+      input[type='submit']:hover{
+        height:30px;
+        border:none;
+        background-color:white;
         border-bottom: 2px solid black;
-      }  </style> <div class='input-dados'>
+      }
+      
+      </style> <div class='input-dados'>
             <form action='../filtro/fl.php' method='POST'>
             <h2>Escolha a categoria</h2>
             <select name='categoria' required>
